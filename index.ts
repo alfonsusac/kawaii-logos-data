@@ -5,34 +5,44 @@ import { existsSync } from "node:fs"
 const scrapedImagesProcessed = Promise.allSettled(
   scrapedImages.map(
     async repository => {
-      const { cwd, branch } = await cloneRepo(repository.repoPath)
-      const filePaths = await getImageFilePaths(cwd)
-      const results = await Promise.allSettled(
-        filePaths.map(async file => {
-          const createdAt = await getCreationDate(file, cwd)
-          return {
-            author: repository.author,
-            className: repository.className,
-            createdAt: new Date(createdAt),
-            title: file.split("/").pop()!,
-            src: `https://raw.githubusercontent.com/${ repository.repoPath }/${ branch }/${ file }`,
-            raw: `https://github.com/${ repository.repoPath }/blob/${ branch }/${ file }`,
+      try {
+        const { cwd, branch } = await cloneRepo(repository.repoPath)
+        const filePaths = await getImageFilePaths(cwd)
+        const results = await Promise.allSettled(
+          filePaths.map(
+            async file => {
+              try {
+                const createdAt = await getCreationDate(file, cwd)
+                return {
+                  author: repository.author,
+                  className: repository.className,
+                  createdAt: new Date(createdAt),
+                  title: file.split("/").pop()!,
+                  src: `https://raw.githubusercontent.com/${ repository.repoPath }/${ branch }/${ file }`,
+                  raw: `https://github.com/${ repository.repoPath }/blob/${ branch }/${ file }`,
+                }
+              } catch (error) {
+                console.log(`Error reading file: ${ file }`)
+                throw (error)
+              }
+            }
+          )
+        )
+        return results.map(res => {
+          if (res.status === "rejected") {
+            return []
           }
+          return res.value
         })
-      )
-      return results.map(res => {
-        if (res.status === "rejected") {
-          console.log("Failed processing file: ", fil)
-          return []
-        }
-        return res.value
-      })
+      } catch (error) {
+        console.log(` ✖️ Error processing repository: ${ repository.repoPath }`)
+        throw error
+      }
     }
   )
 ).then(results => {
   return results.map(result => {
     if (result.status === "rejected") {
-      console.log("Failed processing repository: ")
       return []
     }
     return result.value
@@ -68,37 +78,6 @@ async function getCreationDate(file: string, cwd: string) {
     .text()
 }
 
-
-// export const images = [
-//   ...manuallyListedImages,
-//   ...await Promise.allSettled(
-//     scrapedImages.map(async repository => {
-//       const { cwd, branch } = await cloneRepo(repository.repoPath)
-//       const filePaths = await getImageFilePaths(cwd)
-//       return Promise.allSettled(
-//         filePaths.map(async file => {
-//           const createdAt = await getCreationDate(file, cwd)
-//           return {
-//             author: repository.author,
-//             className: repository.className,
-//             createdAt: new Date(createdAt),
-//             title: file.split("/").pop()!,
-//             src: `https://raw.githubusercontent.com/${ repository.repoPath }/${ branch }/${ file }`,
-//             raw: `https://github.com/${ repository.repoPath }/blob/${ branch }/${ file }`,
-//           }
-//         })
-//       ).then(settlement => {
-//         return settlement.map(promise => {
-//           if (promise.status === "rejected") {
-//             return console.error(promise.reason)
-//           }
-//           return promise.value
-//         })
-//       })
-//     })
-//   ).then(images => images.flat())
-// ]
-
 const updatedAt = new Date().toISOString()
 
 const data = JSON.stringify(
@@ -111,15 +90,12 @@ const data = JSON.stringify(
   }, null, 2
 )
 
-// console.log(data)
-
 await Bun.write(`${ __dirname }/data/images.json`, data)
 
 console.log("/data/images.json updated")
 
 const isInGitHubAction = process.env.GITHUB_ACTIONS === "true"
 if (isInGitHubAction) {
-
   // check if "data" orphan branch exists
   let branch = await Bun.$`git branch -a`.text()
   if (!branch.includes("data")) {
@@ -140,5 +116,4 @@ if (isInGitHubAction) {
   await Bun.$`git switch main`
 
   console.log("Branch data updated!")
-
 }
