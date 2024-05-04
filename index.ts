@@ -2,45 +2,14 @@ import { manuallyListedImages } from "./config/images-manual"
 import { scrapedImages } from "./config/images-scraped"
 import { existsSync } from "node:fs"
 
-export const images = [
-  ...manuallyListedImages,
-  ...await Promise.allSettled(
-    scrapedImages.map(async repository => {
-
-      // Path to the cloned repo
-      const cwd = `${ __dirname }/cloned/${ repository.repoPath }`
-
-      // Clones source repo to local repo in the `/cloned` folder
-      if (!existsSync(cwd)) {
-        await Bun.$`git clone https://github.com/${ repository.repoPath }.git ${ cwd }`
-      } else {
-        await Bun.$`git pull -v --no-progress`.cwd(cwd)
-      }
-
-      // Get the current branch of ecah repo, as it could be main or master
-      const branch = (
-        await Bun.$`git branch --show-current`.cwd(cwd).text()
-      ).replace("\n", "")
-
-      // Get all image files in the repo
-      const glob = new Bun.Glob(
-        `${ repository.path }/**/*.{png,svg,jpg,jpeg,gif,webp,avif,apng,tiff}`
-      )
-
-      // Get the creation date of each image file
-      const files = Array.from(glob.scanSync({ cwd }))
-
-      return Promise.allSettled(
-        files.map(async file => {
-
-          console.log(file)
-
-          // Get the creation date of the file, idk how this works.
-          const createdAt =
-            await Bun.$`git log --diff-filter=A --format=%cD --date=short -- ${ file }`
-              .cwd(cwd)
-              .text()
-
+const scrapedImagesProcessed = Promise.allSettled(
+  scrapedImages.map(
+    async repository => {
+      const { cwd, branch } = await cloneRepo(repository.repoPath)
+      const filePaths = await getImageFilePaths(cwd)
+      const results = await Promise.allSettled(
+        filePaths.map(async file => {
+          const createdAt = await getCreationDate(file, cwd)
           return {
             author: repository.author,
             className: repository.className,
@@ -51,18 +20,98 @@ export const images = [
           }
         })
       )
-    })
-  ).then(images => images.flat())
-]
+      return results.map(res => {
+        if (res.status === "rejected") {
+          console.log("Failed processing file: ", fil)
+          return []
+        }
+        return res.value
+      })
+    }
+  )
+).then(results => {
+  return results.map(result => {
+    if (result.status === "rejected") {
+      console.log("Failed processing repository: ")
+      return []
+    }
+    return result.value
+  })
+}).then(images => images.flat())
+
+async function cloneRepo(repositoryPath: string) {
+  // Path to the cloned repo
+  const cwd = `${ __dirname }/cloned/${ repositoryPath }`
+  // Clones source repo to local repo in the `/cloned` folder
+  if (!existsSync(cwd)) {
+    await Bun.$`git clone https://github.com/${ repositoryPath }.git ${ cwd }`
+  } else {
+    await Bun.$`git pull -v --no-progress`.cwd(cwd)
+  }
+  // Get the current branch of ecah repo, as it could be main or master
+  const branch = (
+    await Bun.$`git branch --show-current`.cwd(cwd).text()
+  ).replace("\n", "")
+
+  return { cwd, branch }
+}
+async function getImageFilePaths(cwd: string) {
+  // Get all image files in the repo
+  const glob = new Bun.Glob(
+    `**/*.{png,svg,jpg,jpeg,gif,webp,avif,apng,tiff}`
+  )
+  return Array.from(glob.scanSync({ cwd }))
+}
+async function getCreationDate(file: string, cwd: string) {
+  return await Bun.$`git log --diff-filter=A --format=%cD --date=short -- ${ file }`
+    .cwd(cwd)
+    .text()
+}
+
+
+// export const images = [
+//   ...manuallyListedImages,
+//   ...await Promise.allSettled(
+//     scrapedImages.map(async repository => {
+//       const { cwd, branch } = await cloneRepo(repository.repoPath)
+//       const filePaths = await getImageFilePaths(cwd)
+//       return Promise.allSettled(
+//         filePaths.map(async file => {
+//           const createdAt = await getCreationDate(file, cwd)
+//           return {
+//             author: repository.author,
+//             className: repository.className,
+//             createdAt: new Date(createdAt),
+//             title: file.split("/").pop()!,
+//             src: `https://raw.githubusercontent.com/${ repository.repoPath }/${ branch }/${ file }`,
+//             raw: `https://github.com/${ repository.repoPath }/blob/${ branch }/${ file }`,
+//           }
+//         })
+//       ).then(settlement => {
+//         return settlement.map(promise => {
+//           if (promise.status === "rejected") {
+//             return console.error(promise.reason)
+//           }
+//           return promise.value
+//         })
+//       })
+//     })
+//   ).then(images => images.flat())
+// ]
 
 const updatedAt = new Date().toISOString()
 
 const data = JSON.stringify(
   {
     updatedAt,
-    data: images,
+    data: [
+      ...manuallyListedImages,
+      ...await scrapedImagesProcessed,
+    ],
   }, null, 2
 )
+
+// console.log(data)
 
 await Bun.write(`${ __dirname }/data/images.json`, data)
 
