@@ -26,7 +26,7 @@ export class Git {
   }
 
   static branch = (args?: GitBranchOptions, cwd?: string) => {
-    const cmd = Bun.$`git branch ${ args?.showCurrent ? "--show-current" : "" }`
+    const cmd = Bun.$`git branch ${ args?.showCurrent ? "--show-current" : "" } ${ args?.all ? "-a" : "" }`
     return cwd ? cmd.cwd(cwd) : cmd
   }
   branch = (args?: GitBranchOptions) => {
