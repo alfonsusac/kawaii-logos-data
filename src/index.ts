@@ -20,6 +20,8 @@ if (isInGitHubAction) {
   await updateDataBranch(content, updatedAt)
   logSuccess("'data branch' updated")
 } else {
+  await updateDataBranch(content, updatedAt)
+
   await write(pathToGeneratedImageJSON, content)
   logSuccess(`images.json generated at ${ pathToGeneratedImageJSON }`)
 }
