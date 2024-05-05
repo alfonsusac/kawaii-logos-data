@@ -29,7 +29,7 @@ export class Git {
     await Bun.$`pwd`.cwd(this.path)
     await Bun.$`git branch`.cwd(this.path)
     await Bun.$`git status`.cwd(this.path)
-    await Bun.$`ls -a`.cwd(this.path)
+    await Bun.$`ls -A`.cwd(this.path)
     return Bun.$`git add ${ what }`.cwd(this.path)
   }
   branch = (args?: {
