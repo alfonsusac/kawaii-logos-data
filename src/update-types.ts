@@ -49,9 +49,9 @@ try {
       version: "1.0.0",
       description: "Types for the kawaii-logos-data",
       main: "./src/index.ts",
-      types: "./src/index.ts",
+      types: "./src/index.d.ts",
       author: "alfonsusac",
-      license: "MIT"
+      license: "MIT",
     }
 
 
