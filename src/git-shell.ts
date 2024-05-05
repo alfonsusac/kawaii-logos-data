@@ -2,21 +2,20 @@ import { GitHub } from "./github-url"
 import { rootDir } from "./paths"
 
 export class Git {
-  constructor(public readonly pathToGit: string = rootDir) { }
-
-  static clone = async (what: string, cwd: string, args?: {
-    quiet?: boolean,
-  }) => {
-    await Bun.$`git clone ${ args?.quiet ? "-q" : "" } ${ GitHub.gitUrl(what) } ${ cwd }`
-    return new Git(cwd)
-  }
+  constructor(public readonly pathToGit: string = "/") { }
   get cwd() {
     return this.pathToGit
+  }
+  static clone = async (what: string, args?: {
+    quiet?: boolean,
+  }, where?: string) => {
+    await Bun.$`git clone ${ args?.quiet ? "-q" : "" } ${ GitHub.gitUrl(what) } ${ where }`
+    return new Git(where)
   }
   clone = (what: string, args: {
     quiet?: boolean,
   }) => {
-    return Git.clone(what, this.pathToGit, args)
+    return Git.clone(what, args, this.pathToGit)
   }
   
   add = (what: string) => {
