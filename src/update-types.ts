@@ -27,7 +27,7 @@ try {
   await Bun.write("src/index.ts", types)
   await logAndDelay(`Types written to types branch`)
 
-  await Bun.write(".gitignore", "*\n!src/*\n!.gitignore\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
+  await Bun.write(".gitignore", "*\n!src\n!src/*\n!.gitignore\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
   await logAndDelay(`Gitignore written to types branch`)
 
   await Bun.$`bunx tsc src/index.ts -d --emitDeclarationOnly --skipLibCheck`
