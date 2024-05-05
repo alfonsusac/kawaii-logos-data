@@ -39,7 +39,7 @@ try {
   
   await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly --skipLibCheck`
 
-  logAndDelay(`Types built with tsc`)
+  await logAndDelay(`Types built with tsc`)
 
   logProcess(`Types updated and built with tsc`)
 
