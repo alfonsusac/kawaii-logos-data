@@ -26,7 +26,7 @@ try {
   "version": "1.0.0",
   "description": "Types for the kawaii-logos-data",
   "main": "./src/index.ts",
-  "types": "./src/index.ts"
+  "types": "./src/index.ts",
   "author": "alfonsusac",
   "license": "MIT"
 }`)
@@ -45,6 +45,7 @@ try {
 } catch (error) {
   logError(`Error occurred while updating data branch`)
   console.log(error)
+  logError(`Operation not completed, force switching back to main branch`)
 
 } finally {
   await Git.switch("main", {
