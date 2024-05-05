@@ -11,10 +11,30 @@ To consume the data as an API, simply fetch to the following link:
 https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json
 ```
 
-Fetch API
+#### Fetch API
+
 ```tsx
 const images = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
   .then(res => res.json())
+```
+
+#### Typescript
+
+Install types through your favorite package manager
+```shell
+pnpm i kawaii-logos-data@git://github.com:alfonsusac/kawaii-logos-data.git#types
+```
+
+```tsx
+import { Data } from "kawaii-logos-data"
+
+const images = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
+  .then(res => res.json()) as Data
+```
+
+Uninstall the package
+```shell
+pnpm i kawaii-logos-data
 ```
 
 If you want to see how the data is consumed, check out [alfonsusac/service-title-logo](https://github.com/alfonsusac/service-title-logo) !!
