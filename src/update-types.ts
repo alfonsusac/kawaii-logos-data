@@ -4,31 +4,31 @@ import { logAndDelay } from "./util"
 
 let types = await Bun.file(`src/types/index.ts`).text()
 console.log(types)
-logAndDelay(`Type file retrieved`)
+await logAndDelay(`Type file retrieved`)
 
 
 try {
   let branch = await Git.branch({ all: true }).text()
-  logAndDelay(`All branch retrieved`)
+  await logAndDelay(`All branch retrieved`)
 
   if (branch.includes("types")) {
     await Git.switch("types")
-    logAndDelay(`Branch switched to types`)
+    await logAndDelay(`Branch switched to types`)
 
     await Git.pull({ force: true })
-    logAndDelay(`Branch types pulled`)
+    await logAndDelay(`Branch types pulled`)
 
   } else {
     await Git.switch("types", { orphan: true })
-    logAndDelay(`Branch types created`)
+    await logAndDelay(`Branch types created`)
   }
   logProcess(`Switched to types branch`)
 
   await Bun.write("src/index.ts", types)
-  logAndDelay(`Types written to types branch`)
+  await logAndDelay(`Types written to types branch`)
 
   await Bun.write(".gitignore", "*\n!src/*\n!.gitignore\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
-  logAndDelay(`Gitignore written to types branch`)
+  await logAndDelay(`Gitignore written to types branch`)
 
   await Bun.$`bunx tsc src/index.ts -d --emitDeclarationOnly --skipLibCheck`
 
@@ -36,6 +36,7 @@ try {
   logProcess(`Types updated and built with tsc`)
 
   if (!await Bun.file("package.json").exists()) {
+    logProcess(`Package.json not found, Creating one...`)
     await Bun.write(`package.json`, `{
   "name": "types",
   "version": "1.0.0",
@@ -45,23 +46,23 @@ try {
   "author": "alfonsusac",
   "license": "MIT"
 }`)
-    logAndDelay(`Package.json created`)
-    logProcess(`Package.json not found, Creating one...`)
+    await logAndDelay(`Package.json created`)
   } else {
+    logProcess(`Package.json found, updating version..`)
     await Bun.$`bunx npm version patch`
-    logAndDelay(`Package.json version updated`)
+    await logAndDelay(`Package.json version updated`)
     logProcess(`Updated version`)
   }
 
 
   await Git.add(".")
-  logAndDelay(`Files added to staging`)
+  await logAndDelay(`Files added to staging`)
 
   await Git.commit(`Update types`)
-  logAndDelay(`Files commited`)
+  await logAndDelay(`Files commited`)
 
   await Git.push("origin", "types", { setUpstream: true })
-  logAndDelay(`Branch pushed to remote`)
+  await logAndDelay(`Branch pushed to remote`)
 
   logProcess(`Branch pushed to remote`)
 
