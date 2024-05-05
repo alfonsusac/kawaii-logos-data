@@ -16,7 +16,7 @@ try {
   logProcess(`Switched to types branch`)
 
   await Bun.write("index.ts", types)
-  await Bun.$`tsc . -d --emitDeclarationOnly`
+  await Bun.$`bunx tsc . -d --emitDeclarationOnly`
   await Git.add(".")
   await Git.commit(`Update types`)
   await Git.push("origin", "types", { setUpstream: true })
