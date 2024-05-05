@@ -28,12 +28,13 @@ export async function updateDataBranch(data: string, updatedAt: string) {
   try {
     // check if "data" orphan branch exists
     let branch = await Git.branch({ all: true }).text()
+    console.log(branch)
     if (branch.includes("data")) {
       await Git.switch("data")
-      await Git.pull()
     } else {
       await Git.switch("data", { orphan: true })
     }
+    await Git.pull()
     logProcess(`switched to data branch`)
 
     // add data/images.json to "data" branch
