@@ -57,7 +57,6 @@ try {
     packageJson.version = (packageJson.version as string).split(".").map((v, i) => i === 2 ? Number(v) + 1 : v).join(".") // Increment patch version
     await Bun.write("package.json", JSON.stringify(packageJson, null, 2))
 
-    await Bun.$`bunx npm version patch`
     await logAndDelay(`Package.json version updated`)
     logProcess(`Updated version`)
   }
