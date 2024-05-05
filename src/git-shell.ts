@@ -26,11 +26,10 @@ export class Git {
     return cwd ? Bun.$`git add ${ what }`.cwd(cwd) : Bun.$`git add ${ what }`
   }
   add = async (what: string) => {
-    await Bun.$`ls`.cwd(this.path)
-    await Bun.$`git status`.cwd(this.path)
     await Bun.$`pwd`.cwd(this.path)
     await Bun.$`git branch`.cwd(this.path)
     await Bun.$`git status`.cwd(this.path)
+    await Bun.$`ls`.cwd(this.path)
     return Bun.$`git add ${ what }`.cwd(this.path)
   }
   branch = (args?: {
