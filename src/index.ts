@@ -14,17 +14,10 @@ const data: Data = [
   ...await getScrapedImageList(),
 ]
 
-const content = JSON.stringify({ updatedAt, data }, null, 2)
+const response = { updatedAt, data }
+export type Response = typeof response
 
-if (isInGitHubAction) {
-  await updateDataBranch(content, updatedAt)
-  logSuccess("'data branch' updated")
-  
-} else {
-  await updateDataBranch(content, updatedAt)
-  await write(pathToGeneratedImageJSON, content)
-  logSuccess(`images.json generated at ${ pathToGeneratedImageJSON }`)
-}
+await updateDataBranch(response, updatedAt)
 
 logSuccess("Script Finished")
 
