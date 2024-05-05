@@ -1,5 +1,5 @@
 import { manuallyListedImages } from "./config/images-manual"
-import { updateDataBranch, updateDataBranchOld } from "./data-branch"
+import { updateDataBranch } from "./data-branch"
 import { write } from "bun"
 import { isInGitHubAction } from "./util"
 import { getScrapedImageList } from "./scrape"
@@ -19,9 +19,9 @@ const content = JSON.stringify({ updatedAt, data }, null, 2)
 if (isInGitHubAction) {
   await updateDataBranch(content, updatedAt)
   logSuccess("'data branch' updated")
+  
 } else {
   await updateDataBranch(content, updatedAt)
-
   await write(pathToGeneratedImageJSON, content)
   logSuccess(`images.json generated at ${ pathToGeneratedImageJSON }`)
 }
