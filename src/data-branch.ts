@@ -8,6 +8,7 @@ export async function updateDataBranch(data: string, updatedAt: string) {
 
   // check if "data" orphan branch exists
   let branch = await git.branch({ all: true }).text()
+  console.log(branch)
   if (branch.includes("data")) {
     await git.switch("data")
     await git.pull()
