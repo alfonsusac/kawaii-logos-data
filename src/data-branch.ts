@@ -4,8 +4,8 @@ import { isInGitHubAction } from "./util"
 import { write } from "bun"
 
 export async function updateDataBranch(data: string, updatedAt: string) {
-  if (!isInGitHubAction) return
-  const git = new Git('')
+  // if (!isInGitHubAction) return
+  const git = new Git()
 
   // check if "data" orphan branch exists
   let branch = await git.branch({ all: true }).text()

@@ -2,7 +2,7 @@ import { GitHub } from "./github-url"
 import { rootDir } from "./paths"
 
 export class Git {
-  constructor(public readonly pathToGit: string = rootDir) { }
+  constructor(public readonly pathToGit: string = "") { }
 
   static clone = async (what: string, cwd: string, args?: {
     quiet?: boolean,
