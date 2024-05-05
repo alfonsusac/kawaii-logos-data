@@ -1,8 +1,8 @@
-import type { Data } from "../../types"
+import type { Entries } from "../../types"
 
 // TODO: add to scrape?
 
-export const hvpexe: Data[number] = {
+export const hvpexe: Entries[number] = {
   handleName: "hvpexe",
   link: {
     github: "hvpexe",

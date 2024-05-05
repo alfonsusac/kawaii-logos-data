@@ -1,9 +1,9 @@
-import type { Data } from "../../types"
+import type { Entries } from "../../types"
 
 // TODO: add to scrape?
 
 
-export const ldmdiamondl: Data[number] = {
+export const ldmdiamondl: Entries[number] = {
   handleName: "lDMDiamondl",
   link: {
     github: "lDMDiamondl",

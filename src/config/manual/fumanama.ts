@@ -1,6 +1,6 @@
-import type { Data } from "../../types"
+import type { Entries } from "../../types"
 
-export const fumanama: Data[number] = {
+export const fumanama: Entries[number] = {
   handleName: "fuma-nama",
   pfp: "https://avatars.githubusercontent.com/u/76240755?v=4",
   link: {

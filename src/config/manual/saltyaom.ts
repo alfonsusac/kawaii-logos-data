@@ -1,6 +1,6 @@
-import type { Data } from "../../types"
+import type { Entries } from "../../types"
 
-export const saltyaom: Data[number] = {
+export const saltyaom: Entries[number] = {
   handleName: "saltyaom",
   pfp: "https://avatars.githubusercontent.com/u/35027979?v=4",
   link: {

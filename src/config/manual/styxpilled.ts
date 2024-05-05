@@ -1,8 +1,8 @@
 import { GitHub } from "../../url-github"
-import type { Data } from "../../types"
+import type { Entries } from "../../types"
 import { twitterPost } from "../../url"
 
-export const styxpilled: Data[number] = {
+export const styxpilled: Entries[number] = {
   handleName: "styxpilled",
   link: {
     twitter: "styxpilled",
