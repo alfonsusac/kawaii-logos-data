@@ -22,7 +22,9 @@ export class Git {
   }) => {
     return Git.clone(what, args, this.path)
   }
-  
+  static add = (what: string, cwd?: string) => {
+    return cwd ? Bun.$`git add ${ what }`.cwd(cwd) : Bun.$`git add ${ what }`
+  }
   add = async (what: string) => {
     await Bun.$`ls`.cwd(this.path)
     await Bun.$`git status`.cwd(this.path)
@@ -57,9 +59,10 @@ export class Git {
   }
   switch = async (branch: string, args?: {
     orphan?: boolean,
+    force?: boolean,
   }) => {
     await Bun.$`ls`.cwd(this.path)
-    return Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch }`.cwd(this.path)
+    return Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch } ${ args?.force ? "--force" : "" } `.cwd(this.path)
   }
 
 
