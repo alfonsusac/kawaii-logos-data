@@ -29,7 +29,7 @@ export async function updateDataBranch(res: Response, updatedAt: string) {
     const gitignore = [
       '*',
       '!images.json',
-      '!.gitignore',
+      '!.gitignore', // You have to gitignore the gitignore
       '!README.md',
     ].join(`\n`)
     await Bun.write(".gitignore", gitignore)

@@ -33,7 +33,7 @@ try {
 
   logAndDelay(`Types written to types branch`)
 
-  await Bun.write(".gitignore", "*\n!src\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
+  await Bun.write(".gitignore", "*\n!src\n!.gitignore\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
   
   logAndDelay(`Gitignore written to types branch`)
   
