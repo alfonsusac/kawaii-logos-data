@@ -1,6 +1,9 @@
-export type Data = (
-  Author & { images: Image[] }
-)[]
+export type Data = {
+  updatedAt: string,
+  data: Entries
+}
+export type Entry = Author & { images: Image[] }
+export type Entries = Entry[]
 
 export type Image = {
   title: string

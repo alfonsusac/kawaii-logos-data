@@ -1,9 +1,9 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: `2024-05-05T16:47:57.196Z`
+Last Updated: `2024-05-05T23:56:33.042Z`
 
-Version: `1.0.8`
+Version: `1.0.9`
 
 ### Contributing
 
