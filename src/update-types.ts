@@ -7,16 +7,16 @@ let types = await Bun.file(`src/types/index.ts`).text()
 
 try {
   let branch = await Git.branch({ all: true }).text()
-  if (branch.includes("data")) {
-    await Git.switch("data")
+  if (branch.includes("types")) {
+    await Git.switch("types")
     await Git.pull()
   } else {
-    await Git.switch("data", { orphan: true })
+    await Git.switch("types", { orphan: true })
   }
   logProcess(`Switched to types branch`)
 
-  await Bun.write("index.ts", types)
-  await Bun.$`bunx tsc . -d --emitDeclarationOnly`
+  await Bun.write("src/types/index.ts", types)
+  await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly`
   await Git.add(".")
   await Git.commit(`Update types`)
   await Git.push("origin", "types", { setUpstream: true })
