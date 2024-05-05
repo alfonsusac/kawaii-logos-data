@@ -1,5 +1,5 @@
 import { repositoryConfigs, type RepositoryConfig } from "./config/images-scraped"
-import { getAvatarURLfromRepoPath, GitHub } from "./github-url"
+import { getAvatarURLfromRepoPath, GitHub } from "./url-github"
 import { logError, logProcess } from "./log"
 import { cloneRepository, getCreationDate, getImageFilePaths, type Repository } from "./scrape-util"
 

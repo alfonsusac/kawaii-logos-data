@@ -1,4 +1,4 @@
-import { GitHub } from "./github-url"
+import { GitHub } from "./url-github"
 import { root, rootDir } from "./paths"
 
 export class Git {

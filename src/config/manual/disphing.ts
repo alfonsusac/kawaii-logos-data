@@ -1,4 +1,4 @@
-import { GitHub } from "../../github-url"
+import { GitHub } from "../../url-github"
 import type { Data } from "../../types"
 
 export const disphing: Data[number] = {
