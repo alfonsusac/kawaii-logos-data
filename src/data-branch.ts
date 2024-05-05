@@ -56,10 +56,8 @@ export async function updateDataBranch(data: string, updatedAt: string) {
     // delay
     await new Promise(resolve => setTimeout(resolve, 1000))
 
-    await Bun.$`echo * .*`
-
     // Save changes to `data` branch
-    await git.add("images.json .gitignore")
+    await Git.add("images.json .gitignore")
     console.log(git.cwd)
     await git.commit(`Update data \`${ updatedAt }\``)
     console.log(git.cwd)
