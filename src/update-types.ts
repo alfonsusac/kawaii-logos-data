@@ -16,7 +16,7 @@ try {
   logProcess(`Switched to types branch`)
 
   await Bun.write("src/types/index.ts", types)
-  await Bun.write(".gitignore", "*\n!src\npackage.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
+  await Bun.write(".gitignore", "*\n!src\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
   await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly --skipLibCheck`
   logError(`Types updated and built with tsc`)
 
