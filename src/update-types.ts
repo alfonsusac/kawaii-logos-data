@@ -16,6 +16,7 @@ try {
   logProcess(`Switched to types branch`)
 
   await Bun.write("src/types/index.ts", types)
+  await Bun.write(".gitignore", "node_modules\n")
   await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly --skipLibCheck`
   await Git.add(".")
   await Git.commit(`Update types`)
