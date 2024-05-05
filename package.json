@@ -3,7 +3,7 @@
   "version": "1.0.8",
   "description": "Types for the kawaii-logos-data",
   "main": "./src/index.ts",
-  "types": "./src/index.ts",
+  "types": "./src/index.d.ts",
   "author": "alfonsusac",
   "license": "MIT"
 }
