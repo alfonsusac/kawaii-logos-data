@@ -1,4 +1,5 @@
 import { join } from 'path'
+import { logProcess } from './log'
 
 
 export const isInGitHubAction = process.env.GITHUB_ACTIONS === "true"
@@ -22,3 +23,11 @@ export const intoArray = <T>(
   )
   // Flatten the array of arrays
   .then(results => results.flat())
+
+export const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms))
+
+
+export const logAndDelay = async (message: string) => {
+  logProcess(message)
+  await delay(2000)
+}
