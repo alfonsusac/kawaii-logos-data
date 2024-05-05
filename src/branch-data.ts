@@ -2,7 +2,7 @@ import { write } from "bun"
 import { Git } from "./git-shell"
 import { logError, logProcess } from "./log"
 import { pathToGeneratedImageJSON } from "./paths"
-import { isInGitHubAction } from "./util"
+import { generateGitIgnore, isInGitHubAction } from "./util"
 import type { Response } from "."
 
 export async function updateDataBranch(res: Response, updatedAt: string) {
@@ -28,11 +28,16 @@ export async function updateDataBranch(res: Response, updatedAt: string) {
     await Bun.write("images.json", stringData)
     const gitignore = [
       '*',
-      '!images.json',
       '!.gitignore', // You have to gitignore the gitignore
+      '!images.json',
       '!README.md',
     ].join(`\n`)
-    await Bun.write(".gitignore", gitignore)
+    await Bun.write(".gitignore", generateGitIgnore(
+      "*",
+      "!.gitignore",
+      '!images.json',
+      '!README.md',
+    ))
     logProcess(`Modified data/images.json to "data" branch`)
     await Bun.write("README.md", `# The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.

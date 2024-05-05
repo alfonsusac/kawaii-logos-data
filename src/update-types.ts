@@ -1,6 +1,6 @@
 import { Git } from "./git-shell"
 import { logError, logProcess } from "./log"
-import { logAndDelay } from "./util"
+import { generateGitIgnore, logAndDelay } from "./util"
 
 let types = await Bun.file(`src/types/index.ts`).text()
 console.log(types)
@@ -27,7 +27,14 @@ try {
   await Bun.write("src/index.ts", types)
   await logAndDelay(`Types written to types branch`)
 
-  await Bun.write(".gitignore", "*\n!src\n!src/*\n!.gitignore\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
+  await Bun.write(".gitignore", generateGitIgnore(
+    "*",
+    "!src",
+    "!src/*",
+    "!.gitignore",
+    "!package.json",
+    '!README.md',
+  )) // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
   await logAndDelay(`Gitignore written to types branch`)
 
   await Bun.$`bunx tsc src/index.ts -d --emitDeclarationOnly --skipLibCheck`
@@ -60,6 +67,18 @@ try {
     await logAndDelay(`Package.json version updated`)
     logProcess(`Updated version`)
   }
+
+  await Bun.write("README.md", `# The Data Branch
+This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
+    
+Last Updated: ${ new Date().toISOString() }
+
+Version: ${ (await Bun.file("package.json").json()).version }
+
+### Contributing
+
+If you want to contribute such as adding missing image or fixing incorrect data, please refer head over to the \`main\` branch
+    `)
 
 
   await Git.add(".")

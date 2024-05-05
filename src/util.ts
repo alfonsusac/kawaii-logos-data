@@ -29,5 +29,9 @@ export const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, 
 
 export const logAndDelay = async (message: string) => {
   logProcess(message)
-  await delay(2000)
+  // await delay(2000)
+}
+
+export function generateGitIgnore(...files: string[]) {
+  return files.join("\n") + "\n"
 }
