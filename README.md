@@ -31,10 +31,14 @@ import { Data } from "kawaii-logos-data"
 const images = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
   .then(res => res.json()) as Data
 ```
+Update
+```shell
+pnpm update kawaii-logos-data
+```
 
 Uninstall the package
 ```shell
-pnpm i kawaii-logos-data
+pnpm uninstall kawaii-logos-data
 ```
 
 If you want to see how the data is consumed, check out [alfonsusac/service-title-logo](https://github.com/alfonsusac/service-title-logo) !!
