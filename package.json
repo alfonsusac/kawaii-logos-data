@@ -1,6 +1,6 @@
 {
   "name": "kawaii-logos-data",
-  "module": "index.ts",
+  "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
     "@types/bun": "latest"
@@ -9,6 +9,9 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "bun index.ts"
+    "dev": "bun src/index.ts"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
   }
 }
