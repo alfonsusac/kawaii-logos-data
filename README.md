@@ -14,4 +14,11 @@ https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json
 Fetch API
 ```tsx
 const images = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
+  .then(res => res.json())
 ```
+
+If you want to see how the data is consumed, check out [alfonsusac/service-title-logo](https://github.com/alfonsusac/service-title-logo) !!
+
+## Related Projects
+
+- [irfanhakim-as/vtuber-icons](https://github.com/irfanhakim-as/vtuber-icons)
