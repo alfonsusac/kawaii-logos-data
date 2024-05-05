@@ -58,11 +58,11 @@ export class Git {
   }) => {
     return Bun.$`git push ${ args?.setUpstream ? "-u" : "" } ${ toWhere } ${ what }`.cwd(this.path)
   }
+
   switch = async (branch: string, args?: {
     orphan?: boolean,
     force?: boolean,
   }) => {
-    await Bun.$`ls`.cwd(this.path)
     return Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch } ${ args?.force ? "--force" : "" } `.cwd(this.path)
   }
 
