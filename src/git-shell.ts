@@ -23,7 +23,10 @@ export class Git {
     return Git.clone(what, args, this.path)
   }
   
-  add = (what: string) => {
+  add = async (what: string) => {
+    await Bun.$`ls`.cwd(this.path)
+    await Bun.$`git status`.cwd(this.path)
+    await Bun.$`pwd`.cwd(this.path)
     return Bun.$`git add ${ what }`.cwd(this.path)
   }
   branch = (args?: {
