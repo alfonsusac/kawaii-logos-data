@@ -1,10 +1,15 @@
 import { GitHub } from "./github-url"
-import { rootDir } from "./paths"
+import { root, rootDir } from "./paths"
 
 export class Git {
-  constructor(public readonly pathToGit: string = "/") { }
+  public readonly path: string
+  constructor(path: string = '') {
+    // Bun shell commands always starts at binary locaiton of Bun installation.
+    //  Therefore, we need to set the cwd relative to the root of the project.
+    this.path = root(path) 
+  }
   get cwd() {
-    return this.pathToGit
+    return this.path
   }
   static clone = async (what: string, args?: {
     quiet?: boolean,
@@ -15,11 +20,11 @@ export class Git {
   clone = (what: string, args: {
     quiet?: boolean,
   }) => {
-    return Git.clone(what, args, this.pathToGit)
+    return Git.clone(what, args, this.path)
   }
   
   add = (what: string) => {
-    return Bun.$`git add ${ what }`.cwd(this.pathToGit)
+    return Bun.$`git add ${ what }`.cwd(this.path)
   }
   branch = (args?: {
     showCurrent?: boolean,
@@ -28,29 +33,30 @@ export class Git {
     return Bun.$`git branch ${ args?.showCurrent ? "--show-current" : "" }`
   }
   commit = (message: string) => {
-    return Bun.$`git commit -m "${ message }"`.cwd(this.pathToGit)
+    return Bun.$`git commit -m "${ message }"`.cwd(this.path)
   }
   log = (what: string, args?: {
     date?: string,
     diffFilter?: string,
     format?: string,
   }) => {
-    return Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ what }`.cwd(this.pathToGit)
+    return Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ what }`.cwd(this.path)
   }
   pull = (args?: {
     quiet?: boolean,
   }) => {
-    return Bun.$`git pull ${ args?.quiet ? "-q" : ""}`.cwd(this.pathToGit)
+    return Bun.$`git pull ${ args?.quiet ? "-q" : ""}`.cwd(this.path)
   }
   push = (toWhere: string, what: string, args?: {
     setUpstream?: boolean,
   }) => {
-    return Bun.$`git push ${ args?.setUpstream ? "-u" : "" } ${ toWhere } ${ what }`.cwd(this.pathToGit)
+    return Bun.$`git push ${ args?.setUpstream ? "-u" : "" } ${ toWhere } ${ what }`.cwd(this.path)
   }
-  switch = (branch: string, args?: {
+  switch = async (branch: string, args?: {
     orphan?: boolean,
   }) => {
-    return Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch }`.cwd(this.pathToGit)
+    await Bun.$`ls`.cwd(this.path)
+    return Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch }`.cwd(this.path)
   }
 
 
