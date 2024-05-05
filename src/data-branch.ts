@@ -1,4 +1,5 @@
 import { Git } from "./git-shell"
+import { logProcess } from "./log"
 import { rootDir } from "./paths"
 import { isInGitHubAction } from "./util"
 import { write } from "bun"
@@ -15,18 +16,27 @@ export async function updateDataBranch(data: string, updatedAt: string) {
   } else {
     await git.switch("data", { orphan: true })
   }
+  logProcess(`switched to data branch`)
 
-  // add data/images.json to "data" orphan branch
+  // add data/images.json to "data" branch
   await write("images.json", data)
   await write(".gitignore", [
     '*',
     '!images.json',
     '!.gitignore',
   ].join(`\n`))
+  logProcess(`modified data/images.json to "data" branch`)
+  console.log(git.cwd)
 
   // Save changes to `data` branch
+  console.log(git.cwd)
   await git.add("images.json .gitignore")
+  console.log(git.cwd)
   await git.commit(`Update data \`${ updatedAt }\``)
+  console.log(git.cwd)
   await git.push("origin", "data", { setUpstream: true })
+  console.log(git.cwd)
   await git.switch("main")
+  console.log(git.cwd)
+  logProcess(`switched back to main branch`)
 }
