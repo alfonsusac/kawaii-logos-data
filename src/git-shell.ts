@@ -32,32 +32,46 @@ export class Git {
   branch = (args?: GitBranchOptions) => {
     return Git.branch(args, this.path)
   }
+
+  static commit = (message: string, cwd?: string) => {
+    const cmd = Bun.$`git commit -m "${ message }"`
+    return cwd ? cmd.cwd(cwd) : cmd
+  }
   commit = (message: string) => {
-    return Bun.$`git commit -m "${ message }"`.cwd(this.path)
-  }
-  log = (what: string, args?: {
-    date?: string,
-    diffFilter?: string,
-    format?: string,
-  }) => {
-    return Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ what }`.cwd(this.path)
-  }
-  pull = (args?: {
-    quiet?: boolean,
-  }) => {
-    return Bun.$`git pull ${ args?.quiet ? "-q" : "" }`.cwd(this.path)
-  }
-  push = (toWhere: string, what: string, args?: {
-    setUpstream?: boolean,
-  }) => {
-    return Bun.$`git push ${ args?.setUpstream ? "-u" : "" } ${ toWhere } ${ what }`.cwd(this.path)
+    return Git.commit(message, this.path)
   }
 
-  switch = async (branch: string, args?: {
-    orphan?: boolean,
-    force?: boolean,
-  }) => {
-    return Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch } ${ args?.force ? "--force" : "" } `.cwd(this.path)
+  static log = (what: string, args?: GitLogOptions, cwd?: string) => {
+    const cmd = Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ what }`
+    return cwd ? cmd.cwd(cwd) : cmd
+  }
+  log = (what: string, args?: GitLogOptions) => {
+    return Git.log(what, args, this.path)
+  }
+
+  static pull = (args?: GitPullOptions, cwd?: string) => {
+    const cmd = Bun.$`git pull ${ args?.quiet ? "-q" : "" }`
+    return cwd ? cmd.cwd(cwd) : cmd
+  }
+  pull = (args?: GitPullOptions) => {
+    return Git.pull(args, this.path)
+  }
+
+  static push = (toWhere: string, what: string, args?: GitPushOptions, cwd?: string) => {
+    const cmd = Bun.$`git push ${ args?.setUpstream ? "-u" : "" } ${ toWhere } ${ what }`
+    return cwd ? cmd.cwd(cwd) : cmd
+  }
+  push = (toWhere: string, what: string, args?: GitPushOptions) => {
+    return Git.push(toWhere, what, args, this.path)
+  }
+
+  static switch = (branch: string, args?: GitSwitchOptions, cwd?: string) => {
+    const cmd = Bun.$`git switch ${ args?.orphan ? "--orphan" : "" } ${ branch } ${ args?.force ? "--force" : "" }`
+    return cwd ? cmd.cwd(cwd) : cmd
+  }
+
+  switch = async (branch: string, args?: GitSwitchOptions) => {
+    return Git.switch(branch, args, this.path)
   }
 }
 
@@ -69,4 +83,19 @@ interface GitAddOptions {
 interface GitBranchOptions {
   showCurrent?: boolean,
   all?: boolean,
+}
+interface GitLogOptions {
+  date?: string,
+  diffFilter?: string,
+  format?: string,
+}
+interface GitPullOptions {
+  quiet?: boolean,
+}
+interface GitPushOptions {
+  setUpstream?: boolean,
+}
+interface GitSwitchOptions {
+  orphan?: boolean,
+  force?: boolean,
 }

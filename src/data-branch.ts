@@ -1,6 +1,5 @@
 import { Git } from "./git-shell"
 import { logError, logProcess } from "./log"
-import { rootDir } from "./paths"
 import { isInGitHubAction } from "./util"
 
 // export async function updateDataBranchOld(data: string, updatedAt: string) {
@@ -26,15 +25,14 @@ import { isInGitHubAction } from "./util"
 
 export async function updateDataBranch(data: string, updatedAt: string) {
   if (!isInGitHubAction) return
-  const git = new Git()
   try {
     // check if "data" orphan branch exists
-    let branch = await git.branch({ all: true }).text()
+    let branch = await Git.branch({ all: true }).text()
     if (branch.includes("data")) {
-      await git.switch("data")
-      await git.pull()
+      await Git.switch("data")
+      await Git.pull()
     } else {
-      await git.switch("data", { orphan: true })
+      await Git.switch("data", { orphan: true })
     }
     logProcess(`switched to data branch`)
 
@@ -49,16 +47,16 @@ export async function updateDataBranch(data: string, updatedAt: string) {
     logProcess(`modified data/images.json to "data" branch`)
 
     // Save changes to `data` branch
-    await git.add(".") // using `images.json` and `.gitignore` doesn't work unless we use raw Bun.$`git add`
-    await git.commit(`Update data \`${ updatedAt }\``)
-    await git.push("origin", "data", { setUpstream: true })
-    await git.switch("main")
+    await Git.add(".") // using `images.json` and `.gitignore` doesn't work unless we use raw Bun.$`git add`
+    await Git.commit(`Update data \`${ updatedAt }\``)
+    await Git.push("origin", "data", { setUpstream: true })
+    await Git.switch("main")
     logProcess(`switched back to main branch`)
 
   } catch (error) {
     logError(`Error occurred while updating data branch`)
     console.log(error)
-    git.switch("main", {
+    Git.switch("main", {
       force: true,
     })
   }
