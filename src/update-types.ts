@@ -20,7 +20,7 @@ try {
   await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly --skipLibCheck`
   await Git.add(".")
   await Git.commit(`Update types`)
-  // await Git.push("origin", "types", { setUpstream: true })
+  await Git.push("origin", "types", { setUpstream: true })
   await Git.switch("main")
   logProcess(`Switched back to main branch`)
 
