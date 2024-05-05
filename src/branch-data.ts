@@ -42,7 +42,7 @@ export async function updateDataBranch(res: Response, updatedAt: string) {
     await Bun.write("README.md", `# The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: ${ updatedAt }
+Last Updated: \`${ updatedAt }\`
 
 ### Authors
 ${res.data.map( entry => `- [${entry.handleName}](${entry.repository})` ).join("\n") }
