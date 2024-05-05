@@ -27,4 +27,5 @@ jobs:
       - run: |
           git config --global user.name "Update Data"
           git config --global user.email "alfonsusac@gmail.com"
+      - run: bun i
       - run: bun src/update-types.ts
