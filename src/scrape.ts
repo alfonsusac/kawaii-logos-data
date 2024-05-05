@@ -7,28 +7,32 @@ import type { Data } from "./types"
 import { intoArray } from "./util"
 
 export async function getScrapedImageList(): Promise<Data> {
-  const repositories = await intoArray(repositoryConfigs.map(processConfig))
-  return repositories.map(result => {
-    const githubUsername = result.config.repoPath.split("/")[0]
+  const processedConfig = await intoArray(repositoryConfigs.map(processConfig))
+
+  return processedConfig.map(result => {
     return ({
-      handleName: result.config.author.handleName || githubUsername,
-      pfp: result.config.author.pfp || getAvatarURLfromRepoPath(githubUsername),
+      handleName: result.author.handleName || result.githubUsername,
+      pfp: result.author.pfp || getAvatarURLfromRepoPath(result.githubUsername),
       link: {
-        github: result.config.author.link?.github || GitHub.userProfileUrl(githubUsername),
-        ...result.config.author.link,
+        github: result.author.link?.github || GitHub.userProfileUrl(result.githubUsername),
+        ...result.author.link,
       },
-      license: result.config.author.license,
-      repository: GitHub.repositoryUrl(result.config.repoPath),
+      license: result.author.license,
+      repository: GitHub.repositoryUrl(result.repoPath),
       images: result.files.map(file => ({
-        title: file.file.split("/").pop()!,
-        imgSrc: `https://raw.githubusercontent.com/${ result.config.repoPath }/${ result.repository.branch }/${ file.file }`,
-        source: `https://github.com/${ result.config.path }/blob/${ result.repository.branch }/${ file.file }`,
+        title: file.name,
+        path: file.path,
+        imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
+        source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
       }))
     })
   })
 }
 
+type ProcessedConfig = Awaited<ReturnType<typeof processConfig>>
+
 async function processConfig(config: RepositoryConfig) {
+  const githubUsername = config.repoPath.split("/")[0]
   try {
     const repository = await cloneRepository(config.repoPath)
     const filePaths = await getImageFilePaths(repository.cwd)
@@ -36,18 +40,25 @@ async function processConfig(config: RepositoryConfig) {
 
     const files = await intoArray(filePaths.map(processFile, repository))
     return {
-      config,
-      repository,
+      ...config,
+      ...repository,
+      githubUsername,
       files
     }
 
   } catch (error) {
     logError(`Error scraping repository ${ config.repoPath }`)
-    throw error
+    return {
+      ...config,
+      githubUsername,
+      files: [],
+    }
   }
 }
 
-async function processFile(this: Repository, file: string) {
-  const createdAt = await getCreationDate(file, this.git)
-  return { file, createdAt }
+async function processFile(this: Repository, path: string) {
+  const createdAt = await getCreationDate(path, this.git)
+  const name = path.split("/").pop()!
+  const branch = this.branch
+  return { path, name, createdAt, branch }
 }

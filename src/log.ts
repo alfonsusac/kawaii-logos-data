@@ -14,6 +14,6 @@ export const logSuccess = (message: string) => {
 
 export const logProcess = (message: string) => {
   console.log(
-    ` ${ chalk.yellow('⚡️') }${ message }`
+    ` ${ chalk.yellow('⚡️') } ${ message }`
   )
 }

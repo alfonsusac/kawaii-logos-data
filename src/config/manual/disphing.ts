@@ -1,3 +1,4 @@
+import { GitHub } from "../../github-url"
 import type { Data } from "../../types"
 
 export const disphing: Data[number] = {
@@ -10,32 +11,32 @@ export const disphing: Data[number] = {
   images: [
     {
       title: "Skrillex",
-      imgSrc: "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLh5aGWakAAM3dk.jpeg",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("GLh5aGWakAAM3dk.jpeg"),
       source: "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing",
     },
     {
       title: "Porter Robinson",
-      imgSrc: "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLh9h3rbQAA7wik.jpeg",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("GLh9h3rbQAA7wik.jpeg"),
       source: "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing",
     },
     {
       title: "FL Studio",
-      imgSrc: "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLhep0Za8AAyBff.jpeg",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("GLhep0Za8AAyBff.jpeg"),
       source: "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing",
     },
     {
       title: "Bitwig Studio",
-      imgSrc: "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLhevYka0AAmU7e.jpeg",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("GLhevYka0AAmU7e.jpeg"),
       source: "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing",
     },
     {
       title: "Ableton Live",
-      imgSrc: "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLhesuxaYAAqS__.jpeg",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("GLhesuxaYAAqS__.jpeg"),
       source: "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing",
     },
     {
       title: "Logic Pro",
-      imgSrc: "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLm7MOob0AAimzf.jpeg",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("GLm7MOob0AAimzf.jpeg"),
       source: "" // TODO: get twitter post
     },
   ]

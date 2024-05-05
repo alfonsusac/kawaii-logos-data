@@ -28,14 +28,13 @@ export async function updateDataBranch(data: string, updatedAt: string) {
   try {
     // check if "data" orphan branch exists
     let branch = await Git.branch({ all: true }).text()
-    console.log(branch)
     if (branch.includes("data")) {
       await Git.switch("data")
     } else {
       await Git.switch("data", { orphan: true })
     }
     await Git.pull()
-    logProcess(`switched to data branch`)
+    logProcess(`Switched to data branch`)
 
     // add data/images.json to "data" branch
     await Bun.write("images.json", data)
@@ -45,14 +44,14 @@ export async function updateDataBranch(data: string, updatedAt: string) {
       '!.gitignore',
     ].join(`\n`)
     await Bun.write(".gitignore", gitignore)
-    logProcess(`modified data/images.json to "data" branch`)
+    logProcess(`Modified data/images.json to "data" branch`)
 
     // Save changes to `data` branch
     await Git.add(".") // using `images.json` and `.gitignore` doesn't work unless we use raw Bun.$`git add`
     await Git.commit(`Update data \`${ updatedAt }\``)
     await Git.push("origin", "data", { setUpstream: true })
     await Git.switch("main")
-    logProcess(`switched back to main branch`)
+    logProcess(`Switched back to main branch`)
 
   } catch (error) {
     logError(`Error occurred while updating data branch`)
