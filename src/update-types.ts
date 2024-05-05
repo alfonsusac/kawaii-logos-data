@@ -37,18 +37,26 @@ try {
 
   if (!await Bun.file("package.json").exists()) {
     logProcess(`Package.json not found, Creating one...`)
-    await Bun.write(`package.json`, `{
-  "name": "types",
-  "version": "1.0.0",
-  "description": "Types for the kawaii-logos-data",
-  "main": "./src/index.ts",
-  "types": "./src/index.ts",
-  "author": "alfonsusac",
-  "license": "MIT"
-}`)
+    const newPackageJson = {
+      name: "kawaii-logos-data-types",
+      version: "1.0.0",
+      description: "Types for the kawaii-logos-data",
+      main: "./src/index.ts",
+      types: "./src/index.ts",
+      author: "alfonsusac",
+      license: "MIT"
+    }
+
+
+    await Bun.write(`package.json`, JSON.stringify(newPackageJson, null, 2))
     await logAndDelay(`Package.json created`)
   } else {
     logProcess(`Package.json found, updating version..`)
+
+    const packageJson = await Bun.file("package.json").json()
+    packageJson.version = (packageJson.version as string).split(".").map((v, i) => i === 2 ? Number(v) + 1 : v).join(".") // Increment patch version
+    await Bun.write("package.json", JSON.stringify(packageJson, null, 2))
+
     await Bun.$`bunx npm version patch`
     await logAndDelay(`Package.json version updated`)
     logProcess(`Updated version`)
