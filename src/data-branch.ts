@@ -56,7 +56,7 @@ export async function updateDataBranch(data: string, updatedAt: string) {
     // delay
     await new Promise(resolve => setTimeout(resolve, 1000))
 
-    await Bun.$`echo *`
+    await Bun.$`echo * .*`
 
     // Save changes to `data` branch
     await git.add("images.json .gitignore")
