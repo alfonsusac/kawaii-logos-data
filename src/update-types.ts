@@ -18,7 +18,7 @@ try {
   await Bun.write("src/types/index.ts", types)
   await Bun.write(".gitignore", "*\n!src\n!package.json\n") // Neccessary to ignore all (*) since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
   await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly --skipLibCheck`
-  logError(`Types updated and built with tsc`)
+  logProcess(`Types updated and built with tsc`)
 
   if (!await Bun.file("package.json").exists()) {
     await Bun.write(`package.json`, `{
@@ -40,7 +40,7 @@ try {
   await Git.add(".")
   await Git.commit(`Update types`)
   await Git.push("origin", "types", { setUpstream: true })
-  logError(`Branch pushed to remote`)
+  logProcess(`Branch pushed to remote`)
 
 } catch (error) {
   logError(`Error occurred while updating data branch`)
