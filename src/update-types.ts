@@ -71,9 +71,9 @@ try {
   await Bun.write("README.md", `# The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: ${ new Date().toISOString() }
+Last Updated: \`${ new Date().toISOString() }\`
 
-Version: ${ (await Bun.file("package.json").json()).version }
+Version: \`${ (await Bun.file("package.json").json()).version }\`
 
 ### Contributing
 
