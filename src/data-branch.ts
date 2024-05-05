@@ -2,7 +2,6 @@ import { Git } from "./git-shell"
 import { logProcess } from "./log"
 import { rootDir } from "./paths"
 import { isInGitHubAction } from "./util"
-import { write } from "bun"
 
 export async function updateDataBranch(data: string, updatedAt: string) {
   // if (!isInGitHubAction) return
@@ -19,14 +18,17 @@ export async function updateDataBranch(data: string, updatedAt: string) {
   logProcess(`switched to data branch`)
 
   // add data/images.json to "data" branch
-  await write("images.json", data)
-  await write(".gitignore", [
+  await Bun.write("images.json", data)
+  await Bun.write(".gitignore", [
     '*',
     '!images.json',
     '!.gitignore',
   ].join(`\n`))
   logProcess(`modified data/images.json to "data" branch`)
   console.log(git.cwd)
+
+  // delay
+  await new Promise(resolve => setTimeout(resolve, 1000))
 
   // Save changes to `data` branch
   console.log(git.cwd)
