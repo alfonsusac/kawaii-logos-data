@@ -46,3 +46,4 @@ If you want to see how the data is consumed, check out [alfonsusac/service-title
 ## Related Projects
 
 - [irfanhakim-as/vtuber-icons](https://github.com/irfanhakim-as/vtuber-icons)
+- [Ender-Wiggin2019/VTuber-Logos-Collection](https://github.com/Ender-Wiggin2019/VTuber-Logos-Collection)
