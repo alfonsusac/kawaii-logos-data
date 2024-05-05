@@ -44,7 +44,7 @@ export async function updateDataBranch(data: string, updatedAt: string) {
     logProcess(`switched back to main branch`)
   } catch (error) {
     git.switch("main", {
-      
+      force: true,
     })
   }
 }
