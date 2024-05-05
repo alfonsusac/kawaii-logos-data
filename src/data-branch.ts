@@ -41,11 +41,15 @@ export async function updateDataBranch(data: string, updatedAt: string) {
 
     // add data/images.json to "data" branch
     await Bun.write("images.json", data)
-    await Bun.write(".gitignore", [
+    const gitignore = [
       '*',
       '!images.json',
       '!.gitignore',
-    ].join(`\n`))
+    ].join(`\n`)
+    console.log("--")
+    console.log(gitignore)
+    console.log("--")
+    await Bun.write(".gitignore", gitignore)
     logProcess(`modified data/images.json to "data" branch`)
     console.log(git.cwd)
 
