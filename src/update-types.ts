@@ -16,11 +16,11 @@ try {
   logProcess(`Switched to types branch`)
 
   await Bun.write("src/types/index.ts", types)
-  await Bun.write(".gitignore", "node_modules\n")
+  await Bun.write(".gitignore", "*\n!src\n") // Neccessary to ignore all since switching branch would also include other gitingore files that are generated. This would prevent files getting moved to the new branch
   await Bun.$`bunx tsc src/types/index.ts -d --emitDeclarationOnly --skipLibCheck`
   await Git.add(".")
   await Git.commit(`Update types`)
-  await Git.push("origin", "types", { setUpstream: true })
+  // await Git.push("origin", "types", { setUpstream: true })
   await Git.switch("main")
   logProcess(`Switched back to main branch`)
 
