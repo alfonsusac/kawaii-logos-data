@@ -9,7 +9,7 @@ try {
   let branch = await Git.branch({ all: true }).text()
   if (branch.includes("types")) {
     await Git.switch("types")
-    await Git.pull()
+    await Git.pull({ force: true })
   } else {
     await Git.switch("types", { orphan: true })
   }

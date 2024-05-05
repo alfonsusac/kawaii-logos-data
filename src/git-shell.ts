@@ -50,7 +50,7 @@ export class Git {
   }
 
   static pull = (args?: GitPullOptions, cwd?: string) => {
-    const cmd = Bun.$`git pull ${ args?.quiet ? "-q" : "" }`
+    const cmd = Bun.$`git pull ${ args?.quiet ? "-q" : "" } ${ args?.force ? "--force" : "" }`
     return cwd ? cmd.cwd(cwd) : cmd
   }
   pull = (args?: GitPullOptions) => {
@@ -91,6 +91,7 @@ interface GitLogOptions {
 }
 interface GitPullOptions {
   quiet?: boolean,
+  force?: boolean,
 }
 interface GitPushOptions {
   setUpstream?: boolean,
