@@ -3,8 +3,9 @@ import { getAvatarURLfromRepoPath, GitHub } from "./url-github"
 import { logError, logProcess } from "./log"
 import { cloneRepository, getCreationDate, getImageFilePaths, type Repository } from "./scrape-util"
 
-import type { Data } from "./types"
+// import type { Data } from "./types"
 import { intoArray } from "./util"
+import type { Data } from "./types"
 
 export async function getScrapedImageList(): Promise<Data> {
   const processedConfig = await intoArray(repositoryConfigs.map(processConfig))

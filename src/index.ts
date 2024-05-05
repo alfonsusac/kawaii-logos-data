@@ -1,5 +1,5 @@
 import { manuallyListedImages } from "./config/images-manual"
-import { updateDataBranch } from "./data-branch"
+import { updateDataBranch } from "./branch-data"
 import { write } from "bun"
 import { isInGitHubAction } from "./util"
 import { getScrapedImageList } from "./scrape"
