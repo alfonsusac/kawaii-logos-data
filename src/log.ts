@@ -1,4 +1,3 @@
-import type { ShellError } from "bun"
 import chalk from "chalk"
 
 export const logError = (message: string, error?: any) => {
