@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-05T13:18:51.455Z",
+  "updatedAt": "2024-05-05T13:33:48.688Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -26,32 +26,32 @@
       "images": [
         {
           "title": "Skrillex",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLh5aGWakAAM3dk.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLh5aGWakAAM3dk.jpeg",
           "source": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing"
         },
         {
           "title": "Porter Robinson",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLh9h3rbQAA7wik.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLh9h3rbQAA7wik.jpeg",
           "source": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing"
         },
         {
           "title": "FL Studio",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLhep0Za8AAyBff.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLhep0Za8AAyBff.jpeg",
           "source": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing"
         },
         {
           "title": "Bitwig Studio",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLhevYka0AAmU7e.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLhevYka0AAmU7e.jpeg",
           "source": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing"
         },
         {
           "title": "Ableton Live",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLhesuxaYAAqS__.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLhesuxaYAAqS__.jpeg",
           "source": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing"
         },
         {
           "title": "Logic Pro",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLm7MOob0AAimzf.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLm7MOob0AAimzf.jpeg",
           "source": ""
         }
       ]
@@ -99,12 +99,12 @@
       "images": [
         {
           "title": "svelte",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLlkf9EWwAAq3N9.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLlkf9EWwAAq3N9.jpeg",
           "source": "https://twitter.com/styxpilled/status/1781565832251719868"
         },
         {
           "title": "sveltekit",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/service-title-logo/main/assets/GLmrDPdXgAAlKvW.jpeg",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
           "source": "https://twitter.com/styxpilled/status/1781643208130216015"
         }
       ]
@@ -143,28 +143,33 @@
       "images": [
         {
           "title": "nuxtjs.png",
+          "path": "nuxtjs/nuxtjs.png",
           "imgSrc": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/nuxtjs/nuxtjs.png",
-          "source": "https://github.com/undefined/blob/main/nuxtjs/nuxtjs.png"
+          "source": "https://github.com/Crysta1221/tech_logos/blob/main/nuxtjs/nuxtjs.png"
         },
         {
           "title": "svelte.png",
+          "path": "svelte/svelte.png",
           "imgSrc": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/svelte/svelte.png",
-          "source": "https://github.com/undefined/blob/main/svelte/svelte.png"
+          "source": "https://github.com/Crysta1221/tech_logos/blob/main/svelte/svelte.png"
         },
         {
           "title": "rubyonrails.png",
+          "path": "rubyonrails/rubyonrails.png",
           "imgSrc": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/rubyonrails/rubyonrails.png",
-          "source": "https://github.com/undefined/blob/main/rubyonrails/rubyonrails.png"
+          "source": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails.png"
         },
         {
           "title": "rubyonrails_fix.png",
+          "path": "rubyonrails/rubyonrails_fix.png",
           "imgSrc": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/rubyonrails/rubyonrails_fix.png",
-          "source": "https://github.com/undefined/blob/main/rubyonrails/rubyonrails_fix.png"
+          "source": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails_fix.png"
         },
         {
           "title": "react.png",
+          "path": "react/react.png",
           "imgSrc": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/react/react.png",
-          "source": "https://github.com/undefined/blob/main/react/react.png"
+          "source": "https://github.com/Crysta1221/tech_logos/blob/main/react/react.png"
         }
       ]
     },
@@ -183,200 +188,253 @@
       "images": [
         {
           "title": "osuLogoShadowedOld.png",
+          "path": "osu/osuLogoShadowedOld.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoShadowedOld.png",
-          "source": "https://github.com/undefined/blob/main/osu/osuLogoShadowedOld.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoShadowedOld.png"
         },
         {
           "title": "osuLogoShadowed.png",
+          "path": "osu/osuLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/osu/osuLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoShadowed.png"
         },
         {
           "title": "osuLogo.png",
+          "path": "osu/osuLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogo.png",
-          "source": "https://github.com/undefined/blob/main/osu/osuLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogo.png"
         },
         {
           "title": "osuLogoOld.png",
+          "path": "osu/osuLogoOld.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoOld.png",
-          "source": "https://github.com/undefined/blob/main/osu/osuLogoOld.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoOld.png"
         },
         {
           "title": "NeovimLogo.png",
+          "path": "Neovim/NeovimLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimLogo.png",
-          "source": "https://github.com/undefined/blob/main/Neovim/NeovimLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Neovim/NeovimLogo.png"
         },
         {
           "title": "NeovimShadowed.png",
+          "path": "Neovim/NeovimShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimShadowed.png",
-          "source": "https://github.com/undefined/blob/main/Neovim/NeovimShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Neovim/NeovimShadowed.png"
         },
         {
           "title": "MirinTemplateLogoShadowed.png",
+          "path": "Mirin Template for NotITG/MirinTemplateLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png"
         },
         {
           "title": "MirinTemplateLogoFlattened.png",
+          "path": "Mirin Template for NotITG/MirinTemplateLogoFlattened.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png",
-          "source": "https://github.com/undefined/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png"
         },
         {
           "title": "MirinTemplateLogoShadowed.svg",
+          "path": "Mirin Template for NotITG/MirinTemplateLogoShadowed.svg",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg",
-          "source": "https://github.com/undefined/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg"
         },
         {
           "title": "MirinTemplateLogoFlattened.svg",
+          "path": "Mirin Template for NotITG/MirinTemplateLogoFlattened.svg",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg",
-          "source": "https://github.com/undefined/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg"
         },
         {
           "title": "MirinTemplateLogoFilled.svg",
+          "path": "Mirin Template for NotITG/MirinTemplateLogoFilled.svg",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg",
-          "source": "https://github.com/undefined/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg"
         },
         {
           "title": "MirinTemplateLogoFilled.png",
+          "path": "Mirin Template for NotITG/MirinTemplateLogoFilled.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png",
-          "source": "https://github.com/undefined/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png"
         },
         {
           "title": "DockerLogoShadowed.png",
+          "path": "Docker/DockerLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/Docker/DockerLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Docker/DockerLogoShadowed.png"
         },
         {
           "title": "DockerLogo.png",
+          "path": "Docker/DockerLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogo.png",
-          "source": "https://github.com/undefined/blob/main/Docker/DockerLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Docker/DockerLogo.png"
         },
         {
           "title": "BunLogoOld.png",
+          "path": "Bun/BunLogoOld.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoOld.png",
-          "source": "https://github.com/undefined/blob/main/Bun/BunLogoOld.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoOld.png"
         },
         {
           "title": "BunLogoShadowed.png",
+          "path": "Bun/BunLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/Bun/BunLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoShadowed.png"
         },
         {
           "title": "BunLogo.png",
+          "path": "Bun/BunLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogo.png",
-          "source": "https://github.com/undefined/blob/main/Bun/BunLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogo.png"
         },
         {
           "title": "BunLogoShadowedOld.png",
+          "path": "Bun/BunLogoShadowedOld.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoShadowedOld.png",
-          "source": "https://github.com/undefined/blob/main/Bun/BunLogoShadowedOld.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoShadowedOld.png"
         },
         {
           "title": "ImHexLogoSVGBG.svg",
+          "path": "ImHex/ImHexLogoSVGBG.svg",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBG.svg",
-          "source": "https://github.com/undefined/blob/main/ImHex/ImHexLogoSVGBG.svg"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBG.svg"
         },
         {
           "title": "ImHexLogoSVGFilled.svg",
+          "path": "ImHex/ImHexLogoSVGFilled.svg",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGFilled.svg",
-          "source": "https://github.com/undefined/blob/main/ImHex/ImHexLogoSVGFilled.svg"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGFilled.svg"
         },
         {
           "title": "ImHexLogoSVGBG.png",
+          "path": "ImHex/ImHexLogoSVGBG.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBG.png",
-          "source": "https://github.com/undefined/blob/main/ImHex/ImHexLogoSVGBG.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBG.png"
         },
         {
           "title": "ImHexLogoSVGFilled.png",
+          "path": "ImHex/ImHexLogoSVGFilled.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGFilled.png",
-          "source": "https://github.com/undefined/blob/main/ImHex/ImHexLogoSVGFilled.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGFilled.png"
         },
         {
           "title": "ImHexLogoSVGBGShadows.svg",
+          "path": "ImHex/ImHexLogoSVGBGShadows.svg",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBGShadows.svg",
-          "source": "https://github.com/undefined/blob/main/ImHex/ImHexLogoSVGBGShadows.svg"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBGShadows.svg"
         },
         {
           "title": "ImHexLogoSVGBGShadows.png",
+          "path": "ImHex/ImHexLogoSVGBGShadows.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBGShadows.png",
-          "source": "https://github.com/undefined/blob/main/ImHex/ImHexLogoSVGBGShadows.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBGShadows.png"
         },
         {
           "title": "PaperMCLogoShadowed.png",
+          "path": "PaperMC/PaperMCLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/PaperMC/PaperMCLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogoShadowed.png"
         },
         {
           "title": "PaperMCLogo.png",
+          "path": "PaperMC/PaperMCLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogo.png",
-          "source": "https://github.com/undefined/blob/main/PaperMC/PaperMCLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogo.png"
         },
         {
           "title": "VSCode.png",
+          "path": "VSCode/VSCode.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode.png",
-          "source": "https://github.com/undefined/blob/main/VSCode/VSCode.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode.png"
         },
         {
           "title": "VSCode-Thick.png",
+          "path": "VSCode/VSCode-Thick.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png",
-          "source": "https://github.com/undefined/blob/main/VSCode/VSCode-Thick.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode-Thick.png"
         },
         {
           "title": "preview.png",
+          "path": "ReplaceGuide/VSCode/preview.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ReplaceGuide/VSCode/preview.png",
-          "source": "https://github.com/undefined/blob/main/ReplaceGuide/VSCode/preview.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ReplaceGuide/VSCode/preview.png"
         },
         {
           "title": "GameChangerLogo.png",
+          "path": "GameChanger/GameChangerLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GameChanger/GameChangerLogo.png",
-          "source": "https://github.com/undefined/blob/main/GameChanger/GameChangerLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GameChanger/GameChangerLogo.png"
         },
         {
           "title": "GameChangerLogoShadowed.png",
+          "path": "GameChanger/GameChangerLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GameChanger/GameChangerLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/GameChanger/GameChangerLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GameChanger/GameChangerLogoShadowed.png"
         },
         {
           "title": "kubernetesLogoShadow.png",
+          "path": "Kubernetes/kubernetesLogoShadow.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Kubernetes/kubernetesLogoShadow.png",
-          "source": "https://github.com/undefined/blob/main/Kubernetes/kubernetesLogoShadow.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Kubernetes/kubernetesLogoShadow.png"
         },
         {
           "title": "kubernetesLogo.png",
+          "path": "Kubernetes/kubernetesLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Kubernetes/kubernetesLogo.png",
-          "source": "https://github.com/undefined/blob/main/Kubernetes/kubernetesLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Kubernetes/kubernetesLogo.png"
         },
         {
           "title": "intelliJShadow.png",
+          "path": "IntelliJIDEA/intelliJShadow.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/intelliJShadow.png",
-          "source": "https://github.com/undefined/blob/main/IntelliJIDEA/intelliJShadow.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/IntelliJIDEA/intelliJShadow.png"
         },
         {
           "title": "IntellijLogo.png",
+          "path": "IntelliJIDEA/IntellijLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/IntellijLogo.png",
-          "source": "https://github.com/undefined/blob/main/IntelliJIDEA/IntellijLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/IntelliJIDEA/IntellijLogo.png"
         },
         {
           "title": "GodotLogo.png",
+          "path": "GodotEngine/GodotLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GodotEngine/GodotLogo.png",
-          "source": "https://github.com/undefined/blob/main/GodotEngine/GodotLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GodotEngine/GodotLogo.png"
         },
         {
           "title": "GodotLogoShadow.png",
+          "path": "GodotEngine/GodotLogoShadow.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GodotEngine/GodotLogoShadow.png",
-          "source": "https://github.com/undefined/blob/main/GodotEngine/GodotLogoShadow.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GodotEngine/GodotLogoShadow.png"
         },
         {
           "title": "ElysiaJSLogoShadowed.png",
+          "path": "ElysiaJS/ElysiaJSLogoShadowed.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ElysiaJS/ElysiaJSLogoShadowed.png",
-          "source": "https://github.com/undefined/blob/main/ElysiaJS/ElysiaJSLogoShadowed.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ElysiaJS/ElysiaJSLogoShadowed.png"
         },
         {
           "title": "ElysiaJSLogo.png",
+          "path": "ElysiaJS/ElysiaJSLogo.png",
           "imgSrc": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ElysiaJS/ElysiaJSLogo.png",
-          "source": "https://github.com/undefined/blob/main/ElysiaJS/ElysiaJSLogo.png"
+          "source": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ElysiaJS/ElysiaJSLogo.png"
         }
       ]
+    },
+    {
+      "handleName": "SAWARATSUKI",
+      "pfp": "https://avatars.githubusercontent.com/SAWARATSUKI",
+      "link": {
+        "github": "https://github.com/SAWARATSUKI",
+        "twitter": "sawaratsuki1004"
+      },
+      "license": {
+        "label": "CC BY-NC-SA 4.0 with Additional Notes",
+        "href": "https://github.com/SAWARATSUKI/ServiceLogos#license"
+      },
+      "repository": "https://github.com/SAWARATSUKI/ServiceLogos",
+      "images": []
     },
     {
       "handleName": "G2-Games",
@@ -392,13 +450,15 @@
       "images": [
         {
           "title": "kate.svg",
+          "path": "kate/kate.svg",
           "imgSrc": "https://raw.githubusercontent.com/G2-Games/fun-logos/main/kate/kate.svg",
-          "source": "https://github.com/undefined/blob/main/kate/kate.svg"
+          "source": "https://github.com/G2-Games/fun-logos/blob/main/kate/kate.svg"
         },
         {
           "title": "kate-animated.svg",
+          "path": "kate/kate-animated.svg",
           "imgSrc": "https://raw.githubusercontent.com/G2-Games/fun-logos/main/kate/kate-animated.svg",
-          "source": "https://github.com/undefined/blob/main/kate/kate-animated.svg"
+          "source": "https://github.com/G2-Games/fun-logos/blob/main/kate/kate-animated.svg"
         }
       ]
     },
@@ -417,13 +477,15 @@
       "images": [
         {
           "title": "Svelte.svg",
+          "path": "logos/Svelte/Svelte.svg",
           "imgSrc": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.svg",
-          "source": "https://github.com/logos/blob/main/logos/Svelte/Svelte.svg"
+          "source": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.svg"
         },
         {
           "title": "Svelte.png",
+          "path": "logos/Svelte/Svelte.png",
           "imgSrc": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.png",
-          "source": "https://github.com/logos/blob/main/logos/Svelte/Svelte.png"
+          "source": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.png"
         }
       ]
     }
