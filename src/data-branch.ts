@@ -51,6 +51,7 @@ export async function updateDataBranch(res: Response, updatedAt: string) {
       '*',
       '!images.json',
       '!.gitignore',
+      '!README.md',
     ].join(`\n`)
     await Bun.write(".gitignore", gitignore)
     logProcess(`Modified data/images.json to "data" branch`)
