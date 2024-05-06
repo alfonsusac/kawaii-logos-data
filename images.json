@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-06T14:37:00.780Z",
+  "updatedAt": "2024-05-06T14:42:11.164Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -130,6 +130,26 @@
           "title": "Visual Studio Code Korea",
           "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-Thick.png",
           "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-Thick.png"
+        }
+      ]
+    },
+    {
+      "handleName": "alfonsusac",
+      "pfp": "https://avatars.githubusercontent.com/alfonsusac",
+      "link": {
+        "github": "alfonsusac",
+        "twitter": "alfonsusac"
+      },
+      "repository": "https://github.com/alfonsusac/kawaii-logos-data/tree/main",
+      "license": {
+        "label": "CC BY-NC-SA 4.0",
+        "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "images": [
+        {
+          "title": "Skill Issue",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skillissue.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/skillissue.svg"
         }
       ]
     },
