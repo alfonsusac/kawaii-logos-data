@@ -2,7 +2,7 @@ import { manuallyListedImages } from "./config/images-manual"
 import { updateDataBranch } from "./branch-data"
 import { getScrapedImageList } from "./scrape"
 import { logSuccess } from "./log"
-import type { Entries } from "./types"
+import type { Entries } from "../types"
 
 const updatedAt = new Date().toISOString()
 

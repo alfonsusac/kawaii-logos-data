@@ -5,7 +5,7 @@ import { cloneRepository, getCreationDate, getImageFilePaths, type Repository } 
 
 // import type { Data } from "./types"
 import { intoArray } from "./util"
-import type { Image, Entries, Entry } from "./types"
+import type { Image, Entries, Entry } from "../types"
 
 export async function getScrapedImageList(): Promise<Entries> {
   const processedConfig = await intoArray(repositoryConfigs.map(processConfig))

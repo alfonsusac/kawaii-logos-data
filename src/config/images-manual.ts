@@ -1,4 +1,4 @@
-import { type Entries } from "../types"
+import { type Entries } from "../../types"
 import { disphing } from "./manual/disphing"
 import { fumanama } from "./manual/fumanama"
 import { hvpexe } from "./manual/hvpexe"
