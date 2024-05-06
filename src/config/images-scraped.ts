@@ -75,4 +75,17 @@ export const repositoryConfigs: RepositoryConfig[] = [
       },
     },
   },
+  {
+    repoPath: "cocoa-xu/ProgrammingVTuberLogos-BEAM",
+    author: {
+      link: {
+        twitter: "_uwu_cocoa",
+        github: "cocoa-xu",
+      },
+      license: {
+        label: "CC BY-NC-SA 4.0",
+        href: "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"
+      }
+    }
+  }
 ]
