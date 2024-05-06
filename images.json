@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-06T14:34:54.515Z",
+  "updatedAt": "2024-05-06T14:37:00.780Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -27,27 +27,32 @@
         {
           "title": "Skrillex",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skrillexsticker.png",
-          "source": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing"
+          "source": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing",
+          "objectFit": "contain"
         },
         {
           "title": "Porter Robinson",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/porterrobinsonsticker.png",
-          "source": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing"
+          "source": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing",
+          "objectFit": "contain"
         },
         {
           "title": "FL Studio",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/flsticker.png",
-          "source": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing"
+          "source": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing",
+          "objectFit": "contain"
         },
         {
           "title": "Bitwig Studio",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/bitwigsticker.png",
-          "source": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing"
+          "source": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing",
+          "objectFit": "contain"
         },
         {
           "title": "Ableton Live",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/abletonsticker.png",
-          "source": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing"
+          "source": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing",
+          "objectFit": "contain"
         },
         {
           "title": "Logic Pro",
