@@ -2,7 +2,7 @@ import { Git } from "../src/git-shell"
 import { logError, logProcess } from "../src/log"
 import { generateGitIgnore, logAndDelay } from "../src/util"
 
-let types = await Bun.file(`src/types/index.ts`).text()
+let types = await Bun.file(`types/index.ts`).text()
 console.log(types)
 await logAndDelay(`Type file retrieved`)
 
