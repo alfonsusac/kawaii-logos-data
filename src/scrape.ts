@@ -15,7 +15,7 @@ export async function getScrapedImageList(): Promise<Entries> {
       handleName: result.author.handleName || result.githubUsername,
       pfp: result.author.pfp || getAvatarURLfromRepoPath(result.githubUsername),
       link: {
-        github: result.author.link?.github || GitHub.userProfileUrl(result.githubUsername),
+        github: result.author.link?.github || result.githubUsername,
         ...result.author.link,
       },
       license: result.author.license,
