@@ -2,14 +2,22 @@ export type Data = {
   updatedAt: string,
   data: Entries
 }
-export type Entry = Author & { images: Image[] }
+export type Entry = Author & {
+  images?: Image[],
+  groups?: Group[]
+}
 export type Entries = Entry[]
+
+export type Group = {
+  name: string
+  files: Image[]
+}
 
 export type Image = {
   title: string
   imgSrc: string
   source: string
-  createdAt?: Date
+  createdAt?: string
   className?: string
 }
 

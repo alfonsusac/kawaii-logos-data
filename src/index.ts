@@ -5,7 +5,7 @@ import { isInGitHubAction } from "./util"
 import { getScrapedImageList } from "./scrape"
 import { pathToGeneratedImageJSON } from "./paths"
 import { logSuccess } from "./log"
-import type { Entries } from "./types"
+import type { Entries } from "../types"
 
 const updatedAt = new Date().toISOString()
 

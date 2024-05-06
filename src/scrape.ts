@@ -5,12 +5,12 @@ import { cloneRepository, getCreationDate, getImageFilePaths, type Repository } 
 
 // import type { Data } from "./types"
 import { intoArray } from "./util"
-import type { Entries } from "./types"
+import type { Image, Entries, Entry } from "../types"
 
 export async function getScrapedImageList(): Promise<Entries> {
   const processedConfig = await intoArray(repositoryConfigs.map(processConfig))
 
-  return processedConfig.map(result => {
+  return processedConfig.map<Entry>(result => {
     return ({
       handleName: result.author.handleName || result.githubUsername,
       pfp: result.author.pfp || getAvatarURLfromRepoPath(result.githubUsername),
@@ -20,17 +20,28 @@ export async function getScrapedImageList(): Promise<Entries> {
       },
       license: result.author.license,
       repository: GitHub.repositoryUrl(result.repoPath),
-      images: result.files.map(file => ({
+      images: result.files?.map<Image>(file => ({
         title: file.name,
         path: file.path,
+        createdAt: file.createdAt,
         imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
         source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
-      }))
+        className: result.className,
+      })),
+      groups: result.groups?.map(group => ({
+        name: group.name,
+        files: group.files.map<Image>(file => ({
+          title: file.name,
+          path: file.path,
+          createdAt: file.createdAt,
+          imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
+          source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
+          className: result.className,
+        }))
+      })),
     })
   })
 }
-
-type ProcessedConfig = Awaited<ReturnType<typeof processConfig>>
 
 async function processConfig(config: RepositoryConfig) {
   const githubUsername = config.repoPath.split("/")[0]
@@ -40,19 +51,51 @@ async function processConfig(config: RepositoryConfig) {
     logProcess(`Scraped repository ${ config.repoPath }`)
 
     const files = await intoArray(filePaths.map(processFile, repository))
+      .then(files => files.filter(file => config.filter?.(file.path) ?? true))
+
+    type Group = {
+      name: string
+      files: (typeof files[0])[]
+    }
+
+    const groups = files.reduce<Group[]>((array, current) => {
+      
+      const groupName = current.path.split("/").at(-2)
+      if(!groupName) return array
+
+      const group = array.find(g => g.name === groupName)
+      if (group) {
+        group.files.push(current)
+        return array
+      }
+
+      array.push({
+        name: groupName,
+        files: [{
+          ...current,
+        }]
+      })
+
+      return array
+    }, [])
+
     return {
       ...config,
       ...repository,
       githubUsername,
-      files
+      files,
+      groups,
     }
 
   } catch (error) {
     logError(`Error scraping repository ${ config.repoPath }`)
+    console.log(error)
+    logProcess(`--- end of error scraping repository ${ config.repoPath } ---`)
     return {
       ...config,
       githubUsername,
-      files: [],
+      files: undefined,
+      groups: undefined,
     }
   }
 }

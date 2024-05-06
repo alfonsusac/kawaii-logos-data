@@ -1,10 +1,12 @@
-import { type Author } from "../types"
+import { type Author } from "../../types"
 
 export type RepositoryConfig = {
   repoPath: `${ string }/${ string }`
   author: Partial<Author>
   path?: string
-  className?: string
+  className?: string,
+  filter?: (filepath: string) => boolean,
+  // add custom groupBy?
 }
 
 export const repositoryConfigs: RepositoryConfig[] = [
@@ -35,6 +37,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
         href: "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
       },
     },
+    filter: (filepath) => !filepath.includes('preview'),
   },
   {
     repoPath: 'SAWARATSUKI/ServiceLogos',

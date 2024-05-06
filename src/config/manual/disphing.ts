@@ -1,5 +1,5 @@
 import { GitHub } from "../../url-github"
-import type { Entries } from "../../types"
+import type { Entries } from "../../../types"
 
 export const disphing: Entries[number] = {
   handleName: "disphing",
