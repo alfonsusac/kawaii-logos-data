@@ -1,5 +1,5 @@
 import { GitHub } from "./url-github"
-import { root, rootDir } from "./paths"
+import { root } from "./paths"
 
 export class Git {
   public readonly path: string

@@ -26,15 +26,9 @@ export async function updateDataBranch(res: Response, updatedAt: string) {
 
     // add data/images.json to "data" branch
     await Bun.write("images.json", stringData)
-    const gitignore = [
-      '*',
-      '!.gitignore', // You have to gitignore the gitignore
-      '!images.json',
-      '!README.md',
-    ].join(`\n`)
     await Bun.write(".gitignore", generateGitIgnore(
       "*",
-      "!.gitignore",
+      "!.gitignore", // You have to gitignore the gitignore
       '!images.json',
       '!README.md',
     ))

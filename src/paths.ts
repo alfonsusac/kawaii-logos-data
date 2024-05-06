@@ -1,4 +1,4 @@
-import { join, resolve } from 'path'
+import { resolve } from 'path'
 
 
 export const rootDir = import.meta.env['PWD'] ?? process.cwd()

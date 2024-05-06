@@ -1,4 +1,4 @@
-import { type Author, type ObjectFit } from "../../types"
+import { type Author, type ObjectFit } from "../types"
 
 export type RepositoryConfig = {
   repoPath: `${ string }/${ string }`

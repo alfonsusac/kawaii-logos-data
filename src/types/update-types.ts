@@ -1,6 +1,6 @@
-import { Git } from "../src/git-shell"
-import { logError, logProcess } from "../src/log"
-import { generateGitIgnore, logAndDelay } from "../src/util"
+import { Git } from "../git-shell"
+import { logError, logProcess } from "../log"
+import { generateGitIgnore, logAndDelay } from "../util"
 
 let types = await Bun.file(`types/index.ts`).text()
 console.log(types)
