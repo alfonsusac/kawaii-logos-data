@@ -2,6 +2,7 @@ import { type Entries } from "../../types"
 import { alfonsusac } from "./manual/alfonsusac"
 import { disphing } from "./manual/disphing"
 import { fumanama } from "./manual/fumanama"
+import { hcho3 } from "./manual/hcho3"
 import { hvpexe } from "./manual/hvpexe"
 import { ldmdiamondl } from "./manual/ldmdiamondl"
 import { saltyaom } from "./manual/saltyaom"
@@ -15,4 +16,5 @@ export const manuallyListedImages: Entries = [
   styxpilled,
   ldmdiamondl,
   alfonsusac,
+  hcho3,
 ]
