@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-06T14:31:04.781Z",
+  "updatedAt": "2024-05-06T14:34:54.515Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1046,6 +1046,68 @@
               "createdAt": "Sat, 27 Apr 2024 14:05:17 +0900\n",
               "imgSrc": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.png",
               "source": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.png"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handleName": "cocoa-xu",
+      "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
+      "link": {
+        "github": "cocoa-xu",
+        "twitter": "_uwu_cocoa"
+      },
+      "license": {
+        "label": "CC BY-NC-SA 4.0",
+        "href": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"
+      },
+      "repository": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM",
+      "images": [
+        {
+          "title": "CC-BY-NC-SA-4.0.jpg",
+          "path": "CC-BY-NC-SA-4.0.jpg",
+          "createdAt": "Wed, 24 Apr 2024 15:39:06 +0800\n",
+          "imgSrc": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/CC-BY-NC-SA-4.0.jpg",
+          "source": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/CC-BY-NC-SA-4.0.jpg"
+        },
+        {
+          "title": "Elixir.png",
+          "path": "Elixir/Elixir.png",
+          "createdAt": "Wed, 24 Apr 2024 15:39:06 +0800\n",
+          "imgSrc": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Elixir/Elixir.png",
+          "source": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Elixir/Elixir.png"
+        },
+        {
+          "title": "Gleam.png",
+          "path": "Gleam/Gleam.png",
+          "createdAt": "Wed, 24 Apr 2024 18:43:34 +0800\n",
+          "imgSrc": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Gleam/Gleam.png",
+          "source": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Gleam/Gleam.png"
+        }
+      ],
+      "groups": [
+        {
+          "name": "Elixir",
+          "files": [
+            {
+              "title": "Elixir.png",
+              "path": "Elixir/Elixir.png",
+              "createdAt": "Wed, 24 Apr 2024 15:39:06 +0800\n",
+              "imgSrc": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Elixir/Elixir.png",
+              "source": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Elixir/Elixir.png"
+            }
+          ]
+        },
+        {
+          "name": "Gleam",
+          "files": [
+            {
+              "title": "Gleam.png",
+              "path": "Gleam/Gleam.png",
+              "createdAt": "Wed, 24 Apr 2024 18:43:34 +0800\n",
+              "imgSrc": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Gleam/Gleam.png",
+              "source": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Gleam/Gleam.png"
             }
           ]
         }
