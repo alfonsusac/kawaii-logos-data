@@ -1,7 +1,7 @@
 import { GitHub } from "../../url-github"
 import type { Entries } from "../../../types"
 
-export const disphing: Entries[number] = {
+export const alfonsusac: Entries[number] = {
   handleName: "alfonsusac",
   pfp: "https://avatars.githubusercontent.com/alfonsusac",
   link: {
