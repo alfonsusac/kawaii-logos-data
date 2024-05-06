@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-06T14:42:11.164Z",
+  "updatedAt": "2024-05-06T14:49:41.439Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -150,6 +150,41 @@
           "title": "Skill Issue",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skillissue.svg",
           "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/skillissue.svg"
+        }
+      ]
+    },
+    {
+      "handleName": "hcho3",
+      "pfp": "https://avatars.githubusercontent.com/hcho3",
+      "link": {
+        "github": "hcho3",
+        "twitter": "hcho3_ml"
+      },
+      "repository": "https://github.com/hcho3/XGBoostVTuberLogo",
+      "license": {
+        "label": "CC BY-NC-SA 4.0",
+        "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+      },
+      "groups": [
+        {
+          "name": "XGBoost",
+          "files": [
+            {
+              "source": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg",
+              "title": "XGBoostVTuberLogo-Path.svg",
+              "imgSrc": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo-Path.svg"
+            },
+            {
+              "source": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png",
+              "title": "XGBoostVTuberLogo.png",
+              "imgSrc": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo.png"
+            },
+            {
+              "source": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg",
+              "title": "XGBoostVTuberLogo.svg",
+              "imgSrc": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo.svg"
+            }
+          ]
         }
       ]
     },
