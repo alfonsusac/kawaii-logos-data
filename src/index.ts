@@ -18,7 +18,7 @@ export type Image = {
   imgSrc: string
   source: string
   createdAt?: string
-  className?: string
+  objectFit?: ObjectFit
 }
 
 export type Author = {
@@ -34,3 +34,5 @@ export type Author = {
     href?: string
   }
 }
+
+export type ObjectFit = 'cover' | 'contain'
