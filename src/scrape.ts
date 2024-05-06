@@ -26,7 +26,7 @@ export async function getScrapedImageList(): Promise<Entries> {
         createdAt: file.createdAt,
         imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
         source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
-        className: result.className,
+        objectFit: result.objectFit,
       })),
       groups: result.groups?.map(group => ({
         name: group.name,
@@ -36,7 +36,7 @@ export async function getScrapedImageList(): Promise<Entries> {
           createdAt: file.createdAt,
           imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
           source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
-          className: result.className,
+          objectFit: result.objectFit,
         }))
       })),
     })

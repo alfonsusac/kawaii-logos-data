@@ -1,10 +1,10 @@
-import { type Author } from "../../types"
+import { type Author, type ObjectFit } from "../../types"
 
 export type RepositoryConfig = {
   repoPath: `${ string }/${ string }`
   author: Partial<Author>
   path?: string
-  className?: string,
+  objectFit?: ObjectFit
   filter?: (filepath: string) => boolean,
   // add custom groupBy?
 }
@@ -12,7 +12,7 @@ export type RepositoryConfig = {
 export const repositoryConfigs: RepositoryConfig[] = [
   {
     repoPath: "Crysta1221/tech_logos",
-    className: "object-contain",
+    objectFit: "contain",
     author: {
       handleName: "cr1sta_dev",
       pfp: "https://avatars.githubusercontent.com/u/70198466?v=4",
@@ -27,7 +27,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
   },
   {
     repoPath: "Aikoyori/ProgrammingVTuberLogos",
-    className: "object-contain",
+    objectFit: "contain",
     author: {
       link: {
         twitter: "Aikoyori",
@@ -41,7 +41,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
   },
   {
     repoPath: 'SAWARATSUKI/ServiceLogos',
-    className: 'object-contain',
+    objectFit: "contain",
     author: {
       link: {
         twitter: "sawaratsuki1004",
@@ -54,7 +54,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
   },
   {
     repoPath: "G2-Games/fun-logos",
-    className: "object-contain",
+    objectFit: "contain",
     author: {
       license: {
         label: "CC BY-NC-SA 4.0",
