@@ -1,7 +1,7 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: `2024-05-06T14:31:04.781Z`
+Last Updated: `2024-05-06T14:34:54.515Z`
 
 ### Authors
 - [saltyaom](undefined)
@@ -15,6 +15,7 @@ Last Updated: `2024-05-06T14:31:04.781Z`
 - [SAWARATSUKI](https://github.com/SAWARATSUKI/ServiceLogos)
 - [G2-Games](https://github.com/G2-Games/fun-logos)
 - [mkpoli](https://github.com/mkpoli/VTuber-Styled-Logos)
+- [cocoa-xu](https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM)
 
 ### Contributing
 
