@@ -1,6 +1,9 @@
 import { GitHub } from "../../url-github"
 import type { Entries } from "../../../types"
 
+// Please use this template to add your own logo that is not scraped automatically.
+// don't forget to read the notes at the very bottom of this file before making a PR.
+
 // For consistency, please use the same handleName, variable name, and the filename.
 export const _template: Entries[number] = {
   // Your handle name, this will be shown below the image, and in the sidebar of the vtuberlogos.alfon.dev
@@ -18,9 +21,10 @@ export const _template: Entries[number] = {
   // .  If you want me to automatically scrape all image of a repository, 
   //     please use `/src/config/images-scraped.ts` instead.
   repository: "https://github.com/alfonsusac/kawaii-logos-data/tree/main",
-  // License of the images (optional)
+  // License of the images (optional). For now, you can only set one license for all images.
   license: {
-    // License label
+    // License label. I recommend using CC BY-NC-SA 4.0.
+    // . you can also write "Custom" if you want to write your own, but make sure to include the link to the license file.
     label: "CC BY-NC-SA 4.0", 
     // Link to the license of the image. If its not in the repository, then use the link to the license provider (optional)
     href: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
