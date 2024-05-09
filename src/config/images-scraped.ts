@@ -88,7 +88,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
     },
   },
   {
-    repoPath: "https://github.com/andregans/code_logotype",
+    repoPath: "andregans/code_logotype",
     author: {
       link: {
         twitter: "",
