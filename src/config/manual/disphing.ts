@@ -42,6 +42,7 @@ export const disphing: Entries[number] = {
     {
       title: "Logic Pro",
       imgSrc: GitHub.selfHostedStaticAssetUrl("GLm7MOob0AAimzf.jpeg"),
+      objectFit: "cover",
       source: "" // TODO: get twitter post
     },
   ]

@@ -11,12 +11,14 @@ export const styxpilled: Entries[number] = {
     {
       title: "svelte",
       imgSrc: GitHub.selfHostedStaticAssetUrl("GLlkf9EWwAAq3N9.jpeg"),
-      source: twitterPost('styxpilled', '1781565832251719868') 
+      source: twitterPost("styxpilled", "1781565832251719868"),
+      objectFit: "cover",
     },
     {
       title: "sveltekit",
       imgSrc: GitHub.selfHostedStaticAssetUrl("GLmrDPdXgAAlKvW.jpeg"),
-      source: twitterPost('styxpilled', '1781643208130216015'),
+      source: twitterPost("styxpilled", "1781643208130216015"),
+      objectFit: "cover",
     },
-  ]
-} 
+  ],
+}
