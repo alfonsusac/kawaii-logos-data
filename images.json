@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-09T03:21:18.008Z",
+  "updatedAt": "2024-05-09T03:21:18.654Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1176,146 +1176,17 @@
       ]
     },
     {
-      "handleName": "andregans",
-      "pfp": "https://avatars.githubusercontent.com/andregans",
+      "handleName": "https:",
+      "pfp": "https://avatars.githubusercontent.com/https:",
       "link": {
-        "github": "andregans",
+        "github": "https:",
         "twitter": ""
       },
       "license": {
         "label": "Custom",
         "href": "https://github.com/andregans/code_logotype#-code-logotype"
       },
-      "repository": "https://github.com/andregans/code_logotype",
-      "images": [
-        {
-          "title": "Vercel Logotype.png",
-          "path": "Vercel Logotype.png",
-          "createdAt": "Mon, 6 May 2024 14:42:54 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vercel Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Vercel Logotype.png"
-        },
-        {
-          "title": "Bootstrap Logotype.png",
-          "path": "Bootstrap Logotype.png",
-          "createdAt": "Sat, 27 Apr 2024 14:51:35 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Bootstrap Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Bootstrap Logotype.png"
-        },
-        {
-          "title": "Django Logotype.png",
-          "path": "Django Logotype.png",
-          "createdAt": "Sun, 28 Apr 2024 19:16:38 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Django Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Django Logotype.png"
-        },
-        {
-          "title": "Cloudflare Logotype.png",
-          "path": "Cloudflare Logotype.png",
-          "createdAt": "Mon, 6 May 2024 14:42:54 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Cloudflare Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Cloudflare Logotype.png"
-        },
-        {
-          "title": "Github Logotype.png",
-          "path": "Github Logotype.png",
-          "createdAt": "Mon, 6 May 2024 14:42:54 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Github Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Github Logotype.png"
-        },
-        {
-          "title": "Materializecss Logotype.png",
-          "path": "Materializecss Logotype.png",
-          "createdAt": "Sat, 27 Apr 2024 14:51:35 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Materializecss Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Materializecss Logotype.png"
-        },
-        {
-          "title": "Vscode Logotype.png",
-          "path": "Vscode Logotype.png",
-          "createdAt": "Mon, 6 May 2024 14:42:54 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vscode Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Vscode Logotype.png"
-        },
-        {
-          "title": "Netlify Logotype.png",
-          "path": "Netlify Logotype.png",
-          "createdAt": "Wed, 24 Apr 2024 13:42:58 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Netlify Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Netlify Logotype.png"
-        },
-        {
-          "title": "Node JS Logotype.png",
-          "path": "Node JS Logotype.png",
-          "createdAt": "Thu, 25 Apr 2024 13:22:13 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Node JS Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Node JS Logotype.png"
-        },
-        {
-          "title": "Nuxt JS Logotype.png",
-          "path": "Nuxt JS Logotype.png",
-          "createdAt": "Thu, 25 Apr 2024 13:22:13 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Nuxt JS Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Nuxt JS Logotype.png"
-        },
-        {
-          "title": "Sublime Text Logotype.png",
-          "path": "Sublime Text Logotype.png",
-          "createdAt": "Mon, 6 May 2024 14:42:54 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Sublime Text Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Sublime Text Logotype.png"
-        },
-        {
-          "title": "Neovim Logotype.png",
-          "path": "Neovim Logotype.png",
-          "createdAt": "Wed, 24 Apr 2024 13:42:58 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Neovim Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Neovim Logotype.png"
-        },
-        {
-          "title": "NPM Logotype.png",
-          "path": "NPM Logotype.png",
-          "createdAt": "Thu, 25 Apr 2024 13:22:13 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/NPM Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/NPM Logotype.png"
-        },
-        {
-          "title": "Notepad++ Logotype.png",
-          "path": "Notepad++ Logotype.png",
-          "createdAt": "Mon, 6 May 2024 14:42:54 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Notepad++ Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Notepad++ Logotype.png"
-        },
-        {
-          "title": "Next JS Logotype.png",
-          "path": "Next JS Logotype.png",
-          "createdAt": "Wed, 24 Apr 2024 13:42:58 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Next JS Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Next JS Logotype.png"
-        },
-        {
-          "title": "Tailwindcss Logotype.png",
-          "path": "Tailwindcss Logotype.png",
-          "createdAt": "Sat, 27 Apr 2024 14:51:35 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Tailwindcss Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Tailwindcss Logotype.png"
-        },
-        {
-          "title": "Prisma Logotype.png",
-          "path": "Prisma Logotype.png",
-          "createdAt": "Sun, 28 Apr 2024 19:16:38 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Prisma Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Prisma Logotype.png"
-        },
-        {
-          "title": "Remix Logotype.png",
-          "path": "Remix Logotype.png",
-          "createdAt": "Sun, 28 Apr 2024 19:16:38 +0700\n",
-          "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Remix Logotype.png",
-          "source": "https://github.com/andregans/code_logotype/blob/main/Remix Logotype.png"
-        }
-      ],
-      "groups": []
+      "repository": "https://github.com/https://github.com/andregans/code_logotype"
     }
   ]
 }
