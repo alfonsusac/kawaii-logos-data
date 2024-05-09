@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-09T02:31:44.027Z",
+  "updatedAt": "2024-05-09T03:14:38.303Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1003,10 +1003,12 @@
         "twitter": "sawaratsuki1004"
       },
       "license": {
-        "label": "CC BY-NC-SA 4.0 with Additional Notes",
-        "href": "https://github.com/SAWARATSUKI/ServiceLogos#license"
+        "label": "Custom",
+        "href": "https://github.com/SAWARATSUKI/KawaiiLogos?tab=readme-ov-file#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9"
       },
-      "repository": "https://github.com/SAWARATSUKI/ServiceLogos"
+      "repository": "https://github.com/SAWARATSUKI/KawaiiLogos",
+      "images": [],
+      "groups": []
     },
     {
       "handleName": "G2-Games",
@@ -1172,6 +1174,19 @@
           ]
         }
       ]
+    },
+    {
+      "handleName": "https:",
+      "pfp": "https://avatars.githubusercontent.com/https:",
+      "link": {
+        "github": "https:",
+        "twitter": ""
+      },
+      "license": {
+        "label": "Custom",
+        "href": "https://github.com/andregans/code_logotype#-code-logotype"
+      },
+      "repository": "https://github.com/https://github.com/andregans/code_logotype"
     }
   ]
 }
