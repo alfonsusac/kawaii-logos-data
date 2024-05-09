@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-09T05:19:33.232Z",
+  "updatedAt": "2024-05-09T05:24:25.995Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -57,6 +57,7 @@
         {
           "title": "Logic Pro",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLm7MOob0AAimzf.jpeg",
+          "objectFit": "cover",
           "source": ""
         }
       ]
@@ -105,12 +106,14 @@
         {
           "title": "svelte",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLlkf9EWwAAq3N9.jpeg",
-          "source": "https://twitter.com/styxpilled/status/1781565832251719868"
+          "source": "https://twitter.com/styxpilled/status/1781565832251719868",
+          "objectFit": "cover"
         },
         {
           "title": "sveltekit",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
-          "source": "https://twitter.com/styxpilled/status/1781643208130216015"
+          "source": "https://twitter.com/styxpilled/status/1781643208130216015",
+          "objectFit": "cover"
         }
       ]
     },
