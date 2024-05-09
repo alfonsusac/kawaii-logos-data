@@ -37,18 +37,18 @@ export const repositoryConfigs: RepositoryConfig[] = [
         href: "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
       },
     },
-    filter: (filepath) => !filepath.includes('preview'),
+    filter: filepath => !filepath.includes("preview"),
   },
   {
-    repoPath: 'SAWARATSUKI/ServiceLogos',
+    repoPath: "SAWARATSUKI/KawaiiLogos",
     objectFit: "contain",
     author: {
       link: {
         twitter: "sawaratsuki1004",
       },
       license: {
-        label: "CC BY-NC-SA 4.0 with Additional Notes",
-        href: "https://github.com/SAWARATSUKI/ServiceLogos#license",
+        label: "Custom",
+        href: "https://github.com/SAWARATSUKI/KawaiiLogos?tab=readme-ov-file#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9",
       },
     },
   },
@@ -80,12 +80,23 @@ export const repositoryConfigs: RepositoryConfig[] = [
     author: {
       link: {
         twitter: "_uwu_cocoa",
-        github: "cocoa-xu",
       },
       license: {
         label: "CC BY-NC-SA 4.0",
-        href: "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"
-      }
-    }
-  }
-]
+        href: "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
+      },
+    },
+  },
+  {
+    repoPath: "https://github.com/andregans/code_logotype",
+    author: {
+      link: {
+        twitter: "",
+      },
+      license: {
+        label: "Custom",
+        href: "https://github.com/andregans/code_logotype#-code-logotype",
+      },
+    },
+  },
+];
