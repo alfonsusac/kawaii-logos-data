@@ -101,7 +101,7 @@ async function processConfig(config: RepositoryConfig) {
 }
 
 async function processFile(this: Repository, path: string) {
-  const createdAt = await getCreationDate(path, this.git)
+  const createdAt = (await getCreationDate(path, this.git)).replaceAll('\n','')
   const name = path.split("/").pop()!
   const branch = this.branch
   return { path, name, createdAt, branch }
