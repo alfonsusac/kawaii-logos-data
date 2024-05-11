@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-11T06:23:25.061Z",
+  "updatedAt": "2024-05-11T07:18:37.849Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1020,6 +1020,14 @@
           "objectFit": "contain"
         },
         {
+          "title": "TypeScript.png",
+          "path": "TypeScript/TypeScript.png",
+          "createdAt": "Sat, 11 May 2024 15:24:41 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/TypeScript.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png",
+          "objectFit": "contain"
+        },
+        {
           "title": "418 I'm a teapot.png",
           "path": "ResponseCode/418 I'm a teapot.png",
           "createdAt": "Thu, 9 May 2024 21:19:02 +0900",
@@ -1070,6 +1078,19 @@
               "createdAt": "Fri, 10 May 2024 18:57:20 +0900",
               "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/React.png",
               "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/React.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "files": [
+            {
+              "title": "TypeScript.png",
+              "path": "TypeScript/TypeScript.png",
+              "createdAt": "Sat, 11 May 2024 15:24:41 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/TypeScript.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png",
               "objectFit": "contain"
             }
           ]
