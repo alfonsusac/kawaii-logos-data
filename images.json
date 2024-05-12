@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-12T08:22:46.488Z",
+  "updatedAt": "2024-05-12T09:18:02.232Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1012,6 +1012,14 @@
       "repository": "https://github.com/SAWARATSUKI/KawaiiLogos",
       "images": [
         {
+          "title": "Kotlin.png",
+          "path": "Kotlin/Kotlin.png",
+          "createdAt": "Sun, 12 May 2024 18:06:08 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/Kotlin.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/Kotlin.png",
+          "objectFit": "contain"
+        },
+        {
           "title": "React.png",
           "path": "React/React.png",
           "createdAt": "Fri, 10 May 2024 18:57:20 +0900",
@@ -1069,6 +1077,19 @@
         }
       ],
       "groups": [
+        {
+          "name": "Kotlin",
+          "files": [
+            {
+              "title": "Kotlin.png",
+              "path": "Kotlin/Kotlin.png",
+              "createdAt": "Sun, 12 May 2024 18:06:08 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/Kotlin.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/Kotlin.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
         {
           "name": "React",
           "files": [
