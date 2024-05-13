@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-13T12:36:18.187Z",
+  "updatedAt": "2024-05-13T13:21:34.120Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1020,6 +1020,14 @@
           "objectFit": "contain"
         },
         {
+          "title": "Hono.png",
+          "path": "Hono/Hono.png",
+          "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/Hono.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/Hono.png",
+          "objectFit": "contain"
+        },
+        {
           "title": "React.png",
           "path": "React/React.png",
           "createdAt": "Fri, 10 May 2024 18:57:20 +0900",
@@ -1028,11 +1036,35 @@
           "objectFit": "contain"
         },
         {
+          "title": "IamProgrammer!.png",
+          "path": "IamSeries/IamProgrammer!.png",
+          "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/IamProgrammer!.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/IamProgrammer!.png",
+          "objectFit": "contain"
+        },
+        {
+          "title": "IamProgrammerEnglish.png",
+          "path": "IamSeries/IamProgrammerEnglish.png",
+          "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/IamProgrammerEnglish.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/IamProgrammerEnglish.png",
+          "objectFit": "contain"
+        },
+        {
           "title": "TypeScript.png",
           "path": "TypeScript/TypeScript.png",
           "createdAt": "Sat, 11 May 2024 15:24:41 +0900",
           "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/TypeScript.png",
           "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png",
+          "objectFit": "contain"
+        },
+        {
+          "title": "LaravelTransparent.png",
+          "path": "Laravel/LaravelTransparent.png",
+          "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/LaravelTransparent.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/LaravelTransparent.png",
           "objectFit": "contain"
         },
         {
@@ -1091,6 +1123,19 @@
           ]
         },
         {
+          "name": "Hono",
+          "files": [
+            {
+              "title": "Hono.png",
+              "path": "Hono/Hono.png",
+              "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/Hono.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/Hono.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
+        {
           "name": "React",
           "files": [
             {
@@ -1104,6 +1149,27 @@
           ]
         },
         {
+          "name": "IamSeries",
+          "files": [
+            {
+              "title": "IamProgrammer!.png",
+              "path": "IamSeries/IamProgrammer!.png",
+              "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/IamProgrammer!.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/IamProgrammer!.png",
+              "objectFit": "contain"
+            },
+            {
+              "title": "IamProgrammerEnglish.png",
+              "path": "IamSeries/IamProgrammerEnglish.png",
+              "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/IamProgrammerEnglish.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/IamProgrammerEnglish.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
+        {
           "name": "TypeScript",
           "files": [
             {
@@ -1112,6 +1178,19 @@
               "createdAt": "Sat, 11 May 2024 15:24:41 +0900",
               "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/TypeScript.png",
               "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
+        {
+          "name": "Laravel",
+          "files": [
+            {
+              "title": "LaravelTransparent.png",
+              "path": "Laravel/LaravelTransparent.png",
+              "createdAt": "Mon, 13 May 2024 22:17:41 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/LaravelTransparent.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/LaravelTransparent.png",
               "objectFit": "contain"
             }
           ]
