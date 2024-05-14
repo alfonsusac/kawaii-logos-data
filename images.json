@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-14T09:20:24.715Z",
+  "updatedAt": "2024-05-14T10:22:21.985Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1012,6 +1012,14 @@
       "repository": "https://github.com/SAWARATSUKI/KawaiiLogos",
       "images": [
         {
+          "title": "ATProtocol.png",
+          "path": "ATProtocol/ATProtocol.png",
+          "createdAt": "Tue, 14 May 2024 18:56:05 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/ATProtocol.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/ATProtocol.png",
+          "objectFit": "contain"
+        },
+        {
           "title": "Kotlin.png",
           "path": "Kotlin/Kotlin.png",
           "createdAt": "Sun, 12 May 2024 18:06:08 +0900",
@@ -1057,6 +1065,14 @@
           "createdAt": "Sat, 11 May 2024 15:24:41 +0900",
           "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/TypeScript.png",
           "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png",
+          "objectFit": "contain"
+        },
+        {
+          "title": "Node.js.png",
+          "path": "Node.js/Node.js.png",
+          "createdAt": "Tue, 14 May 2024 19:05:48 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/Node.js.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/Node.js.png",
           "objectFit": "contain"
         },
         {
@@ -1109,6 +1125,19 @@
         }
       ],
       "groups": [
+        {
+          "name": "ATProtocol",
+          "files": [
+            {
+              "title": "ATProtocol.png",
+              "path": "ATProtocol/ATProtocol.png",
+              "createdAt": "Tue, 14 May 2024 18:56:05 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/ATProtocol.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/ATProtocol.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
         {
           "name": "Kotlin",
           "files": [
@@ -1178,6 +1207,19 @@
               "createdAt": "Sat, 11 May 2024 15:24:41 +0900",
               "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/TypeScript.png",
               "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/TypeScript.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
+        {
+          "name": "Node.js",
+          "files": [
+            {
+              "title": "Node.js.png",
+              "path": "Node.js/Node.js.png",
+              "createdAt": "Tue, 14 May 2024 19:05:48 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/Node.js.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/Node.js.png",
               "objectFit": "contain"
             }
           ]
