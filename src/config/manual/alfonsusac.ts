@@ -19,5 +19,10 @@ export const alfonsusac: Entries[number] = {
       imgSrc: GitHub.selfHostedStaticAssetUrl("skillissue.svg"),
       source: 'https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/skillissue.svg',
     },
+    {
+      title: "LGTM",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("lgtm.svg"),
+      source: 'https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.svg'
+    }
   ]
 }
