@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-18T10:18:40.710Z",
+  "updatedAt": "2024-05-18T10:19:27.831Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -153,6 +153,11 @@
           "title": "Skill Issue",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skillissue.svg",
           "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/skillissue.svg"
+        },
+        {
+          "title": "LGTM",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/lgtm.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.svg"
         }
       ]
     },
