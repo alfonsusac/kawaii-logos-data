@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-18T09:19:57.184Z",
+  "updatedAt": "2024-05-18T10:18:40.710Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1012,6 +1012,14 @@
       "repository": "https://github.com/SAWARATSUKI/KawaiiLogos",
       "images": [
         {
+          "title": "IntelliJ IDEA.png",
+          "path": "IntelliJ IDEA/IntelliJ IDEA.png",
+          "createdAt": "Sat, 18 May 2024 18:32:23 +0900",
+          "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/IntelliJ IDEA.png",
+          "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/IntelliJ IDEA.png",
+          "objectFit": "contain"
+        },
+        {
           "title": "503 ServiceUnavailable.png",
           "path": "ResponseCode/503 ServiceUnavailable.png",
           "createdAt": "Thu, 9 May 2024 21:19:02 +0900",
@@ -1125,6 +1133,19 @@
         }
       ],
       "groups": [
+        {
+          "name": "IntelliJ IDEA",
+          "files": [
+            {
+              "title": "IntelliJ IDEA.png",
+              "path": "IntelliJ IDEA/IntelliJ IDEA.png",
+              "createdAt": "Sat, 18 May 2024 18:32:23 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/IntelliJ IDEA.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/IntelliJ IDEA.png",
+              "objectFit": "contain"
+            }
+          ]
+        },
         {
           "name": "ResponseCode",
           "files": [
