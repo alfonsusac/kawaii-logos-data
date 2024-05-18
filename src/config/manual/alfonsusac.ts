@@ -21,8 +21,8 @@ export const alfonsusac: Entries[number] = {
     },
     {
       title: "LGTM",
-      imgSrc: GitHub.selfHostedStaticAssetUrl("lgtm.svg"),
-      source: 'https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.svg'
+      imgSrc: GitHub.selfHostedStaticAssetUrl("lgtm.png"),
+      source: 'https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.png'
     }
   ]
 }
