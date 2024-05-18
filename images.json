@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-18T16:25:55.556Z",
+  "updatedAt": "2024-05-18T16:28:34.816Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -156,8 +156,8 @@
         },
         {
           "title": "LGTM",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/lgtm.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.svg"
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/lgtm.png",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.png"
         }
       ]
     },
