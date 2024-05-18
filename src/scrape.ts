@@ -50,8 +50,16 @@ async function processConfig(config: RepositoryConfig) {
     const filePaths = await getImageFilePaths(repository.cwd)
     logProcess(`Scraped repository ${ config.repoPath }`)
 
+    console.log(filePaths)
+
     const files = await intoArray(filePaths.map(processFile, repository))
-      .then(files => files.filter(file => config.filter?.(file.path) ?? true))
+      .then(files => files.filter(file => {
+        console.log(file, config.filter?.(file.path))
+        
+        return config.filter?.(file.path) ?? true
+      }))
+
+    // console.log(config.filter?.(file.path))
 
     type Group = {
       name: string
@@ -59,9 +67,9 @@ async function processConfig(config: RepositoryConfig) {
     }
 
     const groups = files.reduce<Group[]>((array, current) => {
-      
+
       const groupName = current.path.split("/").at(-2)
-      if(!groupName) return array
+      if (!groupName) return array
 
       const group = array.find(g => g.name === groupName)
       if (group) {
@@ -101,7 +109,8 @@ async function processConfig(config: RepositoryConfig) {
 }
 
 async function processFile(this: Repository, path: string) {
-  const createdAt = (await getCreationDate(path, this.git)).replaceAll('\n','')
+  const createdAt = (await getCreationDate(path, this.git))
+  logProcess(` -> ${ path }`) 
   const name = path.split("/").pop()!
   const branch = this.branch
   return { path, name, createdAt, branch }
