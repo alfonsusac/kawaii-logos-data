@@ -1,7 +1,7 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: `2024-05-18T16:22:23.486Z`
+Last Updated: `2024-05-18T16:25:55.556Z`
 
 ### Authors
 - [saltyaom](undefined)
@@ -12,7 +12,13 @@ Last Updated: `2024-05-18T16:22:23.486Z`
 - [lDMDiamondl](https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/)
 - [alfonsusac](https://github.com/alfonsusac/kawaii-logos-data/tree/main)
 - [hcho3](https://github.com/hcho3/XGBoostVTuberLogo)
+- [cr1sta_dev](https://github.com/Crysta1221/tech_logos)
+- [Aikoyori](https://github.com/Aikoyori/ProgrammingVTuberLogos)
 - [SAWARATSUKI](https://github.com/SAWARATSUKI/KawaiiLogos)
+- [G2-Games](https://github.com/G2-Games/fun-logos)
+- [mkpoli](https://github.com/mkpoli/VTuber-Styled-Logos)
+- [cocoa-xu](https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM)
+- [andregans](https://github.com/andregans/code_logotype)
 
 ### Contributing
 
