@@ -28,10 +28,10 @@ export async function getScrapedImageList(): Promise<Entries> {
         name: group.name,
         files: group.files.map<Image>(file => ({
           title: file.name,
-          path: file.path,
+          path: file.filePath.original,
           createdAt: file.createdAt,
-          imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
-          source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
+          imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.filePath.original),
+          source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.filePath.original),
           objectFit: result.objectFit,
           history: file.history,
         }))
@@ -56,10 +56,16 @@ async function processConfig(userConfig: RepositoryConfig) {
         const fileFilterer = (item: string) => config.filter.every(filter => filter(item))
         filePaths = filePaths.filter(fileFilterer)
 
-        const preprocessFilePath = (item: string) => config.preprocess.reduce((item, preprocessor) => preprocessor(item), item)
-        filePaths = filePaths.map(preprocessFilePath)
+        const preprocessFilePath = (item: string) => config.preprocess
+          .reduce(
+            (item, preprocessor) => {
+              return { preprocessed: preprocessor(item.preprocessed), original: item.original }
+            },
+            { preprocessed: item, original: item }
+          )
+        const preprocessedfilePaths = filePaths.map(preprocessFilePath)
 
-        const files = await resolveIntoArray(filePaths.map(processFile, repository))
+        const files = await resolveIntoArray(preprocessedfilePaths.map(processFile, repository))
         const groups = processFilesIntoGroups(files)
         return groups
 
@@ -90,14 +96,14 @@ function getConfig(config: RepositoryConfig) {
 
 // ------
 
-async function processFile(this: Repository, path: string) {
-  logProcess(`Processed file ${ path }`)
-  const createdAt = await getCreationDate(path, this.git)
-  const history = await getHistory(path, this.git)
-  const name = path.split("/").pop()!
+async function processFile(this: Repository, filePath: { preprocessed: string, original: string }) {
+  logProcess(`Processed file ${ filePath.preprocessed }`)
+  const createdAt = await getCreationDate(filePath.original, this.git)
+  const history = await getHistory(filePath.original, this.git)
+  const name = filePath.preprocessed.split("/").pop() ?? filePath.preprocessed
   const branch = this.branch
-  logProcess(`Processed file ${ path }`)
-  return { path, name, createdAt, branch, history }
+  logProcess(`Processed file ${ filePath.preprocessed }`)
+  return { name, createdAt, branch, history, filePath }
 }
 type ProcessedFile = Awaited<ReturnType<typeof processFile>>
 
@@ -113,7 +119,7 @@ function processFilesIntoGroups(files: ProcessedFile[]) {
   const groups: Group[] = []
 
   files.forEach(file => {
-    const groupName = file.path.split("/").at(-2) ?? file.path.split("/").at(-1) ?? file.path
+    const groupName = file.filePath.preprocessed.split("/").at(-2) ?? file.filePath.preprocessed.split("/").at(-1) ?? file.filePath.preprocessed
     const group = groups.find(g => g.name === groupName)
     if (group) {
       return group.files.push(file)
