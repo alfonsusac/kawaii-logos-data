@@ -1,19 +1,29 @@
 import { manuallyListedImages } from "./config/images-manual"
-import { updateDataBranch } from "./branch-data"
 import { getScrapedImageList } from "./scrape"
-import { logSuccess } from "./log"
+import { logError, logProcess, logSuccess } from "./lib/log"
+import { isInGitHubAction, revalidateToken, toJson } from "./lib/util"
 import type { Entries } from "../types"
+import { revalidateWebsite } from "./lib/revalidate"
+import { storeResult } from "./lib/result"
 
-const updatedAt = new Date().toISOString()
+// --------
+try {
 
-const data: Entries = [
-  ...manuallyListedImages,
-  ...await getScrapedImageList(),
-]
+  const data: Entries = [
+    ...manuallyListedImages,
+    ...await getScrapedImageList()
+  ]
+  
+  await storeResult(data)
 
-const response = { updatedAt, data }
-export type Response = typeof response
+  if (isInGitHubAction && revalidateToken)
+    await revalidateWebsite()
 
-await updateDataBranch(response, updatedAt)
+  logSuccess("Script Finished")
 
-logSuccess("Script Finished")
+} catch (error) {
+
+  logError(error)
+
+}
+// --------

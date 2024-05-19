@@ -1,6 +1,6 @@
-import { GitHub } from "../../url-github"
+import { GitHub } from "../../lib/url-github"
 import type { Entries } from "../../../types"
-import { twitterPost } from "../../url"
+import { twitterPost } from "../../lib/url"
 
 export const styxpilled: Entries[number] = {
   handleName: "styxpilled",

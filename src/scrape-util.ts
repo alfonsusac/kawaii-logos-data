@@ -1,8 +1,8 @@
 import { existsSync as exists } from "fs"
-import { Git } from "./git-shell"
-import { allImgGlob } from "./util"
-import { pathToTempClonedRepo, root } from "./paths"
-import { logProcess } from "./log"
+import { Git } from "./lib/git-shell"
+import { allImgGlob, delay } from "./lib/util"
+import { pathToTempClonedRepo, root } from "./lib/path"
+import { logProcess } from "./lib/log"
 
 export type Repository = Awaited<ReturnType<typeof cloneRepository>>
 
@@ -34,17 +34,4 @@ export async function getImageFilePaths(cwd: string) {
   )
 }
 
-export async function getCreationDate(file: string, git: Git) {
-  let res
-  try {
-    res = (await git.log(file, {
-      diffFilter: "A",
-      format: "%cD",
-      date: "short",
-    }).text()).replaceAll(`\n`, ``)
-  } catch (error) {
-  } finally {
-    // console.log(file, res, encodeURI(file))
-  }
-  return res?.replaceAll(`\n`, ``)
-}
+

@@ -1,33 +1,29 @@
 import { repositoryConfigs, type RepositoryConfig } from "./config/images-scraped"
-import { getAvatarURLfromRepoPath, GitHub } from "./url-github"
-import { logError, logProcess } from "./log"
-import { cloneRepository, getCreationDate, getImageFilePaths, type Repository } from "./scrape-util"
-
-// import type { Data } from "./types"
-import { intoArray } from "./util"
+import { getAvatarURLfromRepoPath, GitHub } from "./lib/url-github"
+import { logError, logProcess } from "./lib/log"
+import { cloneRepository, getImageFilePaths, type Repository } from "./scrape-util"
+import { isInGitHubAction, resolveIntoArray } from "./lib/util"
 import type { Image, Entries, Entry } from "../types"
+import { getCreationDate, getHistory } from "./lib/history"
 
 export async function getScrapedImageList(): Promise<Entries> {
-  const processedConfig = await intoArray(repositoryConfigs.map(processConfig))
+
+  const processedConfig = await resolveIntoArray(repositoryConfigs
+    // .filter(cfg => !isInGitHubAction ? cfg.repoPath === "mkpoli/VTuber-Styled-Logos" : true) // Dev only
+    .filter(cfg => !isInGitHubAction ? cfg.repoPath === "SAWARATSUKI/KawaiiLogos" : true) // Dev only
+    .map(processConfig)
+  )
 
   return processedConfig.map<Entry>(result => {
     return ({
-      handleName: result.author.handleName || result.githubUsername,
-      pfp: result.author.pfp || getAvatarURLfromRepoPath(result.githubUsername),
+      handleName: result.handleName || result.githubUsername,
+      pfp: result.pfp || getAvatarURLfromRepoPath(result.githubUsername),
       link: {
-        github: result.author.link?.github || result.githubUsername,
-        ...result.author.link,
+        github: result.githubUsername,
+        twitter: result.twitter
       },
-      license: result.author.license,
+      license: result.license,
       repository: GitHub.repositoryUrl(result.repoPath),
-      images: result.files?.map<Image>(file => ({
-        title: file.name,
-        path: file.path,
-        createdAt: file.createdAt,
-        imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
-        source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
-        objectFit: result.objectFit,
-      })),
       groups: result.groups?.map(group => ({
         name: group.name,
         files: group.files.map<Image>(file => ({
@@ -37,81 +33,97 @@ export async function getScrapedImageList(): Promise<Entries> {
           imgSrc: GitHub.rawFileUrl(result.repoPath, file.branch, file.path),
           source: GitHub.sourceFilePageUrl(result.repoPath, file.branch, file.path),
           objectFit: result.objectFit,
+          history: file.history,
         }))
       })),
     })
   })
 }
 
-async function processConfig(config: RepositoryConfig) {
-  const githubUsername = config.repoPath.split("/")[0]
-  try {
-    const repository = await cloneRepository(config.repoPath)
-    const filePaths = await getImageFilePaths(repository.cwd)
-    logProcess(`Scraped repository ${ config.repoPath }`)
+// ------
 
-    console.log(filePaths)
+async function processConfig(userConfig: RepositoryConfig) {
 
-    const files = await intoArray(filePaths.map(processFile, repository))
-      .then(files => files.filter(file => {
-        console.log(file, config.filter?.(file.path))
-        
-        return config.filter?.(file.path) ?? true
-      }))
+  const config = getConfig(userConfig)
 
-    // console.log(config.filter?.(file.path))
+  const groups = await (
+    async () => {
+      try {
+        const repository = await cloneRepository(config.repoPath)
+        let filePaths = await getImageFilePaths(repository.cwd)
+        logProcess(`Scraped repository ${ config.repoPath }`)
 
-    type Group = {
-      name: string
-      files: (typeof files[0])[]
-    }
+        const fileFilterer = (item: string) => config.filter.every(filter => filter(item))
+        filePaths = filePaths.filter(fileFilterer)
 
-    const groups = files.reduce<Group[]>((array, current) => {
+        const preprocessFilePath = (item: string) => config.preprocess.reduce((item, preprocessor) => preprocessor(item), item)
+        filePaths = filePaths.map(preprocessFilePath)
 
-      const groupName = current.path.split("/").at(-2)
-      if (!groupName) return array
+        const files = await resolveIntoArray(filePaths.map(processFile, repository))
+        const groups = processFilesIntoGroups(files)
+        return groups
 
-      const group = array.find(g => g.name === groupName)
-      if (group) {
-        group.files.push(current)
-        return array
+      } catch (error) {
+        logError(error, `Error scraping repository ${ config.repoPath }`)
+        logProcess(`--- end of error scraping repository ${ config.repoPath } ---`)
+        return []
       }
-
-      array.push({
-        name: groupName,
-        files: [{
-          ...current,
-        }]
-      })
-
-      return array
-    }, [])
-
-    return {
-      ...config,
-      ...repository,
-      githubUsername,
-      files,
-      groups,
     }
+  )()
 
-  } catch (error) {
-    logError(`Error scraping repository ${ config.repoPath }`)
-    console.log(error)
-    logProcess(`--- end of error scraping repository ${ config.repoPath } ---`)
-    return {
-      ...config,
-      githubUsername,
-      files: undefined,
-      groups: undefined,
-    }
+  return {
+    ...config,
+    groups,
   }
 }
 
+// ------
+
+function getConfig(config: RepositoryConfig) {
+  return {
+    ...config,
+    filter: config.filter ?? [],
+    preprocess: config.preprocess ?? [],
+    githubUsername: config.repoPath.split("/")[0],
+  }
+}
+
+// ------
+
 async function processFile(this: Repository, path: string) {
-  const createdAt = (await getCreationDate(path, this.git))
-  logProcess(` -> ${ path }`) 
+  logProcess(`Processed file ${ path }`)
+  const createdAt = await getCreationDate(path, this.git)
+  const history = await getHistory(path, this.git)
   const name = path.split("/").pop()!
   const branch = this.branch
-  return { path, name, createdAt, branch }
+  logProcess(`Processed file ${ path }`)
+  return { path, name, createdAt, branch, history }
+}
+type ProcessedFile = Awaited<ReturnType<typeof processFile>>
+
+// ------
+
+type Group = {
+  name: string
+  files: ProcessedFile[]
+}
+
+function processFilesIntoGroups(files: ProcessedFile[]) {
+
+  const groups: Group[] = []
+
+  files.forEach(file => {
+    const groupName = file.path.split("/").at(-2) ?? file.path.split("/").at(-1) ?? file.path
+    const group = groups.find(g => g.name === groupName)
+    if (group) {
+      return group.files.push(file)
+    }
+    return groups.push({
+      name: groupName,
+      files: [file]
+    })
+  })
+
+  return groups
+
 }

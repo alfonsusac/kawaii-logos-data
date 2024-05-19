@@ -1,5 +1,5 @@
 import { GitHub } from "./url-github"
-import { root } from "./paths"
+import { root } from "./path"
 
 export class Git {
   public readonly path: string
@@ -42,8 +42,8 @@ export class Git {
   }
 
   static log = (what: string, args?: GitLogOptions, cwd?: string) => {
-    const cmd = Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ what }`
-    return cwd ? cmd.cwd(cwd) : cmd
+    const cmd = Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ args?.nameStatus ? "--name-status" : "" } ${ args?.pretty ? `--pretty=${ args.pretty }` : "" } -- "${ { raw: what } }"`
+    return cwd ? cmd.cwd(cwd).text() : cmd.text()
   }
   log = (what: string, args?: GitLogOptions) => {
     return Git.log(what, args, this.path)
@@ -78,7 +78,7 @@ export class Git {
 interface GitCloneOptions {
   quiet?: boolean
 }
-interface GitAddOptions { 
+interface GitAddOptions {
 }
 interface GitBranchOptions {
   showCurrent?: boolean,
@@ -88,6 +88,8 @@ interface GitLogOptions {
   date?: string,
   diffFilter?: string,
   format?: string,
+  nameStatus?: boolean,
+  pretty?: string,
 }
 interface GitPullOptions {
   quiet?: boolean,

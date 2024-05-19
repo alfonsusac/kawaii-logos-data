@@ -19,6 +19,7 @@ export type Image = {
   source: string
   createdAt?: string
   objectFit?: ObjectFit
+  history?: History[]
 }
 
 export type Author = {
@@ -33,6 +34,23 @@ export type Author = {
     label?: string
     href?: string
   }
+}
+
+/**
+ * A : Added
+ * C : Copied
+ * D : Deleted
+ * M : Modified
+ * R : Renamed
+ * T : Type changed
+ * U : Unmerged
+ * X : Unknown
+ * B : Broken
+ */
+export type History = {
+  date: string
+  message: string
+  status: "A" | "C" | "D" | "M" | "R" | "T" | "U" | "X" | "B"
 }
 
 export type ObjectFit = 'cover' | 'contain'

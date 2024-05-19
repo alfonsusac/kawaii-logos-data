@@ -1,4 +1,4 @@
-import { GitHub } from "../../url-github"
+import { GitHub } from "../../lib/url-github"
 import type { Entries } from "../../../types"
 
 // Please use this template to add your own logo that is not scraped automatically.

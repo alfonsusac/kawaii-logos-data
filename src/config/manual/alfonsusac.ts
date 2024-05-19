@@ -1,14 +1,14 @@
-import { GitHub } from "../../url-github"
-import type { Entries } from "../../../types"
+import { GitHub } from "../../lib/url-github"
+import type { Entry } from "../../../types"
 
-export const alfonsusac: Entries[number] = {
+export const alfonsusac: Entry = {
   handleName: "alfonsusac",
   pfp: "https://avatars.githubusercontent.com/alfonsusac",
   link: {
     github: "alfonsusac",
     twitter: "alfonsusac",
   },
-  repository: "https://github.com/alfonsusac/kawaii-logos-data/tree/main",
+  repository: "https://github.com/alfonsusac/kawaii-logos-data",
   license: {
     label: "CC BY-NC-SA 4.0",
     href: "https://creativecommons.org/licenses/by-nc-sa/4.0/"

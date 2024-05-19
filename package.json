@@ -1,7 +1,6 @@
 {
   "name": "kawaii-logos-data",
   "author": "alfonsusac",
-
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
@@ -11,14 +10,13 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "bun src/index.ts",
+    "dev": "bun --env-file=src/.env src/index.ts",
     "types": "bun types/update-types.ts"
   },
   "dependencies": {
     "chalk": "^5.3.0"
   },
   "version": "1.0.0",
-  
   "main": "./src/index.ts",
   "types": "./types/update-types.ts"
 }

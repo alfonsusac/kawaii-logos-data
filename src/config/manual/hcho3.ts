@@ -1,4 +1,4 @@
-import { GitHub } from "../../url-github"
+import { GitHub } from "../../lib/url-github"
 import type { Entries } from "../../../types"
 
 export const hcho3: Entries[number] = {
