@@ -11,7 +11,6 @@ export type RepositoryConfig = {
   path?: string
   filter?: ((filepath: string) => boolean)[],
   preprocess?: ((filepath: string) => string)[],
-  // add custom groupBy?
 }
 
 
@@ -53,11 +52,12 @@ export const repositoryConfigs: RepositoryConfig[] = [
     repoPath: "cocoa-xu/ProgrammingVTuberLogos-BEAM",
     twitter: "_uwu_cocoa",
     license: createLicense("CC BY-NC-SA 4.0", "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"),
+    filter: [filepath => !filepath.includes("CC-BY-NC-SA-4.0.jpg")]
   },
   {
     repoPath: "andregans/code_logotype",
     license: createLicense("Custom", "https://github.com/andregans/code_logotype#-code-logotype"),
-  }
+  },
 ]
 
 
