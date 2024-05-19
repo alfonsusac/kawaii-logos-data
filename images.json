@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-19T15:50:48.452Z",
+  "updatedAt": "2024-05-19T15:59:37.173Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1408,25 +1408,6 @@
       },
       "repository": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM",
       "groups": [
-        {
-          "name": "CC-BY-NC-SA-4.0.jpg",
-          "files": [
-            {
-              "title": "CC-BY-NC-SA-4.0.jpg",
-              "path": "CC-BY-NC-SA-4.0.jpg",
-              "createdAt": "Wed, 24 Apr 2024 15:39:06 +0800",
-              "imgSrc": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/CC-BY-NC-SA-4.0.jpg",
-              "source": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/CC-BY-NC-SA-4.0.jpg",
-              "history": [
-                {
-                  "date": "Wed, 24 Apr 2024 15:39:06 +0800",
-                  "message": "added Elixir logo",
-                  "status": "A"
-                }
-              ]
-            }
-          ]
-        },
         {
           "name": "Elixir",
           "files": [
