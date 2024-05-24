@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-24T14:18:42.012Z",
+  "updatedAt": "2024-05-24T14:58:26.145Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1287,6 +1287,26 @@
           ]
         },
         {
+          "name": "Replit",
+          "files": [
+            {
+              "title": "Replit.png",
+              "path": "Replit/Replit.png",
+              "createdAt": "Fri, 24 May 2024 23:31:29 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/Replit.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/Replit.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Fri, 24 May 2024 23:31:29 +0900",
+                  "message": "Replit",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Kotlin",
           "files": [
             {
@@ -1941,6 +1961,67 @@
                 {
                   "date": "Wed, 24 Apr 2024 13:42:58 +0700",
                   "message": "first uploud",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handleName": "syke9p3",
+      "pfp": "https://avatars.githubusercontent.com/syke9p3",
+      "link": {
+        "github": "syke9p3"
+      },
+      "license": {
+        "label": "CC BY-NC-SA 4.0",
+        "href": "https://github.com/syke9p3/Syke-VTuber-Icons/tree/main?tab=readme-ov-file#license"
+      },
+      "repository": "https://github.com/syke9p3/Syke-VTuber-Icons",
+      "groups": [
+        {
+          "name": "Linux Mint",
+          "files": [
+            {
+              "title": "MintStroked.png",
+              "path": "Linux Mint/MintStroked.png",
+              "createdAt": "Fri, 24 May 2024 16:15:04 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/MintStroked.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/MintStroked.png",
+              "history": [
+                {
+                  "date": "Fri, 24 May 2024 16:15:04 +0800",
+                  "message": "Renamed Icons",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "MintShadowed.png",
+              "path": "Linux Mint/MintShadowed.png",
+              "createdAt": "Fri, 24 May 2024 16:15:04 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/MintShadowed.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/MintShadowed.png",
+              "history": [
+                {
+                  "date": "Fri, 24 May 2024 16:15:04 +0800",
+                  "message": "Renamed Icons",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "Mint.png",
+              "path": "Linux Mint/Mint.png",
+              "createdAt": "Fri, 24 May 2024 16:15:04 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/Mint.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/Mint.png",
+              "history": [
+                {
+                  "date": "Fri, 24 May 2024 16:15:04 +0800",
+                  "message": "Renamed Icons",
                   "status": "A"
                 }
               ]
