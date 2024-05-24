@@ -58,6 +58,10 @@ export const repositoryConfigs: RepositoryConfig[] = [
     repoPath: "andregans/code_logotype",
     license: createLicense("Custom", "https://github.com/andregans/code_logotype#-code-logotype"),
   },
+  {
+    repoPath: "syke9p3/Syke-VTuber-Icons",
+    license: createLicense("CC BY-NC-SA 4.0", "https://github.com/syke9p3/Syke-VTuber-Icons/tree/main?tab=readme-ov-file#license"),
+  }
 ]
 
 
