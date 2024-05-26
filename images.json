@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-25T23:17:47.441Z",
+  "updatedAt": "2024-05-26T01:34:31.546Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1340,6 +1340,26 @@
                 {
                   "date": "Fri, 10 May 2024 18:57:20 +0900",
                   "message": "I LOVE React",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MIsskey.io",
+          "files": [
+            {
+              "title": "Misskey.io.png",
+              "path": "MIsskey.io/Misskey.io.png",
+              "createdAt": "Sun, 26 May 2024 08:32:52 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/Misskey.io.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/Misskey.io.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Sun, 26 May 2024 08:32:52 +0900",
+                  "message": "I LOVE Misskey.io Lovelovelove",
                   "status": "A"
                 }
               ]
