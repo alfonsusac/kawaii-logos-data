@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-26T09:20:53.654Z",
+  "updatedAt": "2024-05-26T10:22:04.654Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -2001,6 +2001,25 @@
       },
       "repository": "https://github.com/syke9p3/Syke-VTuber-Icons",
       "groups": [
+        {
+          "name": "Pytorch",
+          "files": [
+            {
+              "title": "Pytorch.png",
+              "path": "Pytorch/Pytorch.png",
+              "createdAt": "Sun, 26 May 2024 17:36:19 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Pytorch/Pytorch.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Pytorch/Pytorch.png",
+              "history": [
+                {
+                  "date": "Sun, 26 May 2024 17:36:19 +0800",
+                  "message": "add pytorch logo",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "SpringBoot",
           "files": [
