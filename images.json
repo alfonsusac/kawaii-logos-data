@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-29T08:25:43.390Z",
+  "updatedAt": "2024-05-29T09:22:05.616Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -2052,6 +2052,25 @@
                 {
                   "date": "Sun, 26 May 2024 02:34:00 +0800",
                   "message": "add SpringBoot",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Keep Notes",
+          "files": [
+            {
+              "title": "KeepNotes.png",
+              "path": "Keep Notes/KeepNotes.png",
+              "createdAt": "Wed, 29 May 2024 16:30:29 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Keep Notes/KeepNotes.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Keep Notes/KeepNotes.png",
+              "history": [
+                {
+                  "date": "Wed, 29 May 2024 16:30:29 +0800",
+                  "message": "added Keep Notes logo",
                   "status": "A"
                 }
               ]
