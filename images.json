@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-31T02:33:35.252Z",
+  "updatedAt": "2024-05-31T03:14:34.283Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -151,13 +151,18 @@
       "images": [
         {
           "title": "Skill Issue",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skillissue.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/skillissue.svg"
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/skillissue.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/skillissue.svg"
         },
         {
           "title": "LGTM",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/lgtm.png",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.png"
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/lgtm.png",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/lgtm.png"
+        },
+        {
+          "title": "Supabase",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/supabase.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/supabase.png"
         }
       ]
     },
