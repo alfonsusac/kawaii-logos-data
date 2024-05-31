@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-05-31T05:21:39.037Z",
+  "updatedAt": "2024-05-31T05:24:39.695Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -162,7 +162,12 @@
         {
           "title": "Supabase",
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/supabase.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/supabase.png"
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/supabase.svg"
+        },
+        {
+          "title": "EmailThing",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/emailthing.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/emailthing.svg"
         }
       ]
     },
