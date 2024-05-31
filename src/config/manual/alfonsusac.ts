@@ -11,18 +11,26 @@ export const alfonsusac: Entry = {
   repository: "https://github.com/alfonsusac/kawaii-logos-data",
   license: {
     label: "CC BY-NC-SA 4.0",
-    href: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+    href: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
   },
   images: [
     {
       title: "Skill Issue",
-      imgSrc: GitHub.selfHostedStaticAssetUrl("skillissue.svg"),
-      source: 'https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/skillissue.svg',
+      imgSrc: GitHub.selfHostedStaticAssetUrl("alfon/skillissue.svg"),
+      source:
+        "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/skillissue.svg",
     },
     {
       title: "LGTM",
-      imgSrc: GitHub.selfHostedStaticAssetUrl("lgtm.png"),
-      source: 'https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/lgtm.png'
-    }
-  ]
-}
+      imgSrc: GitHub.selfHostedStaticAssetUrl("alfon/lgtm.png"),
+      source:
+        "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/lgtm.png",
+    },
+    {
+      title: "Supabase",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("alfon/supabase.svg"),
+      source:
+        "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/supabase.png",
+    },
+  ],
+};
