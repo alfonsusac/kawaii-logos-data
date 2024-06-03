@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-03T16:25:10.589Z",
+  "updatedAt": "2024-06-03T17:17:58.449Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -2067,6 +2067,25 @@
                 {
                   "date": "Sun, 26 May 2024 02:34:00 +0800",
                   "message": "add SpringBoot",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Obsidian",
+          "files": [
+            {
+              "title": "Obsidian.png",
+              "path": "Obsidian/Obsidian.png",
+              "createdAt": "Tue, 4 Jun 2024 00:34:10 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Obsidian/Obsidian.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Obsidian/Obsidian.png",
+              "history": [
+                {
+                  "date": "Tue, 4 Jun 2024 00:34:10 +0800",
+                  "message": "added Obsidian.png",
                   "status": "A"
                 }
               ]
