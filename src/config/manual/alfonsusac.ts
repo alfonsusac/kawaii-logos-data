@@ -35,8 +35,14 @@ export const alfonsusac: Entry = {
     {
       title: "EmailThing",
       imgSrc: GitHub.selfHostedStaticAssetUrl("alfon/emailthing.svg"),
-      source: 
+      source:
         "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/emailthing.svg",
+    },
+    {
+      title: "Sharkchat",
+      imgSrc: GitHub.selfHostedStaticAssetUrl("alfon/sharkchat.svg"),
+      source:
+        "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/sharkchat.svg",
     }
   ],
-};
+}
