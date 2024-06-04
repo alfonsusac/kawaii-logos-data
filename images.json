@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-04T14:18:47.779Z",
+  "updatedAt": "2024-06-04T15:21:42.115Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1415,6 +1415,26 @@
                 {
                   "date": "Mon, 13 May 2024 22:17:41 +0900",
                   "message": "Laravel Hono IamProgrammer!",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Go Lang",
+          "files": [
+            {
+              "title": "Golang.png",
+              "path": "Go Lang/Golang.png",
+              "createdAt": "Tue, 4 Jun 2024 23:20:54 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/Golang.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/Golang.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Tue, 4 Jun 2024 23:20:54 +0900",
+                  "message": "諸事情によりGo Langでロゴを公開します",
                   "status": "A"
                 }
               ]
