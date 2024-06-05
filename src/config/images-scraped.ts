@@ -61,6 +61,10 @@ export const repositoryConfigs: RepositoryConfig[] = [
   {
     repoPath: "syke9p3/Syke-VTuber-Icons",
     license: createLicense("CC BY-NC-SA 4.0", "https://github.com/syke9p3/Syke-VTuber-Icons/tree/main?tab=readme-ov-file#license"),
+  },
+  {
+    repoPath: "lDMDiamondl/ProgrammingVTuberLogosKR",
+    license: createLicense("CC BY-NC-SA 4.0", "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md")
   }
 ]
 
