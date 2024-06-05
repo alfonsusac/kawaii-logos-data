@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-05T12:37:30.851Z",
+  "updatedAt": "2024-06-05T12:57:58.880Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -114,25 +114,6 @@
           "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
           "source": "https://twitter.com/styxpilled/status/1781643208130216015",
           "objectFit": "cover"
-        }
-      ]
-    },
-    {
-      "handleName": "lDMDiamondl",
-      "link": {
-        "github": "lDMDiamondl"
-      },
-      "pfp": "https://avatars.githubusercontent.com/u/100426562",
-      "license": {
-        "label": "CC BY-NC-SA 4.0",
-        "href": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md"
-      },
-      "repository": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/",
-      "images": [
-        {
-          "title": "Visual Studio Code Korea",
-          "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-Thick.png",
-          "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-Thick.png"
         }
       ]
     },
@@ -2172,6 +2153,124 @@
                 {
                   "date": "Fri, 24 May 2024 16:15:04 +0800",
                   "message": "Renamed Icons",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "handleName": "lDMDiamondl",
+      "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
+      "link": {
+        "github": "lDMDiamondl"
+      },
+      "license": {
+        "label": "CC BY-NC-SA 4.0",
+        "href": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md"
+      },
+      "repository": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR",
+      "groups": [
+        {
+          "name": "VSCode",
+          "files": [
+            {
+              "title": "VSCode.png",
+              "path": "VSCode/VSCode.png",
+              "createdAt": "Sat, 20 Apr 2024 13:54:42 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode.png",
+              "history": [
+                {
+                  "date": "Sat, 20 Apr 2024 13:54:42 +0900",
+                  "message": "Initial Commit",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "VSCode-Thick.png",
+              "path": "VSCode/VSCode-Thick.png",
+              "createdAt": "Sat, 20 Apr 2024 13:55:05 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-Thick.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-Thick.png",
+              "history": [
+                {
+                  "date": "Mon, 13 May 2024 10:52:45 +0900",
+                  "message": "Minor fix",
+                  "status": "M"
+                },
+                {
+                  "date": "Sat, 20 Apr 2024 13:55:05 +0900",
+                  "message": "Initial Commit",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neovim",
+          "files": [
+            {
+              "title": "NeovimShadowed.png",
+              "path": "Neovim/NeovimShadowed.png",
+              "createdAt": "Mon, 29 Apr 2024 21:50:02 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Neovim/NeovimShadowed.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Neovim/NeovimShadowed.png",
+              "history": [
+                {
+                  "date": "Mon, 29 Apr 2024 21:50:02 +0900",
+                  "message": "Initial Commit",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "NeovimLogo.png",
+              "path": "Neovim/NeovimLogo.png",
+              "createdAt": "Mon, 29 Apr 2024 21:49:29 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Neovim/NeovimLogo.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Neovim/NeovimLogo.png",
+              "history": [
+                {
+                  "date": "Mon, 29 Apr 2024 21:49:29 +0900",
+                  "message": "Initial Commit",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Docker",
+          "files": [
+            {
+              "title": "DockerLogo.png",
+              "path": "Docker/DockerLogo.png",
+              "createdAt": "Mon, 13 May 2024 10:50:12 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Docker/DockerLogo.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Docker/DockerLogo.png",
+              "history": [
+                {
+                  "date": "Mon, 13 May 2024 10:50:12 +0900",
+                  "message": "Initial Commit",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "DockerLogoShadowed.png",
+              "path": "Docker/DockerLogoShadowed.png",
+              "createdAt": "Mon, 13 May 2024 10:51:17 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Docker/DockerLogoShadowed.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Docker/DockerLogoShadowed.png",
+              "history": [
+                {
+                  "date": "Mon, 13 May 2024 10:51:17 +0900",
+                  "message": "Initial Commit",
                   "status": "A"
                 }
               ]

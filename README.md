@@ -1,7 +1,7 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: `2024-06-05T12:37:30.851Z`
+Last Updated: `2024-06-05T12:57:58.880Z`
 
 ### Authors
 - [saltyaom](undefined)
@@ -9,7 +9,6 @@ Last Updated: `2024-06-05T12:37:30.851Z`
 - [hvpexe](https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/)
 - [fuma-nama](undefined)
 - [styxpilled](undefined)
-- [lDMDiamondl](https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/)
 - [alfonsusac](https://github.com/alfonsusac/kawaii-logos-data)
 - [hcho3](https://github.com/hcho3/XGBoostVTuberLogo)
 - [cr1sta_dev](https://github.com/Crysta1221/tech_logos)
@@ -20,6 +19,7 @@ Last Updated: `2024-06-05T12:37:30.851Z`
 - [cocoa-xu](https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM)
 - [andregans](https://github.com/andregans/code_logotype)
 - [syke9p3](https://github.com/syke9p3/Syke-VTuber-Icons)
+- [lDMDiamondl](https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR)
 
 ### Contributing
 
