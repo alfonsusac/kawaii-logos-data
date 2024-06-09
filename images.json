@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-09T06:26:10.744Z",
+  "updatedAt": "2024-06-09T07:17:54.132Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1737,6 +1737,25 @@
           ]
         },
         {
+          "name": "Laravel Logotype.png",
+          "files": [
+            {
+              "title": "Laravel Logotype.png",
+              "path": "Laravel Logotype.png",
+              "createdAt": "Sun, 9 Jun 2024 13:32:07 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Laravel Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/Laravel Logotype.png",
+              "history": [
+                {
+                  "date": "Sun, 9 Jun 2024 13:32:07 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Nuxt JS Logotype.png",
           "files": [
             {
@@ -1968,6 +1987,25 @@
               "history": [
                 {
                   "date": "Sun, 28 Apr 2024 19:16:38 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Python Logotype.png",
+          "files": [
+            {
+              "title": "Python Logotype.png",
+              "path": "Python Logotype.png",
+              "createdAt": "Sun, 9 Jun 2024 13:32:07 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Python Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/Python Logotype.png",
+              "history": [
+                {
+                  "date": "Sun, 9 Jun 2024 13:32:07 +0700",
                   "message": "update",
                   "status": "A"
                 }
