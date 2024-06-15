@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-15T08:23:19.479Z",
+  "updatedAt": "2024-06-15T09:19:32.707Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -2126,6 +2126,25 @@
                 {
                   "date": "Sun, 26 May 2024 02:34:00 +0800",
                   "message": "add SpringBoot",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Google Chrome",
+          "files": [
+            {
+              "title": "Google Chrome.png",
+              "path": "Google Chrome/Google Chrome.png",
+              "createdAt": "Sat, 15 Jun 2024 17:18:57 +0800",
+              "imgSrc": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Google Chrome/Google Chrome.png",
+              "source": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Google Chrome/Google Chrome.png",
+              "history": [
+                {
+                  "date": "Sat, 15 Jun 2024 17:18:57 +0800",
+                  "message": "add Google Chrome logo",
                   "status": "A"
                 }
               ]
