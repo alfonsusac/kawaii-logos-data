@@ -3,8 +3,8 @@ name: Update Data
 on:
   workflow_dispatch:
   schedule:
-    # Every hour
-    - cron: "0 * * * *"
+    # Every 4 hour
+    - cron: "0 */4 * * *"
   push:
     paths:
       - ".github/workflows/data.yml" # run evertime gh action config file is changed
