@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-24T08:10:58.914Z",
+  "updatedAt": "2024-06-24T12:14:32.872Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1454,6 +1454,26 @@
                 {
                   "date": "Fri, 24 May 2024 23:31:29 +0900",
                   "message": "Replit",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Cloudflare",
+          "files": [
+            {
+              "title": "Cloudflare.png",
+              "path": "Cloudflare/Cloudflare.png",
+              "createdAt": "Mon, 24 Jun 2024 20:47:02 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/Cloudflare.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/Cloudflare.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Mon, 24 Jun 2024 20:47:02 +0900",
+                  "message": "I LOVE Cloudfalre",
                   "status": "A"
                 }
               ]
