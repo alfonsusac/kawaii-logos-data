@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-06-25T20:08:12.772Z",
+  "updatedAt": "2024-06-26T00:35:57.311Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1690,6 +1690,11 @@
               "source": "https://github.com/andregans/code_logotype/blob/main/Python Logotype.png",
               "history": [
                 {
+                  "date": "Wed, 26 Jun 2024 06:58:40 +0700",
+                  "message": "update",
+                  "status": "M"
+                },
+                {
                   "date": "Sun, 9 Jun 2024 13:32:07 +0700",
                   "message": "update",
                   "status": "A"
@@ -1796,6 +1801,25 @@
               "history": [
                 {
                   "date": "Sat, 27 Apr 2024 14:51:35 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HTML Logotype.png",
+          "files": [
+            {
+              "title": "HTML Logotype.png",
+              "path": "HTML Logotype.png",
+              "createdAt": "Wed, 26 Jun 2024 06:58:40 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/HTML Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/HTML Logotype.png",
+              "history": [
+                {
+                  "date": "Wed, 26 Jun 2024 06:58:40 +0700",
                   "message": "update",
                   "status": "A"
                 }
@@ -1943,6 +1967,25 @@
           ]
         },
         {
+          "name": "Javascript Logotype.png",
+          "files": [
+            {
+              "title": "Javascript Logotype.png",
+              "path": "Javascript Logotype.png",
+              "createdAt": "Wed, 26 Jun 2024 06:58:40 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Javascript Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/Javascript Logotype.png",
+              "history": [
+                {
+                  "date": "Wed, 26 Jun 2024 06:58:40 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Sublime Text Logotype.png",
           "files": [
             {
@@ -1992,6 +2035,25 @@
               "history": [
                 {
                   "date": "Sun, 28 Apr 2024 19:16:38 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ruby Logotype.png",
+          "files": [
+            {
+              "title": "Ruby Logotype.png",
+              "path": "Ruby Logotype.png",
+              "createdAt": "Wed, 26 Jun 2024 06:58:40 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/Ruby Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/Ruby Logotype.png",
+              "history": [
+                {
+                  "date": "Wed, 26 Jun 2024 06:58:40 +0700",
                   "message": "update",
                   "status": "A"
                 }
@@ -2092,6 +2154,44 @@
               "history": [
                 {
                   "date": "Mon, 6 May 2024 14:42:54 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "CSS Logotype.png",
+          "files": [
+            {
+              "title": "CSS Logotype.png",
+              "path": "CSS Logotype.png",
+              "createdAt": "Wed, 26 Jun 2024 06:58:40 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/CSS Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/CSS Logotype.png",
+              "history": [
+                {
+                  "date": "Wed, 26 Jun 2024 06:58:40 +0700",
+                  "message": "update",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "C++ Logotype.png",
+          "files": [
+            {
+              "title": "C++ Logotype.png",
+              "path": "C++ Logotype.png",
+              "createdAt": "Wed, 26 Jun 2024 06:58:40 +0700",
+              "imgSrc": "https://raw.githubusercontent.com/andregans/code_logotype/main/C++ Logotype.png",
+              "source": "https://github.com/andregans/code_logotype/blob/main/C++ Logotype.png",
+              "history": [
+                {
+                  "date": "Wed, 26 Jun 2024 06:58:40 +0700",
                   "message": "update",
                   "status": "A"
                 }
