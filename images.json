@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-07-06T04:09:13.120Z",
+  "updatedAt": "2024-07-06T08:10:55.140Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -223,6 +223,26 @@
       },
       "repository": "https://github.com/Crysta1221/tech_logos",
       "groups": [
+        {
+          "name": "jyo-gi.png",
+          "files": [
+            {
+              "title": "jyo-gi.png",
+              "path": "jyo-gi.png",
+              "createdAt": "Sat, 6 Jul 2024 13:12:46 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/jyo-gi.png",
+              "source": "https://github.com/Crysta1221/tech_logos/blob/main/jyo-gi.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Sat, 6 Jul 2024 13:12:46 +0900",
+                  "message": ":wrench: fix image",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "nuxtjs",
           "files": [
