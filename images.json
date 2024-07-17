@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-07-17T12:02:00.620Z",
+  "updatedAt": "2024-07-17T16:01:24.311Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -2460,6 +2460,20 @@
                 {
                   "date": "Sat, 20 Apr 2024 13:55:05 +0900",
                   "message": "Initial Commit",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "VSCode-2X.png",
+              "path": "VSCode/VSCode-2X.png",
+              "createdAt": "Wed, 17 Jul 2024 22:31:08 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-2X.png",
+              "source": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-2X.png",
+              "history": [
+                {
+                  "date": "Wed, 17 Jul 2024 22:31:08 +0900",
+                  "message": "2x bigger version, added for personal usage.",
                   "status": "A"
                 }
               ]
