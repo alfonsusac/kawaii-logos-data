@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-09-22T04:01:31.894Z",
+  "updatedAt": "2024-09-22T08:01:25.457Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1494,6 +1494,26 @@
                 {
                   "date": "Fri, 24 May 2024 23:31:29 +0900",
                   "message": "Replit",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Next.js",
+          "files": [
+            {
+              "title": "Next.js.png",
+              "path": "Next.js/Next.js.png",
+              "createdAt": "Sun, 22 Sep 2024 13:57:56 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/Next.js.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/Next.js.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Sun, 22 Sep 2024 13:57:56 +0900",
+                  "message": "BIG LOVE Next.js",
                   "status": "A"
                 }
               ]
