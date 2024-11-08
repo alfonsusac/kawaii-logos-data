@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-11-08T08:01:48.915Z",
+  "updatedAt": "2024-11-08T12:02:19.392Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1124,6 +1124,26 @@
                 {
                   "date": "Sat, 18 May 2024 18:32:23 +0900",
                   "message": "I LOVE JetBrains...",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Charcoal",
+          "files": [
+            {
+              "title": "Charcoal.png",
+              "path": "Charcoal/Charcoal.png",
+              "createdAt": "Fri, 8 Nov 2024 19:25:55 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/Charcoal.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/Charcoal.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Fri, 8 Nov 2024 19:25:55 +0900",
+                  "message": "I love pixiv",
                   "status": "A"
                 }
               ]
