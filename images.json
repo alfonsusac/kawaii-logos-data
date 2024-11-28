@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-11-28T04:01:35.576Z",
+  "updatedAt": "2024-11-28T08:01:43.150Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -1038,6 +1038,26 @@
           ]
         },
         {
+          "name": "GitHub",
+          "files": [
+            {
+              "title": "GitHub.png",
+              "path": "GitHub/GitHub.png",
+              "createdAt": "Thu, 28 Nov 2024 15:21:32 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/GitHub.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/GitHub.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Thu, 28 Nov 2024 15:21:32 +0900",
+                  "message": "I LOVE GitHub",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "name": "Hono",
           "files": [
             {
@@ -1454,6 +1474,26 @@
                 {
                   "date": "Fri, 24 May 2024 00:16:58 +0900",
                   "message": "I LOVE Bluesky",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Angular",
+          "files": [
+            {
+              "title": "Angular.png",
+              "path": "Angular/Angular.png",
+              "createdAt": "Thu, 28 Nov 2024 15:36:14 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/Angular.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/Angular.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Thu, 28 Nov 2024 15:36:14 +0900",
+                  "message": "I LOVE Angular",
                   "status": "A"
                 }
               ]
