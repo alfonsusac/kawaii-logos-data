@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-11-29T08:01:44.227Z",
+  "updatedAt": "2024-11-29T12:01:54.582Z",
   "data": [
     {
       "handleName": "saltyaom",
@@ -997,6 +997,56 @@
       },
       "repository": "https://github.com/SAWARATSUKI/KawaiiLogos",
       "groups": [
+        {
+          "name": "Rust",
+          "files": [
+            {
+              "title": "Rust.png",
+              "path": "Rust/Rust.png",
+              "createdAt": "Fri, 29 Nov 2024 20:04:45 +0900Fri, 29 Nov 2024 20:00:53 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/Rust.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/Rust.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Fri, 29 Nov 2024 20:04:45 +0900",
+                  "message": "I LOVE Rust",
+                  "status": "A"
+                },
+                {
+                  "date": "Fri, 29 Nov 2024 20:04:15 +0900",
+                  "message": "透過でないRustを公開してしまったため一旦削除",
+                  "status": "D"
+                },
+                {
+                  "date": "Fri, 29 Nov 2024 20:02:21 +0900",
+                  "message": "I LOVE Rust",
+                  "status": "M"
+                },
+                {
+                  "date": "Fri, 29 Nov 2024 20:00:53 +0900",
+                  "message": "I LOVE Rust",
+                  "status": "A"
+                }
+              ]
+            },
+            {
+              "title": "Rust_Transparent.png",
+              "path": "Rust/Rust_Transparent.png",
+              "createdAt": "Fri, 29 Nov 2024 20:05:33 +0900",
+              "imgSrc": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/Rust_Transparent.png",
+              "source": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/Rust_Transparent.png",
+              "objectFit": "contain",
+              "history": [
+                {
+                  "date": "Fri, 29 Nov 2024 20:05:33 +0900",
+                  "message": "I LOVE Rust",
+                  "status": "A"
+                }
+              ]
+            }
+          ]
+        },
         {
           "name": "TypeScript",
           "files": [
