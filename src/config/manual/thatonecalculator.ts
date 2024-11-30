@@ -17,8 +17,8 @@ export const thatonecalculator: Entries[number] = {
         },
         {
             title: "vyper",
-            imgSrc: GitHub.camoUrl("e3ab90845b9c976247fdb39c21821cd934d7c392c632ed7511b5e4cdd0f7b12b/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f56797065722e706e673f763d32"),
-            source: blueskyPost("t1c.dev", "3lc6soxakhs2h"),
+            imgSrc: GitHub.camoUrl("be1d9d90f545740cad8b8c4835d6b8a6338c10500190c522ce305af465396735/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f56797065725f6e65772e706e67"),
+            source: blueskyPost("t1c.dev", "3lc6ug7omck2t"),
             objectFit: "cover",
         },
     ],
