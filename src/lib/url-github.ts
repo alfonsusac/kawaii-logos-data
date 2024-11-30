@@ -13,6 +13,8 @@ export const GitHub = {
     `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/${ filename }`,
   userAvatarUrl: (username: string) =>
     `https://avatars.githubusercontent.com/${ username }`,
+  camoUrl: (path: string) =>
+    `https://camo.githubusercontent.com/${ path }`,
 }
 
 export const getAvatarURLfromRepoPath = (repoPath: string) => {
