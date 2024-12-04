@@ -1,17 +1,19 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: `2024-12-04T13:13:34.028Z`
+Last Updated: `2024-12-04T13:23:05.072Z`
 
 ### Authors
-- [saltyaom](undefined)
-- [disphing](https://drive.google.com/drive/folders/1Hy1_pAWx95QTv1nZFKUl96GImq4iKdf8)
-- [hvpexe](https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/)
-- [fuma-nama](undefined)
-- [styxpilled](undefined)
 - [alfonsusac](https://github.com/alfonsusac/kawaii-logos-data)
-- [hcho3](https://github.com/hcho3/XGBoostVTuberLogo)
+- [disphing](https://drive.google.com/drive/folders/1Hy1_pAWx95QTv1nZFKUl96GImq4iKdf8)
 - [fenjalien](undefined)
+- [fuma-nama](undefined)
+- [hcho3](https://github.com/hcho3/XGBoostVTuberLogo)
+- [hvpexe](https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/)
+- [saltyaom](undefined)
+- [styxpilled](undefined)
+- [thatonecalculator](undefined)
+- [urielchan](https://github.com/Urielchan/logosVtuberVER)
 - [cr1sta_dev](https://github.com/Crysta1221/tech_logos)
 - [Aikoyori](https://github.com/Aikoyori/ProgrammingVTuberLogos)
 - [SAWARATSUKI](https://github.com/SAWARATSUKI/KawaiiLogos)

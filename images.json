@@ -1,18 +1,43 @@
 {
-  "updatedAt": "2024-12-04T13:13:34.028Z",
+  "updatedAt": "2024-12-04T13:23:05.072Z",
   "data": [
     {
-      "handleName": "saltyaom",
-      "pfp": "https://avatars.githubusercontent.com/u/35027979?v=4",
+      "handleName": "alfonsusac",
+      "pfp": "https://avatars.githubusercontent.com/alfonsusac",
       "link": {
-        "github": "SaltyAom",
-        "twitter": "saltyaom"
+        "github": "alfonsusac",
+        "twitter": "alfonsusac"
+      },
+      "repository": "https://github.com/alfonsusac/kawaii-logos-data",
+      "license": {
+        "label": "CC BY-NC-SA 4.0",
+        "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
       },
       "images": [
         {
-          "title": "Elysia",
-          "imgSrc": "https://raw.githubusercontent.com/elysiajs/documentation/6e13f140b53fb69d9a82993cd80a82df55325b9e/docs/public/assets/elysia_v.svg",
-          "source": "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg"
+          "title": "Skill Issue",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/skillissue.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/skillissue.svg"
+        },
+        {
+          "title": "LGTM",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/lgtm.png",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/lgtm.png"
+        },
+        {
+          "title": "Supabase",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/supabase.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/supabase.svg"
+        },
+        {
+          "title": "EmailThing",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/emailthing.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/emailthing.svg"
+        },
+        {
+          "title": "Sharkchat",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/sharkchat.svg",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/sharkchat.svg"
         }
       ]
     },
@@ -63,24 +88,22 @@
       ]
     },
     {
-      "handleName": "hvpexe",
+      "handleName": "fenjalien",
+      "pfp": "https://avatars.githubusercontent.com/u/34489450?v=4",
       "link": {
-        "github": "hvpexe",
-        "twitter": "Manhkbrady"
-      },
-      "pfp": "https://avatars.githubusercontent.com/u/97070754",
-      "repository": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/",
-      "license": {
-        "label": "CC-BY-NC-SA-4.0",
-        "href": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/LICENSE.md"
+        "github": "fenjalien"
       },
       "images": [
         {
-          "title": "Visual Studio",
-          "imgSrc": "https://raw.githubusercontent.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/master/VisualStudio/VisualStudioLogo.png",
-          "source": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png"
+          "title": "Typst",
+          "imgSrc": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png",
+          "source": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
         }
-      ]
+      ],
+      "license": {
+        "label": "Personal Use (Custom)",
+        "href": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
+      }
     },
     {
       "handleName": "fuma-nama",
@@ -94,66 +117,6 @@
           "title": "Fumadocs",
           "imgSrc": "https://raw.githubusercontent.com/fuma-nama/fumadocs/dev/documents/logo.png",
           "source": "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png"
-        }
-      ]
-    },
-    {
-      "handleName": "styxpilled",
-      "link": {
-        "twitter": "styxpilled"
-      },
-      "images": [
-        {
-          "title": "svelte",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLlkf9EWwAAq3N9.jpeg",
-          "source": "https://twitter.com/styxpilled/status/1781565832251719868",
-          "objectFit": "cover"
-        },
-        {
-          "title": "sveltekit",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
-          "source": "https://twitter.com/styxpilled/status/1781643208130216015",
-          "objectFit": "cover"
-        }
-      ]
-    },
-    {
-      "handleName": "alfonsusac",
-      "pfp": "https://avatars.githubusercontent.com/alfonsusac",
-      "link": {
-        "github": "alfonsusac",
-        "twitter": "alfonsusac"
-      },
-      "repository": "https://github.com/alfonsusac/kawaii-logos-data",
-      "license": {
-        "label": "CC BY-NC-SA 4.0",
-        "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-      },
-      "images": [
-        {
-          "title": "Skill Issue",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/skillissue.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/skillissue.svg"
-        },
-        {
-          "title": "LGTM",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/lgtm.png",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/lgtm.png"
-        },
-        {
-          "title": "Supabase",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/supabase.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/supabase.svg"
-        },
-        {
-          "title": "EmailThing",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/emailthing.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/emailthing.svg"
-        },
-        {
-          "title": "Sharkchat",
-          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/alfon/sharkchat.svg",
-          "source": "https://github.com/alfonsusac/kawaii-logos-data/blob/main/assets/alfon/sharkchat.svg"
         }
       ]
     },
@@ -193,22 +156,95 @@
       ]
     },
     {
-      "handleName": "fenjalien",
-      "pfp": "https://avatars.githubusercontent.com/u/34489450?v=4",
+      "handleName": "hvpexe",
       "link": {
-        "github": "fenjalien"
+        "github": "hvpexe",
+        "twitter": "Manhkbrady"
+      },
+      "pfp": "https://avatars.githubusercontent.com/u/97070754",
+      "repository": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/",
+      "license": {
+        "label": "CC-BY-NC-SA-4.0",
+        "href": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/LICENSE.md"
       },
       "images": [
         {
-          "title": "Typst",
-          "imgSrc": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png",
-          "source": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
+          "title": "Visual Studio",
+          "imgSrc": "https://raw.githubusercontent.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/master/VisualStudio/VisualStudioLogo.png",
+          "source": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png"
         }
-      ],
-      "license": {
-        "label": "Personal Use (Custom)",
-        "href": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
-      }
+      ]
+    },
+    {
+      "handleName": "saltyaom",
+      "pfp": "https://avatars.githubusercontent.com/u/35027979?v=4",
+      "link": {
+        "github": "SaltyAom",
+        "twitter": "saltyaom"
+      },
+      "images": [
+        {
+          "title": "Elysia",
+          "imgSrc": "https://raw.githubusercontent.com/elysiajs/documentation/6e13f140b53fb69d9a82993cd80a82df55325b9e/docs/public/assets/elysia_v.svg",
+          "source": "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg"
+        }
+      ]
+    },
+    {
+      "handleName": "styxpilled",
+      "link": {
+        "twitter": "styxpilled"
+      },
+      "images": [
+        {
+          "title": "svelte",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLlkf9EWwAAq3N9.jpeg",
+          "source": "https://twitter.com/styxpilled/status/1781565832251719868",
+          "objectFit": "cover"
+        },
+        {
+          "title": "sveltekit",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
+          "source": "https://twitter.com/styxpilled/status/1781643208130216015",
+          "objectFit": "cover"
+        }
+      ]
+    },
+    {
+      "handleName": "thatonecalculator",
+      "link": {
+        "bluesky": "t1c.dev",
+        "github": "thatonecalculator"
+      },
+      "images": [
+        {
+          "title": "surrealdb",
+          "imgSrc": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
+          "source": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d",
+          "objectFit": "cover"
+        },
+        {
+          "title": "vyper",
+          "imgSrc": "https://camo.githubusercontent.com/be1d9d90f545740cad8b8c4835d6b8a6338c10500190c522ce305af465396735/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f56797065725f6e65772e706e67",
+          "source": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t",
+          "objectFit": "cover"
+        }
+      ]
+    },
+    {
+      "handleName": "urielchan",
+      "pfp": "https://avatars.githubusercontent.com/urielchan",
+      "link": {
+        "github": "urielchan"
+      },
+      "repository": "https://github.com/Urielchan/logosVtuberVER",
+      "images": [
+        {
+          "title": "imphnen.png",
+          "imgSrc": "https://raw.githubusercontent.com/Urielchan/logosVtuberVER/main/imphnen%202.png",
+          "source": "https://github.com/Urielchan/logosVtuberVER/blob/main/imphnen%202.png"
+        }
+      ]
     },
     {
       "handleName": "cr1sta_dev",
