@@ -1,6 +1,6 @@
 {
   "name": "types",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Types for the kawaii-logos-data",
   "main": "./src/index.ts",
   "types": "./src/index.d.ts",

@@ -28,6 +28,7 @@ export type Author = {
   link: {
     github?: string
     twitter?: string
+    bluesky?: string
   }
   repository?: string
   license?: {
