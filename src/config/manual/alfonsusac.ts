@@ -7,6 +7,7 @@ export const alfonsusac: Entry = {
   link: {
     github: "alfonsusac",
     twitter: "alfonsusac",
+    bluesky: "alfonsus.bsky.social"
   },
   repository: "https://github.com/alfonsusac/kawaii-logos-data",
   license: {

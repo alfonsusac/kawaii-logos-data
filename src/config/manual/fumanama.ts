@@ -5,7 +5,8 @@ export const fumanama: Entries[number] = {
   pfp: "https://avatars.githubusercontent.com/u/76240755?v=4",
   link: {
     github: "fuma-nama",
-    twitter: "fuma_nama"
+    twitter: "fuma_nama",
+    bluesky: "fuma-nama.bsky.social"
   },
   images: [
     {

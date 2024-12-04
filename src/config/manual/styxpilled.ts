@@ -6,6 +6,7 @@ export const styxpilled: Entries[number] = {
   handleName: "styxpilled",
   link: {
     twitter: "styxpilled",
+    bluesky: "styxpilled.bsky.social"
   },
   images: [
     {

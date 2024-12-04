@@ -5,6 +5,7 @@ export type RepositoryConfig = {
   repoPath: `${ string }/${ string }`
   handleName?: Author['handleName']
   twitter?: Author['link']['twitter'],
+  bluesky?: Author['link']['bluesky'],
   pfp?: Author['pfp']
   license?: Author['license']
   objectFit?: ObjectFit
@@ -27,6 +28,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
     repoPath: "Aikoyori/ProgrammingVTuberLogos",
     objectFit: "contain",
     twitter: "Aikoyori",
+    bluesky: "aikoyori.xyz",
     license: createLicense("CC BY-NC-SA 4.0", "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"),
     filter: [filepath => !filepath.includes("preview")]
   },
@@ -34,6 +36,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
     repoPath: "SAWARATSUKI/KawaiiLogos",
     objectFit: "contain",
     twitter: "sawaratsuki1004",
+    bluesky: "sawaratsuki.bsky.social",
     license: createLicense('Custom', 'https://github.com/SAWARATSUKI/KawaiiLogos?tab=readme-ov-file#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9'),
     preprocess: [(filepath) => filepath.includes('ResponseCode') ? filepath.split('/')[1] : filepath]
   },
@@ -46,11 +49,13 @@ export const repositoryConfigs: RepositoryConfig[] = [
     repoPath: "mkpoli/VTuber-Styled-Logos",
     path: "logos",
     twitter: "mkpoli",
+    bluesky: "mkpoli.misskey.io.ap.brid.gy",
     license: createLicense("CC0", "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/LICENSE")
   },
   {
     repoPath: "cocoa-xu/ProgrammingVTuberLogos-BEAM",
     twitter: "_uwu_cocoa",
+    bluesky: "uwucocoa.moe",
     license: createLicense("CC BY-NC-SA 4.0", "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"),
     filter: [filepath => !filepath.includes("CC-BY-NC-SA-4.0.jpg")]
   },
@@ -64,6 +69,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
   },
   {
     repoPath: "lDMDiamondl/ProgrammingVTuberLogosKR",
+    twitter: "dmdiamond1234",
     license: createLicense("CC BY-NC-SA 4.0", "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md")
   }
 ]

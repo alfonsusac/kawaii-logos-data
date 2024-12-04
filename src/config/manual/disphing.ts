@@ -6,6 +6,7 @@ export const disphing: Entries[number] = {
   pfp: "https://avatars.githubusercontent.com/u/70198466?v=4",
   link: {
     twitter: "dsphng",
+    bluesky: "disphing.com"
   },
   repository: "https://drive.google.com/drive/folders/1Hy1_pAWx95QTv1nZFKUl96GImq4iKdf8",
   images: [
