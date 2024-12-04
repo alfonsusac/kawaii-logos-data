@@ -4,6 +4,7 @@ import { blueskyPost } from "../../lib/url"
 
 export const thatonecalculator: Entries[number] = {
     handleName: "thatonecalculator",
+    pfp: "https://cdn.bsky.app/img/avatar/plain/did:plc:4d3footpr6lgq6hy5m74xdmm/bafkreiaa6glnvhyy4f72tbhx6bav25xeiqq2gzc4kutxn74h5vd7uyaezi@jpeg",
     link: {
         bluesky: "t1c.dev",
         github: "thatonecalculator",
