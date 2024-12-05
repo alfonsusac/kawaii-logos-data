@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2024-12-05T01:20:51.929Z",
+  "updatedAt": "2024-12-05T01:26:33.453Z",
   "data": [
     {
       "handleName": "alfonsusac",
       "pfp": "https://avatars.githubusercontent.com/alfonsusac",
       "link": {
         "github": "alfonsusac",
-        "twitter": "alfonsusac"
+        "twitter": "alfonsusac",
+        "bluesky": "alfonsus.bsky.social"
       },
       "repository": "https://github.com/alfonsusac/kawaii-logos-data",
       "license": {
@@ -45,7 +46,8 @@
       "handleName": "disphing",
       "pfp": "https://avatars.githubusercontent.com/u/70198466?v=4",
       "link": {
-        "twitter": "dsphng"
+        "twitter": "dsphng",
+        "bluesky": "disphing.com"
       },
       "repository": "https://drive.google.com/drive/folders/1Hy1_pAWx95QTv1nZFKUl96GImq4iKdf8",
       "images": [
@@ -110,7 +112,8 @@
       "pfp": "https://avatars.githubusercontent.com/u/76240755?v=4",
       "link": {
         "github": "fuma-nama",
-        "twitter": "fuma_nama"
+        "twitter": "fuma_nama",
+        "bluesky": "fuma-nama.bsky.social"
       },
       "images": [
         {
@@ -180,7 +183,8 @@
       "pfp": "https://avatars.githubusercontent.com/u/35027979?v=4",
       "link": {
         "github": "SaltyAom",
-        "twitter": "saltyaom"
+        "twitter": "saltyaom",
+        "bluesky": "saltyaom.com"
       },
       "images": [
         {
@@ -193,7 +197,8 @@
     {
       "handleName": "styxpilled",
       "link": {
-        "twitter": "styxpilled"
+        "twitter": "styxpilled",
+        "bluesky": "styxpilled.bsky.social"
       },
       "images": [
         {
@@ -2587,7 +2592,8 @@
       "handleName": "lDMDiamondl",
       "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
       "link": {
-        "github": "lDMDiamondl"
+        "github": "lDMDiamondl",
+        "twitter": "dmdiamond1234"
       },
       "license": {
         "label": "CC BY-NC-SA 4.0",
