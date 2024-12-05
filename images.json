@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2024-12-05T01:27:31.040Z",
+  "updatedAt": "2024-12-05T01:59:01.149Z",
   "data": [
     {
       "handleName": "alfonsusac",
@@ -403,7 +403,8 @@
       "pfp": "https://avatars.githubusercontent.com/Aikoyori",
       "link": {
         "github": "Aikoyori",
-        "twitter": "Aikoyori"
+        "twitter": "Aikoyori",
+        "bluesky": "aikoyori.xyz"
       },
       "license": {
         "label": "CC BY-NC-SA 4.0",
@@ -1037,7 +1038,8 @@
       "pfp": "https://avatars.githubusercontent.com/SAWARATSUKI",
       "link": {
         "github": "SAWARATSUKI",
-        "twitter": "sawaratsuki1004"
+        "twitter": "sawaratsuki1004",
+        "bluesky": "sawaratsuki.bsky.social"
       },
       "license": {
         "label": "Custom",
@@ -1779,7 +1781,8 @@
       "pfp": "https://avatars.githubusercontent.com/mkpoli",
       "link": {
         "github": "mkpoli",
-        "twitter": "mkpoli"
+        "twitter": "mkpoli",
+        "bluesky": "mkpoli.misskey.io.ap.brid.gy"
       },
       "license": {
         "label": "CC0",
@@ -1832,7 +1835,8 @@
       "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
       "link": {
         "github": "cocoa-xu",
-        "twitter": "_uwu_cocoa"
+        "twitter": "_uwu_cocoa",
+        "bluesky": "uwucocoa.moe"
       },
       "license": {
         "label": "CC BY-NC-SA 4.0",
