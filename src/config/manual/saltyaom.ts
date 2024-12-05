@@ -6,6 +6,7 @@ export const saltyaom: Entries[number] = {
   link: {
     github: "SaltyAom",
     twitter: "saltyaom",
+    bluesky: "saltyaom.com"
   },
   images: [
     {
