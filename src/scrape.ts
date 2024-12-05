@@ -20,7 +20,8 @@ export async function getScrapedImageList(): Promise<Entries> {
       pfp: result.pfp || getAvatarURLfromRepoPath(result.githubUsername),
       link: {
         github: result.githubUsername,
-        twitter: result.twitter
+        twitter: result.twitter,
+        bluesky: result.bluesky
       },
       license: result.license,
       repository: GitHub.repositoryUrl(result.repoPath),
