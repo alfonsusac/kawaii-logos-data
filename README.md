@@ -1,7 +1,7 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
     
-Last Updated: `2025-02-19T12:40:13.966Z`
+Last Updated: `2025-02-19T13:18:20.674Z`
 
 ### Authors
 - [alfonsusac](https://github.com/alfonsusac/kawaii-logos-data)
@@ -14,6 +14,7 @@ Last Updated: `2025-02-19T12:40:13.966Z`
 - [styxpilled](undefined)
 - [thatonecalculator](undefined)
 - [urielchan](https://github.com/Urielchan/logosVtuberVER)
+- [arnav-kr](undefined)
 - [cr1sta_dev](https://github.com/Crysta1221/tech_logos)
 - [Aikoyori](https://github.com/Aikoyori/ProgrammingVTuberLogos)
 - [SAWARATSUKI](https://github.com/SAWARATSUKI/KawaiiLogos)

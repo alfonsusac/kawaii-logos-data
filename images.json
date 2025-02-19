@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025-02-19T12:40:13.966Z",
+  "updatedAt": "2025-02-19T13:18:20.674Z",
   "data": [
     {
       "handleName": "alfonsusac",
@@ -255,6 +255,31 @@
           "title": "imphnen.png",
           "imgSrc": "https://raw.githubusercontent.com/Urielchan/logosVtuberVER/main/imphnen%202.png",
           "source": "https://github.com/Urielchan/logosVtuberVER/blob/main/imphnen%202.png"
+        }
+      ]
+    },
+    {
+      "handleName": "arnav-kr",
+      "pfp": "https://avatars.githubusercontent.com/arnav-kr",
+      "link": {
+        "github": "arnav-kr",
+        "twitter": "arnavkr_"
+      },
+      "groups": [
+        {
+          "name": "JSON Formatter",
+          "files": [
+            {
+              "title": "JF_VTuber_logo.png",
+              "source": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png",
+              "imgSrc": "https://raw.githubusercontent.com/arnav-kr/json-formatter/refs/heads/main/images/banners/JF_VTuber_logo.png"
+            },
+            {
+              "title": "JF_VTuber_logo.svg",
+              "source": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg",
+              "imgSrc": "https://raw.githubusercontent.com/arnav-kr/json-formatter/refs/heads/main/images/banners/JF_VTuber_logo.svg"
+            }
+          ]
         }
       ]
     },
