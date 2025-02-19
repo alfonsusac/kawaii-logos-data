@@ -1,5 +1,6 @@
 import { type Entries } from "../../types"
 import { alfonsusac } from "./manual/alfonsusac"
+import { arnav } from "./manual/arnav"
 import { disphing } from "./manual/disphing"
 import { fenjalien } from "./manual/fenjalien"
 import { fumanama } from "./manual/fumanama"
@@ -21,4 +22,5 @@ export const manuallyListedImages: Entries = [
   styxpilled,
   thatonecalculator,
   urielchan,
+  arnav,
 ]
