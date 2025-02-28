@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2025-02-28T03:17:04.439Z",
+  "updatedAt": "2025-02-28T03:18:18.997Z",
   "data": [
     {
       "handleName": "alfonsusac",
@@ -280,6 +280,20 @@
               "imgSrc": "https://raw.githubusercontent.com/arnav-kr/json-formatter/refs/heads/main/images/banners/JF_VTuber_logo.svg"
             }
           ]
+        }
+      ]
+    },
+    {
+      "handleName": "maxshawnwx",
+      "pfp": "https://avatars.githubusercontent.com/maxshawnwx",
+      "link": {
+        "github": "maxshawnwx"
+      },
+      "images": [
+        {
+          "title": "Skyviewer",
+          "imgSrc": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
+          "source": "https://github.com/alfonsusac/kawaii-logos-data/issues/10#issuecomment-2686987751"
         }
       ]
     },
