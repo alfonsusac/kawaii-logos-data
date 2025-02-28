@@ -1,7 +1,7 @@
 import type { Entries } from "../../../types"
 import { GitHub } from "../../lib/url-github"
 
-export const urielchan: Entries[number] = {
+export const maxshawnwx: Entries[number] = {
   handleName: "maxshawnwx",
   pfp: "https://avatars.githubusercontent.com/maxshawnwx",
   link: {

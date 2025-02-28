@@ -6,6 +6,7 @@ import { fenjalien } from "./manual/fenjalien"
 import { fumanama } from "./manual/fumanama"
 import { hcho3 } from "./manual/hcho3"
 import { hvpexe } from "./manual/hvpexe"
+import { maxshawnwx } from "./manual/maxshawnwx"
 import { saltyaom } from "./manual/saltyaom"
 import { styxpilled } from "./manual/styxpilled"
 import { thatonecalculator } from "./manual/thatonecalculator"
@@ -23,4 +24,5 @@ export const manuallyListedImages: Entries = [
   thatonecalculator,
   urielchan,
   arnav,
+  maxshawnwx,
 ]
