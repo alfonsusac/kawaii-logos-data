@@ -9,6 +9,10 @@ export const thatonecalculator: Entries[number] = {
         bluesky: "t1c.dev",
         github: "thatonecalculator",
     },
+    license: {
+        label: "CC BY-SA 4.0",
+        href: "https://creativecommons.org/licenses/by-sa/4.0/",
+    },
     images: [
         {
             title: "surrealdb",
