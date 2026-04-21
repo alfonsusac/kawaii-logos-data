@@ -1,0 +1,7 @@
+GET https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=alfon.dev
+
+
+### 
+
+
+GET https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=did:plc:wlufmu2mayhnccw3v4pdu4p5

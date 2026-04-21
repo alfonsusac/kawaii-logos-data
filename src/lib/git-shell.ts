@@ -11,7 +11,7 @@ export class Git {
   get cwd() { return this.path }
 
   static clone = async (what: string, args?: GitCloneOptions, where?: string) => {
-    await Bun.$`git clone ${ args?.quiet ? "-q" : "" } ${ GitHub.gitUrl(what) } ${ where }`
+    await Bun.$`git clone ${ args?.quiet ? "-q" : [] } ${ GitHub.gitUrl(what) } ${ where ?? [] }`
     return new Git(where)
   }
   clone = (what: string, args?: GitCloneOptions) => {
@@ -26,7 +26,7 @@ export class Git {
   }
 
   static branch = (args?: GitBranchOptions, cwd?: string) => {
-    const cmd = Bun.$`git branch ${ args?.showCurrent ? "--show-current" : "" } ${ args?.all ? "-a" : "" }`
+    const cmd = Bun.$`git branch ${ args?.showCurrent ? "--show-current" : [] } ${ args?.all ? "-a" : [] }`
     return cwd ? cmd.cwd(cwd) : cmd
   }
   branch = (args?: GitBranchOptions) => {
@@ -42,7 +42,7 @@ export class Git {
   }
 
   static log = (what: string, args?: GitLogOptions, cwd?: string) => {
-    const cmd = Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : "" } ${ args?.format ? `--format=${ args.format }` : "" } ${ args?.date ? `--date=${ args.date }` : "" } ${ args?.nameStatus ? "--name-status" : "" } ${ args?.pretty ? `--pretty=${ args.pretty }` : "" } -- "${ { raw: what } }"`
+    const cmd = Bun.$`git log ${ args?.diffFilter ? `--diff-filter=${ args.diffFilter }` : [] } ${ args?.format ? `--format=${ args.format }` : [] } ${ args?.date ? `--date=${ args.date }` : [] } ${ args?.nameStatus ? "--name-status" : [] } ${ args?.pretty ? `--pretty=${ args.pretty }` : [] } -- "${ { raw: what } }"`
     return cwd ? cmd.cwd(cwd).text() : cmd.text()
   }
   log = (what: string, args?: GitLogOptions) => {
@@ -50,10 +50,10 @@ export class Git {
   }
 
   static pull = (args?: GitPullOptions, cwd?: string) => {
-    const cmd = Bun.$`git pull ${ args?.quiet ? "-q" : "" } ${ args?.force ? "--force" : "" }`
+    const cmd = Bun.$`git pull ${ args?.force ? "--force" : [] } ${ args?.quiet ? "-q" : [] }`
     return cwd ? cmd.cwd(cwd) : cmd
   }
-  pull = (args?: GitPullOptions) => {
+  pull = async (args?: GitPullOptions) => {
     return Git.pull(args, this.path)
   }
 

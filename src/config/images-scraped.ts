@@ -38,7 +38,7 @@ export const repositoryConfigs: RepositoryConfig[] = [
     twitter: "sawaratsuki1004",
     bluesky: "sawaratsuki.bsky.social",
     license: createLicense('Custom', 'https://github.com/SAWARATSUKI/KawaiiLogos?tab=readme-ov-file#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9'),
-    preprocess: [(filepath) => filepath.includes('ResponseCode') ? filepath.split('/')[1] : filepath]
+    preprocess: [ (filepath) => filepath.includes('ResponseCode') ? `${ filepath.split('/')[ 2 ].split('.')[ 0 ] }/${ filepath.split('/')[ 2 ].split('.')[ 1 ]}/${filepath.split('/')[2]}` : filepath]
   },
   {
     repoPath: "G2-Games/fun-logos",

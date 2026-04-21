@@ -1,17 +1,19 @@
 import { repositoryConfigs, type RepositoryConfig } from "./config/images-scraped"
 import { getAvatarURLfromRepoPath, GitHub } from "./lib/url-github"
 import { logError, logProcess } from "./lib/log"
-import { cloneRepository, getImageFilePaths, type Repository } from "./scrape-util"
+import { getRepository, getImageFilePaths, type Repository } from "./scrape-util"
 import { isInGitHubAction, resolveIntoArray } from "./lib/util"
 import type { Image, Entries, Entry } from "../types"
 import { getCreationDate, getHistory } from "./lib/history"
 
 export async function getScrapedImageList(): Promise<Entries> {
 
-  const processedConfig = await resolveIntoArray(repositoryConfigs
-    // .filter(cfg => !isInGitHubAction ? cfg.repoPath === "mkpoli/VTuber-Styled-Logos" : true) // Dev only
-    .filter(cfg => !isInGitHubAction ? cfg.repoPath === "SAWARATSUKI/KawaiiLogos" : true) // Dev only
-    .map(processConfig)
+  const processedConfig = await resolveIntoArray(
+    repositoryConfigs
+      // .filter(cfg => !isInGitHubAction ? cfg.repoPath === "Crysta1221/tech_logos" : true) // Dev only
+      // .filter(cfg => !isInGitHubAction ? cfg.repoPath === "mkpoli/VTuber-Styled-Logos" : true) // Dev only
+      .filter(cfg => !isInGitHubAction ? cfg.repoPath === "SAWARATSUKI/KawaiiLogos" : true) // Dev only
+      .map(processConfig)
   )
 
   return processedConfig.map<Entry>(result => {
@@ -50,7 +52,7 @@ async function processConfig(userConfig: RepositoryConfig) {
   const groups = await (
     async () => {
       try {
-        const repository = await cloneRepository(config.repoPath)
+        const repository = await getRepository(config.repoPath)
         let filePaths = await getImageFilePaths(repository.cwd)
         logProcess(`Scraped repository ${ config.repoPath }`)
 
@@ -91,19 +93,19 @@ function getConfig(config: RepositoryConfig) {
     ...config,
     filter: config.filter ?? [],
     preprocess: config.preprocess ?? [],
-    githubUsername: config.repoPath.split("/")[0],
+    githubUsername: config.repoPath.split("/")[ 0 ],
   }
 }
 
 // ------
 
 async function processFile(this: Repository, filePath: { preprocessed: string, original: string }) {
-  logProcess(`Processed file ${ filePath.preprocessed }`)
+  // logProcess(`Processed file ${ filePath.preprocessed }`)
   const createdAt = await getCreationDate(filePath.original, this.git)
   const history = await getHistory(filePath.original, this.git)
   const name = filePath.preprocessed.split("/").pop() ?? filePath.preprocessed
   const branch = this.branch
-  logProcess(`Processed file ${ filePath.preprocessed }`)
+  logProcess(`Processed file ${ filePath.preprocessed } (${ filePath.original })`)
   return { name, createdAt, branch, history, filePath }
 }
 type ProcessedFile = Awaited<ReturnType<typeof processFile>>
@@ -127,7 +129,7 @@ function processFilesIntoGroups(files: ProcessedFile[]) {
     }
     return groups.push({
       name: groupName,
-      files: [file]
+      files: [ file ]
     })
   })
 
