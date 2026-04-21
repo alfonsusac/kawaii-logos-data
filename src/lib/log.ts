@@ -37,10 +37,12 @@ export function logger(prefix: string = '') {
 
     error: (title: string, error?: any) => {
       console.log(`${ red }${ prefix } --- ✖️${ reset }`, title)
-      console.log(error)
-      console.log(`${ red }${ prefix } --- end of error ---${ reset }`)
+      if (error !== undefined) {
+        console.log(error)
+        console.log(`${ red }${ prefix } --- end of error ---${ reset }`)
+      }
     },
-    
+
     verbose: (...args: any) =>
       console.log(`${black} >`, ...args, reset)
   }
