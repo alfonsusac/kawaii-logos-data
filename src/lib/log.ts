@@ -31,13 +31,16 @@ export function logger(prefix: string = '') {
   return {
     info: (...args: any) =>
       console.log(`${ blue }${ prefix } i${ reset }`, ...args),
+    
     success: (...args: any) =>
       console.log(`${ green }${ prefix } ✔️${ reset }`, ...args),
-    error: (title: string, error: any) => {
-      console.log(`${ red }${ prefix } ✖️${ reset }`, title)
+
+    error: (title: string, error?: any) => {
+      console.log(`${ red }${ prefix } --- ✖️${ reset }`, title)
       console.log(error)
       console.log(`${ red }${ prefix } --- end of error ---${ reset }`)
     },
+    
     verbose: (...args: any) =>
       console.log(`${black} >`, ...args, reset)
   }
