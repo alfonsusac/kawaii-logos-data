@@ -1,4 +1,4 @@
-import { ShellError } from "bun"
+import { ShellError, type ShellOutput } from "bun"
 import { alfonsusac } from "./entries/alfonsusac"
 import { arnav } from "./entries/arnav"
 import { cr1sta_dev } from "./entries/cr1sta_dev"
@@ -42,8 +42,9 @@ try {
     thatonecalculator,
   })
 
-  await saveToDisk(resolved, "./dist")
-  await saveToDataBranch(resolved, "main-2", "main-2-data")
+  const output = await prepareOutput(resolved)
+  await cleanAndSaveToDisk(output, "./dist")
+  await saveToDataBranch(output, "main-2", "main-2-data")
 
   log.success("Data processed successfully")
 } catch (error) {
@@ -53,15 +54,12 @@ try {
 }
 
 
-
-
-async function getFolderStructure(data: Output) {
+async function prepareOutput(data: Output) {
   const response = {
     updatedAt: new Date().toISOString(),
     data
   }
   const stringified = JSON.stringify(response, null, 2)
-
   const outputTypeFileContent = await Bun.file('./src/lib/model/output.ts').text()
   const folderStructure = {
     '/data.json': stringified,
@@ -78,30 +76,39 @@ ${ response.data.map(entry => `- ${ entry.displayName }`).join("\n") }
 If you want to contribute such as adding missing image or fixing incorrect data, please refer head over to the \`main\` branch
 `,
     '/types.ts': outputTypeFileContent,
+    '/.gitignore': `*
+!.gitignore
+!README.md
+!data.json
+`
+    // Switching branch from main to data branch will cause gitignored files to carry over. 
+    // So we need to re-ignore those files in the data branch.
+    // So that when we commit, we won't accidentally commit files that are not supposed to be in the data branch such as the source code or other config files.
   }
 
-  return { folderStructure, response }
-
+  return {
+    response,
+    stringified,
+    folderStructure
+  }
 }
+type DataResponse = Awaited<ReturnType<typeof prepareOutput>>
 
 
 
-
-async function saveToDisk(data: Output, folderpath: string) {
+async function cleanAndSaveToDisk(data: DataResponse, folderpath: string) {
   const log = logger("saveToDisk")
   log.info(`Saving Data to ${ folderpath }`)
 
-  const result = await getFolderStructure(data)
   await rm(folderpath, { recursive: true, force: true })
-  await Promise.all(Object.entries(result.folderStructure).map(([ path, content ]) => {
+  await Promise.all(Object.entries(data.folderStructure).map(([ path, content ]) => {
     return Bun.write(`${ folderpath }${ path }`, content)
   }))
   log.success(`Data saved to ${ folderpath } successfully`)
-  return result
 }
 
 
-async function saveToDataBranch(data: Output, mainBranchName: string, dataBranchName: string) {
+async function saveToDataBranch(data: DataResponse, mainBranchName: string, dataBranchName: string) {
   const log = logger("saveToDataBranch")
   log.info(`Saving Data to branch ${ dataBranchName }`)
 
@@ -109,55 +116,48 @@ async function saveToDataBranch(data: Output, mainBranchName: string, dataBranch
   try {
     if (branch.includes(dataBranchName)) {
       log.verbose('git switch ${ dataBranchName }')
-      await Bun.$`git switch ${ dataBranchName }`
+      const gitswitch = await Bun.$`git switch ${ dataBranchName }`.nothrow()
+      if (gitswitch.stderr.toString().includes("Please commit your changes or stash them before you switch branches.")) {
+        log.error(`Local changes detected. Please commit or stash your changes before running the script.`)
+        return
+      }
 
       log.verbose('git pull')
       await Bun.$`git pull`
     } else {
       log.verbose('git switch --orphan ${ dataBranchName }')
       const gitswitch = await Bun.$`git switch --orphan ${ dataBranchName }`.nothrow()
-      console.log("AAAA")
-      console.log(gitswitch.stderr.toString())
-      console.log("AAAA")
+
       if (gitswitch.stderr.toString().includes("Please commit your changes or stash them before you switch branches.")) {
         log.error(`Local changes detected. Please commit or stash your changes before running the script.`)
         return
       }
     }
     log.verbose(`Switched to branch ${ dataBranchName }`)
-    try {
-      const currentBranch = await Bun.$`git branch --show-current`.text()
-      if (currentBranch.trim() !== dataBranchName) {
-        log.error(`Failed to switch to branch ${ dataBranchName }. Current branch is ${ currentBranch }`)
-        return
-      }
-
-      log.verbose(`Saving data to disk in branch ${ dataBranchName }`)
-      const result = await saveToDisk(data, "./")
-
-      log.verbose('git add .')
-      await Bun.$`git add .`
-
-      log.verbose(`git commit -m "Update data ${ result.response.updatedAt }" -a`)
-      await Bun.$`git commit -m "Update data ${ result.response.updatedAt }" -a`
-
-      log.verbose(`git push -u origin ${ dataBranchName }`)
-      await Bun.$`git push -u origin ${ dataBranchName }`
-
-      log.verbose(`git switch ${ mainBranchName }`)
-      await Bun.$`git switch ${ mainBranchName }`
-
-    } catch (error) {
-      log.error(`Error occurred while saving to data branch`, error)
-      log.verbose(`git switch ${ mainBranchName } --force`)
-      await Bun.$`git switch ${ mainBranchName } --force`
+    const currentBranch = await Bun.$`git branch --show-current`.text()
+    if (currentBranch.trim() !== dataBranchName) {
+      log.error(`Failed to switch to branch ${ dataBranchName }. Current branch is ${ currentBranch }`)
+      return
     }
+
+    log.verbose(`Saving data to disk in branch ${ dataBranchName }`)
+    await cleanAndSaveToDisk(data, "./")
+
+    log.verbose('git add .')
+    await Bun.$`git add .`
+
+    log.verbose(`git commit -m "Update data ${ data.response.updatedAt }" -a`)
+    await Bun.$`git commit -m "Update data ${ data.response.updatedAt }" -a`
+
+    log.verbose(`git push -u origin ${ dataBranchName }`)
+    await Bun.$`git push -u origin ${ dataBranchName }`
+
+    log.verbose(`git switch ${ mainBranchName }`)
+    await Bun.$`git switch ${ mainBranchName }`
+
   } catch (error) {
-    // console.log("Error", error)
-    // console.log("Error message", error instanceof Error ? error.message : "Unknown error")
-    // console.log("Error message (stderr):", error instanceof Bun.ShellError ? error.stderr : "Not a ShellError")
-    // if (typeof error === "object" && error !== null && 'stderr' in error && error.stderr.includes("Your local changes to the following files would be overwritten by checkout:")) {
-    //   log.error(`Local changes detected. Please commit or stash your changes before running the script.`)
-    // }
+    log.error(`Error occurred while saving to data branch`, error)
+    log.verbose(`git switch ${ mainBranchName } --force`)
+    await Bun.$`git switch ${ mainBranchName } --force`
   }
 }
