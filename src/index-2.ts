@@ -1,4 +1,3 @@
-import { ShellError, type ShellOutput } from "bun"
 import { alfonsusac } from "./entries/alfonsusac"
 import { arnav } from "./entries/arnav"
 import { cr1sta_dev } from "./entries/cr1sta_dev"
