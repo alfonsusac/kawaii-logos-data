@@ -1,3 +1,4 @@
+import { log } from "console"
 import { alfonsusac } from "./entries/alfonsusac"
 import { arnav } from "./entries/arnav"
 import { cr1sta_dev } from "./entries/cr1sta_dev"
@@ -9,17 +10,25 @@ import { hvpexe } from "./entries/hvpexe"
 import { saltyaom } from "./entries/saltyaom"
 import { styxpilled } from "./entries/styxpilled"
 import { thatonecalculator } from "./entries/thatonecalculator"
+import { blue, green } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
-import { logger } from "./lib/log"
-import type { Authors, Output } from "./lib/model/output"
+import { info, logerror, logger, verbose, warn } from "./lib/log"
+import type { Output } from "./lib/model/output"
 import { resolveDefinitions } from "./resolve-definitions"
 import { rm } from "fs/promises"
 
 
-const log = logger("index")
-log.info("Begin processing data")
+const {
+  isInGitHubAction,
+  revalidateToken,
+  environment,
+} = prepareEnv()
+
+log(`${ blue }\nkawaii-logos-data ${ green }(${ environment })`)
+info("Begin processing data")
 
 await cacheInstance.initializeCacheData()
+
 
 try {
   // 1. compile manually listed images
@@ -45,11 +54,41 @@ try {
   await cleanAndSaveToDisk(output, "./dist", true)
   await saveToDataBranch(output, "main-2-data")
 
-  log.success("Data processed successfully")
+  log(`${ green }Data processed successfully `)
 } catch (error) {
-  log.error("Error processing data", error)
-} finally {
-  log.verbose("End of script")
+  logerror(error, "Error occurred during data processing")
+}
+
+
+
+// --------------------------------------------------------------------------------
+
+function prepareEnv() {
+
+  const envGithubActions = process.env[ 'GITHUB_ACTIONS' ]
+  const isInGitHubAction = envGithubActions === "true"
+  const revalidateToken = process.env[ 'REVALIDATE_TOKEN' ]
+  const environment = process.env.NODE_ENV
+
+  if (envGithubActions === undefined) {
+    warn("GITHUB_ACTIONS environment variable not detected.")
+    info("Assuming local development environment.")
+  }
+  if (isInGitHubAction) {
+    info("GITHUB_ACTIONS environment variable detected. Assuming GitHub Actions environment.")
+  }
+  if (revalidateToken === undefined) {
+    info("REVALIDATE_TOKEN environment variable not detected. Website revalidation will be skipped. (Set REVALIDATE_TOKEN=your_token to enable revalidation)")
+  }
+  if (![ 'production', 'development' ].includes(environment || "")) {
+    warn(`NODE_ENV environment variable is set to '${ environment }'. Expected 'production' or 'development'.`)
+  }
+
+  return {
+    isInGitHubAction,
+    revalidateToken,
+    environment
+  }
 }
 
 
@@ -96,76 +135,36 @@ type DataResponse = Awaited<ReturnType<typeof prepareOutput>>
 
 
 async function cleanAndSaveToDisk(data: DataResponse, folderpath: string, clean: boolean) {
-  const log = logger("saveToDisk")
-  log.info(`Saving Data to ${ folderpath }`)
+  info(`Saving Data to ${ folderpath }`)
 
   clean && await rm(folderpath, { recursive: true, force: true })
   await Promise.all(Object.entries(data.folderStructure).map(([ path, content ]) => {
     return Bun.write(`${ folderpath }${ path }`, content)
   }))
-  log.success(`Data saved to ${ folderpath } successfully`)
+  info(`Data saved to ${ folderpath } successfully`)
 }
 
 
 async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
+  if (process.env.NODE_ENV !== "production") {
+    info(`--watch mode used in bun dev. Skipping git switch and commit. Use 'bun start' to enable git switch and commit.`)
+    return
+  }
   await usingGitBranch(
     dataBranchName,
     async () => {
-      await cleanAndSaveToDisk(data, "./dist", true)
+      await cleanAndSaveToDisk(data, "./", false)
 
+      verbose('git add .')
+      await Bun.$`git add .`
+
+      verbose(`git commit -m "Update data ${ data.response.updatedAt }" -a`)
+      await Bun.$`git commit -m "Update data ${ data.response.updatedAt }" -a`
+
+      verbose(`git push -u origin ${ dataBranchName }`)
+      await Bun.$`git push -u origin ${ dataBranchName }`
     }
   )
-  // const log = logger("saveToDataBranch")
-  // log.info(`Saving Data to branch ${ dataBranchName }`)
-
-  // const branch = await Bun.$`git branch --show-current -a`.text()
-  // try {
-  //   if (branch.includes(dataBranchName)) {
-  //     log.verbose('git switch ${ dataBranchName }')
-  //     const gitswitch = await Bun.$`git switch ${ dataBranchName }`.nothrow()
-  //     if (gitswitch.stderr.toString().includes("Please commit your changes or stash them before you switch branches.")) {
-  //       log.error(`Local changes detected. Please commit or stash your changes before running the script.`)
-  //       return
-  //     }
-
-  //     log.verbose('git pull')
-  //     await Bun.$`git pull`
-  //   } else {
-  //     log.verbose('git switch --orphan ${ dataBranchName }')
-  //     const gitswitch = await Bun.$`git switch --orphan ${ dataBranchName }`.nothrow()
-
-  //     if (gitswitch.stderr.toString().includes("Please commit your changes or stash them before you switch branches.")) {
-  //       log.error(`Local changes detected. Please commit or stash your changes before running the script.`)
-  //       return
-  //     }
-  //   }
-  //   log.verbose(`Switched to branch ${ dataBranchName }`)
-  //   const currentBranch = await Bun.$`git branch --show-current`.text()
-  //   if (currentBranch.trim() !== dataBranchName) {
-  //     log.error(`Failed to switch to branch ${ dataBranchName }. Current branch is ${ currentBranch }`)
-  //     return
-  //   }
-
-  //   log.verbose(`Saving data to disk in branch ${ dataBranchName }`)
-  //   await cleanAndSaveToDisk(data, "./")
-
-  //   log.verbose('git add .')
-  //   await Bun.$`git add .`
-
-  //   log.verbose(`git commit -m "Update data ${ data.response.updatedAt }" -a`)
-  //   await Bun.$`git commit -m "Update data ${ data.response.updatedAt }" -a`
-
-  //   log.verbose(`git push -u origin ${ dataBranchName }`)
-  //   await Bun.$`git push -u origin ${ dataBranchName }`
-
-  //   log.verbose(`git switch ${ mainBranchName }`)
-  //   await Bun.$`git switch ${ mainBranchName }`
-
-  // } catch (error) {
-  //   log.error(`Error occurred while saving to data branch`, error)
-  //   log.verbose(`git switch ${ mainBranchName } --force`)
-  //   await Bun.$`git switch ${ mainBranchName } --force`
-  // }
 }
 
 
@@ -176,7 +175,7 @@ async function usingGitBranch(
 ) {
   const log = logger("usingGitBranch")
 
-  const currentBranch = await Bun.$`git branch --show-current`.text()
+  const mainBranch = await Bun.$`git branch --show-current`.text()
   const branches = (await Bun.$`git branch --format="%(refname:short)" -a`.text())
     .split('\n')
     .filter(branch => branch.trim() !== '')
@@ -198,15 +197,23 @@ async function usingGitBranch(
     }
   } catch (error) {
     log.error(`Error occurred while switching to data branch`, error)
-    log.verbose(`git switch ${ currentBranch } --force`)
-    await Bun.$`git switch ${ currentBranch } --force`
+    log.verbose(`git switch ${ mainBranch } --force`)
+    await Bun.$`git switch ${ mainBranch } --force`
+    return
+  }
+  // Added extra check to ensure we are on the correct branch before running callback
+  const currentBranch = await Bun.$`git branch --show-current`.text()
+  if (currentBranch.trim() !== dataBranchName) {
+    log.error(`Failed to switch to branch ${ dataBranchName }. Current branch is ${ currentBranch }`)
+    log.verbose(`git switch ${ mainBranch } --force`)
+    await Bun.$`git switch ${ mainBranch } --force`
     return
   }
   log.verbose(`Switched to branch ${ dataBranchName }`)
   try {
     await callback()
   } finally {
-    log.verbose(`git switch ${ currentBranch } --force`)
-    await Bun.$`git switch ${ currentBranch } --force`
+    log.verbose(`git switch ${ mainBranch } --force`)
+    await Bun.$`git switch ${ mainBranch } --force`
   }
 }
