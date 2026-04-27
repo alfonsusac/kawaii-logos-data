@@ -18,9 +18,9 @@ export const Git = {
     return Bun.$`git push -u origin ${ branchName }`
   },
 
-  showCurrentBranch: () => {
+  showCurrentBranch: async () => {
     verbose(`git branch --show-current`)
-    return Bun.$`git branch --show-current`.text()
+    return (await Bun.$`git branch --show-current`.text()).trim()
   },
 
   getAllLocalBranch: async () => {
@@ -79,8 +79,8 @@ export const Git = {
     return Git.switchOrphan(branchName)
   },
 
-  getCurrentBranch: async () => {
-    return (await Git.showCurrentBranch()).trim()
+  getCurrentBranch: () => {
+    return Git.showCurrentBranch()
   },
 
 }
