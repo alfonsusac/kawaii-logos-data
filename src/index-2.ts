@@ -151,10 +151,10 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
     dataBranchName,
     async () => {
       console.log("before")
-      console.log(await readdir('.'))
+      console.log((await readdir('.')).join('\n'))
       await cleanAndSaveToDisk(data, "./", { clean: false })
       console.log("after")
-      console.log(await readdir('.'))
+      console.log((await readdir('.')).join('\n'))
       await Git.trackAll()
       await Git.commitAllTracked(`Update data ${ data.response.updatedAt }`)
       await Git.pushAndSetUpstream(dataBranchName)
