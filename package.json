@@ -10,8 +10,7 @@
     "typescript": "^5.0.0"
   },
   "scripts": {
-    "dev": "NODE_ENV=development bun --watch --env-file=src/.env src/index.ts",
-    "dev2": "NODE_ENV=development bun --watch --env-file=src/.env src/index-2.ts",
+    "dev": "NODE_ENV=development bun --watch --env-file=src/.env src/index-2.ts",
     "start": "NODE_ENV=production bun src/index-2.ts",
     "types": "bun types/update-types.ts"
   },
