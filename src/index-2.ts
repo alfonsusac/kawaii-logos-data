@@ -69,7 +69,7 @@ try {
 
   logMajorStep("Preparing output and saving to disk")
   const output = await prepareOutput(resolved)
-  await cleanAndSaveToDisk(output, "./dist", true)
+  await cleanAndSaveToDisk(output, "./dist", { clean: true })
   await saveToDataBranch(output, "main-2-data")
 
   if (isInGitHubAction && revalidateToken) {
@@ -130,9 +130,9 @@ type DataResponse = Awaited<ReturnType<typeof prepareOutput>>
 
 
 
-async function cleanAndSaveToDisk(data: DataResponse, folderpath: string, clean: boolean) {
+async function cleanAndSaveToDisk(data: DataResponse, folderpath: string, opts: { clean: boolean }) {
 
-  clean && await rm(folderpath, { recursive: true, force: true })
+  opts.clean && await rm(folderpath, { recursive: true, force: true })
   await Promise.all(Object.entries(data.folderStructure).map(([ path, content ]) => {
     return Bun.write(`${ folderpath }${ path }`, content)
   }))
@@ -150,7 +150,7 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   await usingGitBranch(
     dataBranchName,
     async () => {
-      await cleanAndSaveToDisk(data, "./", false)
+      await cleanAndSaveToDisk(data, "./", { clean: true })
       await Git.trackAll()
       await Git.commitAllTracked(`Update data ${ data.response.updatedAt }`)
       await Git.pushAndSetUpstream(dataBranchName)
