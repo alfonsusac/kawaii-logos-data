@@ -1,4 +1,4 @@
-import type { ResolveContext } from "../../resolve-definitions"
+import { logerror } from "../../pipeline"
 import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles, returnUndefinedIfError } from "../api/github"
 import type { Author } from "./output"
 import { resolveBskyFromURL, resolveGithub, resolveGithubFromURL, type SocialListDef } from "./socials"
@@ -31,28 +31,28 @@ function normalizeArrayDef<T>(def: T | T[] | undefined): T[] {
   return Array.isArray(def) ? def : [ def ]
 }
 
-export async function resolveSources(def: SourcesDef | undefined, c: ResolveContext) {
+export async function resolveSources(def: SourcesDef | undefined) {
   // const defArray = normalizeArrayDef(def)
   // const resolved = await Promise.all(defArray.map(resolveSource))
   // return resolved
-  return await resolveSource(def, c)
+  return await resolveSource(def)
 }
 
 
 
-async function resolveSource(def: SourceDef | undefined, c: ResolveContext) {
+async function resolveSource(def: SourceDef | undefined) {
   if (!def) return undefined
   if (def.from === "github") {
     const [ owner, repoName ] = def.repo.split("/")
 
     const repoFiles = returnUndefinedIfError(await fetchGithubRepoFiles(`${ owner }/${ repoName }`), {
-      onError: (res) => c.logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
+      onError: (res) => logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
     })
     const ghuser = returnUndefinedIfError(await fetchGithubProfile(owner), {
-      onError: (res) => c.logerror(`Failed to fetch github profile for ${ owner }: ${ res.status }`),
+      onError: (res) => logerror(`Failed to fetch github profile for ${ owner }: ${ res.status }`),
     })
     const ghsocials = returnUndefinedIfError(await fetchGithubProfileSocialAccounts(owner), {
-      onError: (res) => c.logerror(`Failed to fetch github profile social accounts for ${ owner }: ${ res.status }`),
+      onError: (res) => logerror(`Failed to fetch github profile social accounts for ${ owner }: ${ res.status }`),
     })
 
 

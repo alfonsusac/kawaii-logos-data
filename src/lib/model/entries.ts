@@ -2,7 +2,6 @@ import { type DateDef } from "./date"
 import type { Author, Entry } from "./output"
 import { normalizeReferencesDef, type ReferencesDef } from "./references"
 import type { Site } from "../site"
-import type { ResolveContext } from "../../resolve-definitions"
 
 // ## Definitions
 
@@ -33,7 +32,9 @@ export type ImageDef = {
   },
 }
 
-export function resolveEntries(defs: EntriesDef | undefined, c: ResolveContext): Author[ 'entries' ] {
+// ----------------------------------------------------------------------------------------
+
+export function resolveEntries(defs: EntriesDef | undefined): Author[ 'entries' ] {
   if (!defs) return []
   const entries: Author[ 'entries' ] = Object
     .entries(defs)
@@ -65,19 +66,7 @@ export function resolveEntries(defs: EntriesDef | undefined, c: ResolveContext):
   return entries
 }
 
-
-// ## Output Data Types
-
-
-
-
-
-
-
-
-
-
-
+// ----------------------------------------------------------------------------------------
 
 // #### Definition Helper
 

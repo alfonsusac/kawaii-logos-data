@@ -1,8 +1,8 @@
 import { getBskyProfile } from "../api/bsky"
-import type { Author, AuthorLinks, AuthorSocialLinks } from "./output"
+import type { Author, AuthorLinks } from "./output"
 import { site } from "../site"
-import type { ResolveContext } from "../../resolve-definitions"
 import { fetchGithubProfile } from "../api/github"
+import { logerror } from "../../pipeline"
 
 export type SocialsDef = {
   github?: string,
@@ -19,7 +19,6 @@ export type SocialListDef = {
 export async function resolveSocials(
   def: SocialsDef | undefined,
   list: SocialListDef | undefined = [],
-  c: ResolveContext
 ) {
 
   // 0. make sure none of SocialsDef contains urls.
@@ -32,16 +31,16 @@ export async function resolveSocials(
   // 0.
   if (def) {
     if (def.github && def.github.includes("://")) {
-      c.logerror(`GitHub username should not contain URL parts: ${ def.github }`)
+      logerror(`GitHub username should not contain URL parts: ${ def.github }`)
     }
     if (def.x && (def.x.includes("://"))) {
-      c.logerror(`X/Twitter username should not contain URL parts: ${ def.x }`)
+      logerror(`X/Twitter username should not contain URL parts: ${ def.x }`)
     }
     if (def.bsky && def.bsky.includes("://")) {
-      c.logerror(`Bluesky username should not contain URL parts: ${ def.bsky }`)
+      logerror(`Bluesky username should not contain URL parts: ${ def.bsky }`)
     }
     if (def.site && (def.site.includes("://"))) {
-      c.logerror(`Personal site should not contain protocol: ${ def.site }`)
+      logerror(`Personal site should not contain protocol: ${ def.site }`)
     }
   }
 
@@ -67,14 +66,14 @@ export async function resolveSocials(
 
   const validGithubs: { url: string, username: string }[] = []
   for (const url of githubs) {
-    const github = resolveGithubFromURL(url, c)
+    const github = resolveGithubFromURL(url)
     if (!github) {
-      c.logerror(`GitHub URL not valid: ${ url }`)
+      logerror(`GitHub URL not valid: ${ url }`)
       continue
     }
     const isvalid = await verifyGithub(github.username)
     if (!isvalid) {
-      c.logerror(`GitHub user not found: ${ github.username }`)
+      logerror(`GitHub user not found: ${ github.username }`)
       continue
     }
     validGithubs.push(github)
@@ -83,9 +82,9 @@ export async function resolveSocials(
 
   const validXs: { url: string, username: string }[] = []
   for (const url of xs) {
-    const x = resolveTwitterFromURL(url, c)
+    const x = resolveTwitterFromURL(url)
     if (!x) {
-      c.logerror(`X/Twitter URL not valid: ${ url }`)
+      logerror(`X/Twitter URL not valid: ${ url }`)
       continue
     }
     // No verification for X/Twitter since the API is not easily accessible
@@ -95,14 +94,14 @@ export async function resolveSocials(
 
   const validBskys: { url: string, username: string }[] = []
   for (const url of bskys) {
-    const bsky = resolveBskyFromURL(url, c)
+    const bsky = resolveBskyFromURL(url)
     if (!bsky) {
-      c.logerror(`Bluesky URL not valid: ${ url }`)
+      logerror(`Bluesky URL not valid: ${ url }`)
       continue
     }
     const isvalid = await verifyBsky(bsky.username)
     if (!isvalid) {
-      c.logerror(`Bluesky user not found: ${ bsky.username }`)
+      logerror(`Bluesky user not found: ${ bsky.username }`)
       continue
     }
     validBskys.push(bsky)
@@ -119,7 +118,7 @@ export async function resolveSocials(
       validPersonalSites.push(resolvedUrl)
       links.personalsites.push(resolvedUrl)
     } catch (e) {
-      c.logerror(`Personal site URL not valid: ${ url }`)
+      logerror(`Personal site URL not valid: ${ url }`)
     }
   }
 
@@ -188,11 +187,11 @@ export function resolveGithub(def: SocialsDef[ 'github' ]) {
   if (!def) return undefined
   return { username: def, url: site(`github.com/${ def }`), }
 }
-export function resolveGithubFromURL(url: string | undefined, c: ResolveContext) {
+export function resolveGithubFromURL(url: string | undefined) {
   if (!url) return undefined
   const match = url.match(/github\.com\/([^\/]+)/)
   if (!match) {
-    c.logerror(`Could not parse GitHub URL: ${ url }`)
+    logerror(`Could not parse GitHub URL: ${ url }`)
     return undefined
   }
   const username = match[ 1 ]
@@ -212,11 +211,11 @@ export function resolveTwitter(def: SocialsDef[ 'x' ]) {
   if (!def) return undefined
   return { username: def, url: site(`x.com/${ def }`), }
 }
-export function resolveTwitterFromURL(url: string | undefined, c: ResolveContext) {
+export function resolveTwitterFromURL(url: string | undefined) {
   if (!url) return undefined
   const match = url.match(/(?:x\.com|twitter\.com)\/([^\/]+)/)
   if (!match) {
-    c.logerror(`Could not parse Twitter/X URL: ${ url }`)
+    logerror(`Could not parse Twitter/X URL: ${ url }`)
     return undefined
   }
   const username = match[ 1 ]
@@ -227,11 +226,11 @@ export function resolveBsky(def: SocialsDef[ 'bsky' ]) {
   if (!def) return undefined
   return { username: def, url: site(`bsky.app/${ def }`), }
 }
-export function resolveBskyFromURL(url: string | undefined, c: ResolveContext) {
+export function resolveBskyFromURL(url: string | undefined) {
   if (!url) return undefined
   const match = url.match(/bsky\.app\/([^\/]+)/)
   if (!match) {
-    c.logerror(`Could not parse Bluesky URL: ${ url }`)
+    logerror(`Could not parse Bluesky URL: ${ url }`)
     return undefined
   }
   const username = match[ 1 ]

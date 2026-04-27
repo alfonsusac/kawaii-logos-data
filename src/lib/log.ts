@@ -2,7 +2,7 @@ import chalk from "chalk"
 import { black, blue, cyan, green, magenta, red, reset, white, yellow } from "./ansii"
 import path from "path"
 import { readFileSync } from "fs"
-const log = console.log
+import { log, verbose } from "../pipeline"
 
 export const logError = (error?: any, message?: string, opts?: {
   hideStack?: boolean
@@ -40,15 +40,15 @@ export function logger(prefix: string = '', options?: {
     info: (...args: any) =>
       log(`${ black }${ prefix ? prefix + ' ' : '' }${ blue }i${ reset }`, ...args, reset),
     verbose: (...args: any) =>
-      options?.verbose ? log(`${ black }${ prefix ? prefix + ':' : '' }`, ...args, reset) : undefined,
+      options?.verbose ? verbose(`${ black }${ prefix ? prefix + ':' : '' }`, ...args, reset) : undefined,
     // success: (...args: any) =>
     //   log(`${ green }${ prefix } ✔️${ reset }`, ...args),
 
     error: (title: string, error?: any) => {
-      log(`${ red } --- ✖️${ reset }`, title)
+      logerror(`${ red } --- ✖️${ reset }`, title)
       if (error !== undefined) {
-        log(error)
-        log(`${ red } --- end of error ---${ reset }`)
+        logerror(error)
+        logerror(`${ red } --- end of error ---${ reset }`)
       }
     },
 
@@ -65,21 +65,7 @@ export function logger(prefix: string = '', options?: {
 // -----
 
 
-export function info(...args: any) {
-  log(`${ blue }i${ reset }`, ...args, reset)
-}
-export function verbose(...args: any) {
-  log(`${ black }`, ...args, reset)
-}
-export function warn(...args: any) {
-  log(`${ yellow }!${ reset }`, ...args, reset)
-}
-export function failed(...args: any) {
-  log(`${ red }✖️${ reset }`, ...args, reset)
-}
-export function success(...args: any) {
-  log(`${ green }✔️${ reset }`, ...args, reset)
-}
+
 
 // only tested in MacOS. May not work in Windows.
 export function logerror(error?: any, message?: string, opts?: {

@@ -6,10 +6,6 @@ import { logger } from "./log"
 
 // -------------------------------------------------------
 
-type AsyncFn<T> = (...args: any[]) => Promise<T>
-
-// -------------------------------------------------------
-
 const inFlightMap = new Map<any, Promise<any>>()
 
 function dedupe<O>(fn: () => Promise<O>, key: string) {
@@ -150,7 +146,9 @@ export function createFileCache(opts: {
 // -------------------------------------------------------
 
 const verboselog = true
-const { verbose } = logger('     cache', { verbose: true })
+const { verbose } = logger('cache', { verbose: true })
+
+// -------------------------------------------------------
 
 export function cacheEntry<T>(key: string, duration: Duration) {
   return {

@@ -42,10 +42,7 @@ type MinuteDef = `${ 0 | 1 | 2 | 3 | 4 | 5 }${ 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8
 type AMPMDef = "AM" | "PM"
 
 
-const E: TimeDef = "0.02 AM"
-
-
-
+// -----------------------------------------------------------------------------
 
 
 export function resolveDate(dateDef: DateDef): Date | undefined {

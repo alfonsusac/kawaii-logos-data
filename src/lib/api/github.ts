@@ -1,8 +1,8 @@
+import { verbose } from "../../pipeline"
 import { black } from "../ansii"
 import { cacheEntry } from "../cache"
 import { milisecondToHumanReadableComplete } from "../duration"
 import { appfetch } from "../fetch"
-import { verbose } from "../log"
 
 export let githubFetchesCount = 0
 

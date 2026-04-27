@@ -1,4 +1,3 @@
-import { log } from "console"
 import { alfonsusac } from "./entries/alfonsusac"
 import { arnav } from "./entries/arnav"
 import { cr1sta_dev } from "./entries/cr1sta_dev"
@@ -10,14 +9,12 @@ import { hvpexe } from "./entries/hvpexe"
 import { saltyaom } from "./entries/saltyaom"
 import { styxpilled } from "./entries/styxpilled"
 import { thatonecalculator } from "./entries/thatonecalculator"
-import { black, blue, cyan, green, magenta, reset } from "./lib/ansii"
+import { black, cyan, magenta, reset } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
-import { info, logerror, logger, logMajorStep, verbose, warn } from "./lib/log"
 import type { Output } from "./lib/model/output"
 import { resolveDefinitions } from "./resolve-definitions"
 import { readdir, rm } from "fs/promises"
 import { Git } from "./lib/git"
-import { generateGitIgnore } from "./lib/util"
 import { aikoyori } from "./entries/aikoyori"
 import { maxshawnwx } from "./entries/maxshawnws"
 import { sawaratsuki } from "./entries/sawaratsuki"
@@ -30,80 +27,70 @@ import { cocoa_xu } from "./entries/cocoa_xu"
 import { bskyFetchesCount } from "./lib/api/bsky"
 import { githubFetchesCount } from "./lib/api/github"
 import { syke9p3 } from "./entries/syke9p3"
+import { generateGitIgnore } from "./utils"
+import { info, runApp, step, verbose, warn } from "./pipeline"
+import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
+import { logger } from "./lib/log"
+import { revalidateMainWebsite } from "./effects"
 
 
+runApp(async () => {
 
-log(`${ blue }\nkawaii-logos-data ${ green }(${ process.env.NODE_ENV })`)
+  await step(
+    "Setup and Initialization", async () => {
+      await step("Validating env var", checkEnvVars)
+      await step("Initializing cache", cacheInstance.initializeCacheData)
+    },
+  )
 
-logMajorStep("Checking environment variables")
+  const resolved = await step(
+    "Resolving definitions", async () => {
+      const resolved = await resolveDefinitions({
+        aikoyori,
+        andregans,
+        alfonsusac,
+        arnav,
+        cocoa_xu,
+        cr1sta_dev,
+        dsphng,
+        fenjalien,
+        fumanama,
+        g2_games,
+        hcho3,
+        hvpexe,
+        ldmdiamondl,
+        maxshawnwx,
+        mkpoli,
+        saltyaom,
+        sawaratsuki,
+        syke9p3,
+        styxpilled,
+        thatonecalculator,
+        urielchan,
+      })
+      return resolved
+    }
+  )
 
-const envGithubActions = process.env[ 'GITHUB_ACTIONS' ]
-const isInGitHubAction = envGithubActions === "true"
-const revalidateToken = process.env[ 'REVALIDATE_TOKEN' ]
-const environment = process.env.NODE_ENV
-
-if (envGithubActions === undefined) {
-  warn(`${ cyan }GITHUB_ACTIONS${ reset } environment variable not detected.`)
-}
-if (isInGitHubAction) {
-  info(`${ cyan }GITHUB_ACTIONS${ reset } environment variable detected. Assuming GitHub Actions environment.`)
-}
-if (revalidateToken === undefined) {
-  warn(`${ cyan }REVALIDATE_TOKEN${ reset } environment variable not detected.`)
-}
-if (![ 'production', 'development' ].includes(environment || "")) {
-  warn(`${ cyan }NODE_ENV${ reset } environment variable is set to '${ environment }'. Expected 'production' or 'development'.`)
-}
-
-await cacheInstance.initializeCacheData()
-
-
-// --------------------------------------------------------------------------------
-
-// Main
-
-try {
-  logMajorStep("Begin processing data")
-  const resolved = await resolveDefinitions({
-    aikoyori,
-    andregans,
-    alfonsusac,
-    arnav,
-    cocoa_xu,
-    cr1sta_dev,
-    dsphng,
-    fenjalien,
-    fumanama,
-    g2_games,
-    hcho3,
-    hvpexe,
-    ldmdiamondl,
-    maxshawnwx,
-    mkpoli,
-    saltyaom,
-    sawaratsuki,
-    syke9p3,
-    styxpilled,
-    thatonecalculator,
-    urielchan,
-  })
-
-  logMajorStep("Preparing output and saving to disk")
-  const output = await prepareOutput(resolved)
-  await cleanAndSaveToDisk(output, "./dist", { clean: true })
-  await saveToDataBranch(output, "main-2-data")
+  await step(
+    "Persisting output to disk and to git branch", async () => {
+      const output = await step("Preparing output",
+        () => prepareOutput(resolved))
+      await step("Saving to disk",
+        () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
+      await step("Saving to data branch",
+        () => saveToDataBranch(output, "main-2-data"))
+    }
+  )
 
   if (isInGitHubAction && revalidateToken) {
-    logMajorStep("Revalidating website")
-    await fetch(`https://vtuberlogos.alfon.dev/revalidate?key=${ revalidateToken }`).then((res) => res.json())
+    await step(
+      "Running side effects", async () => {
+        await step("Revalidating website", revalidateMainWebsite)
+      }
+    )
   }
-
-  logMajorStep(`Data processed successfully `)
-  info(`Total bluesky fetches: ${ magenta }${ bskyFetchesCount }`)
-  info(`Total github fetches: ${ magenta }${ githubFetchesCount }`)
-} catch (error) {
-  logerror(error, "Error occurred during data processing")
-}
+})
 
 
 // --------------------------------------------------------------------------------
@@ -120,7 +107,12 @@ async function prepareOutput(data: Output) {
     // Switching branch from main to data branch will cause gitignored files to carry over. 
     // So we need to re-ignore those files in the data branch.
     // So that when we commit, we won't accidentally commit files that are not supposed to be in the data branch such as the source code or other config files.
-    '/.gitignore': generateGitIgnore('*', '!.gitignore', '!data.json', '!README.md'),
+    '/.gitignore': generateGitIgnore(
+      '*',
+      '!.gitignore',
+      '!data.json',
+      '!README.md'
+    ),
     '/data.json': stringified,
     '/README.md': [
       `# The Data Branch`,
@@ -160,7 +152,7 @@ async function cleanAndSaveToDisk(data: DataResponse, folderpath: string, opts: 
     return Bun.write(`${ folderpath }${ path }`, content)
   }))
 
-  info(`Data saved to ${ cyan }${ folderpath }${ reset } successfully`)
+  verbose(`Data saved to ${ cyan }${ folderpath }${ black } successfully`)
 }
 
 
