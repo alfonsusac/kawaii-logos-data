@@ -97,7 +97,7 @@ async function prepareOutput(data: Output) {
     // Switching branch from main to data branch will cause gitignored files to carry over. 
     // So we need to re-ignore those files in the data branch.
     // So that when we commit, we won't accidentally commit files that are not supposed to be in the data branch such as the source code or other config files.
-    './gitignore': generateGitIgnore('*', '!.gitignore', '!data.json', '!README.md'),
+    '/.gitignore': generateGitIgnore('*', '!.gitignore', '!data.json', '!README.md'),
     '/data.json': stringified,
     '/README.md': [
       `# The Data Branch`,
@@ -204,5 +204,6 @@ async function usingGitBranch(
   } finally {
     verbose(`Switching back to previous branch ${ previousBranch }`)
     await Git.forceSwitch(previousBranch)
+    await Bun.$`bun i`
   }
 }
