@@ -164,8 +164,11 @@ async function usingGitBranch(
   await Git.fetch()
 
   const previousBranch = await Git.showCurrentBranch()
-  const hasBranch = await Git.checkHasLocalbranch(dataBranchName)
-  verbose(`Current branch is ${ previousBranch }. Target data branch is ${ dataBranchName }. Branch exists: ${ hasBranch }`)
+  const {
+    hasLocal,
+    hasRemote,
+  } = await Git.checkHasBranch(dataBranchName)
+  // verbose(`Current branch is ${ previousBranch }. Target data branch is ${ dataBranchName }. Branch exists: ${ hasBranch }`)
 
   if (await Git.checkHasUncommitedChanges()) {
     logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch ${ dataBranchName }.`)
@@ -173,9 +176,11 @@ async function usingGitBranch(
   }
 
   try {
-    if (hasBranch) {
+    if (hasRemote) {
       await Git.switch(dataBranchName)
       await Git.pull()
+    } else if (hasLocal && !hasRemote) {
+      await Git.switch(dataBranchName)
     } else {
       await Git.createNewLocalBranchWithoutHistory(dataBranchName)
     }

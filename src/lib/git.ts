@@ -23,7 +23,7 @@ export const Git = {
     return (await Bun.$`git branch --show-current`.text()).trim()
   },
 
-  getAllLocalBranch: async () => {
+  getAllBranch: async () => {
     verbose(`git branch --format="%(refname:short)" -a`)
     return Bun.$`git branch --format="%(refname:short)" -a`
       .text()
@@ -63,11 +63,11 @@ export const Git = {
     return Bun.$`git fetch`
   },
 
-
-
-  checkHasLocalbranch: async (branchName: string) => {
-    const branches = await Git.getAllLocalBranch()
-    return branches.includes(branchName)
+  checkHasBranch: async (branchName: string) => {
+    const branches = await Git.getAllBranch()
+    const hasLocal = branches.includes(branchName)
+    const hasRemote = branches.includes(`origin/${ branchName }`)
+    return { hasLocal, hasRemote }
   },
 
   checkHasUncommitedChanges: async () => {
