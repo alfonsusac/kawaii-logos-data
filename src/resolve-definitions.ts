@@ -35,7 +35,7 @@ export async function resolveDefinitions(
   return authorArray
 }
 
-
+// ------------------------------------------------------------
 
 async function resolveAuthor(author: AuthorDef, id: string) {
   const displayName = author.displayName ?? id
@@ -69,6 +69,7 @@ async function resolveAuthor(author: AuthorDef, id: string) {
 }
 
 
+// ------------------------------------------------------------
 
 // To be passed around during resolution to collect logs and warnings
 

@@ -6,3 +6,5 @@ export const cocoa_xu: AuthorDef = {
     repo: "cocoa-xu/ProgrammingVTuberLogos-BEAM",
   }
 }
+
+// filter: [ filepath => !filepath.includes("CC-BY-NC-SA-4.0.jpg") ]

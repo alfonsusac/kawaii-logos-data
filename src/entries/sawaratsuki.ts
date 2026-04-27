@@ -6,3 +6,7 @@ export const sawaratsuki: AuthorDef = {
     repo: "SAWARATSUKI/KawaiiLogos",
   }
 }
+
+
+
+// preprocess: [ (filepath) => filepath.includes('ResponseCode') ? `${ filepath.split('/')[ 2 ].split('.')[ 0 ] }/${ filepath.split('/')[ 2 ].split('.')[ 1 ] }/${ filepath.split('/')[ 2 ] }` : filepath ]
