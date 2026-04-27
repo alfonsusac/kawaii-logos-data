@@ -150,7 +150,7 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   await usingGitBranch(
     dataBranchName,
     async () => {
-      await cleanAndSaveToDisk(data, "./", { clean: true })
+      await cleanAndSaveToDisk(data, "./", { clean: false })
       await Git.trackAll()
       await Git.commitAllTracked(`Update data ${ data.response.updatedAt }`)
       await Git.pushAndSetUpstream(dataBranchName)
