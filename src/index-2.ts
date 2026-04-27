@@ -159,15 +159,15 @@ async function usingGitBranch(
   dataBranchName: string,
   callback: () => Promise<void>
 ) {
-  const { logerror, verbose } = logger("usingGitBranch")
+  const { logerror, verbose } = logger("usingGitBranch", { verbose: true })
 
   await Git.fetch()
 
   const previousBranch = await Git.showCurrentBranch()
   const hasBranch = await Git.checkHasLocalbranch(dataBranchName)
   verbose(`Current branch is ${ previousBranch }. Target data branch is ${ dataBranchName }. Branch exists: ${ hasBranch }`)
-  if (await Git.checkHasUncommitedChanges()) {
 
+  if (await Git.checkHasUncommitedChanges()) {
     logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch ${ dataBranchName }.`)
     return
   }
