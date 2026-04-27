@@ -2,8 +2,6 @@ import type { AuthorDef } from "../lib/model/author"
 import { AlfonsImageDef } from "../lib/model/entries"
 
 export const alfonsusac: AuthorDef = {
-  displayName: "alfonsusac",
-  pfp: "https://avatars.githubusercontent.com/alfonsusac",
   socials: {
     github: "alfonsusac",
     x: "alfonsusac",

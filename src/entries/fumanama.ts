@@ -2,10 +2,10 @@ import type { AuthorDef } from "../lib/model/author"
 
 export const fumanama: AuthorDef = {
   displayName: "fuma-nama",
-  pfp: "https://avatars.githubusercontent.com/u/76240755?v=4",
   socials: {
     github: "fuma-nama",
     x: "fuma_nama",
+    bsky: "fuma-nama.bsky.social"
   },
   entries: {
     fumadocs: {

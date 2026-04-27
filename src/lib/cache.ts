@@ -1,7 +1,7 @@
 // WIP
 
 import { black } from "./ansii"
-import { durationToMs, type Duration } from "./duration"
+import { durationToMs, milisecondToHumanReadableComplete, type Duration } from "./duration"
 import { logger } from "./log"
 
 // -------------------------------------------------------
@@ -162,7 +162,7 @@ export function cacheEntry<T>(key: string, duration: Duration) {
       }
       try {
         const content = JSON.parse(entry.value)
-        verboselog && verbose(`HIT ${ key } expires in ${ Math.round((entry.expiresAt - Date.now()) / 1000) }s`)
+        verboselog && verbose(`HIT ${ key } expires in ${ milisecondToHumanReadableComplete(Math.round((entry.expiresAt - Date.now()))) }`)
         return content as T
       } catch (error) {
         console.warn("Failed to parse cache entry, ignoring cache", error)

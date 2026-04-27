@@ -12,7 +12,6 @@ export async function resolveDefinitions(
   defs: Record<string, AuthorDef>
 ): Promise<Authors> {
 
-  // Parallel
   const results = await Promise.all(Object
     .entries(defs)
     .map(([ id, def ]) => resolveAuthor(def, id)))
@@ -25,6 +24,13 @@ export async function resolveDefinitions(
       console.log(logEntry)
     }
   }
+
+  console.log([
+    '',
+    `${ blue }Summary:${ reset }`,
+    ` - resolved ${ green }${ authorArray.length }${ reset } authors`,
+    ` - resolved ${ green }${ authorArray.reduce((sum, a) => sum + a.entries.length, 0) }${ reset } entries`,
+  ].join('\n'))
 
   return authorArray
 }

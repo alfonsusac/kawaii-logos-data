@@ -3,7 +3,6 @@ import { GitHub } from "../lib/url-github"
 
 export const dsphng: AuthorDef = {
   displayName: "dsphng",
-  // pfp: "https://avatars.githubusercontent.com/u/70198466", // TODO get twitter pfp
   socials: {
     x: "dsphng",
     bsky: "klfjlgjhjfkg.bsky.social"

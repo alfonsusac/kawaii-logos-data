@@ -45,7 +45,7 @@ async function resolveSource(def: SourceDef | undefined, c: ResolveContext) {
   if (def.from === "github") {
     const [ owner, repoName ] = def.repo.split("/")
 
-    const tree = returnUndefinedIfError(await fetchGithubRepoFiles(`${ owner }/${ repoName }`), {
+    const repoFiles = returnUndefinedIfError(await fetchGithubRepoFiles(`${ owner }/${ repoName }`), {
       onError: (res) => c.logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
     })
     const ghuser = returnUndefinedIfError(await fetchGithubProfile(owner), {
@@ -57,8 +57,9 @@ async function resolveSource(def: SourceDef | undefined, c: ResolveContext) {
 
 
 
-    if (tree === undefined) return undefined
-    const resolvedTree = tree.map(item => {
+
+    if (repoFiles === undefined) return undefined
+    const resolvedTree = repoFiles.tree.map(item => {
       return {
         ...item,
         githubPageUrl: `https://github.com/${ def.repo }/blob/main/${ item.path }`,
@@ -118,6 +119,7 @@ async function resolveSource(def: SourceDef | undefined, c: ResolveContext) {
     if (ghuser?.blog) {
       socialList.push({ label: "site", url: ghuser.blog })
     }
+    socialList.push({ label: "github", url: resolveGithub(owner)!.url })
 
     // const twitterAccount = ghsocials?.find(s => s.provider === "twitter")
     // const bskyAccount = ghsocials?.find(s => s.provider === "bluesky")
