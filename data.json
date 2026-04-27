@@ -1,11 +1,15 @@
 {
-  "updatedAt": "2026-04-27T11:40:08.926Z",
+  "updatedAt": "2026-04-27T11:57:28.097Z",
   "data": [
     {
       "id": "alfonsusac",
       "displayName": "alfonsusac",
       "pfp": "https://avatars.githubusercontent.com/alfonsusac",
       "social": {
+        "github": {
+          "username": "alfonsusac",
+          "url": "https://github.com/alfonsusac"
+        },
         "x": {
           "username": "alfonsusac",
           "url": "https://x.com/alfonsusac"
@@ -18,6 +22,11 @@
       },
       "links": {
         "socials": [
+          {
+            "type": "github",
+            "username": "alfonsusac",
+            "url": "https://github.com/alfonsusac"
+          },
           {
             "type": "x",
             "username": "alfonsusac",
@@ -111,6 +120,10 @@
       "displayName": "arnav-kr",
       "pfp": "https://avatars.githubusercontent.com/arnav-kr",
       "social": {
+        "github": {
+          "username": "arnav-kr",
+          "url": "https://github.com/arnav-kr"
+        },
         "x": {
           "username": "arnavkr_",
           "url": "https://x.com/arnavkr_"
@@ -118,6 +131,11 @@
       },
       "links": {
         "socials": [
+          {
+            "type": "github",
+            "username": "arnav-kr",
+            "url": "https://github.com/arnav-kr"
+          },
           {
             "type": "x",
             "username": "arnavkr_",
@@ -299,9 +317,21 @@
     {
       "id": "fenjalien",
       "displayName": "fenjalien",
-      "social": {},
+      "pfp": "https://avatars.githubusercontent.com/fenjalien",
+      "social": {
+        "github": {
+          "username": "fenjalien",
+          "url": "https://github.com/fenjalien"
+        }
+      },
       "links": {
-        "socials": [],
+        "socials": [
+          {
+            "type": "github",
+            "username": "fenjalien",
+            "url": "https://github.com/fenjalien"
+          }
+        ],
         "personalsites": []
       },
       "entries": [
@@ -327,6 +357,10 @@
       "displayName": "fuma-nama",
       "pfp": "https://avatars.githubusercontent.com/u/76240755?v=4",
       "social": {
+        "github": {
+          "username": "fuma-nama",
+          "url": "https://github.com/fuma-nama"
+        },
         "x": {
           "username": "fuma_nama",
           "url": "https://x.com/fuma_nama"
@@ -334,6 +368,11 @@
       },
       "links": {
         "socials": [
+          {
+            "type": "github",
+            "username": "fuma-nama",
+            "url": "https://github.com/fuma-nama"
+          },
           {
             "type": "x",
             "username": "fuma_nama",
@@ -364,6 +403,10 @@
       "displayName": "hcho3",
       "pfp": "https://avatars.githubusercontent.com/hcho3",
       "social": {
+        "github": {
+          "username": "hcho3",
+          "url": "https://github.com/hcho3"
+        },
         "x": {
           "username": "hcho3_ml",
           "url": "https://x.com/hcho3_ml"
@@ -371,6 +414,11 @@
       },
       "links": {
         "socials": [
+          {
+            "type": "github",
+            "username": "hcho3",
+            "url": "https://github.com/hcho3"
+          },
           {
             "type": "x",
             "username": "hcho3_ml",
@@ -415,7 +463,12 @@
     {
       "id": "hvpexe",
       "displayName": "hvpexe",
+      "pfp": "https://avatars.githubusercontent.com/hvpexe",
       "social": {
+        "github": {
+          "username": "hvpexe",
+          "url": "https://github.com/hvpexe"
+        },
         "x": {
           "username": "Manhkbrady",
           "url": "https://x.com/Manhkbrady"
@@ -423,6 +476,11 @@
       },
       "links": {
         "socials": [
+          {
+            "type": "github",
+            "username": "hvpexe",
+            "url": "https://github.com/hvpexe"
+          },
           {
             "type": "x",
             "username": "Manhkbrady",
@@ -451,8 +509,12 @@
     {
       "id": "saltyaom",
       "displayName": "saltyaom",
-      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:3ev4z55fibd22hfkllzpmgbz/bafkreiew3glctgcjbwjlkklvv65w5vrxkpzhbgsyb5vezaywf64onaiv74",
+      "pfp": "https://avatars.githubusercontent.com/SaltyAom",
       "social": {
+        "github": {
+          "username": "SaltyAom",
+          "url": "https://github.com/SaltyAom"
+        },
         "x": {
           "username": "saltyaom",
           "url": "https://x.com/saltyaom"
@@ -464,6 +526,11 @@
       },
       "links": {
         "socials": [
+          {
+            "type": "github",
+            "username": "SaltyAom",
+            "url": "https://github.com/SaltyAom"
+          },
           {
             "type": "x",
             "username": "saltyaom",
