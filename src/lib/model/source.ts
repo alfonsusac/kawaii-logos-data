@@ -1,7 +1,7 @@
-import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles } from "../api/github"
-import type { Entries } from "./entries"
-import type { License } from "./output"
-import { getBskySocialFromURL, getGithubSocial, getTwitterSocialFromURL, type Socials } from "./socials"
+import type { ResolveContext } from "../../resolve-definitions"
+import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles, returnUndefinedIfError } from "../api/github"
+import type { Author } from "./output"
+import { resolveBskyFromURL, resolveGithub, resolveGithubFromURL, type SocialListDef } from "./socials"
 
 export type SourcesDef = SourceDef
 
@@ -31,28 +31,31 @@ function normalizeArrayDef<T>(def: T | T[] | undefined): T[] {
   return Array.isArray(def) ? def : [ def ]
 }
 
-export async function resolveSources(def: SourcesDef | undefined) {
+export async function resolveSources(def: SourcesDef | undefined, c: ResolveContext) {
   // const defArray = normalizeArrayDef(def)
   // const resolved = await Promise.all(defArray.map(resolveSource))
   // return resolved
-  return  await resolveSource(def)
-
-  // given multiple sources, how do we resolve the socials?
-  // 1. we can merge the socials from all sources, and if there are duplicates, we can prioritize the first one in the list (i.e the one with the most entries)
-  // 2. we can merge the socials from all sources, and if there are duplicates, we can prioritize the one with the most followers (this requires additional API calls to fetch follower count)
-  // 3. we can merge the socials from all sources, and if there are duplicates, we can prioritize the one with the most recent activity (this requires additional API calls to fetch recent activity)
+  return await resolveSource(def, c)
 }
 
 
 
-async function resolveSource(def: SourceDef | undefined) {
+async function resolveSource(def: SourceDef | undefined, c: ResolveContext) {
   if (!def) return undefined
   if (def.from === "github") {
     const [ owner, repoName ] = def.repo.split("/")
 
-    const tree = await fetchGithubRepoFiles(`${ owner }/${ repoName }`)
-    const ghuser = await fetchGithubProfile(owner)
-    const ghsocials = await fetchGithubProfileSocialAccounts(owner)
+    const tree = returnUndefinedIfError(await fetchGithubRepoFiles(`${ owner }/${ repoName }`), {
+      onError: (res) => c.logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
+    })
+    const ghuser = returnUndefinedIfError(await fetchGithubProfile(owner), {
+      onError: (res) => c.logerror(`Failed to fetch github profile for ${ owner }: ${ res.status }`),
+    })
+    const ghsocials = returnUndefinedIfError(await fetchGithubProfileSocialAccounts(owner), {
+      onError: (res) => c.logerror(`Failed to fetch github profile social accounts for ${ owner }: ${ res.status }`),
+    })
+
+
 
     if (tree === undefined) return undefined
     const resolvedTree = tree.map(item => {
@@ -66,6 +69,7 @@ async function resolveSource(def: SourceDef | undefined) {
 
     const images = resolvedTree.filter(item => item.type === "blob" && item.path.toLowerCase().match(/\.(png|jpe?g|svg|gif|webp)$/))
 
+
     // resolve license
     const imagesWithLicense = images.map(image => {
       // TODO: recursively check current and parent directories for license file, and resolve the most relevant one (i.e the closest one to the image file)
@@ -78,6 +82,8 @@ async function resolveSource(def: SourceDef | undefined) {
         license,
       }
     })
+
+
 
     // resolve transform
     const transforms = normalizeArrayDef(def.transform)
@@ -93,50 +99,62 @@ async function resolveSource(def: SourceDef | undefined) {
       }
     }
 
+
+
     // TODO! resolve groupings based on transformedPath, and if no transform is provided, use the default grouping based on the original path (i.e "github/<filename>")
 
-
-    // resolve socials
-    const socials: Socials = {
-      x: (() => {
-        const xAccount = ghsocials?.find(s => s.provider === "twitter")
-        if (!xAccount) return undefined
-        return getTwitterSocialFromURL(xAccount.url)
-      })(),
-      bsky: await (async () => {
-        const bskyAccount = ghsocials?.find(s => s.provider === "bluesky")
-        if (!bskyAccount) return undefined
-        return await getBskySocialFromURL(bskyAccount.url)
-      })(),
-      github: getGithubSocial(owner),
-      site: ghuser?.blog ?? undefined,
+    const socialList: SocialListDef = []
+    ghsocials?.forEach(s => {
+      if (s.provider === "twitter") {
+        socialList.push({ label: "x", url: s.url })
+      }
+      if (s.provider === "bluesky") {
+        socialList.push({ label: "bsky", url: s.url })
+      }
+      if (s.provider === "generic") {
+        socialList.push({ label: "site", url: s.url })
+      }
+    })
+    if (ghuser?.blog) {
+      socialList.push({ label: "site", url: ghuser.blog })
     }
+
+    // const twitterAccount = ghsocials?.find(s => s.provider === "twitter")
+    // const bskyAccount = ghsocials?.find(s => s.provider === "bluesky")
+    // const githubAccount = resolveGithub(owner)
+    // const site = ghuser?.blog ?? undefined
+
+    // const twitter = resolveGithubFromURL(twitterAccount?.url, c)
+    // const bsky = resolveBskyFromURL(bskyAccount?.url, c)
+    // const github = resolveGithubFromURL(githubAccount?.url, c)
+
+    // const socials: Author[ 'socials' ] = []
+    // if (twitter) socials.push({ label: "x", ...twitter })
+    // if (bsky) socials.push({ label: "bsky", ...bsky })
+    // if (github) socials.push({ label: "github", ...github })
+    // if (site) socials.push({ label: "site", url: site })
+
+    const entries: Author[ 'entries' ] = transfomedImageRef.current.map(image => {
+      return {
+        id: image.path,
+        images: [ {
+          src: image.rawPageUrl,
+          reference: [ { site: image.githubPageUrl } ],
+          label: image.path.split("/").slice(-1)[ 0 ],
+          style: undefined,
+        } ],
+        title: image.path.split("/").slice(-1)[ 0 ],
+      }
+    })
 
     const result = {
       license: rootLicense ? {
         src: rootLicense.rawPageUrl,
         ref: rootLicense.githubPageUrl,
       } : undefined,
-      entries: transfomedImageRef.current.map(image => {
-        return {
-          id: image.path,
-          images: [ {
-            src: image.rawPageUrl,
-            reference: [ { site: image.githubPageUrl } ],
-            label: image.path.split("/").slice(-1)[ 0 ],
-            style: undefined,
-          } ],
-          title: image.path.split("/").slice(-1)[ 0 ],
-        }
-      }),
-      socials,
-    } as {
-      license?: License,
-      entries?: Entries,
-      socials?: Socials,
+      entries,
+      socialList,
     }
-
-    // console.log("Resolved source", def, result)
 
     return result
   }

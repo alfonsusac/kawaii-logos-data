@@ -1,5 +1,5 @@
 import type { DateDef } from "./date"
-import type { Site } from "./type"
+import type { Site } from "../site"
 
 // WIP
 

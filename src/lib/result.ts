@@ -1,15 +1,13 @@
-import { write } from "bun"
 import type { Entries } from "../../types"
-import { pathToGeneratedImageJSON } from "./path"
-import { generateGitIgnore, isInGitHubAction } from "./util"
+import { generateGitIgnore } from "./util"
 import { Git } from "./git-shell"
 import { logProcess } from "./log"
 
 export async function storeResult(data: Entries) {
   const response = prepareResponse(data)
 
-  if (!isInGitHubAction)
-    return await writeToKawaiiFolder(response)
+  // if (!isInGitHubAction)
+    // return await writeToKawaiiFolder(response)
 
   return await usingDataBranch(
     async () => {
@@ -35,9 +33,9 @@ function prepareResponse(data: Entries) {
 
 // --------
 
-async function writeToKawaiiFolder(response: StaticResponse) {
-  return await write(pathToGeneratedImageJSON, response.stringified)
-}
+// async function writeToKawaiiFolder(response: StaticResponse) {
+//   return await write(pathToGeneratedImageJSON, response.stringified)
+// }
 
 // --------
 

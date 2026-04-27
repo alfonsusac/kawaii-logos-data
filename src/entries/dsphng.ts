@@ -1,5 +1,3 @@
-import { Licenses } from "../lib/licenses"
-import { Image } from "../lib/model"
 import type { AuthorDef } from "../lib/model/author"
 import { GitHub } from "../lib/url-github"
 

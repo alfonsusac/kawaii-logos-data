@@ -1,11 +1,12 @@
 import chalk from "chalk"
 import { black, blue, cyan, green, magenta, red, reset, yellow } from "./ansii"
 import path from "path"
-import { inspect } from "util"
 import { readFileSync } from "fs"
 const log = console.log
 
-export const logError = (error?: any, message?: string) => {
+export const logError = (error?: any, message?: string, opts?: {
+  hideStack?: boolean
+}) => {
   log(chalk.red('\n✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️'))
   if (message)
     log('message:', message)
@@ -32,20 +33,22 @@ export const logProcess = (...arg: any) =>
 
 // -----
 
-export function logger(prefix: string = '') {
+export function logger(prefix: string = '', options?: {
+  verbose?: boolean
+}) {
   const res = {
     info: (...args: any) =>
-      console.log(`${ blue }>${ black } ${ prefix }:${ reset }`, ...args),
+      log(`${ black }${ prefix ? prefix + ' ' : '' }${ blue }i${ reset }`, ...args, reset),
     verbose: (...args: any) =>
-      console.log(`${ black }>${ black } ${ prefix }:`, ...args, reset),
+      options?.verbose ? log(`${ black }${ prefix ? prefix + ':' : '' }`, ...args, reset) : undefined,
     // success: (...args: any) =>
-    //   console.log(`${ green }${ prefix } ✔️${ reset }`, ...args),
+    //   log(`${ green }${ prefix } ✔️${ reset }`, ...args),
 
     error: (title: string, error?: any) => {
-      console.log(`${ red } --- ✖️${ reset }`, title)
+      log(`${ red } --- ✖️${ reset }`, title)
       if (error !== undefined) {
-        console.log(error)
-        console.log(`${ red } --- end of error ---${ reset }`)
+        log(error)
+        log(`${ red } --- end of error ---${ reset }`)
       }
     },
 
@@ -69,21 +72,43 @@ export function verbose(...args: any) {
   log(`${ black }`, ...args, reset)
 }
 export function warn(...args: any) {
-  log(`${ yellow }w${ reset }`, ...args, reset)
+  log(`${ yellow }!${ reset }`, ...args, reset)
+}
+export function failed(...args: any) {
+  log(`${ red }✖️${ reset }`, ...args, reset)
+}
+export function success(...args: any) {
+  log(`${ green }✔️${ reset }`, ...args, reset)
 }
 
 // only tested in MacOS. May not work in Windows.
-export function logerror(error?: any, message?: string) {
-  log(`\n\n${ red }-- ${ ((message ?? 'Error occured!') + ' ').padEnd(80, '-') }`)
-  log(`${ red }error instanceof Error: ${ error instanceof Error ? `${ green }true` : `${ yellow }false` }`)
-  if (error instanceof Error) {
-    log(`${ red }error.constructor.name:${ reset }`, error.constructor.name)
-    log(`${ red }error.name:${ reset }`, error.name)
-    log(`${ red }error.message:${ reset }`, error.message)
-    log(`${ red }error.cause:${ reset }`, error.cause)
-    // const stack = error.stack?.split('\n').slice(1).join('\n').replaceAll(`at `, `${ black }at${ reset } `) ?? ''
+export function logerror(error?: any, message?: string, opts?: {
+  simple?: boolean
+}) {
+  const isSimple = opts?.simple ?? false
+  if (isSimple) {
+    log(`${ red }Error caught!`)
+    log(`${ red }   name: ${ magenta }${ error.name ?? 'N/E' } ${ red }`)
+    log(`${ red }message: ${ reset }${ error.message ?? 'N/E' }`)
+  } else {
+    log(`\n\n${ red }-- ${ ((message ?? 'Error occured!') + ' ').padEnd(80, '-') }`)
+    log(`${ red }error instanceof Error: ${ error instanceof Error ? `${ green }true` : `${ yellow }false` }`)
+  }
 
-    log(`${ red }error.stack:${ reset }`)
+
+
+  if (error instanceof Error) {
+    if (isSimple) {
+
+    } else {
+      log(`${ red }error.constructor.name:${ reset }`, error.constructor.name)
+      log(`${ red }error.name:${ reset }`, error.name, reset)
+      log(`${ red }error.message:${ reset }`, error.message, reset)
+      log(`${ red }error.cause:${ reset }`, error.cause ?? `${ black }skill issue${ reset }`)
+      log(`${ red }error.code:${ reset }`, (error as any).code, reset)
+      log(`${ red }error.stack:${ reset }`)
+    }
+
 
     if (!error.stack) return []
     let firstStackCodeContentFlag = false
@@ -151,41 +176,56 @@ export function logerror(error?: any, message?: string) {
       })
     // console.log(stack)
 
-    console.log(
-      stack.map(x => {
-        return [
-          [
-            `  ${ black }at `,
-            x.isMain && `${ yellow }(main)${ reset } `,
-            x.token && `${ x.userland ? magenta : blue }${ x.token }${ reset } `,
-            `${ black }${ x.cwdpath }:${ reset }${ x.lineNumber }${ black }:${ reset }${ x.column }${ reset }`,
-          ].filter(Boolean).join(''),
-          x.filecontents.length > 0 && x.isFirstStackCodeContent && [
-            x.filecontents.map(line => {
-              const isErrorLine = line.lineNumber === x.lineNumber
-              if (isErrorLine) {
-                return [
-                  `${ reset }${ line.lineNumber.padStart(4, ' ') } | ${ line.content }${ reset }`,
-                  `${ reset }${ ''.padStart(4, ' ') } | ${ ''.padStart(Number(x.column), ' ') }${ yellow }^${ reset }`
-                ]
-              } else {
-                return `${ black }${ line.lineNumber.padStart(4, ' ') } | ${ line.content }${ reset }`
-              }
-            })
-              .flat(10)
-              .map(l => `     ${ l }`),
-            ''
+    if (isSimple) {
+      const x = stack[ 0 ]
+      log(
+        [
+          `${ red }  where: `,
+          `${ black }at `,
+          x.isMain && `${ yellow }(main)${ reset } `,
+          x.token && `${ x.userland ? magenta : blue }${ x.token }${ reset } `,
+          `${ black }${ x.cwdpath }:${ reset }${ x.lineNumber }${ black }:${ reset }${ x.column }${ reset }`,
+        ].filter(Boolean).join('')
+      )
+      log('')
+    } else {
+      log(
+        stack.map(x => {
+          return [
+            [
+              `  ${ black }at `,
+              x.isMain && `${ yellow }(main)${ reset } `,
+              x.token && `${ x.userland ? magenta : blue }${ x.token }${ reset } `,
+              `${ black }${ x.cwdpath }:${ reset }${ x.lineNumber }${ black }:${ reset }${ x.column }${ reset }`,
+            ].filter(Boolean).join(''),
+            x.filecontents.length > 0 && x.isFirstStackCodeContent && [
+              x.filecontents.map(line => {
+                const isErrorLine = line.lineNumber === x.lineNumber
+                if (isErrorLine) {
+                  return [
+                    `${ reset }${ line.lineNumber.padStart(4, ' ') } | ${ line.content }${ reset }`,
+                    `${ reset }${ ''.padStart(4, ' ') } | ${ ''.padStart(Number(x.column), ' ') }${ yellow }^${ reset }`
+                  ]
+                } else {
+                  return `${ black }${ line.lineNumber.padStart(4, ' ') } | ${ line.content }${ reset }`
+                }
+              })
+                .flat(10)
+                .map(l => `     ${ l }`),
+              ''
+            ]
           ]
-        ]
-          .filter(Boolean)
-          .flat(10)
-          .join('\n')
-      }).join('\n')
-    )
+            .filter(Boolean)
+            .flat(10)
+            .join('\n')
+        }).join('\n')
+      )
+      log(`\n\n`)
+    }
+
   } else {
     log(error)
   }
-  log(`\n\n`)
 }
 
 
@@ -207,3 +247,8 @@ export function logerror(error?: any, message?: string) {
 //   log(chalk.red('✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️✖️'))
 //   log('\n')
 // }
+
+
+export function logMajorStep(step: string) {
+  log(`\n${ blue }=== ${ reset }${ step } ${ blue }===`)
+}

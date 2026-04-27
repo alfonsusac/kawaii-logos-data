@@ -4,7 +4,8 @@ export type Output = Authors
 export type Author = {
   id: string,
   displayName: string,
-  socials: {
+  pfp?: string,
+  social: {
     github?: {
       username: string,
       url: string,
@@ -19,16 +20,28 @@ export type Author = {
     },
     site?: string,
   },
+  links: {
+    socials: {
+      type: "github" | "x" | "bsky",
+      username: string,
+      url: string,
+    }[],
+    personalsites: string[],
+  }
   entries: Entry[],
 }
+
+export type AuthorLinks = Author[ 'links' ]
+export type AuthorSocialLinks = Author[ 'links' ][ 'socials' ]
+export type AuthorPersonalSites = Author[ 'links' ][ 'personalsites' ]
 
 export type Entry = {
   id: string,
   title: string,
   images: {
     src: string,
-    reference: Reference[],
-    label: string,
+    reference?: Reference[],
+    label?: string,
     style?: {
       objectFit?: "cover" | "contain"
     }

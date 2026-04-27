@@ -10,32 +10,47 @@ import { hvpexe } from "./entries/hvpexe"
 import { saltyaom } from "./entries/saltyaom"
 import { styxpilled } from "./entries/styxpilled"
 import { thatonecalculator } from "./entries/thatonecalculator"
-import { blue, green } from "./lib/ansii"
+import { black, blue, cyan, green, reset } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
-import { info, logerror, logger, verbose, warn } from "./lib/log"
+import { info, logerror, logger, logMajorStep, verbose, warn } from "./lib/log"
 import type { Output } from "./lib/model/output"
 import { resolveDefinitions } from "./resolve-definitions"
 import { rm } from "fs/promises"
 
 
-const {
-  isInGitHubAction,
-  revalidateToken,
-  environment,
-} = prepareEnv()
 
-log(`${ blue }\nkawaii-logos-data ${ green }(${ environment })`)
-info("Begin processing data")
+log(`${ blue }\nkawaii-logos-data ${ green }(${ process.env.NODE_ENV })`)
+
+logMajorStep("Checking environment variables")
+
+const envGithubActions = process.env[ 'GITHUB_ACTIONS' ]
+const isInGitHubAction = envGithubActions === "true"
+const revalidateToken = process.env[ 'REVALIDATE_TOKEN' ]
+const environment = process.env.NODE_ENV
+
+if (envGithubActions === undefined) {
+  warn(`${ cyan }GITHUB_ACTIONS${ reset } environment variable not detected.`)
+}
+if (isInGitHubAction) {
+  info(`${ cyan }GITHUB_ACTIONS${ reset } environment variable detected. Assuming GitHub Actions environment.`)
+}
+if (revalidateToken === undefined) {
+  warn(`${ cyan }REVALIDATE_TOKEN${ reset } environment variable not detected.`)
+}
+if (![ 'production', 'development' ].includes(environment || "")) {
+  warn(`${ cyan }NODE_ENV${ reset } environment variable is set to '${ environment }'. Expected 'production' or 'development'.`)
+}
 
 await cacheInstance.initializeCacheData()
 
 
-try {
-  // 1. compile manually listed images
-  // 2. compile scraped image lists
-  // 3. store result
-  // 4. call website revalidation
+// --------------------------------------------------------------------------------
 
+// Main
+
+
+try {
+  logMajorStep("Begin processing data")
   const resolved = await resolveDefinitions({
     alfonsusac,
     arnav,
@@ -50,46 +65,24 @@ try {
     thatonecalculator,
   })
 
+  logMajorStep("Preparing output and saving to disk")
   const output = await prepareOutput(resolved)
   await cleanAndSaveToDisk(output, "./dist", true)
   await saveToDataBranch(output, "main-2-data")
 
-  log(`${ green }Data processed successfully `)
+  if (isInGitHubAction && revalidateToken) {
+    logMajorStep("Revalidating website")
+    await fetch(`https://vtuberlogos.alfon.dev/revalidate?key=${ revalidateToken }`).then((res) => res.json())
+  }
+
+
+  logMajorStep(`Data processed successfully `)
 } catch (error) {
   logerror(error, "Error occurred during data processing")
 }
 
 
-
 // --------------------------------------------------------------------------------
-
-function prepareEnv() {
-
-  const envGithubActions = process.env[ 'GITHUB_ACTIONS' ]
-  const isInGitHubAction = envGithubActions === "true"
-  const revalidateToken = process.env[ 'REVALIDATE_TOKEN' ]
-  const environment = process.env.NODE_ENV
-
-  if (envGithubActions === undefined) {
-    warn("GITHUB_ACTIONS environment variable not detected.")
-    info("Assuming local development environment.")
-  }
-  if (isInGitHubAction) {
-    info("GITHUB_ACTIONS environment variable detected. Assuming GitHub Actions environment.")
-  }
-  if (revalidateToken === undefined) {
-    info("REVALIDATE_TOKEN environment variable not detected. Website revalidation will be skipped. (Set REVALIDATE_TOKEN=your_token to enable revalidation)")
-  }
-  if (![ 'production', 'development' ].includes(environment || "")) {
-    warn(`NODE_ENV environment variable is set to '${ environment }'. Expected 'production' or 'development'.`)
-  }
-
-  return {
-    isInGitHubAction,
-    revalidateToken,
-    environment
-  }
-}
 
 
 async function prepareOutput(data: Output) {
@@ -135,19 +128,19 @@ type DataResponse = Awaited<ReturnType<typeof prepareOutput>>
 
 
 async function cleanAndSaveToDisk(data: DataResponse, folderpath: string, clean: boolean) {
-  info(`Saving Data to ${ folderpath }`)
 
   clean && await rm(folderpath, { recursive: true, force: true })
   await Promise.all(Object.entries(data.folderStructure).map(([ path, content ]) => {
     return Bun.write(`${ folderpath }${ path }`, content)
   }))
-  info(`Data saved to ${ folderpath } successfully`)
+
+  info(`Data saved to ${ cyan }${ folderpath }${ reset } successfully`)
 }
 
 
 async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   if (process.env.NODE_ENV !== "production") {
-    info(`--watch mode used in bun dev. Skipping git switch and commit. Use 'bun start' to enable git switch and commit.`)
+    warn(`${ cyan }--watch${ reset } mode used in bun dev. Skipping git switch and commit.\n  Use ${ cyan }'bun start'${ reset } to enable git switch and commit.`)
     return
   }
   await usingGitBranch(

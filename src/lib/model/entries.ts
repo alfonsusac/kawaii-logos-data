@@ -1,6 +1,8 @@
-import { resolveDate, type DateDef } from "./date"
-import { normalizeReferencesDef, type References, type ReferencesDef } from "./references"
-import type { Site } from "./type"
+import { type DateDef } from "./date"
+import type { Author, Entry } from "./output"
+import { normalizeReferencesDef, type ReferencesDef } from "./references"
+import type { Site } from "../site"
+import type { ResolveContext } from "../../resolve-definitions"
 
 // ## Definitions
 
@@ -31,45 +33,31 @@ export type ImageDef = {
   },
 }
 
-// ## Resolved / Enriched
-
-export type Entries = Entry[]
-
-export type Entry = {
-  id: string,
-  title: string,
-  images: Image[],
-  createdAt?: Date,
-}
-
-export type Image = {
-  label?: string,
-  src: Site,
-  reference: References | undefined,
-  style?: {
-    objectFit?: "cover" | "contain"
-  },
-}
-
-export function resolveEntries(defs: EntriesDef | undefined): Entries {
+export function resolveEntries(defs: EntriesDef | undefined, c: ResolveContext): Author[ 'entries' ] {
   if (!defs) return []
-  const entries: Entries = Object
+  const entries: Author[ 'entries' ] = Object
     .entries(defs)
     .map(([ id, def ]) => {
-      const flattenedimages = def.images ? (Array.isArray(def.images) ? def.images : [ def.images ]) : []
-      const images: Image[] = [
+
+      const flattenedimages = def.images
+        ? (Array.isArray(def.images)
+          ? def.images
+          : [ def.images ])
+        : []
+
+      const images: Entry[ 'images' ] = [
         ...flattenedimages.map(variant => ({
           src: variant.src,
           reference: variant.reference ? normalizeReferencesDef(variant.reference) : undefined,
           style: variant.style,
           label: variant.label,
-        }))
+        } satisfies Entry[ 'images' ][ number ]))
       ]
 
       return {
         id,
         title: def.title,
-        createdAt: def.createdAt && resolveDate(def.createdAt),
+        // createdAt: def.createdAt && resolveDate(def.createdAt),
         images,
       } satisfies Entry
     })

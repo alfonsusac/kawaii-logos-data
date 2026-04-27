@@ -1,14 +1,19 @@
 export type Duration =
   | `${ number }s`
   | `${ number }m`
-  | `${ number }m ${ number } s`
+  | `${ number }m ${ number }s`
   | `${ number }h`
-  | `${ number }h ${ number } m`
-  | `${ number }h ${ number } m ${ number } s`
+  | `${ number }h ${ number }s`
+  | `${ number }h ${ number }m`
+  | `${ number }h ${ number }m ${ number }s`
   | `${ number }d`
-  | `${ number }d ${ number } h`
-  | `${ number }d ${ number } h ${ number } m`
-  | `${ number }d ${ number } h ${ number } m ${ number } s`
+  | `${ number }d ${ number }s`
+  | `${ number }d ${ number }m`
+  | `${ number }d ${ number }m ${ number }s`
+  | `${ number }d ${ number }h`
+  | `${ number }d ${ number }h ${ number }s`
+  | `${ number }d ${ number }h ${ number }m`
+  | `${ number }d ${ number }h ${ number }m ${ number }s`
 
 export function durationToSeconds(duration: Duration): number {
   const parts = duration.split(' ')

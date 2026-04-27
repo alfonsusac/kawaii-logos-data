@@ -2,6 +2,7 @@
 
 import { black } from "./ansii"
 import { durationToMs, type Duration } from "./duration"
+import { logger } from "./log"
 
 // -------------------------------------------------------
 
@@ -148,21 +149,24 @@ export function createFileCache(opts: {
 
 // -------------------------------------------------------
 
+const verboselog = true
+const { verbose } = logger('     cache', { verbose: true })
+
 export function cacheEntry<T>(key: string, duration: Duration) {
   return {
     get() {
       const entry = cacheInstance.get(key)
-      if (entry) {
-        try {
-          const content = JSON.parse(entry.value)
-          verbose && console.log(black, `- HIT ${ key } expires in ${ Math.round((entry.expiresAt - Date.now()) / 1000) }s`)
-          return content as T
-        } catch (error) {
-          console.warn("Failed to parse cache entry, ignoring cache", error)
-        }
+      if (!entry) {
+        verboselog && console.log(black, `- MISS ${ key }`)
+        return undefined
       }
-      verbose && console.log(black, `- MISS ${ key }`)
-      return undefined
+      try {
+        const content = JSON.parse(entry.value)
+        verboselog && verbose(`HIT ${ key } expires in ${ Math.round((entry.expiresAt - Date.now()) / 1000) }s`)
+        return content as T
+      } catch (error) {
+        console.warn("Failed to parse cache entry, ignoring cache", error)
+      }
     },
     set(value: T, durationOverride?: Duration) {
       cacheInstance.set(key, JSON.stringify(value), durationToMs(durationOverride ?? duration))
@@ -171,8 +175,6 @@ export function cacheEntry<T>(key: string, duration: Duration) {
 }
 
 // -------------------------------------------------------
-
-const verbose = true
 
 export async function cacheAsync<T>(
   key: string,
@@ -184,13 +186,14 @@ export async function cacheAsync<T>(
   if (entry) {
     try {
       const content = JSON.parse(entry.value) as T
-      verbose && console.log(black, `- HIT ${ key } expires in ${ Math.round((entry.expiresAt - Date.now()) / 1000) }s`)
+      verboselog && verbose(`HIT ${ key } expires in ${ Math.round((entry.expiresAt - Date.now()) / 1000) }s`)
+      // verbose && console.log(black, `- HIT ${ key } expires in ${ Math.round((entry.expiresAt - Date.now()) / 1000) }s`)
       return content
     } catch (error) {
       console.warn("Failed to parse cache entry, ignoring cache", error)
     }
   }
-  verbose && console.log(black, `- MISS ${ key }`)
+  verboselog && console.log(black, `- MISS ${ key }`)
   const newValue = await dedupe<T>(fn, key)()
   cacheInstance.set(key, JSON.stringify(newValue), durationToMs(duration))
   return newValue

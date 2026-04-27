@@ -1,4 +1,4 @@
-import type { Site } from "./model/type"
+import type { Site } from "./site"
 
 export const GitHub = {
   userProfileUrl:

@@ -1,5 +1,8 @@
-import { getProfile } from "../api/bsky"
-import { site } from "./type"
+import { getBskyProfile } from "../api/bsky"
+import type { Author, AuthorLinks, AuthorSocialLinks } from "./output"
+import { site } from "../site"
+import type { ResolveContext } from "../../resolve-definitions"
+import { fetchGithubProfile } from "../api/github"
 
 export type SocialsDef = {
   github?: string,
@@ -8,78 +11,236 @@ export type SocialsDef = {
   site?: string,
 }
 
-export type Socials = {
-  github?: {
-    username: string,
-    avatar: string | undefined,
-    url: string,
-  },
-  x?: {
-    username: string,
-    url: string,
-  },
-  bsky?: {
-    username: string,
-    url: string,
-    avatar?: string,
-  },
-  site?: string
-}
+export type SocialListDef = {
+  label: "github" | "x" | "bsky" | "site",
+  url: string,
+}[]
 
-export async function resolveSocials(socials: SocialsDef | undefined) {
-  if (!socials) return {}
+export async function resolveSocials(
+  def: SocialsDef | undefined,
+  list: SocialListDef | undefined = [],
+  c: ResolveContext
+) {
 
-  return {
-    github: socials.github === undefined ? undefined : getGithubSocial(socials.github),
-    x: socials.x === undefined ? undefined : {
-      username: socials.x,
-      profile: site(`x.com/${ socials.x }`),
-    },
-    bsky: socials.bsky === undefined ? undefined : {
-      username: socials.bsky,
-      profile: site(`bsky.app/${ socials.bsky }`),
-      avatar: await getProfile(socials.bsky)
-        .then(profile => profile.avatar)
-        .catch(() => {
-          console.warn(`Failed to fetch bsky profile for ${ socials.bsky }. Avatar will be undefined.`)
-          return undefined
-        }),
+  // 0. make sure none of SocialsDef contains urls.
+  // 1. flatten the def + list => list of socials to be verified
+  //  - def uses username, list uses url, so combined needs to be in url form.
+  // 2. verify each social and log errors if they don't check out, if they check out add to socials list
+  // 3. make social object with first of each type (github, x, bsky, site) for the "social" field, and the full list for the "socials" field
+  // 4. remove duplicates from socials list.
+
+  // 0.
+  if (def) {
+    if (def.github && def.github.includes("://")) {
+      c.logerror(`GitHub username should not contain URL parts: ${ def.github }`)
+    }
+    if (def.x && (def.x.includes("://"))) {
+      c.logerror(`X/Twitter username should not contain URL parts: ${ def.x }`)
+    }
+    if (def.bsky && def.bsky.includes("://")) {
+      c.logerror(`Bluesky username should not contain URL parts: ${ def.bsky }`)
+    }
+    if (def.site && (def.site.includes("://"))) {
+      c.logerror(`Personal site should not contain protocol: ${ def.site }`)
     }
   }
-}
 
-// --- Github
+  // 1.
+  const githubs = list.filter(s => s.label === "github").map(s => s.url)
+  if (def?.github) githubs.push(site(`github.com/${ def.github }`))
 
-export function getGithubSocial(username: string): Socials[ 'github' ] {
+  const xs = list.filter(s => s.label === "x").map(s => s.url)
+  if (def?.x) xs.push(site(`x.com/${ def.x }`))
+
+  const bskys = list.filter(s => s.label === "bsky").map(s => s.url)
+  if (def?.bsky) bskys.push(site(`bsky.app/${ def.bsky }`))
+
+  const personalsites = list.filter(s => s.label === "site").map(s => s.url)
+  if (def?.site) personalsites.push(def.site)
+
+
+  // 2.
+  const links: AuthorLinks = {
+    socials: [],
+    personalsites: [],
+  }
+
+  const validGithubs: { url: string, username: string }[] = []
+  for (const url of githubs) {
+    const github = resolveGithubFromURL(url, c)
+    if (!github) {
+      c.logerror(`GitHub URL not valid: ${ url }`)
+      continue
+    }
+    const isvalid = await verifyGithub(github.username)
+    if (!isvalid) {
+      c.logerror(`GitHub user not found: ${ github.username }`)
+      continue
+    }
+    validGithubs.push(github)
+    links.socials.push({ type: "github", ...github })
+  }
+
+  const validXs: { url: string, username: string }[] = []
+  for (const url of xs) {
+    const x = resolveTwitterFromURL(url, c)
+    if (!x) {
+      c.logerror(`X/Twitter URL not valid: ${ url }`)
+      continue
+    }
+    // No verification for X/Twitter since the API is not easily accessible
+    validXs.push(x)
+    links.socials.push({ type: "x", ...x })
+  }
+
+  const validBskys: { url: string, username: string }[] = []
+  for (const url of bskys) {
+    const bsky = resolveBskyFromURL(url, c)
+    if (!bsky) {
+      c.logerror(`Bluesky URL not valid: ${ url }`)
+      continue
+    }
+    const isvalid = await verifyBsky(bsky.username)
+    if (!isvalid) {
+      c.logerror(`Bluesky user not found: ${ bsky.username }`)
+      continue
+    }
+    validBskys.push(bsky)
+    links.socials.push({ type: "bsky", ...bsky })
+  }
+
+  const validPersonalSites: string[] = []
+  for (const url of personalsites) {
+    // No verification for personal sites since it's too broad, just check if it's a valid URL
+    try {
+      let resolvedUrl = url
+      if (!url.includes("://")) resolvedUrl = "https://" + url // add protocol if missing for URL parsing
+      new URL(resolvedUrl)
+      validPersonalSites.push(resolvedUrl)
+      links.personalsites.push(resolvedUrl)
+    } catch (e) {
+      c.logerror(`Personal site URL not valid: ${ url }`)
+    }
+  }
+
+  const github = validGithubs.length > 0 ? validGithubs[ 0 ] : undefined
+  const x = validXs.length > 0 ? validXs[ 0 ] : undefined
+  const bsky = validBskys.length > 0 ? validBskys[ 0 ] : undefined
+  const personalsite = personalsites.length > 0 ? personalsites[ 0 ] : undefined
+
+  const social: Author[ 'social' ] = {
+    github,
+    x,
+    bsky,
+    site: personalsite,
+  }
+
+  // 5.
+  links.socials = links.socials.filter((s, index, self) => index === self.findIndex(s2 => s2.type === s.type && s2.username === s.username))
+
+
+  // if (github) {
+  //   const validGithub = await verifyGithub(github.username)
+  //   if (!validGithub) {
+  //     c.logerror(`GitHub user not found: ${ github.username }`)
+  //   } else {
+  //     socials.push({ label: "github", ...github })
+  //   }
+  // }
+  // if (bsky) {
+  //   const validBsky = await verifyBsky(bsky.username)
+  //   if (!validBsky) {
+  //     c.logerror(`Bluesky user not found: ${ bsky.username }`)
+  //   } else {
+  //     socials.push({ label: "bsky", ...bsky })
+  //   }
+  // }
+  // if (x) socials.push({ label: "x", ...x })
+  // if (site) socials.push({ label: "site", url: site })
+
   return {
-    username,
-    avatar: site(`avatars.githubusercontent.com/${ username }`),
-    url: site(`github.com/${ username }`)
+    social,
+    links
   }
 }
 
-// --- x/twitter
 
-export function getTwitterSocialFromURL(url: string): Socials[ 'x' ] {
-  const username = url.split("/").slice(-1)[ 0 ]
-  return {
-    username,
-    url,
+
+// export function resolveAllSocials(source: Author[ 'socials' ]) {
+//   const github = source.find(s => s.type === "github") as Author[ 'socials' ][ number ] & { label: "github" } | undefined
+//   const x = source.find(s => s.type === "x") as Author[ 'socials' ][ number ] & { label: "x" } | undefined
+//   const bsky = source.find(s => s.type === "bsky") as Author[ 'socials' ][ number ] & { label: "bsky" } | undefined
+//   const site = source.find(s => s.type === "site") as Author[ 'socials' ][ number ] & { label: "site" } | undefined
+
+//   const social: Author[ 'social' ] = {
+//     github: github ? { username: github.username, url: github.url } : undefined,
+//     x: x ? { username: x.username, url: x.url, } : undefined,
+//     bsky: bsky ? { username: bsky.username, url: bsky.url, } : undefined,
+//     site: site ? site.url : undefined,
+//   }
+
+//   return social
+// }
+
+// ------------------------------------------------
+
+export function resolveGithub(def: SocialsDef[ 'github' ]) {
+  if (!def) return undefined
+  return { username: def, url: site(`github.com/${ def }`), }
+}
+export function resolveGithubFromURL(url: string | undefined, c: ResolveContext) {
+  if (!url) return undefined
+  const match = url.match(/github\.com\/([^\/]+)/)
+  if (!match) {
+    c.logerror(`Could not parse GitHub URL: ${ url }`)
+    return undefined
   }
+  const username = match[ 1 ]
+  return { username, url }
+}
+export async function verifyGithub(username: string) {
+  const res = await fetchGithubProfile(username)
+  if (res.status === "ok") {
+    return true
+  }
+  return false
 }
 
-// --- bsky
 
-export async function getBskySocialFromURL(url: string): Promise<Socials[ 'bsky' ]> {
-  const username = url.split("/").slice(-1)[ 0 ]
-  return {
-    username,
-    url,
-    avatar: await getProfile(username)
-      .then(profile => profile.avatar)
-      .catch(() => {
-        console.warn(`Failed to fetch bsky profile for ${ username }. Avatar will be undefined.`)
-        return undefined
-      }),
+
+export function resolveTwitter(def: SocialsDef[ 'x' ]) {
+  if (!def) return undefined
+  return { username: def, url: site(`x.com/${ def }`), }
+}
+export function resolveTwitterFromURL(url: string | undefined, c: ResolveContext) {
+  if (!url) return undefined
+  const match = url.match(/(?:x\.com|twitter\.com)\/([^\/]+)/)
+  if (!match) {
+    c.logerror(`Could not parse Twitter/X URL: ${ url }`)
+    return undefined
   }
+  const username = match[ 1 ]
+  return { username, url }
+}
+
+export function resolveBsky(def: SocialsDef[ 'bsky' ]) {
+  if (!def) return undefined
+  return { username: def, url: site(`bsky.app/${ def }`), }
+}
+export function resolveBskyFromURL(url: string | undefined, c: ResolveContext) {
+  if (!url) return undefined
+  const match = url.match(/bsky\.app\/([^\/]+)/)
+  if (!match) {
+    c.logerror(`Could not parse Bluesky URL: ${ url }`)
+    return undefined
+  }
+  const username = match[ 1 ]
+  return { username, url }
+}
+export async function verifyBsky(username: string) {
+  const res = await getBskyProfile(username)
+  if (res.error) {
+    return false
+  }
+  return true
 }

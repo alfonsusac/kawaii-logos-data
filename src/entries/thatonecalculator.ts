@@ -6,7 +6,7 @@ export const thatonecalculator: AuthorDef = {
   displayName: "thatonecalculator",
   socials: {
     x: "thatonecalculator",
-    bsky: "thatonecalculator.bsky.social"
+    bsky: "t1c.dev"
   },
   license: {
     type: "CC BY-SA 4.0",

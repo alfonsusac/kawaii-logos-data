@@ -1,4 +1,5 @@
 export type Site = `https://${ string }`
+
 export function site(domainPath: string) {
   if (domainPath.startsWith("https://")) {
     return domainPath as Site
