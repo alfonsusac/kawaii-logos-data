@@ -1,4 +1,4 @@
-import type { History } from "../../types"
+import type { History } from "../types"
 import type { Git } from "./git-shell"
 import { logError, logProcess } from "./log"
 

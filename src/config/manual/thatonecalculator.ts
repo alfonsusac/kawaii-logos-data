@@ -1,5 +1,5 @@
 import { GitHub } from "../../lib/url-github"
-import type { Entries } from "../../../types"
+import type { Entries } from "../../types"
 import { blueskyPost } from "../../lib/url"
 
 export const thatonecalculator: Entries[number] = {

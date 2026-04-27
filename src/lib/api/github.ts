@@ -1,5 +1,6 @@
 import { black } from "../ansii"
 import { cacheEntry } from "../cache"
+import { milisecondToHumanReadableComplete } from "../duration"
 import { appfetch } from "../fetch"
 
 async function githubFetch(url: string) {
@@ -8,11 +9,11 @@ async function githubFetch(url: string) {
   const remaining = res.headers.get("x-ratelimit-remaining")
   const used = res.headers.get("x-ratelimit-used")
   const reset = new Date(Number(res.headers.get("x-ratelimit-reset")) * 1000)
-  console.log(`- github rate limit info: ${ used }/${ limit } (${ remaining } remaining). resets at ${ reset.getTime() - Date.now() } seconds`)
+  console.log(`- github rate limit info: ${ used }/${ limit } (${ remaining } remaining). resets at ${ milisecondToHumanReadableComplete(reset.getTime() - Date.now()) }`)
   return res
 }
 
-// {"message":"API rate limit exceeded for 180.242.68.233. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
+// 403 reate limit exceeded {"message":"API rate limit exceeded for 111.222.333.444. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)","documentation_url":"https://docs.github.com/rest/overview/resources-in-the-rest-api#rate-limiting"}
 
 // ------------------------------------------------------------------------------------
 
@@ -23,7 +24,7 @@ export function returnUndefinedIfError<T extends
 >(res: T, opts?: {
   onError?: (res: T) => void
 }) {
-  if (res.status === "ok") return res.data as T["data"]
+  if (res.status === "ok") return res.data as T[ "data" ]
   opts?.onError?.(res)
   return undefined
 }
@@ -60,6 +61,10 @@ export async function fetchGithubRepoFiles(repo: `${ string }/${ string }`) {
   if (res.status === 404) {
     cache.set(data, "1h")
     return { status: "not found" as const } as const
+  }
+  if (res.statusText === "rate limit exceeded") {
+    cache.set(data, "5m")
+    return { status: "rate limit exceeded" as const } as const
   }
 
   console.log(black, `Unexpected response from fetchGithubRepoFiles(${ repo }):`,
@@ -100,6 +105,10 @@ export async function fetchGithubProfile(profile: string) {
     cache.set(data, "1h")
     return { status: "not found" as const } as const
   }
+  if (res.statusText === "rate limit exceeded") {
+    cache.set(data, "5m")
+    return { status: "rate limit exceeded" as const } as const
+  }
 
   console.log(black, `Unexpected response from fetchGithubProfile(${ profile }):`,
     res.status, res.statusText, data
@@ -129,6 +138,10 @@ export async function fetchGithubProfileSocialAccounts(profile: string) {
   if (res.status === 404) {
     cache.set(data, "1h")
     return { status: "not found" as const } as const
+  }
+  if (res.statusText === "rate limit exceeded") {
+    cache.set(data, "5m")
+    return { status: "rate limit exceeded" as const } as const
   }
 
   console.log(black, `Unexpected response from fetchGithubProfileSocialAccounts(${ profile }):`,

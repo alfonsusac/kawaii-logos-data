@@ -1,5 +1,5 @@
 import { GitHub } from "../../lib/url-github"
-import type { Entries } from "../../../types"
+import type { Entries } from "../../types"
 
 // Please use this template to add your own logo that is not scraped automatically.
 // don't forget to read the notes at the very bottom of this file before making a PR.

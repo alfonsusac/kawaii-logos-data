@@ -1,4 +1,4 @@
-import type { Entries } from "../../../types"
+import type { Entries } from "../../types"
 import { GitHub } from "../../lib/url-github"
 
 export const maxshawnwx: Entries[number] = {

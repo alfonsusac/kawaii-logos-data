@@ -1,4 +1,4 @@
-import { type Entries } from "../../types"
+import { type Entries } from "../types"
 import { alfonsusac } from "./manual/alfonsusac"
 import { arnav } from "./manual/arnav"
 import { disphing } from "./manual/disphing"

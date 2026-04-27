@@ -1,4 +1,4 @@
-import type { Entries } from "../../../types"
+import type { Entries } from "../../types"
 
 export const arnav: Entries[number] = {
   handleName: "arnav-kr",

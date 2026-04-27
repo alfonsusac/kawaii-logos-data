@@ -1,5 +1,5 @@
 import { GitHub } from "../../lib/url-github"
-import type { Entries } from "../../../types"
+import type { Entries } from "../../types"
 import { twitterPost } from "../../lib/url"
 
 export const styxpilled: Entries[number] = {

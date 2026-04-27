@@ -15,7 +15,7 @@ import { cacheInstance } from "./lib/cache"
 import { info, logerror, logger, logMajorStep, verbose, warn } from "./lib/log"
 import type { Output } from "./lib/model/output"
 import { resolveDefinitions } from "./resolve-definitions"
-import { rm } from "fs/promises"
+import { readdir, rm } from "fs/promises"
 import { Git } from "./lib/git"
 import { generateGitIgnore } from "./lib/util"
 
@@ -150,7 +150,11 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   await usingGitBranch(
     dataBranchName,
     async () => {
+      console.log("before")
+      console.log(await readdir('.'))
       await cleanAndSaveToDisk(data, "./", { clean: false })
+      console.log("after")
+      console.log(await readdir('.'))
       await Git.trackAll()
       await Git.commitAllTracked(`Update data ${ data.response.updatedAt }`)
       await Git.pushAndSetUpstream(dataBranchName)

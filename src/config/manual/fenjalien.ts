@@ -1,4 +1,4 @@
-import type { Entries } from "../../../types"
+import type { Entries } from "../../types"
 import { createLicense } from "../helper"
 
 export const fenjalien: Entries[number] = {

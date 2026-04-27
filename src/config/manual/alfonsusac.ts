@@ -1,5 +1,5 @@
 import { GitHub } from "../../lib/url-github"
-import type { Entry } from "../../../types"
+import type { Entry } from "../../types"
 
 export const alfonsusac: Entry = {
   handleName: "alfonsusac",

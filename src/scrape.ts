@@ -3,7 +3,7 @@ import { getAvatarURLfromRepoPath, GitHub } from "./lib/url-github"
 import { logError, logProcess } from "./lib/log"
 import { getRepository, getImageFilePaths, type Repository } from "./scrape-util"
 import { isInGitHubAction, resolveIntoArray } from "./lib/util"
-import type { Image, Entries, Entry } from "../types"
+import type { Image, Entries, Entry } from "./types"
 import { getCreationDate, getHistory } from "./lib/history"
 
 export async function getScrapedImageList(): Promise<Entries> {
