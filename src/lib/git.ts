@@ -1,6 +1,6 @@
 import { logger } from "./log"
 
-const { verbose } = logger("git")
+const { verbose } = logger("git", { verbose: true })
 
 export const Git = {
   trackAll: () => {
