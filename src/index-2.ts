@@ -113,6 +113,11 @@ async function prepareOutput(data: Output) {
       `If you want to contribute such as adding missing image or fixing incorrect data, please refer head over to the \`main\` branch`
     ].join('\n'),
     '/types.ts': outputTypeFileContent,
+  } satisfies {
+    '/.gitignore': string,
+    '/data.json': string,
+    '/README.md': string,
+    '/types.ts': string,
   }
 
   return {
