@@ -1,0 +1,664 @@
+{
+  "updatedAt": "2026-04-27T11:25:35.325Z",
+  "data": [
+    {
+      "id": "alfonsusac",
+      "displayName": "alfonsusac",
+      "pfp": "https://avatars.githubusercontent.com/alfonsusac",
+      "social": {
+        "x": {
+          "username": "alfonsusac",
+          "url": "https://x.com/alfonsusac"
+        },
+        "bsky": {
+          "username": "alfon.dev",
+          "url": "https://bsky.app/alfon.dev"
+        },
+        "site": "alfon.dev"
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "alfonsusac",
+            "url": "https://x.com/alfonsusac"
+          },
+          {
+            "type": "bsky",
+            "username": "alfon.dev",
+            "url": "https://bsky.app/alfon.dev"
+          }
+        ],
+        "personalsites": [
+          "https://alfon.dev"
+        ]
+      },
+      "entries": [
+        {
+          "id": "skillissue",
+          "title": "Skill Issue",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/skillissue.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/skillissue.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lgtm",
+          "title": "LGTM",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/lgtm.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/lgtm.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "supabase",
+          "title": "Supabase",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/supabase.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/supabase.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "emailthing",
+          "title": "EmailThing",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/emailthing.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/emailthing.svg"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "sharkchat",
+          "title": "Sharkchat",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/sharkchat.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/sharkchat.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arnav",
+      "displayName": "arnav-kr",
+      "pfp": "https://avatars.githubusercontent.com/arnav-kr",
+      "social": {
+        "x": {
+          "username": "arnavkr_",
+          "url": "https://x.com/arnavkr_"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "arnavkr_",
+            "url": "https://x.com/arnavkr_"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "json-formatter",
+          "title": "JSON Formatter",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/arnav-kr/json-formatter/main/images/banners/JF_VTuber_logo.svg",
+              "reference": [
+                {
+                  "site": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg"
+                },
+                {
+                  "site": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cr1sta_dev",
+      "displayName": "cr1sta_dev",
+      "social": {
+        "x": {
+          "username": "cr1sta_dev",
+          "url": "https://x.com/cr1sta_dev"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "cr1sta_dev",
+            "url": "https://x.com/cr1sta_dev"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": []
+    },
+    {
+      "id": "dsphng",
+      "displayName": "dsphng",
+      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:opu3ipg47v7yqekus3jycph6/bafkreidglodmfztlisuhyjomcatxw5fdscz6oxx4fgma4couth3gm3cq4q",
+      "social": {
+        "x": {
+          "username": "dsphng",
+          "url": "https://x.com/dsphng"
+        },
+        "bsky": {
+          "username": "klfjlgjhjfkg.bsky.social",
+          "url": "https://bsky.app/klfjlgjhjfkg.bsky.social"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "dsphng",
+            "url": "https://x.com/dsphng"
+          },
+          {
+            "type": "bsky",
+            "username": "klfjlgjhjfkg.bsky.social",
+            "url": "https://bsky.app/klfjlgjhjfkg.bsky.social"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "skrillex",
+          "title": "Skrillex",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skrillexsticker.png",
+              "reference": [
+                {
+                  "site": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "porterrobinson",
+          "title": "Porter Robinson",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/porterrobinsonsticker.png",
+              "reference": [
+                {
+                  "site": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flstudio",
+          "title": "FL Studio",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/flsticker.png",
+              "reference": [
+                {
+                  "site": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bitwigstudio",
+          "title": "Bitwig Studio",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/bitwigsticker.png",
+              "reference": [
+                {
+                  "site": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "abletonlive",
+          "title": "Ableton Live",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/abletonsticker.png",
+              "reference": [
+                {
+                  "site": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "logicpro",
+          "title": "Logic Pro",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLm7MOob0AAimzf.jpeg",
+              "style": {
+                "objectFit": "cover"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fenjalien",
+      "displayName": "fenjalien",
+      "social": {},
+      "links": {
+        "socials": [],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "typst",
+          "title": "Typst",
+          "images": [
+            {
+              "src": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.svg",
+              "reference": [
+                {
+                  "site": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
+                }
+              ],
+              "label": "Typst Logo (SVG)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fumanama",
+      "displayName": "fuma-nama",
+      "pfp": "https://avatars.githubusercontent.com/u/76240755?v=4",
+      "social": {
+        "x": {
+          "username": "fuma_nama",
+          "url": "https://x.com/fuma_nama"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "fuma_nama",
+            "url": "https://x.com/fuma_nama"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "fumadocs",
+          "title": "Fumadocs",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/fuma-nama/fumadocs/dev/documents/logo.png",
+              "reference": [
+                {
+                  "site": "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hcho3",
+      "displayName": "hcho3",
+      "pfp": "https://avatars.githubusercontent.com/hcho3",
+      "social": {
+        "x": {
+          "username": "hcho3_ml",
+          "url": "https://x.com/hcho3_ml"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "hcho3_ml",
+            "url": "https://x.com/hcho3_ml"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "xgboost",
+          "title": "XGBoost",
+          "images": [
+            {
+              "src": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo-Path.svg"
+                }
+              ]
+            },
+            {
+              "src": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo.png"
+                }
+              ]
+            },
+            {
+              "src": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg",
+              "reference": [
+                {
+                  "site": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hvpexe",
+      "displayName": "hvpexe",
+      "social": {
+        "x": {
+          "username": "Manhkbrady",
+          "url": "https://x.com/Manhkbrady"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "Manhkbrady",
+            "url": "https://x.com/Manhkbrady"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "visual-studio",
+          "title": "Visual Studio",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/master/VisualStudio/VisualStudioLogo.png",
+              "reference": [
+                {
+                  "site": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "saltyaom",
+      "displayName": "saltyaom",
+      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:3ev4z55fibd22hfkllzpmgbz/bafkreiew3glctgcjbwjlkklvv65w5vrxkpzhbgsyb5vezaywf64onaiv74",
+      "social": {
+        "x": {
+          "username": "saltyaom",
+          "url": "https://x.com/saltyaom"
+        },
+        "bsky": {
+          "username": "saltyaom.com",
+          "url": "https://bsky.app/saltyaom.com"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "saltyaom",
+            "url": "https://x.com/saltyaom"
+          },
+          {
+            "type": "bsky",
+            "username": "saltyaom.com",
+            "url": "https://bsky.app/saltyaom.com"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "elysia",
+          "title": "Elysia",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/elysiajs/documentation/6e13f140b53fb69d9a82993cd80a82df55325b9e/docs/public/assets/elysia_v.svg",
+              "reference": [
+                {
+                  "site": "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "styxpilled",
+      "displayName": "styxpilled",
+      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreiei5oewihj6h25o3mgvvd3meshy4nefwynssifnrdk4ig4kgc3e2i",
+      "social": {
+        "x": {
+          "username": "styxpilled",
+          "url": "https://x.com/styxpilled"
+        },
+        "bsky": {
+          "username": "styxpilled.bsky.social",
+          "url": "https://bsky.app/styxpilled.bsky.social"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "styxpilled",
+            "url": "https://x.com/styxpilled"
+          },
+          {
+            "type": "bsky",
+            "username": "styxpilled.bsky.social",
+            "url": "https://bsky.app/styxpilled.bsky.social"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "svelte",
+          "title": "svelte",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLlkf9EWwAAq3N9.jpeg",
+              "reference": [
+                {
+                  "site": "https://twitter.com/styxpilled/status/1781565832251719868"
+                }
+              ],
+              "style": {
+                "objectFit": "cover"
+              }
+            }
+          ]
+        },
+        {
+          "id": "sveltekit",
+          "title": "sveltekit",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
+              "reference": [
+                {
+                  "site": "https://twitter.com/styxpilled/status/1781643208130216015"
+                }
+              ],
+              "style": {
+                "objectFit": "cover"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "thatonecalculator",
+      "displayName": "thatonecalculator",
+      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:4d3footpr6lgq6hy5m74xdmm/bafkreiaa6glnvhyy4f72tbhx6bav25xeiqq2gzc4kutxn74h5vd7uyaezi",
+      "social": {
+        "x": {
+          "username": "thatonecalculator",
+          "url": "https://x.com/thatonecalculator"
+        },
+        "bsky": {
+          "username": "t1c.dev",
+          "url": "https://bsky.app/t1c.dev"
+        }
+      },
+      "links": {
+        "socials": [
+          {
+            "type": "x",
+            "username": "thatonecalculator",
+            "url": "https://x.com/thatonecalculator"
+          },
+          {
+            "type": "bsky",
+            "username": "t1c.dev",
+            "url": "https://bsky.app/t1c.dev"
+          }
+        ],
+        "personalsites": []
+      },
+      "entries": [
+        {
+          "id": "surrealdb",
+          "title": "surrealdb",
+          "images": [
+            {
+              "src": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
+              "reference": [
+                {
+                  "site": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vyper",
+          "title": "vyper",
+          "images": [
+            {
+              "src": "https://camo.githubusercontent.com/be1d9d90f545740cad8b8c4835d6b8a6338c10500190c522ce305af465396735/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f56797065725f6e65772e706e67",
+              "reference": [
+                {
+                  "site": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "avalanche",
+          "title": "avalanche",
+          "images": [
+            {
+              "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
+              "reference": [
+                {
+                  "site": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        },
+        {
+          "id": "capacitor",
+          "title": "capacitor",
+          "images": [
+            {
+              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/capacitor.png",
+              "reference": [
+                {
+                  "site": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+                }
+              ],
+              "style": {
+                "objectFit": "contain"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
