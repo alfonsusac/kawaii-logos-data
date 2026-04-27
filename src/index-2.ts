@@ -165,6 +165,7 @@ async function usingGitBranch(
 
   const previousBranch = await Git.showCurrentBranch()
   const hasBranch = await Git.checkHasLocalbranch(dataBranchName)
+  verbose(`Current branch is ${ previousBranch }. Target data branch is ${ dataBranchName }. Branch exists: ${ hasBranch }`)
   if (await Git.checkHasUncommitedChanges()) {
 
     logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch ${ dataBranchName }.`)
@@ -182,13 +183,11 @@ async function usingGitBranch(
     const currentBranch = await Git.getCurrentBranch()
     if (currentBranch !== dataBranchName) {
       await Git.forceSwitch(previousBranch)
-
       logerror(`Current branch is ${ currentBranch } instead of ${ dataBranchName } after switching. This should not happen. Aborting operation to prevent potential data loss.`)
       return
     }
 
     verbose(`Switched to branch ${ currentBranch } successfully`)
-
   } catch (error) {
     verbose(`Error occurred while switching to branch ${ dataBranchName }`, error)
     await Git.forceSwitch(previousBranch)
@@ -198,6 +197,7 @@ async function usingGitBranch(
   try {
     await callback()
   } finally {
+    verbose(`Switching back to previous branch ${ previousBranch }`)
     await Git.forceSwitch(previousBranch)
   }
 }
