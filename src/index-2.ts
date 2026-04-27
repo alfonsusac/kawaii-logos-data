@@ -10,12 +10,14 @@ import { hvpexe } from "./entries/hvpexe"
 import { saltyaom } from "./entries/saltyaom"
 import { styxpilled } from "./entries/styxpilled"
 import { thatonecalculator } from "./entries/thatonecalculator"
-import { black, blue, cyan, green, reset } from "./lib/ansii"
+import { blue, cyan, green, reset } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
 import { info, logerror, logger, logMajorStep, verbose, warn } from "./lib/log"
 import type { Output } from "./lib/model/output"
 import { resolveDefinitions } from "./resolve-definitions"
 import { rm } from "fs/promises"
+import { Git } from "./lib/git"
+import { generateGitIgnore } from "./lib/util"
 
 
 
@@ -75,7 +77,6 @@ try {
     await fetch(`https://vtuberlogos.alfon.dev/revalidate?key=${ revalidateToken }`).then((res) => res.json())
   }
 
-
   logMajorStep(`Data processed successfully `)
 } catch (error) {
   logerror(error, "Error occurred during data processing")
@@ -93,28 +94,25 @@ async function prepareOutput(data: Output) {
   const stringified = JSON.stringify(response, null, 2)
   const outputTypeFileContent = await Bun.file('./src/lib/model/output.ts').text()
   const folderStructure = {
-    '/data.json': stringified,
-    '/README.md': `# Data Output
-This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
-
-Last Updated: \`${ response.updatedAt }\`
-
-### Authors
-${ response.data.map(entry => `- ${ entry.displayName }`).join("\n") }
-
-### Contributing
-
-If you want to contribute such as adding missing image or fixing incorrect data, please refer head over to the \`main\` branch
-`,
-    '/types.ts': outputTypeFileContent,
-    '/.gitignore': `*
-!.gitignore
-!README.md
-!data.json
-`
     // Switching branch from main to data branch will cause gitignored files to carry over. 
     // So we need to re-ignore those files in the data branch.
     // So that when we commit, we won't accidentally commit files that are not supposed to be in the data branch such as the source code or other config files.
+    './gitignore': generateGitIgnore('*', '!.gitignore', '!data.json', '!README.md'),
+    '/data.json': stringified,
+    '/README.md': [
+      `# The Data Branch`,
+      `This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.`,
+      ``,
+      `Last Updated: \`${ response.updatedAt }\``,
+      ``,
+      `### Authors`,
+      `${ response.data.map(entry => `- ${ entry.displayName }`).join("\n") }`,
+      ``,
+      `### Contributing`,
+      ``,
+      `If you want to contribute such as adding missing image or fixing incorrect data, please refer head over to the \`main\` branch`
+    ].join('\n'),
+    '/types.ts': outputTypeFileContent,
   }
 
   return {
@@ -138,6 +136,7 @@ async function cleanAndSaveToDisk(data: DataResponse, folderpath: string, clean:
 }
 
 
+
 async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   if (process.env.NODE_ENV !== "production") {
     warn(`${ cyan }--watch${ reset } mode used in bun dev. Skipping git switch and commit.\n  Use ${ cyan }'bun start'${ reset } to enable git switch and commit.`)
@@ -147,15 +146,9 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
     dataBranchName,
     async () => {
       await cleanAndSaveToDisk(data, "./", false)
-
-      verbose('git add .')
-      await Bun.$`git add .`
-
-      verbose(`git commit -m "Update data ${ data.response.updatedAt }" -a`)
-      await Bun.$`git commit -m "Update data ${ data.response.updatedAt }" -a`
-
-      verbose(`git push -u origin ${ dataBranchName }`)
-      await Bun.$`git push -u origin ${ dataBranchName }`
+      await Git.trackAll()
+      await Git.commitAllTracked(`Update data ${ data.response.updatedAt }`)
+      await Git.pushAndSetUpstream(dataBranchName)
     }
   )
 }
@@ -166,47 +159,45 @@ async function usingGitBranch(
   dataBranchName: string,
   callback: () => Promise<void>
 ) {
-  const log = logger("usingGitBranch")
+  const { logerror, verbose } = logger("usingGitBranch")
 
-  const mainBranch = await Bun.$`git branch --show-current`.text()
-  const branches = (await Bun.$`git branch --format="%(refname:short)" -a`.text())
-    .split('\n')
-    .filter(branch => branch.trim() !== '')
-  const hasDataBranch = branches.includes(dataBranchName)
-  const hasUncommitedChanges = (await Bun.$`git status --porcelain`).text().trim() !== ''
-  if (hasUncommitedChanges) {
-    log.error(`Local changes detected. Please commit or stash your changes before running the script.`)
+  await Git.fetch()
+
+  const previousBranch = await Git.showCurrentBranch()
+  const hasBranch = await Git.checkHasLocalbranch(dataBranchName)
+  if (await Git.checkHasUncommitedChanges()) {
+
+    logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch ${ dataBranchName }.`)
     return
   }
+
   try {
-    if (hasDataBranch) {
-      log.verbose(`git switch ${ dataBranchName }`)
-      await Bun.$`git switch ${ dataBranchName }`
-      log.verbose(`git pull`)
-      await Bun.$`git pull`
+    if (hasBranch) {
+      await Git.switch(dataBranchName)
+      await Git.pull()
     } else {
-      log.verbose(`git switch --orphan ${ dataBranchName }`)
-      await Bun.$`git switch --orphan ${ dataBranchName }`
+      await Git.createNewLocalBranchWithoutHistory(dataBranchName)
     }
+
+    const currentBranch = await Git.getCurrentBranch()
+    if (currentBranch !== dataBranchName) {
+      await Git.forceSwitch(previousBranch)
+
+      logerror(`Current branch is ${ currentBranch } instead of ${ dataBranchName } after switching. This should not happen. Aborting operation to prevent potential data loss.`)
+      return
+    }
+
+    verbose(`Switched to branch ${ currentBranch } successfully`)
+
   } catch (error) {
-    log.error(`Error occurred while switching to data branch`, error)
-    log.verbose(`git switch ${ mainBranch } --force`)
-    await Bun.$`git switch ${ mainBranch } --force`
-    return
+    verbose(`Error occurred while switching to branch ${ dataBranchName }`, error)
+    await Git.forceSwitch(previousBranch)
+    return { status: "error thrown" as const, error }
   }
-  // Added extra check to ensure we are on the correct branch before running callback
-  const currentBranch = await Bun.$`git branch --show-current`.text()
-  if (currentBranch.trim() !== dataBranchName) {
-    log.error(`Failed to switch to branch ${ dataBranchName }. Current branch is ${ currentBranch }`)
-    log.verbose(`git switch ${ mainBranch } --force`)
-    await Bun.$`git switch ${ mainBranch } --force`
-    return
-  }
-  log.verbose(`Switched to branch ${ dataBranchName }`)
+
   try {
     await callback()
   } finally {
-    log.verbose(`git switch ${ mainBranch } --force`)
-    await Bun.$`git switch ${ mainBranch } --force`
+    await Git.forceSwitch(previousBranch)
   }
 }
