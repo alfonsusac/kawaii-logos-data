@@ -4,7 +4,7 @@ import { resolveEntries } from "./lib/model/entries"
 import type { Author, Authors } from "./lib/model/output"
 import { resolvePfp } from "./lib/model/pfp"
 import { resolveSocials } from "./lib/model/socials"
-import { resolveSource } from "./model/source"
+import { resolveSource } from "./resolve/source"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 
 
