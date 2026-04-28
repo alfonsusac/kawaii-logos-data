@@ -1,5 +1,5 @@
-import type { AuthorDef } from "../lib/model/author"
 import { GitHub } from "../lib/url-github"
+import type { AuthorDef } from "../resolve/author"
 
 export const maxshawnwx: AuthorDef = {
   socials: {

@@ -11,8 +11,7 @@ import { styxpilled } from "./entries/styxpilled"
 import { thatonecalculator } from "./entries/thatonecalculator"
 import { black, cyan, magenta, reset } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
-import type { Output } from "./lib/model/output"
-import { resolveDefinitions } from "./resolve-definitions"
+import { resolveDefinitions } from "./resolve"
 import { readdir, rm } from "fs/promises"
 import { Git } from "./lib/git"
 import { aikoyori } from "./entries/aikoyori"
@@ -30,6 +29,7 @@ import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./effects"
+import type { Output } from "./resolve/output"
 
 
 runApp(async () => {

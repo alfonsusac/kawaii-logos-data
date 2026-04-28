@@ -1,4 +1,5 @@
 import type { Author } from "./output"
+import type { SocialListDef } from "./socials"
 import { resolveGithubSource } from "./source-github"
 
 
@@ -23,13 +24,26 @@ type TransformDef =
 
 // Implementations
 
+export type ScrapedResult = {
+  files?: {
+    label: string,
+    rawUrl: string,
+    pageUrl?: string,
+    license?: {
+      value: string,
+      referenceUrl: string,
+    },
+  }[],
+  socialsList?: SocialListDef
+}
+
 export async function resolveSource(def: SourceDef | undefined) {
+
+
+
   if (!def) return undefined
   if (def.from === "github") {
-    const {
-      socialList,
-      scrapedResult,
-    } = await resolveGithubSource(def)
+    const result = await resolveGithubSource(def)
 
     const entries: Author[ 'entries' ] | undefined = scrapedResult?.result?.map(image => {
       return {

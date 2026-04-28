@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../lib/model/author"
 import { twitterPost } from "../lib/url"
 import { GitHub } from "../lib/url-github"
+import type { AuthorDef } from "../resolve/author"
 
 export const styxpilled: AuthorDef = {
   displayName: "styxpilled",

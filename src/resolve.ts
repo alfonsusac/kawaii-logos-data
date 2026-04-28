@@ -1,11 +1,11 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import { type AuthorDef } from "./lib/model/author"
-import { resolveEntries } from "./lib/model/entries"
-import type { Author, Authors } from "./lib/model/output"
-import { resolvePfp } from "./lib/model/pfp"
-import { resolveSocials } from "./lib/model/socials"
 import { resolveSource } from "./resolve/source"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
+import type { Authors, Author } from "../types"
+import type { AuthorDef } from "./resolve/author"
+import { resolveEntries } from "./resolve/entries"
+import { resolvePfp } from "./resolve/pfp"
+import { resolveSocials } from "./resolve/socials"
 
 
 export async function resolveDefinitions(

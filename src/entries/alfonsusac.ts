@@ -1,5 +1,5 @@
-import type { AuthorDef } from "../lib/model/author"
-import { AlfonsImageDef } from "../lib/model/entries"
+import type { AuthorDef } from "../resolve/author"
+import { AlfonsImageDef } from "../resolve/entries"
 
 export const alfonsusac: AuthorDef = {
   socials: {

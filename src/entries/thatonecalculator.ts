@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../lib/model/author"
 import { blueskyPost } from "../lib/url"
 import { GitHub } from "../lib/url-github"
+import type { AuthorDef } from "../resolve/author"
 
 export const thatonecalculator: AuthorDef = {
   displayName: "thatonecalculator",

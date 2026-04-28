@@ -2,12 +2,12 @@ import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFi
 import { logerror } from "../pipeline"
 import { normalizeArrayDef } from "../utils"
 import { resolveGithub, type SocialListDef } from "./socials"
-import type { SourceDef } from "./source"
+import type { ScrapedResult, SourceDef } from "./source"
 
 type GithubSourceDef = SourceDef & { from: "github" }
 
 
-export async function resolveGithubSource(def: GithubSourceDef) {
+export async function resolveGithubSource(def: GithubSourceDef): Promise<ScrapedResult> {
   const [ owner, repoName ] = def.repo.split("/")
 
   const scrapedResult = await resolveGithubRepository(def)
@@ -80,7 +80,7 @@ async function resolveGithubRepository(def: GithubSourceDef) {
 
 // ------------------------------------------------------------------------------------
 
-async function resolveGithubProfileSocialList(owner: string) {
+async function resolveGithubProfileSocialList(owner: string): Promise<ScrapedResult[ 'socialsList' ]> {
 
   const ghuser = returnUndefinedIfError(await fetchGithubProfile(owner), {
     onError: (res) => logerror(`Failed to fetch github profile for ${ owner }: ${ res.status }`),

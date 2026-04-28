@@ -1,4 +1,4 @@
-import type { AuthorDef } from "../lib/model/author"
+import type { AuthorDef } from "../resolve/author"
 
 export const cocoa_xu: AuthorDef = {
   source: {
