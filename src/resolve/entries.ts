@@ -1,14 +1,15 @@
 import type { Site } from "../lib/site"
 import { type DateDef } from "./date"
-import type { Author, Entry } from "./output"
+import type { Author, Entry } from "../output"
 import { normalizeReferencesDef, type ReferencesDef } from "./references"
+import { logerror } from "../pipeline"
 
 // ## Definitions
 
 export type EntriesDefinition = Record<string, EntryDefinition>
 
 export type EntryDefinition = {
-  title: string,
+  label: string,
   images?: ImageDef | ImageDef[],
   createdAt?: DateDef,
 }
@@ -34,7 +35,27 @@ export type ImageDef = {
 
 // ----------------------------------------------------------------------------------------
 
-export function resolveEntries(defs: EntriesDefinition | undefined): Author[ 'entries' ] {
+export function resolveEntriesMulti(
+  ...args: (EntriesDefinition | undefined)[]
+) {
+  const allEntries: Author[ 'entries' ] = []
+  for (const defs of args) {
+    if (!defs) continue
+    resolveEntries(defs).forEach(entry => {
+      // Check for duplicate entry IDs
+      if (allEntries.some(e => e.id === entry.id)) {
+        logerror(`Duplicate entry ID found: ${ entry.id } from defs count ${ Object.keys(defs).length }. Please change the entry ID to be unique across all entries.`)
+      } else {
+        allEntries.push(entry)
+      }
+    })
+  }
+  return allEntries
+}
+
+export function resolveEntries(
+  defs: EntriesDefinition | undefined,
+): Author[ 'entries' ] {
   if (!defs) return []
   const entries: Author[ 'entries' ] = Object
     .entries(defs)
@@ -57,7 +78,7 @@ export function resolveEntries(defs: EntriesDefinition | undefined): Author[ 'en
 
       return {
         id,
-        title: def.title,
+        title: def.label,
         // createdAt: def.createdAt && resolveDate(def.createdAt),
         images,
       } satisfies Entry
@@ -70,9 +91,9 @@ export function resolveEntries(defs: EntriesDefinition | undefined): Author[ 'en
 
 // #### Definition Helper
 
-export function AlfonsImageDef(title: string, filename: string): EntryDefinition {
+export function AlfonsImageDef(label: string, filename: string): EntryDefinition {
   return {
-    title,
+    label,
     images: {
       src: `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ filename }`,
       reference: `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ filename }`,

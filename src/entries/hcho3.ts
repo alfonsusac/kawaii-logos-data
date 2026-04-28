@@ -13,7 +13,7 @@ export const hcho3: AuthorDefinition = {
   },
   entries: {
     xgboost: {
-      title: "XGBoost",
+      label: "XGBoost",
       images: [
         {
           src: 'https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg',

@@ -14,7 +14,7 @@ export const arnav: AuthorDefinition = {
   },
   entries: {
     "json-formatter": {
-      title: "JSON Formatter",
+      label: "JSON Formatter",
       images: [
         GithubPage("https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png"),
         GithubPage("https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg")

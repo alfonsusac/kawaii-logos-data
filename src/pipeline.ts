@@ -33,10 +33,9 @@ function getIndent(add: number = 0) {
 
 export async function step<R>(
   description: string,
-  cb: () => R
+  cb: () => R,
 ): Promise<R> {
   const currentDepth = stepDepth.getStore() || 0
-  const indent = getIndent()
 
   if (currentDepth === 0) {
     log(`\n${ blue }[${ reset }`, description, `${ blue }]${ reset }`)
@@ -45,9 +44,18 @@ export async function step<R>(
     log(`${ blue }-${ reset }`, description, `${ blue }${ reset }`)
   }
   if (currentDepth >= 2) {
-    log(`${ indent }${ blue }-${ reset }`, description)
+    log(`${ reset }-`, description)
   }
 
+  return stepDepth.run(currentDepth + 1, cb)
+}
+
+export async function stepSimple<R>(
+  description: string,
+  cb: () => R,
+) {
+  const currentDepth = stepDepth.getStore() || 0
+  log(`${ black }* ${ description }${ reset }`)
   return stepDepth.run(currentDepth + 1, cb)
 }
 

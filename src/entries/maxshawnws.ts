@@ -7,7 +7,7 @@ export const maxshawnwx: AuthorDefinition = {
   },
   entries: {
     skyviewer: {
-      title: "Skyviewer",
+      label: "Skyviewer",
       images: [
         {
           src: GitHub.selfHostedStaticAssetUrl("417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"),

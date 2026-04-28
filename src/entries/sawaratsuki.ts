@@ -4,6 +4,15 @@ export const sawaratsuki: AuthorDefinition = {
   source: {
     from: "github",
     repo: "SAWARATSUKI/KawaiiLogos",
+    transform: [
+      { type: "replace", from: "/png", to: "" },
+      { type: "replace", from: "/jpg", to: "" },
+      { type: "replace", from: "/webp", to: "" },
+      { type: "replace", from: "ResponseCode/", to: "" },
+      { type: "replace", from: "IamSeries/", to: "" },
+      // { type: "replace", from: "IamDesigner", to: "IamDesigner/IamDesigner" },
+      // { type: "replace", from: "IamProgrammer", to: "IamProgrammer/IamProgrammer" },
+    ]
   }
 }
 

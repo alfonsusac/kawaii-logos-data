@@ -7,7 +7,7 @@ export const fenjalien: AuthorDefinition = {
   },
   entries: {
     typst: {
-      title: "Typst",
+      label: "Typst",
       images: [
         {
           label: "Typst Logo",

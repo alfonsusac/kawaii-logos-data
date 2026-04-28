@@ -2,7 +2,7 @@ import { rm } from "fs/promises"
 import { generateGitIgnore } from "./utils"
 import { info } from "console"
 import { cyan, reset } from "./lib/ansii"
-import type { Resolved } from "./resolve/output"
+import type { Resolved } from "./output"
 
 export async function persistData(resolved: Resolved, opts: {
   outputTypeDefFilePath: string

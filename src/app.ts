@@ -29,7 +29,7 @@ import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./effects"
-import type { Output } from "./resolve/output"
+import type { Output } from "./output"
 
 
 runApp(async () => {
@@ -100,7 +100,7 @@ async function prepareOutput(data: Output) {
     data
   }
   const stringified = JSON.stringify(response, null, 2)
-  const outputTypeFileContent = await Bun.file('./src/lib/model/output.ts').text()
+  const outputTypeFileContent = await Bun.file('./src/output.ts').text()
   const folderStructure = {
     // Switching branch from main to data branch will cause gitignored files to carry over. 
     // So we need to re-ignore those files in the data branch.

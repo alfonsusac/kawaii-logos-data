@@ -6,7 +6,7 @@ export const urielchan: AuthorDefinition = {
   },
   entries: {
     imphnen: {
-      title: "imphnen.png",
+      label: "imphnen.png",
       images: [
         {
           src: 'https://raw.githubusercontent.com/Urielchan/logosVtuberVER/main/imphnen%202.png',

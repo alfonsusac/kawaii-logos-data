@@ -1,7 +1,7 @@
 import { getBskyProfile } from "../lib/api/bsky"
 import { logerror, warn } from "../pipeline"
 import type { AuthorDefinition } from "../resolve-author"
-import type { AuthorSocialLinks } from "./output"
+import type { AuthorSocialLinks } from "../output"
 
 
 

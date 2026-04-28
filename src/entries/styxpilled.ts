@@ -10,7 +10,7 @@ export const styxpilled: AuthorDefinition = {
   },
   entries: {
     svelte: {
-      title: "svelte",
+      label: "svelte",
       images: {
         src: GitHub.selfHostedStaticAssetUrl("GLlkf9EWwAAq3N9.jpeg"),
         reference: twitterPost("styxpilled", "1781565832251719868"),
@@ -18,7 +18,7 @@ export const styxpilled: AuthorDefinition = {
       }
     },
     sveltekit: {
-      title: "sveltekit",
+      label: "sveltekit",
       images: {
         src: GitHub.selfHostedStaticAssetUrl("GLmrDPdXgAAlKvW.jpeg"),
         reference: twitterPost("styxpilled", "1781643208130216015"),

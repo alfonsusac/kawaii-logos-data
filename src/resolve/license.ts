@@ -1,4 +1,4 @@
-import type { License } from "./output"
+import type { License } from "../output"
 import { resolveReference, type ReferenceDef } from "./references"
 
 export type StandardLicense =

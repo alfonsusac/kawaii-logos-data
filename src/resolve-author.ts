@@ -1,11 +1,14 @@
 
-import { resolveEntries, type EntriesDefinition } from "./resolve/entries"
+import { resolveEntries, resolveEntriesMulti, type EntriesDefinition } from "./resolve/entries"
 import { resolveSocials, type SocialsDef } from "./resolve/socials"
 import { resolvePfp } from "./resolve/pfp"
-import type { Author } from "../types"
 import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve/license"
-import { resolveSource, type SourceDef } from "./resolve-source"
+import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
+import type { Author } from "./output"
+import { validateResolvedAuthor } from "./validate"
+import { slugify } from "./lib/slug"
+import { step, stepSimple } from "./pipeline"
 
 export type AuthorDefinition = {
   displayName?: string,
@@ -21,21 +24,33 @@ export type AuthorDefinition = {
 export async function resolveAuthorDefinition(author: AuthorDefinition, id: string) {
   const displayName = author.displayName ?? id
 
-  // Convert source to definitions
-  const { scrapedEntries, scrapedSocials } = await resolveSource(author.source)
+  const { scrapedEntries, scrapedSocials } = await stepSimple(
+    "Converting source to definitions",
+    () => resolveSourceDefinition(author.source, {
+      // printTransformedList: true,
+      // printGroups: true
+      // printSummary: true,
+    })
+  )
 
-  // Resolve entries and enrichd datas
-  const entries = await resolveEntries(author.entries)
+  const entries = await stepSimple(
+    "Resolving entries and enrich data",
+    () => resolveEntriesMulti(author.entries, scrapedEntries)
+  )
 
-  // Resolve socials
-  const { social, links } = await resolveSocials(author.socials, scrapedSocials)
+  const { social, links } = await stepSimple(
+    "Resolving socials",
+    () => resolveSocials(author.socials, scrapedSocials)
+  )
 
-  // Resolve pfp from def or scraped socials
-  const pfp = await resolvePfp(author, links.socials)
+  const pfp = await stepSimple(
+    "Resolving pfp from def or scraped socials",
+    () => resolvePfp(author, links.socials)
+  )
 
   // Compile resolved data into final Author object
   const resolved: Author = {
-    id,
+    id: slugify(id),
     displayName,
     pfp,
     social,
@@ -44,6 +59,9 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
       ...entries,
     ],
   }
+
+  // Validating Resolved
+  await validateResolvedAuthor(resolved)
 
   return resolved
 }

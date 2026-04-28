@@ -1,6 +1,6 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
+import type { Author, Authors } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
-import type { Authors, Author } from "../types"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 
 
