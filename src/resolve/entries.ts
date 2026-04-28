@@ -5,9 +5,9 @@ import { normalizeReferencesDef, type ReferencesDef } from "./references"
 
 // ## Definitions
 
-export type EntriesDef = Record<string, EntryDef>
+export type EntriesDefinition = Record<string, EntryDefinition>
 
-export type EntryDef = {
+export type EntryDefinition = {
   title: string,
   images?: ImageDef | ImageDef[],
   createdAt?: DateDef,
@@ -34,7 +34,7 @@ export type ImageDef = {
 
 // ----------------------------------------------------------------------------------------
 
-export function resolveEntries(defs: EntriesDef | undefined): Author[ 'entries' ] {
+export function resolveEntries(defs: EntriesDefinition | undefined): Author[ 'entries' ] {
   if (!defs) return []
   const entries: Author[ 'entries' ] = Object
     .entries(defs)
@@ -70,7 +70,7 @@ export function resolveEntries(defs: EntriesDef | undefined): Author[ 'entries' 
 
 // #### Definition Helper
 
-export function AlfonsImageDef(title: string, filename: string): EntryDef {
+export function AlfonsImageDef(title: string, filename: string): EntryDefinition {
   return {
     title,
     images: {

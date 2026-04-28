@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const cocoa_xu: AuthorDef = {
+export const cocoa_xu: AuthorDefinition = {
   source: {
     from: "github",
     repo: "cocoa-xu/ProgrammingVTuberLogos-BEAM",

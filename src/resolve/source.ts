@@ -1,74 +1,107 @@
-import type { Author } from "./output"
+import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "../utils"
+import type { AuthorDefinition } from "./author"
+import type { EntriesDefinition, EntryDefinition } from "./entries"
 import type { SocialListDef } from "./socials"
 import { resolveGithubSource } from "./source-github"
 
+// Definitions
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"
 // If deeper path is encountered (i.e github/svg/github.svg), use transform to modify the filepaths so that the segments is only one level deep.
 export type SourceDef = {
-  transform?: TransformDef | TransformDef[],
+  transform?: ArrayOrSingle<
+    | { type: "replace", from: string, to: string }
+    | { type: "filter", exclude: string }
+  >,
 } & (
-    | GithubSourceDef
+    | { from: "github", repo: `${ string }/${ string }` }
   )
 
-type GithubSourceDef = {
-  from: "github",
-  repo: `${ string }/${ string }`,
-}
+export type ValidSourceType = SourceDef[ "from" ]
 
-type TransformDef =
-  | { type: "replace", from: string, to: string }
-  | { type: "filter", exclude: string }
+
+
 
 
 // Implementations
 
-export type ScrapedResult = {
-  files?: {
-    label: string,
-    rawUrl: string,
-    pageUrl?: string,
-    license?: {
+export type SourceResult = {
+
+  // Files scraped from a source definition.
+  files: {
+    transformedPath: string, // Used to group images into entries in a form of "<group>/<filename>". 
+    label: string,           // Used as image label in the entry, by default it's the filename without extension.
+    rawUrl: string,          // Direct link to the raw file, used as <img> src.
+    pageUrl?: string,        // Link to the page where the file is located, used as reference for the image source.
+    license?: { // WIP
       value: string,
       referenceUrl: string,
-    },
+    } | "unknown",
   }[],
-  socialsList?: SocialListDef
+
+  // Owners identified from the source definition.
+  owner?: {
+    provider: ValidSourceType,
+    username: string,
+    url: string,
+  },
+
 }
 
-export async function resolveSource(def: SourceDef | undefined) {
+type ResolveSourceResult = {
+  scrapedEntries: EntriesDefinition,
+  scrapedSocials: SocialListDef,
+}
 
 
+export type ScrapedResultFiles = SourceResult[ "files" ]
 
-  if (!def) return undefined
-  if (def.from === "github") {
-    const result = await resolveGithubSource(def)
 
-    const entries: Author[ 'entries' ] | undefined = scrapedResult?.result?.map(image => {
-      return {
-        id: image.path,
-        images: [ {
-          src: image.rawPageUrl,
-          reference: [ { site: image.githubPageUrl } ],
-          label: image.path.split("/").slice(-1)[ 0 ],
-          style: undefined,
-        } ],
-        title: image.path.split("/").slice(-1)[ 0 ],
-      }
-    })
+export async function resolveSource(
+  def: SourceDef | undefined
+): Promise<ResolveSourceResult> {
 
-    const result = {
-      license: scrapedResult?.rootLicense ? {
-        src: scrapedResult?.rootLicense.rawPageUrl,
-        ref: scrapedResult?.rootLicense.githubPageUrl,
-      } : undefined,
-      entries,
-      socialList,
+  if (!def) return { scrapedEntries: {}, scrapedSocials: [] }
+
+  // Get list of files (and other metadatas attached to them)
+  const scrapedResult = await (async () => {
+    if (def.from === "github") {
+      return await resolveGithubSource(def)
     }
+    throw new Error(`Unknown source type: ${ (def as any).from }`)
+  })()
 
-    return result
+  // Apply transformations to list of files 
+  const transformations = resolveArrayOrSingleToArray(def.transform)
+  let transformedList = scrapedResult.files
+  for (const t of transformations) {
+    if (t.type === "replace") {
+      scrapedResult.files.forEach(file => {
+        file.transformedPath = file.transformedPath.replace(t.from, t.to)
+      })
+    }
+    if (t.type === "filter") {
+      transformedList = transformedList.filter(file => !file.transformedPath.includes(t.exclude))
+    }
   }
-  throw new Error(`Unknown source type: ${ (def as any).from }`)
+
+
+
+
+
+
+
+
+
+
+
+
+
+  return {
+    scrapedEntries: transformedList,
+    scrapedSocials: []
+  }
+
 }
 

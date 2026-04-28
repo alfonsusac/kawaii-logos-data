@@ -1,8 +1,8 @@
 import { blueskyPost } from "../lib/url"
 import { GitHub } from "../lib/url-github"
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const thatonecalculator: AuthorDef = {
+export const thatonecalculator: AuthorDefinition = {
   displayName: "thatonecalculator",
   socials: {
     x: "thatonecalculator",

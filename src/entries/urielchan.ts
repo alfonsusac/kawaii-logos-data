@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const urielchan: AuthorDef = {
+export const urielchan: AuthorDefinition = {
   socials: {
     github: "urielchan",
   },

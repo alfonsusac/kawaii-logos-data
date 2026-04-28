@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const aikoyori: AuthorDef = {
+export const aikoyori: AuthorDefinition = {
   socials: {
     x: "Aikoyori",
     bsky: "aikoyori.xyz",

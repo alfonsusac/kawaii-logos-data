@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const cr1sta_dev: AuthorDef = {
+export const cr1sta_dev: AuthorDefinition = {
   socials: {
     x: "cr1sta_dev",
   },

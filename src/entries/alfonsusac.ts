@@ -1,7 +1,7 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 import { AlfonsImageDef } from "../resolve/entries"
 
-export const alfonsusac: AuthorDef = {
+export const alfonsusac: AuthorDefinition = {
   socials: {
     github: "alfonsusac",
     x: "alfonsusac",

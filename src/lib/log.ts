@@ -1,8 +1,8 @@
 import chalk from "chalk"
 import { black, blue, cyan, green, magenta, red, reset, white, yellow } from "./ansii"
-import path from "path"
 import { readFileSync } from "fs"
 import { log, verbose } from "../pipeline"
+import path from "path"
 
 export const logError = (error?: any, message?: string, opts?: {
   hideStack?: boolean

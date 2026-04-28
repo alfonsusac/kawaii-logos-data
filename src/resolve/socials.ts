@@ -185,7 +185,7 @@ export async function resolveSocials(
 
 export function resolveGithub(def: SocialsDef[ 'github' ]) {
   if (!def) return undefined
-  return { username: def, url: site(`github.com/${ def }`), }
+  return { username: def, url: getGithubProfileURL(def), }
 }
 export function resolveGithubFromURL(url: string | undefined) {
   if (!url) return undefined
@@ -196,6 +196,9 @@ export function resolveGithubFromURL(url: string | undefined) {
   }
   const username = match[ 1 ]
   return { username, url }
+}
+export function getGithubProfileURL(username: string) {
+  return site(`github.com/${ username }`)
 }
 export async function verifyGithub(username: string) {
   const res = await fetchGithubProfile(username)

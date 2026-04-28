@@ -1,33 +1,43 @@
 import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles, returnUndefinedIfError } from "../lib/api/github"
 import { logerror } from "../pipeline"
 import { normalizeArrayDef } from "../utils"
-import { resolveGithub, type SocialListDef } from "./socials"
-import type { ScrapedResult, SourceDef } from "./source"
+import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./socials"
+import type { SourceResult, ScrapedResultFiles, SourceDef } from "./source"
 
 type GithubSourceDef = SourceDef & { from: "github" }
 
 
-export async function resolveGithubSource(def: GithubSourceDef): Promise<ScrapedResult> {
+export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceResult> {
   const [ owner, repoName ] = def.repo.split("/")
 
-  const scrapedResult = await resolveGithubRepository(def)
-  const socialList = await resolveGithubProfileSocialList(owner)
-
   return {
-    scrapedResult,
-    socialList,
+    files: await resolveGithubRepository(def),
+    owner: {
+      provider: "github",
+      username: owner,
+      url: getGithubProfileURL(owner),
+    }
   }
+
+
+  // const scrapedResult = await resolveGithubRepository(def)
+  // const socialList = await resolveGithubProfileSocialList(owner)
+
+  // return {
+  //   scrapedResult,
+  //   socialList,
+  // }
 }
 
 // ------------------------------------------------------------------------------------
 
-async function resolveGithubRepository(def: GithubSourceDef) {
+async function resolveGithubRepository(def: GithubSourceDef): Promise<ScrapedResultFiles> {
 
   const repoFiles = returnUndefinedIfError(await fetchGithubRepoFiles(def.repo), {
     onError: (res) => logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
   })
 
-  if (repoFiles === undefined) return undefined
+  if (repoFiles === undefined) return []
 
   const resolvedTree = repoFiles.tree.map(item => {
     return {
@@ -57,30 +67,47 @@ async function resolveGithubRepository(def: GithubSourceDef) {
     }
   })
 
-  // resolve transform
-  const transforms = normalizeArrayDef(def.transform)
-  const transfomedImageRef = { current: imagesWithLicense.map(image => { return { ...image, transformedPath: image.path } }) }
-  for (const t of transforms) {
-    if (t.type === "replace") {
-      transfomedImageRef.current = transfomedImageRef.current.map(image => {
-        return { ...image, transformedPath: image.path.replace(t.from, t.to) }
-      })
-    }
-    if (t.type === "filter") {
-      transfomedImageRef.current = transfomedImageRef.current.filter(image => !image.path.includes(t.exclude))
-    }
-  }
+  const scrapedResultFiles: ScrapedResultFiles = imagesWithLicense.map(image => {
+    return {
+      label: image.path.split("/").slice(-1)[ 0 ],
+      rawUrl: image.rawPageUrl,
+      pageUrl: image.githubPageUrl,
+      transformedPath: image.path,
+      // id: image.path,
+      // src: image.rawPageUrl,
+      // reference: [ { site: image.githubPageUrl } ],
+      // label: image.path.split("/").slice(-1)[ 0 ],
+      // style: undefined,
+      // license: image.license,
+    } satisfies ScrapedResultFiles[ number ]
+  })
 
-  const result = transfomedImageRef.current
-  return {
-    result,
-    rootLicense,
-  }
+  return scrapedResultFiles
+
+  // // resolve transform
+  // const transforms = normalizeArrayDef(def.transform)
+  // const transfomedImageRef = { current: imagesWithLicense.map(image => { return { ...image, transformedPath: image.path } }) }
+  // for (const t of transforms) {
+  //   if (t.type === "replace") {
+  //     transfomedImageRef.current = transfomedImageRef.current.map(image => {
+  //       return { ...image, transformedPath: image.path.replace(t.from, t.to) }
+  //     })
+  //   }
+  //   if (t.type === "filter") {
+  //     transfomedImageRef.current = transfomedImageRef.current.filter(image => !image.path.includes(t.exclude))
+  //   }
+  // }
+
+  // const result = transfomedImageRef.current
+  // return {
+  //   result,
+  //   rootLicense,
+  // }
 }
 
 // ------------------------------------------------------------------------------------
 
-async function resolveGithubProfileSocialList(owner: string): Promise<ScrapedResult[ 'socialsList' ]> {
+async function resolveGithubProfileSocialList(owner: string) {
 
   const ghuser = returnUndefinedIfError(await fetchGithubProfile(owner), {
     onError: (res) => logerror(`Failed to fetch github profile for ${ owner }: ${ res.status }`),

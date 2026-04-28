@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const fenjalien: AuthorDef = {
+export const fenjalien: AuthorDefinition = {
   displayName: "fenjalien",
   socials: {
     github: "fenjalien",

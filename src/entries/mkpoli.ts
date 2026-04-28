@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const mkpoli: AuthorDef = {
+export const mkpoli: AuthorDefinition = {
   source: {
     from: "github",
     repo: "mkpoli/VTuber-Styled-Logos",

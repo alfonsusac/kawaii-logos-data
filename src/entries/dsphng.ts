@@ -1,7 +1,7 @@
 import { GitHub } from "../lib/url-github"
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const dsphng: AuthorDef = {
+export const dsphng: AuthorDefinition = {
   displayName: "dsphng",
   socials: {
     x: "dsphng",

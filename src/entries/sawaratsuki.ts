@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const sawaratsuki: AuthorDef = {
+export const sawaratsuki: AuthorDefinition = {
   source: {
     from: "github",
     repo: "SAWARATSUKI/KawaiiLogos",

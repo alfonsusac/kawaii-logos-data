@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const ldmdiamondl: AuthorDef = {
+export const ldmdiamondl: AuthorDefinition = {
   source: {
     from: "github",
     repo: "lDMDiamondl/ProgrammingVTuberLogosKR",

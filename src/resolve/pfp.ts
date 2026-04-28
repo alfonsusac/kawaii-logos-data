@@ -1,12 +1,12 @@
 import { getBskyProfile } from "../lib/api/bsky"
 import { logerror, warn } from "../pipeline"
-import type { AuthorDef } from "./author"
+import type { AuthorDefinition } from "./author"
 import type { AuthorSocialLinks } from "./output"
 
 
 
 export async function resolvePfp(
-  authorDef: AuthorDef,
+  authorDef: AuthorDefinition,
   resolvedSocials: AuthorSocialLinks,
 ) {
   // Get PFP from user-definition

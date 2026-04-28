@@ -33,8 +33,8 @@ export type Author = {
     id: string,
     title: string,
     images: {
-      src: string,
-      reference?: Reference[],
+      src: string,                  // for <img> source
+      reference?: Reference[],      // where image was found
       label?: string,
       style?: {
         objectFit?: "cover" | "contain"
@@ -47,7 +47,7 @@ export type Author = {
 export type AuthorLinks = Author[ 'links' ]
 export type AuthorSocialLinks = Author[ 'links' ][ 'socials' ]
 export type AuthorPersonalSites = Author[ 'links' ][ 'personalsites' ]
-export type Entry = Author['entries'][number]
+export type Entry = Author[ 'entries' ][ number ]
 
 export type Reference = {
   site: string,

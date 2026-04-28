@@ -1,7 +1,7 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 import { GithubPage } from "../resolve/entries"
 
-export const arnav: AuthorDef = {
+export const arnav: AuthorDefinition = {
   displayName: "arnav-kr",
   socials: {
     github: "arnav-kr",

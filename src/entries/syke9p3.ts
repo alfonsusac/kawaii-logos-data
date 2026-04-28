@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const syke9p3: AuthorDef = {
+export const syke9p3: AuthorDefinition = {
   source: {
     from: "github",
     repo: "syke9p3/Syke-VTuber-Icons",

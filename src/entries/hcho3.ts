@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const hcho3: AuthorDef = {
+export const hcho3: AuthorDefinition = {
   displayName: "hcho3",
   pfp: "https://avatars.githubusercontent.com/hcho3",
   socials: {

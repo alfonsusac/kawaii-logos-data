@@ -1,6 +1,6 @@
-import type { AuthorDef } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve/author"
 
-export const hvpexe: AuthorDef = {
+export const hvpexe: AuthorDefinition = {
   displayName: "hvpexe",
   socials: {
     github: "hvpexe",
