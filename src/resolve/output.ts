@@ -1,6 +1,6 @@
 export type Authors = Author[]
 export type Output = Authors
-export type Resolved = Author
+export type Resolved = Authors
 
 export type Author = {
   id: string,

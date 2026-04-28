@@ -1,4 +1,4 @@
-import type { AuthorDefinition } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve-author"
 
 export const hcho3: AuthorDefinition = {
   displayName: "hcho3",

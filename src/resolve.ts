@@ -1,11 +1,7 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import { resolveSource } from "./resolve/source"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import type { Authors, Author } from "../types"
-import type { AuthorDefinition } from "./resolve/author"
-import { resolveEntries } from "./resolve/entries"
-import { resolvePfp } from "./resolve/pfp"
-import { resolveSocials } from "./resolve/socials"
+import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 
 
 export async function resolveDefinitions(
@@ -14,45 +10,12 @@ export async function resolveDefinitions(
 
   const results = await Promise.all(Object
     .entries(defs)
-    .map(([ id, def ]) => usingLogBuffer(() => resolveAuthor(def, id))))
+    .map(([ id, def ]) => usingLogBuffer(() => resolveAuthorDefinition(def, id))))
 
   logResults(results)
 
   const authorArray = results.map(result => result.result)
   return authorArray
-}
-
-// ------------------------------------------------------------
-
-async function resolveAuthor(author: AuthorDefinition, id: string) {
-  const displayName = author.displayName ?? id
-
-  // Convert source to definitions
-  const { scrapedEntries, scrapedSocials } = await resolveSource(author.source)
-
-  // Resolve entries and enrichd datas
-  const entries = await resolveEntries(author.entries)
-
-  // Resolve socials
-  const { social, links } = await resolveSocials(author.socials, scrapedSocials)
-
-  // Resolve pfp from def or scraped socials
-  const pfp = await resolvePfp(author, links.socials)
-
-  // Compile resolved data into final Author object
-  const resolved: Author = {
-    id,
-    displayName,
-    pfp,
-    social,
-    links,
-    entries: [
-      ...entries,
-      ...scrapedEntries,
-    ],
-  }
-
-  return resolved
 }
 
 // ------------------------------------------------------------------------

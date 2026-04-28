@@ -1,6 +1,6 @@
 import { twitterPost } from "../lib/url"
 import { GitHub } from "../lib/url-github"
-import type { AuthorDefinition } from "../resolve/author"
+import type { AuthorDefinition } from "../resolve-author"
 
 export const styxpilled: AuthorDefinition = {
   displayName: "styxpilled",

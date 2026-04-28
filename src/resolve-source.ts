@@ -1,10 +1,11 @@
-import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "../utils"
-import type { AuthorDefinition } from "./author"
-import type { EntriesDefinition, EntryDefinition } from "./entries"
-import type { SocialListDef } from "./socials"
-import { resolveGithubSource } from "./source-github"
+
 
 // Definitions
+
+import type { EntriesDefinition } from "./resolve/entries"
+import type { SocialListDef } from "./resolve/socials"
+import { resolveGithubSource } from "./resolve/source-github"
+import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"
@@ -99,7 +100,8 @@ export async function resolveSource(
 
 
   return {
-    scrapedEntries: transformedList,
+    scrapedEntries: {},
+    // scrapedEntries: transformedList,
     scrapedSocials: []
   }
 

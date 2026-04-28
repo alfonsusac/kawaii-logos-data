@@ -1,8 +1,8 @@
 import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles, returnUndefinedIfError } from "../lib/api/github"
 import { logerror } from "../pipeline"
+import type { ScrapedResultFiles, SourceDef, SourceResult } from "../resolve-source"
 import { normalizeArrayDef } from "../utils"
 import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./socials"
-import type { SourceResult, ScrapedResultFiles, SourceDef } from "./source"
 
 type GithubSourceDef = SourceDef & { from: "github" }
 
