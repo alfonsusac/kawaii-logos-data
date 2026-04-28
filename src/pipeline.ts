@@ -39,7 +39,7 @@ export async function step<R>(
   const indent = getIndent()
 
   if (currentDepth === 0) {
-    log(`\n${ blue }----${ reset }`, description, `${ blue }----${ reset }`)
+    log(`\n${ blue }[${ reset }`, description, `${ blue }]${ reset }`)
   }
   if (currentDepth === 1) {
     log(`${ blue }-${ reset }`, description, `${ blue }${ reset }`)
@@ -53,64 +53,58 @@ export async function step<R>(
 
 // ----------------------------------------------------
 
-type LogBuffer = {
-  logs: any[][],
-  warns: any[][],
-  errors: any[][],
-  verboses: any[][],
-}
+export type LogBufferType =
+  | "log"
+  | "verbose"
+  | "info"
+  | "warn"
+  | "error"
+  | (string & {})
+
+export type LogBuffer = {
+  type: LogBufferType, message: any[]
+}[]
 
 const logBuffer = new AsyncLocalStorage<LogBuffer>()
 
 export async function usingLogBuffer<R>(cb: () => R) {
 
-  const data = await logBuffer.run({
-    logs: [],
-    warns: [],
-    errors: [],
-    verboses: [],
-  }, async () => {
+  const data = await logBuffer.run([], async () => {
     const res = await cb()
-    const buffers = logBuffer.getStore() || {
-      logs: [],
-      warns: [],
-      errors: [],
-      verboses: [],
-    }
+    const buffers = logBuffer.getStore() || []
     return { buffers, result: res }
   })
 
   return data
 }
 
-export function log(...messages: any[]) {
+
+export function logWithType(type: LogBufferType, ...messages: any[]) {
   const buffer = logBuffer.getStore()
   const indent = getIndent()
-  if (buffer) {
-    buffer.logs.push([ indent, ...messages ])
-  } else {
-    console.log(...[ indent, ...messages ])
-  }
+  if (buffer)
+    buffer.push({ type, message: [ indent, ...messages ] })
+  else
+    console[ type === "error" ? "error" : "log" ](...messages)
+}
+
+
+export function log(...messages: any[]) {
+  logWithType("log", ...messages)
 }
 
 export function info(...args: any) {
-  log(`${ blue }i${ reset }`, ...args, reset)
+  logWithType("info", `${ blue }i${ reset }`, ...args, reset)
 }
 export function verbose(...args: any) {
-  const buffer = logBuffer.getStore()
-  buffer?.verboses.push([...args])
-  log(`${ black }`, ...args, reset)
+  logWithType("verbose", ...args, reset)
 }
 export function warn(...args: any) {
-  const buffer = logBuffer.getStore()
-  buffer?.warns.push([...args])
-  log(`${ yellow }!${ reset }`, ...args, reset)
+  logWithType("warn", `${ yellow }!${ reset }`, ...args, reset)
 }
 export function logerror(...args: any) {
-  const buffer = logBuffer.getStore()
-  buffer?.errors.push([...args])
-  log(`${ red }✖️${ reset }`, ...args, reset)
+  logWithType("error", `${ red }✖️${ reset }`, ...args, reset)
 }
-// export function success(...args: any) {
-//   log(`${ green }✔️${ reset }`, ...args, reset)
-// }
+export function logger(type: LogBufferType) {
+  return (...args: any) => logWithType(type, ...args, reset)
+}

@@ -24,11 +24,9 @@ import { mkpoli } from "./entries/mkpoli"
 import { ldmdiamondl } from "./entries/ldmdiamondl"
 import { andregans } from "./entries/andregans"
 import { cocoa_xu } from "./entries/cocoa_xu"
-import { bskyFetchesCount } from "./lib/api/bsky"
-import { githubFetchesCount } from "./lib/api/github"
 import { syke9p3 } from "./entries/syke9p3"
 import { generateGitIgnore } from "./utils"
-import { info, runApp, step, verbose, warn } from "./pipeline"
+import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./effects"
@@ -73,7 +71,7 @@ runApp(async () => {
   )
 
   await step(
-    "Persisting output to disk and to git branch", async () => {
+    "Persisting data", async () => {
       const output = await step("Preparing output",
         () => prepareOutput(resolved))
       await step("Saving to disk",

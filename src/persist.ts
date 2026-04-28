@@ -1,5 +1,4 @@
 import { rm } from "fs/promises"
-import type { Resolved } from "./lib/model/output"
 import { generateGitIgnore } from "./utils"
 import { info } from "console"
 import { cyan, reset } from "./lib/ansii"

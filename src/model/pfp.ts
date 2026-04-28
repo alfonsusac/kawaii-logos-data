@@ -1,5 +1,5 @@
-import { logerror, warn } from "../../pipeline"
-import { getBskyProfile } from "../api/bsky"
+import { getBskyProfile } from "../lib/api/bsky"
+import { logerror, warn } from "../pipeline"
 import type { AuthorDef } from "./author"
 import type { AuthorSocialLinks } from "./output"
 

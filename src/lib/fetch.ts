@@ -1,13 +1,14 @@
-import { logger } from "./log"
+import { logWithType } from "../pipeline"
 
 // -------------------------------------------------------
 
-const log = logger('fetch', { verbose: true })
+const verboselog = true
+const log = (...message: any[]) => logWithType.bind(null, "fetch")('fetch:', ...message)
 
 // -------------------------------------------------------
 
 export async function appfetch(url: string, options?: RequestInit) {
-  log.verbose(options?.method ?? "GET", url)
+  verboselog && log(options?.method ?? "GET", url)
 
   const res = await fetch(url, options)
   return res

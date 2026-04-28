@@ -14,10 +14,19 @@ export type Duration =
   | `${ number }d ${ number }h ${ number }s`
   | `${ number }d ${ number }h ${ number }m`
   | `${ number }d ${ number }h ${ number }m ${ number }s`
+  | `infinite`
+  | `instant`
 
 export function durationToSeconds(duration: Duration): number {
   const parts = duration.split(' ')
   let seconds = 0
+
+  if (duration === 'infinite') {
+    return Number.POSITIVE_INFINITY
+  }
+  if (duration === 'instant') {
+    return 0
+  }
 
   for (const part of parts) {
     const value = parseInt(part)

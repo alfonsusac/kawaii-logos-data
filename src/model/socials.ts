@@ -1,8 +1,8 @@
-import { getBskyProfile } from "../api/bsky"
+import { getBskyProfile } from "../lib/api/bsky"
+import { fetchGithubProfile } from "../lib/api/github"
+import { site } from "../lib/site"
+import { logerror } from "../pipeline"
 import type { Author, AuthorLinks } from "./output"
-import { site } from "../site"
-import { fetchGithubProfile } from "../api/github"
-import { logerror } from "../../pipeline"
 
 export type SocialsDef = {
   github?: string,
@@ -52,7 +52,7 @@ export async function resolveSocials(
   if (def?.x) xs.push(site(`x.com/${ def.x }`))
 
   const bskys = list.filter(s => s.label === "bsky").map(s => s.url)
-  if (def?.bsky) bskys.push(site(`bsky.app/${ def.bsky }`))
+  if (def?.bsky) bskys.push(site(`bsky.app/profile/${ def.bsky }`))
 
   const personalsites = list.filter(s => s.label === "site").map(s => s.url)
   if (def?.site) personalsites.push(def.site)
@@ -228,7 +228,7 @@ export function resolveBsky(def: SocialsDef[ 'bsky' ]) {
 }
 export function resolveBskyFromURL(url: string | undefined) {
   if (!url) return undefined
-  const match = url.match(/bsky\.app\/([^\/]+)/)
+  const match = url.match(/bsky\.app\/(?:profile\/)?([^\/]+)/)
   if (!match) {
     logerror(`Could not parse Bluesky URL: ${ url }`)
     return undefined

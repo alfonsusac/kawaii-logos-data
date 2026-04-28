@@ -1,7 +1,7 @@
+import type { Site } from "../lib/site"
 import { type DateDef } from "./date"
 import type { Author, Entry } from "./output"
 import { normalizeReferencesDef, type ReferencesDef } from "./references"
-import type { Site } from "../site"
 
 // ## Definitions
 

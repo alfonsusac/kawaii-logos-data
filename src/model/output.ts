@@ -1,6 +1,6 @@
 export type Authors = Author[]
 export type Output = Authors
-export type Resolved = Output
+
 
 export type Author = {
   id: string,
@@ -29,26 +29,25 @@ export type Author = {
     }[],
     personalsites: string[],
   }
-  entries: Entry[],
+  entries: {
+    id: string,
+    title: string,
+    images: {
+      src: string,
+      reference?: Reference[],
+      label?: string,
+      style?: {
+        objectFit?: "cover" | "contain"
+      }
+    }[],
+    license?: License
+  }[],
 }
 
 export type AuthorLinks = Author[ 'links' ]
 export type AuthorSocialLinks = Author[ 'links' ][ 'socials' ]
 export type AuthorPersonalSites = Author[ 'links' ][ 'personalsites' ]
-
-export type Entry = {
-  id: string,
-  title: string,
-  images: {
-    src: string,
-    reference?: Reference[],
-    label?: string,
-    style?: {
-      objectFit?: "cover" | "contain"
-    }
-  }[],
-  license?: License
-}
+export type Entry = Author['entries'][number]
 
 export type Reference = {
   site: string,
