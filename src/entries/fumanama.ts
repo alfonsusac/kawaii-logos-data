@@ -5,7 +5,6 @@ export const fumanama: AuthorDefinition = {
   socials: {
     github: "fuma-nama",
     x: "fuma_nama",
-    bsky: "fuma-nama.bsky.social"
   },
   entries: {
     fumadocs: {

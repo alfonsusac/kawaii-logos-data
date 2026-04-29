@@ -54,6 +54,8 @@ export type SourceResult = {
     url: string,
   },
 
+  // Socials identified from the source definition.
+  socials?: SocialListDef,
 }
 
 type ResolveSourceResult = {
@@ -68,34 +70,69 @@ export type ScrapedResultFiles = SourceResult[ "files" ]
 export async function resolveSourceDefinition(
   def: SourceDef | undefined,
   opts: {
+    printPreTransformedList?: boolean,
     printTransformedList?: boolean,
     printGroups?: boolean,
     printSummary?: boolean,
   }
 ): Promise<ResolveSourceResult> {
 
-  if (!def) return { scrapedEntries: {}, scrapedSocials: [] }
+  const scrapedSocials: SocialListDef = []
+
+  if (!def) return { scrapedEntries: {}, scrapedSocials }
 
   // Get list of files (and other metadatas attached to them)
   const scrapedResult = await (async () => {
-    if (def.from === "github") {
+    if (def.from === "github")
       return stepSimple("Resolving Github Source", () => resolveGithubSource(def))
-    }
     throw new Error(`Unknown source type: ${ (def as any).from }`)
   })()
 
   // Apply transformations to list of files 
-  const transformations = resolveArrayOrSingleToArray(def.transform)
-  let transformedList = scrapedResult.files
+  const transformedList = await stepSimple(
+    "Applying transformations to scraped files",
+    () => resolveSourceTransformation(scrapedResult.files, def.transform, opts)
+  )
+
+  // Group files into entries-like structure based on the transformedPath.
+  const scrapedEntries = await stepSimple(
+    "Grouping transformed files into entries",
+    () => resolveTransformedSourceToEntries(transformedList, def, opts)
+  )
+
+  // Merge scraped socials with socials from the author definition.
+  scrapedSocials.push(...(scrapedResult.socials ?? []))
+
+  return {
+    scrapedEntries,
+    scrapedSocials
+  }
+
+}
+
+// --------------------------------------------------------------------------------
+
+export function resolveSourceTransformation(
+  files: ScrapedResultFiles,
+  transformationDef: SourceDef[ "transform" ],
+  opts: {
+    printPreTransformedList?: boolean,
+    printTransformedList?: boolean,
+  }
+): ScrapedResultFiles {
+
+  if (opts.printPreTransformedList) {
+    log(`Transformed List:`)
+    files.map(t => t.transformedPath).sort().forEach(t => log(`- ${ t }`))
+  }
+
+  let transformedList = files
+  const transformations = resolveArrayOrSingleToArray(transformationDef)
   for (const t of transformations) {
-    if (t.type === "replace") {
-      scrapedResult.files.forEach(file => {
-        file.transformedPath = file.transformedPath.replace(t.from, t.to)
-      })
-    }
-    if (t.type === "filter") {
+    if (t.type === "replace")
+      transformedList.forEach(file => file.transformedPath = file.transformedPath.replace(t.from, t.to))
+    if (t.type === "filter")
       transformedList = transformedList.filter(file => !file.transformedPath.includes(t.exclude))
-    }
   }
 
   if (opts.printTransformedList) {
@@ -103,9 +140,22 @@ export async function resolveSourceDefinition(
     transformedList.map(t => t.transformedPath).sort().forEach(t => log(`- ${ t }`))
   }
 
-  // Group files into entries-like structure based on the transformedPath.
+  return transformedList
+}
+
+// --------------------------------------------------------------------------------
+
+export async function resolveTransformedSourceToEntries(
+  transformedFiles: ScrapedResultFiles,
+  def: SourceDef | undefined,
+  opts: {
+    printGroups?: boolean,
+    printSummary?: boolean,
+  }
+) {
   const scrapedEntries: EntriesDefinition = {}
 
+  // Convert transformed list into entries-like structure based on the transformedPath.
   function addToScrapeEntries(entryKey: string, entryLabel: string, file: ScrapedResultFiles[ number ]) {
     if (!scrapedEntries[ entryKey ]) {
       scrapedEntries[ entryKey ] = {
@@ -131,7 +181,7 @@ export async function resolveSourceDefinition(
     }
   }
 
-  transformedList.forEach(file => {
+  transformedFiles.forEach(file => {
     const segments = file.transformedPath.split("/")
     if (segments.length === 1) {
       // If there is no grouping (i.e all images are in the root), use filenameWithoutExtension as the key.
@@ -145,13 +195,12 @@ export async function resolveSourceDefinition(
       const entryLabel = segments[ 0 ]
       addToScrapeEntries(entryKey, entryLabel, file)
     } else {
-      // If there is deeper grouping (i.e "github/svg/github.svg"), log error and skip the file. Use source.transform to flatten the path if you want to include the file in the scrape result.
-      logerror(`Unsupported file path with more than 2 segments: ${ file.transformedPath }. Skipping.`)
+      logerror(`Unsupported file path with more than 2 segments: ${ file.transformedPath }. Skipping. Please use transform to modify the file paths to be at most 2 segments.`)
     }
   })
 
   if (opts.printSummary) {
-    log(`Scraped ${ transformedList.length } files from source. Grouped into ${ Object.keys(scrapedEntries).length } entries.`)
+    log(`Scraped ${ transformedFiles.length } files from source. Grouped into ${ Object.keys(scrapedEntries).length } entries.`)
   }
   if (opts.printGroups) {
     log(`Groups:`)
@@ -160,10 +209,5 @@ export async function resolveSourceDefinition(
     })
   }
 
-  return {
-    scrapedEntries,
-    scrapedSocials: []
-  }
-
+  return scrapedEntries
 }
-

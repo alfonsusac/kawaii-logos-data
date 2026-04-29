@@ -1,7 +1,6 @@
 import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles, returnUndefinedIfError } from "./lib/api/github"
-import { log, logerror } from "./pipeline"
+import { log, logerror, stepSimple } from "./pipeline"
 import type { ScrapedResultFiles, SourceDef, SourceResult } from "./resolve-source"
-import { normalizeArrayDef } from "./utils"
 import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./resolve/socials"
 
 type GithubSourceDef = SourceDef & { from: "github" }
@@ -13,12 +12,8 @@ export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceR
   log(`Link to Github Repo: ${ getGithubProfileURL(owner) }/${ repoName }`)
 
   return {
-    files: await resolveGithubRepository(def),
-    owner: {
-      provider: "github",
-      username: owner,
-      url: getGithubProfileURL(owner),
-    }
+    files: await stepSimple("Resolving Github Repository", () => resolveGithubRepository(def)),
+    socials: await stepSimple("Resolving Github Profile", () => resolveGithubProfileSocialList(owner)),
   }
 }
 
@@ -43,7 +38,7 @@ async function resolveGithubRepository(def: GithubSourceDef): Promise<ScrapedRes
   // For now, we only resolve the root license file if it exists. 
   // In the future, we could potentially resolve all license files and their contents.
   const rootLicense = resolvedTree.find(item => item.gh.path.toLowerCase().includes("license"))
-  log("license: ", rootLicense?.rawPageUrl ?? "not found")
+  log("license: ", rootLicense?.rawPageUrl)
 
   // Filter only image files. 
   // In the future, we could potentially support other file types as well.
@@ -83,26 +78,6 @@ async function resolveGithubRepository(def: GithubSourceDef): Promise<ScrapedRes
   })
 
   return scrapedResultFiles
-
-  // // resolve transform
-  // const transforms = normalizeArrayDef(def.transform)
-  // const transfomedImageRef = { current: imagesWithLicense.map(image => { return { ...image, transformedPath: image.path } }) }
-  // for (const t of transforms) {
-  //   if (t.type === "replace") {
-  //     transfomedImageRef.current = transfomedImageRef.current.map(image => {
-  //       return { ...image, transformedPath: image.path.replace(t.from, t.to) }
-  //     })
-  //   }
-  //   if (t.type === "filter") {
-  //     transfomedImageRef.current = transfomedImageRef.current.filter(image => !image.path.includes(t.exclude))
-  //   }
-  // }
-
-  // const result = transfomedImageRef.current
-  // return {
-  //   result,
-  //   rootLicense,
-  // }
 }
 
 // ------------------------------------------------------------------------------------

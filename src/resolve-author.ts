@@ -27,9 +27,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   const { scrapedEntries, scrapedSocials } = await stepSimple(
     "Converting source to definitions",
     () => resolveSourceDefinition(author.source, {
-      // printTransformedList: true,
-      // printGroups: true
-      // printSummary: true,
+      printGroups: true,
     })
   )
 
