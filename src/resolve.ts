@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { Author, Authors, Entry } from "./output"
+import type { Author, Authors, AuthorEntryItem } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 
@@ -76,7 +76,7 @@ function logResults(
     const images = resolved.entries.reduce((acc, curr) => {
       acc.push(...curr.images)
       return acc
-    }, [] as Entry[ 'images' ])
+    }, [] as AuthorEntryItem[ 'images' ])
 
     log([
       `${ blue }${ id.padEnd(17) }${ reset }`,

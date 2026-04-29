@@ -1,6 +1,6 @@
 import type { Site } from "../lib/site"
 import { type DateDef } from "./date"
-import type { Author, Entry, Reference } from "../output"
+import type { Author, AuthorEntryItem, Reference } from "../output"
 import { normalizeReferencesDef, type ReferencesDef } from "./references"
 import { logerror, warn } from "../pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "../utils"
@@ -76,7 +76,7 @@ export function resolveEntries(
     
     const imageDefs = resolveArrayOrSingleToArray(def.images)
 
-    const images: Entry[ 'images' ] = []
+    const images: AuthorEntryItem[ 'images' ] = []
 
     for (const imgDef of imageDefs) {
       const references: Reference[] = []
@@ -129,7 +129,7 @@ export function resolveEntries(
       images.push({
         label: temp.label,
         src: temp.src,
-        reference: imgDef.reference ? normalizeReferencesDef(imgDef.reference) : undefined,
+        // reference: imgDef.reference ? normalizeReferencesDef(imgDef.reference) : undefined,
         style: imgDef.style,
       })
     }
@@ -137,6 +137,7 @@ export function resolveEntries(
     entries.push({
       id,
       title: def.label,
+      references: [],
       // licenses
       // createdAt: def.createdAt && resolveDate(def.createdAt),
       images,

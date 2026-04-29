@@ -34,12 +34,13 @@ export type Author = {
     title: string,
     images: {
       src: string,                  // for <img> source
-      reference?: Reference[],      // where image was found
+      pageUrl?: string,             // where the image was found, for linking back to the source
       label?: string,
       style?: {
         objectFit?: "cover" | "contain"
       }
     }[],
+    references: Reference[],
     license?: License
   }[],
 }
@@ -47,7 +48,8 @@ export type Author = {
 export type AuthorLinks = Author[ 'links' ]
 export type AuthorSocialLinks = Author[ 'links' ][ 'socials' ]
 export type AuthorPersonalSites = Author[ 'links' ][ 'personalsites' ]
-export type Entry = Author[ 'entries' ][ number ]
+export type AuthorEntries = Author[ 'entries' ]
+export type AuthorEntryItem = Author[ 'entries' ][ number ]
 
 export type Reference = {
   site: string,
