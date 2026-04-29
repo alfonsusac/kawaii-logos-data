@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { Author, Authors } from "./output"
+import type { Author, Authors, Entry } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 
@@ -10,8 +10,12 @@ export async function resolveDefinitions(
 
   const results = await Promise.all(Object
     .entries(defs)
-    .map(([ id, def ]) => usingLogBuffer(() => resolveAuthorDefinition(def, id))))
-
+    .map(
+      ([ id, def ]) => {
+        return usingLogBuffer(() => resolveAuthorDefinition(def, id))
+      }
+    )
+  )
   logResults(results)
 
   const authorArray = results.map(result => result.result)
@@ -28,6 +32,37 @@ function logResults(
 ) {
   const authorArray = results.map(r => r.result)
 
+  // Pin errors on the top
+  const errors = results.reduce(
+    (acc, curr) => {
+      const { id } = curr.result
+      const relevantBuffers = curr.buffers.filter(b => b.type === "error" || b.type === "warn")
+      if (relevantBuffers.length > 0) {
+        acc.push({
+          id,
+          buffer: relevantBuffers.map(b => ({
+            type: b.type as ("error" | "warn"),
+            message: b.message
+          }))
+        })
+      }
+      return acc
+    },
+    [] as { id: string, buffer: { type: "error" | "warn", message: any[] }[] }[]
+  )
+
+  if (errors.length > 0) {
+    log(`\n${ red }Errors and Warnings:${ reset }`)
+    errors.forEach(e => {
+      log(`${ red }- ${ e.id }:${ reset }`)
+      e.buffer.forEach(b => {
+        log(`${ b.type === "error" ? red : yellow }`, ...b.message)
+      })
+    })
+    log()
+  }
+
+
   for (const { result, buffers } of results) {
     const id = result.id
     const resolved = result
@@ -37,9 +72,17 @@ function logResults(
     function count(num: number) {
       return num === 0 ? `${ black }0` : `${ reset }${ num }`
     }
+
+    const images = resolved.entries.reduce((acc, curr) => {
+      acc.push(...curr.images)
+      return acc
+    }, [] as Entry[ 'images' ])
+
     log([
       `${ blue }${ id.padEnd(17) }${ reset }`,
-      `   `,
+    ].filter(Boolean).join(''))
+    log([
+      `  `,
       `${ has(resolved.pfp) } ${ black }pfp`,
       `   `,
       `${ reset }${ resolved.links.socials.length } ${ black }socials`,
@@ -49,6 +92,8 @@ function logResults(
       `${ reset }${ count(resolved.links.socials.filter(s => s.type === "github").length) } ${ black }gh`,
       ` `,
       `${ reset }${ resolved.entries.length } ${ black }entries`,
+      ` `,
+      `${ reset }${ count(images.length) } ${ black }imgs`,
     ].filter(Boolean).join(''))
     buffers.forEach(b => log(`${ b.type === "error" ? red : b.type === "warn" ? yellow : black }`, ...b.message))
   }

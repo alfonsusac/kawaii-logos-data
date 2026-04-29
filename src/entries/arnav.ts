@@ -1,5 +1,4 @@
 import type { AuthorDefinition } from "../resolve-author"
-import { GithubPage } from "../resolve/entries"
 
 export const arnav: AuthorDefinition = {
   displayName: "arnav-kr",
@@ -16,8 +15,8 @@ export const arnav: AuthorDefinition = {
     "json-formatter": {
       label: "JSON Formatter",
       images: [
-        GithubPage("https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png"),
-        GithubPage("https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg")
+        { src: { type: "github-blob", url: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png" } },
+        { src: { type: "github-blob", url: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg" } }
       ],
     }
   }

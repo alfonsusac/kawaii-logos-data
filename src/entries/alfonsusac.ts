@@ -1,5 +1,5 @@
 import type { AuthorDefinition } from "../resolve-author"
-import { AlfonsImageDef } from "../resolve/entries"
+// import { AlfonsImageDef } from "../resolve/entries"
 
 export const alfonsusac: AuthorDefinition = {
   socials: {
@@ -13,10 +13,25 @@ export const alfonsusac: AuthorDefinition = {
     has_trademark: true
   },
   entries: {
-    skillissue: AlfonsImageDef("Skill Issue", "skillissue.svg"),
-    lgtm:       AlfonsImageDef("LGTM", "lgtm.svg"),
-    supabase:   AlfonsImageDef("Supabase", "supabase.svg"),
-    emailthing: AlfonsImageDef("EmailThing", "emailthing.svg"),
-    sharkchat:  AlfonsImageDef("Sharkchat", "sharkchat.svg"),
+    skillissue: {
+      label: "Skill Issue",
+      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/skillissue.svg" } } ]
+    },
+    lgtm: {
+      label: "LGTM",
+      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/lgtm.svg" } } ]
+    },
+    supabase: {
+      label: "Supabase",
+      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/supabase.svg" } } ]
+    },
+    emailthing: {
+      label: "EmailThing",
+      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/emailthing.svg" } } ]
+    },
+    sharkchat: {
+      label: "Sharkchat",
+      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/sharkchat.svg" } } ]
+    },
   }
 }

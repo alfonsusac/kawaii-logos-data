@@ -2,6 +2,7 @@ import { black, blue, green, magenta, red, reset, yellow } from "./lib/ansii"
 import { bskyFetchesCount } from "./lib/api/bsky"
 import { githubFetchesCount } from "./lib/api/github"
 import { AsyncLocalStorage } from "async_hooks"
+import { logerror as logerrorFancy } from "./lib/log"
 
 const APP_TITLE = "kawaii-logos-data"
 
@@ -12,7 +13,7 @@ export function runApp(cb: () => Promise<void>) {
     try {
       await cb()
     } catch (error) {
-      logerror(error)
+      logerrorFancy(error)
     }
 
     log(`\n${ green }Process finished${ reset }`)

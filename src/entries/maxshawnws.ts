@@ -10,7 +10,7 @@ export const maxshawnwx: AuthorDefinition = {
       label: "Skyviewer",
       images: [
         {
-          src: GitHub.selfHostedStaticAssetUrl("417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"),
+          src: { type: "self-hosted", filepath: "./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png" },
           reference: "https://github.com/alfonsusac/kawaii-logos-data/issues/10#issuecomment-2686987751",
         }
       ]

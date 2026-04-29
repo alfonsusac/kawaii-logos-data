@@ -162,7 +162,7 @@ export async function resolveTransformedSourceToEntries(
         label: entryLabel,
         images: [ {
           label: file.filenameWithoutExtension,
-          src: file.rawUrl as Site,
+          src: { type: "resolved", url: file.rawUrl as Site },
           reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
           style: def?.applyCssStyle,
         } ],
@@ -174,7 +174,7 @@ export async function resolveTransformedSourceToEntries(
       }
       scrapedEntries[ entryKey ].images.push({
         label: file.filenameWithoutExtension,
-        src: file.rawUrl as Site,
+        src: { type: "resolved", url: file.rawUrl as Site },
         reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
         style: def?.applyCssStyle,
       })

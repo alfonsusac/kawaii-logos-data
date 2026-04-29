@@ -10,10 +10,7 @@ export const fumanama: AuthorDefinition = {
     fumadocs: {
       label: "Fumadocs",
       images: [
-        {
-          src: "https://raw.githubusercontent.com/fuma-nama/fumadocs/dev/documents/logo.png",
-          reference: "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png"
-        }
+        { src: { type: "github-blob", url: "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png" } }
       ]
     }
   }

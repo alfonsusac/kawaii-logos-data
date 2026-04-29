@@ -1,8 +1,10 @@
 import type { Site } from "../lib/site"
 import { type DateDef } from "./date"
-import type { Author, Entry } from "../output"
+import type { Author, Entry, Reference } from "../output"
 import { normalizeReferencesDef, type ReferencesDef } from "./references"
-import { logerror } from "../pipeline"
+import { logerror, warn } from "../pipeline"
+import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "../utils"
+import type { LicenseDef } from "./license"
 
 // ## Definitions
 
@@ -10,13 +12,14 @@ export type EntriesDefinition = Record<string, EntryDefinition>
 
 export type EntryDefinition = {
   label: string,
-  images?: ImageDef | ImageDef[],
+  images?: ArrayOrSingle<ImageDef>,
+  license?: LicenseDef,
   createdAt?: DateDef,
 }
 
 export type ImageDef = {
   label?: string,
-  src: Site,
+  src: ImageSourceDef,
   /**
    * The references field is used to provide additional context about the image, 
    * such as where it was sourced from or when it was accessed. 
@@ -32,6 +35,15 @@ export type ImageDef = {
     objectFit?: "cover" | "contain"
   },
 }
+
+export type ImageStyleDef = { objectFit?: "cover" | "contain" }
+
+export type ImageSourceDef =
+  | { type: "github-blob", url: `https://github.com/${ string }/${ string }/blob/${ string }` }
+  | { type: "gist-raw", url: `https://gist.githubusercontent.com/${ string }/${ string }/raw/${ string }/${ string }` }
+  | { type: "self-hosted", filepath: `./assets/${ string }` }
+  | { type: "resolved", url: Site, }
+  | { type: "unknown", url: Site, }
 
 // ----------------------------------------------------------------------------------------
 
@@ -57,59 +69,80 @@ export function resolveEntries(
   defs: EntriesDefinition | undefined,
 ): Author[ 'entries' ] {
   if (!defs) return []
-  const entries: Author[ 'entries' ] = Object
-    .entries(defs)
-    .map(([ id, def ]) => {
 
-      const flattenedimages = def.images
-        ? (Array.isArray(def.images)
-          ? def.images
-          : [ def.images ])
-        : []
+  const entries: Author[ 'entries' ] = []
 
-      const images: Entry[ 'images' ] = [
-        ...flattenedimages.map(variant => ({
-          src: variant.src,
-          reference: variant.reference ? normalizeReferencesDef(variant.reference) : undefined,
-          style: variant.style,
-          label: variant.label,
-        } satisfies Entry[ 'images' ][ number ]))
-      ]
+  for (const [ id, def ] of Object.entries(defs)) {
+    
+    const imageDefs = resolveArrayOrSingleToArray(def.images)
 
-      return {
-        id,
-        title: def.label,
-        // createdAt: def.createdAt && resolveDate(def.createdAt),
-        images,
-      } satisfies Entry
+    const images: Entry[ 'images' ] = []
+
+    for (const imgDef of imageDefs) {
+      const references: Reference[] = []
+      const temp = {
+        src: null as null | string,
+        label: imgDef.label,
+      }
+
+      if (imgDef.src.type === "github-blob") {
+        const raw = imgDef.src.type.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/") as Site
+        references.push({ site: imgDef.src.url })
+        temp.src = raw
+        temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
+      }
+
+      if (imgDef.src.type === "gist-raw") {
+        // Before  -> https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png
+        // After   -> https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3#file-typst-logo-png
+        const raw = imgDef.src.url.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
+        console.log(raw)
+        references.push({ site: imgDef.src.url })
+        temp.src = raw
+        temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
+      }
+
+      if (imgDef.src.type === "self-hosted") {
+        const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ imgDef.src.filepath }`
+        references.push({ site: url })
+        temp.src = url
+        temp.label ??= imgDef.src.filepath // Default label to filename if not provided`
+      }
+
+      if (imgDef.src.type === "resolved") {
+        temp.src = imgDef.src.url
+      }
+
+      if (imgDef.src.type === "unknown") {
+        warn(`Unknown image source type for entry id: ${ id }. Please check the image source definition's type.`)
+        temp.src = imgDef.src.url
+      }
+
+      if (temp.src === null) {
+        logerror(`Failed to resolve image source for entry id: ${ id } with label: ${ imgDef.label }. Please check the image source definition's type.`)
+        continue
+      }
+
+      // Add references from the image definition, if any
+      references.push(...(imgDef.reference ? normalizeReferencesDef(imgDef.reference) : []))
+
+      images.push({
+        label: temp.label,
+        src: temp.src,
+        reference: imgDef.reference ? normalizeReferencesDef(imgDef.reference) : undefined,
+        style: imgDef.style,
+      })
+    }
+
+    entries.push({
+      id,
+      title: def.label,
+      // licenses
+      // createdAt: def.createdAt && resolveDate(def.createdAt),
+      images,
     })
 
+  }
+
   return entries
-}
-
-// ----------------------------------------------------------------------------------------
-
-// #### Definition Helper
-
-export function AlfonsImageDef(label: string, filename: string): EntryDefinition {
-  return {
-    label,
-    images: {
-      src: `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ filename }`,
-      reference: `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ filename }`,
-    }
-  }
-}
-
-export function GithubPage(blobUrl: `https://github.com/${ string }/blob/${ string }`, opts?: Omit<ImageDef & object, "src">): ImageDef {
-  const raw = blobUrl.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/") as Site
-  const references = normalizeReferencesDef(opts?.reference ?? blobUrl)
-  return {
-    src: raw,
-    reference: [
-      { site: blobUrl },
-      ...references,
-    ],
-    ...opts
-  }
 }

@@ -12,7 +12,7 @@ export const styxpilled: AuthorDefinition = {
     svelte: {
       label: "svelte",
       images: {
-        src: GitHub.selfHostedStaticAssetUrl("GLlkf9EWwAAq3N9.jpeg"),
+        src: { type: "self-hosted", filepath: "./assets/GLlkf9EWwAAq3N9.jpeg" },
         reference: twitterPost("styxpilled", "1781565832251719868"),
         style: { objectFit: "cover" }
       }
@@ -20,7 +20,7 @@ export const styxpilled: AuthorDefinition = {
     sveltekit: {
       label: "sveltekit",
       images: {
-        src: GitHub.selfHostedStaticAssetUrl("GLmrDPdXgAAlKvW.jpeg"),
+        src: { type: "self-hosted", filepath: "./assets/GLmrDPdXgAAlKvW.jpeg" },
         reference: twitterPost("styxpilled", "1781643208130216015"),
         style: { objectFit: "cover" }
       }
