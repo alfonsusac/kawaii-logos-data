@@ -6,10 +6,12 @@ import { durationToMs, milisecondToHumanReadableComplete, type Duration } from "
 type RateLimitResult = { limit: number, used: number, resetInSeconds: number }
 
 
-export async function appFetch2(
+
+export async function appFetch2<M extends "json" | "text" = "json">(
   url: string,
   opts?: RequestInit,
   resultOpts?: {
+    payloadMode?: M,
     cache?: {
       key: string,
       duration: Duration | ((res: Response) => Duration)
@@ -19,7 +21,7 @@ export async function appFetch2(
 ) {
   // Types
   type CachedResult = {
-    json: any,
+    payload: M extends "json" ? any : string | undefined,
     status: number,
     statusText: string,
     ratelimit?: RateLimitResult
@@ -85,7 +87,7 @@ export async function appFetch2(
       printDetail(cached.content.ratelimit)
       return {
         response: undefined,
-        json: cached.content.json,
+        payload: cached.content.payload,
         status: cached.content.status,
         statusText: cached.content.statusText,
         cache: { status: "hit", expiresAt: cached.expiresAt },
@@ -102,7 +104,10 @@ export async function appFetch2(
 
   const response = await fetch(url, opts)
   const ratelimit = resultOpts?.ratelimit ? resultOpts.ratelimit(response) : undefined
-  const json = await jsonOrUndefined(response)
+  const payloadMode = resultOpts?.payloadMode || "json"
+  const payload = payloadMode === "text"
+    ? await textOrUndefined(response)
+    : await jsonOrUndefined(response)
 
   if (cache) {
     const cacheDurationFn
@@ -112,7 +117,7 @@ export async function appFetch2(
     const cacheDuration = cacheDurationFn(response)
     if (durationToMs(cacheDuration) !== 0) {
       const cachedResult: CachedResult = {
-        json,
+        payload: payload,
         status: response.status,
         statusText: response.statusText,
         ratelimit,
@@ -124,7 +129,7 @@ export async function appFetch2(
   printDetail(ratelimit)
   return {
     response,
-    json,
+    payload: payload,
     status: response.status,
     statusText: response.statusText,
     cache: cacheStatus,
@@ -152,6 +157,14 @@ export async function appFetch2(
 async function jsonOrUndefined(res: Response) {
   try {
     return await res.json()
+  } catch (error) {
+    return undefined
+  }
+}
+
+async function textOrUndefined(res: Response) {
+  try {
+    return await res.text()
   } catch (error) {
     return undefined
   }

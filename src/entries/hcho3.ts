@@ -9,7 +9,7 @@ export const hcho3: AuthorDefinition = {
   },
   license: {
     type: "CC BY-NC-SA 4.0",
-    has_trademark: false,
+    // has_trademark: false,
   },
   entries: {
     xgboost: {

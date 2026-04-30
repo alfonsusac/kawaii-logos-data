@@ -8,7 +8,7 @@ export const arnav: AuthorDefinition = {
   },
   license: {
     type: "MIT",
-    has_trademark: false,
+    // has_trademark: false,
     reference: "https://github.com/arnav-kr/json-formatter/blob/main/LICENSE"
   },
   entries: {

@@ -1,5 +1,5 @@
 
-import { resolveEntries, resolveEntriesMulti, type EntriesDefinition } from "./resolve/entries"
+import { resolveEntries, resolveEntriesMulti, type EntriesDefinition } from "./resolve-entries"
 import { resolveSocials, type SocialsDef } from "./resolve/socials"
 import { resolvePfp } from "./resolve/pfp"
 import type { Site } from "./lib/site"
@@ -26,9 +26,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
 
   const { scrapedEntries, scrapedSocials } = await stepSimple(
     "Converting source to definitions",
-    () => resolveSourceDefinition(author.source, {
-      printGroups: true,
-    })
+    () => resolveSourceDefinition(author.source)
   )
 
   const entries = await stepSimple(

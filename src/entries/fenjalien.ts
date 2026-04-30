@@ -17,10 +17,10 @@ export const fenjalien: AuthorDefinition = {
     }
   },
   license: {
-    type: "Custom",
-    label: "Personal Use (Custom)",
+    type: "custom",
+    // label: "Personal Use (Custom)",
     href: "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3",
-    has_trademark: false,
+    // has_trademark: false,
     reference: "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
   }
 }

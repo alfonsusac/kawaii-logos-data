@@ -41,7 +41,7 @@ export type Author = {
       }
     }[],
     references: Reference[],
-    license?: License
+    license: License
   }[],
 }
 
@@ -58,30 +58,35 @@ export type Reference = {
 
 export type License = {
   reference?: Reference, // where the information was gathered
-  has_trademark: boolean,
-  meta: {
-    label: string,
-    href: string, // link to the definitive license text
-    // Public restrictions are not absolute—they are default rules, not universal limits
-    // These are for non-custom licenses, this is just informational and may be inaccurate
-    permissions: {
-      use: Permission,
-      modify: Permission, // 
-      distribute: Permission, // Distribution implies someone else can access your copy.
-      commercial: Permission,
-      misc: {
-        liability: Permission,
-        trademark: Permission,
-      }
-      conditions: {
-        sale_requires_modification: Condition,
-        disclose_source: Condition,
-        state_changes: Condition,
-        include_license: Condition,
-        include_copyright: Condition,
-        give_credit: Condition,
-      }
-    } | "custom",
+  // has_trademark: boolean, // No way yet to determine this, and it's not a standard license property, so we'll leave it out for now
+} & (
+    | { type: "unknown", meta?: undefined }
+    | { type: "custom", meta: { href: string } }
+    | { type: "standard", meta: StandardLicenseMeta }
+  )
+
+export type StandardLicenseMeta = {
+  label: string,
+  href: string, // link to the definitive license text
+  // Public restrictions are not absolute—they are default rules, not universal limits
+  // These are for non-custom licenses, this is just informational and may be inaccurate
+  permissions: {
+    use: Permission,
+    modify: Permission, // 
+    distribute: Permission, // Distribution implies someone else can access your copy.
+    commercial: Permission,
+    misc: {
+      liability: Permission,
+      trademark: Permission,
+    }
+    conditions: {
+      sale_requires_modification: Condition,
+      disclose_source: Condition,
+      state_changes: Condition,
+      include_license: Condition,
+      include_copyright: Condition,
+      give_credit: Condition,
+    }
   }
 }
 

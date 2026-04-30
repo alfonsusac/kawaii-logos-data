@@ -10,7 +10,7 @@ export const thatonecalculator: AuthorDefinition = {
   },
   license: {
     type: "CC BY-SA 4.0",
-    has_trademark: true,
+    // has_trademark: true,
   },
   entries: {
     surrealdb: {

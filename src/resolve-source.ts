@@ -3,12 +3,14 @@
 // Definitions
 
 import { log, logerror, step, stepSimple } from "./pipeline"
-import type { EntriesDefinition, ImageDef } from "./resolve/entries"
+import type { EntriesDefinition, EntryDefinition, ImageDefinition } from "./resolve-entries"
 import type { SocialListDef } from "./resolve/socials"
 import { resolveGithubSource } from "./resolve-source-github"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { slugify } from "./lib/slug"
 import type { Site } from "./lib/site"
+import type { LicenseDef } from "./resolve/license"
+import type { License } from "./output"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"
@@ -18,7 +20,7 @@ export type SourceDef = {
     | { type: "replace", from: string, to: string }
     | { type: "filter", exclude: string }
   >,
-  applyCssStyle?: ImageDef[ 'style' ]
+  applyCssStyle?: ImageDefinition[ 'style' ]
 } & (
     | { from: "github", repo: `${ string }/${ string }` }
   )
@@ -41,21 +43,19 @@ export type SourceResult = {
     transformedPath: string,         // Used to group images into entries in a form of "<group>/<filename>". 
     rawUrl: string,                  // Direct link to the raw file, used as <img> src.
     pageUrl?: string,                // Link to the page where the file is located, used as reference for the image source.
-    license?: { // WIP
-      contentUrl: string,            // Link to the license content, used for reference and to determine the license type.
-      referenceUrl: string,          // Link to where the license was found.
-    } | "unknown",
+    licenseDef: LicenseDef
+    // license: { // WIP
+    //   content: string,           // Content of the license file, used to determine the license type and how to display it.
+    //   rawUrl: string,            // Direct link to the raw license file, used to fetch the license content.
+    //   pageUrl: string,           // Link to the page where the license file is located, used as reference for the license source.
+    // } | "unknown",
   }[],
-
-  // Owners identified from the source definition.
-  owner?: {
-    provider: ValidSourceType,
-    username: string,
-    url: string,
-  },
 
   // Socials identified from the source definition.
   socials?: SocialListDef,
+
+  // License identified from the source definition.
+  rootLicense?: LicenseDef,
 }
 
 type ResolveSourceResult = {
@@ -69,29 +69,33 @@ export type ScrapedResultFiles = SourceResult[ "files" ]
 
 export async function resolveSourceDefinition(
   def: SourceDef | undefined,
-  opts: {
-    printPreTransformedList?: boolean,
-    printTransformedList?: boolean,
-    printGroups?: boolean,
-    printSummary?: boolean,
-  }
 ): Promise<ResolveSourceResult> {
+
+  const opts = {
+    // printPreTransformedList: true,
+    // printTransformedList: true,
+    // printGroups: true,
+    // printSummary: true,
+  }
 
   const scrapedSocials: SocialListDef = []
 
   if (!def) return { scrapedEntries: {}, scrapedSocials }
 
   // Get list of files (and other metadatas attached to them)
-  const scrapedResult = await (async () => {
+  const sourceResult = await (async () => {
     if (def.from === "github")
-      return stepSimple("Resolving Github Source", () => resolveGithubSource(def))
-    throw new Error(`Unknown source type: ${ (def as any).from }`)
+      return stepSimple(
+        "Resolving Github Source",
+        () => resolveGithubSource(def)
+      )
+    throw new Error(`Unknown source type: ${ def.from }`)
   })()
 
   // Apply transformations to list of files 
   const transformedList = await stepSimple(
     "Applying transformations to scraped files",
-    () => resolveSourceTransformation(scrapedResult.files, def.transform, opts)
+    () => resolveSourceTransformation(sourceResult.files, def.transform, opts)
   )
 
   // Group files into entries-like structure based on the transformedPath.
@@ -101,7 +105,7 @@ export async function resolveSourceDefinition(
   )
 
   // Merge scraped socials with socials from the author definition.
-  scrapedSocials.push(...(scrapedResult.socials ?? []))
+  scrapedSocials.push(...(sourceResult.socials ?? []))
 
   return {
     scrapedEntries,
@@ -157,27 +161,26 @@ export async function resolveTransformedSourceToEntries(
 
   // Convert transformed list into entries-like structure based on the transformedPath.
   function addToScrapeEntries(entryKey: string, entryLabel: string, file: ScrapedResultFiles[ number ]) {
+    const imageData: ImageDefinition = {
+      label: file.filenameWithoutExtension,
+      src: { type: "resolved", url: file.rawUrl as Site },
+      reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
+      style: def?.applyCssStyle,
+    }
+    const licenseData: EntryDefinition[ 'license' ] = file.licenseDef
+
     if (!scrapedEntries[ entryKey ]) {
       scrapedEntries[ entryKey ] = {
         label: entryLabel,
-        images: [ {
-          label: file.filenameWithoutExtension,
-          src: { type: "resolved", url: file.rawUrl as Site },
-          reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
-          style: def?.applyCssStyle,
-        } ],
+        images: [ imageData ],
+        license: licenseData,
       }
     } else {
       if (!Array.isArray(scrapedEntries[ entryKey ].images)) {
         logerror(`Entry key collision: ${ entryKey } already exists as a non-image entry. Skipping file: ${ file.transformedPath }`)
         return
       }
-      scrapedEntries[ entryKey ].images.push({
-        label: file.filenameWithoutExtension,
-        src: { type: "resolved", url: file.rawUrl as Site },
-        reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
-        style: def?.applyCssStyle,
-      })
+      scrapedEntries[ entryKey ].images.push(imageData)
     }
   }
 

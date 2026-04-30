@@ -11,7 +11,6 @@ export type HistoryEntryDef = {
   reference: ReferenceDef,
 }
 
-
 export type History = {
   id: string,
   date: string,

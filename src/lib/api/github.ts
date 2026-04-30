@@ -1,13 +1,14 @@
 import { logger } from "../../pipeline"
 import { appFetch2 } from "../fetch-cache"
+import { logerror } from "../log"
 
 export let githubFetchesCount = 0
 
 type GithubFetchReturnType<T> =
-  | { status: "ok", json: T }
-  | { status: "not found", json: any }
-  | { status: "rate limit exceeded", json: { message: string, documentation_url: string } }
-  | { status: "error", json: any }
+  | { status: "ok", payload: T }
+  | { status: "not found", payload: any }
+  | { status: "rate limit exceeded", payload: { message: string, documentation_url: string } }
+  | { status: "error", payload: any }
 
 async function githubFetch<T>(key: string, url: string): Promise<GithubFetchReturnType<T>> {
 
@@ -35,15 +36,15 @@ async function githubFetch<T>(key: string, url: string): Promise<GithubFetchRetu
   })
 
   if (res.status === 200) {
-    return { status: "ok", json: res.json }
+    return { status: "ok", payload: res.payload }
   }
   if (res.status === 404) {
-    return { status: "not found", json: res.json }
+    return { status: "not found", payload: res.payload }
   }
   if (res.statusText === "rate limit exceeded") {
-    return { status: "rate limit exceeded", json: res.json }
+    return { status: "rate limit exceeded", payload: res.payload }
   }
-  return { status: "error", json: res.json }
+  return { status: "error", payload: res.payload }
 }
 
 // ------------------------------------------------------------------------------------
@@ -51,7 +52,7 @@ async function githubFetch<T>(key: string, url: string): Promise<GithubFetchRetu
 export function returnUndefinedIfError<T>(res: GithubFetchReturnType<T>, opts?: {
   onError?: (res: GithubFetchReturnType<T>) => void
 }) {
-  if (res.status === "ok") return res.json as T
+  if (res.status === "ok") return res.payload as T
   opts?.onError?.(res)
   return undefined
 }
@@ -117,4 +118,28 @@ export async function fetchGithubProfileSocialAccounts(profile: string) {
     "github-profile-social-accounts-" + profile,
     `https://api.github.com/users/${ profile }/social_accounts`
   )
+}
+
+
+
+// ------------------------------------------------------------------------------------
+
+export async function fetchGithubRawFile(url: `https://raw.githubusercontent.com/${ string }/main/${ string }`)
+  : Promise<GithubFetchReturnType<string>> {
+  const res = await appFetch2(url, undefined, {
+    payloadMode: "text",
+    cache: {
+      key: "github-raw-file-" + url,
+      duration: "1d",
+    },
+  })
+  if (!res.payload)
+    return { status: "error", payload: null as string | null }
+  if (res.status === 404)
+    return { status: "not found", payload: null as string | null }
+  if (res.status === 200)
+    return { status: "ok", payload: res.payload as string }
+
+  logerror("fetchGithubRawFile: Unexpected response, neither has no payload, 404, or 200.")
+  return { status: "error", payload: null as string | null }
 }

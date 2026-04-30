@@ -7,7 +7,7 @@ export async function getBskyProfile(id: string) {
   bskyFetchesCount++
   const url = `https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=${ id }`
   const res = await appFetch2(url)
-  const json = res.json
+  const json = res.payload
   // if (!res.ok) throw new Error(`Failed to fetch profile for ${ id }: ${ res.status } ${ json.error }: ${ json.message } `)
   return json as {
     error: undefined,

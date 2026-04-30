@@ -62,7 +62,7 @@ function logResults(
     log()
   }
 
-
+  // Then log the all logs per resolved authors
   for (const { result, buffers } of results) {
     const id = result.id
     const resolved = result

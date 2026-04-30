@@ -10,7 +10,7 @@ export const alfonsusac: AuthorDefinition = {
   },
   license: {
     type: "CC BY-NC-SA 4.0",
-    has_trademark: true
+    // has_trademark: true
   },
   entries: {
     skillissue: {

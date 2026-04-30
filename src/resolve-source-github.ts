@@ -1,6 +1,7 @@
-import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRepoFiles, returnUndefinedIfError } from "./lib/api/github"
+import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRawFile, fetchGithubRepoFiles, returnUndefinedIfError } from "./lib/api/github"
 import { log, logerror, stepSimple } from "./pipeline"
 import type { ScrapedResultFiles, SourceDef, SourceResult } from "./resolve-source"
+import { resolveToLicenseTypeByContent, type LicenseDef } from "./resolve/license"
 import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./resolve/socials"
 
 type GithubSourceDef = SourceDef & { from: "github" }
@@ -11,73 +12,110 @@ export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceR
 
   log(`Link to Github Repo: ${ getGithubProfileURL(owner) }/${ repoName }`)
 
+  const { files, ghLicenseFile } = await stepSimple(
+    "Resolving Github Repository",
+    () => resolveGithubRepository(def)
+  )
+
+
   return {
-    files: await stepSimple("Resolving Github Repository", () => resolveGithubRepository(def)),
-    socials: await stepSimple("Resolving Github Profile", () => resolveGithubProfileSocialList(owner)),
+    files,
+    socials: await stepSimple(
+      "Resolving Github Profile",
+      () => resolveGithubProfileSocialList(owner)
+    ),
   }
 }
 
 // ------------------------------------------------------------------------------------
 
-async function resolveGithubRepository(def: GithubSourceDef): Promise<ScrapedResultFiles> {
+async function resolveGithubRepository(def: GithubSourceDef) {
 
   const repoFiles = returnUndefinedIfError(await fetchGithubRepoFiles(def.repo), {
     onError: (res) => logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
   })
 
-  if (repoFiles === undefined) return []
+  if (repoFiles === undefined) return {
+    files: [],
+  }
 
-  const resolvedTree = repoFiles.tree.map(item => {
-    return {
-      gh: item,
-      githubPageUrl: `https://github.com/${ def.repo }/blob/main/${ item.path }`,
-      rawPageUrl: `https://raw.githubusercontent.com/${ def.repo }/main/${ item.path }`,
-    }
-  })
+  const resolvedTree = repoFiles.tree.map(item => ({
+    _gh: item,
+    size: item.size,
+    path: item.path,
+    type: item.type,
+    githubPageUrl: `https://github.com/${ def.repo }/blob/main/${ item.path }` as const,
+    rawPageUrl: `https://raw.githubusercontent.com/${ def.repo }/main/${ item.path }` as const,
+  }))
 
   // For now, we only resolve the root license file if it exists. 
   // In the future, we could potentially resolve all license files and their contents.
-  const rootLicense = resolvedTree.find(item => item.gh.path.toLowerCase().includes("license"))
-  log("license: ", rootLicense?.rawPageUrl)
+  // const rootLicense = resolvedTree.find(item => item.path.toLowerCase().includes("license"))
+  const licenses = resolvedTree.filter(item => item.path.toLowerCase().includes("license"))
+  log("Licenses: ")
+  licenses.forEach(l => log(`- ${ l.path } (raw url: ${ l.rawPageUrl })`))
+  const rootLicense = licenses.find(l => l.path.toLowerCase() === "license" || l.path.toLowerCase() === "license.md" || l.path.toLowerCase() === "license.txt")
 
-  // Filter only image files. 
-  // In the future, we could potentially support other file types as well.
-  const imageFiles = resolvedTree
-    .filter(item => item.gh.type === "blob" && item.gh.path.toLowerCase().match(/\.(png|jpe?g|svg|gif|webp)$/))
-    .map(item => {
-      return {
-        ...item,
-        // For now we only support root license, so we attach the license info to each image file. In the future, we could potentially resolve license for each file based on its path and the closest license file in its directory tree.
-        // TODO: recursively check current and parent directories for license file, and resolve the most relevant one (i.e the closest one to the image file)
-        license: rootLicense
-      }
-    })
+  const licenseDef = await (async (): Promise<LicenseDef> => {
+    if (!rootLicense) return { type: "unknown" }
 
-  const scrapedResultFiles: ScrapedResultFiles = imageFiles.map(image => {
-    const filename = image.gh.path.split("/").at(-1) ?? (() => {
-      logerror(`Failed to resolve filename from path: ${ image.gh.path }`)
-      return image.gh.path
-    })()
-    const extension = filename?.split(".").at(-1) ?? (() => {
-      throw new Error(`Failed to resolve file extension from filename: ${ filename }`)
-    })()
-    const filenameWithoutExtension = filename.split(".").slice(0, -1).join(".")
+    const res = returnUndefinedIfError(await fetchGithubRawFile(rootLicense.rawPageUrl))
+    if (!res) {
+      logerror(`File exists on API but failed to get raw content for license file: ${ rootLicense.rawPageUrl }`)
+      return { type: "unknown", reference: { site: rootLicense.githubPageUrl } }
+    }
+
+    const licenseType = resolveToLicenseTypeByContent(res)
+    if (licenseType === "unknown") {
+      logerror(`Failed to resolve license from content. `)
+      logerror(`Please check the license content for any recognizable identifiers or consider adding support for this license.`)
+      logerror(`in src/resolve/license.ts`)
+      logerror(`link to raw content: ${ rootLicense.rawPageUrl }`)
+      logerror(`link to github page: ${ rootLicense.githubPageUrl }`)
+      return { type: "unknown", reference: { site: rootLicense.githubPageUrl } }
+    }
+
+    if (licenseType === "custom") {
+      return { type: "custom", reference: { site: rootLicense.githubPageUrl }, href: rootLicense.githubPageUrl }
+    }
 
     return {
-      rawUrl: image.rawPageUrl,
-      pageUrl: image.githubPageUrl,
-      transformedPath: image.gh.path,
-      license: image.license ? {
-        contentUrl: image.license.rawPageUrl,
-        referenceUrl: image.license.githubPageUrl,
-      } : "unknown",
+      type: licenseType,
+      reference: { site: rootLicense.githubPageUrl },
+    }
+
+  })()
+
+
+
+
+  const scrapedResultFiles: ScrapedResultFiles = []
+
+  for (const item of resolvedTree) {
+    if (item.type === "tree") continue
+    if (!item.path.toLowerCase().match(/\.(png|jpe?g|svg|gif|webp)$/)) continue
+
+    // log(`Found file in repo: ${ item.path } (type: ${ item.type })`)
+
+    const filename = item.path.split("/").at(-1)!
+    const extension = filename.split(".").at(-1)!
+    const filenameWithoutExtension = filename.split(".").slice(0, -1).join(".")
+
+    scrapedResultFiles.push({
+      rawUrl: item.rawPageUrl,
+      pageUrl: item.githubPageUrl,
+      transformedPath: item._gh.path,
+      licenseDef,
       filename,
       filenameWithoutExtension,
       extension,
-    } satisfies ScrapedResultFiles[ number ]
-  })
+    })
+  }
 
-  return scrapedResultFiles
+  return {
+    files: scrapedResultFiles,
+    ghLicenseFile: rootLicense
+  }
 }
 
 // ------------------------------------------------------------------------------------
@@ -110,3 +148,5 @@ async function resolveGithubProfileSocialList(owner: string) {
 
   return socialList
 }
+
+// ------------------------------------------------------------------------------------

@@ -1,10 +1,10 @@
-import type { Site } from "../lib/site"
-import { type DateDef } from "./date"
-import type { Author, AuthorEntryItem, Reference } from "../output"
-import { normalizeReferencesDef, type ReferencesDef } from "./references"
-import { logerror, warn } from "../pipeline"
-import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "../utils"
-import type { LicenseDef } from "./license"
+import type { Site } from "./lib/site"
+import { type DateDef } from "./resolve/date"
+import type { Author, AuthorEntryItem, License, Reference } from "./output"
+import { normalizeReferencesDef, resolveReference, type ReferencesDef } from "./resolve/references"
+import { logerror, warn } from "./pipeline"
+import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
+import { resolveLicenseDefinitions, type LicenseDef } from "./resolve/license"
 
 // ## Definitions
 
@@ -12,12 +12,12 @@ export type EntriesDefinition = Record<string, EntryDefinition>
 
 export type EntryDefinition = {
   label: string,
-  images?: ArrayOrSingle<ImageDef>,
+  images?: ArrayOrSingle<ImageDefinition>,
   license?: LicenseDef,
   createdAt?: DateDef,
 }
 
-export type ImageDef = {
+export type ImageDefinition = {
   label?: string,
   src: ImageSourceDef,
   /**
@@ -47,37 +47,41 @@ export type ImageSourceDef =
 
 // ----------------------------------------------------------------------------------------
 
-export function resolveEntriesMulti(
+export async function resolveEntriesMulti(
   ...args: (EntriesDefinition | undefined)[]
 ) {
   const allEntries: Author[ 'entries' ] = []
+
   for (const defs of args) {
     if (!defs) continue
-    resolveEntries(defs).forEach(entry => {
-      // Check for duplicate entry IDs
-      if (allEntries.some(e => e.id === entry.id)) {
-        logerror(`Duplicate entry ID found: ${ entry.id } from defs count ${ Object.keys(defs).length }. Please change the entry ID to be unique across all entries.`)
-      } else {
-        allEntries.push(entry)
-      }
-    })
+    (await resolveEntries(defs))
+      .forEach(entry => {
+        // Check for duplicate entry IDs
+        if (allEntries.some(e => e.id === entry.id)) {
+          logerror(`Duplicate entry ID found: ${ entry.id } from defs count ${ Object.keys(defs).length }. Please change the entry ID to be unique across all entries.`)
+        } else {
+          allEntries.push(entry)
+        }
+      })
   }
   return allEntries
 }
 
-export function resolveEntries(
+
+export async function resolveEntries(
   defs: EntriesDefinition | undefined,
-): Author[ 'entries' ] {
+): Promise<Author[ 'entries' ]> {
   if (!defs) return []
 
   const entries: Author[ 'entries' ] = []
 
-  for (const [ id, def ] of Object.entries(defs)) {
-    
-    const imageDefs = resolveArrayOrSingleToArray(def.images)
+  for (const [ id, entryDef ] of Object.entries(defs)) {
+
+    const imageDefs = resolveArrayOrSingleToArray(entryDef.images)
 
     const images: AuthorEntryItem[ 'images' ] = []
 
+    // Resolve ImageDefs
     for (const imgDef of imageDefs) {
       const references: Reference[] = []
       const temp = {
@@ -134,16 +138,20 @@ export function resolveEntries(
       })
     }
 
+    // Resolve LicenseDef
+    const license = resolveLicenseDefinitions(entryDef.license)
+
     entries.push({
       id,
-      title: def.label,
+      title: entryDef.label,
       references: [],
-      // licenses
+      license,
       // createdAt: def.createdAt && resolveDate(def.createdAt),
       images,
     })
-
   }
 
   return entries
 }
+
+// ----------------------------------------------------------------------------------------

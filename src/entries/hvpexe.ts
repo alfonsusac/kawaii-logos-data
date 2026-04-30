@@ -8,7 +8,7 @@ export const hvpexe: AuthorDefinition = {
   },
   license: {
     type: "CC BY-NC-SA 4.0",
-    has_trademark: true,
+    // has_trademark: true,
     reference: "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/LICENSE.md",
   },
   entries: {
