@@ -1,14 +1,15 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { Author, Authors, AuthorEntryItem } from "./output"
+import type { AuthorOutput, Output } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
+import { standardLicenses } from "./resolve/license"
 
 
 export async function resolveDefinitions(
   defs: Record<string, AuthorDefinition>
-): Promise<Authors> {
+): Promise<Output[ 'data' ]> {
 
-  const results = await Promise.all(Object
+  const authorResults = await Promise.all(Object
     .entries(defs)
     .map(
       ([ id, def ]) => {
@@ -16,10 +17,16 @@ export async function resolveDefinitions(
       }
     )
   )
-  logResults(results)
+  logResults(authorResults)
+  const authorArray = authorResults.map(result => result.result)
 
-  const authorArray = results.map(result => result.result)
-  return authorArray
+
+  const output: Output[ 'data' ] = {
+    authors: authorArray,
+    standardLicenses: standardLicenses,
+  }
+
+  return output
 }
 
 // ------------------------------------------------------------------------
@@ -27,7 +34,7 @@ export async function resolveDefinitions(
 function logResults(
   results: {
     buffers: LogBuffer
-    result: Author
+    result: AuthorOutput
   }[],
 ) {
   const authorArray = results.map(r => r.result)
@@ -76,7 +83,7 @@ function logResults(
     const images = resolved.entries.reduce((acc, curr) => {
       acc.push(...curr.images)
       return acc
-    }, [] as AuthorEntryItem[ 'images' ])
+    }, [] as AuthorOutput.EntryItem[ 'images' ])
 
     log([
       `${ blue }${ id.padEnd(17) }${ reset }`,

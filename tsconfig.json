@@ -24,5 +24,6 @@
     "noUnusedParameters": false,
     "noPropertyAccessFromIndexSignature": true,
   },
-  "include": ["./**/*"]
+  "include": ["./**/*"],
+  "exclude": ["node_modules", "dist"]
 }

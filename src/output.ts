@@ -1,8 +1,27 @@
-export type Authors = Author[]
-export type Output = Authors
-export type Resolved = Authors
+export type Output = {
+  updatedAt: string,
+  data: {
+    authors: AuthorOutput[],
+    standardLicenses: StandardLicenseOut,
+  }
+}
 
-export type Author = {
+export namespace Output {
+  export type Data = Output[ 'data' ]
+}
+
+
+export namespace AuthorOutput {
+  export type Links = AuthorOutput[ 'links' ]
+  export type SocialLinks = AuthorOutput[ 'links' ][ 'socials' ]
+  export type PersonalSites = AuthorOutput[ 'links' ][ 'personalsites' ]
+  export type Socials = AuthorOutput[ 'social' ]
+  export type Entries = AuthorOutput[ 'entries' ]
+  export type EntryItem = AuthorOutput[ 'entries' ][ number ]
+  export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
+}
+
+export type AuthorOutput = {
   id: string,
   displayName: string,
   pfp?: string,
@@ -34,7 +53,8 @@ export type Author = {
     title: string,
     images: {
       src: string,                  // for <img> source
-      pageUrl?: string,             // where the image was found, for linking back to the source
+      references: Reference[],        // where the image was found, for linking back to the source
+      // pageUrl: string,             // where the image was found, for linking back to the source
       label?: string,
       style?: {
         objectFit?: "cover" | "contain"
@@ -45,11 +65,15 @@ export type Author = {
   }[],
 }
 
-export type AuthorLinks = Author[ 'links' ]
-export type AuthorSocialLinks = Author[ 'links' ][ 'socials' ]
-export type AuthorPersonalSites = Author[ 'links' ][ 'personalsites' ]
-export type AuthorEntries = Author[ 'entries' ]
-export type AuthorEntryItem = Author[ 'entries' ][ number ]
+
+
+
+
+
+
+
+
+
 
 export type Reference = {
   site: string,
@@ -58,12 +82,19 @@ export type Reference = {
 
 export type License = {
   reference?: Reference, // where the information was gathered
-  // has_trademark: boolean, // No way yet to determine this, and it's not a standard license property, so we'll leave it out for now
 } & (
-    | { type: "unknown", meta?: undefined }
-    | { type: "custom", meta: { href: string } }
-    | { type: "standard", meta: StandardLicenseMeta }
+    | { type: "unknown" }
+    | { type: "custom", href: string }
+    | { type: "standard", id: StandardLicenseType }
   )
+
+export type StandardLicenseType =
+  | "MIT"
+  | "CC BY-NC-SA 4.0"
+  | "CC BY-SA 4.0"
+  | "CC0-1.0"
+
+export type StandardLicenseOut = Record<StandardLicenseType, StandardLicenseMeta>
 
 export type StandardLicenseMeta = {
   label: string,

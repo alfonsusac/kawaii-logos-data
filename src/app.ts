@@ -9,7 +9,7 @@ import { hvpexe } from "./entries/hvpexe"
 import { saltyaom } from "./entries/saltyaom"
 import { styxpilled } from "./entries/styxpilled"
 import { thatonecalculator } from "./entries/thatonecalculator"
-import { black, cyan, magenta, reset } from "./lib/ansii"
+import { black, cyan, reset } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
 import { resolveDefinitions } from "./resolve"
 import { readdir, rm } from "fs/promises"
@@ -41,7 +41,7 @@ runApp(async () => {
     },
   )
 
-  const resolved = await step(
+  const outputData = await step(
     "Resolving definitions", async () => {
       const resolved = await resolveDefinitions({
         aikoyori,
@@ -73,7 +73,7 @@ runApp(async () => {
   await step(
     "Persisting data", async () => {
       const output = await step("Preparing output",
-        () => prepareOutput(resolved))
+        () => prepareOutput(outputData))
       await step("Saving to disk",
         () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
       await step("Saving to data branch",
@@ -94,12 +94,12 @@ runApp(async () => {
 // --------------------------------------------------------------------------------
 
 
-async function prepareOutput(data: Output) {
-  const response = {
+async function prepareOutput(outputData: Output.Data) {
+  const output: Output = {
     updatedAt: new Date().toISOString(),
-    data
+    data: outputData
   }
-  const stringified = JSON.stringify(response, null, 2)
+  const stringified = JSON.stringify(output, null, 2)
   const outputTypeFileContent = await Bun.file('./src/output.ts').text()
   const folderStructure = {
     // Switching branch from main to data branch will cause gitignored files to carry over. 
@@ -116,10 +116,13 @@ async function prepareOutput(data: Output) {
       `# The Data Branch`,
       `This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.`,
       ``,
-      `Last Updated: \`${ response.updatedAt }\``,
+      `Last Updated: \`${ output.updatedAt }\``,
       ``,
       `### Authors`,
-      `${ response.data.map(entry => `- ${ entry.displayName }`).join("\n") }`,
+      `${ output.data.authors.map(entry => `- ${ entry.displayName }`).join("\n") }`,
+      ``,
+      `### Standard Licenses`,
+      `${ Object.entries(output.data.standardLicenses).map(([ key, value ]) => `- ${ key }: ${ value.label }`).join("\n") }`,
       ``,
       `### Contributing`,
       ``,
@@ -134,7 +137,7 @@ async function prepareOutput(data: Output) {
   }
 
   return {
-    response,
+    output,
     stringified,
     folderStructure
   }
@@ -169,7 +172,7 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
       console.log("after")
       console.log((await readdir('.')).join('\n'))
       await Git.trackAll()
-      await Git.commitAllTracked(`Update data ${ data.response.updatedAt }`)
+      await Git.commitAllTracked(`Update data ${ data.output.updatedAt }`)
       await Git.pushAndSetUpstream(dataBranchName)
     }
   )

@@ -1,8 +1,8 @@
 import { validateSlug } from "./lib/slug"
-import type { Author } from "./output"
+import type { AuthorOutput } from "./output"
 import { logerror } from "./pipeline"
 
-export async function validateResolvedAuthor(author: Author) {
+export async function validateResolvedAuthor(author: AuthorOutput) {
 
   // Validate slug-related tokens
   validateSlug(author.id)

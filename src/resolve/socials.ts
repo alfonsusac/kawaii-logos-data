@@ -2,7 +2,7 @@ import { getBskyProfile } from "../lib/api/bsky"
 import { fetchGithubProfile } from "../lib/api/github"
 import { site } from "../lib/site"
 import { logerror } from "../pipeline"
-import type { Author, AuthorLinks } from "../output"
+import type { AuthorOutput } from "../output"
 
 export type SocialsDef = {
   github?: string,
@@ -59,7 +59,7 @@ export async function resolveSocials(
 
 
   // 2.
-  const links: AuthorLinks = {
+  const links: AuthorOutput.Links = {
     socials: [],
     personalsites: [],
   }
@@ -127,7 +127,7 @@ export async function resolveSocials(
   const bsky = validBskys.length > 0 ? validBskys[ 0 ] : undefined
   const personalsite = personalsites.length > 0 ? personalsites[ 0 ] : undefined
 
-  const social: Author[ 'social' ] = {
+  const social: AuthorOutput[ 'social' ] = {
     github,
     x,
     bsky,
@@ -137,49 +137,11 @@ export async function resolveSocials(
   // 5.
   links.socials = links.socials.filter((s, index, self) => index === self.findIndex(s2 => s2.type === s.type && s2.username === s.username))
 
-
-  // if (github) {
-  //   const validGithub = await verifyGithub(github.username)
-  //   if (!validGithub) {
-  //     c.logerror(`GitHub user not found: ${ github.username }`)
-  //   } else {
-  //     socials.push({ label: "github", ...github })
-  //   }
-  // }
-  // if (bsky) {
-  //   const validBsky = await verifyBsky(bsky.username)
-  //   if (!validBsky) {
-  //     c.logerror(`Bluesky user not found: ${ bsky.username }`)
-  //   } else {
-  //     socials.push({ label: "bsky", ...bsky })
-  //   }
-  // }
-  // if (x) socials.push({ label: "x", ...x })
-  // if (site) socials.push({ label: "site", url: site })
-
   return {
     social,
     links
   }
 }
-
-
-
-// export function resolveAllSocials(source: Author[ 'socials' ]) {
-//   const github = source.find(s => s.type === "github") as Author[ 'socials' ][ number ] & { label: "github" } | undefined
-//   const x = source.find(s => s.type === "x") as Author[ 'socials' ][ number ] & { label: "x" } | undefined
-//   const bsky = source.find(s => s.type === "bsky") as Author[ 'socials' ][ number ] & { label: "bsky" } | undefined
-//   const site = source.find(s => s.type === "site") as Author[ 'socials' ][ number ] & { label: "site" } | undefined
-
-//   const social: Author[ 'social' ] = {
-//     github: github ? { username: github.username, url: github.url } : undefined,
-//     x: x ? { username: x.username, url: x.url, } : undefined,
-//     bsky: bsky ? { username: bsky.username, url: bsky.url, } : undefined,
-//     site: site ? site.url : undefined,
-//   }
-
-//   return social
-// }
 
 // ------------------------------------------------
 

@@ -42,7 +42,7 @@ export type SourceResult = {
     extension: string,               // Used to determine the file type and how to display it.
     transformedPath: string,         // Used to group images into entries in a form of "<group>/<filename>". 
     rawUrl: string,                  // Direct link to the raw file, used as <img> src.
-    pageUrl?: string,                // Link to the page where the file is located, used as reference for the image source.
+    pageUrl: string,                // Link to the page where the file is located, used as reference for the image source.
     licenseDef: LicenseDef
     // license: { // WIP
     //   content: string,           // Content of the license file, used to determine the license type and how to display it.

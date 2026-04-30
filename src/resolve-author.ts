@@ -5,7 +5,7 @@ import { resolvePfp } from "./resolve/pfp"
 import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve/license"
 import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
-import type { Author } from "./output"
+import type { AuthorOutput } from "./output"
 import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
 import { step, stepSimple } from "./pipeline"
@@ -45,7 +45,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   )
 
   // Compile resolved data into final Author object
-  const resolved: Author = {
+  const resolved: AuthorOutput = {
     id: slugify(id),
     displayName,
     pfp,

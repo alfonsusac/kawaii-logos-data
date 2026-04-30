@@ -1,6 +1,6 @@
 import type { Site } from "./lib/site"
 import { type DateDef } from "./resolve/date"
-import type { Author, AuthorEntryItem, License, Reference } from "./output"
+import type { AuthorOutput, Reference } from "./output"
 import { normalizeReferencesDef, resolveReference, type ReferencesDef } from "./resolve/references"
 import { logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
@@ -50,7 +50,7 @@ export type ImageSourceDef =
 export async function resolveEntriesMulti(
   ...args: (EntriesDefinition | undefined)[]
 ) {
-  const allEntries: Author[ 'entries' ] = []
+  const allEntries: AuthorOutput[ 'entries' ] = []
 
   for (const defs of args) {
     if (!defs) continue
@@ -70,20 +70,26 @@ export async function resolveEntriesMulti(
 
 export async function resolveEntries(
   defs: EntriesDefinition | undefined,
-): Promise<Author[ 'entries' ]> {
+): Promise<AuthorOutput[ 'entries' ]> {
   if (!defs) return []
 
-  const entries: Author[ 'entries' ] = []
+  const entries: AuthorOutput[ 'entries' ] = []
 
   for (const [ id, entryDef ] of Object.entries(defs)) {
 
     const imageDefs = resolveArrayOrSingleToArray(entryDef.images)
 
-    const images: AuthorEntryItem[ 'images' ] = []
+    const images: AuthorOutput.EntryItem[ 'images' ] = []
 
     // Resolve ImageDefs
     for (const imgDef of imageDefs) {
+
+      // Initialize references array for this image
       const references: Reference[] = []
+      // Add references from the image definition, if any
+      references.push(...(imgDef.reference ? normalizeReferencesDef(imgDef.reference) : []))
+
+      // Resolve image source + label + reference (if any) based on its type
       const temp = {
         src: null as null | string,
         label: imgDef.label,
@@ -127,13 +133,10 @@ export async function resolveEntries(
         continue
       }
 
-      // Add references from the image definition, if any
-      references.push(...(imgDef.reference ? normalizeReferencesDef(imgDef.reference) : []))
-
       images.push({
         label: temp.label,
         src: temp.src,
-        // reference: imgDef.reference ? normalizeReferencesDef(imgDef.reference) : undefined,
+        references,
         style: imgDef.style,
       })
     }

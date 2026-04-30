@@ -1,28 +1,20 @@
-import type { License, StandardLicenseMeta } from "../output"
+import type { License, StandardLicenseOut, StandardLicenseType } from "../output"
 import { log, logerror } from "../pipeline"
 import { resolveReference, type ReferenceDef } from "./references"
 
-export type StandardLicense =
-  | "MIT"
-  | "CC BY-NC-SA 4.0"
-  | "CC BY-SA 4.0"
-  | "CC0-1.0"
-
 export type LicenseDef = {
   reference?: ReferenceDef,
-  // has_trademark: boolean,
 } & (
-    | { type: StandardLicense }
+    | { type: StandardLicenseType }
     | { type: "custom", href: string }
     | { type: "unknown", href?: undefined }
-    // | { type: "from-source", url: string, } // scraped licenses must be resolved at resolveSource. So when resolving entries, licenses are already resolved.
   )
 
 export type LicenseType = LicenseDef[ "type" ]
 
 
 
-const Licenses: Record<StandardLicense, StandardLicenseMeta> = {
+export const standardLicenses: StandardLicenseOut = {
   "MIT": {
     label: "MIT License",
     href: "https://opensource.org/license/mit/",
@@ -118,37 +110,26 @@ export function resolveLicenseDefinitions(license: LicenseDef | undefined): Lice
     type: "unknown",
   }
 
+  const reference = resolveReference(license.reference)
+
   if (license.type === "unknown") {
-    return {
-      type: "unknown",
-      reference: resolveReference(license.reference),
-    }
+    return { reference, type: "unknown", }
   }
 
   if (license.type === "custom") {
-    return {
-      type: "custom",
-      meta: { href: license.href, },
-      reference: resolveReference(license.reference),
-    }
+    return { reference, type: "custom", href: license.href, }
   }
 
-  if (license.type in Licenses === false) {
+  if (license.type in standardLicenses === false) {
     logerror(`Unsupported license type: ${ license.type }. Please check the license definition for any typos or consider adding support for this license in ${ import.meta.path }.`)
-    return {
-      type: "unknown",
-    }
+    return { reference, type: "unknown", }
   }
 
-  return {
-    type: "standard",
-    reference: resolveReference(license.reference),
-    meta: Licenses[ license.type ],
-  }
+  return { reference, type: "standard", id: license.type, }
 }
 
 
-const LicenseContentIDs: Record<StandardLicense, string[]> = {
+const LicenseContentIDs: Record<StandardLicenseType, string[]> = {
   "MIT": [ 'MIT License' ],
   "CC BY-NC-SA 4.0": [ 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0', 'CC BY-NC-SA 4.0' ],
   "CC BY-SA 4.0": [ 'Creative Commons Attribution-ShareAlike 4.0', 'CC BY-SA 4.0' ],
@@ -159,7 +140,7 @@ export function resolveToLicenseTypeByContent(licenseContent: string): LicenseTy
 
   for (const [ licenseType, identifiers ] of Object.entries(LicenseContentIDs)) {
     if (identifiers.some(id => licenseContent.includes(id))) {
-      return licenseType as StandardLicense
+      return licenseType as StandardLicenseType
     }
   }
 
