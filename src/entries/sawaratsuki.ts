@@ -12,7 +12,11 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "replace", from: "IamSeries/", to: "" },
       // { type: "replace", from: "IamDesigner", to: "IamDesigner/IamDesigner" },
       // { type: "replace", from: "IamProgrammer", to: "IamProgrammer/IamProgrammer" },
-    ]
+    ],
+    licenseFallback: {
+      type: "custom",
+      href: "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+    }
   }
 }
 

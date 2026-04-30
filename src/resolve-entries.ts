@@ -149,7 +149,6 @@ export async function resolveEntries(
       title: entryDef.label,
       references: [],
       license,
-      // createdAt: def.createdAt && resolveDate(def.createdAt),
       images,
     })
   }

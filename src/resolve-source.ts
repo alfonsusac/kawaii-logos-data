@@ -2,7 +2,7 @@
 
 // Definitions
 
-import { log, logerror, step, stepSimple } from "./pipeline"
+import { log, logerror, stepSimple, warn } from "./pipeline"
 import type { EntriesDefinition, EntryDefinition, ImageDefinition } from "./resolve-entries"
 import type { SocialListDef } from "./resolve/socials"
 import { resolveGithubSource } from "./resolve-source-github"
@@ -10,7 +10,6 @@ import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { slugify } from "./lib/slug"
 import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve/license"
-import type { License } from "./output"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"
@@ -20,6 +19,7 @@ export type SourceDef = {
     | { type: "replace", from: string, to: string }
     | { type: "filter", exclude: string }
   >,
+  licenseFallback?: LicenseDef,
   applyCssStyle?: ImageDefinition[ 'style' ]
 } & (
     | { from: "github", repo: `${ string }/${ string }` }
@@ -167,9 +167,21 @@ export async function resolveTransformedSourceToEntries(
       reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
       style: def?.applyCssStyle,
     }
-    const licenseData: EntryDefinition[ 'license' ] = file.licenseDef
 
     if (!scrapedEntries[ entryKey ]) {
+      // Resolving license for each entry. 
+      // Priority: file - level license > source - level license fallback > unknown.
+      // Assume that all images under the same entry have the same license, so we only check the license of the first image in the entry.
+      let licenseData: EntryDefinition[ 'license' ] = { type: "unknown" }
+      if (file.licenseDef.type === "unknown") {
+        licenseData = def?.licenseFallback ?? { type: "unknown" }
+      } else {
+        licenseData = file.licenseDef
+      }
+      if (licenseData.type === "unknown") {
+        warn("license for entry: " + entryKey + " is unknown. ")
+      }
+
       scrapedEntries[ entryKey ] = {
         label: entryLabel,
         images: [ imageData ],
