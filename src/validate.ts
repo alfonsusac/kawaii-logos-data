@@ -1,6 +1,5 @@
 import { validateSlug } from "./lib/slug"
 import type { AuthorOutput } from "./output"
-import { logerror } from "./pipeline"
 
 export async function validateResolvedAuthor(author: AuthorOutput) {
 

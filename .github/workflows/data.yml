@@ -7,9 +7,9 @@ on:
     - cron: "0 */4 * * *"
   push:
     paths:
-      - ".github/workflows/data.yml" # run evertime gh action config file is changed
-      - "src/**" # run everytime config files is changed (change on author/images/series or any logic in scraping)
-      - "assets/**" # run everytime assets is changed (change on manually added assets)
+      - ".github/workflows/data.yml"  # on data.yml (this file) change
+      - "src/**"                      # on src change (change on author/images/series or any logic in scraping)
+      - "assets/**"                   # on assets change (change on manually added assets)
 
 permissions:
   contents: write
@@ -32,4 +32,4 @@ jobs:
           git config --global user.name "Update Data"
           git config --global user.email "alfonsusac@gmail.com"
       - run: bun install
-      - run: bun dev
+      - run: bun start

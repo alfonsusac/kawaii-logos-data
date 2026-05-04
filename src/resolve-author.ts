@@ -1,5 +1,5 @@
 
-import { resolveEntries, resolveEntriesMulti, type EntriesDefinition } from "./resolve-entries"
+import { resolveEntriesMulti, type EntriesDefinition } from "./resolve-entries"
 import { resolveSocials, type SocialsDef } from "./resolve/socials"
 import { resolvePfp } from "./resolve/pfp"
 import type { Site } from "./lib/site"
@@ -8,7 +8,7 @@ import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
 import type { AuthorOutput } from "./output"
 import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
-import { step, stepSimple } from "./pipeline"
+import { stepSimple } from "./pipeline"
 
 export type AuthorDefinition = {
   displayName?: string,
