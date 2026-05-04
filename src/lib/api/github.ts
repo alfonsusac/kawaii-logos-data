@@ -143,3 +143,46 @@ export async function fetchGithubRawFile(url: `https://raw.githubusercontent.com
   logerror("fetchGithubRawFile: Unexpected response, neither has no payload, 404, or 200.")
   return { status: "error", payload: null as string | null }
 }
+
+// ------------------------------------------------------------------------------------
+
+// import type { Site } from "./site"
+
+// export const GitHub = {
+//   userProfileUrl:
+//     (username: string) =>
+//       `https://github.com/${ username }`,
+
+//   repositoryUrl:
+//     (repoPath: string) =>
+//       `https://github.com/${ repoPath }`,
+
+//   gitUrl:
+//     (repoPath: string) =>
+//       `https://github.com/${ repoPath }.git`,
+
+//   sourceFilePageUrl:
+//     (repoPath: string, branch: string, file: string): `https://${ string }` =>
+//       `https://github.com/${ repoPath }/blob/${ branch }/${ file }`,
+
+//   rawFileUrl:
+//     (repoPath: string, branch: string, file: string): `https://${ string}` =>
+//       `https://raw.githubusercontent.com/${ repoPath }/${ branch }/${ file }`,
+
+//   selfHostedStaticAssetUrl:
+//     (filename: string): `https://${ string }` =>
+//       `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/${ filename }`,
+
+//   userAvatarUrl:
+//     (username: string) =>
+//       `https://avatars.githubusercontent.com/${ username }`,
+
+//   camoUrl:
+//     (path: string) =>
+//       `https://camo.githubusercontent.com/${ path }` as Site,
+// }
+
+// export const getAvatarURLfromRepoPath = (repoPath: string) => {
+//   const username = repoPath.split("/")[ 0 ]
+//   return GitHub.userAvatarUrl(username)
+// }

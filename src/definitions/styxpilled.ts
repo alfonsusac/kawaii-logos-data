@@ -1,5 +1,3 @@
-import { twitterPost } from "../lib/url"
-import { GitHub } from "../lib/url-github"
 import type { AuthorDefinition } from "../resolve-author"
 
 export const styxpilled: AuthorDefinition = {
@@ -13,7 +11,7 @@ export const styxpilled: AuthorDefinition = {
       label: "svelte",
       images: {
         src: { type: "self-hosted", filepath: "./assets/GLlkf9EWwAAq3N9.jpeg" },
-        reference: twitterPost("styxpilled", "1781565832251719868"),
+        reference: "https://twitter.com/styxpilled/status/1781565832251719868",
         style: { objectFit: "cover" }
       }
     },
@@ -21,7 +19,7 @@ export const styxpilled: AuthorDefinition = {
       label: "sveltekit",
       images: {
         src: { type: "self-hosted", filepath: "./assets/GLmrDPdXgAAlKvW.jpeg" },
-        reference: twitterPost("styxpilled", "1781643208130216015"),
+        reference: "https://twitter.com/styxpilled/status/1781565832251719868",
         style: { objectFit: "cover" }
       }
     }

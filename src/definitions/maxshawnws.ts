@@ -1,4 +1,3 @@
-import { GitHub } from "../lib/url-github"
 import type { AuthorDefinition } from "../resolve-author"
 
 export const maxshawnwx: AuthorDefinition = {
