@@ -1,731 +1,4418 @@
 {
-  "updatedAt": "2026-04-27T12:00:11.900Z",
-  "data": [
-    {
-      "id": "alfonsusac",
-      "displayName": "alfonsusac",
-      "pfp": "https://avatars.githubusercontent.com/alfonsusac",
-      "social": {
-        "github": {
-          "username": "alfonsusac",
-          "url": "https://github.com/alfonsusac"
+  "updatedAt": "2026-05-04T05:27:50.782Z",
+  "data": {
+    "authors": [
+      {
+        "id": "aikoyori",
+        "displayName": "aikoyori",
+        "pfp": "https://avatars.githubusercontent.com/Aikoyori",
+        "social": {
+          "github": {
+            "username": "Aikoyori",
+            "url": "https://github.com/Aikoyori"
+          },
+          "x": {
+            "username": "Aikoyori",
+            "url": "https://twitter.com/Aikoyori"
+          },
+          "bsky": {
+            "username": "aikoyori.xyz",
+            "url": "https://bsky.app/profile/aikoyori.xyz"
+          },
+          "site": "https://aikoyori.xyz"
         },
-        "x": {
-          "username": "alfonsusac",
-          "url": "https://x.com/alfonsusac"
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "Aikoyori",
+              "url": "https://github.com/Aikoyori"
+            },
+            {
+              "type": "x",
+              "username": "Aikoyori",
+              "url": "https://twitter.com/Aikoyori"
+            },
+            {
+              "type": "bsky",
+              "username": "aikoyori.xyz",
+              "url": "https://bsky.app/profile/aikoyori.xyz"
+            }
+          ],
+          "personalsites": [
+            "https://aikoyori.xyz"
+          ]
         },
-        "bsky": {
-          "username": "alfon.dev",
-          "url": "https://bsky.app/alfon.dev"
-        },
-        "site": "alfon.dev"
-      },
-      "links": {
-        "socials": [
+        "entries": [
           {
-            "type": "github",
+            "id": "bun",
+            "title": "Bun",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "BunLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "BunLogoOld",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoOld.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoOld.png"
+                  }
+                ]
+              },
+              {
+                "label": "BunLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoShadowed.png"
+                  }
+                ]
+              },
+              {
+                "label": "BunLogoShadowedOld",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoShadowedOld.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoShadowedOld.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "docker",
+            "title": "Docker",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "DockerLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Docker/DockerLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "DockerLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Docker/DockerLogoShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "elysiajs",
+            "title": "ElysiaJS",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "ElysiaJSLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ElysiaJS/ElysiaJSLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ElysiaJS/ElysiaJSLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "ElysiaJSLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ElysiaJS/ElysiaJSLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ElysiaJS/ElysiaJSLogoShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gamechanger",
+            "title": "GameChanger",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "GameChangerLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GameChanger/GameChangerLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GameChanger/GameChangerLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "GameChangerLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GameChanger/GameChangerLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GameChanger/GameChangerLogoShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "godotengine",
+            "title": "GodotEngine",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "GodotLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GodotEngine/GodotLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GodotEngine/GodotLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "GodotLogoShadow",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GodotEngine/GodotLogoShadow.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GodotEngine/GodotLogoShadow.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "imhex",
+            "title": "ImHex",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "ImHexLogoSVGBG",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBG.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBG.png"
+                  }
+                ]
+              },
+              {
+                "label": "ImHexLogoSVGBG",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBG.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBG.svg"
+                  }
+                ]
+              },
+              {
+                "label": "ImHexLogoSVGBGShadows",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBGShadows.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBGShadows.png"
+                  }
+                ]
+              },
+              {
+                "label": "ImHexLogoSVGBGShadows",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBGShadows.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBGShadows.svg"
+                  }
+                ]
+              },
+              {
+                "label": "ImHexLogoSVGFilled",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGFilled.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGFilled.png"
+                  }
+                ]
+              },
+              {
+                "label": "ImHexLogoSVGFilled",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGFilled.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGFilled.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "intellijidea",
+            "title": "IntelliJIDEA",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "IntellijLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/IntellijLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/IntelliJIDEA/IntellijLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "intelliJShadow",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/intelliJShadow.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/IntelliJIDEA/intelliJShadow.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kubernetes",
+            "title": "Kubernetes",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "kubernetesLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Kubernetes/kubernetesLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Kubernetes/kubernetesLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "kubernetesLogoShadow",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Kubernetes/kubernetesLogoShadow.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Kubernetes/kubernetesLogoShadow.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "mirin-template-for-notitg",
+            "title": "Mirin Template for NotITG",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "MirinTemplateLogoFilled",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png"
+                  }
+                ]
+              },
+              {
+                "label": "MirinTemplateLogoFilled",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg"
+                  }
+                ]
+              },
+              {
+                "label": "MirinTemplateLogoFlattened",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png"
+                  }
+                ]
+              },
+              {
+                "label": "MirinTemplateLogoFlattened",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg"
+                  }
+                ]
+              },
+              {
+                "label": "MirinTemplateLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png"
+                  }
+                ]
+              },
+              {
+                "label": "MirinTemplateLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "neovim",
+            "title": "Neovim",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "NeovimLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Neovim/NeovimLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "NeovimShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Neovim/NeovimShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "papermc",
+            "title": "PaperMC",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "PaperMCLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "PaperMCLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogoShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vscode",
+            "title": "VSCode",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "VSCode-Thick",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode-Thick.png"
+                  }
+                ]
+              },
+              {
+                "label": "VSCode",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "osu",
+            "title": "osu",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "osuLogo",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "osuLogoOld",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoOld.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoOld.png"
+                  }
+                ]
+              },
+              {
+                "label": "osuLogoShadowed",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoShadowed.png"
+                  }
+                ]
+              },
+              {
+                "label": "osuLogoShadowedOld",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoShadowedOld.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoShadowedOld.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "andregans",
+        "displayName": "andregans",
+        "pfp": "https://avatars.githubusercontent.com/andregans",
+        "social": {
+          "github": {
+            "username": "andregans",
+            "url": "https://github.com/andregans"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "andregans",
+              "url": "https://github.com/andregans"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "android-studio",
+            "title": "Android Studio",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Android Studio",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Android Studio.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Android Studio.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "angular-logotype",
+            "title": "Angular Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Angular Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Angular Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Angular Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bootstrap-logotype",
+            "title": "Bootstrap Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Bootstrap Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Bootstrap Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Bootstrap Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "c++-logotype",
+            "title": "C++ Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "C++ Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/C++ Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/C++ Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "css-logotype",
+            "title": "CSS Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "CSS Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/CSS Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/CSS Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cloudflare-logotype",
+            "title": "Cloudflare Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Cloudflare Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Cloudflare Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Cloudflare Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "django-logotype",
+            "title": "Django Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Django Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Django Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Django Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "flutter-logotype",
+            "title": "Flutter Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Flutter Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Flutter Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Flutter Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "github-logotype",
+            "title": "Github Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Github Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Github Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Github Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gitlab-logotype",
+            "title": "Gitlab Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Gitlab Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Gitlab Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Gitlab Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "golang",
+            "title": "Golang",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Golang",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Golang.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Golang.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "html-logotype",
+            "title": "HTML Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "HTML Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/HTML Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/HTML Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hono-logotype",
+            "title": "Hono Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Hono Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Hono Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Hono Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hugo",
+            "title": "Hugo",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Hugo",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Hugo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Hugo.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "java",
+            "title": "Java",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Java",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Java.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Java.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "javascript-logotype",
+            "title": "Javascript Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Javascript Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Javascript Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Javascript Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "laravel-logotype",
+            "title": "Laravel Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Laravel Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Laravel Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Laravel Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "materializecss-logotype",
+            "title": "Materializecss Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Materializecss Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Materializecss Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Materializecss Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "npm-logotype",
+            "title": "NPM Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "NPM Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/NPM Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/NPM Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "neovim-logotype",
+            "title": "Neovim Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Neovim Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Neovim Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Neovim Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "netlify-logotype",
+            "title": "Netlify Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Netlify Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Netlify Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Netlify Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "next-js-logotype",
+            "title": "Next JS Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Next JS Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Next JS Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Next JS Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node-js-logotype",
+            "title": "Node JS Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Node JS Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Node JS Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Node JS Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "notepad++-logotype",
+            "title": "Notepad++ Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Notepad++ Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Notepad++ Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Notepad++ Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nuxt-js-logotype",
+            "title": "Nuxt JS Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Nuxt JS Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Nuxt JS Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Nuxt JS Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "php-logotype",
+            "title": "PHP Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "PHP Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/PHP Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/PHP Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "prisma-logotype",
+            "title": "Prisma Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Prisma Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Prisma Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Prisma Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "python-logotype",
+            "title": "Python Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Python Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Python Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Python Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "react-js-logotype",
+            "title": "React JS Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "React JS Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/React JS Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/React JS Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "remix-logotype",
+            "title": "Remix Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Remix Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Remix Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Remix Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ruby-logotype",
+            "title": "Ruby Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Ruby Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Ruby Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Ruby Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sublime-text-logotype",
+            "title": "Sublime Text Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Sublime Text Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Sublime Text Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Sublime Text Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "tailwindcss-logotype",
+            "title": "Tailwindcss Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Tailwindcss Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Tailwindcss Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Tailwindcss Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vercel-logotype",
+            "title": "Vercel Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Vercel Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vercel Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Vercel Logotype.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vim",
+            "title": "Vim",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Vim",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vim.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Vim.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vite",
+            "title": "Vite",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Vite",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vite.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Vite.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vscode-logotype",
+            "title": "Vscode Logotype",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+            },
+            "images": [
+              {
+                "label": "Vscode Logotype",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vscode Logotype.png",
+                "references": [
+                  {
+                    "site": "https://github.com/andregans/code_logotype/blob/main/Vscode Logotype.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "alfonsusac",
+        "displayName": "alfonsusac",
+        "pfp": "https://avatars.githubusercontent.com/alfonsusac",
+        "social": {
+          "github": {
             "username": "alfonsusac",
             "url": "https://github.com/alfonsusac"
           },
-          {
-            "type": "x",
+          "x": {
             "username": "alfonsusac",
             "url": "https://x.com/alfonsusac"
           },
-          {
-            "type": "bsky",
+          "bsky": {
             "username": "alfon.dev",
-            "url": "https://bsky.app/alfon.dev"
+            "url": "https://bsky.app/profile/alfon.dev"
+          },
+          "site": "alfon.dev"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "alfonsusac",
+              "url": "https://github.com/alfonsusac"
+            },
+            {
+              "type": "x",
+              "username": "alfonsusac",
+              "url": "https://x.com/alfonsusac"
+            },
+            {
+              "type": "bsky",
+              "username": "alfon.dev",
+              "url": "https://bsky.app/profile/alfon.dev"
+            }
+          ],
+          "personalsites": [
+            "https://alfon.dev"
+          ]
+        },
+        "entries": [
+          {
+            "id": "skillissue",
+            "title": "Skill Issue",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/alfon/skillissue.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/skillissue.svg",
+                "references": [
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/skillissue.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "lgtm",
+            "title": "LGTM",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/alfon/lgtm.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/lgtm.svg",
+                "references": [
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/lgtm.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "supabase",
+            "title": "Supabase",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/alfon/supabase.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/supabase.svg",
+                "references": [
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/supabase.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "emailthing",
+            "title": "EmailThing",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/alfon/emailthing.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/emailthing.svg",
+                "references": [
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/emailthing.svg"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sharkchat",
+            "title": "Sharkchat",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/alfon/sharkchat.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/sharkchat.svg",
+                "references": [
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/sharkchat.svg"
+                  }
+                ]
+              }
+            ]
           }
-        ],
-        "personalsites": [
-          "https://alfon.dev"
         ]
       },
-      "entries": [
-        {
-          "id": "skillissue",
-          "title": "Skill Issue",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/skillissue.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/skillissue.svg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "lgtm",
-          "title": "LGTM",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/lgtm.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/lgtm.svg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "supabase",
-          "title": "Supabase",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/supabase.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/supabase.svg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "emailthing",
-          "title": "EmailThing",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/emailthing.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/emailthing.svg"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "sharkchat",
-          "title": "Sharkchat",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/sharkchat.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/sharkchat.svg"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "arnav",
-      "displayName": "arnav-kr",
-      "pfp": "https://avatars.githubusercontent.com/arnav-kr",
-      "social": {
-        "github": {
-          "username": "arnav-kr",
-          "url": "https://github.com/arnav-kr"
-        },
-        "x": {
-          "username": "arnavkr_",
-          "url": "https://x.com/arnavkr_"
-        }
-      },
-      "links": {
-        "socials": [
-          {
-            "type": "github",
+      {
+        "id": "arnav",
+        "displayName": "arnav-kr",
+        "pfp": "https://avatars.githubusercontent.com/arnav-kr",
+        "social": {
+          "github": {
             "username": "arnav-kr",
             "url": "https://github.com/arnav-kr"
           },
-          {
-            "type": "x",
+          "x": {
             "username": "arnavkr_",
             "url": "https://x.com/arnavkr_"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "json-formatter",
-          "title": "JSON Formatter",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/arnav-kr/json-formatter/main/images/banners/JF_VTuber_logo.svg",
-              "reference": [
-                {
-                  "site": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg"
-                },
-                {
-                  "site": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "cr1sta_dev",
-      "displayName": "cr1sta_dev",
-      "social": {
-        "x": {
-          "username": "cr1sta_dev",
-          "url": "https://x.com/cr1sta_dev"
-        }
-      },
-      "links": {
-        "socials": [
-          {
-            "type": "x",
-            "username": "cr1sta_dev",
-            "url": "https://x.com/cr1sta_dev"
-          }
-        ],
-        "personalsites": []
-      },
-      "entries": []
-    },
-    {
-      "id": "dsphng",
-      "displayName": "dsphng",
-      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:opu3ipg47v7yqekus3jycph6/bafkreidglodmfztlisuhyjomcatxw5fdscz6oxx4fgma4couth3gm3cq4q",
-      "social": {
-        "x": {
-          "username": "dsphng",
-          "url": "https://x.com/dsphng"
         },
-        "bsky": {
-          "username": "klfjlgjhjfkg.bsky.social",
-          "url": "https://bsky.app/klfjlgjhjfkg.bsky.social"
-        }
-      },
-      "links": {
-        "socials": [
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "arnav-kr",
+              "url": "https://github.com/arnav-kr"
+            },
+            {
+              "type": "x",
+              "username": "arnavkr_",
+              "url": "https://x.com/arnavkr_"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
           {
-            "type": "x",
+            "id": "json-formatter",
+            "title": "JSON Formatter",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "JF_VTuber_logo.png",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png"
+                  }
+                ]
+              },
+              {
+                "label": "JF_VTuber_logo.svg",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cocoa_xu",
+        "displayName": "cocoa_xu",
+        "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
+        "social": {
+          "github": {
+            "username": "cocoa-xu",
+            "url": "https://github.com/cocoa-xu"
+          },
+          "x": {
+            "username": "_uwu_cocoa",
+            "url": "https://twitter.com/_uwu_cocoa"
+          },
+          "bsky": {
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "cocoa-xu",
+              "url": "https://github.com/cocoa-xu"
+            },
+            {
+              "type": "x",
+              "username": "_uwu_cocoa",
+              "url": "https://twitter.com/_uwu_cocoa"
+            },
+            {
+              "type": "bsky",
+              "username": "uwucocoa.moe",
+              "url": "https://bsky.app/profile/uwucocoa.moe"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "elixir",
+            "title": "Elixir",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Elixir",
+                "src": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Elixir/Elixir.png",
+                "references": [
+                  {
+                    "site": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Elixir/Elixir.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gleam",
+            "title": "Gleam",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Gleam",
+                "src": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Gleam/Gleam.png",
+                "references": [
+                  {
+                    "site": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Gleam/Gleam.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "cr1sta_dev",
+        "displayName": "cr1sta_dev",
+        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
+        "social": {
+          "github": {
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
+          },
+          "x": {
+            "username": "cr1sta_dev",
+            "url": "https://twitter.com/cr1sta_dev"
+          },
+          "site": "https://crystaworld.dev"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "Crysta1221",
+              "url": "https://github.com/Crysta1221"
+            },
+            {
+              "type": "x",
+              "username": "cr1sta_dev",
+              "url": "https://twitter.com/cr1sta_dev"
+            }
+          ],
+          "personalsites": [
+            "https://crystaworld.dev"
+          ]
+        },
+        "entries": [
+          {
+            "id": "jyo-gi",
+            "title": "jyo-gi",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "MIT"
+            },
+            "images": [
+              {
+                "label": "jyo-gi",
+                "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/jyo-gi.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Crysta1221/tech_logos/blob/main/jyo-gi.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nuxtjs",
+            "title": "nuxtjs",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "MIT"
+            },
+            "images": [
+              {
+                "label": "nuxtjs",
+                "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/nuxtjs/nuxtjs.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Crysta1221/tech_logos/blob/main/nuxtjs/nuxtjs.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "react",
+            "title": "react",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "MIT"
+            },
+            "images": [
+              {
+                "label": "react",
+                "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/react/react.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Crysta1221/tech_logos/blob/main/react/react.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rubyonrails",
+            "title": "rubyonrails",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "MIT"
+            },
+            "images": [
+              {
+                "label": "rubyonrails",
+                "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/rubyonrails/rubyonrails.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails.png"
+                  }
+                ]
+              },
+              {
+                "label": "rubyonrails_fix",
+                "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/rubyonrails/rubyonrails_fix.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails_fix.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "svelte",
+            "title": "svelte",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "MIT"
+            },
+            "images": [
+              {
+                "label": "svelte",
+                "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/svelte/svelte.png",
+                "references": [
+                  {
+                    "site": "https://github.com/Crysta1221/tech_logos/blob/main/svelte/svelte.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "dsphng",
+        "displayName": "dsphng",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:opu3ipg47v7yqekus3jycph6/bafkreidglodmfztlisuhyjomcatxw5fdscz6oxx4fgma4couth3gm3cq4q",
+        "social": {
+          "x": {
             "username": "dsphng",
             "url": "https://x.com/dsphng"
           },
-          {
-            "type": "bsky",
+          "bsky": {
             "username": "klfjlgjhjfkg.bsky.social",
-            "url": "https://bsky.app/klfjlgjhjfkg.bsky.social"
+            "url": "https://bsky.app/profile/klfjlgjhjfkg.bsky.social"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "skrillex",
-          "title": "Skrillex",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/skrillexsticker.png",
-              "reference": [
-                {
-                  "site": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
-            }
-          ]
         },
-        {
-          "id": "porterrobinson",
-          "title": "Porter Robinson",
-          "images": [
+        "links": {
+          "socials": [
             {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/porterrobinsonsticker.png",
-              "reference": [
-                {
-                  "site": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
+              "type": "x",
+              "username": "dsphng",
+              "url": "https://x.com/dsphng"
+            },
+            {
+              "type": "bsky",
+              "username": "klfjlgjhjfkg.bsky.social",
+              "url": "https://bsky.app/profile/klfjlgjhjfkg.bsky.social"
             }
-          ]
+          ],
+          "personalsites": []
         },
-        {
-          "id": "flstudio",
-          "title": "FL Studio",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/flsticker.png",
-              "reference": [
-                {
-                  "site": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
-            }
-          ]
-        },
-        {
-          "id": "bitwigstudio",
-          "title": "Bitwig Studio",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/bitwigsticker.png",
-              "reference": [
-                {
-                  "site": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
-            }
-          ]
-        },
-        {
-          "id": "abletonlive",
-          "title": "Ableton Live",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/abletonsticker.png",
-              "reference": [
-                {
-                  "site": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
-            }
-          ]
-        },
-        {
-          "id": "logicpro",
-          "title": "Logic Pro",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLm7MOob0AAimzf.jpeg",
-              "style": {
-                "objectFit": "cover"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fenjalien",
-      "displayName": "fenjalien",
-      "pfp": "https://avatars.githubusercontent.com/fenjalien",
-      "social": {
-        "github": {
-          "username": "fenjalien",
-          "url": "https://github.com/fenjalien"
-        }
-      },
-      "links": {
-        "socials": [
+        "entries": [
           {
-            "type": "github",
+            "id": "skrillex",
+            "title": "Skrillex",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/skrillexsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/skrillexsticker.png",
+                "references": [
+                  {
+                    "site": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/skrillexsticker.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "porterrobinson",
+            "title": "Porter Robinson",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/porterrobinsonsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/porterrobinsonsticker.png",
+                "references": [
+                  {
+                    "site": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/porterrobinsonsticker.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "flstudio",
+            "title": "FL Studio",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/flsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/flsticker.png",
+                "references": [
+                  {
+                    "site": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/flsticker.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "bitwigstudio",
+            "title": "Bitwig Studio",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/bitwigsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/bitwigsticker.png",
+                "references": [
+                  {
+                    "site": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/bitwigsticker.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "abletonlive",
+            "title": "Ableton Live",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/abletonsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/abletonsticker.png",
+                "references": [
+                  {
+                    "site": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/abletonsticker.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "logicpro",
+            "title": "Logic Pro",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/logicsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/logicsticker.png",
+                "references": [
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/logicsticker.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "cover"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fenjalien",
+        "displayName": "fenjalien",
+        "pfp": "https://avatars.githubusercontent.com/fenjalien",
+        "social": {
+          "github": {
             "username": "fenjalien",
             "url": "https://github.com/fenjalien"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "typst",
-          "title": "Typst",
-          "images": [
-            {
-              "src": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.svg",
-              "reference": [
-                {
-                  "site": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
-                }
-              ],
-              "label": "Typst Logo (SVG)"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fumanama",
-      "displayName": "fuma-nama",
-      "pfp": "https://avatars.githubusercontent.com/u/76240755?v=4",
-      "social": {
-        "github": {
-          "username": "fuma-nama",
-          "url": "https://github.com/fuma-nama"
         },
-        "x": {
-          "username": "fuma_nama",
-          "url": "https://x.com/fuma_nama"
-        }
-      },
-      "links": {
-        "socials": [
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "fenjalien",
+              "url": "https://github.com/fenjalien"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
           {
-            "type": "github",
+            "id": "typst",
+            "title": "Typst",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "Typst Logo",
+                "src": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/2d5079562396d43e615cf0ffe81da60438b184c9#file-typst-logo.png",
+                "references": [
+                  {
+                    "site": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fumanama",
+        "displayName": "fuma-nama",
+        "pfp": "https://avatars.githubusercontent.com/fuma-nama",
+        "social": {
+          "github": {
             "username": "fuma-nama",
             "url": "https://github.com/fuma-nama"
           },
-          {
-            "type": "x",
+          "x": {
             "username": "fuma_nama",
             "url": "https://x.com/fuma_nama"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "fumadocs",
-          "title": "Fumadocs",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/fuma-nama/fumadocs/dev/documents/logo.png",
-              "reference": [
-                {
-                  "site": "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "hcho3",
-      "displayName": "hcho3",
-      "pfp": "https://avatars.githubusercontent.com/hcho3",
-      "social": {
-        "github": {
-          "username": "hcho3",
-          "url": "https://github.com/hcho3"
         },
-        "x": {
-          "username": "hcho3_ml",
-          "url": "https://x.com/hcho3_ml"
-        }
-      },
-      "links": {
-        "socials": [
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "fuma-nama",
+              "url": "https://github.com/fuma-nama"
+            },
+            {
+              "type": "x",
+              "username": "fuma_nama",
+              "url": "https://x.com/fuma_nama"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
           {
-            "type": "github",
+            "id": "fumadocs",
+            "title": "Fumadocs",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "logo.png",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "g2_games",
+        "displayName": "g2_games",
+        "pfp": "https://avatars.githubusercontent.com/G2-Games",
+        "social": {
+          "github": {
+            "username": "G2-Games",
+            "url": "https://github.com/G2-Games"
+          },
+          "site": "https://ko-fi.com/g2_games"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "G2-Games",
+              "url": "https://github.com/G2-Games"
+            }
+          ],
+          "personalsites": [
+            "https://ko-fi.com/g2_games",
+            "https://g2games.dev/git/",
+            "https://patchii.net/G2_Games/",
+            "https://codeberg.org/g2_games",
+            "https://g2games.dev"
+          ]
+        },
+        "entries": [
+          {
+            "id": "kate",
+            "title": "kate",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/G2-Games/fun-logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "kate-animated",
+                "src": "https://raw.githubusercontent.com/G2-Games/fun-logos/main/kate/kate-animated.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/G2-Games/fun-logos/blob/main/kate/kate-animated.svg"
+                  }
+                ]
+              },
+              {
+                "label": "kate",
+                "src": "https://raw.githubusercontent.com/G2-Games/fun-logos/main/kate/kate.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/G2-Games/fun-logos/blob/main/kate/kate.svg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hcho3",
+        "displayName": "hcho3",
+        "pfp": "https://avatars.githubusercontent.com/hcho3",
+        "social": {
+          "github": {
             "username": "hcho3",
             "url": "https://github.com/hcho3"
           },
-          {
-            "type": "x",
+          "x": {
             "username": "hcho3_ml",
             "url": "https://x.com/hcho3_ml"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "xgboost",
-          "title": "XGBoost",
-          "images": [
-            {
-              "src": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo-Path.svg"
-                }
-              ]
-            },
-            {
-              "src": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo.png"
-                }
-              ]
-            },
-            {
-              "src": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg",
-              "reference": [
-                {
-                  "site": "https://raw.githubusercontent.com/hcho3/XGBoostVTuberLogo/main/XGBoostVTuberLogo.svg"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "hvpexe",
-      "displayName": "hvpexe",
-      "pfp": "https://avatars.githubusercontent.com/hvpexe",
-      "social": {
-        "github": {
-          "username": "hvpexe",
-          "url": "https://github.com/hvpexe"
         },
-        "x": {
-          "username": "Manhkbrady",
-          "url": "https://x.com/Manhkbrady"
-        }
-      },
-      "links": {
-        "socials": [
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "hcho3",
+              "url": "https://github.com/hcho3"
+            },
+            {
+              "type": "x",
+              "username": "hcho3_ml",
+              "url": "https://x.com/hcho3_ml"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
           {
-            "type": "github",
+            "id": "xgboost",
+            "title": "XGBoost",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "XGBoostVTuberLogo-Path.svg",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg"
+                  }
+                ]
+              },
+              {
+                "label": "XGBoostVTuberLogo.png",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "XGBoostVTuberLogo.svg",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "hvpexe",
+        "displayName": "hvpexe",
+        "pfp": "https://avatars.githubusercontent.com/hvpexe",
+        "social": {
+          "github": {
             "username": "hvpexe",
             "url": "https://github.com/hvpexe"
           },
-          {
-            "type": "x",
+          "x": {
             "username": "Manhkbrady",
             "url": "https://x.com/Manhkbrady"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "visual-studio",
-          "title": "Visual Studio",
-          "images": [
+        },
+        "links": {
+          "socials": [
             {
-              "src": "https://raw.githubusercontent.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/master/VisualStudio/VisualStudioLogo.png",
-              "reference": [
-                {
-                  "site": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png"
-                }
-              ]
+              "type": "github",
+              "username": "hvpexe",
+              "url": "https://github.com/hvpexe"
+            },
+            {
+              "type": "x",
+              "username": "Manhkbrady",
+              "url": "https://x.com/Manhkbrady"
             }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "saltyaom",
-      "displayName": "saltyaom",
-      "pfp": "https://avatars.githubusercontent.com/SaltyAom",
-      "social": {
-        "github": {
-          "username": "SaltyAom",
-          "url": "https://github.com/SaltyAom"
+          ],
+          "personalsites": []
         },
-        "x": {
-          "username": "saltyaom",
-          "url": "https://x.com/saltyaom"
-        },
-        "bsky": {
-          "username": "saltyaom.com",
-          "url": "https://bsky.app/saltyaom.com"
-        }
-      },
-      "links": {
-        "socials": [
+        "entries": [
           {
-            "type": "github",
+            "id": "visual-studio",
+            "title": "Visual Studio",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "VisualStudioLogo.png",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ldmdiamondl",
+        "displayName": "ldmdiamondl",
+        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
+        "social": {
+          "github": {
+            "username": "lDMDiamondl",
+            "url": "https://github.com/lDMDiamondl"
+          },
+          "site": "https://lDMDiamondl.github.io/Curriculum-Vitae/"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "lDMDiamondl",
+              "url": "https://github.com/lDMDiamondl"
+            }
+          ],
+          "personalsites": [
+            "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+            "https://dendya123.tistory.com/"
+          ]
+        },
+        "entries": [
+          {
+            "id": "docker",
+            "title": "Docker",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "DockerLogo",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Docker/DockerLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Docker/DockerLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "DockerLogoShadowed",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Docker/DockerLogoShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Docker/DockerLogoShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "neovim",
+            "title": "Neovim",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "NeovimLogo",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Neovim/NeovimLogo.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Neovim/NeovimLogo.png"
+                  }
+                ]
+              },
+              {
+                "label": "NeovimShadowed",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Neovim/NeovimShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Neovim/NeovimShadowed.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vscode",
+            "title": "VSCode",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "VSCode-2X",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-2X.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-2X.png"
+                  }
+                ]
+              },
+              {
+                "label": "VSCode-Thick",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-Thick.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-Thick.png"
+                  }
+                ]
+              },
+              {
+                "label": "VSCode",
+                "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode.png",
+                "references": [
+                  {
+                    "site": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "maxshawnwx",
+        "displayName": "maxshawnwx",
+        "pfp": "https://avatars.githubusercontent.com/maxshawnwx",
+        "social": {
+          "github": {
+            "username": "maxshawnwx",
+            "url": "https://github.com/maxshawnwx"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "maxshawnwx",
+              "url": "https://github.com/maxshawnwx"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "skyviewer",
+            "title": "Skyviewer",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
+                "references": [
+                  {
+                    "site": "https://github.com/alfonsusac/kawaii-logos-data/issues/10#issuecomment-2686987751"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mkpoli",
+        "displayName": "mkpoli",
+        "pfp": "https://avatars.githubusercontent.com/mkpoli",
+        "social": {
+          "github": {
+            "username": "mkpoli",
+            "url": "https://github.com/mkpoli"
+          },
+          "x": {
+            "username": "mkpoli",
+            "url": "https://twitter.com/mkpoli"
+          },
+          "site": "https://ko-fi.com/mkpoli/"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "mkpoli",
+              "url": "https://github.com/mkpoli"
+            },
+            {
+              "type": "x",
+              "username": "mkpoli",
+              "url": "https://twitter.com/mkpoli"
+            }
+          ],
+          "personalsites": [
+            "https://ko-fi.com/mkpoli/",
+            "https://mkpo.li/"
+          ]
+        },
+        "entries": [
+          {
+            "id": "svelte",
+            "title": "Svelte",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/LICENSE"
+              },
+              "type": "standard",
+              "id": "CC0-1.0"
+            },
+            "images": [
+              {
+                "label": "Svelte",
+                "src": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.png",
+                "references": [
+                  {
+                    "site": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.png"
+                  }
+                ]
+              },
+              {
+                "label": "Svelte",
+                "src": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.svg",
+                "references": [
+                  {
+                    "site": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.svg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "saltyaom",
+        "displayName": "saltyaom",
+        "pfp": "https://avatars.githubusercontent.com/SaltyAom",
+        "social": {
+          "github": {
             "username": "SaltyAom",
             "url": "https://github.com/SaltyAom"
           },
-          {
-            "type": "x",
+          "x": {
             "username": "saltyaom",
             "url": "https://x.com/saltyaom"
           },
-          {
-            "type": "bsky",
+          "bsky": {
             "username": "saltyaom.com",
-            "url": "https://bsky.app/saltyaom.com"
+            "url": "https://bsky.app/profile/saltyaom.com"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "elysia",
-          "title": "Elysia",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/elysiajs/documentation/6e13f140b53fb69d9a82993cd80a82df55325b9e/docs/public/assets/elysia_v.svg",
-              "reference": [
-                {
-                  "site": "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg"
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "styxpilled",
-      "displayName": "styxpilled",
-      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreiei5oewihj6h25o3mgvvd3meshy4nefwynssifnrdk4ig4kgc3e2i",
-      "social": {
-        "x": {
-          "username": "styxpilled",
-          "url": "https://x.com/styxpilled"
         },
-        "bsky": {
-          "username": "styxpilled.bsky.social",
-          "url": "https://bsky.app/styxpilled.bsky.social"
-        }
-      },
-      "links": {
-        "socials": [
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "SaltyAom",
+              "url": "https://github.com/SaltyAom"
+            },
+            {
+              "type": "x",
+              "username": "saltyaom",
+              "url": "https://x.com/saltyaom"
+            },
+            {
+              "type": "bsky",
+              "username": "saltyaom.com",
+              "url": "https://bsky.app/profile/saltyaom.com"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
           {
-            "type": "x",
+            "id": "elysia",
+            "title": "Elysia",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "elysia_v.svg",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sawaratsuki",
+        "displayName": "sawaratsuki",
+        "pfp": "https://avatars.githubusercontent.com/SAWARATSUKI",
+        "social": {
+          "github": {
+            "username": "SAWARATSUKI",
+            "url": "https://github.com/SAWARATSUKI"
+          },
+          "x": {
+            "username": "sawaratsuki1004",
+            "url": "https://twitter.com/sawaratsuki1004"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "SAWARATSUKI",
+              "url": "https://github.com/SAWARATSUKI"
+            },
+            {
+              "type": "x",
+              "username": "sawaratsuki1004",
+              "url": "https://twitter.com/sawaratsuki1004"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "atprotocol",
+            "title": "ATProtocol",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "ATProtocol",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/jpg/ATProtocol.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/jpg/ATProtocol.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "ATProtocol",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/png/ATProtocol.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/png/ATProtocol.png"
+                  }
+                ]
+              },
+              {
+                "label": "ATProtocol",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/webp/ATProtocol.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/webp/ATProtocol.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "angular",
+            "title": "Angular",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Angular",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/jpg/Angular.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/jpg/Angular.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Angular",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/png/Angular.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/png/Angular.png"
+                  }
+                ]
+              },
+              {
+                "label": "Angular",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/webp/Angular.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/webp/Angular.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bluesky",
+            "title": "Bluesky",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "BlueSky",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/jpg/BlueSky.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/jpg/BlueSky.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "BlueSky",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/png/BlueSky.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/png/BlueSky.png"
+                  }
+                ]
+              },
+              {
+                "label": "BlueSky",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/webp/BlueSky.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/webp/BlueSky.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "charcoal",
+            "title": "Charcoal",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Charcoal",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/jpg/Charcoal.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/jpg/Charcoal.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Charcoal",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/png/Charcoal.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/png/Charcoal.png"
+                  }
+                ]
+              },
+              {
+                "label": "Charcoal",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/webp/Charcoal.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/webp/Charcoal.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cloudflare",
+            "title": "Cloudflare",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Cloudflare",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/jpg/Cloudflare.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/jpg/Cloudflare.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Cloudflare",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/png/Cloudflare.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/png/Cloudflare.png"
+                  }
+                ]
+              },
+              {
+                "label": "Cloudflare",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/webp/Cloudflare.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/webp/Cloudflare.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "express",
+            "title": "Express",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Express",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/jpg/Express.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/jpg/Express.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Express",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/png/Express.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/png/Express.png"
+                  }
+                ]
+              },
+              {
+                "label": "Express",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/webp/Express.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/webp/Express.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "figma",
+            "title": "Figma",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Figma",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/jpg/Figma.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/jpg/Figma.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Figma",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/png/Figma.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/png/Figma.png"
+                  }
+                ]
+              },
+              {
+                "label": "Figma",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/webp/Figma.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/webp/Figma.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "github",
+            "title": "GitHub",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "GitHub",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/jpg/GitHub.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/jpg/GitHub.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "GitHub",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/png/GitHub.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/png/GitHub.png"
+                  }
+                ]
+              },
+              {
+                "label": "GitHub",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/webp/GitHub.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/webp/GitHub.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "go-lang",
+            "title": "Go Lang",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Golang",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/jpg/Golang.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/jpg/Golang.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Golang",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/png/Golang.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/png/Golang.png"
+                  }
+                ]
+              },
+              {
+                "label": "Golang",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/webp/Golang.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/webp/Golang.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "haskell",
+            "title": "Haskell",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "haskell",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/jpg/haskell.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/jpg/haskell.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "haskell",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/png/haskell.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/png/haskell.png"
+                  }
+                ]
+              },
+              {
+                "label": "haskell",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/webp/haskell.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/webp/haskell.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hono",
+            "title": "Hono",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Hono",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/jpg/Hono.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/jpg/Hono.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Hono",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/png/Hono.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/png/Hono.png"
+                  }
+                ]
+              },
+              {
+                "label": "Hono",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/webp/Hono.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/webp/Hono.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamdesigner!",
+            "title": "IamDesigner!",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "IamDesigner!",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!.png"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamdesigner!english",
+            "title": "IamDesigner!English",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "IamDesigner!English",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!English.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!English.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!English",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!English.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!English.png"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!English",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!English.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!English.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamprogrammer!",
+            "title": "IamProgrammer!",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "IamProgrammer!",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammer!.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammer!.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammer!",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammer!.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammer!.png"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammer!",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammer!.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammer!.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamprogrammerenglish",
+            "title": "IamProgrammerEnglish",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "IamProgrammerEnglish",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammerEnglish.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammerEnglish",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammerEnglish.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammerEnglish.png"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammerEnglish",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammerEnglish.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammerEnglish.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "intellij-idea",
+            "title": "IntelliJ IDEA",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "IntelliJ IDEA",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "IntelliJ IDEA",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/png/IntelliJ IDEA.png"
+                  }
+                ]
+              },
+              {
+                "label": "IntelliJ IDEA",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kotlin",
+            "title": "Kotlin",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Kotlin",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/jpg/Kotlin.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/jpg/Kotlin.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Kotlin",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/png/Kotlin.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/png/Kotlin.png"
+                  }
+                ]
+              },
+              {
+                "label": "Kotlin",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/webp/Kotlin.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/webp/Kotlin.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "laravel",
+            "title": "Laravel",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "LaravelTransparent",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/jpg/LaravelTransparent.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/jpg/LaravelTransparent.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "LaravelTransparent",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/png/LaravelTransparent.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/png/LaravelTransparent.png"
+                  }
+                ]
+              },
+              {
+                "label": "LaravelTransparent",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/webp/LaravelTransparent.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/webp/LaravelTransparent.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "misskey.io",
+            "title": "MIsskey.io",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Misskey.io",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/jpg/Misskey.io.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/jpg/Misskey.io.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey.io",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/png/Misskey.io.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/png/Misskey.io.png"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey.io",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/webp/Misskey.io.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/webp/Misskey.io.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "misskey",
+            "title": "Misskey",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Misskey",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/jpg/Misskey.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/jpg/Misskey.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/png/Misskey.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/png/Misskey.png"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/webp/Misskey.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/webp/Misskey.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "next.js",
+            "title": "Next.js",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Next.js",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/jpg/Next.js.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/jpg/Next.js.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Next.js",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/png/Next.js.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/png/Next.js.png"
+                  }
+                ]
+              },
+              {
+                "label": "Next.js",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/webp/Next.js.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/webp/Next.js.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node.js",
+            "title": "Node.js",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Node.js",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/jpg/Node.js.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/jpg/Node.js.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Node.js",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/png/Node.js.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/png/Node.js.png"
+                  }
+                ]
+              },
+              {
+                "label": "Node.js",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/webp/Node.js.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/webp/Node.js.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "react",
+            "title": "React",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "React",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/jpg/React.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/jpg/React.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "React",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/png/React.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/png/React.png"
+                  }
+                ]
+              },
+              {
+                "label": "React",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/webp/React.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/webp/React.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "replit",
+            "title": "Replit",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Replit",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/jpg/Replit.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/jpg/Replit.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Replit",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/png/Replit.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/png/Replit.png"
+                  }
+                ]
+              },
+              {
+                "label": "Replit",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/webp/Replit.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/webp/Replit.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "403-forbidden",
+            "title": "403 Forbidden",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "403 Forbidden",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/403 Forbidden.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/403 Forbidden.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "403 Forbidden",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/403 Forbidden.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/403 Forbidden.png"
+                  }
+                ]
+              },
+              {
+                "label": "403 Forbidden",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/403 Forbidden.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/403 Forbidden.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "404-notfound",
+            "title": "404 NotFound",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "404 NotFound",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/404 NotFound.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/404 NotFound.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "404 NotFound",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/404 NotFound.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/404 NotFound.png"
+                  }
+                ]
+              },
+              {
+                "label": "404 NotFound",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/404 NotFound.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/404 NotFound.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "418-i-m-a-teapot",
+            "title": "418 I'm a teapot",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "418 I'm a teapot",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/418 I'm a teapot.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/418 I'm a teapot.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "418 I'm a teapot",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/418 I'm a teapot.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/418 I'm a teapot.png"
+                  }
+                ]
+              },
+              {
+                "label": "418 I'm a teapot",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/418 I'm a teapot.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/418 I'm a teapot.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "500-internalservererror",
+            "title": "500 InternalServerError",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "500 InternalServerError",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/500 InternalServerError.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/500 InternalServerError.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "500 InternalServerError",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/500 InternalServerError.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/500 InternalServerError.png"
+                  }
+                ]
+              },
+              {
+                "label": "500 InternalServerError",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/500 InternalServerError.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/500 InternalServerError.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "503-serviceunavailable",
+            "title": "503 ServiceUnavailable",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "503 ServiceUnavailable",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/503 ServiceUnavailable.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/503 ServiceUnavailable.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "503 ServiceUnavailable",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/503 ServiceUnavailable.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/503 ServiceUnavailable.png"
+                  }
+                ]
+              },
+              {
+                "label": "503 ServiceUnavailable",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/503 ServiceUnavailable.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/503 ServiceUnavailable.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rust",
+            "title": "Rust",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Rust",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/jpg/Rust.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/jpg/Rust.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Rust_Transparent",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/jpg/Rust_Transparent.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/jpg/Rust_Transparent.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Rust",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/png/Rust.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/png/Rust.png"
+                  }
+                ]
+              },
+              {
+                "label": "Rust_Transparent",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/png/Rust_Transparent.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/png/Rust_Transparent.png"
+                  }
+                ]
+              },
+              {
+                "label": "Rust",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/webp/Rust.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/webp/Rust.webp"
+                  }
+                ]
+              },
+              {
+                "label": "Rust_Transparent",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/webp/Rust_Transparent.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/webp/Rust_Transparent.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "typescript",
+            "title": "TypeScript",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "TypeScript",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/jpg/TypeScript.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/jpg/TypeScript.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "TypeScript",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/png/TypeScript.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/png/TypeScript.png"
+                  }
+                ]
+              },
+              {
+                "label": "TypeScript",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/webp/TypeScript.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/webp/TypeScript.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "tailwind-css",
+            "title": "tailwind css",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "Tailwindcss",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/tailwind css/jpg/Tailwindcss.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind css/jpg/Tailwindcss.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "Tailwindcss",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/tailwind css/png/Tailwindcss.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind css/png/Tailwindcss.png"
+                  }
+                ]
+              },
+              {
+                "label": "Tailwindcss",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/tailwind css/webp/Tailwindcss.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind css/webp/Tailwindcss.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "ゆっくりmoviemaker4",
+            "title": "ゆっくりMovieMaker4",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "ゆっくりMovieMaker4",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ゆっくりMovieMaker4/jpg/ゆっくりMovieMaker4.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/jpg/ゆっくりMovieMaker4.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "ゆっくりMovieMaker4",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ゆっくりMovieMaker4/png/ゆっくりMovieMaker4.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/png/ゆっくりMovieMaker4.png"
+                  }
+                ]
+              },
+              {
+                "label": "ゆっくりMovieMaker4",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ゆっくりMovieMaker4/webp/ゆっくりMovieMaker4.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/webp/ゆっくりMovieMaker4.webp"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "確定申告",
+            "title": "確定申告",
+            "references": [],
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+            },
+            "images": [
+              {
+                "label": "確定申告",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/確定申告/jpg/確定申告.jpg",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/確定申告/jpg/確定申告.jpg"
+                  }
+                ]
+              },
+              {
+                "label": "確定申告",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/確定申告/png/確定申告.png",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/確定申告/png/確定申告.png"
+                  }
+                ]
+              },
+              {
+                "label": "確定申告",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/確定申告/webp/確定申告.webp",
+                "references": [
+                  {
+                    "site": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/確定申告/webp/確定申告.webp"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "syke9p3",
+        "displayName": "syke9p3",
+        "pfp": "https://avatars.githubusercontent.com/syke9p3",
+        "social": {
+          "github": {
+            "username": "syke9p3",
+            "url": "https://github.com/syke9p3"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "syke9p3",
+              "url": "https://github.com/syke9p3"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "google-chrome",
+            "title": "Google Chrome",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Google Chrome",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Google Chrome/Google Chrome.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Google Chrome/Google Chrome.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "keep-notes",
+            "title": "Keep Notes",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "KeepNotes",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Keep Notes/KeepNotes.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Keep Notes/KeepNotes.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "linux-mint",
+            "title": "Linux Mint",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Mint",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/Mint.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/Mint.png"
+                  }
+                ]
+              },
+              {
+                "label": "MintShadowed",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/MintShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/MintShadowed.png"
+                  }
+                ]
+              },
+              {
+                "label": "MintStroked",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/MintStroked.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/MintStroked.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "obsidian",
+            "title": "Obsidian",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Obsidian",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Obsidian/Obsidian.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Obsidian/Obsidian.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "pytorch",
+            "title": "Pytorch",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Pytorch",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Pytorch/Pytorch.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Pytorch/Pytorch.png"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "springboot",
+            "title": "SpringBoot",
+            "references": [],
+            "license": {
+              "reference": {
+                "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "SpringBoot",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/SpringBoot/SpringBoot.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/SpringBoot/SpringBoot.png"
+                  }
+                ]
+              },
+              {
+                "label": "SpringBootShadowed",
+                "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/SpringBoot/SpringBootShadowed.png",
+                "references": [
+                  {
+                    "site": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/SpringBoot/SpringBootShadowed.png"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "styxpilled",
+        "displayName": "styxpilled",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreiei5oewihj6h25o3mgvvd3meshy4nefwynssifnrdk4ig4kgc3e2i",
+        "social": {
+          "x": {
             "username": "styxpilled",
             "url": "https://x.com/styxpilled"
           },
-          {
-            "type": "bsky",
+          "bsky": {
             "username": "styxpilled.bsky.social",
-            "url": "https://bsky.app/styxpilled.bsky.social"
+            "url": "https://bsky.app/profile/styxpilled.bsky.social"
           }
-        ],
-        "personalsites": []
-      },
-      "entries": [
-        {
-          "id": "svelte",
-          "title": "svelte",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLlkf9EWwAAq3N9.jpeg",
-              "reference": [
-                {
-                  "site": "https://twitter.com/styxpilled/status/1781565832251719868"
-                }
-              ],
-              "style": {
-                "objectFit": "cover"
-              }
-            }
-          ]
         },
-        {
-          "id": "sveltekit",
-          "title": "sveltekit",
-          "images": [
+        "links": {
+          "socials": [
             {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/GLmrDPdXgAAlKvW.jpeg",
-              "reference": [
-                {
-                  "site": "https://twitter.com/styxpilled/status/1781643208130216015"
-                }
-              ],
-              "style": {
-                "objectFit": "cover"
-              }
+              "type": "x",
+              "username": "styxpilled",
+              "url": "https://x.com/styxpilled"
+            },
+            {
+              "type": "bsky",
+              "username": "styxpilled.bsky.social",
+              "url": "https://bsky.app/profile/styxpilled.bsky.social"
             }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "thatonecalculator",
-      "displayName": "thatonecalculator",
-      "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:4d3footpr6lgq6hy5m74xdmm/bafkreiaa6glnvhyy4f72tbhx6bav25xeiqq2gzc4kutxn74h5vd7uyaezi",
-      "social": {
-        "x": {
-          "username": "thatonecalculator",
-          "url": "https://x.com/thatonecalculator"
+          ],
+          "personalsites": []
         },
-        "bsky": {
-          "username": "t1c.dev",
-          "url": "https://bsky.app/t1c.dev"
-        }
-      },
-      "links": {
-        "socials": [
+        "entries": [
           {
-            "type": "x",
+            "id": "svelte",
+            "title": "svelte",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/GLlkf9EWwAAq3N9.jpeg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/GLlkf9EWwAAq3N9.jpeg",
+                "references": [
+                  {
+                    "site": "https://twitter.com/styxpilled/status/1781565832251719868"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/GLlkf9EWwAAq3N9.jpeg"
+                  }
+                ],
+                "style": {
+                  "objectFit": "cover"
+                }
+              }
+            ]
+          },
+          {
+            "id": "sveltekit",
+            "title": "sveltekit",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/GLmrDPdXgAAlKvW.jpeg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/GLmrDPdXgAAlKvW.jpeg",
+                "references": [
+                  {
+                    "site": "https://twitter.com/styxpilled/status/1781643208130216015"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/GLmrDPdXgAAlKvW.jpeg"
+                  }
+                ],
+                "style": {
+                  "objectFit": "cover"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "thatonecalculator",
+        "displayName": "thatonecalculator",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:4d3footpr6lgq6hy5m74xdmm/bafkreiaa6glnvhyy4f72tbhx6bav25xeiqq2gzc4kutxn74h5vd7uyaezi",
+        "social": {
+          "x": {
             "username": "thatonecalculator",
             "url": "https://x.com/thatonecalculator"
           },
-          {
-            "type": "bsky",
+          "bsky": {
             "username": "t1c.dev",
-            "url": "https://bsky.app/t1c.dev"
+            "url": "https://bsky.app/profile/t1c.dev"
           }
-        ],
-        "personalsites": []
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "x",
+              "username": "thatonecalculator",
+              "url": "https://x.com/thatonecalculator"
+            },
+            {
+              "type": "bsky",
+              "username": "t1c.dev",
+              "url": "https://bsky.app/profile/t1c.dev"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "surrealdb",
+            "title": "surrealdb",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "src": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
+                "references": [
+                  {
+                    "site": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vyper",
+            "title": "vyper",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
+                "references": [
+                  {
+                    "site": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "avalanche",
+            "title": "avalanche",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
+                "references": [
+                  {
+                    "site": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "capacitor",
+            "title": "capacitor",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "./assets/capacitor.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/capacitor.png",
+                "references": [
+                  {
+                    "site": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+                  },
+                  {
+                    "site": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/capacitor.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          }
+        ]
       },
-      "entries": [
-        {
-          "id": "surrealdb",
-          "title": "surrealdb",
-          "images": [
-            {
-              "src": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
-              "reference": [
-                {
-                  "site": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
-            }
-          ]
+      {
+        "id": "urielchan",
+        "displayName": "urielchan",
+        "pfp": "https://avatars.githubusercontent.com/urielchan",
+        "social": {
+          "github": {
+            "username": "urielchan",
+            "url": "https://github.com/urielchan"
+          }
         },
-        {
-          "id": "vyper",
-          "title": "vyper",
-          "images": [
+        "links": {
+          "socials": [
             {
-              "src": "https://camo.githubusercontent.com/be1d9d90f545740cad8b8c4835d6b8a6338c10500190c522ce305af465396735/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f56797065725f6e65772e706e67",
-              "reference": [
-                {
-                  "site": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
+              "type": "github",
+              "username": "urielchan",
+              "url": "https://github.com/urielchan"
             }
-          ]
+          ],
+          "personalsites": []
         },
-        {
-          "id": "avalanche",
-          "title": "avalanche",
-          "images": [
-            {
-              "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
-              "reference": [
-                {
-                  "site": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+        "entries": [
+          {
+            "id": "imphnen",
+            "title": "imphnen.png",
+            "references": [],
+            "license": {
+              "type": "unknown"
+            },
+            "images": [
+              {
+                "label": "imphnen%202.png",
+                "src": "github-blob",
+                "references": [
+                  {
+                    "site": "https://github.com/Urielchan/logosVtuberVER/blob/main/imphnen%202.png"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
                 }
-              ],
-              "style": {
-                "objectFit": "contain"
               }
-            }
-          ]
-        },
-        {
-          "id": "capacitor",
-          "title": "capacitor",
-          "images": [
-            {
-              "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/main/assets/capacitor.png",
-              "reference": [
-                {
-                  "site": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
-                }
-              ],
-              "style": {
-                "objectFit": "contain"
-              }
-            }
-          ]
+            ]
+          }
+        ]
+      }
+    ],
+    "standardLicenses": {
+      "MIT": {
+        "label": "MIT License",
+        "href": "https://opensource.org/license/mit/",
+        "permissions": {
+          "use": "allowed",
+          "modify": "allowed",
+          "distribute": "allowed",
+          "commercial": "allowed",
+          "misc": {
+            "liability": "disallowed",
+            "trademark": "disallowed"
+          },
+          "conditions": {
+            "sale_requires_modification": "not needed",
+            "disclose_source": "not needed",
+            "state_changes": "not needed",
+            "include_license": "required",
+            "include_copyright": "required",
+            "give_credit": "recommended"
+          }
         }
-      ]
+      },
+      "CC BY-NC-SA 4.0": {
+        "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+        "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+        "permissions": {
+          "use": "allowed",
+          "modify": "allowed",
+          "distribute": "allowed",
+          "commercial": "disallowed",
+          "misc": {
+            "liability": "disallowed",
+            "trademark": "disallowed"
+          },
+          "conditions": {
+            "sale_requires_modification": "not needed",
+            "disclose_source": "not needed",
+            "state_changes": "not needed",
+            "include_license": "required",
+            "include_copyright": "required",
+            "give_credit": "required"
+          }
+        }
+      },
+      "CC BY-SA 4.0": {
+        "label": "Creative Commons Attribution-ShareAlike 4.0",
+        "href": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "permissions": {
+          "use": "allowed",
+          "modify": "allowed",
+          "distribute": "allowed",
+          "commercial": "allowed",
+          "misc": {
+            "liability": "disallowed",
+            "trademark": "disallowed"
+          },
+          "conditions": {
+            "sale_requires_modification": "not needed",
+            "disclose_source": "not needed",
+            "state_changes": "not needed",
+            "include_license": "required",
+            "include_copyright": "required",
+            "give_credit": "required"
+          }
+        }
+      },
+      "CC0-1.0": {
+        "label": "Creative Commons CC0 1.0 Universal",
+        "href": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "permissions": {
+          "use": "allowed",
+          "modify": "allowed",
+          "distribute": "allowed",
+          "commercial": "allowed",
+          "misc": {
+            "liability": "disallowed",
+            "trademark": "disallowed"
+          },
+          "conditions": {
+            "sale_requires_modification": "not needed",
+            "disclose_source": "not needed",
+            "state_changes": "not needed",
+            "include_license": "not needed",
+            "include_copyright": "not needed",
+            "give_credit": "not needed"
+          }
+        }
+      }
     }
-  ]
+  }
 }
