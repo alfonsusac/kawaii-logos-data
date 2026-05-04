@@ -28,7 +28,7 @@ import { generateGitIgnore } from "./utils"
 import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
 import { logger } from "./lib/log"
-import { revalidateMainWebsite } from "./effects"
+import { revalidateMainWebsite } from "./revalidate"
 import type { Output } from "./output"
 
 
