@@ -1,5 +1,5 @@
 import type { Site } from "./lib/site"
-import { type DateDef } from "./resolve/date"
+import { type DateDef } from "./lib/date"
 import type { AuthorOutput, Reference } from "./output"
 import { normalizeReferencesDef, resolveReference, type ReferencesDef } from "./resolve/references"
 import { logerror, warn } from "./pipeline"
