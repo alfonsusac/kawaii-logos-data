@@ -166,7 +166,7 @@ export async function resolveTransformedSourceToEntries(
   // Convert transformed list into entries-like structure based on the transformedPath.
   function addToScrapeEntries(entryKey: string, entryLabel: string, file: ScrapedResultFiles[ number ]) {
     const imageData: ImageDefinition = {
-      label: file.filenameWithoutExtension,
+      label: file.filename,
       src: { type: "resolved", url: file.rawUrl as Site },
       reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
       style: def?.applyCssStyle,
