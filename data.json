@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06T11:18:21.566Z",
+  "updatedAt": "2026-05-06T11:24:24.086Z",
   "data": {
     "authorCount": 21,
     "imageCount": 236,
@@ -1601,11 +1601,11 @@
             "images": [
               {
                 "label": "./assets/alfon/skillissue.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/skillissue.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/alfon/skillissue.svg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg",
                     "urlType": "github-blob"
                   }
                 ]
@@ -1623,11 +1623,11 @@
             "images": [
               {
                 "label": "./assets/alfon/lgtm.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/lgtm.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/lgtm.svg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/alfon/lgtm.svg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/lgtm.svg",
                     "urlType": "github-blob"
                   }
                 ]
@@ -1645,11 +1645,11 @@
             "images": [
               {
                 "label": "./assets/alfon/supabase.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/supabase.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/supabase.svg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/alfon/supabase.svg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/supabase.svg",
                     "urlType": "github-blob"
                   }
                 ]
@@ -1667,11 +1667,11 @@
             "images": [
               {
                 "label": "./assets/alfon/emailthing.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/emailthing.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/emailthing.svg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/alfon/emailthing.svg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/emailthing.svg",
                     "urlType": "github-blob"
                   }
                 ]
@@ -1689,11 +1689,11 @@
             "images": [
               {
                 "label": "./assets/alfon/sharkchat.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/alfon/sharkchat.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/sharkchat.svg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/alfon/sharkchat.svg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/sharkchat.svg",
                     "urlType": "github-blob"
                   }
                 ]
@@ -2084,7 +2084,7 @@
             "images": [
               {
                 "label": "./assets/skrillexsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/skrillexsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/skrillexsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -2092,7 +2092,7 @@
                     "urlType": "google-drive"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/skrillexsticker.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/skrillexsticker.png",
                     "urlType": "github-blob"
                   }
                 ],
@@ -2113,7 +2113,7 @@
             "images": [
               {
                 "label": "./assets/porterrobinsonsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/porterrobinsonsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/porterrobinsonsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -2121,7 +2121,7 @@
                     "urlType": "google-drive"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/porterrobinsonsticker.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/porterrobinsonsticker.png",
                     "urlType": "github-blob"
                   }
                 ],
@@ -2142,7 +2142,7 @@
             "images": [
               {
                 "label": "./assets/flsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/flsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/flsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -2150,7 +2150,7 @@
                     "urlType": "google-drive"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/flsticker.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/flsticker.png",
                     "urlType": "github-blob"
                   }
                 ],
@@ -2171,7 +2171,7 @@
             "images": [
               {
                 "label": "./assets/bitwigsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/bitwigsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/bitwigsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -2179,7 +2179,7 @@
                     "urlType": "google-drive"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/bitwigsticker.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/bitwigsticker.png",
                     "urlType": "github-blob"
                   }
                 ],
@@ -2200,7 +2200,7 @@
             "images": [
               {
                 "label": "./assets/abletonsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/abletonsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/abletonsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -2208,7 +2208,7 @@
                     "urlType": "google-drive"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/abletonsticker.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/abletonsticker.png",
                     "urlType": "github-blob"
                   }
                 ],
@@ -2229,11 +2229,11 @@
             "images": [
               {
                 "label": "./assets/logicsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/logicsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/logicsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/logicsticker.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/logicsticker.png",
                     "urlType": "github-blob"
                   }
                 ],
@@ -2726,7 +2726,7 @@
             "images": [
               {
                 "label": "./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -2734,7 +2734,7 @@
                     "urlType": "github-repo-text-content"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
                     "urlType": "github-blob"
                   }
                 ]
@@ -4734,7 +4734,7 @@
             "images": [
               {
                 "label": "./assets/GLlkf9EWwAAq3N9.jpeg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/GLlkf9EWwAAq3N9.jpeg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLlkf9EWwAAq3N9.jpeg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -4742,7 +4742,7 @@
                     "urlType": "twitter-post"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/GLlkf9EWwAAq3N9.jpeg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLlkf9EWwAAq3N9.jpeg",
                     "urlType": "github-blob"
                   }
                 ],
@@ -4763,7 +4763,7 @@
             "images": [
               {
                 "label": "./assets/GLmrDPdXgAAlKvW.jpeg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/GLmrDPdXgAAlKvW.jpeg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLmrDPdXgAAlKvW.jpeg",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -4771,7 +4771,7 @@
                     "urlType": "twitter-post"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/GLmrDPdXgAAlKvW.jpeg",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLmrDPdXgAAlKvW.jpeg",
                     "urlType": "github-blob"
                   }
                 ],
@@ -4899,7 +4899,7 @@
             "images": [
               {
                 "label": "./assets/capacitor.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/./assets/capacitor.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/capacitor.png",
                 "srcUrlType": "github-raw",
                 "references": [
                   {
@@ -4907,7 +4907,7 @@
                     "urlType": "bsky-post"
                   },
                   {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/./assets/capacitor.png",
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/capacitor.png",
                     "urlType": "github-blob"
                   }
                 ],
