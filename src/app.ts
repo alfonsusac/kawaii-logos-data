@@ -109,7 +109,8 @@ async function prepareOutput(outputData: KawaiiLogoData.Data) {
       '*',
       '!.gitignore',
       '!data.json',
-      '!README.md'
+      '!README.md',
+      '!types.ts',
     ),
     '/data.json': stringified,
     '/README.md': [
