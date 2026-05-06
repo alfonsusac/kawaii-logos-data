@@ -1,6 +1,8 @@
 {
-  "updatedAt": "2026-05-06T05:30:11.357Z",
+  "updatedAt": "2026-05-06T10:41:23.335Z",
   "data": {
+    "authorCount": 21,
+    "imageCount": 236,
     "authors": [
       {
         "id": "aikoyori",
@@ -48,6 +50,7 @@
             "id": "bun",
             "title": "Bun",
             "references": [],
+            "imageCount": 4,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -103,6 +106,7 @@
             "id": "docker",
             "title": "Docker",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -138,6 +142,7 @@
             "id": "elysiajs",
             "title": "ElysiaJS",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -173,6 +178,7 @@
             "id": "gamechanger",
             "title": "GameChanger",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -208,6 +214,7 @@
             "id": "godotengine",
             "title": "GodotEngine",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -243,6 +250,7 @@
             "id": "imhex",
             "title": "ImHex",
             "references": [],
+            "imageCount": 6,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -318,6 +326,7 @@
             "id": "intellijidea",
             "title": "IntelliJIDEA",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -353,6 +362,7 @@
             "id": "kubernetes",
             "title": "Kubernetes",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -388,6 +398,7 @@
             "id": "mirin-template-for-notitg",
             "title": "Mirin Template for NotITG",
             "references": [],
+            "imageCount": 6,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -463,6 +474,7 @@
             "id": "neovim",
             "title": "Neovim",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -498,6 +510,7 @@
             "id": "papermc",
             "title": "PaperMC",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -533,6 +546,7 @@
             "id": "vscode",
             "title": "VSCode",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -568,6 +582,7 @@
             "id": "osu",
             "title": "osu",
             "references": [],
+            "imageCount": 4,
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
@@ -646,6 +661,7 @@
             "id": "android-studio",
             "title": "Android Studio",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -667,6 +683,7 @@
             "id": "angular-logotype",
             "title": "Angular Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -688,6 +705,7 @@
             "id": "bootstrap-logotype",
             "title": "Bootstrap Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -709,6 +727,7 @@
             "id": "c++-logotype",
             "title": "C++ Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -730,6 +749,7 @@
             "id": "css-logotype",
             "title": "CSS Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -751,6 +771,7 @@
             "id": "cloudflare-logotype",
             "title": "Cloudflare Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -772,6 +793,7 @@
             "id": "django-logotype",
             "title": "Django Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -793,6 +815,7 @@
             "id": "flutter-logotype",
             "title": "Flutter Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -814,6 +837,7 @@
             "id": "github-logotype",
             "title": "Github Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -835,6 +859,7 @@
             "id": "gitlab-logotype",
             "title": "Gitlab Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -856,6 +881,7 @@
             "id": "golang",
             "title": "Golang",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -877,6 +903,7 @@
             "id": "html-logotype",
             "title": "HTML Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -898,6 +925,7 @@
             "id": "hono-logotype",
             "title": "Hono Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -919,6 +947,7 @@
             "id": "hugo",
             "title": "Hugo",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -940,6 +969,7 @@
             "id": "java",
             "title": "Java",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -961,6 +991,7 @@
             "id": "javascript-logotype",
             "title": "Javascript Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -982,6 +1013,7 @@
             "id": "laravel-logotype",
             "title": "Laravel Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1003,6 +1035,7 @@
             "id": "materializecss-logotype",
             "title": "Materializecss Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1024,6 +1057,7 @@
             "id": "npm-logotype",
             "title": "NPM Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1045,6 +1079,7 @@
             "id": "neovim-logotype",
             "title": "Neovim Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1066,6 +1101,7 @@
             "id": "netlify-logotype",
             "title": "Netlify Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1087,6 +1123,7 @@
             "id": "next-js-logotype",
             "title": "Next JS Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1108,6 +1145,7 @@
             "id": "node-js-logotype",
             "title": "Node JS Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1129,6 +1167,7 @@
             "id": "notepad++-logotype",
             "title": "Notepad++ Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1150,6 +1189,7 @@
             "id": "nuxt-js-logotype",
             "title": "Nuxt JS Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1171,6 +1211,7 @@
             "id": "php-logotype",
             "title": "PHP Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1192,6 +1233,7 @@
             "id": "prisma-logotype",
             "title": "Prisma Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1213,6 +1255,7 @@
             "id": "python-logotype",
             "title": "Python Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1234,6 +1277,7 @@
             "id": "react-js-logotype",
             "title": "React JS Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1255,6 +1299,7 @@
             "id": "remix-logotype",
             "title": "Remix Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1276,6 +1321,7 @@
             "id": "ruby-logotype",
             "title": "Ruby Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1297,6 +1343,7 @@
             "id": "sublime-text-logotype",
             "title": "Sublime Text Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1318,6 +1365,7 @@
             "id": "tailwindcss-logotype",
             "title": "Tailwindcss Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1339,6 +1387,7 @@
             "id": "vercel-logotype",
             "title": "Vercel Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1360,6 +1409,7 @@
             "id": "vim",
             "title": "Vim",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1381,6 +1431,7 @@
             "id": "vite",
             "title": "Vite",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1402,6 +1453,7 @@
             "id": "vscode-logotype",
             "title": "Vscode Logotype",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
@@ -1467,6 +1519,7 @@
             "id": "skillissue",
             "title": "Skill Issue",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1488,6 +1541,7 @@
             "id": "lgtm",
             "title": "LGTM",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1509,6 +1563,7 @@
             "id": "supabase",
             "title": "Supabase",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1530,6 +1585,7 @@
             "id": "emailthing",
             "title": "EmailThing",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1551,6 +1607,7 @@
             "id": "sharkchat",
             "title": "Sharkchat",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1604,6 +1661,7 @@
             "id": "json-formatter",
             "title": "JSON Formatter",
             "references": [],
+            "imageCount": 2,
             "license": {
               "type": "unknown"
             },
@@ -1677,6 +1735,7 @@
             "id": "elixir",
             "title": "Elixir",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
@@ -1702,6 +1761,7 @@
             "id": "gleam",
             "title": "Gleam",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
@@ -1762,6 +1822,7 @@
             "id": "jyo-gi",
             "title": "jyo-gi",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
@@ -1787,6 +1848,7 @@
             "id": "nuxtjs",
             "title": "nuxtjs",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
@@ -1812,6 +1874,7 @@
             "id": "react",
             "title": "react",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
@@ -1837,6 +1900,7 @@
             "id": "rubyonrails",
             "title": "rubyonrails",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
@@ -1872,6 +1936,7 @@
             "id": "svelte",
             "title": "svelte",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
@@ -1929,6 +1994,7 @@
             "id": "skrillex",
             "title": "Skrillex",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1956,6 +2022,7 @@
             "id": "porterrobinson",
             "title": "Porter Robinson",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -1983,6 +2050,7 @@
             "id": "flstudio",
             "title": "FL Studio",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2010,6 +2078,7 @@
             "id": "bitwigstudio",
             "title": "Bitwig Studio",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2037,6 +2106,7 @@
             "id": "abletonlive",
             "title": "Ableton Live",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2064,6 +2134,7 @@
             "id": "logicpro",
             "title": "Logic Pro",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2111,6 +2182,7 @@
             "id": "typst",
             "title": "Typst",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2164,6 +2236,7 @@
             "id": "fumadocs",
             "title": "Fumadocs",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2215,6 +2288,7 @@
             "id": "kate",
             "title": "kate",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/G2-Games/fun-logos/blob/main/LICENSE",
@@ -2282,6 +2356,7 @@
             "id": "xgboost",
             "title": "XGBoost",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "unknown"
             },
@@ -2357,6 +2432,7 @@
             "id": "visual-studio",
             "title": "Visual Studio",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2405,6 +2481,7 @@
             "id": "docker",
             "title": "Docker",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
@@ -2440,6 +2517,7 @@
             "id": "neovim",
             "title": "Neovim",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
@@ -2475,6 +2553,7 @@
             "id": "vscode",
             "title": "VSCode",
             "references": [],
+            "imageCount": 3,
             "license": {
               "reference": {
                 "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
@@ -2543,6 +2622,7 @@
             "id": "skyviewer",
             "title": "Skyviewer",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2603,6 +2683,7 @@
             "id": "svelte",
             "title": "Svelte",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/LICENSE",
@@ -2679,6 +2760,7 @@
             "id": "elysia",
             "title": "Elysia",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -2732,6 +2814,7 @@
             "id": "atprotocol",
             "title": "ATProtocol",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -2773,6 +2856,7 @@
             "id": "angular",
             "title": "Angular",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -2814,6 +2898,7 @@
             "id": "bluesky",
             "title": "Bluesky",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -2855,6 +2940,7 @@
             "id": "charcoal",
             "title": "Charcoal",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -2896,6 +2982,7 @@
             "id": "cloudflare",
             "title": "Cloudflare",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -2937,6 +3024,7 @@
             "id": "express",
             "title": "Express",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -2978,6 +3066,7 @@
             "id": "figma",
             "title": "Figma",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3019,6 +3108,7 @@
             "id": "github",
             "title": "GitHub",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3060,6 +3150,7 @@
             "id": "go-lang",
             "title": "Go Lang",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3101,6 +3192,7 @@
             "id": "haskell",
             "title": "Haskell",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3142,6 +3234,7 @@
             "id": "hono",
             "title": "Hono",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3183,6 +3276,7 @@
             "id": "iamdesigner!",
             "title": "IamDesigner!",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3224,6 +3318,7 @@
             "id": "iamdesigner!english",
             "title": "IamDesigner!English",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3265,6 +3360,7 @@
             "id": "iamprogrammer!",
             "title": "IamProgrammer!",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3306,6 +3402,7 @@
             "id": "iamprogrammerenglish",
             "title": "IamProgrammerEnglish",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3347,6 +3444,7 @@
             "id": "intellij-idea",
             "title": "IntelliJ IDEA",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3388,6 +3486,7 @@
             "id": "kotlin",
             "title": "Kotlin",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3429,6 +3528,7 @@
             "id": "laravel",
             "title": "Laravel",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3470,6 +3570,7 @@
             "id": "misskey.io",
             "title": "MIsskey.io",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3511,6 +3612,7 @@
             "id": "misskey",
             "title": "Misskey",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3552,6 +3654,7 @@
             "id": "next.js",
             "title": "Next.js",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3593,6 +3696,7 @@
             "id": "node.js",
             "title": "Node.js",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3634,6 +3738,7 @@
             "id": "react",
             "title": "React",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3675,6 +3780,7 @@
             "id": "replit",
             "title": "Replit",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3716,6 +3822,7 @@
             "id": "403-forbidden",
             "title": "403 Forbidden",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3757,6 +3864,7 @@
             "id": "404-notfound",
             "title": "404 NotFound",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3798,6 +3906,7 @@
             "id": "418-i-m-a-teapot",
             "title": "418 I'm a teapot",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3839,6 +3948,7 @@
             "id": "500-internalservererror",
             "title": "500 InternalServerError",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3880,6 +3990,7 @@
             "id": "503-serviceunavailable",
             "title": "503 ServiceUnavailable",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3921,6 +4032,7 @@
             "id": "rust",
             "title": "Rust",
             "references": [],
+            "imageCount": 6,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -3992,6 +4104,7 @@
             "id": "typescript",
             "title": "TypeScript",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -4033,6 +4146,7 @@
             "id": "tailwind-css",
             "title": "tailwind css",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -4074,6 +4188,7 @@
             "id": "ゆっくりmoviemaker4",
             "title": "ゆっくりMovieMaker4",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -4115,6 +4230,7 @@
             "id": "確定申告",
             "title": "確定申告",
             "references": [],
+            "imageCount": 3,
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
@@ -4179,6 +4295,7 @@
             "id": "google-chrome",
             "title": "Google Chrome",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
@@ -4204,6 +4321,7 @@
             "id": "keep-notes",
             "title": "Keep Notes",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
@@ -4229,6 +4347,7 @@
             "id": "linux-mint",
             "title": "Linux Mint",
             "references": [],
+            "imageCount": 3,
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
@@ -4274,6 +4393,7 @@
             "id": "obsidian",
             "title": "Obsidian",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
@@ -4299,6 +4419,7 @@
             "id": "pytorch",
             "title": "Pytorch",
             "references": [],
+            "imageCount": 1,
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
@@ -4324,6 +4445,7 @@
             "id": "springboot",
             "title": "SpringBoot",
             "references": [],
+            "imageCount": 2,
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
@@ -4391,6 +4513,7 @@
             "id": "svelte",
             "title": "svelte",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -4418,6 +4541,7 @@
             "id": "sveltekit",
             "title": "sveltekit",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -4477,11 +4601,13 @@
             "id": "surrealdb",
             "title": "surrealdb",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
             "images": [
               {
+                "label": "68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
                 "src": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
                 "srcUrlType": "github-camo",
                 "references": [
@@ -4499,11 +4625,13 @@
             "id": "vyper",
             "title": "vyper",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
             "images": [
               {
+                "label": "68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
                 "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
                 "srcUrlType": "github-camo",
                 "references": [
@@ -4521,11 +4649,13 @@
             "id": "avalanche",
             "title": "avalanche",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
             "images": [
               {
+                "label": "68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
                 "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
                 "srcUrlType": "github-camo",
                 "references": [
@@ -4543,6 +4673,7 @@
             "id": "capacitor",
             "title": "capacitor",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
@@ -4593,6 +4724,7 @@
             "id": "imphnen",
             "title": "imphnen.png",
             "references": [],
+            "imageCount": 1,
             "license": {
               "type": "unknown"
             },
