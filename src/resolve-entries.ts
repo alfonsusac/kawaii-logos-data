@@ -2,9 +2,10 @@ import type { Site } from "./lib/site"
 import { type DateDef } from "./lib/date"
 import type { AuthorOutput, Reference } from "./output"
 import { normalizeReferencesDef, resolveReference, type ReferencesDef } from "./resolve/references"
-import { logerror, warn } from "./pipeline"
+import { log, logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve/license"
+import { getUrlType } from "./resolve-url"
 
 // ## Definitions
 
@@ -91,13 +92,13 @@ export async function resolveEntries(
 
       // Resolve image source + label + reference (if any) based on its type
       const temp = {
-        src: null as null | string,
+        src: null as null | Site,
         label: imgDef.label,
       }
 
       if (imgDef.src.type === "github-blob") {
-        const raw = imgDef.src.type.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/") as Site
-        references.push({ site: imgDef.src.url })
+        const raw = imgDef.src.url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/") as Site
+        references.push({ url: imgDef.src.url, urlType: "github-blob" })
         temp.src = raw
         temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
       }
@@ -106,15 +107,15 @@ export async function resolveEntries(
         // Before  -> https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png
         // After   -> https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3#file-typst-logo-png
         const raw = imgDef.src.url.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
-        console.log(raw)
-        references.push({ site: imgDef.src.url })
+        references.push({ url: imgDef.src.url, urlType: "gist-page" })
         temp.src = raw
         temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
       }
 
       if (imgDef.src.type === "self-hosted") {
-        const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ imgDef.src.filepath }`
-        references.push({ site: url })
+        const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ imgDef.src.filepath }` as const
+        const blobUrl = url.replace("raw.githubusercontent.com", "github.com").replace("/main/", "/blob/main/") as Site
+        references.push({ url: blobUrl, urlType: "github-blob" })
         temp.src = url
         temp.label ??= imgDef.src.filepath // Default label to filename if not provided`
       }
@@ -136,6 +137,7 @@ export async function resolveEntries(
       images.push({
         label: temp.label,
         src: temp.src,
+        srcUrlType: getUrlType(temp.src),
         references,
         style: imgDef.style,
       })

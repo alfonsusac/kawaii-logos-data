@@ -2,7 +2,6 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const hcho3: AuthorDefinition = {
   displayName: "hcho3",
-  pfp: "https://avatars.githubusercontent.com/hcho3",
   socials: {
     github: "hcho3",
     x: "hcho3_ml",

@@ -1,4 +1,4 @@
-export type Output = {
+export type KawaiiLogoData = {
   updatedAt: string,
   data: {
     authors: AuthorOutput[],
@@ -6,8 +6,8 @@ export type Output = {
   }
 }
 
-export namespace Output {
-  export type Data = Output[ 'data' ]
+export namespace KawaiiLogoData {
+  export type Data = KawaiiLogoData[ 'data' ]
 }
 
 
@@ -53,8 +53,8 @@ export type AuthorOutput = {
     title: string,
     images: {
       src: string,                  // for <img> source
+      srcUrlType: UrlType,
       references: Reference[],        // where the image was found, for linking back to the source
-      // pageUrl: string,             // where the image was found, for linking back to the source
       label?: string,
       style?: {
         objectFit?: "cover" | "contain"
@@ -72,11 +72,23 @@ export type AuthorOutput = {
 
 
 
-
+export type UrlType =
+  | "github-repo-text-content"
+  | "github-blob"
+  | "github-raw"
+  | "github-camo"
+  | "github-unknown"
+  | "gist-raw"
+  | "gist-page"
+  | "google-drive"
+  | "twitter-post"
+  | "bsky-post"
+  | "unknown"
 
 
 export type Reference = {
-  site: string,
+  url: string
+  urlType: UrlType,
   dateAccessed?: string,
 }
 

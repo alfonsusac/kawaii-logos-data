@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { AuthorOutput, Output } from "./output"
+import type { AuthorOutput, KawaiiLogoData } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 import { standardLicenses } from "./resolve/license"
@@ -7,7 +7,7 @@ import { standardLicenses } from "./resolve/license"
 
 export async function resolveDefinitions(
   defs: Record<string, AuthorDefinition>
-): Promise<Output[ 'data' ]> {
+): Promise<KawaiiLogoData[ 'data' ]> {
 
   const authorResults = await Promise.all(Object
     .entries(defs)
@@ -21,7 +21,7 @@ export async function resolveDefinitions(
   const authorArray = authorResults.map(result => result.result)
 
 
-  const output: Output[ 'data' ] = {
+  const output: KawaiiLogoData[ 'data' ] = {
     authors: authorArray,
     standardLicenses: standardLicenses,
   }

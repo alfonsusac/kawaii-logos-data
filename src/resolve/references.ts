@@ -1,14 +1,9 @@
 import type { Site } from "../lib/site"
 import type { DateDef } from "../lib/date"
-
-// WIP
-
+import type { Reference } from "../output"
+import { getUrlType } from "../resolve-url"
 
 export type ReferenceDef = Site | {
-  site: Site,
-  dateAccessed?: DateDef,
-}
-export type Reference = {
   site: Site,
   dateAccessed?: DateDef,
 }
@@ -24,6 +19,14 @@ export function normalizeReferencesDef(references: ReferencesDef): References {
 }
 
 export function resolveReference(def: ReferenceDef | undefined): Reference | undefined {
-  if (typeof def === "string") return { site: def }
-  return def
+  if (!def) return undefined
+  if (typeof def === "string") return {
+    url: def,
+    urlType: getUrlType(def),
+  }
+  return {
+    url: def.site,
+    urlType: getUrlType(def.site),
+    dateAccessed: def.dateAccessed,
+  }
 }

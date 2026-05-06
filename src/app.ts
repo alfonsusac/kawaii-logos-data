@@ -29,7 +29,7 @@ import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./revalidate"
-import type { Output } from "./output"
+import type { KawaiiLogoData } from "./output"
 
 
 runApp(async () => {
@@ -94,8 +94,8 @@ runApp(async () => {
 // --------------------------------------------------------------------------------
 
 
-async function prepareOutput(outputData: Output.Data) {
-  const output: Output = {
+async function prepareOutput(outputData: KawaiiLogoData.Data) {
+  const output: KawaiiLogoData = {
     updatedAt: new Date().toISOString(),
     data: outputData
   }
