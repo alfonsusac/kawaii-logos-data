@@ -114,8 +114,8 @@ export async function resolveEntries(
       }
 
       if (imgDef.src.type === "self-hosted") {
-        const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/${ imgDef.src.filepath }` as const
-        const blobUrl = url.replace("raw.githubusercontent.com", "github.com").replace("/main/", "/blob/main/") as Site
+        const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/${ imgDef.src.filepath.replace('./assets/', '') }` as const
+        const blobUrl = url.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/") as Site
         references.push({ url: blobUrl, urlType: "github-blob" })
         temp.src = url
         temp.label ??= imgDef.src.filepath // Default label to filename if not provided`
