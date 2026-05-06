@@ -10,6 +10,7 @@ import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
 import { stepSimple } from "./pipeline"
 import { resolveReferencesDef } from "./resolve/references"
+import { dedupeByProp } from "./lib/dedupe-by-prop"
 
 export type AuthorDefinition = {
   displayName?: string,
@@ -45,8 +46,8 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     () => resolvePfp(author, links.socials)
   )
 
-  // Collect licenses from entries and root license if exists
-  const licenses = entries.flatMap(e => e.license ? [ e.license ] : [])
+  // Collect licenses from entries and root license if exists and dedupe by label
+  const licenses = dedupeByProp(entries.flatMap(e => e.license ? [ e.license ] : []))('label')
 
   const references = resolveReferencesDef(scrapedReference)
 
