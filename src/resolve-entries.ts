@@ -105,10 +105,11 @@ export async function resolveEntries(
       }
 
       if (imgDef.src.type === "gist-raw") {
+        const raw = imgDef.src.url
         // Before  -> https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png
         // After   -> https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3#file-typst-logo-png
-        const raw = imgDef.src.url.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
-        references.push({ url: imgDef.src.url, urlType: "gist-page" })
+        const pageUrl = imgDef.src.url.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
+        references.push({ url: pageUrl, urlType: "gist-page" })
         temp.src = raw
         temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
       }
