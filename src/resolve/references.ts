@@ -8,14 +8,22 @@ export type ReferenceDef = Site | {
   dateAccessed?: DateDef,
 }
 
-export type ReferencesDef = [ ReferenceDef, ...(ReferenceDef & any[]) ] | ReferenceDef
-export type References = Reference[]
+export type ReferencesDef = NonEmptyArray<ReferenceDef> | ReferenceDef
+type NonEmptyArray<T> = [ T, ...T[] ]
 
 // Helper
-export function normalizeReferencesDef(references: ReferencesDef): References {
+export function normalizeReferencesDef(references: ReferencesDef): Reference[] {
   if (!references) return []
   if (!Array.isArray(references)) references = [ references ]
-  return references.map(ref => typeof ref === "string" ? { site: ref } : ref)
+
+  return references.map(ref => typeof ref === "string" ? {
+    url: ref,
+    urlType: getUrlType(ref),
+  } : {
+    url: ref.site,
+    urlType: getUrlType(ref.site),
+    dateAccessed: ref.dateAccessed,
+  })
 }
 
 export function resolveReference(def: ReferenceDef | undefined): Reference | undefined {
