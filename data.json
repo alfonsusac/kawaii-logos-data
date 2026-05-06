@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-06T16:25:53.262Z",
+  "updatedAt": "2026-05-06T16:39:16.239Z",
   "data": {
     "authorCount": 21,
-    "imageCount": 242,
+    "imageCount": 243,
     "authors": [
       {
         "id": "aikoyori",
@@ -2424,19 +2424,30 @@
             "id": "typst",
             "title": "Typst",
             "references": [],
-            "imageCount": 1,
+            "imageCount": 2,
             "license": {
               "type": "unknown",
               "label": "Unknown"
             },
             "images": [
               {
-                "label": "Typst Logo",
-                "src": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/2d5079562396d43e615cf0ffe81da60438b184c9#file-typst-logo.png",
-                "srcUrlType": "gist-page",
+                "label": "typst-logo.png",
+                "src": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png",
+                "srcUrlType": "gist-raw",
                 "references": [
                   {
-                    "url": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png",
+                    "url": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/2d5079562396d43e615cf0ffe81da60438b184c9#file-typst-logo.png",
+                    "urlType": "gist-page"
+                  }
+                ]
+              },
+              {
+                "label": "typst-logo.svg",
+                "src": "https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.svg",
+                "srcUrlType": "gist-raw",
+                "references": [
+                  {
+                    "url": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/2d5079562396d43e615cf0ffe81da60438b184c9#file-typst-logo.svg",
                     "urlType": "gist-page"
                   }
                 ]
