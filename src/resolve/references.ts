@@ -12,7 +12,7 @@ export type ReferencesDef = NonEmptyArray<ReferenceDef> | ReferenceDef
 type NonEmptyArray<T> = [ T, ...T[] ]
 
 // Helper
-export function normalizeReferencesDef(references: ReferencesDef): Reference[] {
+export function resolveReferencesDef(references: ReferencesDef | undefined): Reference[] {
   if (!references) return []
   if (!Array.isArray(references)) references = [ references ]
 
@@ -26,15 +26,15 @@ export function normalizeReferencesDef(references: ReferencesDef): Reference[] {
   })
 }
 
-export function resolveReference(def: ReferenceDef | undefined): Reference | undefined {
-  if (!def) return undefined
-  if (typeof def === "string") return {
-    url: def,
-    urlType: getUrlType(def),
-  }
-  return {
-    url: def.site,
-    urlType: getUrlType(def.site),
-    dateAccessed: def.dateAccessed,
-  }
-}
+// export function resolveReference(def: ReferenceDef | undefined): Reference | undefined {
+//   if (!def) return undefined
+//   if (typeof def === "string") return {
+//     url: def,
+//     urlType: getUrlType(def),
+//   }
+//   return {
+//     url: def.site,
+//     urlType: getUrlType(def.site),
+//     dateAccessed: def.dateAccessed,
+//   }
+// }

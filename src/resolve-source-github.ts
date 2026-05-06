@@ -25,7 +25,7 @@ export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceR
       "Resolving Github Profile",
       () => resolveGithubProfileSocialList(owner)
     ),
-    references: [ site(`github.com/${ def.repo }`) ]
+    scrapedReferenceUrl: site(`github.com/${ def.repo }`)
   }
 }
 

@@ -9,6 +9,7 @@ import type { AuthorOutput } from "./output"
 import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
 import { stepSimple } from "./pipeline"
+import { resolveReferencesDef } from "./resolve/references"
 
 export type AuthorDefinition = {
   displayName?: string,
@@ -24,7 +25,7 @@ export type AuthorDefinition = {
 export async function resolveAuthorDefinition(author: AuthorDefinition, id: string) {
   const displayName = author.displayName ?? id
 
-  const { scrapedEntries, scrapedSocials } = await stepSimple(
+  const { scrapedEntries, scrapedSocials, scrapedReference } = await stepSimple(
     "Converting source to definitions",
     () => resolveSourceDefinition(author.source)
   )
@@ -44,6 +45,11 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     () => resolvePfp(author, links.socials)
   )
 
+  // Collect licenses from entries and root license if exists
+  const licenses = entries.flatMap(e => e.license ? [ e.license ] : [])
+
+  const references = resolveReferencesDef(scrapedReference)
+
   // Compile resolved data into final Author object
   const resolved: AuthorOutput = {
     id: slugify(id),
@@ -51,9 +57,9 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     pfp,
     social,
     links,
-    entries: [
-      ...entries,
-    ],
+    entries,
+    licenses,
+    references,
   }
 
   // Validating Resolved

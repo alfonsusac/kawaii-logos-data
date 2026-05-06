@@ -1,6 +1,6 @@
 import type { License, StandardLicenseOut, StandardLicenseType } from "../output"
 import { log, logerror } from "../pipeline"
-import { resolveReference, type ReferenceDef } from "./references"
+import { resolveReferencesDef, type ReferenceDef } from "./references"
 
 export type LicenseDef = {
   reference?: ReferenceDef,
@@ -106,11 +106,9 @@ export const standardLicenses: StandardLicenseOut = {
 }
 
 export function resolveLicenseDefinitions(license: LicenseDef | undefined): License {
-  if (!license) return {
-    type: "unknown",
-  }
+  if (!license) return { type: "unknown" }
 
-  const reference = resolveReference(license.reference)
+  const reference = resolveReferencesDef(license.reference)[ 0 ]
 
   if (license.type === "unknown") {
     return { reference, type: "unknown", }

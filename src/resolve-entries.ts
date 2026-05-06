@@ -1,7 +1,7 @@
 import type { Site } from "./lib/site"
 import { type DateDef } from "./lib/date"
 import type { AuthorOutput, Reference } from "./output"
-import { normalizeReferencesDef, resolveReference, type ReferencesDef } from "./resolve/references"
+import { resolveReferencesDef, type ReferencesDef } from "./resolve/references"
 import { log, logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve/license"
@@ -89,7 +89,7 @@ export async function resolveEntries(
       // Initialize references array for this image
       const references: Reference[] = []
       // Add references from the image definition, if any
-      references.push(...(imgDef.reference ? normalizeReferencesDef(imgDef.reference) : []))
+      references.push(...(imgDef.reference ? resolveReferencesDef(imgDef.reference) : []))
 
       // Resolve image source + label + reference (if any) based on its type
       const temp = {
@@ -118,7 +118,6 @@ export async function resolveEntries(
         const blobUrl = url.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/") as Site
         references.push({ url: blobUrl, urlType: "github-blob" })
         temp.src = url
-        temp.label ??= imgDef.src.filepath // Default label to filename if not provided`
       }
 
       if (imgDef.src.type === "resolved") {
@@ -150,7 +149,7 @@ export async function resolveEntries(
     entries.push({
       id,
       title: entryDef.label,
-      references: [],
+      references: [], // no top level references for entries, only image level references for now.
       imageCount: images.length,
       license,
       images,

@@ -59,12 +59,13 @@ export type SourceResult = {
   rootLicense?: LicenseDef,
 
   // Source Reference
-  references?: ReferenceDef[],
+  scrapedReferenceUrl?: Site,
 }
 
 type ResolveSourceResult = {
   scrapedEntries: EntriesDefinition,
   scrapedSocials: SocialListDef,
+  scrapedReference: ReferenceDef | undefined,
 }
 
 
@@ -84,7 +85,7 @@ export async function resolveSourceDefinition(
 
   const scrapedSocials: SocialListDef = []
 
-  if (!def) return { scrapedEntries: {}, scrapedSocials }
+  if (!def) return { scrapedEntries: {}, scrapedSocials, scrapedReference: undefined }
 
   // Get list of files (and other metadatas attached to them)
   const sourceResult = await (async () => {
@@ -113,7 +114,8 @@ export async function resolveSourceDefinition(
 
   return {
     scrapedEntries,
-    scrapedSocials
+    scrapedSocials,
+    scrapedReference: sourceResult.scrapedReferenceUrl ? { site: sourceResult.scrapedReferenceUrl } : undefined,
   }
 
 }
