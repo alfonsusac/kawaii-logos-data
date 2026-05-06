@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-06T16:15:19.252Z",
+  "updatedAt": "2026-05-06T16:19:43.985Z",
   "data": {
     "authorCount": 21,
-    "imageCount": 236,
+    "imageCount": 242,
     "authors": [
       {
         "id": "aikoyori",
@@ -4713,6 +4713,85 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/webp/ゆっくりMovieMaker4.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "技術者倫理",
+            "title": "技術者倫理",
+            "references": [],
+            "imageCount": 6,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom"
+            },
+            "images": [
+              {
+                "label": "技術者倫理.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/技術者倫理/type1/jpg/技術者倫理.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type1/jpg/技術者倫理.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "技術者倫理.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/技術者倫理/type1/png/技術者倫理.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type1/png/技術者倫理.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "技術者倫理.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/技術者倫理/type1/webp/技術者倫理.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type1/webp/技術者倫理.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "技術者倫理.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/技術者倫理/type2/jpg/技術者倫理.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type2/jpg/技術者倫理.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "技術者倫理.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/技術者倫理/type2/png/技術者倫理.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type2/png/技術者倫理.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "技術者倫理.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/技術者倫理/type2/webp/技術者倫理.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type2/webp/技術者倫理.webp",
                     "urlType": "github-blob"
                   }
                 ]
