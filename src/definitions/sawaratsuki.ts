@@ -10,6 +10,8 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "replace", from: "/webp", to: "" },
       { type: "replace", from: "ResponseCode/", to: "" },
       { type: "replace", from: "IamSeries/", to: "" },
+      { type: "replace", from: "type1/技術者倫理", to: "技術者倫理-type1" },
+      { type: "replace", from: "type2/技術者倫理", to: "技術者倫理-type2" },
       // { type: "replace", from: "IamDesigner", to: "IamDesigner/IamDesigner" },
       // { type: "replace", from: "IamProgrammer", to: "IamProgrammer/IamProgrammer" },
     ],
