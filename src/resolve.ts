@@ -20,8 +20,16 @@ export async function resolveDefinitions(
   logResults(authorResults)
   const authorArray = authorResults.map(result => result.result)
 
+  const authorCount = authorArray.length
+  const imageCount = authorArray.reduce((sum, a) => {
+    return sum + a.entries.reduce((entrySum, entry) => {
+      return entrySum + entry.images.length
+    }, 0)
+  }, 0)
+
 
   const output: KawaiiLogoData[ 'data' ] = {
+    authorCount, imageCount,
     authors: authorArray,
     standardLicenses: standardLicenses,
   }

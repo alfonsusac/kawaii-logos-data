@@ -1,4 +1,5 @@
 import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRawFile, fetchGithubRepoFiles, returnUndefinedIfError } from "./lib/api/github"
+import { site } from "./lib/site"
 import { log, logerror, stepSimple } from "./pipeline"
 import type { ScrapedResultFiles, SourceDef, SourceResult } from "./resolve-source"
 import { resolveToLicenseTypeByContent, type LicenseDef } from "./resolve/license"
@@ -24,6 +25,7 @@ export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceR
       "Resolving Github Profile",
       () => resolveGithubProfileSocialList(owner)
     ),
+    references: [ site(`github.com/${ def.repo }`) ]
   }
 }
 

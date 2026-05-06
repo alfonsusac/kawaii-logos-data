@@ -1,6 +1,8 @@
 export type KawaiiLogoData = {
   updatedAt: string,
   data: {
+    authorCount: number,
+    imageCount: number,
     authors: AuthorOutput[],
     standardLicenses: StandardLicenseOut,
   }
@@ -51,11 +53,12 @@ export type AuthorOutput = {
   entries: {
     id: string,
     title: string,
+    imageCount: number,
     images: {
       src: string,                  // for <img> source
       srcUrlType: UrlType,
       references: Reference[],        // where the image was found, for linking back to the source
-      label?: string,
+      label: string,
       style?: {
         objectFit?: "cover" | "contain"
       }

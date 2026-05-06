@@ -6,6 +6,7 @@ import { log, logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve/license"
 import { getUrlType } from "./resolve-url"
+import { getFilenameFromUrl } from "./lib/get-filename-from-url"
 
 // ## Definitions
 
@@ -135,7 +136,7 @@ export async function resolveEntries(
       }
 
       images.push({
-        label: temp.label,
+        label: temp.label ?? getFilenameFromUrl(temp.src),
         src: temp.src,
         srcUrlType: getUrlType(temp.src),
         references,
@@ -150,6 +151,7 @@ export async function resolveEntries(
       id,
       title: entryDef.label,
       references: [],
+      imageCount: images.length,
       license,
       images,
     })
