@@ -66,6 +66,8 @@ export type AuthorOutput = {
     references: Reference[],
     license: License
   }[],
+  licenses: License[],
+  references: Reference[],
 }
 
 

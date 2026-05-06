@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06T11:24:24.086Z",
+  "updatedAt": "2026-05-06T13:16:04.269Z",
   "data": {
     "authorCount": 21,
     "imageCount": 236,
@@ -671,6 +671,118 @@
                 ]
               }
             ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos",
+            "urlType": "github-unknown"
           }
         ]
       },
@@ -1546,6 +1658,162 @@
               }
             ]
           }
+        ],
+        "licenses": [
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/andregans/code_logotype",
+            "urlType": "github-unknown"
+          }
         ]
       },
       {
@@ -1600,7 +1868,7 @@
             },
             "images": [
               {
-                "label": "./assets/alfon/skillissue.svg",
+                "label": "skillissue.svg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1622,7 +1890,7 @@
             },
             "images": [
               {
-                "label": "./assets/alfon/lgtm.svg",
+                "label": "lgtm.svg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/lgtm.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1644,7 +1912,7 @@
             },
             "images": [
               {
-                "label": "./assets/alfon/supabase.svg",
+                "label": "supabase.svg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/supabase.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1666,7 +1934,7 @@
             },
             "images": [
               {
-                "label": "./assets/alfon/emailthing.svg",
+                "label": "emailthing.svg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/emailthing.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1688,7 +1956,7 @@
             },
             "images": [
               {
-                "label": "./assets/alfon/sharkchat.svg",
+                "label": "sharkchat.svg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/sharkchat.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1700,7 +1968,25 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "arnav",
@@ -1765,7 +2051,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "cocoa_xu",
@@ -1859,6 +2151,30 @@
                 ]
               }
             ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM",
+            "urlType": "github-unknown"
           }
         ]
       },
@@ -2041,6 +2357,54 @@
               }
             ]
           }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "MIT"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "MIT"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "MIT"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "MIT"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "MIT"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/Crysta1221/tech_logos",
+            "urlType": "github-unknown"
+          }
         ]
       },
       {
@@ -2083,7 +2447,7 @@
             },
             "images": [
               {
-                "label": "./assets/skrillexsticker.png",
+                "label": "skrillexsticker.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/skrillexsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2112,7 +2476,7 @@
             },
             "images": [
               {
-                "label": "./assets/porterrobinsonsticker.png",
+                "label": "porterrobinsonsticker.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/porterrobinsonsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2141,7 +2505,7 @@
             },
             "images": [
               {
-                "label": "./assets/flsticker.png",
+                "label": "flsticker.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/flsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2170,7 +2534,7 @@
             },
             "images": [
               {
-                "label": "./assets/bitwigsticker.png",
+                "label": "bitwigsticker.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/bitwigsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2199,7 +2563,7 @@
             },
             "images": [
               {
-                "label": "./assets/abletonsticker.png",
+                "label": "abletonsticker.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/abletonsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2228,7 +2592,7 @@
             },
             "images": [
               {
-                "label": "./assets/logicsticker.png",
+                "label": "logicsticker.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/logicsticker.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2243,7 +2607,28 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "fenjalien",
@@ -2288,7 +2673,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "fumanama",
@@ -2342,7 +2733,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "g2_games",
@@ -2409,6 +2806,22 @@
                 ]
               }
             ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/G2-Games/fun-logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/G2-Games/fun-logos",
+            "urlType": "github-unknown"
           }
         ]
       },
@@ -2486,7 +2899,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "hvpexe",
@@ -2540,7 +2959,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "ldmdiamondl",
@@ -2692,6 +3117,38 @@
               }
             ]
           }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR",
+            "urlType": "github-unknown"
+          }
         ]
       },
       {
@@ -2725,7 +3182,7 @@
             },
             "images": [
               {
-                "label": "./assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
+                "label": "417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2741,7 +3198,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "mkpoli",
@@ -2815,6 +3278,22 @@
               }
             ]
           }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/LICENSE",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC0-1.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/mkpoli/VTuber-Styled-Logos",
+            "urlType": "github-unknown"
+          }
         ]
       },
       {
@@ -2878,7 +3357,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "sawaratsuki",
@@ -4473,6 +4958,150 @@
               }
             ]
           }
+        ],
+        "licenses": [
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          },
+          {
+            "type": "custom",
+            "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/SAWARATSUKI/KawaiiLogos",
+            "urlType": "github-unknown"
+          }
         ]
       },
       {
@@ -4691,6 +5320,62 @@
               }
             ]
           }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          },
+          {
+            "reference": {
+              "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
+              "urlType": "github-blob"
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/syke9p3/Syke-VTuber-Icons",
+            "urlType": "github-unknown"
+          }
         ]
       },
       {
@@ -4733,7 +5418,7 @@
             },
             "images": [
               {
-                "label": "./assets/GLlkf9EWwAAq3N9.jpeg",
+                "label": "GLlkf9EWwAAq3N9.jpeg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLlkf9EWwAAq3N9.jpeg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4762,7 +5447,7 @@
             },
             "images": [
               {
-                "label": "./assets/GLmrDPdXgAAlKvW.jpeg",
+                "label": "GLmrDPdXgAAlKvW.jpeg",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLmrDPdXgAAlKvW.jpeg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4781,7 +5466,16 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "thatonecalculator",
@@ -4898,7 +5592,7 @@
             },
             "images": [
               {
-                "label": "./assets/capacitor.png",
+                "label": "capacitor.png",
                 "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/capacitor.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4917,7 +5611,22 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          },
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       },
       {
         "id": "urielchan",
@@ -4965,7 +5674,13 @@
               }
             ]
           }
-        ]
+        ],
+        "licenses": [
+          {
+            "type": "unknown"
+          }
+        ],
+        "references": []
       }
     ],
     "standardLicenses": {
