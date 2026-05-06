@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06T10:53:57.980Z",
+  "updatedAt": "2026-05-06T11:18:21.566Z",
   "data": {
     "authorCount": 21,
     "imageCount": 236,
@@ -61,7 +61,7 @@
             },
             "images": [
               {
-                "label": "BunLogo",
+                "label": "BunLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -72,7 +72,7 @@
                 ]
               },
               {
-                "label": "BunLogoOld",
+                "label": "BunLogoOld.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoOld.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -83,7 +83,7 @@
                 ]
               },
               {
-                "label": "BunLogoShadowed",
+                "label": "BunLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -94,7 +94,7 @@
                 ]
               },
               {
-                "label": "BunLogoShadowedOld",
+                "label": "BunLogoShadowedOld.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Bun/BunLogoShadowedOld.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -121,7 +121,7 @@
             },
             "images": [
               {
-                "label": "DockerLogo",
+                "label": "DockerLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -132,7 +132,7 @@
                 ]
               },
               {
-                "label": "DockerLogoShadowed",
+                "label": "DockerLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Docker/DockerLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -159,7 +159,7 @@
             },
             "images": [
               {
-                "label": "ElysiaJSLogo",
+                "label": "ElysiaJSLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ElysiaJS/ElysiaJSLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -170,7 +170,7 @@
                 ]
               },
               {
-                "label": "ElysiaJSLogoShadowed",
+                "label": "ElysiaJSLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ElysiaJS/ElysiaJSLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -197,7 +197,7 @@
             },
             "images": [
               {
-                "label": "GameChangerLogo",
+                "label": "GameChangerLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GameChanger/GameChangerLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -208,7 +208,7 @@
                 ]
               },
               {
-                "label": "GameChangerLogoShadowed",
+                "label": "GameChangerLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GameChanger/GameChangerLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -235,7 +235,7 @@
             },
             "images": [
               {
-                "label": "GodotLogo",
+                "label": "GodotLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GodotEngine/GodotLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -246,7 +246,7 @@
                 ]
               },
               {
-                "label": "GodotLogoShadow",
+                "label": "GodotLogoShadow.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/GodotEngine/GodotLogoShadow.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -273,7 +273,7 @@
             },
             "images": [
               {
-                "label": "ImHexLogoSVGBG",
+                "label": "ImHexLogoSVGBG.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBG.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -284,7 +284,7 @@
                 ]
               },
               {
-                "label": "ImHexLogoSVGBG",
+                "label": "ImHexLogoSVGBG.svg",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBG.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -295,7 +295,7 @@
                 ]
               },
               {
-                "label": "ImHexLogoSVGBGShadows",
+                "label": "ImHexLogoSVGBGShadows.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBGShadows.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -306,7 +306,7 @@
                 ]
               },
               {
-                "label": "ImHexLogoSVGBGShadows",
+                "label": "ImHexLogoSVGBGShadows.svg",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGBGShadows.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -317,7 +317,7 @@
                 ]
               },
               {
-                "label": "ImHexLogoSVGFilled",
+                "label": "ImHexLogoSVGFilled.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGFilled.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -328,7 +328,7 @@
                 ]
               },
               {
-                "label": "ImHexLogoSVGFilled",
+                "label": "ImHexLogoSVGFilled.svg",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/ImHex/ImHexLogoSVGFilled.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -355,7 +355,7 @@
             },
             "images": [
               {
-                "label": "IntellijLogo",
+                "label": "IntellijLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/IntellijLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -366,7 +366,7 @@
                 ]
               },
               {
-                "label": "intelliJShadow",
+                "label": "intelliJShadow.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/IntelliJIDEA/intelliJShadow.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -393,7 +393,7 @@
             },
             "images": [
               {
-                "label": "kubernetesLogo",
+                "label": "kubernetesLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Kubernetes/kubernetesLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -404,7 +404,7 @@
                 ]
               },
               {
-                "label": "kubernetesLogoShadow",
+                "label": "kubernetesLogoShadow.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Kubernetes/kubernetesLogoShadow.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -431,7 +431,7 @@
             },
             "images": [
               {
-                "label": "MirinTemplateLogoFilled",
+                "label": "MirinTemplateLogoFilled.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -442,7 +442,7 @@
                 ]
               },
               {
-                "label": "MirinTemplateLogoFilled",
+                "label": "MirinTemplateLogoFilled.svg",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -453,7 +453,7 @@
                 ]
               },
               {
-                "label": "MirinTemplateLogoFlattened",
+                "label": "MirinTemplateLogoFlattened.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -464,7 +464,7 @@
                 ]
               },
               {
-                "label": "MirinTemplateLogoFlattened",
+                "label": "MirinTemplateLogoFlattened.svg",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -475,7 +475,7 @@
                 ]
               },
               {
-                "label": "MirinTemplateLogoShadowed",
+                "label": "MirinTemplateLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -486,7 +486,7 @@
                 ]
               },
               {
-                "label": "MirinTemplateLogoShadowed",
+                "label": "MirinTemplateLogoShadowed.svg",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -513,7 +513,7 @@
             },
             "images": [
               {
-                "label": "NeovimLogo",
+                "label": "NeovimLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -524,7 +524,7 @@
                 ]
               },
               {
-                "label": "NeovimShadowed",
+                "label": "NeovimShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/Neovim/NeovimShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -551,7 +551,7 @@
             },
             "images": [
               {
-                "label": "PaperMCLogo",
+                "label": "PaperMCLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -562,7 +562,7 @@
                 ]
               },
               {
-                "label": "PaperMCLogoShadowed",
+                "label": "PaperMCLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -589,7 +589,7 @@
             },
             "images": [
               {
-                "label": "VSCode-Thick",
+                "label": "VSCode-Thick.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -600,7 +600,7 @@
                 ]
               },
               {
-                "label": "VSCode",
+                "label": "VSCode.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -627,7 +627,7 @@
             },
             "images": [
               {
-                "label": "osuLogo",
+                "label": "osuLogo.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -638,7 +638,7 @@
                 ]
               },
               {
-                "label": "osuLogoOld",
+                "label": "osuLogoOld.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoOld.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -649,7 +649,7 @@
                 ]
               },
               {
-                "label": "osuLogoShadowed",
+                "label": "osuLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -660,7 +660,7 @@
                 ]
               },
               {
-                "label": "osuLogoShadowedOld",
+                "label": "osuLogoShadowedOld.png",
                 "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/osu/osuLogoShadowedOld.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -706,7 +706,7 @@
             },
             "images": [
               {
-                "label": "Android Studio",
+                "label": "Android Studio.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Android Studio.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -729,7 +729,7 @@
             },
             "images": [
               {
-                "label": "Angular Logotype",
+                "label": "Angular Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Angular Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -752,7 +752,7 @@
             },
             "images": [
               {
-                "label": "Bootstrap Logotype",
+                "label": "Bootstrap Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Bootstrap Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -775,7 +775,7 @@
             },
             "images": [
               {
-                "label": "C++ Logotype",
+                "label": "C++ Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/C++ Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -798,7 +798,7 @@
             },
             "images": [
               {
-                "label": "CSS Logotype",
+                "label": "CSS Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/CSS Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -821,7 +821,7 @@
             },
             "images": [
               {
-                "label": "Cloudflare Logotype",
+                "label": "Cloudflare Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Cloudflare Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -844,7 +844,7 @@
             },
             "images": [
               {
-                "label": "Django Logotype",
+                "label": "Django Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Django Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -867,7 +867,7 @@
             },
             "images": [
               {
-                "label": "Flutter Logotype",
+                "label": "Flutter Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Flutter Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -890,7 +890,7 @@
             },
             "images": [
               {
-                "label": "Github Logotype",
+                "label": "Github Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Github Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -913,7 +913,7 @@
             },
             "images": [
               {
-                "label": "Gitlab Logotype",
+                "label": "Gitlab Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Gitlab Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -936,7 +936,7 @@
             },
             "images": [
               {
-                "label": "Golang",
+                "label": "Golang.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Golang.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -959,7 +959,7 @@
             },
             "images": [
               {
-                "label": "HTML Logotype",
+                "label": "HTML Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/HTML Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -982,7 +982,7 @@
             },
             "images": [
               {
-                "label": "Hono Logotype",
+                "label": "Hono Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Hono Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1005,7 +1005,7 @@
             },
             "images": [
               {
-                "label": "Hugo",
+                "label": "Hugo.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Hugo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1028,7 +1028,7 @@
             },
             "images": [
               {
-                "label": "Java",
+                "label": "Java.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Java.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1051,7 +1051,7 @@
             },
             "images": [
               {
-                "label": "Javascript Logotype",
+                "label": "Javascript Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Javascript Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1074,7 +1074,7 @@
             },
             "images": [
               {
-                "label": "Laravel Logotype",
+                "label": "Laravel Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Laravel Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1097,7 +1097,7 @@
             },
             "images": [
               {
-                "label": "Materializecss Logotype",
+                "label": "Materializecss Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Materializecss Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1120,7 +1120,7 @@
             },
             "images": [
               {
-                "label": "NPM Logotype",
+                "label": "NPM Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/NPM Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1143,7 +1143,7 @@
             },
             "images": [
               {
-                "label": "Neovim Logotype",
+                "label": "Neovim Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Neovim Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1166,7 +1166,7 @@
             },
             "images": [
               {
-                "label": "Netlify Logotype",
+                "label": "Netlify Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Netlify Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1189,7 +1189,7 @@
             },
             "images": [
               {
-                "label": "Next JS Logotype",
+                "label": "Next JS Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Next JS Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1212,7 +1212,7 @@
             },
             "images": [
               {
-                "label": "Node JS Logotype",
+                "label": "Node JS Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Node JS Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1235,7 +1235,7 @@
             },
             "images": [
               {
-                "label": "Notepad++ Logotype",
+                "label": "Notepad++ Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Notepad++ Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1258,7 +1258,7 @@
             },
             "images": [
               {
-                "label": "Nuxt JS Logotype",
+                "label": "Nuxt JS Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Nuxt JS Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1281,7 +1281,7 @@
             },
             "images": [
               {
-                "label": "PHP Logotype",
+                "label": "PHP Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/PHP Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1304,7 +1304,7 @@
             },
             "images": [
               {
-                "label": "Prisma Logotype",
+                "label": "Prisma Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Prisma Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1327,7 +1327,7 @@
             },
             "images": [
               {
-                "label": "Python Logotype",
+                "label": "Python Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Python Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1350,7 +1350,7 @@
             },
             "images": [
               {
-                "label": "React JS Logotype",
+                "label": "React JS Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/React JS Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1373,7 +1373,7 @@
             },
             "images": [
               {
-                "label": "Remix Logotype",
+                "label": "Remix Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Remix Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1396,7 +1396,7 @@
             },
             "images": [
               {
-                "label": "Ruby Logotype",
+                "label": "Ruby Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Ruby Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1419,7 +1419,7 @@
             },
             "images": [
               {
-                "label": "Sublime Text Logotype",
+                "label": "Sublime Text Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Sublime Text Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1442,7 +1442,7 @@
             },
             "images": [
               {
-                "label": "Tailwindcss Logotype",
+                "label": "Tailwindcss Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Tailwindcss Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1465,7 +1465,7 @@
             },
             "images": [
               {
-                "label": "Vercel Logotype",
+                "label": "Vercel Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vercel Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1488,7 +1488,7 @@
             },
             "images": [
               {
-                "label": "Vim",
+                "label": "Vim.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vim.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1511,7 +1511,7 @@
             },
             "images": [
               {
-                "label": "Vite",
+                "label": "Vite.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vite.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1534,7 +1534,7 @@
             },
             "images": [
               {
-                "label": "Vscode Logotype",
+                "label": "Vscode Logotype.png",
                 "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/Vscode Logotype.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1821,7 +1821,7 @@
             },
             "images": [
               {
-                "label": "Elixir",
+                "label": "Elixir.png",
                 "src": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Elixir/Elixir.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1848,7 +1848,7 @@
             },
             "images": [
               {
-                "label": "Gleam",
+                "label": "Gleam.png",
                 "src": "https://raw.githubusercontent.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/main/Gleam/Gleam.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1910,7 +1910,7 @@
             },
             "images": [
               {
-                "label": "jyo-gi",
+                "label": "jyo-gi.png",
                 "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/jyo-gi.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1937,7 +1937,7 @@
             },
             "images": [
               {
-                "label": "nuxtjs",
+                "label": "nuxtjs.png",
                 "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/nuxtjs/nuxtjs.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1964,7 +1964,7 @@
             },
             "images": [
               {
-                "label": "react",
+                "label": "react.png",
                 "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/react/react.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -1991,7 +1991,7 @@
             },
             "images": [
               {
-                "label": "rubyonrails",
+                "label": "rubyonrails.png",
                 "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/rubyonrails/rubyonrails.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2002,7 +2002,7 @@
                 ]
               },
               {
-                "label": "rubyonrails_fix",
+                "label": "rubyonrails_fix.png",
                 "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/rubyonrails/rubyonrails_fix.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2029,7 +2029,7 @@
             },
             "images": [
               {
-                "label": "svelte",
+                "label": "svelte.png",
                 "src": "https://raw.githubusercontent.com/Crysta1221/tech_logos/main/svelte/svelte.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2387,7 +2387,7 @@
             },
             "images": [
               {
-                "label": "kate-animated",
+                "label": "kate-animated.svg",
                 "src": "https://raw.githubusercontent.com/G2-Games/fun-logos/main/kate/kate-animated.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2398,7 +2398,7 @@
                 ]
               },
               {
-                "label": "kate",
+                "label": "kate.svg",
                 "src": "https://raw.githubusercontent.com/G2-Games/fun-logos/main/kate/kate.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2582,7 +2582,7 @@
             },
             "images": [
               {
-                "label": "DockerLogo",
+                "label": "DockerLogo.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Docker/DockerLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2593,7 +2593,7 @@
                 ]
               },
               {
-                "label": "DockerLogoShadowed",
+                "label": "DockerLogoShadowed.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Docker/DockerLogoShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2620,7 +2620,7 @@
             },
             "images": [
               {
-                "label": "NeovimLogo",
+                "label": "NeovimLogo.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Neovim/NeovimLogo.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2631,7 +2631,7 @@
                 ]
               },
               {
-                "label": "NeovimShadowed",
+                "label": "NeovimShadowed.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/Neovim/NeovimShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2658,7 +2658,7 @@
             },
             "images": [
               {
-                "label": "VSCode-2X",
+                "label": "VSCode-2X.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-2X.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2669,7 +2669,7 @@
                 ]
               },
               {
-                "label": "VSCode-Thick",
+                "label": "VSCode-Thick.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode-Thick.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2680,7 +2680,7 @@
                 ]
               },
               {
-                "label": "VSCode",
+                "label": "VSCode.png",
                 "src": "https://raw.githubusercontent.com/lDMDiamondl/ProgrammingVTuberLogosKR/main/VSCode/VSCode.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2792,7 +2792,7 @@
             },
             "images": [
               {
-                "label": "Svelte",
+                "label": "Svelte.png",
                 "src": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2803,7 +2803,7 @@
                 ]
               },
               {
-                "label": "Svelte",
+                "label": "Svelte.svg",
                 "src": "https://raw.githubusercontent.com/mkpoli/VTuber-Styled-Logos/main/logos/Svelte/Svelte.svg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2921,7 +2921,7 @@
             },
             "images": [
               {
-                "label": "ATProtocol",
+                "label": "ATProtocol.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/jpg/ATProtocol.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2932,7 +2932,7 @@
                 ]
               },
               {
-                "label": "ATProtocol",
+                "label": "ATProtocol.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/png/ATProtocol.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2943,7 +2943,7 @@
                 ]
               },
               {
-                "label": "ATProtocol",
+                "label": "ATProtocol.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/webp/ATProtocol.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2966,7 +2966,7 @@
             },
             "images": [
               {
-                "label": "Angular",
+                "label": "Angular.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/jpg/Angular.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2977,7 +2977,7 @@
                 ]
               },
               {
-                "label": "Angular",
+                "label": "Angular.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/png/Angular.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -2988,7 +2988,7 @@
                 ]
               },
               {
-                "label": "Angular",
+                "label": "Angular.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/webp/Angular.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3011,7 +3011,7 @@
             },
             "images": [
               {
-                "label": "BlueSky",
+                "label": "BlueSky.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/jpg/BlueSky.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3022,7 +3022,7 @@
                 ]
               },
               {
-                "label": "BlueSky",
+                "label": "BlueSky.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/png/BlueSky.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3033,7 +3033,7 @@
                 ]
               },
               {
-                "label": "BlueSky",
+                "label": "BlueSky.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/webp/BlueSky.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3056,7 +3056,7 @@
             },
             "images": [
               {
-                "label": "Charcoal",
+                "label": "Charcoal.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/jpg/Charcoal.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3067,7 +3067,7 @@
                 ]
               },
               {
-                "label": "Charcoal",
+                "label": "Charcoal.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/png/Charcoal.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3078,7 +3078,7 @@
                 ]
               },
               {
-                "label": "Charcoal",
+                "label": "Charcoal.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/webp/Charcoal.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3101,7 +3101,7 @@
             },
             "images": [
               {
-                "label": "Cloudflare",
+                "label": "Cloudflare.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/jpg/Cloudflare.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3112,7 +3112,7 @@
                 ]
               },
               {
-                "label": "Cloudflare",
+                "label": "Cloudflare.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/png/Cloudflare.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3123,7 +3123,7 @@
                 ]
               },
               {
-                "label": "Cloudflare",
+                "label": "Cloudflare.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/webp/Cloudflare.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3146,7 +3146,7 @@
             },
             "images": [
               {
-                "label": "Express",
+                "label": "Express.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/jpg/Express.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3157,7 +3157,7 @@
                 ]
               },
               {
-                "label": "Express",
+                "label": "Express.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/png/Express.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3168,7 +3168,7 @@
                 ]
               },
               {
-                "label": "Express",
+                "label": "Express.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/webp/Express.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3191,7 +3191,7 @@
             },
             "images": [
               {
-                "label": "Figma",
+                "label": "Figma.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/jpg/Figma.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3202,7 +3202,7 @@
                 ]
               },
               {
-                "label": "Figma",
+                "label": "Figma.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/png/Figma.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3213,7 +3213,7 @@
                 ]
               },
               {
-                "label": "Figma",
+                "label": "Figma.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/webp/Figma.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3236,7 +3236,7 @@
             },
             "images": [
               {
-                "label": "GitHub",
+                "label": "GitHub.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/jpg/GitHub.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3247,7 +3247,7 @@
                 ]
               },
               {
-                "label": "GitHub",
+                "label": "GitHub.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/png/GitHub.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3258,7 +3258,7 @@
                 ]
               },
               {
-                "label": "GitHub",
+                "label": "GitHub.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/webp/GitHub.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3281,7 +3281,7 @@
             },
             "images": [
               {
-                "label": "Golang",
+                "label": "Golang.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/jpg/Golang.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3292,7 +3292,7 @@
                 ]
               },
               {
-                "label": "Golang",
+                "label": "Golang.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/png/Golang.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3303,7 +3303,7 @@
                 ]
               },
               {
-                "label": "Golang",
+                "label": "Golang.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/webp/Golang.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3326,7 +3326,7 @@
             },
             "images": [
               {
-                "label": "haskell",
+                "label": "haskell.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/jpg/haskell.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3337,7 +3337,7 @@
                 ]
               },
               {
-                "label": "haskell",
+                "label": "haskell.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/png/haskell.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3348,7 +3348,7 @@
                 ]
               },
               {
-                "label": "haskell",
+                "label": "haskell.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/webp/haskell.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3371,7 +3371,7 @@
             },
             "images": [
               {
-                "label": "Hono",
+                "label": "Hono.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/jpg/Hono.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3382,7 +3382,7 @@
                 ]
               },
               {
-                "label": "Hono",
+                "label": "Hono.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/png/Hono.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3393,7 +3393,7 @@
                 ]
               },
               {
-                "label": "Hono",
+                "label": "Hono.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/webp/Hono.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3416,7 +3416,7 @@
             },
             "images": [
               {
-                "label": "IamDesigner!",
+                "label": "IamDesigner!.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3427,7 +3427,7 @@
                 ]
               },
               {
-                "label": "IamDesigner!",
+                "label": "IamDesigner!.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3438,7 +3438,7 @@
                 ]
               },
               {
-                "label": "IamDesigner!",
+                "label": "IamDesigner!.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3461,7 +3461,7 @@
             },
             "images": [
               {
-                "label": "IamDesigner!English",
+                "label": "IamDesigner!English.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!English.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3472,7 +3472,7 @@
                 ]
               },
               {
-                "label": "IamDesigner!English",
+                "label": "IamDesigner!English.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!English.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3483,7 +3483,7 @@
                 ]
               },
               {
-                "label": "IamDesigner!English",
+                "label": "IamDesigner!English.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!English.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3506,7 +3506,7 @@
             },
             "images": [
               {
-                "label": "IamProgrammer!",
+                "label": "IamProgrammer!.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammer!.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3517,7 +3517,7 @@
                 ]
               },
               {
-                "label": "IamProgrammer!",
+                "label": "IamProgrammer!.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammer!.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3528,7 +3528,7 @@
                 ]
               },
               {
-                "label": "IamProgrammer!",
+                "label": "IamProgrammer!.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammer!.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3551,7 +3551,7 @@
             },
             "images": [
               {
-                "label": "IamProgrammerEnglish",
+                "label": "IamProgrammerEnglish.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3562,7 +3562,7 @@
                 ]
               },
               {
-                "label": "IamProgrammerEnglish",
+                "label": "IamProgrammerEnglish.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammerEnglish.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3573,7 +3573,7 @@
                 ]
               },
               {
-                "label": "IamProgrammerEnglish",
+                "label": "IamProgrammerEnglish.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammerEnglish.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3596,7 +3596,7 @@
             },
             "images": [
               {
-                "label": "IntelliJ IDEA",
+                "label": "IntelliJ IDEA.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3607,7 +3607,7 @@
                 ]
               },
               {
-                "label": "IntelliJ IDEA",
+                "label": "IntelliJ IDEA.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3618,7 +3618,7 @@
                 ]
               },
               {
-                "label": "IntelliJ IDEA",
+                "label": "IntelliJ IDEA.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3641,7 +3641,7 @@
             },
             "images": [
               {
-                "label": "Kotlin",
+                "label": "Kotlin.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/jpg/Kotlin.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3652,7 +3652,7 @@
                 ]
               },
               {
-                "label": "Kotlin",
+                "label": "Kotlin.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/png/Kotlin.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3663,7 +3663,7 @@
                 ]
               },
               {
-                "label": "Kotlin",
+                "label": "Kotlin.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/webp/Kotlin.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3686,7 +3686,7 @@
             },
             "images": [
               {
-                "label": "LaravelTransparent",
+                "label": "LaravelTransparent.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/jpg/LaravelTransparent.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3697,7 +3697,7 @@
                 ]
               },
               {
-                "label": "LaravelTransparent",
+                "label": "LaravelTransparent.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/png/LaravelTransparent.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3708,7 +3708,7 @@
                 ]
               },
               {
-                "label": "LaravelTransparent",
+                "label": "LaravelTransparent.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/webp/LaravelTransparent.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3731,7 +3731,7 @@
             },
             "images": [
               {
-                "label": "Misskey.io",
+                "label": "Misskey.io.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/jpg/Misskey.io.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3742,7 +3742,7 @@
                 ]
               },
               {
-                "label": "Misskey.io",
+                "label": "Misskey.io.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/png/Misskey.io.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3753,7 +3753,7 @@
                 ]
               },
               {
-                "label": "Misskey.io",
+                "label": "Misskey.io.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/webp/Misskey.io.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3776,7 +3776,7 @@
             },
             "images": [
               {
-                "label": "Misskey",
+                "label": "Misskey.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/jpg/Misskey.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3787,7 +3787,7 @@
                 ]
               },
               {
-                "label": "Misskey",
+                "label": "Misskey.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/png/Misskey.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3798,7 +3798,7 @@
                 ]
               },
               {
-                "label": "Misskey",
+                "label": "Misskey.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/webp/Misskey.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3821,7 +3821,7 @@
             },
             "images": [
               {
-                "label": "Next.js",
+                "label": "Next.js.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/jpg/Next.js.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3832,7 +3832,7 @@
                 ]
               },
               {
-                "label": "Next.js",
+                "label": "Next.js.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/png/Next.js.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3843,7 +3843,7 @@
                 ]
               },
               {
-                "label": "Next.js",
+                "label": "Next.js.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/webp/Next.js.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3866,7 +3866,7 @@
             },
             "images": [
               {
-                "label": "Node.js",
+                "label": "Node.js.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/jpg/Node.js.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3877,7 +3877,7 @@
                 ]
               },
               {
-                "label": "Node.js",
+                "label": "Node.js.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/png/Node.js.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3888,7 +3888,7 @@
                 ]
               },
               {
-                "label": "Node.js",
+                "label": "Node.js.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/webp/Node.js.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3911,7 +3911,7 @@
             },
             "images": [
               {
-                "label": "React",
+                "label": "React.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/jpg/React.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3922,7 +3922,7 @@
                 ]
               },
               {
-                "label": "React",
+                "label": "React.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/png/React.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3933,7 +3933,7 @@
                 ]
               },
               {
-                "label": "React",
+                "label": "React.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/webp/React.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3956,7 +3956,7 @@
             },
             "images": [
               {
-                "label": "Replit",
+                "label": "Replit.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/jpg/Replit.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3967,7 +3967,7 @@
                 ]
               },
               {
-                "label": "Replit",
+                "label": "Replit.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/png/Replit.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -3978,7 +3978,7 @@
                 ]
               },
               {
-                "label": "Replit",
+                "label": "Replit.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/webp/Replit.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4001,7 +4001,7 @@
             },
             "images": [
               {
-                "label": "403 Forbidden",
+                "label": "403 Forbidden.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/403 Forbidden.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4012,7 +4012,7 @@
                 ]
               },
               {
-                "label": "403 Forbidden",
+                "label": "403 Forbidden.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/403 Forbidden.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4023,7 +4023,7 @@
                 ]
               },
               {
-                "label": "403 Forbidden",
+                "label": "403 Forbidden.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/403 Forbidden.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4046,7 +4046,7 @@
             },
             "images": [
               {
-                "label": "404 NotFound",
+                "label": "404 NotFound.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/404 NotFound.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4057,7 +4057,7 @@
                 ]
               },
               {
-                "label": "404 NotFound",
+                "label": "404 NotFound.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/404 NotFound.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4068,7 +4068,7 @@
                 ]
               },
               {
-                "label": "404 NotFound",
+                "label": "404 NotFound.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/404 NotFound.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4091,7 +4091,7 @@
             },
             "images": [
               {
-                "label": "418 I'm a teapot",
+                "label": "418 I'm a teapot.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/418 I'm a teapot.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4102,7 +4102,7 @@
                 ]
               },
               {
-                "label": "418 I'm a teapot",
+                "label": "418 I'm a teapot.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/418 I'm a teapot.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4113,7 +4113,7 @@
                 ]
               },
               {
-                "label": "418 I'm a teapot",
+                "label": "418 I'm a teapot.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/418 I'm a teapot.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4136,7 +4136,7 @@
             },
             "images": [
               {
-                "label": "500 InternalServerError",
+                "label": "500 InternalServerError.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/500 InternalServerError.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4147,7 +4147,7 @@
                 ]
               },
               {
-                "label": "500 InternalServerError",
+                "label": "500 InternalServerError.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/500 InternalServerError.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4158,7 +4158,7 @@
                 ]
               },
               {
-                "label": "500 InternalServerError",
+                "label": "500 InternalServerError.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/500 InternalServerError.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4181,7 +4181,7 @@
             },
             "images": [
               {
-                "label": "503 ServiceUnavailable",
+                "label": "503 ServiceUnavailable.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/jpg/503 ServiceUnavailable.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4192,7 +4192,7 @@
                 ]
               },
               {
-                "label": "503 ServiceUnavailable",
+                "label": "503 ServiceUnavailable.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/png/503 ServiceUnavailable.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4203,7 +4203,7 @@
                 ]
               },
               {
-                "label": "503 ServiceUnavailable",
+                "label": "503 ServiceUnavailable.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ResponseCode/webp/503 ServiceUnavailable.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4226,7 +4226,7 @@
             },
             "images": [
               {
-                "label": "Rust",
+                "label": "Rust.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/jpg/Rust.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4237,7 +4237,7 @@
                 ]
               },
               {
-                "label": "Rust_Transparent",
+                "label": "Rust_Transparent.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/jpg/Rust_Transparent.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4248,7 +4248,7 @@
                 ]
               },
               {
-                "label": "Rust",
+                "label": "Rust.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/png/Rust.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4259,7 +4259,7 @@
                 ]
               },
               {
-                "label": "Rust_Transparent",
+                "label": "Rust_Transparent.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/png/Rust_Transparent.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4270,7 +4270,7 @@
                 ]
               },
               {
-                "label": "Rust",
+                "label": "Rust.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/webp/Rust.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4281,7 +4281,7 @@
                 ]
               },
               {
-                "label": "Rust_Transparent",
+                "label": "Rust_Transparent.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Rust/webp/Rust_Transparent.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4304,7 +4304,7 @@
             },
             "images": [
               {
-                "label": "TypeScript",
+                "label": "TypeScript.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/jpg/TypeScript.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4315,7 +4315,7 @@
                 ]
               },
               {
-                "label": "TypeScript",
+                "label": "TypeScript.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/png/TypeScript.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4326,7 +4326,7 @@
                 ]
               },
               {
-                "label": "TypeScript",
+                "label": "TypeScript.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/webp/TypeScript.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4349,7 +4349,7 @@
             },
             "images": [
               {
-                "label": "Tailwindcss",
+                "label": "Tailwindcss.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/tailwind css/jpg/Tailwindcss.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4360,7 +4360,7 @@
                 ]
               },
               {
-                "label": "Tailwindcss",
+                "label": "Tailwindcss.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/tailwind css/png/Tailwindcss.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4371,7 +4371,7 @@
                 ]
               },
               {
-                "label": "Tailwindcss",
+                "label": "Tailwindcss.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/tailwind css/webp/Tailwindcss.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4394,7 +4394,7 @@
             },
             "images": [
               {
-                "label": "ゆっくりMovieMaker4",
+                "label": "ゆっくりMovieMaker4.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ゆっくりMovieMaker4/jpg/ゆっくりMovieMaker4.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4405,7 +4405,7 @@
                 ]
               },
               {
-                "label": "ゆっくりMovieMaker4",
+                "label": "ゆっくりMovieMaker4.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ゆっくりMovieMaker4/png/ゆっくりMovieMaker4.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4416,7 +4416,7 @@
                 ]
               },
               {
-                "label": "ゆっくりMovieMaker4",
+                "label": "ゆっくりMovieMaker4.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ゆっくりMovieMaker4/webp/ゆっくりMovieMaker4.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4439,7 +4439,7 @@
             },
             "images": [
               {
-                "label": "確定申告",
+                "label": "確定申告.jpg",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/確定申告/jpg/確定申告.jpg",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4450,7 +4450,7 @@
                 ]
               },
               {
-                "label": "確定申告",
+                "label": "確定申告.png",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/確定申告/png/確定申告.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4461,7 +4461,7 @@
                 ]
               },
               {
-                "label": "確定申告",
+                "label": "確定申告.webp",
                 "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/確定申告/webp/確定申告.webp",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4511,7 +4511,7 @@
             },
             "images": [
               {
-                "label": "Google Chrome",
+                "label": "Google Chrome.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Google Chrome/Google Chrome.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4538,7 +4538,7 @@
             },
             "images": [
               {
-                "label": "KeepNotes",
+                "label": "KeepNotes.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Keep Notes/KeepNotes.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4565,7 +4565,7 @@
             },
             "images": [
               {
-                "label": "Mint",
+                "label": "Mint.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/Mint.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4576,7 +4576,7 @@
                 ]
               },
               {
-                "label": "MintShadowed",
+                "label": "MintShadowed.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/MintShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4587,7 +4587,7 @@
                 ]
               },
               {
-                "label": "MintStroked",
+                "label": "MintStroked.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Linux Mint/MintStroked.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4614,7 +4614,7 @@
             },
             "images": [
               {
-                "label": "Obsidian",
+                "label": "Obsidian.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Obsidian/Obsidian.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4641,7 +4641,7 @@
             },
             "images": [
               {
-                "label": "Pytorch",
+                "label": "Pytorch.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/Pytorch/Pytorch.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4668,7 +4668,7 @@
             },
             "images": [
               {
-                "label": "SpringBoot",
+                "label": "SpringBoot.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/SpringBoot/SpringBoot.png",
                 "srcUrlType": "github-raw",
                 "references": [
@@ -4679,7 +4679,7 @@
                 ]
               },
               {
-                "label": "SpringBootShadowed",
+                "label": "SpringBootShadowed.png",
                 "src": "https://raw.githubusercontent.com/syke9p3/Syke-VTuber-Icons/main/SpringBoot/SpringBootShadowed.png",
                 "srcUrlType": "github-raw",
                 "references": [
