@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-07T13:51:37.165Z",
+  "updatedAt": "2026-05-07T14:30:40.111Z",
   "data": {
-    "authorCount": 23,
-    "imageCount": 263,
+    "authorCount": 26,
+    "imageCount": 277,
     "authors": [
       {
         "id": "aikoyori",
@@ -15,7 +15,7 @@
           },
           "x": {
             "username": "Aikoyori",
-            "url": "https://twitter.com/Aikoyori"
+            "url": "https://x.com/Aikoyori"
           },
           "bsky": {
             "username": "aikoyori.xyz",
@@ -33,7 +33,7 @@
             {
               "type": "x",
               "username": "Aikoyori",
-              "url": "https://twitter.com/Aikoyori"
+              "url": "https://x.com/Aikoyori"
             },
             {
               "type": "bsky",
@@ -1991,6 +1991,313 @@
         ]
       },
       {
+        "id": "anwar_achilles",
+        "displayName": "anwar_achilles",
+        "pfp": "https://avatars.githubusercontent.com/AnwarAchilles",
+        "social": {
+          "github": {
+            "username": "AnwarAchilles",
+            "url": "https://github.com/AnwarAchilles"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "AnwarAchilles",
+              "url": "https://github.com/AnwarAchilles"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "codeigniter",
+            "title": "codeigniter",
+            "references": [],
+            "imageCount": 2,
+            "license": {
+              "reference": {
+                "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/codeigniter/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/codeigniter/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "shadowed.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/codeigniter/shadowed.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/codeigniter/shadowed.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "nestjs",
+            "title": "nestjs",
+            "references": [],
+            "imageCount": 2,
+            "license": {
+              "reference": {
+                "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/nestjs/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/nestjs/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "shadowed.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/nestjs/shadowed.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/nestjs/shadowed.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "php",
+            "title": "php",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "reference": {
+                "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "bordered-dark.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/php/bordered-dark.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php/bordered-dark.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "bordered-light.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/php/bordered-light.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php/bordered-light.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/php/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "php-new",
+            "title": "php-new",
+            "references": [],
+            "imageCount": 2,
+            "license": {
+              "reference": {
+                "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/php-new/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php-new/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "shadowed.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/php-new/shadowed.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php-new/shadowed.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "rune",
+            "title": "rune",
+            "references": [],
+            "imageCount": 2,
+            "license": {
+              "reference": {
+                "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "bordered.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/rune/bordered.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/rune/bordered.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              },
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/AnwarAchilles/VTuber-Style-Logos/main/rune/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/rune/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/LICENSE",
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0",
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos",
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
+          }
+        ],
+        "fundings": []
+      },
+      {
         "id": "alfonsusac",
         "displayName": "alfonsusac",
         "pfp": "https://avatars.githubusercontent.com/alfonsusac",
@@ -2308,39 +2615,9 @@
       {
         "id": "cocoa_xu",
         "displayName": "cocoa_xu",
-        "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
-        "social": {
-          "github": {
-            "username": "cocoa-xu",
-            "url": "https://github.com/cocoa-xu"
-          },
-          "x": {
-            "username": "_uwu_cocoa",
-            "url": "https://twitter.com/_uwu_cocoa"
-          },
-          "bsky": {
-            "username": "uwucocoa.moe",
-            "url": "https://bsky.app/profile/uwucocoa.moe"
-          }
-        },
+        "social": {},
         "links": {
-          "socials": [
-            {
-              "type": "github",
-              "username": "cocoa-xu",
-              "url": "https://github.com/cocoa-xu"
-            },
-            {
-              "type": "x",
-              "username": "_uwu_cocoa",
-              "url": "https://twitter.com/_uwu_cocoa"
-            },
-            {
-              "type": "bsky",
-              "username": "uwucocoa.moe",
-              "url": "https://bsky.app/profile/uwucocoa.moe"
-            }
-          ],
+          "socials": [],
           "personalsites": []
         },
         "entries": [
@@ -2458,7 +2735,7 @@
           },
           "x": {
             "username": "cr1sta_dev",
-            "url": "https://twitter.com/cr1sta_dev"
+            "url": "https://x.com/cr1sta_dev"
           },
           "site": "https://crystaworld.dev"
         },
@@ -2472,7 +2749,7 @@
             {
               "type": "x",
               "username": "cr1sta_dev",
-              "url": "https://twitter.com/cr1sta_dev"
+              "url": "https://x.com/cr1sta_dev"
             }
           ],
           "personalsites": [
@@ -2706,6 +2983,124 @@
             "label": "Github Sponsors"
           }
         ]
+      },
+      {
+        "id": "c29h25n3o5",
+        "displayName": "c29h25n3o5",
+        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
+        "social": {
+          "github": {
+            "username": "C29H25N3O5",
+            "url": "https://github.com/C29H25N3O5"
+          }
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "C29H25N3O5",
+              "url": "https://github.com/C29H25N3O5"
+            }
+          ],
+          "personalsites": []
+        },
+        "entries": [
+          {
+            "id": "clion",
+            "title": "clion",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://github.com/C29H25N3O5/cute-logos/blob/main/LICENCE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/C29H25N3O5/cute-logos/main/dist/clion/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/C29H25N3O5/cute-logos/blob/main/dist/clion/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "jetbrains-clion",
+            "title": "jetbrains-clion",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://github.com/C29H25N3O5/cute-logos/blob/main/LICENCE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "default.png",
+                "src": "https://raw.githubusercontent.com/C29H25N3O5/cute-logos/main/dist/jetbrains-clion/default.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/C29H25N3O5/cute-logos/blob/main/dist/jetbrains-clion/default.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/C29H25N3O5/cute-logos/blob/main/LICENCE",
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0",
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/C29H25N3O5/cute-logos",
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
+          }
+        ],
+        "fundings": []
       },
       {
         "id": "dsphng",
@@ -3168,7 +3563,7 @@
             "username": "G2-Games",
             "url": "https://github.com/G2-Games"
           },
-          "site": "https://ko-fi.com/g2_games"
+          "site": "https://g2games.dev"
         },
         "links": {
           "socials": [
@@ -3179,10 +3574,6 @@
             }
           ],
           "personalsites": [
-            "https://ko-fi.com/g2_games",
-            "https://g2games.dev/git/",
-            "https://patchii.net/G2_Games/",
-            "https://codeberg.org/g2_games",
             "https://g2games.dev",
             "https://g2games.dev"
           ]
@@ -3442,12 +3833,7 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
-        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "social": {
-          "github": {
-            "username": "ifalfahri",
-            "url": "https://github.com/ifalfahri"
-          },
           "dribbble": {
             "username": "ifalfahri",
             "url": "https://dribbble.com/ifalfahri"
@@ -3456,15 +3842,10 @@
             "username": "ifalfahri",
             "url": "https://behance.net/ifalfahri"
           },
-          "site": "https://dribbble.com/ifalfahri"
+          "site": "https://ifaf.com/"
         },
         "links": {
           "socials": [
-            {
-              "type": "github",
-              "username": "ifalfahri",
-              "url": "https://github.com/ifalfahri"
-            },
             {
               "type": "behance",
               "username": "ifalfahri",
@@ -3477,8 +3858,6 @@
             }
           ],
           "personalsites": [
-            "https://dribbble.com/ifalfahri",
-            "https://ifalf.com",
             "https://ifaf.com/"
           ]
         },
@@ -3583,35 +3962,21 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
-        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "social": {
-          "github": {
-            "username": "lDMDiamondl",
-            "url": "https://github.com/lDMDiamondl"
-          },
           "x": {
             "username": "dmdiamond1234",
             "url": "https://x.com/dmdiamond1234"
-          },
-          "site": "https://lDMDiamondl.github.io/Curriculum-Vitae/"
+          }
         },
         "links": {
           "socials": [
-            {
-              "type": "github",
-              "username": "lDMDiamondl",
-              "url": "https://github.com/lDMDiamondl"
-            },
             {
               "type": "x",
               "username": "dmdiamond1234",
               "url": "https://x.com/dmdiamond1234"
             }
           ],
-          "personalsites": [
-            "https://lDMDiamondl.github.io/Curriculum-Vitae/",
-            "https://dendya123.tistory.com/"
-          ]
+          "personalsites": []
         },
         "entries": [
           {
@@ -3877,11 +4242,7 @@
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           },
-          "x": {
-            "username": "mkpoli",
-            "url": "https://twitter.com/mkpoli"
-          },
-          "site": "https://ko-fi.com/mkpoli/"
+          "site": "https://mkpo.li/"
         },
         "links": {
           "socials": [
@@ -3889,15 +4250,9 @@
               "type": "github",
               "username": "mkpoli",
               "url": "https://github.com/mkpoli"
-            },
-            {
-              "type": "x",
-              "username": "mkpoli",
-              "url": "https://twitter.com/mkpoli"
             }
           ],
           "personalsites": [
-            "https://ko-fi.com/mkpoli/",
             "https://mkpo.li/"
           ]
         },
@@ -3987,22 +4342,11 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "pfp": "https://avatars.githubusercontent.com/PetricaT",
         "social": {
-          "github": {
-            "username": "PetricaT",
-            "url": "https://github.com/PetricaT"
-          },
           "site": "petricat.github.io/PetricaT/"
         },
         "links": {
-          "socials": [
-            {
-              "type": "github",
-              "username": "PetricaT",
-              "url": "https://github.com/PetricaT"
-            }
-          ],
+          "socials": [],
           "personalsites": [
             "https://petricat.github.io/PetricaT/"
           ]
@@ -6706,6 +7050,92 @@
         "references": [
           {
             "url": "https://github.com/SAWARATSUKI/KawaiiLogos",
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
+          }
+        ],
+        "fundings": []
+      },
+      {
+        "id": "shiroiame_kusu",
+        "displayName": "shiroiame_kusu",
+        "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
+        "social": {
+          "github": {
+            "username": "Shiroiame-Kusu",
+            "url": "https://github.com/Shiroiame-Kusu"
+          },
+          "site": "https://blog.nyat.icu"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "Shiroiame-Kusu",
+              "url": "https://github.com/Shiroiame-Kusu"
+            }
+          ],
+          "personalsites": [
+            "https://blog.nyat.icu"
+          ]
+        },
+        "entries": [
+          {
+            "id": "windows",
+            "title": "Windows",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://github.com/Shiroiame-Kusu/ProgrammingVTuberLogos-Windows/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "WindowsLogoShadow.png",
+                "src": "https://raw.githubusercontent.com/Shiroiame-Kusu/ProgrammingVTuberLogos-Windows/main/Windows/WindowsLogoShadow.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/Shiroiame-Kusu/ProgrammingVTuberLogos-Windows/blob/main/Windows/WindowsLogoShadow.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/Shiroiame-Kusu/ProgrammingVTuberLogos-Windows/blob/main/LICENSE",
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0",
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/Shiroiame-Kusu/ProgrammingVTuberLogos-Windows",
             "urlType": {
               "type": "github-repo",
               "label": "GitHub Repoistory"
