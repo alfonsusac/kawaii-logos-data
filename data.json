@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-07T09:00:35.117Z",
+  "updatedAt": "2026-05-07T09:05:36.984Z",
   "data": {
     "authorCount": 23,
-    "imageCount": 261,
+    "imageCount": 260,
     "authors": [
       {
         "id": "aikoyori",
@@ -3785,41 +3785,6 @@
           ]
         },
         "entries": [
-          {
-            "id": "cc-by-nc-sa-4.0",
-            "title": "CC-BY-NC-SA-4.0",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "reference": {
-                "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/LICENSE.md",
-                "urlType": {
-                  "type": "github-blob",
-                  "label": "GitHub Blob"
-                }
-              },
-              "type": "standard",
-              "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
-              "labelShort": "CC BY-NC-SA 4.0"
-            },
-            "images": [
-              {
-                "label": "CC-BY-NC-SA-4.0.jpg",
-                "src": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/CC-BY-NC-SA-4.0.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/CC-BY-NC-SA-4.0.jpg",
-                    "urlType": {
-                      "type": "github-blob",
-                      "label": "GitHub Blob"
-                    }
-                  }
-                ]
-              }
-            ]
-          },
           {
             "id": "determinant",
             "title": "Determinant",
