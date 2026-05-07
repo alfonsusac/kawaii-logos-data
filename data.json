@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T05:59:45.017Z",
+  "updatedAt": "2026-05-07T06:33:46.480Z",
   "data": {
     "authorCount": 21,
     "imageCount": 243,
@@ -54,7 +54,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -69,7 +72,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -80,7 +86,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoOld.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -91,7 +100,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -102,7 +114,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Bun/BunLogoShadowedOld.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -116,7 +131,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -131,7 +149,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Docker/DockerLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -142,7 +163,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Docker/DockerLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -156,7 +180,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -171,7 +198,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ElysiaJS/ElysiaJSLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -182,7 +212,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ElysiaJS/ElysiaJSLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -196,7 +229,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -211,7 +247,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GameChanger/GameChangerLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -222,7 +261,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GameChanger/GameChangerLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -236,7 +278,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -251,7 +296,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GodotEngine/GodotLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -262,7 +310,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/GodotEngine/GodotLogoShadow.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -276,7 +327,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -291,7 +345,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBG.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -302,7 +359,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBG.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -313,7 +373,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBGShadows.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -324,7 +387,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGBGShadows.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -335,7 +401,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGFilled.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -346,7 +415,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/ImHex/ImHexLogoSVGFilled.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -360,7 +432,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -375,7 +450,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/IntelliJIDEA/IntellijLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -386,7 +464,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/IntelliJIDEA/intelliJShadow.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -400,7 +481,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -415,7 +499,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Kubernetes/kubernetesLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -426,7 +513,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Kubernetes/kubernetesLogoShadow.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -440,7 +530,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -455,7 +548,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -466,7 +562,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFilled.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -477,7 +576,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -488,7 +590,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoFlattened.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -499,7 +604,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -510,7 +618,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Mirin Template for NotITG/MirinTemplateLogoShadowed.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -524,7 +635,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -539,7 +653,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Neovim/NeovimLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -550,7 +667,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/Neovim/NeovimShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -564,7 +684,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -579,7 +702,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -590,7 +716,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoOld.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -601,7 +730,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -612,7 +744,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/osu/osuLogoShadowedOld.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -626,7 +761,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -641,7 +779,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -652,7 +793,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -666,7 +810,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -681,7 +828,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode-Thick.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -692,7 +842,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -703,7 +856,10 @@
           {
             "reference": {
               "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
@@ -714,7 +870,10 @@
         "references": [
           {
             "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -758,7 +917,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Android Studio.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -783,7 +945,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Angular Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -808,7 +973,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Bootstrap Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -833,7 +1001,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/C++ Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -858,7 +1029,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Cloudflare Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -883,7 +1057,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/CSS Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -908,7 +1085,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Django Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -933,7 +1113,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Flutter Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -958,7 +1141,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Github Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -983,7 +1169,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Gitlab Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1008,7 +1197,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Golang.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1033,7 +1225,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Hono Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1058,7 +1253,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/HTML Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1083,7 +1281,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Hugo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1108,7 +1309,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Java.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1133,7 +1337,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Javascript Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1158,7 +1365,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Laravel Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1183,7 +1393,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Materializecss Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1208,7 +1421,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Neovim Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1233,7 +1449,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Netlify Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1258,7 +1477,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Next JS Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1283,7 +1505,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Node JS Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1308,7 +1533,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Notepad++ Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1333,7 +1561,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/NPM Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1358,7 +1589,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Nuxt JS Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1383,7 +1617,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/PHP Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1408,7 +1645,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Prisma Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1433,7 +1673,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Python Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1458,7 +1701,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/React JS Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1483,7 +1729,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Remix Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1508,7 +1757,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Ruby Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1533,7 +1785,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Sublime Text Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1558,7 +1813,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Tailwindcss Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1583,7 +1841,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Vercel Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1608,7 +1869,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Vim.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1633,7 +1897,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Vite.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1658,7 +1925,10 @@
                 "references": [
                   {
                     "url": "https://github.com/andregans/code_logotype/blob/main/Vscode Logotype.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1676,7 +1946,10 @@
         "references": [
           {
             "url": "https://github.com/andregans/code_logotype",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -1740,7 +2013,10 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/emailthing.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1764,7 +2040,10 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/lgtm.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1788,7 +2067,10 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/sharkchat.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1812,7 +2094,10 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1836,7 +2121,10 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/supabase.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1900,7 +2188,10 @@
                 "references": [
                   {
                     "url": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -1911,7 +2202,10 @@
                 "references": [
                   {
                     "url": "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -1974,7 +2268,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -1989,7 +2286,10 @@
                 "references": [
                   {
                     "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Elixir/Elixir.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2003,7 +2303,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -2018,7 +2321,10 @@
                 "references": [
                   {
                     "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/Gleam/Gleam.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2029,7 +2335,10 @@
           {
             "reference": {
               "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM/blob/main/LICENSE.md",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
@@ -2040,7 +2349,10 @@
         "references": [
           {
             "url": "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -2085,7 +2397,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "MIT",
@@ -2100,7 +2415,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Crysta1221/tech_logos/blob/main/jyo-gi.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2114,7 +2432,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "MIT",
@@ -2129,7 +2450,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Crysta1221/tech_logos/blob/main/nuxtjs/nuxtjs.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2143,7 +2467,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "MIT",
@@ -2158,7 +2485,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Crysta1221/tech_logos/blob/main/react/react.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2172,7 +2502,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "MIT",
@@ -2187,7 +2520,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2198,7 +2534,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails_fix.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2212,7 +2551,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "MIT",
@@ -2227,7 +2569,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Crysta1221/tech_logos/blob/main/svelte/svelte.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2238,7 +2583,10 @@
           {
             "reference": {
               "url": "https://github.com/Crysta1221/tech_logos/blob/main/LICENSE",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "MIT",
@@ -2249,7 +2597,10 @@
         "references": [
           {
             "url": "https://github.com/Crysta1221/tech_logos",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -2301,11 +2652,17 @@
                 "references": [
                   {
                     "url": "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing",
-                    "urlType": "google-drive"
+                    "urlType": {
+                      "type": "google-drive",
+                      "label": "Google Drive Page"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/abletonsticker.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -2332,11 +2689,17 @@
                 "references": [
                   {
                     "url": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing",
-                    "urlType": "google-drive"
+                    "urlType": {
+                      "type": "google-drive",
+                      "label": "Google Drive Page"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/bitwigsticker.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -2363,11 +2726,17 @@
                 "references": [
                   {
                     "url": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing",
-                    "urlType": "google-drive"
+                    "urlType": {
+                      "type": "google-drive",
+                      "label": "Google Drive Page"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/flsticker.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -2394,7 +2763,10 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/logicsticker.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -2421,11 +2793,17 @@
                 "references": [
                   {
                     "url": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing",
-                    "urlType": "google-drive"
+                    "urlType": {
+                      "type": "google-drive",
+                      "label": "Google Drive Page"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/porterrobinsonsticker.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -2452,11 +2830,17 @@
                 "references": [
                   {
                     "url": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing",
-                    "urlType": "google-drive"
+                    "urlType": {
+                      "type": "google-drive",
+                      "label": "Google Drive Page"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/skrillexsticker.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -2514,7 +2898,10 @@
                 "references": [
                   {
                     "url": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/2d5079562396d43e615cf0ffe81da60438b184c9#file-typst-logo.png",
-                    "urlType": "gist-page"
+                    "urlType": {
+                      "type": "gist-page",
+                      "label": "Gist Page"
+                    }
                   }
                 ]
               },
@@ -2525,7 +2912,10 @@
                 "references": [
                   {
                     "url": "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/2d5079562396d43e615cf0ffe81da60438b184c9#file-typst-logo.svg",
-                    "urlType": "gist-page"
+                    "urlType": {
+                      "type": "gist-page",
+                      "label": "Gist Page"
+                    }
                   }
                 ]
               }
@@ -2589,7 +2979,10 @@
                 "references": [
                   {
                     "url": "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2641,7 +3034,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/G2-Games/fun-logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -2656,7 +3052,10 @@
                 "references": [
                   {
                     "url": "https://github.com/G2-Games/fun-logos/blob/main/kate/kate-animated.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2667,7 +3066,10 @@
                 "references": [
                   {
                     "url": "https://github.com/G2-Games/fun-logos/blob/main/kate/kate.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2678,7 +3080,10 @@
           {
             "reference": {
               "url": "https://github.com/G2-Games/fun-logos/blob/main/LICENSE",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
@@ -2689,7 +3094,10 @@
         "references": [
           {
             "url": "https://github.com/G2-Games/fun-logos",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -2741,7 +3149,10 @@
                 "references": [
                   {
                     "url": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2752,7 +3163,10 @@
                 "references": [
                   {
                     "url": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2763,7 +3177,10 @@
                 "references": [
                   {
                     "url": "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2827,7 +3244,10 @@
                 "references": [
                   {
                     "url": "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2876,7 +3296,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -2891,7 +3314,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Docker/DockerLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2902,7 +3328,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Docker/DockerLogoShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2916,7 +3345,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -2931,7 +3363,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Neovim/NeovimLogo.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2942,7 +3377,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/Neovim/NeovimShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -2956,7 +3394,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -2971,7 +3412,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-2X.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2982,7 +3426,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode-Thick.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -2993,7 +3440,10 @@
                 "references": [
                   {
                     "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/VSCode/VSCode.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3004,7 +3454,10 @@
           {
             "reference": {
               "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR/blob/main/LICENSE.md",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
@@ -3015,7 +3468,10 @@
         "references": [
           {
             "url": "https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -3058,11 +3514,17 @@
                 "references": [
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/issues/10#issuecomment-2686987751",
-                    "urlType": "github-repo-text-content"
+                    "urlType": {
+                      "type": "github-repo-text-content",
+                      "label": "GitHub Repo Text Content"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3120,7 +3582,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/LICENSE",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC0-1.0",
@@ -3135,7 +3600,10 @@
                 "references": [
                   {
                     "url": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3146,7 +3614,10 @@
                 "references": [
                   {
                     "url": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/logos/Svelte/Svelte.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3157,7 +3628,10 @@
           {
             "reference": {
               "url": "https://github.com/mkpoli/VTuber-Styled-Logos/blob/main/LICENSE",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "CC0-1.0",
@@ -3168,7 +3642,10 @@
         "references": [
           {
             "url": "https://github.com/mkpoli/VTuber-Styled-Logos",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -3229,7 +3706,10 @@
                 "references": [
                   {
                     "url": "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3294,7 +3774,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/403 Forbidden.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3305,7 +3788,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/403 Forbidden.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3316,7 +3802,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/403 Forbidden.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3341,7 +3830,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/404 NotFound.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3352,7 +3844,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/404 NotFound.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3363,7 +3858,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/404 NotFound.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3388,7 +3886,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/418 I'm a teapot.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3399,7 +3900,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/418 I'm a teapot.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3410,7 +3914,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/418 I'm a teapot.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3435,7 +3942,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/500 InternalServerError.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3446,7 +3956,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/500 InternalServerError.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3457,7 +3970,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/500 InternalServerError.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3482,7 +3998,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/jpg/503 ServiceUnavailable.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3493,7 +4012,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/png/503 ServiceUnavailable.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3504,7 +4026,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ResponseCode/webp/503 ServiceUnavailable.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3529,7 +4054,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/jpg/Angular.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3540,7 +4068,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/png/Angular.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3551,7 +4082,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/webp/Angular.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3576,7 +4110,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/jpg/ATProtocol.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3587,7 +4124,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/png/ATProtocol.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3598,7 +4138,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/webp/ATProtocol.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3623,7 +4166,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/jpg/BlueSky.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3634,7 +4180,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/png/BlueSky.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3645,7 +4194,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/webp/BlueSky.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3670,7 +4222,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/jpg/Charcoal.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3681,7 +4236,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/png/Charcoal.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3692,7 +4250,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/webp/Charcoal.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3717,7 +4278,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/jpg/Cloudflare.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3728,7 +4292,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/png/Cloudflare.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3739,7 +4306,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/webp/Cloudflare.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3764,7 +4334,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/jpg/Express.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3775,7 +4348,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/png/Express.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3786,7 +4362,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/webp/Express.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3811,7 +4390,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/jpg/Figma.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3822,7 +4404,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/png/Figma.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3833,7 +4418,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/webp/Figma.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3858,7 +4446,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/jpg/GitHub.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3869,7 +4460,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/png/GitHub.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3880,7 +4474,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/webp/GitHub.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3905,7 +4502,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/jpg/Golang.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3916,7 +4516,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/png/Golang.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3927,7 +4530,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/webp/Golang.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3952,7 +4558,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/jpg/haskell.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3963,7 +4572,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/png/haskell.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -3974,7 +4586,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/webp/haskell.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -3999,7 +4614,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/jpg/Hono.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4010,7 +4628,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/png/Hono.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4021,7 +4642,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/webp/Hono.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4046,7 +4670,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4057,7 +4684,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4068,7 +4698,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4093,7 +4726,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!English.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4104,7 +4740,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!English.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4115,7 +4754,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!English.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4140,7 +4782,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammer!.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4151,7 +4796,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammer!.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4162,7 +4810,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammer!.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4187,7 +4838,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4198,7 +4852,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammerEnglish.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4209,7 +4866,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammerEnglish.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4234,7 +4894,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4245,7 +4908,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4256,7 +4922,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4281,7 +4950,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/jpg/Kotlin.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4292,7 +4964,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/png/Kotlin.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4303,7 +4978,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/webp/Kotlin.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4328,7 +5006,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/jpg/LaravelTransparent.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4339,7 +5020,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/png/LaravelTransparent.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4350,7 +5034,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/webp/LaravelTransparent.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4375,7 +5062,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/jpg/Misskey.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4386,7 +5076,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/png/Misskey.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4397,7 +5090,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/webp/Misskey.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4422,7 +5118,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/jpg/Misskey.io.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4433,7 +5132,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/png/Misskey.io.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4444,7 +5146,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/webp/Misskey.io.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4469,7 +5174,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/jpg/Next.js.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4480,7 +5188,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/png/Next.js.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4491,7 +5202,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/webp/Next.js.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4516,7 +5230,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/jpg/Node.js.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4527,7 +5244,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/png/Node.js.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4538,7 +5258,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/webp/Node.js.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4563,7 +5286,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/jpg/React.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4574,7 +5300,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/png/React.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4585,7 +5314,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/webp/React.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4610,7 +5342,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/jpg/Replit.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4621,7 +5356,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/png/Replit.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4632,7 +5370,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/webp/Replit.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4657,7 +5398,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/jpg/Rust.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4668,7 +5412,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/jpg/Rust_Transparent.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4679,7 +5426,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/png/Rust.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4690,7 +5440,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/png/Rust_Transparent.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4701,7 +5454,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/webp/Rust.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4712,7 +5468,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Rust/webp/Rust_Transparent.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4737,7 +5496,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind css/jpg/Tailwindcss.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4748,7 +5510,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind css/png/Tailwindcss.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4759,7 +5524,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/tailwind css/webp/Tailwindcss.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4784,7 +5552,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/jpg/TypeScript.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4795,7 +5566,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/png/TypeScript.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4806,7 +5580,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/webp/TypeScript.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4831,7 +5608,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/jpg/ゆっくりMovieMaker4.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4842,7 +5622,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/png/ゆっくりMovieMaker4.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4853,7 +5636,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ゆっくりMovieMaker4/webp/ゆっくりMovieMaker4.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4878,7 +5664,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type1/jpg/技術者倫理.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4889,7 +5678,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type1/png/技術者倫理.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4900,7 +5692,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type1/webp/技術者倫理.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4911,7 +5706,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type2/jpg/技術者倫理.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4922,7 +5720,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type2/png/技術者倫理.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4933,7 +5734,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/技術者倫理/type2/webp/技術者倫理.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4958,7 +5762,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/確定申告/jpg/確定申告.jpg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4969,7 +5776,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/確定申告/png/確定申告.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -4980,7 +5790,10 @@
                 "references": [
                   {
                     "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/確定申告/webp/確定申告.webp",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -4998,7 +5811,10 @@
         "references": [
           {
             "url": "https://github.com/SAWARATSUKI/KawaiiLogos",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -5031,7 +5847,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -5046,7 +5865,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Google Chrome/Google Chrome.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -5060,7 +5882,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -5075,7 +5900,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Keep Notes/KeepNotes.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -5089,7 +5917,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -5104,7 +5935,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/Mint.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -5115,7 +5949,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/MintShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -5126,7 +5963,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Linux Mint/MintStroked.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -5140,7 +5980,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -5155,7 +5998,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Obsidian/Obsidian.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -5169,7 +6015,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -5184,7 +6033,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/Pytorch/Pytorch.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -5198,7 +6050,10 @@
             "license": {
               "reference": {
                 "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-                "urlType": "github-blob"
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
@@ -5213,7 +6068,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/SpringBoot/SpringBoot.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               },
@@ -5224,7 +6082,10 @@
                 "references": [
                   {
                     "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/SpringBoot/SpringBootShadowed.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ]
               }
@@ -5235,7 +6096,10 @@
           {
             "reference": {
               "url": "https://github.com/syke9p3/Syke-VTuber-Icons/blob/main/LICENSE.md",
-              "urlType": "github-blob"
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
@@ -5246,7 +6110,10 @@
         "references": [
           {
             "url": "https://github.com/syke9p3/Syke-VTuber-Icons",
-            "urlType": "github-repo"
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
           }
         ]
       },
@@ -5298,11 +6165,17 @@
                 "references": [
                   {
                     "url": "https://twitter.com/styxpilled/status/1781565832251719868",
-                    "urlType": "twitter-post"
+                    "urlType": {
+                      "type": "twitter-post",
+                      "label": "Twitter Post"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLlkf9EWwAAq3N9.jpeg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -5329,11 +6202,17 @@
                 "references": [
                   {
                     "url": "https://twitter.com/styxpilled/status/1781565832251719868",
-                    "urlType": "twitter-post"
+                    "urlType": {
+                      "type": "twitter-post",
+                      "label": "Twitter Post"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLmrDPdXgAAlKvW.jpeg",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -5400,7 +6279,10 @@
                 "references": [
                   {
                     "url": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f",
-                    "urlType": "bsky-post"
+                    "urlType": {
+                      "type": "bsky-post",
+                      "label": "Bluesky Post"
+                    }
                   }
                 ],
                 "style": {
@@ -5427,11 +6309,17 @@
                 "references": [
                   {
                     "url": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f",
-                    "urlType": "bsky-post"
+                    "urlType": {
+                      "type": "bsky-post",
+                      "label": "Bluesky Post"
+                    }
                   },
                   {
                     "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/capacitor.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
@@ -5458,7 +6346,10 @@
                 "references": [
                   {
                     "url": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d",
-                    "urlType": "bsky-post"
+                    "urlType": {
+                      "type": "bsky-post",
+                      "label": "Bluesky Post"
+                    }
                   }
                 ],
                 "style": {
@@ -5485,7 +6376,10 @@
                 "references": [
                   {
                     "url": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t",
-                    "urlType": "bsky-post"
+                    "urlType": {
+                      "type": "bsky-post",
+                      "label": "Bluesky Post"
+                    }
                   }
                 ],
                 "style": {
@@ -5543,7 +6437,10 @@
                 "references": [
                   {
                     "url": "https://github.com/Urielchan/logosVtuberVER/blob/main/imphnen%202.png",
-                    "urlType": "github-blob"
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
                   }
                 ],
                 "style": {
