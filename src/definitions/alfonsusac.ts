@@ -8,6 +8,9 @@ export const alfonsusac: AuthorDefinition = {
     bsky: "alfon.dev",
     site: "alfon.dev"
   },
+  fundings: {
+    type: "github", url: "https://github.com/sponsors/alfonsusac",
+  },
   license: {
     type: "CC BY-NC-SA 4.0",
     // has_trademark: true

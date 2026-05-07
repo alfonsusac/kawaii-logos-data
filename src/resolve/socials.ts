@@ -10,10 +10,12 @@ export type SocialsDef = {
   bsky?: string,
   site?: string,
   behance?: string,
+  figma?: `@${ string }`,
+  dribbble?: string,
 }
 
 export type SocialListDef = {
-  label: "github" | "x" | "bsky" | "site" | "behance",
+  label: "github" | "x" | "bsky" | "site" | "behance" | "figma" | "dribbble",
   url: string,
 }[]
 
@@ -30,20 +32,20 @@ export async function resolveSocials(
   // 4. remove duplicates from socials list.
 
   // 0.
-  if (def) {
-    if (def.github && def.github.includes("://")) {
-      logerror(`GitHub username should not contain URL parts: ${ def.github }`)
-    }
-    if (def.x && (def.x.includes("://"))) {
-      logerror(`X/Twitter username should not contain URL parts: ${ def.x }`)
-    }
-    if (def.bsky && def.bsky.includes("://")) {
-      logerror(`Bluesky username should not contain URL parts: ${ def.bsky }`)
-    }
-    if (def.site && (def.site.includes("://"))) {
-      logerror(`Personal site should not contain protocol: ${ def.site }`)
-    }
-  }
+  // if (def) {
+  //   if (def.github && def.github.includes("://")) {
+  //     logerror(`GitHub username should not contain URL parts: ${ def.github }`)
+  //   }
+  //   if (def.x && (def.x.includes("://"))) {
+  //     logerror(`X/Twitter username should not contain URL parts: ${ def.x }`)
+  //   }
+  //   if (def.bsky && def.bsky.includes("://")) {
+  //     logerror(`Bluesky username should not contain URL parts: ${ def.bsky }`)
+  //   }
+  //   if (def.site && (def.site.includes("://"))) {
+  //     logerror(`Personal site should not contain protocol: ${ def.site }`)
+  //   }
+  // }
 
   // 1.
   const githubs = list.filter(s => s.label === "github").map(s => s.url)
@@ -54,6 +56,15 @@ export async function resolveSocials(
 
   const bskys = list.filter(s => s.label === "bsky").map(s => s.url)
   if (def?.bsky) bskys.push(site(`bsky.app/profile/${ def.bsky }`))
+
+  const behances = list.filter(s => s.label === "behance").map(s => s.url)
+  if (def?.behance) behances.push(site(`behance.net/${ def.behance }`))
+
+  const figmas = list.filter(s => s.label === "figma").map(s => s.url)
+  if (def?.figma) figmas.push(site(`figma.com/@${ def.figma }`))
+
+  const dribbles = list.filter(s => s.label === "dribbble").map(s => s.url)
+  if (def?.dribbble) dribbles.push(site(`dribbble.com/${ def.dribbble }`))
 
   const personalsites = list.filter(s => s.label === "site").map(s => s.url)
   if (def?.site) personalsites.push(def.site)
@@ -81,6 +92,7 @@ export async function resolveSocials(
     links.socials.push({ type: "github", ...github })
   }
 
+
   const validXs: { url: string, username: string }[] = []
   for (const url of xs) {
     const x = resolveTwitterFromURL(url)
@@ -92,6 +104,7 @@ export async function resolveSocials(
     validXs.push(x)
     links.socials.push({ type: "x", ...x })
   }
+
 
   const validBskys: { url: string, username: string }[] = []
   for (const url of bskys) {
@@ -108,6 +121,44 @@ export async function resolveSocials(
     validBskys.push(bsky)
     links.socials.push({ type: "bsky", ...bsky })
   }
+
+
+  const validBehances: { url: string, username: string }[] = []
+  for (const url of behances) {
+    // No verification for Behance since the API is not easily accessible
+    const behance = resolveBehanceFromURL(url)
+    if (!behance) {
+      logerror(`Behance URL not valid: ${ url }`)
+      continue
+    }
+    validBehances.push(behance)
+    links.socials.push({ type: "behance", ...behance })
+  }
+
+  const validFigmas: { url: string, username: string }[] = []
+  for (const url of figmas) {
+    // No verification for Figma since the API is not easily accessible
+    const figma = resolveFigmaFromURL(url)
+    if (!figma) {
+      logerror(`Figma URL not valid: ${ url }`)
+      continue
+    }
+    validFigmas.push(figma)
+    links.socials.push({ type: "figma", ...figma })
+  }
+
+  const validDribbles: { url: string, username: string }[] = []
+  for (const url of dribbles) {
+    // No verification for Dribbble since the API is not easily accessible
+    const dribbble = resolveDribbbleFromURL(url)
+    if (!dribbble) {
+      logerror(`Dribbble URL not valid: ${ url }`)
+      continue
+    }
+    validDribbles.push(dribbble)
+    links.socials.push({ type: "dribbble", ...dribbble })
+  }
+
 
   const validPersonalSites: string[] = []
   for (const url of personalsites) {
@@ -126,12 +177,14 @@ export async function resolveSocials(
   const github = validGithubs.length > 0 ? validGithubs[ 0 ] : undefined
   const x = validXs.length > 0 ? validXs[ 0 ] : undefined
   const bsky = validBskys.length > 0 ? validBskys[ 0 ] : undefined
+  const behance = validBehances.length > 0 ? validBehances[ 0 ] : undefined
   const personalsite = personalsites.length > 0 ? personalsites[ 0 ] : undefined
 
   const social: AuthorOutput[ 'social' ] = {
     github,
     x,
     bsky,
+    behance,
     site: personalsite,
   }
 
@@ -188,6 +241,8 @@ export function resolveTwitterFromURL(url: string | undefined) {
   return { username, url }
 }
 
+
+
 export function resolveBsky(def: SocialsDef[ 'bsky' ]) {
   if (!def) return undefined
   return { username: def, url: site(`bsky.app/${ def }`), }
@@ -207,5 +262,68 @@ export async function verifyBsky(username: string) {
   if (res.error) {
     return false
   }
+  return true
+}
+
+
+
+export function resolveBehance(def: SocialsDef[ 'behance' ]) {
+  if (!def) return undefined
+  return { username: def, url: site(`behance.net/${ def }`), }
+}
+export function resolveBehanceFromURL(url: string | undefined) {
+  if (!url) return undefined
+  const match = url.match(/behance\.net\/([^\/]+)/)
+  if (!match) {
+    logerror(`Could not parse Behance URL: ${ url }`)
+    return undefined
+  }
+  const username = match[ 1 ]
+  return { username, url }
+}
+export async function verifyBehance(username: string) {
+  // No verification for Behance since the API is not easily accessible
+  return true
+}
+
+
+
+export function resolveFigma(def: SocialsDef[ 'figma' ]) {
+  if (!def) return undefined
+  return { username: def, url: site(`figma.com/@${ def }`), }
+}
+export function resolveFigmaFromURL(url: string | undefined) {
+  if (!url) return undefined
+  const match = url.match(/figma\.com\/@([^\/]+)/)
+  if (!match) {
+    logerror(`Could not parse Figma URL: ${ url }`)
+    return undefined
+  }
+  const username = match[ 1 ]
+  return { username, url }
+}
+export async function verifyFigma(username: string) {
+  // No verification for Figma since the API is not easily accessible
+  return true
+}
+
+
+
+export function resolveDribbble(def: SocialsDef[ 'dribbble' ]) {
+  if (!def) return undefined
+  return { username: def, url: site(`dribbble.com/${ def }`), }
+}
+export function resolveDribbbleFromURL(url: string | undefined) {
+  if (!url) return undefined
+  const match = url.match(/dribbble\.com\/([^\/]+)/)
+  if (!match) {
+    logerror(`Could not parse Dribbble URL: ${ url }`)
+    return undefined
+  }
+  const username = match[ 1 ]
+  return { username, url }
+}
+export async function verifyDribbble(username: string) {
+  // No verification for Dribbble since the API is not easily accessible
   return true
 }

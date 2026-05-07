@@ -23,7 +23,7 @@ export type SourceDef = {
   licenseFallback?: LicenseDef,
   applyCssStyle?: ImageDefinition[ 'style' ]
 } & (
-    | { from: "github", repo: `${ string }/${ string }` }
+    | { from: "github", repo: `https://github.com/${ string }/${ string }` }
   )
 
 export type ValidSourceType = SourceDef[ "from" ]

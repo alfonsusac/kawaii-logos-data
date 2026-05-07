@@ -7,7 +7,10 @@ export const aikoyori: AuthorDefinition = {
   },
   source: {
     from: "github",
-    repo: "Aikoyori/ProgrammingVTuberLogos",
-    transform: { type: "filter", exclude: "preview" }, 
-  }
+    repo: "https://github.com/Aikoyori/ProgrammingVTuberLogos",
+    transform: { type: "filter", exclude: "preview" },
+  },
+  fundings: [
+    { type: "ko-fi", url: "https://ko-fi.com/aikoyori" }
+  ]
 }

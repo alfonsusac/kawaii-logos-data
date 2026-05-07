@@ -13,7 +13,10 @@ export const dsphng: AuthorDefinition = {
         src: { type: "self-hosted", filepath: "./assets/skrillexsticker.png" },
         reference: "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing",
         style: { objectFit: "contain" }
-      }
+      },
+      references: [
+        "https://x.com/dsphng/status/1781307299539370230/photo/1"
+      ]
     },
     porterrobinson: {
       label: "Porter Robinson",
@@ -21,7 +24,10 @@ export const dsphng: AuthorDefinition = {
         src: { type: "self-hosted", filepath: "./assets/porterrobinsonsticker.png" },
         reference: "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing",
         style: { objectFit: "contain" }
-      }
+      },
+      references: [
+        "https://x.com/dsphng/status/1781311687372755134/photo/1"
+      ]
     },
     flstudio: {
       label: "FL Studio",
@@ -37,7 +43,10 @@ export const dsphng: AuthorDefinition = {
         src: { type: "self-hosted", filepath: "./assets/bitwigsticker.png" },
         reference: "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing",
         style: { objectFit: "contain" }
-      }
+      },
+      references: [
+        "https://x.com/dsphng/status/1781277856880062673/photo/3"
+      ]
     },
     abletonlive: {
       label: "Ableton Live",
@@ -45,15 +54,24 @@ export const dsphng: AuthorDefinition = {
         src: { type: "self-hosted", filepath: "./assets/abletonsticker.png" },
         reference: "https://drive.google.com/file/d/1HkvgRiaexWQ2TssE2ZSatUsAm5ZhGLTh/view?usp=sharing",
         style: { objectFit: "contain" }
-      }
+      },
+      references: [
+        "https://x.com/dsphng/status/1781277856880062673/photo/2"
+      ]
     },
     logicpro: {
       label: "Logic Pro",
       images: {
         src: { type: "self-hosted", filepath: "./assets/logicsticker.png" },
         style: { objectFit: "cover" }
-      }
+      },
+      references: [
+        "https://x.com/dsphng/status/1781660983817335125/photo/1"
+      ]
     },
   }
 
 }
+
+// Fruity Loops Studio
+// https://x.com/dsphng/status/1781277856880062673/photo/1

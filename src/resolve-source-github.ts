@@ -9,7 +9,7 @@ type GithubSourceDef = SourceDef & { from: "github" }
 
 
 export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceResult> {
-  const [ owner, repoName ] = def.repo.split("/")
+  const [ owner, repoName ] = def.repo.replaceAll('https://github.com/', '').split("/")
 
   log(`Link to Github Repo: ${ getGithubProfileURL(owner) }/${ repoName }`)
 
@@ -25,7 +25,7 @@ export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceR
       "Resolving Github Profile",
       () => resolveGithubProfileSocialList(owner)
     ),
-    scrapedReferenceUrl: site(`github.com/${ def.repo }`)
+    scrapedReferenceUrl: site(`github.com/${ owner }/${ repoName }`)
   }
 }
 
@@ -33,8 +33,11 @@ export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceR
 
 async function resolveGithubRepository(def: GithubSourceDef) {
 
+  const [ owner, repoName ] = def.repo.replaceAll('https://github.com/', '').split("/")
+  const repo = `${ owner }/${ repoName }`
+
   const repoFiles = returnUndefinedIfError(await fetchGithubRepoFiles(def.repo), {
-    onError: (res) => logerror(`Failed to fetch github repo files for ${ def.repo }: ${ res.status }`),
+    onError: (res) => logerror(`Failed to fetch github repo files for ${ repo }: ${ res.status }`),
   })
 
   if (repoFiles === undefined) return {
@@ -46,8 +49,8 @@ async function resolveGithubRepository(def: GithubSourceDef) {
     size: item.size,
     path: item.path,
     type: item.type,
-    githubPageUrl: `https://github.com/${ def.repo }/blob/main/${ item.path }` as const,
-    rawPageUrl: `https://raw.githubusercontent.com/${ def.repo }/main/${ item.path }` as const,
+    githubPageUrl: `https://github.com/${ repo }/blob/main/${ item.path }` as const,
+    rawPageUrl: `https://raw.githubusercontent.com/${ repo }/main/${ item.path }` as const,
   }))
 
   // For now, we only resolve the root license file if it exists. 

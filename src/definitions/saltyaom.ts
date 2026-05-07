@@ -5,7 +5,8 @@ export const saltyaom: AuthorDefinition = {
   socials: {
     github: "SaltyAom",
     x: "saltyaom",
-    bsky: "saltyaom.com"
+    bsky: "saltyaom.com",
+    site: "https://saltyaom.com",
   },
   entries: {
     elysia: {
@@ -14,5 +15,8 @@ export const saltyaom: AuthorDefinition = {
         { src: { type: "github-blob", url: "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg" } }
       ]
     }
-  }
+  },
+  fundings: [
+    { type: "github", url: "https://github.com/sponsors/SaltyAom" }
+  ]
 }

@@ -4,7 +4,10 @@ export const arnav: AuthorDefinition = {
   displayName: "arnav-kr",
   socials: {
     github: "arnav-kr",
-    x: "arnavkr_"
+    x: "arnavkr_",
+    dribbble: "arnav-kr",
+    figma: "@arnav-kr",
+    
   },
   license: {
     type: "MIT",
@@ -19,6 +22,12 @@ export const arnav: AuthorDefinition = {
         { src: { type: "github-blob", url: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg" } }
       ],
     }
-  }
+  },
+  fundings: [
+    { type: "buymeacoffee", url: "https://buymeacoffee.com/arnavkr" },
+    { type: "patreon", url: "https://patreon.com/arnavkr" },
+    { type: "ko-fi", url: "https://ko-fi.com/arnav" },
+    { type: "github", url: "https://github.com/sponsors/arnav-kr"}
+  ]
 }
 

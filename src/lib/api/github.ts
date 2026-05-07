@@ -73,10 +73,11 @@ type GithubRepoFilesResponsePayload = {
   truncated: boolean,
 }
 
-export async function fetchGithubRepoFiles(repo: `${ string }/${ string }`) {
+export async function fetchGithubRepoFiles(url: `https://github.com/${ string }/${ string }`) {
+  const [ owner, repoName ] = url.replaceAll('https://github.com/', '').split("/")
   const res = await githubFetch<GithubRepoFilesResponsePayload>(
-    "github-repo-files-" + repo,
-    `https://api.github.com/repos/${ repo }/git/trees/main?recursive=1`
+    "github-repo-files-" + `${ owner }/${ repoName }`,
+    `https://api.github.com/repos/${ owner }/${ repoName }/git/trees/main?recursive=1`
   )
   return res
 }

@@ -5,6 +5,7 @@ export const fumanama: AuthorDefinition = {
   socials: {
     github: "fuma-nama",
     x: "fuma_nama",
+    site: "https://www.fuma-nama.dev/",
   },
   entries: {
     fumadocs: {
@@ -13,5 +14,8 @@ export const fumanama: AuthorDefinition = {
         { src: { type: "github-blob", url: "https://github.com/fuma-nama/fumadocs/blob/dev/documents/logo.png" } }
       ]
     }
-  }
+  },
+  fundings: [
+    { type: "github", url: "https://github.com/sponsors/fuma-nama" },
+  ]
 }

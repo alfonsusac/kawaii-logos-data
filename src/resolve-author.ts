@@ -11,6 +11,7 @@ import { slugify } from "./lib/slug"
 import { stepSimple } from "./pipeline"
 import { resolveReferencesDef } from "./resolve/references"
 import { dedupeByProp } from "./lib/dedupe-by-prop"
+import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
 
 export type AuthorDefinition = {
   displayName?: string,
@@ -19,6 +20,7 @@ export type AuthorDefinition = {
   license?: LicenseDef,
   entries?: EntriesDefinition,
   source?: SourceDef,
+  fundings?: FundingsDef,
 }
 
 // ------------------------------------------------------------
@@ -46,6 +48,11 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     () => resolvePfp(author, links.socials)
   )
 
+  const fundings = await stepSimple(
+    "Resolving fundings",
+    () => resolveFundingsDef(author.fundings)
+  )
+
   // Collect licenses from entries and root license if exists and dedupe by label
   const licenses = dedupeByProp(entries.flatMap(e => e.license ? [ e.license ] : []))('label')
 
@@ -61,6 +68,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     entries,
     licenses,
     references,
+    fundings,
   }
 
   // Validating Resolved

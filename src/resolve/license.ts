@@ -102,6 +102,28 @@ export const standardLicenses: StandardLicenseOut = {
         give_credit: "not needed"
       }
     }
+  },
+  "All Rights Reserved": {
+    label: "All Rights Reserved",
+    href: "",
+    permissions: {
+      use: "disallowed",
+      modify: "disallowed",
+      distribute: "disallowed",
+      commercial: "disallowed",
+      misc: {
+        liability: "depends",
+        trademark: "depends",
+      },
+      conditions: {
+        sale_requires_modification: "not needed",
+        disclose_source: "not needed",
+        state_changes: "not needed",
+        include_license: "not needed",
+        include_copyright: "not needed",
+        give_credit: "not needed"
+      }
+    }
   }
 }
 
@@ -132,6 +154,7 @@ const LicenseContentIDs: Record<StandardLicenseType, string[]> = {
   "CC BY-NC-SA 4.0": [ 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0', 'CC BY-NC-SA 4.0' ],
   "CC BY-SA 4.0": [ 'Creative Commons Attribution-ShareAlike 4.0', 'CC BY-SA 4.0' ],
   "CC0-1.0": [ 'CC0 1.0 Universal', 'CC0-1.0' ],
+  "All Rights Reserved": [ 'All Rights Reserved' ],
 }
 
 export function resolveToLicenseTypeByContent(licenseContent: string): LicenseType {

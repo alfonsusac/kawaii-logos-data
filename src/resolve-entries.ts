@@ -17,6 +17,7 @@ export type EntryDefinition = {
   images?: ArrayOrSingle<ImageDefinition>,
   license?: LicenseDef,
   createdAt?: DateDef,
+  references?: ReferencesDef,
 }
 
 export type ImageDefinition = {
@@ -147,10 +148,12 @@ export async function resolveEntries(
     // Resolve LicenseDef
     const license = resolveLicenseDefinitions(entryDef.license)
 
+    const entryReferences = resolveReferencesDef(entryDef.references)
+
     entries.push({
       id,
       title: entryDef.label,
-      references: [], // no top level references for entries, only image level references for now.
+      references: entryReferences,
       imageCount: images.length,
       license,
       images,

@@ -20,5 +20,9 @@ export const fenjalien: AuthorDefinition = {
     href: "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3",
     // has_trademark: false,
     reference: "https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3"
+  },
+  fundings: {
+    type: "github",
+    url: "https://github.com/sponsors/fenjalien",
   }
 }

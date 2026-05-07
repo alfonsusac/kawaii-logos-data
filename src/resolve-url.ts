@@ -40,6 +40,12 @@ function getUrlTypeFromURL(
     warn(`URL is using GitHub's Camo proxy: ${ url }. Consider using the original raw.githubusercontent.com URL for better performance and reliability. Camo URLs will eventually expire and may lead to broken images in the future.`)
     return "github-camo"
   }
+  if (url.startsWith("https://lp.skeb.jp/creator?locale=en")) {
+    return "skeb-creator-guideline-page"
+  }
+  if (url.startsWith("https://skeb.jp/")) {
+    return "skeb-creator-page"
+  }
 
   const err = new Error(`Unknown URL type: ${ url }`)
   Error.captureStackTrace(err, getUrlTypeFromURL)
@@ -60,6 +66,8 @@ function getUrlTypeLabel(urlType: UrlType) {
     case "google-drive": return "Google Drive Page"
     case "twitter-post": return "Twitter Post"
     case "bsky-post": return "Bluesky Post"
+    case "skeb-creator-page": return "Skeb Creator Page"
+    case "skeb-creator-guideline-page": return "Skeb Creator Guideline Page"
     case "unknown": return "Unknown"
   }
 }
