@@ -99,7 +99,7 @@ export async function resolveEntries(
 
       if (imgDef.src.type === "github-blob") {
         const raw = imgDef.src.url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/") as Site
-        references.push({ url: imgDef.src.url, urlType: "github-blob" })
+        references.push({ url: imgDef.src.url, urlType: getUrlType(imgDef.src.url) })
         temp.src = raw
         temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
       }
@@ -109,7 +109,7 @@ export async function resolveEntries(
         // Before  -> https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png
         // After   -> https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3#file-typst-logo-png
         const pageUrl = imgDef.src.url.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
-        references.push({ url: pageUrl, urlType: "gist-page" })
+        references.push({ url: pageUrl, urlType: getUrlType(pageUrl) })
         temp.src = raw
         temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
       }
@@ -117,7 +117,7 @@ export async function resolveEntries(
       if (imgDef.src.type === "self-hosted") {
         const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/${ imgDef.src.filepath.replace('./assets/', '') }` as const
         const blobUrl = url.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/") as Site
-        references.push({ url: blobUrl, urlType: "github-blob" })
+        references.push({ url: blobUrl, urlType: getUrlType(blobUrl) })
         temp.src = url
       }
 
@@ -138,7 +138,7 @@ export async function resolveEntries(
       images.push({
         label: temp.label ?? getFilenameFromUrl(temp.src),
         src: temp.src,
-        srcUrlType: getUrlType(temp.src),
+        srcUrlType: getUrlType(temp.src).type,
         references,
         style: imgDef.style,
       })

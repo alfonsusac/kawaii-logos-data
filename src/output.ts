@@ -74,9 +74,6 @@ export type AuthorOutput = {
 
 
 
-
-
-
 export type UrlType =
   | "github-repo-text-content"
   | "github-blob"
@@ -94,7 +91,10 @@ export type UrlType =
 
 export type Reference = {
   url: string
-  urlType: UrlType,
+  urlType: {
+    type: UrlType,
+    label: string,
+  }
   dateAccessed?: string,
 }
 

@@ -16,14 +16,28 @@ export function resolveReferencesDef(references: ReferencesDef | undefined): Ref
   if (!references) return []
   if (!Array.isArray(references)) references = [ references ]
 
-  return references.map(ref => typeof ref === "string" ? {
-    url: ref,
-    urlType: getUrlType(ref),
-  } : {
-    url: ref.site,
-    urlType: getUrlType(ref.site),
-    dateAccessed: ref.dateAccessed,
-  })
+  return references.map(ref => {
+    if (typeof ref === "string") {
+      return {
+        url: ref,
+        urlType: getUrlType(ref),
+      }
+    }
+    return {
+      url: ref.site,
+      urlType: getUrlType(ref.site),
+      dateAccessed: ref.dateAccessed,
+    }
+    // typeof ref === "string" ? {
+    //   url: ref,
+    //   urlType: getUrlType(ref),
+    // } : {
+    //   url: ref.site,
+    //   urlType: getUrlType(ref.site),
+    //   dateAccessed: ref.dateAccessed,
+    // }
+  }
+  )
 }
 
 // export function resolveReference(def: ReferenceDef | undefined): Reference | undefined {
