@@ -106,24 +106,24 @@ export const standardLicenses: StandardLicenseOut = {
 }
 
 export function resolveLicenseDefinitions(license: LicenseDef | undefined): License {
-  if (!license) return { type: "unknown", label: "Unknown" }
+  if (!license) return { type: "unknown", label: "Unknown License", labelShort: "Unknown License" }
 
   const reference = resolveReferencesDef(license.reference)[ 0 ]
 
   if (license.type === "unknown") {
-    return { reference, type: "unknown", label: "Unknown" }
+    return { reference, type: "unknown", label: "Unknown License", labelShort: "Unknown License" }
   }
 
   if (license.type === "custom") {
-    return { reference, type: "custom", href: license.href, label: "Custom" }
+    return { reference, type: "custom", href: license.href, label: "Custom  License", labelShort: "Custom License" }
   }
 
   if (license.type in standardLicenses === false) {
     logerror(`Unsupported license type: ${ license.type }. Please check the license definition for any typos or consider adding support for this license in ${ import.meta.path }.`)
-    return { reference, type: "unknown", label: "Unknown" }
+    return { reference, type: "unknown", label: "Unknown License", labelShort: "Unknown License" }
   }
 
-  return { reference, type: "standard", id: license.type, label: standardLicenses[ license.type ].label }
+  return { reference, type: "standard", id: license.type, label: standardLicenses[ license.type ].label, labelShort: license.type }
 }
 
 

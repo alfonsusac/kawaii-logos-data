@@ -155,6 +155,8 @@ export async function resolveEntries(
       license,
       images,
     })
+
+    entries.sort((a, b) => a.id.localeCompare(b.id)) // Sort entries by ID for consistent output
   }
 
   return entries

@@ -101,6 +101,7 @@ export type Reference = {
 export type License = {
   reference?: Reference, // where the information was gathered
   label: string,
+  labelShort: string,
 } & (
     | { type: "unknown" }
     | { type: "custom", href: string }
