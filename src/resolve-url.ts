@@ -8,7 +8,7 @@ export function getUrlType(
   if (url.startsWith("https://github.com")) {
     if (url.includes("/blob/")) return "github-blob"
     if (url.includes("#")) return "github-repo-text-content"
-    if (url.split('/').length > 5) return "github-repo"
+    if (url.split('/').length >= 5) return "github-repo"
     return "github-unknown"
   }
   if (url.startsWith("https://drive.google.com/file/d/")) {
