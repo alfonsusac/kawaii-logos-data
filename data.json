@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-07T08:54:26.969Z",
+  "updatedAt": "2026-05-07T09:00:35.117Z",
   "data": {
-    "authorCount": 22,
-    "imageCount": 259,
+    "authorCount": 23,
+    "imageCount": 261,
     "authors": [
       {
         "id": "aikoyori",
@@ -3199,6 +3199,7 @@
       {
         "id": "hvpexe",
         "displayName": "Manhkbrady",
+        "pfp": "https://pps.services.adobe.com/api/profile/FF3E4AFD5B0E08A80A495E78@AdobeID/image/5b8a76ee-94ec-4824-8ed8-df68e7823522/230",
         "social": {
           "x": {
             "username": "manhkbrady",
@@ -3252,6 +3253,127 @@
           }
         ],
         "references": []
+      },
+      {
+        "id": "ifalfahri",
+        "displayName": "ifalfahri",
+        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
+        "social": {
+          "github": {
+            "username": "ifalfahri",
+            "url": "https://github.com/ifalfahri"
+          },
+          "site": "https://dribbble.com/ifalfahri"
+        },
+        "links": {
+          "socials": [
+            {
+              "type": "github",
+              "username": "ifalfahri",
+              "url": "https://github.com/ifalfahri"
+            }
+          ],
+          "personalsites": [
+            "https://dribbble.com/ifalfahri",
+            "https://ifalf.com"
+          ]
+        },
+        "entries": [
+          {
+            "id": "gsap",
+            "title": "GSAP",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://github.com/ifalfahri/VTuberStyleLogos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "GSAP.png",
+                "src": "https://raw.githubusercontent.com/ifalfahri/VTuberStyleLogos/main/GSAP.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/ifalfahri/VTuberStyleLogos/blob/main/GSAP.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "webflow",
+            "title": "Webflow",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://github.com/ifalfahri/VTuberStyleLogos/blob/main/LICENSE",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "Webflow.png",
+                "src": "https://raw.githubusercontent.com/ifalfahri/VTuberStyleLogos/main/Webflow.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/ifalfahri/VTuberStyleLogos/blob/main/Webflow.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "licenses": [
+          {
+            "reference": {
+              "url": "https://github.com/ifalfahri/VTuberStyleLogos/blob/main/LICENSE",
+              "urlType": {
+                "type": "github-blob",
+                "label": "GitHub Blob"
+              }
+            },
+            "type": "standard",
+            "id": "CC BY-NC-SA 4.0",
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
+          }
+        ],
+        "references": [
+          {
+            "url": "https://github.com/ifalfahri/VTuberStyleLogos",
+            "urlType": {
+              "type": "github-repo",
+              "label": "GitHub Repoistory"
+            }
+          }
+        ]
       },
       {
         "id": "ldmdiamondl",
