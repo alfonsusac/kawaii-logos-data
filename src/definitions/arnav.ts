@@ -7,7 +7,7 @@ export const arnav: AuthorDefinition = {
     x: "arnavkr_",
     dribbble: "arnav-kr",
     figma: "@arnav-kr",
-    
+    site: "arnav.bio.link"
   },
   license: {
     type: "MIT",

@@ -9,6 +9,8 @@ export type FundingsDef = SingleOrNonEmptyArray<
   | { type: "buymeacoffee", url: `https://buymeacoffee.com/${ string }` }
   | { type: "saweria", url: `https://saweria.co/${ string }` }
   | { type: "github", url: `https://github.com/sponsors/${ string }` }
+  | { type: "paypal", url: `https://paypal.me/${ string }` }
+  | { type: "skeb", url: `https://skeb.jp/@${ string }` }
 >
 
 export function resolveFundingsDef(def: FundingsDef | undefined) {
@@ -67,6 +69,25 @@ export function resolveFundingsDef(def: FundingsDef | undefined) {
       continue
     }
 
+    if (funding.type === "paypal") {
+      // Resolve
+      fundings.push({
+        type: "paypal",
+        url: funding.url,
+        label: "PayPal",
+      })
+      continue
+    }
+
+    if (funding.type === "skeb") {
+      // Resolve
+      fundings.push({
+        type: "skeb",
+        url: funding.url,
+        label: "Skeb",
+      })
+      continue
+    }
 
     throw new Error(`Unknown funding type: ${ (funding as any).type }`)
   }

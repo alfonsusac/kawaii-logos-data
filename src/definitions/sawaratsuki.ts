@@ -18,6 +18,9 @@ export const sawaratsuki: AuthorDefinition = {
       href: "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
     }
   },
+  fundings: [
+    { type: "skeb", url: "https://skeb.jp/@sawaratsuki" }
+  ],
   entries: {
     "akari-bot": {
       label: "Akari Bot",
@@ -56,7 +59,7 @@ export const sawaratsuki: AuthorDefinition = {
         reference: "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation"
       },
       images: [
-        { src: { type: "github-blob", url: "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png"}}
+        { src: { type: "github-blob", url: "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png" } }
       ],
       references: [
         "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png",

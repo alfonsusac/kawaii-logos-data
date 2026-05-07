@@ -4,7 +4,8 @@ export const thatonecalculator: AuthorDefinition = {
   displayName: "thatonecalculator",
   socials: {
     x: "thatonecalculator",
-    bsky: "t1c.dev"
+    bsky: "t1c.dev",
+    site: "t1c.dev",
   },
   license: {
     type: "CC BY-SA 4.0",
