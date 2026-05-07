@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-07T09:05:36.984Z",
+  "updatedAt": "2026-05-07T13:23:03.942Z",
   "data": {
     "authorCount": 23,
-    "imageCount": 260,
+    "imageCount": 263,
     "authors": [
       {
         "id": "aikoyori",
@@ -875,6 +875,13 @@
               "label": "GitHub Repoistory"
             }
           }
+        ],
+        "fundings": [
+          {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/aikoyori",
+            "label": "Ko-fi"
+          }
         ]
       },
       {
@@ -885,6 +892,10 @@
           "github": {
             "username": "andregans",
             "url": "https://github.com/andregans"
+          },
+          "behance": {
+            "username": "andrerio",
+            "url": "https://behance.net/andrerio"
           }
         },
         "links": {
@@ -893,6 +904,16 @@
               "type": "github",
               "username": "andregans",
               "url": "https://github.com/andregans"
+            },
+            {
+              "type": "behance",
+              "username": "andrerio",
+              "url": "https://behance.net/andrerio"
+            },
+            {
+              "type": "figma",
+              "username": "@hanzo",
+              "url": "https://figma.com/@@hanzo"
             }
           ],
           "personalsites": []
@@ -1951,6 +1972,18 @@
               "label": "GitHub Repoistory"
             }
           }
+        ],
+        "fundings": [
+          {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/andrerio",
+            "label": "Ko-fi"
+          },
+          {
+            "type": "saweria",
+            "url": "https://saweria.co/andrerio",
+            "label": "Saweria"
+          }
         ]
       },
       {
@@ -2138,7 +2171,14 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": [
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/alfonsusac",
+            "label": "Github Sponsors"
+          }
+        ]
       },
       {
         "id": "arnav",
@@ -2165,6 +2205,16 @@
               "type": "x",
               "username": "arnavkr_",
               "url": "https://x.com/arnavkr_"
+            },
+            {
+              "type": "figma",
+              "username": "@arnav-kr",
+              "url": "https://figma.com/@@arnav-kr"
+            },
+            {
+              "type": "dribbble",
+              "username": "arnav-kr",
+              "url": "https://dribbble.com/arnav-kr"
             }
           ],
           "personalsites": []
@@ -2219,7 +2269,29 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": [
+          {
+            "type": "buymeacoffee",
+            "url": "https://buymeacoffee.com/arnavkr",
+            "label": "Buy Me a Coffee"
+          },
+          {
+            "type": "patreon",
+            "url": "https://patreon.com/arnavkr",
+            "label": "Patreon"
+          },
+          {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/arnav",
+            "label": "Ko-fi"
+          },
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/arnav-kr",
+            "label": "Github Sponsors"
+          }
+        ]
       },
       {
         "id": "cocoa_xu",
@@ -2353,6 +2425,13 @@
               "type": "github-repo",
               "label": "GitHub Repoistory"
             }
+          }
+        ],
+        "fundings": [
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/cocoa-xu",
+            "label": "Github Sponsors"
           }
         ]
       },
@@ -2602,6 +2681,18 @@
               "label": "GitHub Repoistory"
             }
           }
+        ],
+        "fundings": [
+          {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/J3J0152VNW",
+            "label": "Ko-fi"
+          },
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/Crysta1221",
+            "label": "Github Sponsors"
+          }
         ]
       },
       {
@@ -2637,7 +2728,15 @@
           {
             "id": "abletonlive",
             "title": "Ableton Live",
-            "references": [],
+            "references": [
+              {
+                "url": "https://x.com/dsphng/status/1781277856880062673/photo/2",
+                "urlType": {
+                  "type": "twitter-post",
+                  "label": "Twitter Post"
+                }
+              }
+            ],
             "imageCount": 1,
             "license": {
               "type": "unknown",
@@ -2674,7 +2773,15 @@
           {
             "id": "bitwigstudio",
             "title": "Bitwig Studio",
-            "references": [],
+            "references": [
+              {
+                "url": "https://x.com/dsphng/status/1781277856880062673/photo/3",
+                "urlType": {
+                  "type": "twitter-post",
+                  "label": "Twitter Post"
+                }
+              }
+            ],
             "imageCount": 1,
             "license": {
               "type": "unknown",
@@ -2748,7 +2855,15 @@
           {
             "id": "logicpro",
             "title": "Logic Pro",
-            "references": [],
+            "references": [
+              {
+                "url": "https://x.com/dsphng/status/1781660983817335125/photo/1",
+                "urlType": {
+                  "type": "twitter-post",
+                  "label": "Twitter Post"
+                }
+              }
+            ],
             "imageCount": 1,
             "license": {
               "type": "unknown",
@@ -2778,7 +2893,15 @@
           {
             "id": "porterrobinson",
             "title": "Porter Robinson",
-            "references": [],
+            "references": [
+              {
+                "url": "https://x.com/dsphng/status/1781311687372755134/photo/1",
+                "urlType": {
+                  "type": "twitter-post",
+                  "label": "Twitter Post"
+                }
+              }
+            ],
             "imageCount": 1,
             "license": {
               "type": "unknown",
@@ -2815,7 +2938,15 @@
           {
             "id": "skrillex",
             "title": "Skrillex",
-            "references": [],
+            "references": [
+              {
+                "url": "https://x.com/dsphng/status/1781307299539370230/photo/1",
+                "urlType": {
+                  "type": "twitter-post",
+                  "label": "Twitter Post"
+                }
+              }
+            ],
             "imageCount": 1,
             "license": {
               "type": "unknown",
@@ -2857,7 +2988,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       },
       {
         "id": "fenjalien",
@@ -2929,7 +3061,14 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": [
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/fenjalien",
+            "label": "Github Sponsors"
+          }
+        ]
       },
       {
         "id": "fumanama",
@@ -2943,7 +3082,8 @@
           "x": {
             "username": "fuma_nama",
             "url": "https://x.com/fuma_nama"
-          }
+          },
+          "site": "https://www.fuma-nama.dev/"
         },
         "links": {
           "socials": [
@@ -2958,7 +3098,9 @@
               "url": "https://x.com/fuma_nama"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://www.fuma-nama.dev/"
+          ]
         },
         "entries": [
           {
@@ -2996,7 +3138,14 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": [
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/fuma-nama",
+            "label": "Github Sponsors"
+          }
+        ]
       },
       {
         "id": "g2_games",
@@ -3022,6 +3171,7 @@
             "https://g2games.dev/git/",
             "https://patchii.net/G2_Games/",
             "https://codeberg.org/g2_games",
+            "https://g2games.dev",
             "https://g2games.dev"
           ]
         },
@@ -3098,6 +3248,18 @@
               "type": "github-repo",
               "label": "GitHub Repoistory"
             }
+          }
+        ],
+        "fundings": [
+          {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/S6S5X3LJR",
+            "label": "Ko-fi"
+          },
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/G2-Games",
+            "label": "Github Sponsors"
           }
         ]
       },
@@ -3194,7 +3356,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       },
       {
         "id": "hvpexe",
@@ -3204,6 +3367,10 @@
           "x": {
             "username": "manhkbrady",
             "url": "https://x.com/manhkbrady"
+          },
+          "behance": {
+            "username": "Manhkbrady",
+            "url": "https://behance.net/Manhkbrady"
           }
         },
         "links": {
@@ -3212,6 +3379,11 @@
               "type": "x",
               "username": "manhkbrady",
               "url": "https://x.com/manhkbrady"
+            },
+            {
+              "type": "behance",
+              "username": "Manhkbrady",
+              "url": "https://behance.net/Manhkbrady"
             }
           ],
           "personalsites": []
@@ -3252,7 +3424,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       },
       {
         "id": "ifalfahri",
@@ -3263,6 +3436,10 @@
             "username": "ifalfahri",
             "url": "https://github.com/ifalfahri"
           },
+          "behance": {
+            "username": "ifalfahri",
+            "url": "https://behance.net/ifalfahri"
+          },
           "site": "https://dribbble.com/ifalfahri"
         },
         "links": {
@@ -3271,11 +3448,22 @@
               "type": "github",
               "username": "ifalfahri",
               "url": "https://github.com/ifalfahri"
+            },
+            {
+              "type": "behance",
+              "username": "ifalfahri",
+              "url": "https://behance.net/ifalfahri"
+            },
+            {
+              "type": "dribbble",
+              "username": "ifalfahri",
+              "url": "https://dribbble.com/ifalfahri"
             }
           ],
           "personalsites": [
             "https://dribbble.com/ifalfahri",
-            "https://ifalf.com"
+            "https://ifalf.com",
+            "https://ifaf.com/"
           ]
         },
         "entries": [
@@ -3373,7 +3561,8 @@
               "label": "GitHub Repoistory"
             }
           }
-        ]
+        ],
+        "fundings": []
       },
       {
         "id": "ldmdiamondl",
@@ -3384,6 +3573,10 @@
             "username": "lDMDiamondl",
             "url": "https://github.com/lDMDiamondl"
           },
+          "x": {
+            "username": "dmdiamond1234",
+            "url": "https://x.com/dmdiamond1234"
+          },
           "site": "https://lDMDiamondl.github.io/Curriculum-Vitae/"
         },
         "links": {
@@ -3392,6 +3585,11 @@
               "type": "github",
               "username": "lDMDiamondl",
               "url": "https://github.com/lDMDiamondl"
+            },
+            {
+              "type": "x",
+              "username": "dmdiamond1234",
+              "url": "https://x.com/dmdiamond1234"
             }
           ],
           "personalsites": [
@@ -3585,7 +3783,8 @@
               "label": "GitHub Repoistory"
             }
           }
-        ]
+        ],
+        "fundings": []
       },
       {
         "id": "maxshawnwx",
@@ -3650,7 +3849,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       },
       {
         "id": "mkpoli",
@@ -3758,6 +3958,13 @@
               "type": "github-repo",
               "label": "GitHub Repoistory"
             }
+          }
+        ],
+        "fundings": [
+          {
+            "type": "ko-fi",
+            "url": "https://ko-fi.com/mkpoli",
+            "label": "Ko-fi"
           }
         ]
       },
@@ -4145,7 +4352,8 @@
               "label": "GitHub Repoistory"
             }
           }
-        ]
+        ],
+        "fundings": []
       },
       {
         "id": "saltyaom",
@@ -4163,7 +4371,8 @@
           "bsky": {
             "username": "saltyaom.com",
             "url": "https://bsky.app/profile/saltyaom.com"
-          }
+          },
+          "site": "https://saltyaom.com"
         },
         "links": {
           "socials": [
@@ -4183,7 +4392,9 @@
               "url": "https://bsky.app/profile/saltyaom.com"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://saltyaom.com"
+          ]
         },
         "entries": [
           {
@@ -4221,7 +4432,14 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": [
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/SaltyAom",
+            "label": "Github Sponsors"
+          }
+        ]
       },
       {
         "id": "sawaratsuki",
@@ -4253,6 +4471,156 @@
           "personalsites": []
         },
         "entries": [
+          {
+            "id": "akari-bot",
+            "title": "Akari Bot",
+            "references": [
+              {
+                "url": "https://github.com/Teahouse-Studios/akari-bot/blob/master/assets/akaribot_logo.png",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              {
+                "url": "https://skeb.jp/@sawaratsuki/works/27",
+                "urlType": {
+                  "type": "skeb-creator-page",
+                  "label": "Skeb Creator Page"
+                }
+              }
+            ],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation",
+                "urlType": {
+                  "type": "skeb-creator-guideline-page",
+                  "label": "Skeb Creator Guideline Page"
+                }
+              },
+              "type": "standard",
+              "id": "All Rights Reserved",
+              "label": "All Rights Reserved",
+              "labelShort": "All Rights Reserved"
+            },
+            "images": [
+              {
+                "label": "akaribot_logo.png",
+                "src": "https://raw.githubusercontent.com/Teahouse-Studios/akari-bot/master/assets/akaribot_logo.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/Teahouse-Studios/akari-bot/blob/master/assets/akaribot_logo.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "astral",
+            "title": "Astral",
+            "references": [
+              {
+                "url": "https://github.com/lino-levan/astral/blob/main/docs/static/astral.png",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              {
+                "url": "https://skeb.jp/@sawaratsuki/works/21",
+                "urlType": {
+                  "type": "skeb-creator-page",
+                  "label": "Skeb Creator Page"
+                }
+              }
+            ],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation",
+                "urlType": {
+                  "type": "skeb-creator-guideline-page",
+                  "label": "Skeb Creator Guideline Page"
+                }
+              },
+              "type": "standard",
+              "id": "All Rights Reserved",
+              "label": "All Rights Reserved",
+              "labelShort": "All Rights Reserved"
+            },
+            "images": [
+              {
+                "label": "astral.png",
+                "src": "https://raw.githubusercontent.com/lino-levan/astral/main/docs/static/astral.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/lino-levan/astral/blob/main/docs/static/astral.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hinoshiba",
+            "title": "Hinoshiba",
+            "references": [
+              {
+                "url": "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png",
+                "urlType": {
+                  "type": "github-blob",
+                  "label": "GitHub Blob"
+                }
+              },
+              {
+                "url": "https://skeb.jp/@sawaratsuki/works/10",
+                "urlType": {
+                  "type": "skeb-creator-page",
+                  "label": "Skeb Creator Page"
+                }
+              }
+            ],
+            "imageCount": 1,
+            "license": {
+              "reference": {
+                "url": "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation",
+                "urlType": {
+                  "type": "skeb-creator-guideline-page",
+                  "label": "Skeb Creator Guideline Page"
+                }
+              },
+              "type": "standard",
+              "id": "All Rights Reserved",
+              "label": "All Rights Reserved",
+              "labelShort": "All Rights Reserved"
+            },
+            "images": [
+              {
+                "label": "hinoshiba_kawaii.png",
+                "src": "https://raw.githubusercontent.com/hinoshiba/hinoshiba.github.io/master/img/hinoshiba_kawaii.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png",
+                    "urlType": {
+                      "type": "github-blob",
+                      "label": "GitHub Blob"
+                    }
+                  }
+                ]
+              }
+            ]
+          },
           {
             "id": "403-forbidden",
             "title": "403 Forbidden",
@@ -6300,6 +6668,19 @@
         ],
         "licenses": [
           {
+            "reference": {
+              "url": "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation",
+              "urlType": {
+                "type": "skeb-creator-guideline-page",
+                "label": "Skeb Creator Guideline Page"
+              }
+            },
+            "type": "standard",
+            "id": "All Rights Reserved",
+            "label": "All Rights Reserved",
+            "labelShort": "All Rights Reserved"
+          },
+          {
             "type": "custom",
             "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
             "label": "Custom License",
@@ -6314,7 +6695,8 @@
               "label": "GitHub Repoistory"
             }
           }
-        ]
+        ],
+        "fundings": []
       },
       {
         "id": "syke9p3",
@@ -6324,7 +6706,8 @@
           "github": {
             "username": "syke9p3",
             "url": "https://github.com/syke9p3"
-          }
+          },
+          "site": "https://syke9p3.netlify.app"
         },
         "links": {
           "socials": [
@@ -6334,7 +6717,9 @@
               "url": "https://github.com/syke9p3"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://syke9p3.netlify.app"
+          ]
         },
         "entries": [
           {
@@ -6613,7 +6998,8 @@
               "label": "GitHub Repoistory"
             }
           }
-        ]
+        ],
+        "fundings": []
       },
       {
         "id": "styxpilled",
@@ -6727,7 +7113,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       },
       {
         "id": "thatonecalculator",
@@ -6894,7 +7281,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       },
       {
         "id": "urielchan",
@@ -6955,7 +7343,8 @@
             "labelShort": "Unknown License"
           }
         ],
-        "references": []
+        "references": [],
+        "fundings": []
       }
     ],
     "standardLicenses": {
@@ -7036,6 +7425,28 @@
           "misc": {
             "liability": "disallowed",
             "trademark": "disallowed"
+          },
+          "conditions": {
+            "sale_requires_modification": "not needed",
+            "disclose_source": "not needed",
+            "state_changes": "not needed",
+            "include_license": "not needed",
+            "include_copyright": "not needed",
+            "give_credit": "not needed"
+          }
+        }
+      },
+      "All Rights Reserved": {
+        "label": "All Rights Reserved",
+        "href": "",
+        "permissions": {
+          "use": "disallowed",
+          "modify": "disallowed",
+          "distribute": "disallowed",
+          "commercial": "disallowed",
+          "misc": {
+            "liability": "depends",
+            "trademark": "depends"
           },
           "conditions": {
             "sale_requires_modification": "not needed",
