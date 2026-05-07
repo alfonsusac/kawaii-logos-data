@@ -34,6 +34,7 @@ import { petricat } from "./definitions/petricat"
 import { ifalfahri } from "./definitions/ifalfahri"
 import { c29h25n3o5 } from "./definitions/C29H25N3O5"
 import { anwar_achilles } from "./definitions/anwar-achilles"
+import { shiroiame_kusu } from "./definitions/shiroiame-kusu"
 
 
 runApp(async () => {
@@ -69,6 +70,7 @@ runApp(async () => {
         petricat,
         saltyaom,
         sawaratsuki,
+        shiroiame_kusu,
         syke9p3,
         styxpilled,
         thatonecalculator,
