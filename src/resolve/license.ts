@@ -115,7 +115,7 @@ export function resolveLicenseDefinitions(license: LicenseDef | undefined): Lice
   }
 
   if (license.type === "custom") {
-    return { reference, type: "custom", href: license.href, label: "Custom  License", labelShort: "Custom License" }
+    return { reference, type: "custom", href: license.href, label: "Custom License", labelShort: "Custom License" }
   }
 
   if (license.type in standardLicenses === false) {
