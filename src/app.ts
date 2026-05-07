@@ -31,6 +31,7 @@ import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./revalidate"
 import type { KawaiiLogoData } from "./output"
 import { petricat } from "./definitions/petricat"
+import { ifalfahri } from "./definitions/ifalfahri"
 
 
 runApp(async () => {
@@ -57,6 +58,7 @@ runApp(async () => {
         g2_games,
         hcho3,
         hvpexe,
+        ifalfahri,
         ldmdiamondl,
         maxshawnwx,
         mkpoli,

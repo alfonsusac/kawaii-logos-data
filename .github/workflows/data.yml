@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     # Every 4 hour
-    - cron: "0 */4 * * *"
+    - cron: "0 0 * * *"
   push:
     paths:
       - ".github/workflows/data.yml"  # on data.yml (this file) change
