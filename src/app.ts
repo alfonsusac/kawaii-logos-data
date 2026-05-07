@@ -32,7 +32,7 @@ import { revalidateMainWebsite } from "./revalidate"
 import type { KawaiiLogoData } from "./output"
 import { petricat } from "./definitions/petricat"
 import { ifalfahri } from "./definitions/ifalfahri"
-import { c29h25n3o5 } from "./definitions/C29H25N3O5"
+import { c29h25n3o5 } from "./definitions/_c29h25n3o5"
 import { anwar_achilles } from "./definitions/anwar-achilles"
 import { shiroiame_kusu } from "./definitions/shiroiame-kusu"
 
