@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T14:30:40.111Z",
+  "updatedAt": "2026-05-07T14:32:36.204Z",
   "data": {
     "authorCount": 26,
     "imageCount": 277,
@@ -15,7 +15,7 @@
           },
           "x": {
             "username": "Aikoyori",
-            "url": "https://x.com/Aikoyori"
+            "url": "https://twitter.com/Aikoyori"
           },
           "bsky": {
             "username": "aikoyori.xyz",
@@ -33,7 +33,7 @@
             {
               "type": "x",
               "username": "Aikoyori",
-              "url": "https://x.com/Aikoyori"
+              "url": "https://twitter.com/Aikoyori"
             },
             {
               "type": "bsky",
@@ -1998,7 +1998,8 @@
           "github": {
             "username": "AnwarAchilles",
             "url": "https://github.com/AnwarAchilles"
-          }
+          },
+          "site": "https://anwarachilles.pro"
         },
         "links": {
           "socials": [
@@ -2008,7 +2009,9 @@
               "url": "https://github.com/AnwarAchilles"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://anwarachilles.pro"
+          ]
         },
         "entries": [
           {
@@ -2615,9 +2618,39 @@
       {
         "id": "cocoa_xu",
         "displayName": "cocoa_xu",
-        "social": {},
+        "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
+        "social": {
+          "github": {
+            "username": "cocoa-xu",
+            "url": "https://github.com/cocoa-xu"
+          },
+          "x": {
+            "username": "_uwu_cocoa",
+            "url": "https://twitter.com/_uwu_cocoa"
+          },
+          "bsky": {
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          }
+        },
         "links": {
-          "socials": [],
+          "socials": [
+            {
+              "type": "github",
+              "username": "cocoa-xu",
+              "url": "https://github.com/cocoa-xu"
+            },
+            {
+              "type": "x",
+              "username": "_uwu_cocoa",
+              "url": "https://twitter.com/_uwu_cocoa"
+            },
+            {
+              "type": "bsky",
+              "username": "uwucocoa.moe",
+              "url": "https://bsky.app/profile/uwucocoa.moe"
+            }
+          ],
           "personalsites": []
         },
         "entries": [
@@ -2735,7 +2768,7 @@
           },
           "x": {
             "username": "cr1sta_dev",
-            "url": "https://x.com/cr1sta_dev"
+            "url": "https://twitter.com/cr1sta_dev"
           },
           "site": "https://crystaworld.dev"
         },
@@ -2749,7 +2782,7 @@
             {
               "type": "x",
               "username": "cr1sta_dev",
-              "url": "https://x.com/cr1sta_dev"
+              "url": "https://twitter.com/cr1sta_dev"
             }
           ],
           "personalsites": [
@@ -2992,6 +3025,10 @@
           "github": {
             "username": "C29H25N3O5",
             "url": "https://github.com/C29H25N3O5"
+          },
+          "x": {
+            "username": "C29H25N3O5",
+            "url": "https://twitter.com/C29H25N3O5"
           }
         },
         "links": {
@@ -3000,6 +3037,11 @@
               "type": "github",
               "username": "C29H25N3O5",
               "url": "https://github.com/C29H25N3O5"
+            },
+            {
+              "type": "x",
+              "username": "C29H25N3O5",
+              "url": "https://twitter.com/C29H25N3O5"
             }
           ],
           "personalsites": []
@@ -3563,7 +3605,7 @@
             "username": "G2-Games",
             "url": "https://github.com/G2-Games"
           },
-          "site": "https://g2games.dev"
+          "site": "https://ko-fi.com/g2_games"
         },
         "links": {
           "socials": [
@@ -3574,6 +3616,10 @@
             }
           ],
           "personalsites": [
+            "https://ko-fi.com/g2_games",
+            "https://g2games.dev/git/",
+            "https://patchii.net/G2_Games/",
+            "https://codeberg.org/g2_games",
             "https://g2games.dev",
             "https://g2games.dev"
           ]
@@ -3833,7 +3879,12 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
+        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "social": {
+          "github": {
+            "username": "ifalfahri",
+            "url": "https://github.com/ifalfahri"
+          },
           "dribbble": {
             "username": "ifalfahri",
             "url": "https://dribbble.com/ifalfahri"
@@ -3842,10 +3893,15 @@
             "username": "ifalfahri",
             "url": "https://behance.net/ifalfahri"
           },
-          "site": "https://ifaf.com/"
+          "site": "https://dribbble.com/ifalfahri"
         },
         "links": {
           "socials": [
+            {
+              "type": "github",
+              "username": "ifalfahri",
+              "url": "https://github.com/ifalfahri"
+            },
             {
               "type": "behance",
               "username": "ifalfahri",
@@ -3858,6 +3914,8 @@
             }
           ],
           "personalsites": [
+            "https://dribbble.com/ifalfahri",
+            "https://ifalf.com",
             "https://ifaf.com/"
           ]
         },
@@ -3962,21 +4020,35 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
+        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "social": {
+          "github": {
+            "username": "lDMDiamondl",
+            "url": "https://github.com/lDMDiamondl"
+          },
           "x": {
             "username": "dmdiamond1234",
             "url": "https://x.com/dmdiamond1234"
-          }
+          },
+          "site": "https://lDMDiamondl.github.io/Curriculum-Vitae/"
         },
         "links": {
           "socials": [
+            {
+              "type": "github",
+              "username": "lDMDiamondl",
+              "url": "https://github.com/lDMDiamondl"
+            },
             {
               "type": "x",
               "username": "dmdiamond1234",
               "url": "https://x.com/dmdiamond1234"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+            "https://dendya123.tistory.com/"
+          ]
         },
         "entries": [
           {
@@ -4242,7 +4314,11 @@
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           },
-          "site": "https://mkpo.li/"
+          "x": {
+            "username": "mkpoli",
+            "url": "https://twitter.com/mkpoli"
+          },
+          "site": "https://ko-fi.com/mkpoli/"
         },
         "links": {
           "socials": [
@@ -4250,9 +4326,15 @@
               "type": "github",
               "username": "mkpoli",
               "url": "https://github.com/mkpoli"
+            },
+            {
+              "type": "x",
+              "username": "mkpoli",
+              "url": "https://twitter.com/mkpoli"
             }
           ],
           "personalsites": [
+            "https://ko-fi.com/mkpoli/",
             "https://mkpo.li/"
           ]
         },
@@ -4342,11 +4424,22 @@
       {
         "id": "petricat",
         "displayName": "petricat",
+        "pfp": "https://avatars.githubusercontent.com/PetricaT",
         "social": {
+          "github": {
+            "username": "PetricaT",
+            "url": "https://github.com/PetricaT"
+          },
           "site": "petricat.github.io/PetricaT/"
         },
         "links": {
-          "socials": [],
+          "socials": [
+            {
+              "type": "github",
+              "username": "PetricaT",
+              "url": "https://github.com/PetricaT"
+            }
+          ],
           "personalsites": [
             "https://petricat.github.io/PetricaT/"
           ]
@@ -7067,6 +7160,10 @@
             "username": "Shiroiame-Kusu",
             "url": "https://github.com/Shiroiame-Kusu"
           },
+          "x": {
+            "username": "Shiroiame_Kusu",
+            "url": "https://twitter.com/Shiroiame_Kusu"
+          },
           "site": "https://blog.nyat.icu"
         },
         "links": {
@@ -7075,6 +7172,11 @@
               "type": "github",
               "username": "Shiroiame-Kusu",
               "url": "https://github.com/Shiroiame-Kusu"
+            },
+            {
+              "type": "x",
+              "username": "Shiroiame_Kusu",
+              "url": "https://twitter.com/Shiroiame_Kusu"
             }
           ],
           "personalsites": [
