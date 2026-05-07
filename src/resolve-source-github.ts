@@ -55,11 +55,11 @@ async function resolveGithubRepository(def: GithubSourceDef) {
 
   // For now, we only resolve the root license file if it exists. 
   // In the future, we could potentially resolve all license files and their contents.
-  // const rootLicense = resolvedTree.find(item => item.path.toLowerCase().includes("license"))
-  const licenses = resolvedTree.filter(item => item.path.toLowerCase().includes("license"))
-  log("Licenses: ")
-  licenses.forEach(l => log(`- ${ l.path } (raw url: ${ l.rawPageUrl })`))
-  const rootLicense = licenses.find(l => l.path.toLowerCase() === "license" || l.path.toLowerCase() === "license.md" || l.path.toLowerCase() === "license.txt")
+
+  // check if there are any files with "license" or "licence" in the name (case-insensitive)
+  const licenseFiles = [ "license", "license.md", "license.txt", "licence", "licence.md", "licence.txt" ]
+  const rootLicense = resolvedTree.find(item => licenseFiles.includes(item.path.toLowerCase()))
+  log(`Licenses: ${rootLicense?.githubPageUrl}`)
 
   const licenseDef = await (async (): Promise<LicenseDef> => {
     if (!rootLicense) return { type: "unknown" }

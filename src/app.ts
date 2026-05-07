@@ -32,6 +32,8 @@ import { revalidateMainWebsite } from "./revalidate"
 import type { KawaiiLogoData } from "./output"
 import { petricat } from "./definitions/petricat"
 import { ifalfahri } from "./definitions/ifalfahri"
+import { c29h25n3o5 } from "./definitions/C29H25N3O5"
+import { anwar_achilles } from "./definitions/anwar-achilles"
 
 
 runApp(async () => {
@@ -48,10 +50,12 @@ runApp(async () => {
       const resolved = await resolveDefinitions({
         aikoyori,
         andregans,
+        anwar_achilles,
         alfonsusac,
         arnav,
         cocoa_xu,
         cr1sta_dev,
+        c29h25n3o5,
         dsphng,
         fenjalien,
         fumanama,

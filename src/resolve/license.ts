@@ -1,5 +1,5 @@
 import type { License, StandardLicenseOut, StandardLicenseType } from "../output"
-import { log, logerror } from "../pipeline"
+import { log, logerror, warn } from "../pipeline"
 import { resolveReferencesDef, type ReferenceDef } from "./references"
 
 export type LicenseDef = {
@@ -151,7 +151,7 @@ export function resolveLicenseDefinitions(license: LicenseDef | undefined): Lice
 
 const LicenseContentIDs: Record<StandardLicenseType, string[]> = {
   "MIT": [ 'MIT License' ],
-  "CC BY-NC-SA 4.0": [ 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0', 'CC BY-NC-SA 4.0' ],
+  "CC BY-NC-SA 4.0": [ 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0', 'CC BY-NC-SA 4.0', 'Attribution-NonCommercial-ShareAlike 4.0 International' ],
   "CC BY-SA 4.0": [ 'Creative Commons Attribution-ShareAlike 4.0', 'CC BY-SA 4.0' ],
   "CC0-1.0": [ 'CC0 1.0 Universal', 'CC0-1.0' ],
   "All Rights Reserved": [ 'All Rights Reserved' ],
@@ -161,10 +161,11 @@ export function resolveToLicenseTypeByContent(licenseContent: string): LicenseTy
 
   for (const [ licenseType, identifiers ] of Object.entries(LicenseContentIDs)) {
     if (identifiers.some(id => licenseContent.includes(id))) {
+      log(`Resolved license type as ${ licenseType } based on content identifiers.`)
       return licenseType as StandardLicenseType
     }
   }
 
-
+  warn(`Failed to resolve license type from content. No known identifiers found in the license content. Please check the license content for any recognizable identifiers or consider adding support for this license in ${ import.meta.path }.`)
   return "unknown"
 }
