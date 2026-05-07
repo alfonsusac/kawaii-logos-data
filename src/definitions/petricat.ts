@@ -6,7 +6,8 @@ export const petricat: AuthorDefinition = {
     repo: "PetricaT/ProgrammingVTuberLogos-Addon",
     transform: [
       { type: "replace", from: "V1/", to: "V1-" },
-      { type: "replace", from: "V2/", to: "V1-" }
+      { type: "replace", from: "V2/", to: "V1-" },
+      { type: "filter", exclude: "CC-BY-NC-SA-4.0.jpg" },
     ]
   },
   socials: {
