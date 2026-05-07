@@ -178,12 +178,16 @@ export async function resolveSocials(
   const x = validXs.length > 0 ? validXs[ 0 ] : undefined
   const bsky = validBskys.length > 0 ? validBskys[ 0 ] : undefined
   const behance = validBehances.length > 0 ? validBehances[ 0 ] : undefined
+  const figma = validFigmas.length > 0 ? validFigmas[ 0 ] : undefined
+  const dribbble = validDribbles.length > 0 ? validDribbles[ 0 ] : undefined
   const personalsite = personalsites.length > 0 ? personalsites[ 0 ] : undefined
 
   const social: AuthorOutput[ 'social' ] = {
     github,
     x,
     bsky,
+    figma,
+    dribbble,
     behance,
     site: personalsite,
   }
