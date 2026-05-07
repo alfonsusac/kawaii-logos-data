@@ -1,10 +1,10 @@
 import type { AuthorDefinition } from "../resolve-author"
 
 export const hvpexe: AuthorDefinition = {
-  displayName: "hvpexe",
+  displayName: "Manhkbrady",
   socials: {
-    github: "hvpexe",
-    x: "Manhkbrady",
+    x: "manhkbrady",
+    behance: "Manhkbrady"
   },
   license: {
     type: "CC BY-NC-SA 4.0",

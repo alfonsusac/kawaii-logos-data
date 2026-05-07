@@ -9,10 +9,11 @@ export type SocialsDef = {
   x?: string,
   bsky?: string,
   site?: string,
+  behance?: string,
 }
 
 export type SocialListDef = {
-  label: "github" | "x" | "bsky" | "site",
+  label: "github" | "x" | "bsky" | "site" | "behance",
   url: string,
 }[]
 
