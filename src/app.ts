@@ -30,6 +30,7 @@ import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./revalidate"
 import type { KawaiiLogoData } from "./output"
+import { petricat } from "./definitions/petricat"
 
 
 runApp(async () => {
@@ -59,6 +60,7 @@ runApp(async () => {
         ldmdiamondl,
         maxshawnwx,
         mkpoli,
+        petricat,
         saltyaom,
         sawaratsuki,
         syke9p3,
