@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-06T16:39:16.239Z",
+  "updatedAt": "2026-05-07T05:58:45.085Z",
   "data": {
     "authorCount": 21,
     "imageCount": 243,
@@ -58,7 +58,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -119,7 +120,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -158,7 +160,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -197,7 +200,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -236,7 +240,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -275,7 +280,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -358,7 +364,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -397,7 +404,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -436,7 +444,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -519,7 +528,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -547,84 +557,6 @@
             ]
           },
           {
-            "id": "papermc",
-            "title": "PaperMC",
-            "references": [],
-            "imageCount": 2,
-            "license": {
-              "reference": {
-                "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
-              },
-              "type": "standard",
-              "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
-            },
-            "images": [
-              {
-                "label": "PaperMCLogo.png",
-                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogo.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogo.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "PaperMCLogoShadowed.png",
-                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogoShadowed.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogoShadowed.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "vscode",
-            "title": "VSCode",
-            "references": [],
-            "imageCount": 2,
-            "license": {
-              "reference": {
-                "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
-                "urlType": "github-blob"
-              },
-              "type": "standard",
-              "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
-            },
-            "images": [
-              {
-                "label": "VSCode-Thick.png",
-                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode-Thick.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "VSCode.png",
-                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "osu",
             "title": "osu",
             "references": [],
@@ -636,7 +568,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -684,6 +617,86 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "papermc",
+            "title": "PaperMC",
+            "references": [],
+            "imageCount": 2,
+            "license": {
+              "reference": {
+                "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+                "urlType": "github-blob"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "PaperMCLogo.png",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogo.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogo.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "PaperMCLogoShadowed.png",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/PaperMC/PaperMCLogoShadowed.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/PaperMC/PaperMCLogoShadowed.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "vscode",
+            "title": "VSCode",
+            "references": [],
+            "imageCount": 2,
+            "license": {
+              "reference": {
+                "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/LICENSE.md",
+                "urlType": "github-blob"
+              },
+              "type": "standard",
+              "id": "CC BY-NC-SA 4.0",
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
+            },
+            "images": [
+              {
+                "label": "VSCode-Thick.png",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode-Thick.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "VSCode.png",
+                "src": "https://raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/Aikoyori/ProgrammingVTuberLogos/blob/main/VSCode/VSCode.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "licenses": [
@@ -694,7 +707,8 @@
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
-            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
           }
         ],
         "references": [
@@ -733,7 +747,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -757,7 +772,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -781,7 +797,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -805,7 +822,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -822,30 +840,6 @@
             ]
           },
           {
-            "id": "css-logotype",
-            "title": "CSS Logotype",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "CSS Logotype.png",
-                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/CSS Logotype.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/andregans/code_logotype/blob/main/CSS Logotype.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "cloudflare-logotype",
             "title": "Cloudflare Logotype",
             "references": [],
@@ -853,7 +847,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -870,6 +865,31 @@
             ]
           },
           {
+            "id": "css-logotype",
+            "title": "CSS Logotype",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "CSS Logotype.png",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/CSS Logotype.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/andregans/code_logotype/blob/main/CSS Logotype.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "django-logotype",
             "title": "Django Logotype",
             "references": [],
@@ -877,7 +897,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -901,7 +922,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -925,7 +947,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -949,7 +972,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -973,7 +997,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -990,30 +1015,6 @@
             ]
           },
           {
-            "id": "html-logotype",
-            "title": "HTML Logotype",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "HTML Logotype.png",
-                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/HTML Logotype.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/andregans/code_logotype/blob/main/HTML Logotype.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "hono-logotype",
             "title": "Hono Logotype",
             "references": [],
@@ -1021,7 +1022,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1038,6 +1040,31 @@
             ]
           },
           {
+            "id": "html-logotype",
+            "title": "HTML Logotype",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "HTML Logotype.png",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/HTML Logotype.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/andregans/code_logotype/blob/main/HTML Logotype.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "hugo",
             "title": "Hugo",
             "references": [],
@@ -1045,7 +1072,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1069,7 +1097,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1093,7 +1122,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1117,7 +1147,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1141,7 +1172,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1158,30 +1190,6 @@
             ]
           },
           {
-            "id": "npm-logotype",
-            "title": "NPM Logotype",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "NPM Logotype.png",
-                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/NPM Logotype.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/andregans/code_logotype/blob/main/NPM Logotype.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "neovim-logotype",
             "title": "Neovim Logotype",
             "references": [],
@@ -1189,7 +1197,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1213,7 +1222,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1237,7 +1247,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1261,7 +1272,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1285,7 +1297,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1302,6 +1315,31 @@
             ]
           },
           {
+            "id": "npm-logotype",
+            "title": "NPM Logotype",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "NPM Logotype.png",
+                "src": "https://raw.githubusercontent.com/andregans/code_logotype/main/NPM Logotype.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/andregans/code_logotype/blob/main/NPM Logotype.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "nuxt-js-logotype",
             "title": "Nuxt JS Logotype",
             "references": [],
@@ -1309,7 +1347,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1333,7 +1372,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1357,7 +1397,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1381,7 +1422,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1405,7 +1447,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1429,7 +1472,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1453,7 +1497,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1477,7 +1522,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1501,7 +1547,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1525,7 +1572,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1549,7 +1597,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1573,7 +1622,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1597,7 +1647,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -1618,7 +1669,8 @@
           {
             "type": "custom",
             "href": "https://github.com/andregans/code_logotype#-programming-logotype--sticker",
-            "label": "Custom"
+            "label": "Custom  License",
+            "labelShort": "Custom License"
           }
         ],
         "references": [
@@ -1671,82 +1723,14 @@
         },
         "entries": [
           {
-            "id": "skillissue",
-            "title": "Skill Issue",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "skillissue.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "lgtm",
-            "title": "LGTM",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "lgtm.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/lgtm.svg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/lgtm.svg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "supabase",
-            "title": "Supabase",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "supabase.svg",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/supabase.svg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/supabase.svg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "emailthing",
             "title": "EmailThing",
             "references": [],
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -1763,13 +1747,38 @@
             ]
           },
           {
+            "id": "lgtm",
+            "title": "LGTM",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "lgtm.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/lgtm.svg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/lgtm.svg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "sharkchat",
             "title": "Sharkchat",
             "references": [],
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -1784,12 +1793,61 @@
                 ]
               }
             ]
+          },
+          {
+            "id": "skillissue",
+            "title": "Skill Issue",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "skillissue.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "supabase",
+            "title": "Supabase",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "supabase.svg",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/supabase.svg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/supabase.svg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
           }
         ],
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -1831,7 +1889,8 @@
             "imageCount": 2,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -1862,7 +1921,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -1918,7 +1978,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -1946,7 +2007,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -1971,7 +2033,8 @@
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
-            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
           }
         ],
         "references": [
@@ -2026,7 +2089,8 @@
               },
               "type": "standard",
               "id": "MIT",
-              "label": "MIT License"
+              "label": "MIT License",
+              "labelShort": "MIT"
             },
             "images": [
               {
@@ -2054,7 +2118,8 @@
               },
               "type": "standard",
               "id": "MIT",
-              "label": "MIT License"
+              "label": "MIT License",
+              "labelShort": "MIT"
             },
             "images": [
               {
@@ -2082,7 +2147,8 @@
               },
               "type": "standard",
               "id": "MIT",
-              "label": "MIT License"
+              "label": "MIT License",
+              "labelShort": "MIT"
             },
             "images": [
               {
@@ -2110,7 +2176,8 @@
               },
               "type": "standard",
               "id": "MIT",
-              "label": "MIT License"
+              "label": "MIT License",
+              "labelShort": "MIT"
             },
             "images": [
               {
@@ -2149,7 +2216,8 @@
               },
               "type": "standard",
               "id": "MIT",
-              "label": "MIT License"
+              "label": "MIT License",
+              "labelShort": "MIT"
             },
             "images": [
               {
@@ -2174,7 +2242,8 @@
             },
             "type": "standard",
             "id": "MIT",
-            "label": "MIT License"
+            "label": "MIT License",
+            "labelShort": "MIT"
           }
         ],
         "references": [
@@ -2215,133 +2284,14 @@
         },
         "entries": [
           {
-            "id": "skrillex",
-            "title": "Skrillex",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "skrillexsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/skrillexsticker.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing",
-                    "urlType": "google-drive"
-                  },
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/skrillexsticker.png",
-                    "urlType": "github-blob"
-                  }
-                ],
-                "style": {
-                  "objectFit": "contain"
-                }
-              }
-            ]
-          },
-          {
-            "id": "porterrobinson",
-            "title": "Porter Robinson",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "porterrobinsonsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/porterrobinsonsticker.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing",
-                    "urlType": "google-drive"
-                  },
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/porterrobinsonsticker.png",
-                    "urlType": "github-blob"
-                  }
-                ],
-                "style": {
-                  "objectFit": "contain"
-                }
-              }
-            ]
-          },
-          {
-            "id": "flstudio",
-            "title": "FL Studio",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "flsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/flsticker.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing",
-                    "urlType": "google-drive"
-                  },
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/flsticker.png",
-                    "urlType": "github-blob"
-                  }
-                ],
-                "style": {
-                  "objectFit": "contain"
-                }
-              }
-            ]
-          },
-          {
-            "id": "bitwigstudio",
-            "title": "Bitwig Studio",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "bitwigsticker.png",
-                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/bitwigsticker.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing",
-                    "urlType": "google-drive"
-                  },
-                  {
-                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/bitwigsticker.png",
-                    "urlType": "github-blob"
-                  }
-                ],
-                "style": {
-                  "objectFit": "contain"
-                }
-              }
-            ]
-          },
-          {
             "id": "abletonlive",
             "title": "Ableton Live",
             "references": [],
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2365,13 +2315,76 @@
             ]
           },
           {
+            "id": "bitwigstudio",
+            "title": "Bitwig Studio",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "bitwigsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/bitwigsticker.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://drive.google.com/file/d/1Dc5icFqOCOm_6qyZh1MxsFN4QtmI6RcH/view?usp=sharing",
+                    "urlType": "google-drive"
+                  },
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/bitwigsticker.png",
+                    "urlType": "github-blob"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "flstudio",
+            "title": "FL Studio",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "flsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/flsticker.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://drive.google.com/file/d/1wMi3TOs-egixz6wuf4NNJpMfzArMcZZ2/view?usp=sharing",
+                    "urlType": "google-drive"
+                  },
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/flsticker.png",
+                    "urlType": "github-blob"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
             "id": "logicpro",
             "title": "Logic Pro",
             "references": [],
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2389,12 +2402,75 @@
                 }
               }
             ]
+          },
+          {
+            "id": "porterrobinson",
+            "title": "Porter Robinson",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "porterrobinsonsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/porterrobinsonsticker.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://drive.google.com/file/d/19bMQzV2ZseW-pyV8NSjDyitiuyeJNJ1G/view?usp=sharing",
+                    "urlType": "google-drive"
+                  },
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/porterrobinsonsticker.png",
+                    "urlType": "github-blob"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "skrillex",
+            "title": "Skrillex",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "skrillexsticker.png",
+                "src": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/skrillexsticker.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://drive.google.com/file/d/1mumHSFG6k8O1uKG29rYc9s0Wm_jQDSpP/view?usp=sharing",
+                    "urlType": "google-drive"
+                  },
+                  {
+                    "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/skrillexsticker.png",
+                    "urlType": "github-blob"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
           }
         ],
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -2427,7 +2503,8 @@
             "imageCount": 2,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2458,7 +2535,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -2500,7 +2578,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2520,7 +2599,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -2565,7 +2645,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -2601,7 +2682,8 @@
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
-            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
           }
         ],
         "references": [
@@ -2648,7 +2730,8 @@
             "imageCount": 3,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2690,7 +2773,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -2732,7 +2816,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2752,7 +2837,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -2794,7 +2880,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -2833,7 +2920,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -2872,7 +2960,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -2919,7 +3008,8 @@
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
-            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
           }
         ],
         "references": [
@@ -2957,7 +3047,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -2981,7 +3072,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -3032,7 +3124,8 @@
               },
               "type": "standard",
               "id": "CC0-1.0",
-              "label": "Creative Commons CC0 1.0 Universal"
+              "label": "Creative Commons CC0 1.0 Universal",
+              "labelShort": "CC0-1.0"
             },
             "images": [
               {
@@ -3068,7 +3161,8 @@
             },
             "type": "standard",
             "id": "CC0-1.0",
-            "label": "Creative Commons CC0 1.0 Universal"
+            "label": "Creative Commons CC0 1.0 Universal",
+            "labelShort": "CC0-1.0"
           }
         ],
         "references": [
@@ -3124,7 +3218,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -3144,7 +3239,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -3180,1110 +3276,6 @@
         },
         "entries": [
           {
-            "id": "atprotocol",
-            "title": "ATProtocol",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "ATProtocol.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/jpg/ATProtocol.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/jpg/ATProtocol.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "ATProtocol.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/png/ATProtocol.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/png/ATProtocol.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "ATProtocol.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/webp/ATProtocol.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/webp/ATProtocol.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "angular",
-            "title": "Angular",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Angular.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/jpg/Angular.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/jpg/Angular.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Angular.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/png/Angular.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/png/Angular.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Angular.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/webp/Angular.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/webp/Angular.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "bluesky",
-            "title": "Bluesky",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "BlueSky.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/jpg/BlueSky.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/jpg/BlueSky.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "BlueSky.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/png/BlueSky.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/png/BlueSky.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "BlueSky.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/webp/BlueSky.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/webp/BlueSky.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "charcoal",
-            "title": "Charcoal",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Charcoal.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/jpg/Charcoal.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/jpg/Charcoal.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Charcoal.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/png/Charcoal.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/png/Charcoal.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Charcoal.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/webp/Charcoal.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/webp/Charcoal.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "cloudflare",
-            "title": "Cloudflare",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Cloudflare.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/jpg/Cloudflare.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/jpg/Cloudflare.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Cloudflare.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/png/Cloudflare.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/png/Cloudflare.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Cloudflare.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/webp/Cloudflare.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/webp/Cloudflare.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "express",
-            "title": "Express",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Express.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/jpg/Express.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/jpg/Express.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Express.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/png/Express.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/png/Express.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Express.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/webp/Express.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/webp/Express.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "figma",
-            "title": "Figma",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Figma.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/jpg/Figma.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/jpg/Figma.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Figma.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/png/Figma.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/png/Figma.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Figma.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/webp/Figma.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/webp/Figma.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "github",
-            "title": "GitHub",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "GitHub.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/jpg/GitHub.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/jpg/GitHub.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "GitHub.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/png/GitHub.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/png/GitHub.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "GitHub.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/webp/GitHub.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/webp/GitHub.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "go-lang",
-            "title": "Go Lang",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Golang.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/jpg/Golang.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/jpg/Golang.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Golang.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/png/Golang.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/png/Golang.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Golang.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/webp/Golang.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/webp/Golang.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "haskell",
-            "title": "Haskell",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "haskell.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/jpg/haskell.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/jpg/haskell.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "haskell.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/png/haskell.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/png/haskell.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "haskell.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/webp/haskell.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/webp/haskell.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "hono",
-            "title": "Hono",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Hono.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/jpg/Hono.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/jpg/Hono.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Hono.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/png/Hono.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/png/Hono.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Hono.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/webp/Hono.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/webp/Hono.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "iamdesigner!",
-            "title": "IamDesigner!",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "IamDesigner!.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamDesigner!.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamDesigner!.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "iamdesigner!english",
-            "title": "IamDesigner!English",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "IamDesigner!English.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!English.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!English.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamDesigner!English.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!English.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!English.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamDesigner!English.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!English.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!English.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "iamprogrammer!",
-            "title": "IamProgrammer!",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "IamProgrammer!.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammer!.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammer!.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamProgrammer!.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammer!.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammer!.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamProgrammer!.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammer!.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammer!.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "iamprogrammerenglish",
-            "title": "IamProgrammerEnglish",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "IamProgrammerEnglish.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamProgrammerEnglish.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammerEnglish.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammerEnglish.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IamProgrammerEnglish.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammerEnglish.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammerEnglish.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "intellij-idea",
-            "title": "IntelliJ IDEA",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "IntelliJ IDEA.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IntelliJ IDEA.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "IntelliJ IDEA.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "kotlin",
-            "title": "Kotlin",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Kotlin.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/jpg/Kotlin.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/jpg/Kotlin.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Kotlin.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/png/Kotlin.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/png/Kotlin.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Kotlin.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/webp/Kotlin.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/webp/Kotlin.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "laravel",
-            "title": "Laravel",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "LaravelTransparent.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/jpg/LaravelTransparent.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/jpg/LaravelTransparent.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "LaravelTransparent.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/png/LaravelTransparent.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/png/LaravelTransparent.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "LaravelTransparent.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/webp/LaravelTransparent.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/webp/LaravelTransparent.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "misskey.io",
-            "title": "MIsskey.io",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Misskey.io.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/jpg/Misskey.io.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/jpg/Misskey.io.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Misskey.io.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/png/Misskey.io.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/png/Misskey.io.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Misskey.io.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/webp/Misskey.io.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/webp/Misskey.io.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "misskey",
-            "title": "Misskey",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Misskey.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/jpg/Misskey.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/jpg/Misskey.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Misskey.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/png/Misskey.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/png/Misskey.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Misskey.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/webp/Misskey.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/webp/Misskey.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "next.js",
-            "title": "Next.js",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Next.js.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/jpg/Next.js.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/jpg/Next.js.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Next.js.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/png/Next.js.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/png/Next.js.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Next.js.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/webp/Next.js.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/webp/Next.js.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "node.js",
-            "title": "Node.js",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Node.js.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/jpg/Node.js.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/jpg/Node.js.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Node.js.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/png/Node.js.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/png/Node.js.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Node.js.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/webp/Node.js.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/webp/Node.js.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "react",
-            "title": "React",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "React.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/jpg/React.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/jpg/React.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "React.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/png/React.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/png/React.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "React.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/webp/React.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/webp/React.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
-            "id": "replit",
-            "title": "Replit",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "Replit.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/jpg/Replit.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/jpg/Replit.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Replit.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/png/Replit.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/png/Replit.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "Replit.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/webp/Replit.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/webp/Replit.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "403-forbidden",
             "title": "403 Forbidden",
             "references": [],
@@ -4291,7 +3283,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4337,7 +3330,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4383,7 +3377,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4429,7 +3424,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4475,7 +3471,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4514,6 +3511,1134 @@
             ]
           },
           {
+            "id": "angular",
+            "title": "Angular",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Angular.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/jpg/Angular.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/jpg/Angular.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Angular.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/png/Angular.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/png/Angular.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Angular.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Angular/webp/Angular.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Angular/webp/Angular.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "atprotocol",
+            "title": "ATProtocol",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "ATProtocol.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/jpg/ATProtocol.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/jpg/ATProtocol.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "ATProtocol.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/png/ATProtocol.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/png/ATProtocol.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "ATProtocol.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/ATProtocol/webp/ATProtocol.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/ATProtocol/webp/ATProtocol.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "bluesky",
+            "title": "Bluesky",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "BlueSky.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/jpg/BlueSky.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/jpg/BlueSky.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "BlueSky.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/png/BlueSky.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/png/BlueSky.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "BlueSky.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Bluesky/webp/BlueSky.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Bluesky/webp/BlueSky.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "charcoal",
+            "title": "Charcoal",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Charcoal.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/jpg/Charcoal.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/jpg/Charcoal.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Charcoal.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/png/Charcoal.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/png/Charcoal.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Charcoal.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Charcoal/webp/Charcoal.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Charcoal/webp/Charcoal.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cloudflare",
+            "title": "Cloudflare",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Cloudflare.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/jpg/Cloudflare.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/jpg/Cloudflare.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Cloudflare.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/png/Cloudflare.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/png/Cloudflare.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Cloudflare.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Cloudflare/webp/Cloudflare.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Cloudflare/webp/Cloudflare.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "express",
+            "title": "Express",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Express.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/jpg/Express.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/jpg/Express.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Express.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/png/Express.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/png/Express.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Express.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Express/webp/Express.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Express/webp/Express.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "figma",
+            "title": "Figma",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Figma.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/jpg/Figma.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/jpg/Figma.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Figma.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/png/Figma.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/png/Figma.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Figma.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Figma/webp/Figma.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Figma/webp/Figma.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "github",
+            "title": "GitHub",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "GitHub.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/jpg/GitHub.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/jpg/GitHub.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "GitHub.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/png/GitHub.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/png/GitHub.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "GitHub.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/GitHub/webp/GitHub.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/GitHub/webp/GitHub.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "go-lang",
+            "title": "Go Lang",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Golang.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/jpg/Golang.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/jpg/Golang.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Golang.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/png/Golang.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/png/Golang.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Golang.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Go Lang/webp/Golang.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Go Lang/webp/Golang.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "haskell",
+            "title": "Haskell",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "haskell.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/jpg/haskell.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/jpg/haskell.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "haskell.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/png/haskell.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/png/haskell.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "haskell.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Haskell/webp/haskell.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Haskell/webp/haskell.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hono",
+            "title": "Hono",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Hono.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/jpg/Hono.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/jpg/Hono.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Hono.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/png/Hono.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/png/Hono.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Hono.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Hono/webp/Hono.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Hono/webp/Hono.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamdesigner!",
+            "title": "IamDesigner!",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "IamDesigner!.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamdesigner!english",
+            "title": "IamDesigner!English",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "IamDesigner!English.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamDesigner!English.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamDesigner!English.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!English.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamDesigner!English.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamDesigner!English.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamDesigner!English.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamDesigner!English.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamDesigner!English.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamprogrammer!",
+            "title": "IamProgrammer!",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "IamProgrammer!.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammer!.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammer!.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammer!.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammer!.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammer!.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammer!.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammer!.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammer!.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "iamprogrammerenglish",
+            "title": "IamProgrammerEnglish",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "IamProgrammerEnglish.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/jpg/IamProgrammerEnglish.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammerEnglish.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/png/IamProgrammerEnglish.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/png/IamProgrammerEnglish.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IamProgrammerEnglish.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IamSeries/webp/IamProgrammerEnglish.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IamSeries/webp/IamProgrammerEnglish.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "intellij-idea",
+            "title": "IntelliJ IDEA",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "IntelliJ IDEA.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/jpg/IntelliJ IDEA.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IntelliJ IDEA.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/png/IntelliJ IDEA.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "IntelliJ IDEA.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/IntelliJ IDEA/webp/IntelliJ IDEA.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "kotlin",
+            "title": "Kotlin",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Kotlin.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/jpg/Kotlin.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/jpg/Kotlin.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Kotlin.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/png/Kotlin.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/png/Kotlin.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Kotlin.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Kotlin/webp/Kotlin.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Kotlin/webp/Kotlin.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "laravel",
+            "title": "Laravel",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "LaravelTransparent.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/jpg/LaravelTransparent.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/jpg/LaravelTransparent.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "LaravelTransparent.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/png/LaravelTransparent.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/png/LaravelTransparent.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "LaravelTransparent.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Laravel/webp/LaravelTransparent.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Laravel/webp/LaravelTransparent.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "misskey",
+            "title": "Misskey",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Misskey.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/jpg/Misskey.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/jpg/Misskey.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/png/Misskey.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/png/Misskey.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Misskey/webp/Misskey.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Misskey/webp/Misskey.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "misskey.io",
+            "title": "MIsskey.io",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Misskey.io.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/jpg/Misskey.io.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/jpg/Misskey.io.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey.io.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/png/Misskey.io.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/png/Misskey.io.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Misskey.io.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/MIsskey.io/webp/Misskey.io.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/MIsskey.io/webp/Misskey.io.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "next.js",
+            "title": "Next.js",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Next.js.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/jpg/Next.js.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/jpg/Next.js.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Next.js.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/png/Next.js.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/png/Next.js.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Next.js.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Next.js/webp/Next.js.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Next.js/webp/Next.js.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "node.js",
+            "title": "Node.js",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Node.js.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/jpg/Node.js.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/jpg/Node.js.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Node.js.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/png/Node.js.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/png/Node.js.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Node.js.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Node.js/webp/Node.js.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Node.js/webp/Node.js.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "react",
+            "title": "React",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "React.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/jpg/React.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/jpg/React.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "React.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/png/React.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/png/React.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "React.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/React/webp/React.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/React/webp/React.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "replit",
+            "title": "Replit",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "Replit.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/jpg/Replit.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/jpg/Replit.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Replit.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/png/Replit.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/png/Replit.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "Replit.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/Replit/webp/Replit.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/Replit/webp/Replit.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "rust",
             "title": "Rust",
             "references": [],
@@ -4521,7 +4646,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4593,52 +4719,6 @@
             ]
           },
           {
-            "id": "typescript",
-            "title": "TypeScript",
-            "references": [],
-            "imageCount": 3,
-            "license": {
-              "type": "custom",
-              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
-            },
-            "images": [
-              {
-                "label": "TypeScript.jpg",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/jpg/TypeScript.jpg",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/jpg/TypeScript.jpg",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "TypeScript.png",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/png/TypeScript.png",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/png/TypeScript.png",
-                    "urlType": "github-blob"
-                  }
-                ]
-              },
-              {
-                "label": "TypeScript.webp",
-                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/webp/TypeScript.webp",
-                "srcUrlType": "github-raw",
-                "references": [
-                  {
-                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/webp/TypeScript.webp",
-                    "urlType": "github-blob"
-                  }
-                ]
-              }
-            ]
-          },
-          {
             "id": "tailwind-css",
             "title": "tailwind css",
             "references": [],
@@ -4646,7 +4726,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4685,6 +4766,53 @@
             ]
           },
           {
+            "id": "typescript",
+            "title": "TypeScript",
+            "references": [],
+            "imageCount": 3,
+            "license": {
+              "type": "custom",
+              "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
+              "label": "Custom  License",
+              "labelShort": "Custom License"
+            },
+            "images": [
+              {
+                "label": "TypeScript.jpg",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/jpg/TypeScript.jpg",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/jpg/TypeScript.jpg",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "TypeScript.png",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/png/TypeScript.png",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/png/TypeScript.png",
+                    "urlType": "github-blob"
+                  }
+                ]
+              },
+              {
+                "label": "TypeScript.webp",
+                "src": "https://raw.githubusercontent.com/SAWARATSUKI/KawaiiLogos/main/TypeScript/webp/TypeScript.webp",
+                "srcUrlType": "github-raw",
+                "references": [
+                  {
+                    "url": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/TypeScript/webp/TypeScript.webp",
+                    "urlType": "github-blob"
+                  }
+                ]
+              }
+            ]
+          },
+          {
             "id": "ゆっくりmoviemaker4",
             "title": "ゆっくりMovieMaker4",
             "references": [],
@@ -4692,7 +4820,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4738,7 +4867,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4817,7 +4947,8 @@
             "license": {
               "type": "custom",
               "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-              "label": "Custom"
+              "label": "Custom  License",
+              "labelShort": "Custom License"
             },
             "images": [
               {
@@ -4860,7 +4991,8 @@
           {
             "type": "custom",
             "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
-            "label": "Custom"
+            "label": "Custom  License",
+            "labelShort": "Custom License"
           }
         ],
         "references": [
@@ -4903,7 +5035,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -4931,7 +5064,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -4959,7 +5093,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -5009,7 +5144,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -5037,7 +5173,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -5065,7 +5202,8 @@
               },
               "type": "standard",
               "id": "CC BY-NC-SA 4.0",
-              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+              "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+              "labelShort": "CC BY-NC-SA 4.0"
             },
             "images": [
               {
@@ -5101,7 +5239,8 @@
             },
             "type": "standard",
             "id": "CC BY-NC-SA 4.0",
-            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+            "label": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0",
+            "labelShort": "CC BY-NC-SA 4.0"
           }
         ],
         "references": [
@@ -5148,7 +5287,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -5178,7 +5318,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -5205,7 +5346,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -5241,65 +5383,14 @@
         },
         "entries": [
           {
-            "id": "surrealdb",
-            "title": "surrealdb",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
-                "src": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
-                "srcUrlType": "github-camo",
-                "references": [
-                  {
-                    "url": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d",
-                    "urlType": "bsky-post"
-                  }
-                ],
-                "style": {
-                  "objectFit": "contain"
-                }
-              }
-            ]
-          },
-          {
-            "id": "vyper",
-            "title": "vyper",
-            "references": [],
-            "imageCount": 1,
-            "license": {
-              "type": "unknown",
-              "label": "Unknown"
-            },
-            "images": [
-              {
-                "label": "68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
-                "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
-                "srcUrlType": "github-camo",
-                "references": [
-                  {
-                    "url": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t",
-                    "urlType": "bsky-post"
-                  }
-                ],
-                "style": {
-                  "objectFit": "contain"
-                }
-              }
-            ]
-          },
-          {
             "id": "avalanche",
             "title": "avalanche",
             "references": [],
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -5325,7 +5416,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -5347,12 +5439,67 @@
                 }
               }
             ]
+          },
+          {
+            "id": "surrealdb",
+            "title": "surrealdb",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
+                "src": "https://camo.githubusercontent.com/f31c33f2e40d78c54ca8de8c761763bed0c98cbb481582c32311ddb26af769ac/68747470733a2f2f63646e2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f5375727265616c44422e706e67",
+                "srcUrlType": "github-camo",
+                "references": [
+                  {
+                    "url": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d",
+                    "urlType": "bsky-post"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
+          },
+          {
+            "id": "vyper",
+            "title": "vyper",
+            "references": [],
+            "imageCount": 1,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [
+              {
+                "label": "68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
+                "src": "https://camo.githubusercontent.com/8d78e533c334961701ace1a592f569e09fbce18e4e8c87dd47347ea3670c0c36/68747470733a2f2e696e65727469612e736f6369616c2f6b61776169695f6c6f676f732f4176616c616e6368652e706e67",
+                "srcUrlType": "github-camo",
+                "references": [
+                  {
+                    "url": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t",
+                    "urlType": "bsky-post"
+                  }
+                ],
+                "style": {
+                  "objectFit": "contain"
+                }
+              }
+            ]
           }
         ],
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
@@ -5385,7 +5532,8 @@
             "imageCount": 1,
             "license": {
               "type": "unknown",
-              "label": "Unknown"
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
             },
             "images": [
               {
@@ -5408,7 +5556,8 @@
         "licenses": [
           {
             "type": "unknown",
-            "label": "Unknown"
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": []
