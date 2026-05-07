@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T13:23:03.942Z",
+  "updatedAt": "2026-05-07T13:51:37.165Z",
   "data": {
     "authorCount": 23,
     "imageCount": 263,
@@ -892,6 +892,10 @@
           "github": {
             "username": "andregans",
             "url": "https://github.com/andregans"
+          },
+          "figma": {
+            "username": "@hanzo",
+            "url": "https://figma.com/@@hanzo"
           },
           "behance": {
             "username": "andrerio",
@@ -2192,6 +2196,14 @@
           "x": {
             "username": "arnavkr_",
             "url": "https://x.com/arnavkr_"
+          },
+          "figma": {
+            "username": "@arnav-kr",
+            "url": "https://figma.com/@@arnav-kr"
+          },
+          "dribbble": {
+            "username": "arnav-kr",
+            "url": "https://dribbble.com/arnav-kr"
           }
         },
         "links": {
@@ -3435,6 +3447,10 @@
           "github": {
             "username": "ifalfahri",
             "url": "https://github.com/ifalfahri"
+          },
+          "dribbble": {
+            "username": "ifalfahri",
+            "url": "https://dribbble.com/ifalfahri"
           },
           "behance": {
             "username": "ifalfahri",
