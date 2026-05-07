@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T14:32:36.204Z",
+  "updatedAt": "2026-05-07T17:45:09.782Z",
   "data": {
     "authorCount": 26,
     "imageCount": 277,
@@ -2491,6 +2491,11 @@
             "type": "github",
             "url": "https://github.com/sponsors/alfonsusac",
             "label": "Github Sponsors"
+          },
+          {
+            "type": "paypal",
+            "url": "https://paypal.me/alfonsusac",
+            "label": "PayPal"
           }
         ]
       },
@@ -2514,7 +2519,8 @@
           "dribbble": {
             "username": "arnav-kr",
             "url": "https://dribbble.com/arnav-kr"
-          }
+          },
+          "site": "arnav.bio.link"
         },
         "links": {
           "socials": [
@@ -2539,7 +2545,9 @@
               "url": "https://dribbble.com/arnav-kr"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://arnav.bio.link"
+          ]
         },
         "entries": [
           {
@@ -3025,10 +3033,6 @@
           "github": {
             "username": "C29H25N3O5",
             "url": "https://github.com/C29H25N3O5"
-          },
-          "x": {
-            "username": "C29H25N3O5",
-            "url": "https://twitter.com/C29H25N3O5"
           }
         },
         "links": {
@@ -3037,11 +3041,6 @@
               "type": "github",
               "username": "C29H25N3O5",
               "url": "https://github.com/C29H25N3O5"
-            },
-            {
-              "type": "x",
-              "username": "C29H25N3O5",
-              "url": "https://twitter.com/C29H25N3O5"
             }
           ],
           "personalsites": []
@@ -3893,7 +3892,7 @@
             "username": "ifalfahri",
             "url": "https://behance.net/ifalfahri"
           },
-          "site": "https://dribbble.com/ifalfahri"
+          "site": "ifalf.com"
         },
         "links": {
           "socials": [
@@ -3914,9 +3913,8 @@
             }
           ],
           "personalsites": [
-            "https://dribbble.com/ifalfahri",
             "https://ifalf.com",
-            "https://ifaf.com/"
+            "https://ifalf.com/"
           ]
         },
         "entries": [
@@ -7149,7 +7147,13 @@
             }
           }
         ],
-        "fundings": []
+        "fundings": [
+          {
+            "type": "skeb",
+            "url": "https://skeb.jp/@sawaratsuki",
+            "label": "Skeb"
+          }
+        ]
       },
       {
         "id": "shiroiame_kusu",
@@ -7676,7 +7680,8 @@
           "bsky": {
             "username": "t1c.dev",
             "url": "https://bsky.app/profile/t1c.dev"
-          }
+          },
+          "site": "t1c.dev"
         },
         "links": {
           "socials": [
@@ -7691,7 +7696,9 @@
               "url": "https://bsky.app/profile/t1c.dev"
             }
           ],
-          "personalsites": []
+          "personalsites": [
+            "https://t1c.dev"
+          ]
         },
         "entries": [
           {
