@@ -3,9 +3,9 @@ import type { AuthorDefinition } from "../resolve-author"
 export const saltyaom: AuthorDefinition = {
   displayName: "saltyaom",
   socials: {
-    github: "SaltyAom",
-    x: "saltyaom",
-    bsky: "saltyaom.com",
+    github: "https://github.com/SaltyAom",
+    x: "https://x.com/saltyaom",
+    bsky: "https://bsky.app/profile/saltyaom.com",
     site: "https://saltyaom.com",
   },
   entries: {

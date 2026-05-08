@@ -2,7 +2,7 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const maxshawnwx: AuthorDefinition = {
   socials: {
-    github: "maxshawnwx",
+    github: "https://github.com/maxshawnwx",
   },
   entries: {
     skyviewer: {

@@ -3,8 +3,8 @@ import type { AuthorDefinition } from "../resolve-author"
 export const hcho3: AuthorDefinition = {
   displayName: "hcho3",
   socials: {
-    github: "hcho3",
-    x: "hcho3_ml",
+    github: "https://github.com/hcho3",
+    x: "https://x.com/hcho3_ml",
   },
   license: {
     type: "CC BY-NC-SA 4.0",

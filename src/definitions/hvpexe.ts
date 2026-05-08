@@ -4,8 +4,8 @@ export const hvpexe: AuthorDefinition = {
   displayName: "Manhkbrady",
   pfp: "https://pps.services.adobe.com/api/profile/FF3E4AFD5B0E08A80A495E78@AdobeID/image/5b8a76ee-94ec-4824-8ed8-df68e7823522/230",
   socials: {
-    x: "manhkbrady",
-    behance: "Manhkbrady"
+    x: "https://x.com/manhkbrady",
+    behance: "https://www.behance.net/manhkbrady",
   },
   license: {
     type: "CC BY-NC-SA 4.0",

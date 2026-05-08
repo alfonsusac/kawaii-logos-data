@@ -5,13 +5,13 @@ import { logerror } from "./pipeline"
 import { Output } from "./output"
 
 export type SocialsDef = {
-  github?: string,
-  x?: string,
-  bsky?: string,
-  site?: string,
-  behance?: string,
-  figma?: `@${ string }`,
-  dribbble?: string,
+  github?: `https://github.com/${ string }`,
+  x?: `https://x.com/${ string }`,
+  bsky?: `https://bsky.app/profile/${ string }`,
+  behance?: `https://www.behance.net/${ string }`,
+  figma?: `https://www.figma.com/@${ string }`,
+  dribbble?: `https://dribbble.com/${ string }`,
+  site?: `https://${ string }`,
 }
 
 export type SocialListDef = {
@@ -40,12 +40,12 @@ export async function resolveSocials(
   // 1. Collect all URLs
   const socialUrlList: string[] = []
   socialUrlList.push(...list.filter(s => s.label !== 'site').map(s => s.url))
-  if (def?.github) socialUrlList.push(site(`github.com/${ def.github }`))
-  if (def?.x) socialUrlList.push(site(`x.com/${ def.x }`))
-  if (def?.bsky) socialUrlList.push(site(`bsky.app/profile/${ def.bsky }`))
-  if (def?.behance) socialUrlList.push(site(`behance.net/${ def.behance }`))
-  if (def?.figma) socialUrlList.push(site(`figma.com/${ def.figma }`))
-  if (def?.dribbble) socialUrlList.push(site(`dribbble.com/${ def.dribbble }`))
+  if (def?.github) socialUrlList.push(def.github)
+  if (def?.x) socialUrlList.push(def.x)
+  if (def?.bsky) socialUrlList.push(def.bsky)
+  if (def?.behance) socialUrlList.push(def.behance)
+  if (def?.figma) socialUrlList.push(def.figma)
+  if (def?.dribbble) socialUrlList.push(def.dribbble)
 
   // 2. normalize URLs
   for (let i = 0; i < socialUrlList.length; i++) {
@@ -88,7 +88,7 @@ export async function resolveSocials(
   const personalSites: Output.Author.PersonalSites = []
   const siteUrls = list.filter(s => s.label === "site").map(s => s.url)
   if (def?.site) siteUrls.push(def.site)
-  
+
   for (const url of siteUrls) {
     try {
       let resolvedUrl = url

@@ -2,7 +2,7 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const urielchan: AuthorDefinition = {
   socials: {
-    github: "urielchan",
+    github: "https://github.com/urielchan",
   },
   entries: {
     imphnen: {

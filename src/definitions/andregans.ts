@@ -2,8 +2,8 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const andregans: AuthorDefinition = {
   socials: {
-    behance: "andrerio",
-    figma: "@hanzo",
+    behance: "https://www.behance.net/andrerio",
+    figma: "https://www.figma.com/@hanzo",
   },
   source: {
     from: "github",

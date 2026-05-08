@@ -2,8 +2,8 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const aikoyori: AuthorDefinition = {
   socials: {
-    x: "Aikoyori",
-    bsky: "aikoyori.xyz",
+    x: 'https://x.com/Aikoyori',
+    bsky: 'https://bsky.app/profile/aikoyori.xyz',
   },
   source: {
     from: "github",

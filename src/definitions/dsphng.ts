@@ -3,8 +3,8 @@ import type { AuthorDefinition } from "../resolve-author"
 export const dsphng: AuthorDefinition = {
   displayName: "dsphng",
   socials: {
-    x: "dsphng",
-    bsky: "klfjlgjhjfkg.bsky.social"
+    x: "https://x.com/dsphng",
+    bsky: "https://bsky.app/profile/klfjlgjhjfkg.bsky.social"
   },
   entries: {
     skrillex: {

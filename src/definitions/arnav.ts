@@ -3,11 +3,11 @@ import type { AuthorDefinition } from "../resolve-author"
 export const arnav: AuthorDefinition = {
   displayName: "arnav-kr",
   socials: {
-    github: "arnav-kr",
-    x: "arnavkr_",
-    dribbble: "arnav-kr",
-    figma: "@arnav-kr",
-    site: "arnav.bio.link"
+    github: "https://github.com/arnav-kr",
+    x: "https://x.com/arnavkr_",
+    dribbble: "https://dribbble.com/arnav-kr",
+    figma: "https://www.figma.com/@arnav-kr",
+    site: "https://arnav.bio.link"
   },
   license: {
     type: "MIT",

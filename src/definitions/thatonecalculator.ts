@@ -3,9 +3,9 @@ import type { AuthorDefinition } from "../resolve-author"
 export const thatonecalculator: AuthorDefinition = {
   displayName: "thatonecalculator",
   socials: {
-    x: "thatonecalculator",
-    bsky: "t1c.dev",
-    site: "t1c.dev",
+    x: "https://x.com/thatonecalculator",
+    bsky: "https://bsky.app/profile/t1c.dev",
+    site: "https://t1c.dev",
   },
   license: {
     type: "CC BY-SA 4.0",

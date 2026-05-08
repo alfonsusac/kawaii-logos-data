@@ -3,7 +3,7 @@ import type { AuthorDefinition } from "../resolve-author"
 export const fenjalien: AuthorDefinition = {
   displayName: "fenjalien",
   socials: {
-    github: "fenjalien",
+    github: 'https://github.com/fenjalien',
   },
   entries: {
     typst: {

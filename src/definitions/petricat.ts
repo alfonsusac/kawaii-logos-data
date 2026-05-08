@@ -11,6 +11,6 @@ export const petricat: AuthorDefinition = {
     ]
   },
   socials: {
-    site: "petricat.github.io/PetricaT/",
+    site: "https://petricat.github.io/PetricaT/",
   }
 } 

@@ -3,8 +3,8 @@ import type { AuthorDefinition } from "../resolve-author"
 export const fumanama: AuthorDefinition = {
   displayName: "fuma-nama",
   socials: {
-    github: "fuma-nama",
-    x: "fuma_nama",
+    github: 'https://github.com/fuma-nama',
+    x: 'https://x.com/fuma_nama',
     site: "https://www.fuma-nama.dev/",
   },
   entries: {

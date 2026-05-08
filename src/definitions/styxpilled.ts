@@ -3,8 +3,8 @@ import type { AuthorDefinition } from "../resolve-author"
 export const styxpilled: AuthorDefinition = {
   displayName: "styxpilled",
   socials: {
-    x: "styxpilled",
-    bsky: "styxpilled.bsky.social"
+    x: "https://x.com/styxpilled",
+    bsky: "https://bsky.app/profile/styxpilled.bsky.social"
   },
   entries: {
     svelte: {

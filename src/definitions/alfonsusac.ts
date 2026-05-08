@@ -3,10 +3,10 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const alfonsusac: AuthorDefinition = {
   socials: {
-    github: "alfonsusac",
-    x: "alfonsusac",
-    bsky: "alfon.dev",
-    site: "alfon.dev"
+    github: 'https://github.com/alfonsusac',
+    x: 'https://x.com/alfonsusac',
+    bsky: 'https://bsky.app/profile/alfon.dev',
+    site: 'https://alfon.dev',
   },
   fundings: [
     { type: "github", url: "https://github.com/sponsors/alfonsusac" },
