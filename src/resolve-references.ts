@@ -3,6 +3,7 @@ import type { DateDef } from "./lib/date"
 import { resolveHttpsSite } from "./resolve-url"
 import type { NonEmptyArray } from "./lib/non-empty-array"
 import type { Output } from "./output"
+import { warn } from "./pipeline"
 
 export type ReferenceDef = Site | {
   site: Site,
@@ -15,19 +16,28 @@ export type ReferencesDef = NonEmptyArray<ReferenceDef> | ReferenceDef
 
 
 // Helper
-export function resolveReferencesDefinition(references: ReferenceDef[] | ReferenceDef | undefined): Output.Reference[] {
-  if (!references) return []
-  if (!Array.isArray(references)) references = [ references ]
+export function resolveReferencesDefinition(...references: ((ReferenceDef | undefined)[] | ReferenceDef | undefined)[]): Output.Reference[] {
+  const referencesList: ReferenceDef[] = []
+  for (const refs of references) {
+    if (!refs) continue
+    if (Array.isArray(refs)) {
+      referencesList.push(...refs.filter((r): r is ReferenceDef => !!r))
+    } else {
+      referencesList.push(refs)
+    }
+  }
 
-  return references.map(ref => {
-    if (typeof ref === "string") {
-      return {
-        link: resolveHttpsSite(ref),
-      }
+  const referencesSet = new Map<string, Output.Reference>()
+  for (const ref of referencesList) {
+    const link = typeof ref === "string" ? resolveHttpsSite(ref) : resolveHttpsSite(ref.site)
+    if (referencesSet.has(link.url)) {
+      warn(`Duplicate reference link found: ${ link.url }. Consider deduping references.`)
     }
-    return {
-      link: resolveHttpsSite(ref.site),
-      dateAccessed: ref.dateAccessed,
-    }
-  })
+    referencesSet.set(link.url, {
+      link,
+      dateAccessed: typeof ref === "string" ? undefined : ref.dateAccessed,
+    })
+  }
+
+  return Array.from(referencesSet.values())
 }

@@ -8,7 +8,7 @@ import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
 import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
 import { stepSimple } from "./pipeline"
-import { resolveReferencesDefinition } from "./resolve-references"
+import { resolveReferencesDefinition, type ReferencesDef } from "./resolve-references"
 import { dedupeByProp } from "./lib/dedupe-by-prop"
 import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
 import type { Output } from "./output"
@@ -21,6 +21,7 @@ export type AuthorDefinition = {
   entries?: EntriesDefinition,
   source?: SourceDef,
   fundings?: FundingsDef,
+  references?: ReferencesDef,
 
   // Debugging
   logVerbose?: boolean,
@@ -38,7 +39,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
 
   const entries = await stepSimple(
     "Resolving entries and enrich data",
-    () => resolveEntriesMulti(scrapedReference, author.entries, scrapedEntries)
+    () => resolveEntriesMulti(author.entries, scrapedEntries)
   )
 
   const { socials, personalSites } = await stepSimple(
@@ -60,7 +61,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   const licenses = dedupeByProp(entries.flatMap(e => e.license ? [ e.license ] : []))('label')
 
   // Add references from source if exists
-  const references = resolveReferencesDefinition(scrapedReference)
+  const references = resolveReferencesDefinition(scrapedReference, author.references)
 
   // Compile resolved data into final Author object
   const resolved: Output.Author = {

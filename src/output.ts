@@ -26,7 +26,6 @@ export namespace Output {
     personalSites: string[],
     fundings: {
       type: Output.FundingTypes,
-      label: string,
       url: string,
     }[]
     entries: {
@@ -78,8 +77,8 @@ export namespace Output {
     | "bsky-post"
     | "skeb-creator-page"
     | "skeb-creator-guideline-page"
+    | "figma-file"
     | "unknown"
-    label: string
     url: string
   }
   export namespace Link {

@@ -7,10 +7,8 @@ export type HttpsSite = `https://${ string }`
 
 export function resolveHttpsSite(site: HttpsSite): Output.Link {
   const type = getUrlTypeFromURL(site)
-  const label = getUrlTypeLabel(type)
   return {
     type,
-    label,
     url: site,
   }
 }
@@ -58,29 +56,32 @@ function getUrlTypeFromURL(
   if (url.startsWith("https://skeb.jp/")) {
     return "skeb-creator-page"
   }
+  if (url.startsWith('https://www.figma.com/community/file/')) {
+    return "figma-file"
+  }
 
   logerror("Failed to determine URL type for URL: " + url)
   return "unknown"
 }
 
-function getUrlTypeLabel(urlType: Output.Link.Type) {
-  switch (urlType) {
-    case "github-repo-text-content": return "GitHub Repo Text Content"
-    case "github-blob": return "GitHub Blob"
-    case "github-repo": return "GitHub Repoistory"
-    case "github-raw": return "GitHub Raw"
-    case "github-camo": return "GitHub Camo Proxy"
-    case "github-unknown": return "GitHub Unknown"
-    case "gist-raw": return "Gist Raw"
-    case "gist-page": return "Gist Page"
-    case "google-drive": return "Google Drive Page"
-    case "twitter-post": return "Twitter Post"
-    case "bsky-post": return "Bluesky Post"
-    case "skeb-creator-page": return "Skeb Creator Page"
-    case "skeb-creator-guideline-page": return "Skeb Creator Guideline Page"
-    case "unknown": return "Unknown"
-  }
-}
+// function getUrlTypeLabel(urlType: Output.Link.Type) {
+//   switch (urlType) {
+//     case "github-repo-text-content": return "GitHub Repo Text Content"
+//     case "github-blob": return "GitHub Blob"
+//     case "github-repo": return "GitHub Repoistory"
+//     case "github-raw": return "GitHub Raw"
+//     case "github-camo": return "GitHub Camo Proxy"
+//     case "github-unknown": return "GitHub Unknown"
+//     case "gist-raw": return "Gist Raw"
+//     case "gist-page": return "Gist Page"
+//     case "google-drive": return "Google Drive Page"
+//     case "twitter-post": return "Twitter Post"
+//     case "bsky-post": return "Bluesky Post"
+//     case "skeb-creator-page": return "Skeb Creator Page"
+//     case "skeb-creator-guideline-page": return "Skeb Creator Guideline Page"
+//     case "unknown": return "Unknown"
+//   }
+// }
 
 // export function getUrlType(url: Site): {
 //   type: Output.Link.Type,

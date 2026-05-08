@@ -52,14 +52,13 @@ export type ImageSourceDef =
 // ----------------------------------------------------------------------------------------
 
 export async function resolveEntriesMulti(
-  authorRef: ReferenceDef | undefined = undefined,
   ...args: (EntriesDefinition | undefined)[]
 ) {
   const allEntries: Output.Author.Entries = []
 
   for (const defs of args) {
     if (!defs) continue
-    (await resolveEntries(defs, authorRef))
+    (await resolveEntries(defs))
       .forEach(entry => {
         // Check for duplicate entry IDs
         if (allEntries.some(e => e.id === entry.id)) {
@@ -75,7 +74,6 @@ export async function resolveEntriesMulti(
 
 export async function resolveEntries(
   defs: EntriesDefinition | undefined,
-  authorRef: ReferenceDef | undefined,
 ): Promise<Output.Author.Entries> {
   if (!defs) return []
 
