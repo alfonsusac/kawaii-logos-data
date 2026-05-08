@@ -48,22 +48,18 @@ export type ImageSourceDef =
   | `https://github.com/${ string }/${ string }/blob/${ string }`
   | `https://gist.githubusercontent.com/${ string }/${ string }/raw/${ string }/${ string }`
   | `./assets/${ string }`
-// | { type: "github-blob", url: `https://github.com/${ string }/${ string }/blob/${ string }` }
-// | { type: "gist-raw", url: `https://gist.githubusercontent.com/${ string }/${ string }/raw/${ string }/${ string }` }
-// | { type: "self-hosted", filepath: `./assets/${ string }` }
-// | { type: "resolved", url: Site, }
-// | { type: "unknown", url: Site, }
 
 // ----------------------------------------------------------------------------------------
 
 export async function resolveEntriesMulti(
+  authorRef: ReferenceDef | undefined = undefined,
   ...args: (EntriesDefinition | undefined)[]
 ) {
   const allEntries: AuthorOutput[ 'entries' ] = []
 
   for (const defs of args) {
     if (!defs) continue
-    (await resolveEntries(defs))
+    (await resolveEntries(defs, authorRef))
       .forEach(entry => {
         // Check for duplicate entry IDs
         if (allEntries.some(e => e.id === entry.id)) {
@@ -79,6 +75,7 @@ export async function resolveEntriesMulti(
 
 export async function resolveEntries(
   defs: EntriesDefinition | undefined,
+  authorRef: ReferenceDef | undefined,
 ): Promise<AuthorOutput[ 'entries' ]> {
   if (!defs) return []
 
@@ -90,12 +87,16 @@ export async function resolveEntries(
 
     const images: AuthorOutput.EntryItem[ 'images' ] = []
 
+    const license = resolveLicenseDefinitions(entryDef.license)
+
+    const entryReferences = resolveReferencesDefinition(entryDef.references)
+    // entryReferences.push(...resolveReferencesDefinition(authorRef)) // Combine in front-end instead.
+
     // Resolve ImageDefs
     for (const imgDef of imageDefs) {
 
       // Initialize references array for this image
       const referencesDef: ReferenceDef[] = normalizeSingleOrNonEmptyArray(imgDef.references)
-
 
       // Resolve image source + label + reference (if any) based on its type
       const temp = {
@@ -136,15 +137,11 @@ export async function resolveEntries(
       images.push({
         label: temp.label ?? getFilenameFromUrl(temp.src),
         src: resolveHttpsSite(temp.src),
+        // references: [ ...resolveReferencesDefinition(referencesDef), ...entryReferences ], // Combine in front-end instead.
         references: resolveReferencesDefinition(referencesDef),
         style: imgDef.style,
       })
     }
-
-    // Resolve LicenseDef
-    const license = resolveLicenseDefinitions(entryDef.license)
-
-    const entryReferences = resolveReferencesDefinition(entryDef.references)
 
     entries.push({
       id,

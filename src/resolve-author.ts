@@ -38,7 +38,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
 
   const entries = await stepSimple(
     "Resolving entries and enrich data",
-    () => resolveEntriesMulti(author.entries, scrapedEntries)
+    () => resolveEntriesMulti(scrapedReference, author.entries, scrapedEntries)
   )
 
   const { social, links } = await stepSimple(
@@ -59,6 +59,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   // Collect licenses from entries and root license if exists and dedupe by label
   const licenses = dedupeByProp(entries.flatMap(e => e.license ? [ e.license ] : []))('label')
 
+  // Add references from source if exists
   const references = resolveReferencesDefinition(scrapedReference)
 
   // Compile resolved data into final Author object
