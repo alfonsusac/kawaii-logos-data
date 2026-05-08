@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-07T17:45:09.782Z",
+  "updatedAt": "2026-05-08T01:13:20.726Z",
   "data": {
     "authorCount": 26,
     "imageCount": 277,
@@ -3033,6 +3033,10 @@
           "github": {
             "username": "C29H25N3O5",
             "url": "https://github.com/C29H25N3O5"
+          },
+          "x": {
+            "username": "C29H25N3O5",
+            "url": "https://twitter.com/C29H25N3O5"
           }
         },
         "links": {
@@ -3041,6 +3045,11 @@
               "type": "github",
               "username": "C29H25N3O5",
               "url": "https://github.com/C29H25N3O5"
+            },
+            {
+              "type": "x",
+              "username": "C29H25N3O5",
+              "url": "https://twitter.com/C29H25N3O5"
             }
           ],
           "personalsites": []
@@ -3892,7 +3901,7 @@
             "username": "ifalfahri",
             "url": "https://behance.net/ifalfahri"
           },
-          "site": "ifalf.com"
+          "site": "https://dribbble.com/ifalfahri"
         },
         "links": {
           "socials": [
@@ -3913,6 +3922,7 @@
             }
           ],
           "personalsites": [
+            "https://dribbble.com/ifalfahri",
             "https://ifalf.com",
             "https://ifalf.com/"
           ]
