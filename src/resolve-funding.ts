@@ -1,7 +1,7 @@
-import type { SingleOrNonEmptyArray } from "./lib/non-empty-array"
+import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
 import type { Output } from "./output"
 
-export type FundingsDef = SingleOrNonEmptyArray<
+export type FundingsDef = ArrayOrSingle<
   | { type: "patreon", url: `https://patreon.com/${ string }` }
   | { type: "ko-fi", url: `https://ko-fi.com/${ string }` }
   | { type: "buymeacoffee", url: `https://buymeacoffee.com/${ string }` }
@@ -13,7 +13,7 @@ export type FundingsDef = SingleOrNonEmptyArray<
 
 export function resolveFundingsDef(def: FundingsDef | undefined) {
   if (!def) return []
-  if (!Array.isArray(def)) def = [ def ]
+  def = resolveArrayOrSingleToArray(def)
 
   const fundings: Output.Author.Fundings = []
   for (const funding of def) {

@@ -1,7 +1,7 @@
 import type { Site } from "./lib/site"
 import type { DateDef } from "./lib/date"
 import { resolveHttpsSite } from "./resolve-url"
-import type { NonEmptyArray } from "./lib/non-empty-array"
+import type { NonEmptyArray } from "./lib/array-type-utils"
 import type { Output } from "./output"
 import { warn } from "./pipeline"
 

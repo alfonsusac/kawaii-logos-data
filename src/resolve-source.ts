@@ -6,11 +6,11 @@ import { log, logerror, stepSimple, warn } from "./pipeline"
 import type { EntriesDefinition, EntryDefinition, ImageDefinition, ImageSourceDef } from "./resolve-entries"
 import type { SocialListDef } from "./resolve-socials"
 import { resolveGithubSource } from "./resolve-source-github"
-import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { slugify } from "./lib/slug"
 import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve-license"
 import type { ReferenceDef } from "./resolve-references"
+import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"
