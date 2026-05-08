@@ -10,7 +10,7 @@ import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { slugify } from "./lib/slug"
 import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve/license"
-import type { ReferenceDef } from "./resolve/references"
+import type { ReferenceDef } from "./resolve-references"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"

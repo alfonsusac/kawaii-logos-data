@@ -1,8 +1,8 @@
-import type { Site } from "../lib/site"
-import type { DateDef } from "../lib/date"
-import type { Reference } from "../output"
-import { getUrlType } from "../resolve-url"
-import type { NonEmptyArray } from "../lib/non-empty-array"
+import type { Site } from "./lib/site"
+import type { DateDef } from "./lib/date"
+import type { Reference } from "./output"
+import { getUrlType } from "./resolve-url"
+import type { NonEmptyArray } from "./lib/non-empty-array"
 
 export type ReferenceDef = Site | {
   site: Site,

@@ -1,6 +1,6 @@
-import type { License, StandardLicenseOut, StandardLicenseType } from "../output"
-import { log, logerror, warn } from "../pipeline"
-import { resolveReferencesDef, type ReferenceDef } from "./references"
+import type { License, StandardLicenseOut, StandardLicenseType } from "./output"
+import { log, logerror, warn } from "./pipeline"
+import { resolveReferencesDef, type ReferenceDef } from "./resolve-references"
 
 export type LicenseDef = {
   reference?: ReferenceDef,

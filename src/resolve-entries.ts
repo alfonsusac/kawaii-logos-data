@@ -1,7 +1,7 @@
 import type { Site } from "./lib/site"
 import { type DateDef } from "./lib/date"
 import type { AuthorOutput, Reference } from "./output"
-import { resolveReferencesDef, type ReferencesDef } from "./resolve/references"
+import { resolveReferencesDef, type ReferencesDef } from "./resolve-references"
 import { log, logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve/license"

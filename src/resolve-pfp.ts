@@ -1,7 +1,7 @@
-import { getBskyProfile } from "../lib/api/bsky"
-import type { AuthorOutput } from "../output"
-import { logerror, warn } from "../pipeline"
-import type { AuthorDefinition } from "../resolve-author"
+import { getBskyProfile } from "./lib/api/bsky"
+import type { AuthorOutput } from "./output"
+import { logerror, warn } from "./pipeline"
+import type { AuthorDefinition } from "./resolve-author"
 
 
 
