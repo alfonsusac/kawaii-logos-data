@@ -95,9 +95,9 @@ export namespace Output {
     label: string,
     labelShort: string,
   } & (
-      | { type: "unknown" }
-      | { type: "custom", href: string }
-      | { type: "standard", id: StandardLicense.Type }
+      | { type: "unknown", id?: undefined, href?: undefined }
+      | { type: "custom", id?: undefined, href: string }
+      | { type: "standard", id: StandardLicense.Type, href: string }
     )
   export namespace License {
     export type Permission = "allowed" | "disallowed" | "depends"
@@ -107,7 +107,13 @@ export namespace Output {
 
   export type StandardLicense = Record<StandardLicense.Type, StandardLicense.Meta>
   export namespace StandardLicense {
-    export const standardLicenceTypes = [ "MIT", "CC BY-NC-SA 4.0", "CC BY-SA 4.0", "CC0-1.0", "All Rights Reserved" ] as const
+    export const standardLicenceTypes = [
+      "MIT",
+      "CC BY-NC-SA 4.0",
+      "CC BY-SA 4.0",
+      "CC0-1.0",
+      "All Rights Reserved"
+    ] as const
     export type Type = typeof standardLicenceTypes[ number ]
     export type Meta = {
       label: string,

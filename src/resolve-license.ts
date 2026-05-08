@@ -127,8 +127,10 @@ export const standardLicenses: Output.StandardLicense = {
   }
 }
 
+
+
 export function resolveLicenseDefinitions(license: LicenseDef | undefined): Output.License {
-  if (!license) return { type: "unknown", label: "Unknown License", labelShort: "Unknown License" }
+  if (!license) return { type: "unknown", label: "Unknown License", labelShort: "Unknown License", }
 
   const reference = resolveReferencesDefinition(license.reference)[ 0 ]
 
@@ -145,19 +147,34 @@ export function resolveLicenseDefinitions(license: LicenseDef | undefined): Outp
     return { reference, type: "unknown", label: "Unknown License", labelShort: "Unknown License" }
   }
 
-  return { reference, type: "standard", id: license.type, label: standardLicenses[ license.type ].label, labelShort: license.type }
+  return { reference, type: "standard", id: license.type, label: standardLicenses[ license.type ].label, labelShort: license.type, href: standardLicenses[ license.type ].href }
 }
 
 
-const LicenseContentIDs: Record<Output.StandardLicense.Type, string[]> = {
-  "MIT": [ 'MIT License' ],
-  "CC BY-NC-SA 4.0": [ 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0', 'CC BY-NC-SA 4.0', 'Attribution-NonCommercial-ShareAlike 4.0 International' ],
-  "CC BY-SA 4.0": [ 'Creative Commons Attribution-ShareAlike 4.0', 'CC BY-SA 4.0' ],
-  "CC0-1.0": [ 'CC0 1.0 Universal', 'CC0-1.0' ],
-  "All Rights Reserved": [ 'All Rights Reserved' ],
-}
 
 export function resolveToLicenseTypeByContent(licenseContent: string): LicenseType {
+
+  const LicenseContentIDs: Record<Output.StandardLicense.Type, string[]> = {
+    "MIT": [
+      'MIT License'
+    ],
+    "CC BY-NC-SA 4.0": [
+      'Creative Commons Attribution-NonCommercial-ShareAlike 4.0',
+      'CC BY-NC-SA 4.0',
+      'Attribution-NonCommercial-ShareAlike 4.0 International'
+    ],
+    "CC BY-SA 4.0": [
+      'Creative Commons Attribution-ShareAlike 4.0',
+      'CC BY-SA 4.0'
+    ],
+    "CC0-1.0": [
+      'CC0 1.0 Universal',
+      'CC0-1.0'
+    ],
+    "All Rights Reserved": [
+      'All Rights Reserved'
+    ],
+  }
 
   for (const [ licenseType, identifiers ] of Object.entries(LicenseContentIDs)) {
     if (identifiers.some(id => licenseContent.includes(id))) {
