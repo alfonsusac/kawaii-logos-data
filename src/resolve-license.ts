@@ -1,11 +1,11 @@
-import type { Output, StandardLicenseOut, StandardLicenseType } from "./output"
+import type { Output } from "./output"
 import { log, logerror, warn } from "./pipeline"
 import { resolveReferencesDefinition, type ReferenceDef } from "./resolve-references"
 
 export type LicenseDef = {
   reference?: ReferenceDef,
 } & (
-    | { type: StandardLicenseType }
+    | { type: Output.StandardLicense.Type }
     | { type: "custom", href: string }
     | { type: "unknown", href?: undefined }
   )
@@ -14,7 +14,7 @@ export type LicenseType = LicenseDef[ "type" ]
 
 
 
-export const standardLicenses: StandardLicenseOut = {
+export const standardLicenses: Output.StandardLicense = {
   "MIT": {
     label: "MIT License",
     href: "https://opensource.org/license/mit/",
@@ -149,7 +149,7 @@ export function resolveLicenseDefinitions(license: LicenseDef | undefined): Outp
 }
 
 
-const LicenseContentIDs: Record<StandardLicenseType, string[]> = {
+const LicenseContentIDs: Record<Output.StandardLicense.Type, string[]> = {
   "MIT": [ 'MIT License' ],
   "CC BY-NC-SA 4.0": [ 'Creative Commons Attribution-NonCommercial-ShareAlike 4.0', 'CC BY-NC-SA 4.0', 'Attribution-NonCommercial-ShareAlike 4.0 International' ],
   "CC BY-SA 4.0": [ 'Creative Commons Attribution-ShareAlike 4.0', 'CC BY-SA 4.0' ],
@@ -162,7 +162,7 @@ export function resolveToLicenseTypeByContent(licenseContent: string): LicenseTy
   for (const [ licenseType, identifiers ] of Object.entries(LicenseContentIDs)) {
     if (identifiers.some(id => licenseContent.includes(id))) {
       log(`Resolved license type as ${ licenseType } based on content identifiers.`)
-      return licenseType as StandardLicenseType
+      return licenseType as Output.StandardLicense.Type
     }
   }
 

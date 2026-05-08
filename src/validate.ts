@@ -1,7 +1,7 @@
 import { validateSlug } from "./lib/slug"
-import type { AuthorOutput } from "./output"
+import type { Output } from "./output"
 
-export async function validateResolvedAuthor(author: AuthorOutput) {
+export async function validateResolvedAuthor(author: Output.Author) {
 
   // Validate slug-related tokens
   validateSlug(author.id)

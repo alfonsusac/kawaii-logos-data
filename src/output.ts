@@ -3,8 +3,8 @@ export type KawaiiLogoData = {
   data: {
     authorCount: number,
     imageCount: number,
-    authors: AuthorOutput[],
-    standardLicenses: StandardLicenseOut,
+    authors: Output.Author[],
+    standardLicenses: Output.StandardLicense,
   }
 }
 
@@ -12,96 +12,44 @@ export namespace KawaiiLogoData {
   export type Data = KawaiiLogoData[ 'data' ]
 }
 
-export type AuthorOutput = {
-  id: string,
-  displayName: string,
-  pfp?: string,
-  socials: {
-    type: Output.SocialTypes,
-    username: string,
-    url: string,
-  }[],
-  personalSites: string[],
-  fundings: {
-    type: Output.FundingTypes,
-    label: string,
-    url: string,
-  }[]
-  // social: {
-  //   github?: {
-  //     username: string,
-  //     url: string,
-  //   },
-  //   x?: {
-  //     username: string,
-  //     url: string,
-  //   },
-  //   bsky?: {
-  //     username: string,
-  //     url: string,
-  //   },
-  //   behance?: {
-  //     username: string,
-  //     url: string,
-  //   },
-  //   figma?: {
-  //     username: string,
-  //     url: string,
-  //   },
-  //   dribbble?: {
-  //     username: string,
-  //     url: string,
-  //   },
-  //   site?: string,
-  // },
-  // links: {
-  //   socials: {
-  //     type: "github" | "x" | "bsky" | "behance" | "figma" | "dribbble",
-  //     username: string,
-  //     url: string,
-  //   }[],
-  //   personalsites: string[],
-  // }
-  entries: {
-    id: string,
-    title: string,
-    imageCount: number,
-    images: {
-      src: Output.Link,
-      references: Output.Reference[],        // where the image was found, for linking back to the source
-      label: string,
-      style?: {
-        objectFit?: "cover" | "contain"
-      }
-    }[],
-    references: Output.Reference[],
-    license: Output.License
-  }[],
-  licenses: Output.License[],
-  references: Output.Reference[],
-
-}
-
-// export namespace AuthorOutput {
-//   // export type Links = AuthorOutput[ 'links' ]
-//   export type SocialLinks = AuthorOutput[ 'socials' ]
-//   export type PersonalSites = AuthorOutput[ 'personalSites' ]
-//   // export type Socials = AuthorOutput[ 'social' ]
-//   export type Entries = AuthorOutput[ 'entries' ]
-//   export type EntryItem = AuthorOutput[ 'entries' ][ number ]
-//   export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
-//   export type Fundings = AuthorOutput[ 'fundings' ]
-//   export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
-// }
 
 export namespace Output {
-
-  export type Author = AuthorOutput
+  export type Author = {
+    id: string,
+    displayName: string,
+    pfp?: string,
+    socials: {
+      type: Output.SocialTypes,
+      username: string,
+      url: string,
+    }[],
+    personalSites: string[],
+    fundings: {
+      type: Output.FundingTypes,
+      label: string,
+      url: string,
+    }[]
+    entries: {
+      id: string,
+      title: string,
+      imageCount: number,
+      images: {
+        src: Output.Link,
+        references: Output.Reference[],        // where the image was found, for linking back to the source
+        label: string,
+        style?: {
+          objectFit?: "cover" | "contain"
+        }
+      }[],
+      references: Output.Reference[],
+      license: Output.License
+    }[],
+    licenses: Output.License[],
+    references: Output.Reference[],
+  }
   export namespace Author {
-    // export type Links = Author[ 'links' ]
     export type SocialLinks = Author[ 'socials' ]
     export type PersonalSites = Author[ 'personalSites' ]
-    // export type Socials = Author[ 'social' ]
     export type Entries = Author[ 'entries' ]
     export type EntryItem = Author[ 'entries' ][ number ]
     export type EntryItemImages = Author.EntryItem[ 'images' ]
@@ -144,58 +92,58 @@ export namespace Output {
   }
 
   export type License = {
-    reference?: Reference, // where the information was gathered
+    reference?: Reference,
     label: string,
     labelShort: string,
   } & (
       | { type: "unknown" }
       | { type: "custom", href: string }
-      | { type: "standard", id: StandardLicenseType }
+      | { type: "standard", id: StandardLicense.Type }
     )
-
-}
-
-
-
-
+  export namespace License {
+    export type Permission = "allowed" | "disallowed" | "depends"
+    export type Condition = "required" | "recommended" | "not needed"
+  }
 
 
-
-
-
-export type StandardLicenseType =
-  | "MIT"
-  | "CC BY-NC-SA 4.0"
-  | "CC BY-SA 4.0"
-  | "CC0-1.0"
-  | "All Rights Reserved"
-
-export type StandardLicenseOut = Record<StandardLicenseType, StandardLicenseMeta>
-
-export type StandardLicenseMeta = {
-  label: string,
-  href: string, // link to the definitive license text
-  // Public restrictions are not absolute—they are default rules, not universal limits
-  // These are for non-custom licenses, this is just informational and may be inaccurate
-  permissions: {
-    use: LicensePermission,
-    modify: LicensePermission, // 
-    distribute: LicensePermission, // Distribution implies someone else can access your copy.
-    commercial: LicensePermission,
-    misc: {
-      liability: LicensePermission,
-      trademark: LicensePermission,
-    }
-    conditions: {
-      sale_requires_modification: LicenseCondition,
-      disclose_source: LicenseCondition,
-      state_changes: LicenseCondition,
-      include_license: LicenseCondition,
-      include_copyright: LicenseCondition,
-      give_credit: LicenseCondition,
+  export type StandardLicense = Record<StandardLicense.Type, StandardLicense.Meta>
+  export namespace StandardLicense {
+    export const standardLicenceTypes = [ "MIT", "CC BY-NC-SA 4.0", "CC BY-SA 4.0", "CC0-1.0", "All Rights Reserved" ] as const
+    export type Type = typeof standardLicenceTypes[ number ]
+    export type Meta = {
+      label: string,
+      href: string, // link to the definitive license text
+      // Public restrictions are not absolute—they are default rules, not universal limits
+      // These are for non-custom licenses, this is just informational and may be inaccurate
+      permissions: {
+        use: License.Permission,
+        modify: License.Permission, // 
+        distribute: License.Permission, // Distribution implies someone else can access your copy.
+        commercial: License.Permission,
+        misc: {
+          liability: License.Permission,
+          trademark: License.Permission,
+        }
+        conditions: {
+          sale_requires_modification: License.Condition,
+          disclose_source: License.Condition,
+          state_changes: License.Condition,
+          include_license: License.Condition,
+          include_copyright: License.Condition,
+          give_credit: License.Condition,
+        }
+      }
     }
   }
 }
 
-export type LicensePermission = "allowed" | "disallowed" | "depends"
-export type LicenseCondition = "required" | "recommended" | "not needed"
+
+
+
+
+
+
+
+
+
+

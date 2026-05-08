@@ -5,13 +5,13 @@ import { resolvePfp } from "./resolve-pfp"
 import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve-license"
 import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
-import type { AuthorOutput } from "./output"
 import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
 import { stepSimple } from "./pipeline"
 import { resolveReferencesDefinition } from "./resolve-references"
 import { dedupeByProp } from "./lib/dedupe-by-prop"
 import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
+import type { Output } from "./output"
 
 export type AuthorDefinition = {
   displayName?: string,
@@ -63,7 +63,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   const references = resolveReferencesDefinition(scrapedReference)
 
   // Compile resolved data into final Author object
-  const resolved: AuthorOutput = {
+  const resolved: Output.Author = {
     id: slugify(id),
     displayName,
     pfp,

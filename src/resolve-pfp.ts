@@ -1,5 +1,5 @@
 import { getBskyProfile } from "./lib/api/bsky"
-import type { AuthorOutput, Output } from "./output"
+import type { Output } from "./output"
 import { logerror, warn } from "./pipeline"
 import type { AuthorDefinition } from "./resolve-author"
 

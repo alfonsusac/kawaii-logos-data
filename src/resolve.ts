@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { AuthorOutput, KawaiiLogoData, Output } from "./output"
+import type { KawaiiLogoData, Output } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 import { standardLicenses } from "./resolve-license"
@@ -43,7 +43,7 @@ function logResults(
     buffers: LogBuffer
     result: {
       definition: AuthorDefinition
-      resolved: AuthorOutput
+      resolved: Output.Author
     }
   }[],
 ) {

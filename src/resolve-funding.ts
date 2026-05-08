@@ -1,7 +1,5 @@
 import type { SingleOrNonEmptyArray } from "./lib/non-empty-array"
-import type { Site } from "./lib/site"
-import type { AuthorOutput, Output } from "./output"
-import { logerror } from "./pipeline"
+import type { Output } from "./output"
 
 export type FundingsDef = SingleOrNonEmptyArray<
   | { type: "patreon", url: `https://patreon.com/${ string }` }

@@ -2,7 +2,7 @@ import { getBskyProfile } from "./lib/api/bsky"
 import { fetchGithubProfile } from "./lib/api/github"
 import { site } from "./lib/site"
 import { logerror } from "./pipeline"
-import { Output, type AuthorOutput } from "./output"
+import { Output } from "./output"
 
 export type SocialsDef = {
   github?: string,

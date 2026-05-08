@@ -1,6 +1,6 @@
 import type { Site } from "./lib/site"
 import { type DateDef } from "./lib/date"
-import type { AuthorOutput, Output } from "./output"
+import type { Output } from "./output"
 import { resolveReferencesDefinition, type ReferenceDef, type ReferencesDef } from "./resolve-references"
 import { logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
@@ -55,7 +55,7 @@ export async function resolveEntriesMulti(
   authorRef: ReferenceDef | undefined = undefined,
   ...args: (EntriesDefinition | undefined)[]
 ) {
-  const allEntries: AuthorOutput[ 'entries' ] = []
+  const allEntries: Output.Author.Entries = []
 
   for (const defs of args) {
     if (!defs) continue
@@ -76,10 +76,10 @@ export async function resolveEntriesMulti(
 export async function resolveEntries(
   defs: EntriesDefinition | undefined,
   authorRef: ReferenceDef | undefined,
-): Promise<AuthorOutput[ 'entries' ]> {
+): Promise<Output.Author.Entries> {
   if (!defs) return []
 
-  const entries: AuthorOutput[ 'entries' ] = []
+  const entries: Output.Author.Entries = []
 
   for (const [ id, entryDef ] of Object.entries(defs)) {
 
