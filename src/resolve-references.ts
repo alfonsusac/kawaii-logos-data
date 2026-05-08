@@ -1,21 +1,19 @@
 import type { Site } from "./lib/site"
 import type { DateDef } from "./lib/date"
 import { resolveHttpsSite } from "./resolve-url"
-import type { NonEmptyArray } from "./lib/array-type-utils"
 import type { Output } from "./output"
 import { warn } from "./pipeline"
+import type { ArrayOrSingle } from "./lib/array-type-utils"
 
 export type ReferenceDef = Site | {
   site: Site,
   dateAccessed?: DateDef,
 }
 
-export type ReferencesDef = NonEmptyArray<ReferenceDef> | ReferenceDef
+export type ReferencesDef = ArrayOrSingle<ReferenceDef>
 
 
 
-
-// Helper
 export function resolveReferencesDefinition(...references: ((ReferenceDef | undefined)[] | ReferenceDef | undefined)[]): Output.Reference[] {
   const referencesList: ReferenceDef[] = []
   for (const refs of references) {

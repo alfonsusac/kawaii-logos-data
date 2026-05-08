@@ -3,7 +3,7 @@
 // Definitions
 
 import { log, logerror, stepSimple, warn } from "./pipeline"
-import type { EntriesDefinition, EntryDefinition, ImageDefinition, ImageSourceDef } from "./resolve-entries"
+import type { EntriesDefinition, EntryDefinition, ImageDefinition } from "./resolve-entries"
 import type { SocialListDef } from "./resolve-socials"
 import { resolveGithubSource } from "./resolve-source-github"
 import { slugify } from "./lib/slug"
@@ -19,7 +19,12 @@ export type SourceDef = {
   transform?: ArrayOrSingle<
     | { type: "replace", from: string, to: string }
     | { type: "filter", exclude: string }
-  >,
+  >
+  postProcess?: ArrayOrSingle<
+    | { type: "add entry reference", entryKey: string, reference: ReferenceDef }
+    | { type: "add entry createdAt", entryKey: string, createdAt: EntryDefinition[ 'createdAt' ] }
+    | { type: "override image style", entryKey: string, imageIndex: number, style: ImageDefinition[ 'style' ] }
+  >
   licenseFallback?: LicenseDef,
   applyCssStyle?: ImageDefinition[ 'style' ]
 } & (
@@ -35,7 +40,6 @@ export type ValidSourceType = SourceDef[ "from" ]
 // Implementations
 
 export type SourceResult = {
-
   // Files scraped from a source definition.
   files: {
     filename: string,                 // Used for reference, not used in the final output.
@@ -45,11 +49,6 @@ export type SourceResult = {
     rawUrl: string,                   // Direct link to the raw file, used as <img> src.
     pageUrl: string,                  // Link to the page where the file is located, used as reference for the image source.
     licenseDef: LicenseDef,
-    // license: { // WIP
-    //   content: string,             // Content of the license file, used to determine the license type and how to display it.
-    //   rawUrl: string,              // Direct link to the raw license file, used to fetch the license content.
-    //   pageUrl: string,             // Link to the page where the license file is located, used as reference for the license source.
-    // } | "unknown",
   }[],
 
   // Socials identified from the source definition.
@@ -61,20 +60,18 @@ export type SourceResult = {
   // Source Reference
   scrapedReferenceUrl?: Site,
 }
-
-type ResolveSourceResult = {
-  scrapedEntries: EntriesDefinition,
-  scrapedSocials: SocialListDef,
-  scrapedReference: ReferenceDef | undefined,
-}
-
-
 export type ScrapedResultFiles = SourceResult[ "files" ]
+
+
 
 
 export async function resolveSourceDefinition(
   def: SourceDef | undefined,
-): Promise<ResolveSourceResult> {
+): Promise<{
+  scrapedEntries: EntriesDefinition,
+  scrapedSocials: SocialListDef,
+  scrapedReference: ReferenceDef | undefined,
+}> {
 
   const opts = {
     // printPreTransformedList: true,
@@ -106,14 +103,20 @@ export async function resolveSourceDefinition(
   // Group files into entries-like structure based on the transformedPath.
   const scrapedEntries = await stepSimple(
     "Grouping transformed files into entries",
-    () => resolveTransformedSourceToEntries(transformedList, def, opts)
+    () => resolveTransformedSourceToEntriesDefinition(transformedList, def, opts)
+  )
+
+  // Apply post process to scraped entries definition.
+  const postProcessedEntries = await stepSimple(
+    "Applying post process to scraped entries",
+    () => resolveSourcePostProcess(scrapedEntries, def.postProcess)
   )
 
   // Merge scraped socials with socials from the author definition.
   scrapedSocials.push(...(sourceResult.socials ?? []))
 
   return {
-    scrapedEntries,
+    scrapedEntries: postProcessedEntries,
     scrapedSocials,
     scrapedReference: sourceResult.scrapedReferenceUrl ? { site: sourceResult.scrapedReferenceUrl } : undefined,
   }
@@ -122,7 +125,7 @@ export async function resolveSourceDefinition(
 
 // --------------------------------------------------------------------------------
 
-export function resolveSourceTransformation(
+function resolveSourceTransformation(
   files: ScrapedResultFiles,
   transformationDef: SourceDef[ "transform" ],
   opts: {
@@ -155,7 +158,7 @@ export function resolveSourceTransformation(
 
 // --------------------------------------------------------------------------------
 
-export async function resolveTransformedSourceToEntries(
+async function resolveTransformedSourceToEntriesDefinition(
   transformedFiles: ScrapedResultFiles,
   def: SourceDef | undefined,
   opts: {
@@ -232,4 +235,51 @@ export async function resolveTransformedSourceToEntries(
   }
 
   return scrapedEntries
+}
+
+// --------------------------------------------------------------------------------
+
+function resolveSourcePostProcess(
+  scrapedEntries: EntriesDefinition,
+  postProcessDef: SourceDef[ "postProcess" ]
+): EntriesDefinition {
+  if (!postProcessDef) return scrapedEntries
+
+  const overriddenEntries: EntriesDefinition = { ...scrapedEntries }
+
+  for (const process of resolveArrayOrSingleToArray(postProcessDef)) {
+    if ('entryKey' in overriddenEntries) {
+      if (process.entryKey in overriddenEntries === false) {
+        log(`Manual post process entry key: ${ process.entryKey } does not exist in scraped entries.`)
+        continue
+      }
+
+      if (process.type === "add entry reference") {
+        const existingReferences = resolveArrayOrSingleToArray(overriddenEntries[ process.entryKey ].references)
+        existingReferences.push(process.reference)
+        overriddenEntries[ process.entryKey ].references = existingReferences
+      }
+
+      if (process.type === "add entry createdAt") {
+        overriddenEntries[ process.entryKey ].createdAt = process.createdAt
+      }
+
+      if (process.type === "override image style") {
+        if (!Array.isArray(overriddenEntries[ process.entryKey ].images)) {
+          logerror(`Cannot apply image style override for entry key: ${ process.entryKey } because it does not have images.`)
+          continue
+        }
+        const images = resolveArrayOrSingleToArray(overriddenEntries[ process.entryKey ].images)
+
+        if (process.imageIndex >= images.length) {
+          logerror(`Image index out of bounds for entry key: ${ process.entryKey }. Cannot apply image style override.`)
+          continue
+        }
+        images[ process.imageIndex ].style = process.style
+        overriddenEntries[ process.entryKey ].images = images
+      }
+    }
+  }
+
+  return overriddenEntries
 }

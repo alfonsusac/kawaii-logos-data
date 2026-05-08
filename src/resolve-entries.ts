@@ -3,13 +3,11 @@ import { type DateDef } from "./lib/date"
 import type { Output } from "./output"
 import { resolveReferencesDefinition, type ReferenceDef, type ReferencesDef } from "./resolve-references"
 import { logerror, warn } from "./pipeline"
-// import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve-license"
 import { resolveHttpsSite } from "./resolve-url"
 import { getFilenameFromUrl } from "./lib/get-filename-from-url"
 import { matchUrl } from "./lib/url-pattern"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
-// import { normalizeSingleOrNonEmptyArray } from "./lib/array-type-utils"
 
 // ## Definitions
 
