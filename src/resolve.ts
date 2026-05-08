@@ -2,7 +2,7 @@ import { black, blue, green, red, reset, yellow } from "./lib/ansii"
 import type { AuthorOutput, KawaiiLogoData } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
-import { standardLicenses } from "./resolve/license"
+import { standardLicenses } from "./resolve-license"
 
 
 export async function resolveDefinitions(

@@ -4,7 +4,7 @@ import type { AuthorOutput, Reference } from "./output"
 import { resolveReferencesDef, type ReferencesDef } from "./resolve-references"
 import { log, logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
-import { resolveLicenseDefinitions, type LicenseDef } from "./resolve/license"
+import { resolveLicenseDefinitions, type LicenseDef } from "./resolve-license"
 import { getUrlType } from "./resolve-url"
 import { getFilenameFromUrl } from "./lib/get-filename-from-url"
 

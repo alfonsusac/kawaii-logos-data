@@ -4,12 +4,12 @@
 
 import { log, logerror, stepSimple, warn } from "./pipeline"
 import type { EntriesDefinition, EntryDefinition, ImageDefinition } from "./resolve-entries"
-import type { SocialListDef } from "./resolve/socials"
+import type { SocialListDef } from "./resolve-socials"
 import { resolveGithubSource } from "./resolve-source-github"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { slugify } from "./lib/slug"
 import type { Site } from "./lib/site"
-import type { LicenseDef } from "./resolve/license"
+import type { LicenseDef } from "./resolve-license"
 import type { ReferenceDef } from "./resolve-references"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.

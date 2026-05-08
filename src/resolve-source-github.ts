@@ -2,8 +2,8 @@ import { fetchGithubProfile, fetchGithubProfileSocialAccounts, fetchGithubRawFil
 import { site } from "./lib/site"
 import { log, logerror, stepSimple } from "./pipeline"
 import type { ScrapedResultFiles, SourceDef, SourceResult } from "./resolve-source"
-import { resolveToLicenseTypeByContent, type LicenseDef } from "./resolve/license"
-import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./resolve/socials"
+import { resolveToLicenseTypeByContent, type LicenseDef } from "./resolve-license"
+import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./resolve-socials"
 
 type GithubSourceDef = SourceDef & { from: "github" }
 

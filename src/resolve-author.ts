@@ -1,9 +1,9 @@
 
 import { resolveEntriesMulti, type EntriesDefinition } from "./resolve-entries"
-import { resolveSocials, type SocialsDef } from "./resolve/socials"
+import { resolveSocials, type SocialsDef } from "./resolve-socials"
 import { resolvePfp } from "./resolve-pfp"
 import type { Site } from "./lib/site"
-import type { LicenseDef } from "./resolve/license"
+import type { LicenseDef } from "./resolve-license"
 import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
 import type { AuthorOutput } from "./output"
 import { validateResolvedAuthor } from "./validate"
