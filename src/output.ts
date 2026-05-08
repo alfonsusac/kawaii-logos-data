@@ -12,19 +12,6 @@ export namespace KawaiiLogoData {
   export type Data = KawaiiLogoData[ 'data' ]
 }
 
-
-export namespace AuthorOutput {
-  export type Links = AuthorOutput[ 'links' ]
-  export type SocialLinks = AuthorOutput[ 'links' ][ 'socials' ]
-  export type PersonalSites = AuthorOutput[ 'links' ][ 'personalsites' ]
-  export type Socials = AuthorOutput[ 'social' ]
-  export type Entries = AuthorOutput[ 'entries' ]
-  export type EntryItem = AuthorOutput[ 'entries' ][ number ]
-  export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
-  export type Fundings = AuthorOutput[ 'fundings' ]
-  export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
-}
-
 export type AuthorOutput = {
   id: string,
   displayName: string,
@@ -69,19 +56,18 @@ export type AuthorOutput = {
     title: string,
     imageCount: number,
     images: {
-      src: string,                  // for <img> source
-      srcUrlType: UrlType,
-      references: Reference[],        // where the image was found, for linking back to the source
+      src: Output.Link,
+      references: Output.Reference[],        // where the image was found, for linking back to the source
       label: string,
       style?: {
         objectFit?: "cover" | "contain"
       }
     }[],
-    references: Reference[],
-    license: License
+    references: Output.Reference[],
+    license: Output.License
   }[],
-  licenses: License[],
-  references: Reference[],
+  licenses: Output.License[],
+  references: Output.Reference[],
   fundings: {
     label: string,
     type: "patreon" | "ko-fi" | "buymeacoffee" | "saweria" | "github" | "paypal" | "skeb",
@@ -89,45 +75,80 @@ export type AuthorOutput = {
   }[]
 }
 
-
-
-
-
-export type UrlType =
-  | "github-repo-text-content"
-  | "github-blob"
-  | "github-repo"
-  | "github-raw"
-  | "github-camo"
-  | "github-unknown"
-  | "gist-raw"
-  | "gist-page"
-  | "google-drive"
-  | "twitter-post"
-  | "bsky-post"
-  | "skeb-creator-page"
-  | "skeb-creator-guideline-page"
-  | "unknown"
-
-
-export type Reference = {
-  url: string
-  urlType: {
-    type: UrlType,
-    label: string,
-  }
-  dateAccessed?: string,
+export namespace AuthorOutput {
+  export type Links = AuthorOutput[ 'links' ]
+  export type SocialLinks = AuthorOutput[ 'links' ][ 'socials' ]
+  export type PersonalSites = AuthorOutput[ 'links' ][ 'personalsites' ]
+  export type Socials = AuthorOutput[ 'social' ]
+  export type Entries = AuthorOutput[ 'entries' ]
+  export type EntryItem = AuthorOutput[ 'entries' ][ number ]
+  export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
+  export type Fundings = AuthorOutput[ 'fundings' ]
+  export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
 }
 
-export type License = {
-  reference?: Reference, // where the information was gathered
-  label: string,
-  labelShort: string,
-} & (
-    | { type: "unknown" }
-    | { type: "custom", href: string }
-    | { type: "standard", id: StandardLicenseType }
-  )
+export namespace Output {
+  
+  export type Author = AuthorOutput
+  export namespace Author {
+    export type Links = AuthorOutput[ 'links' ]
+    export type SocialLinks = AuthorOutput[ 'links' ][ 'socials' ]
+    export type PersonalSites = AuthorOutput[ 'links' ][ 'personalsites' ]
+    export type Socials = AuthorOutput[ 'social' ]
+    export type Entries = AuthorOutput[ 'entries' ]
+    export type EntryItem = AuthorOutput[ 'entries' ][ number ]
+    export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
+    export type Fundings = AuthorOutput[ 'fundings' ]
+    export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
+  }
+
+  export type Link = {
+    type:
+    | "github-repo-text-content"
+    | "github-blob"
+    | "github-repo"
+    | "github-raw"
+    | "github-camo"
+    | "github-unknown"
+    | "gist-raw"
+    | "gist-page"
+    | "google-drive"
+    | "twitter-post"
+    | "bsky-post"
+    | "skeb-creator-page"
+    | "skeb-creator-guideline-page"
+    | "unknown"
+    label: string
+    url: string
+  }
+  export namespace Link {
+    export type Type = Link[ 'type' ]
+  }
+
+  export type Reference = {
+    link: Output.Link,
+    dateAccessed?: string,
+  }
+
+  export type License = {
+    reference?: Reference, // where the information was gathered
+    label: string,
+    labelShort: string,
+  } & (
+      | { type: "unknown" }
+      | { type: "custom", href: string }
+      | { type: "standard", id: StandardLicenseType }
+    )
+
+}
+
+
+
+
+
+
+
+
 
 export type StandardLicenseType =
   | "MIT"

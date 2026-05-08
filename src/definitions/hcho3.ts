@@ -14,9 +14,9 @@ export const hcho3: AuthorDefinition = {
     xgboost: {
       label: "XGBoost",
       images: [
-        { src: { type: "github-blob", url: "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg" } },
-        { src: { type: "github-blob", url: "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png" } },
-        { src: { type: "github-blob", url: "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg" } },
+        { src: "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo-Path.svg" },
+        { src: "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.png" },
+        { src: "https://github.com/hcho3/XGBoostVTuberLogo/blob/main/XGBoostVTuberLogo.svg" },
       ]
     }
   }

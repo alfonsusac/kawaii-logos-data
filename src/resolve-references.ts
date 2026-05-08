@@ -1,8 +1,8 @@
 import type { Site } from "./lib/site"
 import type { DateDef } from "./lib/date"
-import type { Reference } from "./output"
-import { getUrlType } from "./resolve-url"
+import { resolveHttpsSite } from "./resolve-url"
 import type { NonEmptyArray } from "./lib/non-empty-array"
+import type { Output } from "./output"
 
 export type ReferenceDef = Site | {
   site: Site,
@@ -11,21 +11,22 @@ export type ReferenceDef = Site | {
 
 export type ReferencesDef = NonEmptyArray<ReferenceDef> | ReferenceDef
 
+
+
+
 // Helper
-export function resolveReferencesDef(references: ReferencesDef | undefined): Reference[] {
+export function resolveReferencesDefinition(references: ReferenceDef[] | ReferenceDef | undefined): Output.Reference[] {
   if (!references) return []
   if (!Array.isArray(references)) references = [ references ]
 
   return references.map(ref => {
     if (typeof ref === "string") {
       return {
-        url: ref,
-        urlType: getUrlType(ref),
+        link: resolveHttpsSite(ref),
       }
     }
     return {
-      url: ref.site,
-      urlType: getUrlType(ref.site),
+      link: resolveHttpsSite(ref.site),
       dateAccessed: ref.dateAccessed,
     }
   })

@@ -12,7 +12,7 @@ export const saltyaom: AuthorDefinition = {
     elysia: {
       label: "Elysia",
       images: [
-        { src: { type: "github-blob", url: "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg" } }
+        { src: "https://github.com/elysiajs/documentation/blob/main/docs/public/assets/elysia_v.svg" }
       ]
     }
   },

@@ -16,5 +16,5 @@ export const andregans: AuthorDefinition = {
   fundings: [
     { type: "ko-fi", url: "https://ko-fi.com/andrerio" },
     { type: "saweria", url: "https://saweria.co/andrerio"}
-  ]
+  ],
 }

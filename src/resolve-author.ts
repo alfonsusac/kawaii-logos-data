@@ -9,7 +9,7 @@ import type { AuthorOutput } from "./output"
 import { validateResolvedAuthor } from "./validate"
 import { slugify } from "./lib/slug"
 import { stepSimple } from "./pipeline"
-import { resolveReferencesDef } from "./resolve-references"
+import { resolveReferencesDefinition } from "./resolve-references"
 import { dedupeByProp } from "./lib/dedupe-by-prop"
 import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
 
@@ -21,6 +21,9 @@ export type AuthorDefinition = {
   entries?: EntriesDefinition,
   source?: SourceDef,
   fundings?: FundingsDef,
+
+  // Debugging
+  logVerbose?: boolean,
 }
 
 // ------------------------------------------------------------
@@ -56,7 +59,7 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   // Collect licenses from entries and root license if exists and dedupe by label
   const licenses = dedupeByProp(entries.flatMap(e => e.license ? [ e.license ] : []))('label')
 
-  const references = resolveReferencesDef(scrapedReference)
+  const references = resolveReferencesDefinition(scrapedReference)
 
   // Compile resolved data into final Author object
   const resolved: AuthorOutput = {
@@ -74,5 +77,8 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
   // Validating Resolved
   await validateResolvedAuthor(resolved)
 
-  return resolved
+  return {
+    definition: author,
+    resolved
+  }
 }

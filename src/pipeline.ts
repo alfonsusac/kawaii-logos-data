@@ -27,6 +27,10 @@ export function runApp(cb: () => Promise<void>) {
 
 const stepDepth = new AsyncLocalStorage<number>()
 
+
+
+// ----------------------------------------------------
+
 function getIndent(add: number = 0) {
   const currentDepth = stepDepth.getStore() || 0
   return "  ".repeat(Math.max(currentDepth - 1, 0) + add)
@@ -39,7 +43,7 @@ export async function step<R>(
   const currentDepth = stepDepth.getStore() || 0
 
   if (currentDepth === 0) {
-    log(`\n${ blue }[${ reset }`, description, `${ blue }]${ reset }`)
+    log(`\n\n${ blue }${ reset }${ description }${ blue }${ reset }`)
   }
   if (currentDepth === 1) {
     log(`${ blue }-${ reset }`, description, `${ blue }${ reset }`)
@@ -56,7 +60,7 @@ export async function stepSimple<R>(
   cb: () => R,
 ) {
   const currentDepth = stepDepth.getStore() || 0
-  log(`${ black }* ${ description }${ reset }`)
+  log(`${ black }> ${ description }${ reset }`)
   return stepDepth.run(currentDepth + 1, cb)
 }
 
@@ -116,4 +120,28 @@ export function logerror(...args: any) {
 }
 export function logger(type: LogBufferType) {
   return (...args: any) => logWithType(type, ...args, reset)
+}
+
+// ----------------------------------------------------
+// Pipeline v2
+
+const logContext = new AsyncLocalStorage<{
+  name: string,
+  stack: string[],
+  enabled: boolean,
+}>()
+
+export function procedure<I, O>(
+  opts: {
+    name: string,
+    description: string,
+    log: LogBufferType[]
+  },
+  cb: (I: I) => O,
+) {
+  // return (input: I): O => {
+  //   const currentDepth = stepDepth.getStore() || 0
+  //   log(`${ black }> ${ description }${ reset }`)
+  //   return stepDepth.run(currentDepth + 1, () => cb(input))
+  // }
 }

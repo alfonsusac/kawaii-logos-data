@@ -10,16 +10,16 @@ export const styxpilled: AuthorDefinition = {
     svelte: {
       label: "svelte",
       images: {
-        src: { type: "self-hosted", filepath: "./assets/GLlkf9EWwAAq3N9.jpeg" },
-        reference: "https://twitter.com/styxpilled/status/1781565832251719868",
+        src: "./assets/GLlkf9EWwAAq3N9.jpeg",
+        references: "https://twitter.com/styxpilled/status/1781565832251719868",
         style: { objectFit: "cover" }
       }
     },
     sveltekit: {
       label: "sveltekit",
       images: {
-        src: { type: "self-hosted", filepath: "./assets/GLmrDPdXgAAlKvW.jpeg" },
-        reference: "https://twitter.com/styxpilled/status/1781565832251719868",
+        src: "./assets/GLmrDPdXgAAlKvW.jpeg",
+        references: "https://twitter.com/styxpilled/status/1781565832251719868",
         style: { objectFit: "cover" }
       }
     }

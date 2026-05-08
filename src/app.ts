@@ -26,7 +26,7 @@ import { cocoa_xu } from "./definitions/cocoa_xu"
 import { syke9p3 } from "./definitions/syke9p3"
 import { generateGitIgnore } from "./utils"
 import { runApp, step, verbose, warn } from "./pipeline"
-import { checkEnvVars, isInGitHubAction, revalidateToken } from "./env"
+import { checkEnvVars } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./revalidate"
 import type { KawaiiLogoData } from "./output"
@@ -91,13 +91,11 @@ runApp(async () => {
     }
   )
 
-  if (isInGitHubAction && revalidateToken) {
-    await step(
-      "Running side effects", async () => {
-        await step("Revalidating website", revalidateMainWebsite)
-      }
-    )
-  }
+  await step(
+    "Running side effects", async () => {
+      await step("Revalidating website", revalidateMainWebsite)
+    }
+  )
 })
 
 

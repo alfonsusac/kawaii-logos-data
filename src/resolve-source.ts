@@ -3,7 +3,7 @@
 // Definitions
 
 import { log, logerror, stepSimple, warn } from "./pipeline"
-import type { EntriesDefinition, EntryDefinition, ImageDefinition } from "./resolve-entries"
+import type { EntriesDefinition, EntryDefinition, ImageDefinition, ImageSourceDef } from "./resolve-entries"
 import type { SocialListDef } from "./resolve-socials"
 import { resolveGithubSource } from "./resolve-source-github"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
@@ -38,17 +38,17 @@ export type SourceResult = {
 
   // Files scraped from a source definition.
   files: {
-    filename: string,                // Used for reference, not used in the final output.
+    filename: string,                 // Used for reference, not used in the final output.
     filenameWithoutExtension: string, // Used as default label and default groupings
-    extension: string,               // Used to determine the file type and how to display it.
-    transformedPath: string,         // Used to group images into entries in a form of "<group>/<filename>". 
-    rawUrl: string,                  // Direct link to the raw file, used as <img> src.
-    pageUrl: string,                // Link to the page where the file is located, used as reference for the image source.
-    licenseDef: LicenseDef
+    extension: string,                // Used to determine the file type and how to display it.
+    transformedPath: string,          // Used to group images into entries in a form of "<group>/<filename>". 
+    rawUrl: string,                   // Direct link to the raw file, used as <img> src.
+    pageUrl: string,                  // Link to the page where the file is located, used as reference for the image source.
+    licenseDef: LicenseDef,
     // license: { // WIP
-    //   content: string,           // Content of the license file, used to determine the license type and how to display it.
-    //   rawUrl: string,            // Direct link to the raw license file, used to fetch the license content.
-    //   pageUrl: string,           // Link to the page where the license file is located, used as reference for the license source.
+    //   content: string,             // Content of the license file, used to determine the license type and how to display it.
+    //   rawUrl: string,              // Direct link to the raw license file, used to fetch the license content.
+    //   pageUrl: string,             // Link to the page where the license file is located, used as reference for the license source.
     // } | "unknown",
   }[],
 
@@ -169,8 +169,9 @@ export async function resolveTransformedSourceToEntries(
   function addToScrapeEntries(entryKey: string, entryLabel: string, file: ScrapedResultFiles[ number ]) {
     const imageData: ImageDefinition = {
       label: file.filename,
-      src: { type: "resolved", url: file.rawUrl as Site },
-      reference: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
+      src: `resolved:${ file.rawUrl }`,
+      // src: { type: "resolved", url: file.rawUrl as Site },
+      references: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
       style: def?.applyCssStyle,
     }
 

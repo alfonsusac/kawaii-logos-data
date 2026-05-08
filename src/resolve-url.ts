@@ -1,18 +1,33 @@
 import type { Site } from "./lib/site"
-import type { UrlType } from "./output"
+import { matchUrl } from "./lib/url-pattern"
+import type { Output } from "./output"
 import { logerror, warn } from "./pipeline"
+
+export type HttpsSite = `https://${ string }`
+
+export function resolveHttpsSite(site: HttpsSite): Output.Link {
+  const type = getUrlTypeFromURL(site)
+  const label = getUrlTypeLabel(type)
+  return {
+    type,
+    label,
+    url: site,
+  }
+}
+
+
+
+
 
 function getUrlTypeFromURL(
   url: Site
-): UrlType {
+): Output.Link.Type {
   if (url.startsWith("https://github.com")) {
     if (url.includes("/blob/")) return "github-blob"
     if (url.includes("#")) return "github-repo-text-content"
     if (url.split('/').length >= 5) return "github-repo"
 
-    const err = new Error(`URL starts with https://github.com but doesn't match known GitHub URL patterns: ${ url }`)
-    Error.captureStackTrace(err, getUrlTypeFromURL)
-    logerror(err)
+    logerror("URL starts with https://github.com but doesn't match known GitHub URL patterns: " + url)
     return "github-unknown"
   }
   if (url.startsWith("https://drive.google.com/file/d/")) {
@@ -24,13 +39,10 @@ function getUrlTypeFromURL(
   if (url.startsWith("https://gist.github.com/")) {
     return "gist-page"
   }
-  if (url.startsWith("https://twitter.com/") && url.includes("/status/")) {
+  if (matchUrl(url, "https://x.com/:A/status/:B+") || matchUrl(url, "https://twitter.com/:A/status/:B+")) {
     return "twitter-post"
   }
-  if (url.startsWith("https://x.com/") && url.includes("/status/")) {
-    return "twitter-post"
-  }
-  if (url.startsWith("https://bsky.app/profile/") && url.includes("/post/")) {
+  if (matchUrl(url, "https://bsky.app/profile/:username/post/:postId")) {
     return "bsky-post"
   }
   if (url.startsWith("https://raw.githubusercontent.com/")) {
@@ -47,13 +59,11 @@ function getUrlTypeFromURL(
     return "skeb-creator-page"
   }
 
-  const err = new Error(`Unknown URL type: ${ url }`)
-  Error.captureStackTrace(err, getUrlTypeFromURL)
-  logerror(err)
+  logerror("Failed to determine URL type for URL: " + url)
   return "unknown"
 }
 
-function getUrlTypeLabel(urlType: UrlType) {
+function getUrlTypeLabel(urlType: Output.Link.Type) {
   switch (urlType) {
     case "github-repo-text-content": return "GitHub Repo Text Content"
     case "github-blob": return "GitHub Blob"
@@ -72,11 +82,14 @@ function getUrlTypeLabel(urlType: UrlType) {
   }
 }
 
-export function getUrlType(url: Site): {
-  type: UrlType,
-  label: string,
-} {
-  const type = getUrlTypeFromURL(url)
-  const label = getUrlTypeLabel(type)
-  return { type, label }
-}
+// export function getUrlType(url: Site): {
+//   type: Output.Link.Type,
+//   label: string,
+// } {
+//   const type = getUrlTypeFromURL(url)
+//   const label = getUrlTypeLabel(type)
+//   return { type, label }
+// }
+
+// ------------------------------------------------------------------------------------
+

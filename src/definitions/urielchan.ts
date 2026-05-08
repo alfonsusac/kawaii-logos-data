@@ -9,7 +9,7 @@ export const urielchan: AuthorDefinition = {
       label: "imphnen.png",
       images: [
         {
-          src: { type: "github-blob", url: "https://github.com/Urielchan/logosVtuberVER/blob/main/imphnen%202.png" },
+          src: "https://github.com/Urielchan/logosVtuberVER/blob/main/imphnen%202.png",
           style: { objectFit: "cover", }
         }
       ]

@@ -18,8 +18,8 @@ export const arnav: AuthorDefinition = {
     "json-formatter": {
       label: "JSON Formatter",
       images: [
-        { src: { type: "github-blob", url: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png" } },
-        { src: { type: "github-blob", url: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg" } }
+        { src: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.png" },
+        { src: "https://github.com/arnav-kr/json-formatter/blob/main/images/banners/JF_VTuber_logo.svg" }
       ],
     }
   },
@@ -27,7 +27,7 @@ export const arnav: AuthorDefinition = {
     { type: "buymeacoffee", url: "https://buymeacoffee.com/arnavkr" },
     { type: "patreon", url: "https://patreon.com/arnavkr" },
     { type: "ko-fi", url: "https://ko-fi.com/arnav" },
-    { type: "github", url: "https://github.com/sponsors/arnav-kr"}
+    { type: "github", url: "https://github.com/sponsors/arnav-kr" }
   ]
 }
 

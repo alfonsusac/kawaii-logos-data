@@ -19,23 +19,23 @@ export const alfonsusac: AuthorDefinition = {
   entries: {
     skillissue: {
       label: "Skill Issue",
-      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/skillissue.svg" } } ]
+      images: [ { src: './assets/alfon/skillissue.png' } ]
     },
     lgtm: {
       label: "LGTM",
-      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/lgtm.svg" } } ]
+      images: [ { src: './assets/alfon/lgtm.svg' } ]
     },
     supabase: {
       label: "Supabase",
-      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/supabase.svg" } } ]
+      images: [ { src: './assets/alfon/supabase.svg' } ]
     },
     emailthing: {
       label: "EmailThing",
-      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/emailthing.svg" } } ]
+      images: [ { src: './assets/alfon/emailthing.svg' } ]
     },
     sharkchat: {
       label: "Sharkchat",
-      images: [ { src: { type: "self-hosted", filepath: "./assets/alfon/sharkchat.svg" } } ]
+      images: [ { src: './assets/alfon/sharkchat.svg' } ]
     },
   }
 }

@@ -9,7 +9,7 @@ export async function resolveDefinitions(
   defs: Record<string, AuthorDefinition>
 ): Promise<KawaiiLogoData[ 'data' ]> {
 
-  const authorResults = await Promise.all(Object
+  const result = await Promise.all(Object
     .entries(defs)
     .map(
       ([ id, def ]) => {
@@ -17,8 +17,8 @@ export async function resolveDefinitions(
       }
     )
   )
-  logResults(authorResults)
-  const authorArray = authorResults.map(result => result.result)
+  logResults(result)
+  const authorArray = result.map(result => result.result.resolved)
 
   const authorCount = authorArray.length
   const imageCount = authorArray.reduce((sum, a) => {
@@ -27,8 +27,7 @@ export async function resolveDefinitions(
     }, 0)
   }, 0)
 
-
-  const output: KawaiiLogoData[ 'data' ] = {
+  const output: KawaiiLogoData.Data = {
     authorCount, imageCount,
     authors: authorArray,
     standardLicenses: standardLicenses,
@@ -42,15 +41,18 @@ export async function resolveDefinitions(
 function logResults(
   results: {
     buffers: LogBuffer
-    result: AuthorOutput
+    result: {
+      definition: AuthorDefinition
+      resolved: AuthorOutput
+    }
   }[],
 ) {
-  const authorArray = results.map(r => r.result)
+  const authorArray = results.map(r => r.result.resolved)
 
   // Pin errors on the top
   const errors = results.reduce(
     (acc, curr) => {
-      const { id } = curr.result
+      const { id } = curr.result.resolved
       const relevantBuffers = curr.buffers.filter(b => b.type === "error" || b.type === "warn")
       if (relevantBuffers.length > 0) {
         acc.push({
@@ -79,8 +81,11 @@ function logResults(
 
   // Then log the all logs per resolved authors
   for (const { result, buffers } of results) {
-    const id = result.id
-    const resolved = result
+    const id = result.resolved.id
+    const resolved = result.resolved
+
+    const logVerbose = result.definition.logVerbose
+
     function has(what: any) {
       return (what !== undefined && what !== null) ? `${ green }✓${ reset }` : `${ red }✕${ reset }`
     }
@@ -110,6 +115,23 @@ function logResults(
       ` `,
       `${ reset }${ count(images.length) } ${ black }imgs`,
     ].filter(Boolean).join(''))
+
+    if (!logVerbose) {
+      buffers.forEach(b => b.type === "error" || b.type === "warn" ? log(`${ b.type === "error" ? red : yellow }`, ...b.message) : null)
+      continue
+    }
+
+    resolved.entries.forEach(e => {
+      log([
+        `    ${ black }- ${ `${ e.id }:`.padEnd(30) } ${ e.images.length } imgs | ${ e.license.labelShort } | ${ e.references.length } refs`
+      ].join(''))
+      e.images.forEach(img => {
+        log([
+          `       ${ black }* ${ img.label.padEnd(30) } ${ img.src.type } | ${ img.references.length } refs`
+        ].join(''))
+      })
+    })
+
     buffers.forEach(b => log(`${ b.type === "error" ? red : b.type === "warn" ? yellow : black }`, ...b.message))
   }
 

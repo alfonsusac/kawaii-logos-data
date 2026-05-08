@@ -30,7 +30,7 @@ export const sawaratsuki: AuthorDefinition = {
         reference: "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation"
       },
       images: [
-        { src: { type: "github-blob", url: "https://github.com/Teahouse-Studios/akari-bot/blob/master/assets/akaribot_logo.png" } }
+        { src: "https://github.com/Teahouse-Studios/akari-bot/blob/master/assets/akaribot_logo.png" }
       ],
       references: [
         "https://github.com/Teahouse-Studios/akari-bot/blob/master/assets/akaribot_logo.png",
@@ -45,7 +45,7 @@ export const sawaratsuki: AuthorDefinition = {
         // reference: "https://github.com/lino-levan/astral/blob/main/LICENSE"
       },
       images: [
-        { src: { type: "github-blob", url: "https://github.com/lino-levan/astral/blob/main/docs/static/astral.png" } }
+        { src: "https://github.com/lino-levan/astral/blob/main/docs/static/astral.png" }
       ],
       references: [
         "https://github.com/lino-levan/astral/blob/main/docs/static/astral.png",
@@ -59,7 +59,7 @@ export const sawaratsuki: AuthorDefinition = {
         reference: "https://lp.skeb.jp/creator?locale=en#:~:text=Creators%20have%20the%20right%20to%20freely%20post,work%20of%20each%20creation"
       },
       images: [
-        { src: { type: "github-blob", url: "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png" } }
+        { src: "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png" }
       ],
       references: [
         "https://github.com/hinoshiba/hinoshiba.github.io/blob/master/img/hinoshiba_kawaii.png",

@@ -16,7 +16,7 @@ export const hvpexe: AuthorDefinition = {
     "visual-studio": {
       label: "Visual Studio",
       images: [
-        { src: { type: "github-blob", url: "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png" } }
+        { src: "https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/blob/master/VisualStudio/VisualStudioLogo.png" }
       ]
     },
   }

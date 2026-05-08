@@ -1,12 +1,14 @@
 import type { Site } from "./lib/site"
 import { type DateDef } from "./lib/date"
-import type { AuthorOutput, Reference } from "./output"
-import { resolveReferencesDef, type ReferencesDef } from "./resolve-references"
-import { log, logerror, warn } from "./pipeline"
+import type { AuthorOutput, Output } from "./output"
+import { resolveReferencesDefinition, type ReferenceDef, type ReferencesDef } from "./resolve-references"
+import { logerror, warn } from "./pipeline"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./utils"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve-license"
-import { getUrlType } from "./resolve-url"
+import { resolveHttpsSite } from "./resolve-url"
 import { getFilenameFromUrl } from "./lib/get-filename-from-url"
+import { matchUrl } from "./lib/url-pattern"
+import { normalizeSingleOrNonEmptyArray } from "./lib/non-empty-array"
 
 // ## Definitions
 
@@ -33,7 +35,7 @@ export type ImageDefinition = {
    * You can also include relevant posts, articles, or other media that reference 
    * the image or the entry it represents.
    */
-  reference?: ReferencesDef,
+  references?: ReferencesDef,
   style?: {
     objectFit?: "cover" | "contain"
   },
@@ -42,11 +44,15 @@ export type ImageDefinition = {
 export type ImageStyleDef = { objectFit?: "cover" | "contain" }
 
 export type ImageSourceDef =
-  | { type: "github-blob", url: `https://github.com/${ string }/${ string }/blob/${ string }` }
-  | { type: "gist-raw", url: `https://gist.githubusercontent.com/${ string }/${ string }/raw/${ string }/${ string }` }
-  | { type: "self-hosted", filepath: `./assets/${ string }` }
-  | { type: "resolved", url: Site, }
-  | { type: "unknown", url: Site, }
+  | `resolved:${ string }`
+  | `https://github.com/${ string }/${ string }/blob/${ string }`
+  | `https://gist.githubusercontent.com/${ string }/${ string }/raw/${ string }/${ string }`
+  | `./assets/${ string }`
+// | { type: "github-blob", url: `https://github.com/${ string }/${ string }/blob/${ string }` }
+// | { type: "gist-raw", url: `https://gist.githubusercontent.com/${ string }/${ string }/raw/${ string }/${ string }` }
+// | { type: "self-hosted", filepath: `./assets/${ string }` }
+// | { type: "resolved", url: Site, }
+// | { type: "unknown", url: Site, }
 
 // ----------------------------------------------------------------------------------------
 
@@ -88,9 +94,8 @@ export async function resolveEntries(
     for (const imgDef of imageDefs) {
 
       // Initialize references array for this image
-      const references: Reference[] = []
-      // Add references from the image definition, if any
-      references.push(...(imgDef.reference ? resolveReferencesDef(imgDef.reference) : []))
+      const referencesDef: ReferenceDef[] = normalizeSingleOrNonEmptyArray(imgDef.references)
+
 
       // Resolve image source + label + reference (if any) based on its type
       const temp = {
@@ -98,49 +103,40 @@ export async function resolveEntries(
         label: imgDef.label,
       }
 
-      if (imgDef.src.type === "github-blob") {
-        const raw = imgDef.src.url.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/") as Site
-        references.push({ url: imgDef.src.url, urlType: getUrlType(imgDef.src.url) })
-        temp.src = raw
-        temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
+      if (imgDef.src.startsWith("resolved:")) {
+        temp.src = imgDef.src.replace("resolved:", "") as Site
       }
 
-      if (imgDef.src.type === "gist-raw") {
-        const raw = imgDef.src.url
-        // Before  -> https://gist.githubusercontent.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3/raw/2d5079562396d43e615cf0ffe81da60438b184c9/typst-logo.png
-        // After   -> https://gist.github.com/fenjalien/1463a19ba2b91d061ed35e295494e0b3#file-typst-logo-png
-        const pageUrl = imgDef.src.url.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
-        references.push({ url: pageUrl, urlType: getUrlType(pageUrl) })
-        temp.src = raw
-        temp.label ??= imgDef.src.url.split("/").slice(-1)[ 0 ] // Default label to filename if not provided`
+      if (matchUrl(imgDef.src, "https://github.com/:A/:B/blob/:C+")) {
+        const rawUrl = imgDef.src.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
+        const pageUrl = imgDef.src as Site
+        referencesDef.push(pageUrl)
+        temp.src = rawUrl as Site
       }
 
-      if (imgDef.src.type === "self-hosted") {
-        const url = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/${ imgDef.src.filepath.replace('./assets/', '') }` as const
-        const blobUrl = url.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/") as Site
-        references.push({ url: blobUrl, urlType: getUrlType(blobUrl) })
-        temp.src = url
+      if (matchUrl(imgDef.src, "https://gist.githubusercontent.com/:A/:B/raw/:C+")) {
+        const rawUrl = imgDef.src as Site
+        const pageUrl = imgDef.src.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
+        referencesDef.push(pageUrl)
+        temp.src = rawUrl
       }
 
-      if (imgDef.src.type === "resolved") {
-        temp.src = imgDef.src.url
-      }
-
-      if (imgDef.src.type === "unknown") {
-        warn(`Unknown image source type for entry id: ${ id }. Please check the image source definition's type.`)
-        temp.src = imgDef.src.url
+      if (imgDef.src.startsWith("./assets/")) {
+        const rawUrl = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/${ imgDef.src.replace('./assets/', '') }` as const
+        const pageUrl = rawUrl.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/") as Site
+        referencesDef.push(pageUrl)
+        temp.src = rawUrl
       }
 
       if (temp.src === null) {
-        logerror(`Failed to resolve image source for entry id: ${ id } with label: ${ imgDef.label }. Please check the image source definition's type.`)
+        logerror(`${ id }: Failed to resolve image source. Label: ${ imgDef.label }. Url: ${ imgDef.src }`)
         continue
       }
 
       images.push({
         label: temp.label ?? getFilenameFromUrl(temp.src),
-        src: temp.src,
-        srcUrlType: getUrlType(temp.src).type,
-        references,
+        src: resolveHttpsSite(temp.src),
+        references: resolveReferencesDefinition(referencesDef),
         style: imgDef.style,
       })
     }
@@ -148,7 +144,7 @@ export async function resolveEntries(
     // Resolve LicenseDef
     const license = resolveLicenseDefinitions(entryDef.license)
 
-    const entryReferences = resolveReferencesDef(entryDef.references)
+    const entryReferences = resolveReferencesDefinition(entryDef.references)
 
     entries.push({
       id,
