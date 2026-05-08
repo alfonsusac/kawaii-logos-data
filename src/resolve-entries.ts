@@ -85,7 +85,7 @@ export async function resolveEntries(
 
     const imageDefs = resolveArrayOrSingleToArray(entryDef.images)
 
-    const images: AuthorOutput.EntryItem[ 'images' ] = []
+    const images: Output.Author.EntryItem[ 'images' ] = []
 
     const license = resolveLicenseDefinitions(entryDef.license)
 

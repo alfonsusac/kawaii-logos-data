@@ -16,41 +16,52 @@ export type AuthorOutput = {
   id: string,
   displayName: string,
   pfp?: string,
-  social: {
-    github?: {
-      username: string,
-      url: string,
-    },
-    x?: {
-      username: string,
-      url: string,
-    },
-    bsky?: {
-      username: string,
-      url: string,
-    },
-    behance?: {
-      username: string,
-      url: string,
-    },
-    figma?: {
-      username: string,
-      url: string,
-    },
-    dribbble?: {
-      username: string,
-      url: string,
-    },
-    site?: string,
-  },
-  links: {
-    socials: {
-      type: "github" | "x" | "bsky" | "behance" | "figma" | "dribbble",
-      username: string,
-      url: string,
-    }[],
-    personalsites: string[],
-  }
+  socials: {
+    type: Output.SocialTypes,
+    username: string,
+    url: string,
+  }[],
+  personalSites: string[],
+  fundings: {
+    type: Output.FundingTypes,
+    label: string,
+    url: string,
+  }[]
+  // social: {
+  //   github?: {
+  //     username: string,
+  //     url: string,
+  //   },
+  //   x?: {
+  //     username: string,
+  //     url: string,
+  //   },
+  //   bsky?: {
+  //     username: string,
+  //     url: string,
+  //   },
+  //   behance?: {
+  //     username: string,
+  //     url: string,
+  //   },
+  //   figma?: {
+  //     username: string,
+  //     url: string,
+  //   },
+  //   dribbble?: {
+  //     username: string,
+  //     url: string,
+  //   },
+  //   site?: string,
+  // },
+  // links: {
+  //   socials: {
+  //     type: "github" | "x" | "bsky" | "behance" | "figma" | "dribbble",
+  //     username: string,
+  //     url: string,
+  //   }[],
+  //   personalsites: string[],
+  // }
   entries: {
     id: string,
     title: string,
@@ -68,39 +79,41 @@ export type AuthorOutput = {
   }[],
   licenses: Output.License[],
   references: Output.Reference[],
-  fundings: {
-    label: string,
-    type: "patreon" | "ko-fi" | "buymeacoffee" | "saweria" | "github" | "paypal" | "skeb",
-    url: string,
-  }[]
+
 }
 
-export namespace AuthorOutput {
-  export type Links = AuthorOutput[ 'links' ]
-  export type SocialLinks = AuthorOutput[ 'links' ][ 'socials' ]
-  export type PersonalSites = AuthorOutput[ 'links' ][ 'personalsites' ]
-  export type Socials = AuthorOutput[ 'social' ]
-  export type Entries = AuthorOutput[ 'entries' ]
-  export type EntryItem = AuthorOutput[ 'entries' ][ number ]
-  export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
-  export type Fundings = AuthorOutput[ 'fundings' ]
-  export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
-}
+// export namespace AuthorOutput {
+//   // export type Links = AuthorOutput[ 'links' ]
+//   export type SocialLinks = AuthorOutput[ 'socials' ]
+//   export type PersonalSites = AuthorOutput[ 'personalSites' ]
+//   // export type Socials = AuthorOutput[ 'social' ]
+//   export type Entries = AuthorOutput[ 'entries' ]
+//   export type EntryItem = AuthorOutput[ 'entries' ][ number ]
+//   export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
+//   export type Fundings = AuthorOutput[ 'fundings' ]
+//   export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
+// }
 
 export namespace Output {
-  
+
   export type Author = AuthorOutput
   export namespace Author {
-    export type Links = AuthorOutput[ 'links' ]
-    export type SocialLinks = AuthorOutput[ 'links' ][ 'socials' ]
-    export type PersonalSites = AuthorOutput[ 'links' ][ 'personalsites' ]
-    export type Socials = AuthorOutput[ 'social' ]
-    export type Entries = AuthorOutput[ 'entries' ]
-    export type EntryItem = AuthorOutput[ 'entries' ][ number ]
-    export type EntryItemImages = AuthorOutput.EntryItem[ 'images' ]
-    export type Fundings = AuthorOutput[ 'fundings' ]
-    export type FundingType = AuthorOutput.Fundings[ number ][ 'type' ]
+    // export type Links = Author[ 'links' ]
+    export type SocialLinks = Author[ 'socials' ]
+    export type PersonalSites = Author[ 'personalSites' ]
+    // export type Socials = Author[ 'social' ]
+    export type Entries = Author[ 'entries' ]
+    export type EntryItem = Author[ 'entries' ][ number ]
+    export type EntryItemImages = Author.EntryItem[ 'images' ]
+    export type Fundings = Author[ 'fundings' ]
+    export type FundingType = Author.Fundings[ number ][ 'type' ]
   }
+
+  export const socialTypes = [ "github", "x", "bsky", "behance", "figma", "dribbble" ] as const
+  export type SocialTypes = typeof socialTypes[ number ]
+
+  export const fundingTypes = [ "patreon", "ko-fi", "buymeacoffee", "saweria", "github", "paypal", "skeb" ] as const
+  export type FundingTypes = typeof fundingTypes[ number ]
 
   export type Link = {
     type:

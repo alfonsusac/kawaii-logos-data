@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { AuthorOutput, KawaiiLogoData } from "./output"
+import type { AuthorOutput, KawaiiLogoData, Output } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 import { standardLicenses } from "./resolve-license"
@@ -96,7 +96,7 @@ function logResults(
     const images = resolved.entries.reduce((acc, curr) => {
       acc.push(...curr.images)
       return acc
-    }, [] as AuthorOutput.EntryItem[ 'images' ])
+    }, [] as Output.Author.EntryItem[ 'images' ])
 
     log([
       `${ blue }${ id.padEnd(17) }${ reset }`,
@@ -105,11 +105,11 @@ function logResults(
       `  `,
       `${ has(resolved.pfp) } ${ black }pfp`,
       `   `,
-      `${ reset }${ resolved.links.socials.length } ${ black }socials`,
+      `${ reset }${ resolved.socials.length } ${ black }socials`,
       ` `,
-      `${ reset }${ count(resolved.links.socials.filter(s => s.type === "x").length) } ${ black }twt`,
+      `${ reset }${ count(resolved.socials.filter(s => s.type === "x").length) } ${ black }twt`,
       ` `,
-      `${ reset }${ count(resolved.links.socials.filter(s => s.type === "github").length) } ${ black }gh`,
+      `${ reset }${ count(resolved.socials.filter(s => s.type === "github").length) } ${ black }gh`,
       ` `,
       `${ reset }${ resolved.entries.length } ${ black }entries`,
       ` `,

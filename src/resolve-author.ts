@@ -41,14 +41,14 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     () => resolveEntriesMulti(scrapedReference, author.entries, scrapedEntries)
   )
 
-  const { social, links } = await stepSimple(
+  const { socials, personalSites } = await stepSimple(
     "Resolving socials",
     () => resolveSocials(author.socials, scrapedSocials)
   )
 
   const pfp = await stepSimple(
     "Resolving pfp from def or scraped socials",
-    () => resolvePfp(author, links.socials)
+    () => resolvePfp(author, socials)
   )
 
   const fundings = await stepSimple(
@@ -67,8 +67,8 @@ export async function resolveAuthorDefinition(author: AuthorDefinition, id: stri
     id: slugify(id),
     displayName,
     pfp,
-    social,
-    links,
+    socials,
+    personalSites,
     entries,
     licenses,
     references,

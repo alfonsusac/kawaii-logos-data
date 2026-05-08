@@ -1,6 +1,6 @@
 import type { SingleOrNonEmptyArray } from "./lib/non-empty-array"
 import type { Site } from "./lib/site"
-import type { AuthorOutput } from "./output"
+import type { AuthorOutput, Output } from "./output"
 import { logerror } from "./pipeline"
 
 export type FundingsDef = SingleOrNonEmptyArray<
@@ -17,7 +17,7 @@ export function resolveFundingsDef(def: FundingsDef | undefined) {
   if (!def) return []
   if (!Array.isArray(def)) def = [ def ]
 
-  const fundings: AuthorOutput.Fundings = []
+  const fundings: Output.Author.Fundings = []
   for (const funding of def) {
     if (funding.type === "patreon") {
       // Resolve

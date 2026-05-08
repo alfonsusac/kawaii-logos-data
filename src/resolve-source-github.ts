@@ -3,7 +3,7 @@ import { site } from "./lib/site"
 import { log, logerror, stepSimple } from "./pipeline"
 import type { ScrapedResultFiles, SourceDef, SourceResult } from "./resolve-source"
 import { resolveToLicenseTypeByContent, type LicenseDef } from "./resolve-license"
-import { getGithubProfileURL, resolveGithub, type SocialListDef } from "./resolve-socials"
+import { getGithubProfileURL, getGithubRepoLink, type SocialListDef } from "./resolve-socials"
 
 type GithubSourceDef = SourceDef & { from: "github" }
 
@@ -11,7 +11,7 @@ type GithubSourceDef = SourceDef & { from: "github" }
 export async function resolveGithubSource(def: GithubSourceDef): Promise<SourceResult> {
   const [ owner, repoName ] = def.repo.replaceAll('https://github.com/', '').split("/")
 
-  log(`Link to Github Repo: ${ getGithubProfileURL(owner) }/${ repoName }`)
+  log(`Link to Github Repo: ${ getGithubRepoLink(owner, repoName) }`)
 
   const { files, ghLicenseFile } = await stepSimple(
     "Resolving Github Repository",
@@ -59,7 +59,7 @@ async function resolveGithubRepository(def: GithubSourceDef) {
   // check if there are any files with "license" or "licence" in the name (case-insensitive)
   const licenseFiles = [ "license", "license.md", "license.txt", "licence", "licence.md", "licence.txt" ]
   const rootLicense = resolvedTree.find(item => licenseFiles.includes(item.path.toLowerCase()))
-  log(`Licenses: ${rootLicense?.githubPageUrl}`)
+  log(`Licenses: ${ rootLicense?.githubPageUrl }`)
 
   const licenseDef = await (async (): Promise<LicenseDef> => {
     if (!rootLicense) return { type: "unknown" }
@@ -149,7 +149,7 @@ async function resolveGithubProfileSocialList(owner: string) {
   if (ghuser?.blog) {
     socialList.push({ label: "site", url: ghuser.blog })
   }
-  socialList.push({ label: "github", url: resolveGithub(owner)!.url })
+  socialList.push({ label: "github", url: getGithubProfileURL(owner) })
 
   return socialList
 }
