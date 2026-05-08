@@ -24,7 +24,6 @@ import { ldmdiamondl } from "./definitions/ldmdiamondl"
 import { andregans } from "./definitions/andregans"
 import { cocoa_xu } from "./definitions/cocoa_xu"
 import { syke9p3 } from "./definitions/syke9p3"
-import { generateGitIgnore } from "./utils"
 import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars } from "./env"
 import { logger } from "./lib/log"
@@ -107,6 +106,9 @@ async function prepareOutput(outputData: KawaiiLogoData.Data) {
     updatedAt: new Date().toISOString(),
     data: outputData
   }
+
+  const generateGitIgnore = (...lines: string[]) => lines.join('\n') + '\n'
+
   const stringified = JSON.stringify(output, null, 2)
   const outputTypeFileContent = await Bun.file('./src/output.ts').text()
   const folderStructure = {
