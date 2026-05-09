@@ -252,8 +252,12 @@ function resolveSourcePostProcess(
   for (const process of resolveArrayOrSingleToArray(postProcessDef)) {
     if ('entryKey' in process) {
       if (process.entryKey in overriddenEntries === false) {
-        log(`Manual post process entry key: ${ process.entryKey } does not exist in scraped entries.`)
-        continue
+        log(`Manual post process entry key: ${ process.entryKey } does not exist in scraped entries. Creating empty entry for it.`)
+        // continue
+        // Create empty entry
+        overriddenEntries[ process.entryKey ] = {
+          label: process.entryKey,
+        }
       }
 
       if (process.type === "add entry reference") {

@@ -79,14 +79,14 @@ export async function resolveEntries(
 
   for (const [ id, entryDef ] of Object.entries(defs)) {
 
-    const imageDefs = resolveArrayOrSingleToArray(entryDef.images)
-
     const images: Output.Author.EntryItem[ 'images' ] = []
 
     const license = resolveLicenseDefinitions(entryDef.license)
 
     const entryReferences = resolveReferencesDefinition(entryDef.references)
     // entryReferences.push(...resolveReferencesDefinition(authorRef)) // Combine in front-end instead.
+
+    const imageDefs = resolveArrayOrSingleToArray(entryDef.images)
 
     // Resolve ImageDefs
     for (const imgDef of imageDefs) {
