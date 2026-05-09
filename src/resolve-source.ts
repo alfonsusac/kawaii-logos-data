@@ -248,7 +248,7 @@ function resolveSourcePostProcess(
   const overriddenEntries: EntriesDefinition = { ...scrapedEntries }
 
   for (const process of resolveArrayOrSingleToArray(postProcessDef)) {
-    if ('entryKey' in overriddenEntries) {
+    if ('entryKey' in process) {
       if (process.entryKey in overriddenEntries === false) {
         log(`Manual post process entry key: ${ process.entryKey } does not exist in scraped entries.`)
         continue

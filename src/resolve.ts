@@ -84,7 +84,6 @@ function logResults(
     const id = result.resolved.id
     const resolved = result.resolved
 
-    const logVerbose = result.definition.logVerbose
 
     function has(what: any) {
       return (what !== undefined && what !== null) ? `${ green }✓${ reset }` : `${ red }✕${ reset }`
@@ -116,14 +115,19 @@ function logResults(
       `${ reset }${ count(images.length) } ${ black }imgs`,
     ].filter(Boolean).join(''))
 
+    const logVerbose = result.definition.logVerbose
     if (!logVerbose) {
       buffers.forEach(b => b.type === "error" || b.type === "warn" ? log(`${ b.type === "error" ? red : yellow }`, ...b.message) : null)
       continue
     }
 
+    // Log entries
     resolved.entries.forEach(e => {
       log([
-        `    ${ black }- ${ `${ e.id }:`.padEnd(30) } ${ e.images.length } imgs | ${ e.license.labelShort } | ${ e.references.length } refs`
+        `    ${ black }- ${ `${ e.id }` } `,
+      ].join(''))
+      log([
+        `    ${ black }  | ${ e.images.length } imgs | ${ e.license.labelShort } | ${ e.references.length } refs | ${ e.createdAt }`
       ].join(''))
       e.images.forEach(img => {
         log([

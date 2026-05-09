@@ -1,5 +1,5 @@
 import type { Site } from "./lib/site"
-import { type DateDef } from "./lib/date"
+import { resolveDate, type DateDef } from "./lib/date"
 import type { Output } from "./output"
 import { resolveReferencesDefinition, type ReferenceDef, type ReferencesDef } from "./resolve-references"
 import { logerror, warn } from "./pipeline"
@@ -147,6 +147,7 @@ export async function resolveEntries(
       imageCount: images.length,
       license,
       images,
+      createdAt: resolveDate(entryDef.createdAt)?.iso,
     })
 
     entries.sort((a, b) => a.id.localeCompare(b.id)) // Sort entries by ID for consistent output

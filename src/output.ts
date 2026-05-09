@@ -41,7 +41,8 @@ export namespace Output {
         }
       }[],
       references: Output.Reference[],
-      license: Output.License
+      license: Output.License,
+      createdAt: `${ number }-${ number }-${ number }` | undefined, // ISO Date string (YYYY-MM-DD) or undefined if unknown
     }[],
     licenses: Output.License[],
     references: Output.Reference[],
@@ -78,6 +79,7 @@ export namespace Output {
     | "skeb-creator-page"
     | "skeb-creator-guideline-page"
     | "figma-file"
+    | "official-website-usage"
     | "unknown"
     url: string
   }

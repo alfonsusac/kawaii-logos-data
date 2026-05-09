@@ -1,6 +1,12 @@
+export type ISODate =
+  | `${ number }-${ MonthNum }-${ DayNum2 }`
+
 export type DateDef =
-  | `${ number }-${ MonthNum }-${ DayNum }` // ISO 8601
+  | `${ number }-${ MonthNum }-${ DayNum2 }` // ISO 8601
   | `${ Mon } ${ DayNum }, ${ number }`     // English
+
+
+
 
 export type Mon =
   | `Jan`
@@ -25,6 +31,11 @@ type DayNum =
   | 11 | 12 | 13 | 14 | 15 | 16 | 17 | 18 | 19 | 20
   | 21 | 22 | 23 | 24 | 25 | 26 | 27 | 28 | 29 | 30
   | 31
+type DayNum2 =
+  | "01" | "02" | "03" | "04" | "05" | "06" | "07" | "08" | "09"
+  | "10" | "11" | "12" | "13" | "14" | "15" | "16" | "17" | "18" | "19" | "20"
+  | "21" | "22" | "23" | "24" | "25" | "26" | "27" | "28" | "29" | "30"
+  | "31"
 
 export type TimeDef =
   | `${ HourDef }.${ MinuteDef } ${ AMPMDef }` // 2.27 PM
@@ -45,14 +56,21 @@ type AMPMDef = "AM" | "PM"
 // -----------------------------------------------------------------------------
 
 
-export function resolveDate(dateDef: DateDef): Date | undefined {
+export function resolveDate(dateDef: DateDef | undefined): {
+  iso: `${ number }-${ number }-${ number }`
+  date: Date
+} | undefined {
+  if (!dateDef) return undefined
   if (typeof dateDef === "string") {
     const parsed = Date.parse(dateDef)
     if (isNaN(parsed)) {
       console.log(new Error(`Invalid date format: ${ dateDef }`))
       return undefined
     }
-    return new Date(parsed)
+    return {
+      iso: new Date(parsed).toISOString().split('T')[ 0 ] as `${ number }-${ number }-${ number }`,
+      date: new Date(parsed)
+    }
   }
   console.log(new Error(`Unsupported date definition: ${ dateDef }`))
   return undefined
