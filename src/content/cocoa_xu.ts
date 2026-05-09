@@ -5,7 +5,7 @@ export const cocoa_xu: AuthorDefinition = {
     from: "github",
     repo: "https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM",
     transform: [
-      { type: "filter", exclude: "CC-BY-NC-SA-4.0.jpg" },
+      { type: "filter", include: "CC-BY-NC-SA-4.0.jpg" },
     ],
     postProcess: [
       // From commit history

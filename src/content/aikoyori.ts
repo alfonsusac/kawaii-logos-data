@@ -8,7 +8,7 @@ export const aikoyori: AuthorDefinition = {
   source: {
     from: "github",
     repo: "https://github.com/Aikoyori/ProgrammingVTuberLogos",
-    transform: { type: "filter", exclude: "preview" },
+    transform: { type: "filter", include: "preview" },
     postProcess: [
       { type: "add entry reference", entryKey: "vscode", reference: "https://x.com/Aikoyori/status/1780709418189078954/photo/1" },
       { type: "add entry reference", entryKey: "vscode", reference: "https://x.com/Aikoyori/status/1782346141390229884/photo/1" },

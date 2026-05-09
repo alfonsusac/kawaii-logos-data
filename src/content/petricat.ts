@@ -7,7 +7,7 @@ export const petricat: AuthorDefinition = {
     transform: [
       { type: "replace", from: "V1/", to: "V1-" },
       { type: "replace", from: "V2/", to: "V1-" },
-      { type: "filter", exclude: "CC-BY-NC-SA-4.0.jpg" },
+      { type: "filter", include: "CC-BY-NC-SA-4.0.jpg" },
     ],
     postProcess: [
       { type: "add entry createdAt", entryKey: "tidersky", createdAt: "Nov 21, 2025" },

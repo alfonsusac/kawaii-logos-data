@@ -37,12 +37,7 @@ export const icarusgk: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "laravel", createdAt: "May 18, 2024" },
       { type: "add entry reference", entryKey: "laravel", reference: "https://x.com/icarusgkx/status/1791824308500910489/photo/1" },
 
-      
-
-
     ]
   },
-  logVerbose: true,
+  // logVerbose: true,
 } 
-
-// Pinia

@@ -18,7 +18,7 @@ import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-typ
 export type SourceDef = {
   transform?: ArrayOrSingle<
     | { type: "replace", from: string, to: string }
-    | { type: "filter", exclude: string }
+    | { type: "filter", include: string }
   >
   postProcess?: ArrayOrSingle<
     | { type: "add entry reference", entryKey: string, reference: ReferenceDef }
@@ -27,6 +27,7 @@ export type SourceDef = {
   >
   licenseFallback?: LicenseDef,
   applyCssStyle?: ImageDefinition[ 'style' ]
+  logTransformPaths?: boolean,
 } & (
     | { from: "github", repo: `https://github.com/${ string }/${ string }` }
   )
@@ -97,7 +98,7 @@ export async function resolveSourceDefinition(
   // Apply transformations to list of files 
   const transformedList = await stepSimple(
     "Applying transformations to scraped files",
-    () => resolveSourceTransformation(sourceResult.files, def.transform, opts)
+    () => resolveSourceTransformation(sourceResult.files, def.transform, opts, def.logTransformPaths ?? false)
   )
 
   // Group files into entries-like structure based on the transformedPath.
@@ -131,10 +132,11 @@ function resolveSourceTransformation(
   opts: {
     printPreTransformedList?: boolean,
     printTransformedList?: boolean,
-  }
+  },
+  logTransformPaths: boolean
 ): ScrapedResultFiles {
 
-  if (opts.printPreTransformedList) {
+  if (opts.printPreTransformedList || logTransformPaths) {
     log(`Transformed List:`)
     files.map(t => t.transformedPath).sort().forEach(t => log(`- ${ t }`))
   }
@@ -145,7 +147,7 @@ function resolveSourceTransformation(
     if (t.type === "replace")
       transformedList.forEach(file => file.transformedPath = file.transformedPath.replace(t.from, t.to))
     if (t.type === "filter")
-      transformedList = transformedList.filter(file => !file.transformedPath.includes(t.exclude))
+      transformedList = transformedList.filter(file => !file.transformedPath.includes(t.include))
   }
 
   if (opts.printTransformedList) {

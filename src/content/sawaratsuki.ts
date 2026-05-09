@@ -592,11 +592,7 @@ export const sawaratsuki: AuthorDefinition = {
 // HackMD from sawaratsuki's thread
 // https://x.com/hackmdio/status/1782423518388408411/photo/1
 
-// yuki_arano from sawaratsuki's thread
-// https://x.com/yuki_arano/status/1841416059565584844/photo/1
-
-// n1chind from sawaratsuki's thread
-// https://x.com/n1chind/status/2051017143362203786
-
 // TODO: 
 // - maybe add archived logos (we can do this on separate entry)
+//   - https://github.com/SAWARATSUKI/ServiceLogos
+//   - https://github.com/theinsidersandrush/ServiceLogos

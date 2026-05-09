@@ -17,9 +17,11 @@ import { ifalfahri } from "./ifalfahri"
 import { ldmdiamondl } from "./ldmdiamondl"
 import { maxshawnwx } from "./maxshawnws"
 import { mkpoli } from "./mkpoli"
+import { nichind } from "./nichind"
 import { petricat } from "./petricat"
 import { saltyaom } from "./saltyaom"
 import { sawaratsuki } from "./sawaratsuki"
+import { sawaratsuki_archived } from "./sawaratsuki-archive"
 import { shiroiame_kusu } from "./shiroiame-kusu"
 import { styxpilled } from "./styxpilled"
 import { syke9p3 } from "./syke9p3"
@@ -46,9 +48,11 @@ export const author_definitions = {
   ldmdiamondl,
   maxshawnwx,
   mkpoli,
+  nichind,
   petricat,
   saltyaom,
   sawaratsuki,
+  sawaratsuki_archived,
   shiroiame_kusu,
   syke9p3,
   styxpilled,

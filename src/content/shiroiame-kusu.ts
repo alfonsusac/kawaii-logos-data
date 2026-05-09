@@ -5,7 +5,7 @@ export const shiroiame_kusu: AuthorDefinition = {
     from: "github",
     repo: "https://github.com/Shiroiame-Kusu/ProgrammingVTuberLogos-Windows",
     transform: [
-      { type: "filter", exclude: "CC-BY-NC-SA-4.0.jpg" }
+      { type: "filter", include: "CC-BY-NC-SA-4.0.jpg" }
     ],
     postProcess: [
       { type: "add entry createdAt", entryKey: "windows", createdAt: "Aug 28, 2024" },
