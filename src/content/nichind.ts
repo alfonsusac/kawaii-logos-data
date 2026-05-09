@@ -10,8 +10,8 @@ export const nichind: AuthorDefinition = {
     'awake.moe': {
       label: "Awake.moe",
       images: [
-        { src: "resolved:https://awake.moe/awake.png" },
-        { src: "resolved:https://awake.moe/awake.png" },
+        { src: "resolved:uwu:https://awake.moe/awake.png" },
+        { src: "resolved:uwu:https://awake.moe/awake.png" },
       ],
       createdAt: "May 4, 2024",
       references: [

@@ -80,6 +80,7 @@ export namespace Output {
     | "skeb-creator-guideline-page"
     | "figma-file"
     | "official-website-usage"
+    | "shop-page"
     | "unknown"
     url: string
   }

@@ -7,10 +7,10 @@ import type { EntriesDefinition, EntryDefinition, ImageDefinition } from "./reso
 import type { SocialListDef } from "./resolve-socials"
 import { resolveGithubSource } from "./resolve-source-github"
 import { slugify } from "./lib/slug"
-import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve-license"
 import type { ReferenceDef } from "./resolve-references"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
+import { site, type HttpsSite } from "./resolve-url"
 
 // Source definition, when resolved should return list of filepaths to be included in the entry.
 // Default groupings by "<group>/<filename>" i.e "github/github.svg"
@@ -59,7 +59,7 @@ export type SourceResult = {
   rootLicense?: LicenseDef,
 
   // Source Reference
-  scrapedReferenceUrl?: Site,
+  scrapedReferenceUrl?: HttpsSite,
 }
 export type ScrapedResultFiles = SourceResult[ "files" ]
 
@@ -176,7 +176,7 @@ async function resolveTransformedSourceToEntriesDefinition(
       label: file.filename,
       src: `resolved:${ file.rawUrl }`,
       // src: { type: "resolved", url: file.rawUrl as Site },
-      references: file.pageUrl ? [ { site: file.pageUrl as Site } ] : undefined,
+      references: file.pageUrl ? [ { site: site(file.pageUrl) } ] : undefined,
       style: def?.applyCssStyle,
     }
 

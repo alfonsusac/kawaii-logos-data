@@ -243,7 +243,7 @@ export const sawaratsuki: AuthorDefinition = {
       // 404-notfound
       { type: "add entry createdAt", entryKey: "404-notfound", createdAt: "Apr 26, 2024" },
       { type: "add entry reference", entryKey: "404-notfound", reference: "https://x.com/sawaratsuki1004/status/1783559394485235982/photo/1" },
-      { type: "add entry reference", entryKey: "404-notfound", reference: "https://kiritanpo-kaede.booth.pm/items/5683557" },
+      { type: "add entry reference", entryKey: "404-notfound", reference: "shop:https://kiritanpo-kaede.booth.pm/items/5683557" },
       { type: "add entry reference", entryKey: "404-notfound", reference: "https://x.com/sawaratsuki1004/status/1783563923301757326/photo/1" },
       { type: "add entry reference", entryKey: "404-notfound", reference: "https://x.com/sawaratsuki1004/status/1788545426452623822/photo/1" },
 
@@ -352,7 +352,7 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "vue", createdAt: "Apr 21, 2024" },
 
       // usages
-      { type: "add entry reference", entryKey: "react", reference: "https://react.dev/?uwu=true" },
+      { type: "add entry reference", entryKey: "react", reference: "uwu:https://react.dev/?uwu=true" },
       { type: "add entry reference", entryKey: "bsky", reference: "https://bsky.app/?kawaii=true" },
 
       

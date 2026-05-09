@@ -2,7 +2,6 @@
 import { resolveEntriesMulti, type EntriesDefinition } from "./resolve-entries"
 import { resolveSocials, type SocialsDef } from "./resolve-socials"
 import { resolvePfp } from "./resolve-pfp"
-import type { Site } from "./lib/site"
 import type { LicenseDef } from "./resolve-license"
 import { resolveSourceDefinition, type SourceDef } from "./resolve-source"
 import { validateResolvedAuthor } from "./validate"
@@ -12,10 +11,11 @@ import { resolveReferencesDefinition, type ReferencesDef } from "./resolve-refer
 import { dedupeByProp } from "./lib/dedupe-by-prop"
 import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
 import type { Output } from "./output"
+import type { HttpsSite } from "./resolve-url"
 
 export type AuthorDefinition = {
   displayName?: string,
-  pfp?: Site,
+  pfp?: HttpsSite,
   socials?: SocialsDef,
   license?: LicenseDef,
   entries?: EntriesDefinition,

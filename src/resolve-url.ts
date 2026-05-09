@@ -1,25 +1,80 @@
-import type { Site } from "./lib/site"
 import { matchUrl } from "./lib/url-pattern"
 import type { Output } from "./output"
 import { logerror, warn } from "./pipeline"
 
-export type HttpsSite = `https://${ string }`
+export type HttpsSite =
+  | `https://${ string }`
+  | `shop:https://${ string }`
+  | `uwu:https://${ string }`
+
+// --------------------------------------------------------------------------------
+// Constructor
+
+export function site(domainPath: string) {
+
+  if ([ 'shop:', 'uwu:' ].some(prefix => domainPath.startsWith(prefix))) {
+    const prefix = domainPath.startsWith('shop:') ? 'shop:' : 'uwu:'
+    const urlPart = domainPath.replace(prefix, "")
+    const resolvedUrl = resolveSiteURL(urlPart) as HttpsSite
+    return `${ prefix }${ resolvedUrl }` as HttpsSite
+  }
+
+  return resolveSiteURL(domainPath)
+
+
+
+  // if (domainPath.startsWith("https://")) {
+  //   return domainPath as HttpsSite
+  // }
+  // if (domainPath.startsWith("http://")) {
+  //   throw new Error(`site() needs to be a secure domain. Either use https or omit protocol to default to https. Found: ${ domainPath }`)
+  // }
+  // // if (domainPath.startsWith("http://") || domainPath.startsWith("https://")) {
+  // //   console.warn(`site() should be used with domain paths without protocol. Received: ${ domainPath }`)
+  // //   return domainPath as Site
+  // // }
+  // return `https://${ domainPath }` as HttpsSite
+}
+
+function resolveSiteURL(url: string) {
+  if (url.startsWith("https://")) {
+    return url as HttpsSite
+  }
+  if (url.startsWith("http://")) {
+    throw new Error(`site() needs to be a secure domain. Either use https or omit protocol to default to https. Found: ${ url }`)
+  }
+  return `https://${ url }` as HttpsSite
+}
+
+
+
+// ------------------------------------------------------------------------------------
+// Resolver
 
 export function resolveHttpsSite(site: HttpsSite): Output.Link {
   const type = getUrlTypeFromURL(site)
+  let url = site
+  if (url.startsWith("shop:")) {
+    url = url.replace("shop:", "") as HttpsSite
+  }
+  if (url.startsWith("uwu:")) {
+    url = url.replace("uwu:", "") as HttpsSite
+  }
   return {
     type,
     url: site,
   }
 }
 
-
-
-
-
 function getUrlTypeFromURL(
-  url: Site
+  url: HttpsSite
 ): Output.Link.Type {
+  if (url.startsWith('shop')) {
+    return "shop-page"
+  }
+  if (url.startsWith('uwu')) {
+    return "official-website-usage"
+  }
   if (url.startsWith("https://github.com")) {
     if (url.includes("/blob/")) return "github-blob"
     if (url.includes("#")) return "github-repo-text-content"

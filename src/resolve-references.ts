@@ -1,12 +1,11 @@
-import type { Site } from "./lib/site"
 import type { DateDef } from "./lib/date"
-import { resolveHttpsSite } from "./resolve-url"
+import { resolveHttpsSite, site, type HttpsSite } from "./resolve-url"
 import type { Output } from "./output"
 import { warn } from "./pipeline"
 import type { ArrayOrSingle } from "./lib/array-type-utils"
 
-export type ReferenceDef = Site | {
-  site: Site,
+export type ReferenceDef = HttpsSite | {
+  site: HttpsSite,
   dateAccessed?: DateDef,
 }
 
@@ -27,7 +26,7 @@ export function resolveReferencesDefinition(...references: ((ReferenceDef | unde
 
   const referencesSet = new Map<string, Output.Reference>()
   for (const ref of referencesList) {
-    const link = typeof ref === "string" ? resolveHttpsSite(ref) : resolveHttpsSite(ref.site)
+    const link = typeof ref === "string" ? resolveHttpsSite(site(ref)) : resolveHttpsSite(ref.site)
     if (referencesSet.has(link.url)) {
       warn(`Duplicate reference link found: ${ link.url }. Consider deduping references.`)
     }

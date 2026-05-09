@@ -1,10 +1,9 @@
-import type { Site } from "./lib/site"
 import { resolveDate, type DateDef } from "./lib/date"
 import type { Output } from "./output"
 import { resolveReferencesDefinition, type ReferenceDef, type ReferencesDef } from "./resolve-references"
 import { logerror, warn } from "./pipeline"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve-license"
-import { resolveHttpsSite } from "./resolve-url"
+import { resolveHttpsSite, site, type HttpsSite } from "./resolve-url"
 import { getFilenameFromUrl } from "./lib/get-filename-from-url"
 import { matchUrl } from "./lib/url-pattern"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
@@ -97,31 +96,31 @@ export async function resolveEntries(
 
       // Resolve image source + label + reference (if any) based on its type
       const temp = {
-        src: null as null | Site,
+        src: null as null | HttpsSite,
         label: imgDef.label,
       }
 
       if (imgDef.src.startsWith("resolved:")) {
-        temp.src = imgDef.src.replace("resolved:", "") as Site
+        temp.src = site(imgDef.src.replace("resolved:", ""))
       }
 
       if (matchUrl(imgDef.src, "https://github.com/:A/:B/blob/:C+")) {
         const rawUrl = imgDef.src.replace("github.com", "raw.githubusercontent.com").replace("/blob/", "/")
-        const pageUrl = imgDef.src as Site
+        const pageUrl = site(imgDef.src)
         referencesDef.push(pageUrl)
-        temp.src = rawUrl as Site
+        temp.src = site(rawUrl)
       }
 
       if (matchUrl(imgDef.src, "https://gist.githubusercontent.com/:A/:B/raw/:C+")) {
-        const rawUrl = imgDef.src as Site
-        const pageUrl = imgDef.src.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1") as Site
+        const rawUrl = site(imgDef.src)
+        const pageUrl = site(imgDef.src.replace("gist.githubusercontent.com", "gist.github.com").replace("/raw/", "/").replace(/\/([^\/]+)$/, "#file-$1"))
         referencesDef.push(pageUrl)
         temp.src = rawUrl
       }
 
       if (imgDef.src.startsWith("./assets/")) {
         const rawUrl = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/${ imgDef.src.replace('./assets/', '') }` as const
-        const pageUrl = rawUrl.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/") as Site
+        const pageUrl = site(rawUrl.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/"))
         referencesDef.push(pageUrl)
         temp.src = rawUrl
       }

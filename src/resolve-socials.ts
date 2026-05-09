@@ -1,8 +1,8 @@
 import { getBskyProfile } from "./lib/api/bsky"
 import { fetchGithubProfile } from "./lib/api/github"
-import { site } from "./lib/site"
 import { logerror } from "./pipeline"
 import { Output } from "./output"
+import { site } from "./resolve-url"
 
 export type SocialsDef = {
   github?: `https://github.com/${ string }`,
