@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-09T14:31:25.524Z",
+  "updatedAt": "2026-05-09T14:48:44.440Z",
   "data": {
     "authorCount": 29,
     "imageCount": 360,
@@ -3165,6 +3165,16 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
+            "type": "x",
+            "username": "_uwu_cocoa",
+            "url": "https://x.com/_uwu_cocoa"
+          },
+          {
+            "type": "bsky",
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          },
+          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -3534,7 +3544,19 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
+        "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
+          {
+            "type": "github",
+            "username": "C29H25N3O5",
+            "url": "https://github.com/C29H25N3O5"
+          }
+        ],
         "personalSites": [],
         "entries": [
           {
@@ -4080,6 +4102,10 @@
           }
         ],
         "personalSites": [
+          "https://ko-fi.com/g2_games",
+          "https://g2games.dev/git/",
+          "https://patchii.net/G2_Games/",
+          "https://codeberg.org/g2_games",
           "https://g2games.dev",
           "https://g2games.dev"
         ],
@@ -4915,7 +4941,10 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+          "https://dendya123.tistory.com/"
+        ],
         "entries": [
           {
             "id": "docker",
@@ -12411,7 +12440,14 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/syke9p3",
+        "socials": [
+          {
+            "type": "github",
+            "username": "syke9p3",
+            "url": "https://github.com/syke9p3"
+          }
+        ],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
@@ -13109,6 +13145,48 @@
           }
         }
       }
-    }
+    },
+    "officialLinks": [
+      {
+        "label": "Haskell",
+        "url": "https://www.haskell.org/?uwu=true",
+        "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Vue.js",
+        "url": "https://vuejs.org/?uwu",
+        "authorid": "icarusgk"
+      },
+      {
+        "label": "Bluesky",
+        "url": "https://bsky.app/?kawaii=true",
+        "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Angular",
+        "url": "https://angular.dev/?uwu=true",
+        "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Elysia",
+        "url": "https://elysiajs.com/",
+        "authorid": "saltyaom"
+      },
+      {
+        "label": "Hono",
+        "url": "https://hono.dev/?kawaii=true",
+        "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Misskey.io",
+        "url": "https://misskey.io",
+        "authorid": "sawaratsuki"
+      },
+      {
+        "label": "React",
+        "url": "https://react.dev/?uwu=true",
+        "authorid": "sawaratsuki"
+      }
+    ]
   }
 }
