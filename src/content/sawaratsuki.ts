@@ -20,7 +20,7 @@ export const sawaratsuki: AuthorDefinition = {
     postProcess: [
       
       // https://x.com/sawaratsuki1004/status/1782831616794227005/photo/1 (posted much later after more items are added. so this list will be overridden with correct date from individual posts.)
-      { type: "add entry createdAt", entryKey: "arch-linux", createdAt: "Apr 24, 2024" },
+      { type: "add entry createdAt", entryKey: "archlinux", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "clang", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "c#", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "c", createdAt: "Apr 24, 2024" },
@@ -36,8 +36,8 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "iamaprogrammerenglish", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "photoshop", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "python", createdAt: "Apr 24, 2024" },
-      { type: "add entry createdAt", entryKey: "qwik", createdAt: "Apr 24, 2024" },
-      { type: "add entry createdAt", entryKey: "raspberry-pi", createdAt: "Apr 24, 2024" },
+      { type: "add entry createdAt", entryKey: "qwik.js", createdAt: "Apr 24, 2024" },
+      { type: "add entry createdAt", entryKey: "raspberrypi", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "ruby", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "streamloots", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "swift", createdAt: "Apr 24, 2024" },
@@ -46,6 +46,7 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "wallhack", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "x", createdAt: "Apr 24, 2024" },
     
+      // laravel
       { type: "add entry reference", entryKey: "laravel", reference: "https://x.com/sawaratsuki1004/status/1782058728684138549/photo/1" },
       { type: "add entry reference", entryKey: "laravel", reference: "https://x.com/sawaratsuki1004/status/1781819385973494137/photo/1" },
       { type: "add entry reference", entryKey: "laravel", reference: "https://x.com/sawaratsuki1004/status/1781881508133052846/photo/1" },
@@ -65,36 +66,38 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "cloudflare", reference: "https://x.com/sawaratsuki1004/status/1781891030058672321/photo/1" },
       { type: "add entry reference", entryKey: "cloudflare", reference: "https://x.com/sawaratsuki1004/status/1805206075920289973/photo/1" },
 
+      // github (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "github", createdAt: "Apr 21, 2024" },
       { type: "add entry reference", entryKey: "github", reference: "https://x.com/sawaratsuki1004/status/1782069963895038298/photo/1" },
       { type: "add entry reference", entryKey: "github", reference: "https://x.com/sawaratsuki1004/status/1783514454950617255/photo/1" },
       
+      // gitlab (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "gitlab", createdAt: "Apr 21, 2024" },
       { type: "add entry reference", entryKey: "gitlab", reference: "https://x.com/sawaratsuki1004/status/1782074596713447587/photo/1" },
       
-      // Java (missing src)
+      // Java (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "java", createdAt: "Apr 21, 2024" },
       { type: "add entry reference", entryKey: "java", reference: "https://x.com/sawaratsuki1004/status/1782074596713447587/photo/1" },
 
-      // C C# C++ (missing src)
-      { type: "add entry createdAt", entryKey: "cc#c++", createdAt: "Apr 21, 2024" },
-      { type: "add entry reference", entryKey: "cc#c++", reference: "https://x.com/sawaratsuki1004/status/1782055072282906626/photo/1" },
+      // C C# C++ (missing src) (c,c#,c++) (found in archive)
+      { type: "add entry createdAt", entryKey: "c,c#,c++", createdAt: "Apr 21, 2024" },
+      { type: "add entry reference", entryKey: "c,c#,c++", reference: "https://x.com/sawaratsuki1004/status/1782055072282906626/photo/1" },
 
-      // Python (missing src)
+      // Python (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "python", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "python", reference: "https://x.com/sawaratsuki1004/status/1782099482093764910/photo/1" },
 
-      // Teamspeak (missing src)
+      // Teamspeak (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "teamspeak", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "teamspeak", reference: "https://x.com/sawaratsuki1004/status/1782106483787993497/photo/1" },
 
-      // Voicemod (missing src)
+      // Voicemod (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "voicemod", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "voicemod", reference: "https://x.com/sawaratsuki1004/status/1782118029431894252/photo/1" },
       { type: "add entry reference", entryKey: "voicemod", reference: "https://x.com/sawaratsuki1004/status/1788210818255102449/photo/1" },
       { type: "add entry reference", entryKey: "voicemod", reference: "https://x.com/sawaratsuki1004/status/1863950676818383026/photo/1" },
 
-      // Swift (missing src)
+      // Swift (missing src) (found in archive)
       { type: "add entry reference", entryKey: "swift", reference: "https://x.com/sawaratsuki1004/status/1782120134569759198/photo/1" },
 
       // hono
@@ -118,7 +121,7 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "kotlin", reference: "https://x.com/sawaratsuki1004/status/1783063043884401091/photo/1" },
       { type: "add entry reference", entryKey: "kotlin", reference: "https://x.com/sawaratsuki1004/status/1789582888272531665/photo/1" },
 
-      // ruby (missing src)
+      // ruby (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "ruby", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "ruby", reference: "https://x.com/sawaratsuki1004/status/1782322111044043069/photo/1" },
 
@@ -126,7 +129,7 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "computer-architecture-design", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "computer-architecture-design", reference: "https://x.com/sawaratsuki1004/status/1782335982504923242/photo/1" },
 
-      // wallhack (missing src)
+      // wallhack (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "wallhack", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "wallhack", reference: "https://x.com/sawaratsuki1004/status/1782341113480909072/photo/1" },
 
@@ -135,32 +138,32 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "figma", reference: "https://x.com/sawaratsuki1004/status/1782343622207393898/photo/1" },
       { type: "add entry reference", entryKey: "figma", reference: "https://x.com/sawaratsuki1004/status/1805917924080615810/photo/1" },
 
-      // html (missing src)
+      // html (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "html", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "html", reference: "https://x.com/sawaratsuki1004/status/1782363387562959057/photo/1" },
 
-      // arch-linux (missing src)
-      { type: "add entry createdAt", entryKey: "arch-linux", createdAt: "Apr 22, 2024" },
-      { type: "add entry reference", entryKey: "arch-linux", reference: "https://x.com/sawaratsuki1004/status/1782373444233118036/photo/1" },
+      // archlinux (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "archlinux", createdAt: "Apr 22, 2024" },
+      { type: "add entry reference", entryKey: "archlinux", reference: "https://x.com/sawaratsuki1004/status/1782373444233118036/photo/1" },
 
-      // photoshop (missing src)
+      // photoshop (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "photoshop", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "photoshop", reference: "https://x.com/sawaratsuki1004/status/1782389745647263810/photo/1" },
 
-      // x (missing src)
+      // x (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "x", createdAt: "Apr 22, 2024" },
       { type: "add entry reference", entryKey: "x", reference: "https://x.com/sawaratsuki1004/status/1782404460716900527/photo/1" },
 
-      // raspberry pi (missing src)
-      { type: "add entry createdAt", entryKey: "raspberry-pi", createdAt: "Apr 22, 2024" },
-      { type: "add entry reference", entryKey: "raspberry-pi", reference: "https://x.com/sawaratsuki1004/status/1782421099797680548/photo/1" },
+      // raspberry pi (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "raspberrypi", createdAt: "Apr 22, 2024" },
+      { type: "add entry reference", entryKey: "raspberrypi", reference: "https://x.com/sawaratsuki1004/status/1782421099797680548/photo/1" },
 
-      // qwik (missing src)
-      { type: "add entry createdAt", entryKey: "qwik", createdAt: "Apr 22, 2024" },
-      { type: "add entry reference", entryKey: "qwik", reference: "https://x.com/sawaratsuki1004/status/1782429660145746024/photo/1" },
-      { type: "add entry reference", entryKey: "qwik", reference: "https://x.com/sawaratsuki1004/status/1787985882437566504/photo/1" },
+      // qwik.js (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "qwik.js", createdAt: "Apr 22, 2024" },
+      { type: "add entry reference", entryKey: "qwik.js", reference: "https://x.com/sawaratsuki1004/status/1782429660145746024/photo/1" },
+      { type: "add entry reference", entryKey: "qwik.js", reference: "https://x.com/sawaratsuki1004/status/1787985882437566504/photo/1" },
 
-      // htmx (missing src)
+      // htmx (missing src) (found in archive)
       { type: "add entry reference", entryKey: "htmx", reference: "https://x.com/sawaratsuki1004/status/1781862842041602499/photo/1" },
       { type: "add entry reference", entryKey: "htmx", reference: "https://x.com/htmx_org/status/1782449324112105883/photo/1" },
       { type: "add entry reference", entryKey: "htmx", reference: "https://x.com/sawaratsuki1004/status/1782449755957887235/photo/1" },
@@ -171,7 +174,7 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "haskell", reference: "https://x.com/sawaratsuki1004/status/1782812792950800384/photo/1" },
       { type: "add entry reference", entryKey: "haskell", reference: "https://x.com/sawaratsuki1004/status/1798356090238972415/photo/1" },
 
-      // streamloots (missing src)
+      // streamloots (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "streamloots", createdAt: "Apr 23, 2024" },
       { type: "add entry reference", entryKey: "streamloots", reference: "https://x.com/sawaratsuki1004/status/1782471337736536070/photo/1" },
 
@@ -184,28 +187,28 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "iamprogrammerenglish", reference: "https://x.com/sawaratsuki1004/status/1782734392693277027/photo/1" },
       { type: "add entry reference", entryKey: "iamprogrammerenglish", reference: "https://x.com/sawaratsuki1004/status/1782735265381159148/photo/1" },
 
-      // C# (missing src)
+      // C# (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "c#", createdAt: "Apr 23, 2024" },
       { type: "add entry reference", entryKey: "c#", reference: "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1" },
       { type: "add entry reference", entryKey: "c#", reference: "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1" },
       
-      // C (missing src)
+      // C (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "c", createdAt: "Apr 23, 2024" },
       { type: "add entry reference", entryKey: "c", reference: "https://x.com/sawaratsuki1004/status/1782806908417757221/photo/1" },
 
-      // C++ (missing src)
+      // C++ (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "c++", createdAt: "Apr 23, 2024" },
       { type: "add entry reference", entryKey: "c++", reference: "https://x.com/sawaratsuki1004/status/1782811399414231147/photo/1" },
 
-      // fortran (missing src)
+      // fortran (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "fortran", createdAt: "Apr 24, 2024" },
       { type: "add entry reference", entryKey: "fortran", reference: "https://x.com/sawaratsuki1004/status/1783072775164584140/photo/1" },
 
-      // flipper zero (missing src)
-      { type: "add entry createdAt", entryKey: "flipper-zero", createdAt: "Apr 24, 2024" },
-      { type: "add entry reference", entryKey: "flipper-zero", reference: "https://x.com/sawaratsuki1004/status/1783080853993931187/photo/1" },
+      // flipper zero (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "flipperzero", createdAt: "Apr 24, 2024" },
+      { type: "add entry reference", entryKey: "flipperzero", reference: "https://x.com/sawaratsuki1004/status/1783080853993931187/photo/1" },
 
-      // ubuntu (missing src)
+      // ubuntu (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "ubuntu", createdAt: "Apr 24, 2024" },
       { type: "add entry reference", entryKey: "ubuntu", reference: "https://x.com/sawaratsuki1004/status/1783093985181040703/photo/1" },
 
@@ -223,7 +226,7 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "sifonchan", createdAt: "Apr 25, 2024" },
       { type: "add entry reference", entryKey: "sifonchan", reference: "https://x.com/sawaratsuki1004/status/1783179535955210275/photo/1" },
 
-      // twitter (missing src)
+      // twitter (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "twitter", createdAt: "Apr 25, 2024" },
       { type: "add entry reference", entryKey: "twitter", reference: "https://x.com/sawaratsuki1004/status/1783188299114504431/photo/1" },
 
@@ -244,21 +247,21 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "404-notfound", reference: "https://x.com/sawaratsuki1004/status/1783563923301757326/photo/1" },
       { type: "add entry reference", entryKey: "404-notfound", reference: "https://x.com/sawaratsuki1004/status/1788545426452623822/photo/1" },
 
-      // ms-dos (missing src)
+      // ms-dos (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "ms-dos", createdAt: "Apr 26, 2024" },
       { type: "add entry reference", entryKey: "ms-dos", reference: "https://x.com/sawaratsuki1004/status/1783876990640259250/photo/1" },
       { type: "add entry reference", entryKey: "ms-dos", reference: "https://x.com/sawaratsuki1004/status/1783904995567669262/photo/1" },
 
-      // discord (missing src)
+      // discord (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "discord", createdAt: "Apr 27, 2024" },
       { type: "add entry reference", entryKey: "discord", reference: "https://x.com/sawaratsuki1004/status/1783977314356961281/photo/1" },
 
-      // vscode (missing src)
-      { type: "add entry createdAt", entryKey: "vscode", createdAt: "Apr 27, 2024" },
-      { type: "add entry reference", entryKey: "vscode", reference: "https://x.com/sawaratsuki1004/status/1784219617839456403/photo/1" },
-      { type: "add entry reference", entryKey: "vscode", reference: "https://x.com/sawaratsuki1004/status/1784219840682807546/photo/1" },
+      // vscode (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "visualstudiocode", createdAt: "Apr 27, 2024" },
+      { type: "add entry reference", entryKey: "visualstudiocode", reference: "https://x.com/sawaratsuki1004/status/1784219617839456403/photo/1" },
+      { type: "add entry reference", entryKey: "visualstudiocode", reference: "https://x.com/sawaratsuki1004/status/1784219840682807546/photo/1" },
 
-      // kernel-panic (missing src)
+      // kernel-panic (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "kernel-panic", createdAt: "Apr 28, 2024" },
       { type: "add entry reference", entryKey: "kernel-panic", reference: "https://x.com/sawaratsuki1004/status/1784320582433288427/photo/1" },
       { type: "add entry reference", entryKey: "kernel-panic", reference: "https://x.com/sawaratsuki1004/status/1787470644667723869/photo/1" },
@@ -282,25 +285,25 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "418-i-m-a-teapot", reference: "https://x.com/sawaratsuki1004/status/1784749289937482140/photo/1" },
       { type: "add entry reference", entryKey: "418-i-m-a-teapot", reference: "https://x.com/sawaratsuki1004/status/1788545426452623822/photo/1" },
 
-      // css (missing src)
-      { type: "add entry createdAt", entryKey: "css", createdAt: "Apr 29, 2024" },
-      { type: "add entry reference", entryKey: "css", reference: "https://x.com/sawaratsuki1004/status/1784907689681994149/photo/1" },
+      // css (missing src) (css完全に理解した) (found in archive)
+      { type: "add entry createdAt", entryKey: "css完全に理解した", createdAt: "Apr 29, 2024" },
+      { type: "add entry reference", entryKey: "css完全に理解した", reference: "https://x.com/sawaratsuki1004/status/1784907689681994149/photo/1" },
 
-      // visual studio (missing src)
-      { type: "add entry createdAt", entryKey: "visual-studio", createdAt: "Apr 29, 2024" },
-      { type: "add entry reference", entryKey: "visual-studio", reference: "https://x.com/sawaratsuki1004/status/1784918522315063559/photo/1" },
+      // visual studio (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "visualstudio", createdAt: "Apr 29, 2024" },
+      { type: "add entry reference", entryKey: "visualstudio", reference: "https://x.com/sawaratsuki1004/status/1784918522315063559/photo/1" },
 
-      // lisp (missing src)
+      // lisp (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "lisp", createdAt: "Apr 29, 2024" },
       { type: "add entry reference", entryKey: "lisp", reference: "https://x.com/sawaratsuki1004/status/1784931651757428956/photo/1" },
 
-      // vercel ai sdk (missing src)
-      { type: "add entry createdAt", entryKey: "vercel-ai-sdk", createdAt: "Apr 30, 2024" },
-      { type: "add entry reference", entryKey: "vercel-ai-sdk", reference: "https://x.com/sawaratsuki1004/status/1784997006471258269/photo/1" },
+      // vercel ai sdk (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "vercelaisdk", createdAt: "Apr 30, 2024" },
+      { type: "add entry reference", entryKey: "vercelaisdk", reference: "https://x.com/sawaratsuki1004/status/1784997006471258269/photo/1" },
 
       // hack club (missing src)
-      { type: "add entry createdAt", entryKey: "hack-club", createdAt: "Apr 30, 2024" },
-      { type: "add entry reference", entryKey: "hack-club", reference: "https://x.com/sawaratsuki1004/status/1785037731019829704/photo/1" },
+      { type: "add entry createdAt", entryKey: "hackclub", createdAt: "Apr 30, 2024" },
+      { type: "add entry reference", entryKey: "hackclub", reference: "https://x.com/sawaratsuki1004/status/1785037731019829704/photo/1" },
 
       // bluesky
       { type: "add entry createdAt", entryKey: "bluesky", createdAt: "Apr 30, 2024" },
@@ -310,12 +313,12 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "bluesky", reference: "https://x.com/sawaratsuki1004/status/1793662443262242864/photo/1" },
       { type: "add entry reference", entryKey: "bluesky", reference: "https://x.com/sawaratsuki1004/status/1847056527481516540/photo/1" },
 
-      // java.lang.NullPointerException (missing src)
-      { type: "add entry createdAt", entryKey: "java-lang-nullpointerexception", createdAt: "Apr 30, 2024" },
-      { type: "add entry reference", entryKey: "java-lang-nullpointerexception", reference: "https://x.com/sawaratsuki1004/status/1785092272885059887/photo/1" },
-      { type: "add entry reference", entryKey: "java-lang-nullpointerexception", reference: "https://x.com/sawaratsuki1004/status/1797487989427511335/photo/1" },
+      // java.lang.NullPointerException (missing src) (found in archive)
+      { type: "add entry createdAt", entryKey: "nullpointerexception", createdAt: "Apr 30, 2024" },
+      { type: "add entry reference", entryKey: "nullpointerexception", reference: "https://x.com/sawaratsuki1004/status/1785092272885059887/photo/1" },
+      { type: "add entry reference", entryKey: "nullpointerexception", reference: "https://x.com/sawaratsuki1004/status/1797487989427511335/photo/1" },
 
-      // rhinelab (missing src)
+      // rhinelab (missing src) (found in archive)
       { type: "add entry createdAt", entryKey: "rhinelab", createdAt: "Apr 30, 2024" },
       { type: "add entry reference", entryKey: "rhinelab", reference: "https://x.com/sawaratsuki1004/status/1785094827480350767/photo/1" },
 
@@ -342,11 +345,11 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "swift", createdAt: "Apr 21, 2024" },
       { type: "add entry createdAt", entryKey: "tailwind-css", createdAt: "Apr 21, 2024" },
       { type: "add entry createdAt", entryKey: "gnuemacs", createdAt: "Apr 21, 2024" },
-      { type: "add entry createdAt", entryKey: "unity-blender", createdAt: "Apr 21, 2024" },
+      { type: "add entry createdAt", entryKey: "unityblender", createdAt: "Apr 21, 2024" },
       { type: "add entry createdAt", entryKey: "vim", createdAt: "Apr 21, 2024" },
       { type: "add entry createdAt", entryKey: "vite", createdAt: "Apr 21, 2024" },
       { type: "add entry createdAt", entryKey: "vrchat", createdAt: "Apr 21, 2024" },
-      { type: "add entry createdAt", entryKey: "vue.js", createdAt: "Apr 21, 2024" },
+      { type: "add entry createdAt", entryKey: "vue", createdAt: "Apr 21, 2024" },
 
       // usages
       { type: "add entry reference", entryKey: "react", reference: "https://react.dev/?uwu=true" },
