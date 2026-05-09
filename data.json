@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-09T07:53:39.765Z",
+  "updatedAt": "2026-05-09T14:31:25.524Z",
   "data": {
     "authorCount": 29,
     "imageCount": 360,
@@ -3165,16 +3165,6 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
-            "type": "x",
-            "username": "_uwu_cocoa",
-            "url": "https://x.com/_uwu_cocoa"
-          },
-          {
-            "type": "bsky",
-            "username": "uwucocoa.moe",
-            "url": "https://bsky.app/profile/uwucocoa.moe"
-          },
-          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -3544,19 +3534,7 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
-        "socials": [
-          {
-            "type": "x",
-            "username": "C29H25N3O5",
-            "url": "https://x.com/C29H25N3O5"
-          },
-          {
-            "type": "github",
-            "username": "C29H25N3O5",
-            "url": "https://github.com/C29H25N3O5"
-          }
-        ],
+        "socials": [],
         "personalSites": [],
         "entries": [
           {
@@ -4102,10 +4080,6 @@
           }
         ],
         "personalSites": [
-          "https://ko-fi.com/g2_games",
-          "https://g2games.dev/git/",
-          "https://patchii.net/G2_Games/",
-          "https://codeberg.org/g2_games",
           "https://g2games.dev",
           "https://g2games.dev"
         ],
@@ -4382,6 +4356,26 @@
         "personalSites": [],
         "entries": [
           {
+            "id": "laravel",
+            "title": "laravel",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/icarusgkx/status/1791824308500910489/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-18"
+          },
+          {
             "id": "nuxt",
             "title": "nuxt",
             "references": [
@@ -4503,6 +4497,26 @@
               }
             ],
             "createdAt": "2024-05-16"
+          },
+          {
+            "id": "pinia",
+            "title": "pinia",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/icarusgkx/status/1781439427786514628/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-20"
           },
           {
             "id": "rolldown",
@@ -4730,6 +4744,11 @@
         ],
         "licenses": [
           {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          },
+          {
             "reference": {
               "link": {
                 "type": "github-repo-text-content",
@@ -4896,10 +4915,7 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [
-          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
-          "https://dendya123.tistory.com/"
-        ],
+        "personalSites": [],
         "entries": [
           {
             "id": "docker",
@@ -6461,6 +6477,91 @@
             "createdAt": "2024-04-21"
           },
           {
+            "id": "archlinux",
+            "title": "archlinux",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782373444233118036/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "asahi-linux",
+            "title": "asahi-linux",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1786042061046849939/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1786053856989942135/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-02"
+          },
+          {
+            "id": "astro",
+            "title": "astro",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "async-await-very-difficult",
+            "title": "async-await-very-difficult",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1787002633737347108/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1841410753385181255/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-05"
+          },
+          {
             "id": "atprotocol",
             "title": "ATProtocol",
             "references": [
@@ -6619,6 +6720,131 @@
             "createdAt": "2024-04-30"
           },
           {
+            "id": "bsky",
+            "title": "bsky",
+            "references": [
+              {
+                "link": {
+                  "type": "unknown",
+                  "url": "https://bsky.app/?kawaii=true"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": []
+          },
+          {
+            "id": "c",
+            "title": "c",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782806908417757221/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-23"
+          },
+          {
+            "id": "c,c#,c++",
+            "title": "c,c#,c++",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782055072282906626/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "c#",
+            "title": "c#",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-23"
+          },
+          {
+            "id": "c++",
+            "title": "c++",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782811399414231147/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-23"
+          },
+          {
+            "id": "can-you-make-a-cute-soue-kaku-pop-up-logo",
+            "title": "can-you-make-a-cute-soue-kaku-pop-up-logo",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1789301035636506849/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-11"
+          },
+          {
             "id": "charcoal",
             "title": "Charcoal",
             "references": [
@@ -6684,6 +6910,32 @@
               }
             ],
             "createdAt": "2024-11-08"
+          },
+          {
+            "id": "clang",
+            "title": "clang",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-24"
+          },
+          {
+            "id": "clion",
+            "title": "clion",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
           },
           {
             "id": "cloudflare",
@@ -6757,6 +7009,92 @@
               }
             ],
             "createdAt": "2024-04-21"
+          },
+          {
+            "id": "cobol",
+            "title": "cobol",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "computer-architecture-design",
+            "title": "computer-architecture-design",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782335982504923242/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "crowdstrike",
+            "title": "crowdstrike",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "css完全に理解した",
+            "title": "css完全に理解した",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784907689681994149/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-29"
+          },
+          {
+            "id": "discord",
+            "title": "discord",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783977314356961281/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-27"
           },
           {
             "id": "express",
@@ -6899,6 +7237,59 @@
             "createdAt": "2024-04-22"
           },
           {
+            "id": "flipperzero",
+            "title": "flipperzero",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783080853993931187/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-24"
+          },
+          {
+            "id": "flutter",
+            "title": "flutter",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "fortran",
+            "title": "fortran",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783072775164584140/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-24"
+          },
+          {
             "id": "github",
             "title": "GitHub",
             "references": [
@@ -6969,6 +7360,39 @@
                 ]
               }
             ],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "gitlab",
+            "title": "gitlab",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782074596713447587/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "gnuemacs",
+            "title": "gnuemacs",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
             "createdAt": "2024-04-21"
           },
           {
@@ -7049,6 +7473,26 @@
               }
             ],
             "createdAt": "2024-04-21"
+          },
+          {
+            "id": "hackclub",
+            "title": "hackclub",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1785037731019829704/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-30"
           },
           {
             "id": "haskell",
@@ -7213,6 +7657,98 @@
               }
             ],
             "createdAt": "2024-04-22"
+          },
+          {
+            "id": "html",
+            "title": "html",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782363387562959057/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "htmx",
+            "title": "htmx",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1781862842041602499/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/htmx_org/status/1782449324112105883/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782449755957887235/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "iamaprogrammer!",
+            "title": "iamaprogrammer!",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-24"
+          },
+          {
+            "id": "iamaprogrammerenglish",
+            "title": "iamaprogrammerenglish",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-24"
           },
           {
             "id": "iamdesigner!",
@@ -7568,6 +8104,171 @@
             "createdAt": "2024-05-18"
           },
           {
+            "id": "ippon-sakura",
+            "title": "ippon-sakura",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1804165481215201286/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1804168246368833774/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-06-21"
+          },
+          {
+            "id": "issues-has-exceeded-300",
+            "title": "issues-has-exceeded-300",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783519169042149585/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-25"
+          },
+          {
+            "id": "java",
+            "title": "java",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782074596713447587/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "julia",
+            "title": "julia",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784733145893585142/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-29"
+          },
+          {
+            "id": "juniper",
+            "title": "juniper",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "kawaii-logos",
+            "title": "kawaii-logos",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/2050783363380953558/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2026-05-03"
+          },
+          {
+            "id": "kawaii-true",
+            "title": "kawaii-true",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1786191353732538605/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-03"
+          },
+          {
+            "id": "kernel-panic",
+            "title": "kernel-panic",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784320582433288427/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1787470644667723869/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-28"
+          },
+          {
             "id": "kotlin",
             "title": "Kotlin",
             "references": [
@@ -7738,6 +8439,66 @@
             "createdAt": "2024-04-21"
           },
           {
+            "id": "laravel-herd",
+            "title": "laravel-herd",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1788522748886827465/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-09"
+          },
+          {
+            "id": "lisp",
+            "title": "lisp",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784931651757428956/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-29"
+          },
+          {
+            "id": "meilisearch",
+            "title": "meilisearch",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1810156342600245371/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-07-08"
+          },
+          {
             "id": "misskey",
             "title": "Misskey",
             "references": [
@@ -7902,6 +8663,65 @@
             "createdAt": "2024-05-26"
           },
           {
+            "id": "ms-dos",
+            "title": "ms-dos",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783876990640259250/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783904995567669262/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-26"
+          },
+          {
+            "id": "mui",
+            "title": "mui",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "mutsura-horun",
+            "title": "mutsura-horun",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1968326684199047479/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2025-09-17"
+          },
+          {
             "id": "next.js",
             "title": "Next.js",
             "references": [
@@ -8042,6 +8862,171 @@
             "createdAt": "2024-05-14"
           },
           {
+            "id": "nodejs",
+            "title": "nodejs",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "novel-ai",
+            "title": "novel-ai",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1788857837424447709/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-10"
+          },
+          {
+            "id": "nullpointerexception",
+            "title": "nullpointerexception",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1785092272885059887/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1797487989427511335/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-30"
+          },
+          {
+            "id": "photoshop",
+            "title": "photoshop",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782389745647263810/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "php",
+            "title": "php",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1785704012597059871/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-01"
+          },
+          {
+            "id": "python",
+            "title": "python",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782099482093764910/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "qwik.js",
+            "title": "qwik.js",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782429660145746024/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1787985882437566504/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "raspberrypi",
+            "title": "raspberrypi",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782421099797680548/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
             "id": "react",
             "title": "React",
             "references": [
@@ -8127,6 +9112,26 @@
             "createdAt": "2024-04-21"
           },
           {
+            "id": "react-compiler",
+            "title": "react-compiler",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1791012826745856030/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-16"
+          },
+          {
             "id": "replit",
             "title": "Replit",
             "references": [
@@ -8192,6 +9197,72 @@
               }
             ],
             "createdAt": "2024-05-24"
+          },
+          {
+            "id": "rhinelab",
+            "title": "rhinelab",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1785094827480350767/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "rider",
+            "title": "rider",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "rstudio",
+            "title": "rstudio",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "ruby",
+            "title": "ruby",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782322111044043069/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
           },
           {
             "id": "rust",
@@ -8306,6 +9377,106 @@
             "createdAt": "2024-04-21"
           },
           {
+            "id": "scratch",
+            "title": "scratch",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1785367442904240627/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-01"
+          },
+          {
+            "id": "sifonchan",
+            "title": "sifonchan",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783179535955210275/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-25"
+          },
+          {
+            "id": "starship",
+            "title": "starship",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1787449292250341857/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-06"
+          },
+          {
+            "id": "streamloots",
+            "title": "streamloots",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782471337736536070/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-23"
+          },
+          {
+            "id": "swift",
+            "title": "swift",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782120134569759198/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
             "id": "tailwind-css",
             "title": "tailwind css",
             "references": [
@@ -8371,6 +9542,66 @@
               }
             ],
             "createdAt": "2024-04-21"
+          },
+          {
+            "id": "tax-return-have-been-filed",
+            "title": "tax-return-have-been-filed",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1900764944716755221/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2025-03-15"
+          },
+          {
+            "id": "teamspeak",
+            "title": "teamspeak",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782106483787993497/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "twitter",
+            "title": "twitter",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783188299114504431/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-25"
           },
           {
             "id": "typescript",
@@ -8450,6 +9681,309 @@
               }
             ],
             "createdAt": "2024-04-25"
+          },
+          {
+            "id": "ubuntu",
+            "title": "ubuntu",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1783093985181040703/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-24"
+          },
+          {
+            "id": "unchi",
+            "title": "unchi",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1796497425504575786/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-31"
+          },
+          {
+            "id": "unityblender",
+            "title": "unityblender",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "uwu-true",
+            "title": "uwu-true",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1786200580312170541/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-03"
+          },
+          {
+            "id": "vercelaisdk",
+            "title": "vercelaisdk",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784997006471258269/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-30"
+          },
+          {
+            "id": "vim",
+            "title": "vim",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "visualstudio",
+            "title": "visualstudio",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784918522315063559/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-29"
+          },
+          {
+            "id": "visualstudiocode",
+            "title": "visualstudiocode",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784219617839456403/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1784219840682807546/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-27"
+          },
+          {
+            "id": "vite",
+            "title": "vite",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "voicemod",
+            "title": "voicemod",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782118029431894252/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1788210818255102449/photo/1"
+                }
+              },
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1863950676818383026/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "vrchat",
+            "title": "vrchat",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "vue",
+            "title": "vue",
+            "references": [],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-21"
+          },
+          {
+            "id": "wallhack",
+            "title": "wallhack",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782341113480909072/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
+          },
+          {
+            "id": "webstorm",
+            "title": "webstorm",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1788156742511317259/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-05-08"
+          },
+          {
+            "id": "winrar",
+            "title": "winrar",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1797150726441009396/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-06-02"
+          },
+          {
+            "id": "x",
+            "title": "x",
+            "references": [
+              {
+                "link": {
+                  "type": "twitter-post",
+                  "url": "https://x.com/sawaratsuki1004/status/1782404460716900527/photo/1"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2024-04-22"
           },
           {
             "id": "ゆっくりmoviemaker4",
@@ -8741,6 +10275,11 @@
             "href": "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
             "label": "Custom License",
             "labelShort": "Custom License"
+          },
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": [
@@ -10872,14 +12411,7 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "pfp": "https://avatars.githubusercontent.com/syke9p3",
-        "socials": [
-          {
-            "type": "github",
-            "username": "syke9p3",
-            "url": "https://github.com/syke9p3"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
@@ -11301,6 +12833,26 @@
         ],
         "entries": [
           {
+            "id": "avalanche",
+            "title": "avalanche",
+            "references": [
+              {
+                "link": {
+                  "type": "bsky-post",
+                  "url": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2025-12-05"
+          },
+          {
             "id": "capacitor",
             "title": "capacitor",
             "references": [],
@@ -11337,6 +12889,46 @@
               }
             ],
             "createdAt": "2025-03-10"
+          },
+          {
+            "id": "surrealdb",
+            "title": "surrealdb",
+            "references": [
+              {
+                "link": {
+                  "type": "bsky-post",
+                  "url": "https://bsky.app/profile/t1c.dev/post/3lc42nknqrc2d"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2025-12-01"
+          },
+          {
+            "id": "vyper",
+            "title": "vyper",
+            "references": [
+              {
+                "link": {
+                  "type": "bsky-post",
+                  "url": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t"
+                }
+              }
+            ],
+            "imageCount": 0,
+            "license": {
+              "type": "unknown",
+              "label": "Unknown License",
+              "labelShort": "Unknown License"
+            },
+            "images": [],
+            "createdAt": "2025-12-01"
           }
         ],
         "licenses": [
