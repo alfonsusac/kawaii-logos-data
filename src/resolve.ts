@@ -3,6 +3,7 @@ import type { KawaiiLogoData, Output } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 import { standardLicenses } from "./resolve-license"
+import { resolveOfficialLinks } from "./resolve-official-links"
 
 
 export async function resolveDefinitions(
@@ -31,6 +32,7 @@ export async function resolveDefinitions(
     authorCount, imageCount,
     authors: authorArray,
     standardLicenses: standardLicenses,
+    officialLinks: resolveOfficialLinks(),
   }
 
   return output

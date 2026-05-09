@@ -5,6 +5,7 @@ export type KawaiiLogoData = {
     imageCount: number,
     authors: Output.Author[],
     standardLicenses: Output.StandardLicense,
+    officialLinks: Output.OfficialLinks, 
   }
 }
 
@@ -143,6 +144,12 @@ export namespace Output {
       }
     }
   }
+
+  export type OfficialLinks = {
+    label: string
+    url: string
+    authorid: string
+  }[]
 }
 
 

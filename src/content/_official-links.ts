@@ -6,45 +6,45 @@ export const official_links = [
   {
     label: "Haskell",
     url: "https://www.haskell.org/?uwu=true",
-    author: author_definitions.sawaratsuki
+    authorid: "sawaratsuki"
   },
   {
     label: "Vue.js",
     url: "https://vuejs.org/?uwu",
-    author: author_definitions.icarusgk
+    authorid: "icarusgk"
   },
   {
     label: "Bluesky",
     url: "https://bsky.app/?kawaii=true",
-    author: author_definitions.sawaratsuki
+    authorid: "sawaratsuki"
   },
   {
     label: "Angular",
     url: "https://angular.dev/?uwu=true",
-    author: author_definitions.sawaratsuki
+    authorid: "sawaratsuki"
   },
   {
     label: "Elysia",
     url: "https://elysiajs.com/",
-    author: author_definitions.saltyaom
+    authorid: "saltyaom"
   },
   {
     label: "Hono",
     url: "https://hono.dev/?kawaii=true",
-    author: author_definitions.sawaratsuki
+    authorid: "sawaratsuki"
   },
   {
     label: "Misskey.io",
     url: "https://misskey.io",
-    author: author_definitions.sawaratsuki
+    authorid: "sawaratsuki"
   },
   {
     label: "React",
     url: "https://react.dev/?uwu=true",
-    author: author_definitions.sawaratsuki
+    authorid: "sawaratsuki"
   },
 ] satisfies {
   label: string
   url: HttpsSite
-  author: AuthorDefinition
+  authorid: keyof typeof author_definitions
 }[]
