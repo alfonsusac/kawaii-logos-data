@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-09T07:39:38.777Z",
+  "updatedAt": "2026-05-09T07:53:39.765Z",
   "data": {
     "authorCount": 29,
     "imageCount": 360,
@@ -2213,7 +2213,9 @@
             "url": "https://github.com/AnwarAchilles"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://anwarachilles.pro"
+        ],
         "entries": [
           {
             "id": "codeigniter",
@@ -3288,14 +3290,22 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
+        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
+          },
+          {
+            "type": "github",
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://crystaworld.dev"
+        ],
         "entries": [
           {
             "id": "jyo-gi",
@@ -3536,6 +3546,11 @@
         "displayName": "c29h25n3o5",
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
           {
             "type": "github",
             "username": "C29H25N3O5",
@@ -4760,6 +4775,7 @@
           }
         ],
         "personalSites": [
+          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -4867,14 +4883,23 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
+        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "socials": [
+          {
+            "type": "github",
+            "username": "lDMDiamondl",
+            "url": "https://github.com/lDMDiamondl"
+          },
           {
             "type": "x",
             "username": "dmdiamond1234",
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+          "https://dendya123.tistory.com/"
+        ],
         "entries": [
           {
             "id": "docker",
@@ -5138,12 +5163,18 @@
         "pfp": "https://avatars.githubusercontent.com/mkpoli",
         "socials": [
           {
+            "type": "x",
+            "username": "mkpoli",
+            "url": "https://x.com/mkpoli"
+          },
+          {
             "type": "github",
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           }
         ],
         "personalSites": [
+          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entries": [
@@ -5271,16 +5302,16 @@
               {
                 "label": "awake.png",
                 "src": {
-                  "type": "unknown",
-                  "url": "https://awake.moe/awake.png"
+                  "type": "official-website-usage",
+                  "url": "uwu:https://awake.moe/awake.png"
                 },
                 "references": []
               },
               {
                 "label": "awake.png",
                 "src": {
-                  "type": "unknown",
-                  "url": "https://awake.moe/awake.png"
+                  "type": "official-website-usage",
+                  "url": "uwu:https://awake.moe/awake.png"
                 },
                 "references": []
               }
@@ -6052,8 +6083,8 @@
               },
               {
                 "link": {
-                  "type": "unknown",
-                  "url": "https://kiritanpo-kaede.booth.pm/items/5683557"
+                  "type": "shop-page",
+                  "url": "shop:https://kiritanpo-kaede.booth.pm/items/5683557"
                 }
               },
               {
@@ -8016,8 +8047,8 @@
             "references": [
               {
                 "link": {
-                  "type": "unknown",
-                  "url": "https://react.dev/?uwu=true"
+                  "type": "official-website-usage",
+                  "url": "uwu:https://react.dev/?uwu=true"
                 }
               },
               {
