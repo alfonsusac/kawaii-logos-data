@@ -1,7 +1,7 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
 
-Last Updated: `2026-05-08T01:13:20.726Z`
+Last Updated: `2026-05-09T05:34:04.254Z`
 
 ### Authors
 - aikoyori
@@ -18,13 +18,16 @@ Last Updated: `2026-05-08T01:13:20.726Z`
 - g2_games
 - hcho3
 - Manhkbrady
+- icarusgk
 - ifalfahri
 - ldmdiamondl
 - maxshawnwx
 - mkpoli
+- nichind
 - petricat
 - saltyaom
 - sawaratsuki
+- sawaratsuki_archived
 - shiroiame_kusu
 - syke9p3
 - styxpilled
