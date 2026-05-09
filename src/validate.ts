@@ -1,11 +1,14 @@
 import { validateSlug } from "./lib/slug"
-import type { Output } from "./output"
+import type { KawaiiLogosData } from "./output"
 
-export async function validateResolvedAuthor(author: Output.Author) {
+export async function validateResolvedAuthor(
+  author: KawaiiLogosData.Author,
+  entries: KawaiiLogosData.Entry[],
+) {
 
   // Validate slug-related tokens
   validateSlug(author.id)
-  author.entries.forEach(entry => {
+  entries.forEach(entry => {
     validateSlug(entry.id)
   })
 

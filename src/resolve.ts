@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { KawaiiLogoData, Output } from "./output"
+import type { KawaiiLogosData } from "./output"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 import { standardLicenses } from "./resolve-license"
@@ -8,29 +8,24 @@ import { resolveOfficialLinks } from "./resolve-official-links"
 
 export async function resolveDefinitions(
   defs: Record<string, AuthorDefinition>
-): Promise<KawaiiLogoData[ 'data' ]> {
+): Promise<KawaiiLogosData> {
 
-  const result = await Promise.all(Object
+  const results = await Promise.all(Object
     .entries(defs)
-    .map(
-      ([ id, def ]) => {
-        return usingLogBuffer(() => resolveAuthorDefinition(def, id))
-      }
-    )
+    .map(e => usingLogBuffer(() => resolveAuthorDefinition(...e)))
   )
-  logResults(result)
-  const authorArray = result.map(result => result.result.resolved)
+  logResults(results)
+
+  const authorArray = results.map(result => result.result.resolved.author)
+  const entryArray = results.map(result => result.result.resolved.entries).flat()
 
   const authorCount = authorArray.length
-  const imageCount = authorArray.reduce((sum, a) => {
-    return sum + a.entries.reduce((entrySum, entry) => {
-      return entrySum + entry.images.length
-    }, 0)
-  }, 0)
+  const imageCount = entryArray.length
 
-  const output: KawaiiLogoData.Data = {
+  const output: KawaiiLogosData = {
     authorCount, imageCount,
     authors: authorArray,
+    entries: entryArray,
     standardLicenses: standardLicenses,
     officialLinks: resolveOfficialLinks(),
   }
@@ -43,18 +38,16 @@ export async function resolveDefinitions(
 function logResults(
   results: {
     buffers: LogBuffer
-    result: {
-      definition: AuthorDefinition
-      resolved: Output.Author
-    }
+    result: Awaited<ReturnType<typeof resolveAuthorDefinition>>
   }[],
 ) {
-  const authorArray = results.map(r => r.result.resolved)
+  const authorArray = results.map(result => result.result.resolved.author)
+  const entryArray = results.map(result => result.result.resolved.entries).flat()
 
   // Pin errors on the top
   const errors = results.reduce(
     (acc, curr) => {
-      const { id } = curr.result.resolved
+      const { id } = curr.result.resolved.author
       const relevantBuffers = curr.buffers.filter(b => b.type === "error" || b.type === "warn")
       if (relevantBuffers.length > 0) {
         acc.push({
@@ -83,8 +76,8 @@ function logResults(
 
   // Then log the all logs per resolved authors
   for (const { result, buffers } of results) {
-    const id = result.resolved.id
-    const resolved = result.resolved
+    const id = result.resolved.author.id
+    const { author, entries } = result.resolved
 
 
     function has(what: any) {
@@ -94,25 +87,25 @@ function logResults(
       return num === 0 ? `${ black }0` : `${ reset }${ num }`
     }
 
-    const images = resolved.entries.reduce((acc, curr) => {
+    const images = entries.reduce((acc, curr) => {
       acc.push(...curr.images)
       return acc
-    }, [] as Output.Author.EntryItem[ 'images' ])
+    }, [] as KawaiiLogosData.EntryImage[])
 
     log([
       `${ blue }${ id.padEnd(17) }${ reset }`,
     ].filter(Boolean).join(''))
     log([
       `  `,
-      `${ has(resolved.pfp) } ${ black }pfp`,
+      `${ has(author.pfp) } ${ black }pfp`,
       `   `,
-      `${ reset }${ resolved.socials.length } ${ black }socials`,
+      `${ reset }${ author.socials.length } ${ black }socials`,
       ` `,
-      `${ reset }${ count(resolved.socials.filter(s => s.type === "x").length) } ${ black }twt`,
+      `${ reset }${ count(author.socials.filter(s => s.type === "x").length) } ${ black }twt`,
       ` `,
-      `${ reset }${ count(resolved.socials.filter(s => s.type === "github").length) } ${ black }gh`,
+      `${ reset }${ count(author.socials.filter(s => s.type === "github").length) } ${ black }gh`,
       ` `,
-      `${ reset }${ resolved.entries.length } ${ black }entries`,
+      `${ reset }${ entries.length } ${ black }entries`,
       ` `,
       `${ reset }${ count(images.length) } ${ black }imgs`,
     ].filter(Boolean).join(''))
@@ -124,7 +117,7 @@ function logResults(
     }
 
     // Log entries
-    resolved.entries.forEach(e => {
+    entries.forEach(e => {
       log([
         `    ${ black }- ${ `${ e.id }` } `,
       ].join(''))
@@ -145,7 +138,7 @@ function logResults(
     '',
     `${ blue }Summary:${ reset }`,
     ` - resolved ${ green }${ authorArray.length }${ reset } authors`,
-    ` - resolved ${ green }${ authorArray.reduce((sum, a) => sum + a.entries.length, 0) }${ reset } entries`,
+    ` - resolved ${ green }${ entryArray.length }${ reset } entries`,
   ].join('\n'))
 
 }

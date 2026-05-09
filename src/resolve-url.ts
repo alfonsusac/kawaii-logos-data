@@ -1,5 +1,5 @@
 import { matchUrl } from "./lib/url-pattern"
-import type { Output } from "./output"
+import type { KawaiiLogosData } from "./output"
 import { logerror, warn } from "./pipeline"
 
 export type HttpsSite =
@@ -51,7 +51,7 @@ function resolveSiteURL(url: string) {
 // ------------------------------------------------------------------------------------
 // Resolver
 
-export function resolveHttpsSite(site: HttpsSite): Output.Link {
+export function resolveHttpsSite(site: HttpsSite): KawaiiLogosData.Link {
   const type = getUrlTypeFromURL(site)
   let url = site
   if (url.startsWith("shop:")) {
@@ -68,7 +68,7 @@ export function resolveHttpsSite(site: HttpsSite): Output.Link {
 
 function getUrlTypeFromURL(
   url: HttpsSite
-): Output.Link.Type {
+): KawaiiLogosData.Link.Type {
   if (url.startsWith('shop')) {
     return "shop-page"
   }

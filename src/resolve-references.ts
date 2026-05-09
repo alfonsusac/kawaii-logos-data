@@ -1,8 +1,8 @@
 import type { DateDef } from "./lib/date"
 import { resolveHttpsSite, site, type HttpsSite } from "./resolve-url"
-import type { Output } from "./output"
 import { warn } from "./pipeline"
 import type { ArrayOrSingle } from "./lib/array-type-utils"
+import type { KawaiiLogosData } from "./output"
 
 export type ReferenceDef = HttpsSite | {
   site: HttpsSite,
@@ -13,7 +13,7 @@ export type ReferencesDef = ArrayOrSingle<ReferenceDef>
 
 
 
-export function resolveReferencesDefinition(...references: ((ReferenceDef | undefined)[] | ReferenceDef | undefined)[]): Output.Reference[] {
+export function resolveReferencesDefinition(...references: ((ReferenceDef | undefined)[] | ReferenceDef | undefined)[]): KawaiiLogosData.Reference[] {
   const referencesList: ReferenceDef[] = []
   for (const refs of references) {
     if (!refs) continue
@@ -24,7 +24,7 @@ export function resolveReferencesDefinition(...references: ((ReferenceDef | unde
     }
   }
 
-  const referencesSet = new Map<string, Output.Reference>()
+  const referencesSet = new Map<string, KawaiiLogosData.Reference>()
   for (const ref of referencesList) {
     const link = typeof ref === "string" ? resolveHttpsSite(site(ref)) : resolveHttpsSite(ref.site)
     if (referencesSet.has(link.url)) {

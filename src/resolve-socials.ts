@@ -1,7 +1,7 @@
 import { getBskyProfile } from "./lib/api/bsky"
 import { fetchGithubProfile } from "./lib/api/github"
+import { KawaiiLogosData } from "./output"
 import { logerror } from "./pipeline"
-import { Output } from "./output"
 import { site } from "./resolve-url"
 
 export type SocialsDef = {
@@ -27,8 +27,8 @@ export async function resolveSocials(
   def: SocialsDef | undefined,
   list: SocialListDef | undefined = [],
 ): Promise<{
-  socials: Output.Author.SocialLinks,
-  personalSites: Output.Author.PersonalSites,
+  socials: KawaiiLogosData.Author.SocialLinks,
+  personalSites: KawaiiLogosData.Author.PersonalSites,
 }> {
 
   // 1. flatten the def + list => list of socials to be verified
@@ -60,10 +60,10 @@ export async function resolveSocials(
   const uniqueSocialUrlList = Array.from(new Set(socialUrlList))
 
   // 4. Resolve each URL into { type, username, url }
-  const resolvedSocials: Output.Author.SocialLinks = []
+  const resolvedSocials: KawaiiLogosData.Author.SocialLinks = []
   for (const url of uniqueSocialUrlList) {
 
-    for (const type of Output.socialTypes) {
+    for (const type of KawaiiLogosData.socialTypes) {
 
       const instruction = socialsInstructionMap[ type ]
       if (!instruction.matcher(url)) continue
@@ -85,7 +85,7 @@ export async function resolveSocials(
   }
 
   // 5. Collect personal sites separately (anything labeled as "site" in the list, and the "site" field in the def)
-  const personalSites: Output.Author.PersonalSites = []
+  const personalSites: KawaiiLogosData.Author.PersonalSites = []
   const siteUrls = list.filter(s => s.label === "site").map(s => s.url)
   if (def?.site) siteUrls.push(def.site)
 
@@ -110,7 +110,7 @@ export async function resolveSocials(
 
 // ------------------------------------------------
 
-const socialsInstructionMap: Record<Output.SocialTypes, {
+const socialsInstructionMap: Record<KawaiiLogosData.SocialTypes, {
   matcher: (url: string) => boolean,
   resolver: (url: string) => { username: string, url: string } | undefined,
   verifier: (username: string) => Promise<boolean>,

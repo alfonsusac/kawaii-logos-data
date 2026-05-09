@@ -1,11 +1,11 @@
-import type { Output } from "./output"
+import type { KawaiiLogosData } from "./output"
 import { log, logerror, warn } from "./pipeline"
 import { resolveReferencesDefinition, type ReferenceDef } from "./resolve-references"
 
 export type LicenseDef = {
   reference?: ReferenceDef,
 } & (
-    | { type: Output.StandardLicense.Type }
+    | { type: KawaiiLogosData.StandardLicense.Type }
     | { type: "custom", href: string }
     | { type: "unknown", href?: undefined }
   )
@@ -14,7 +14,7 @@ export type LicenseType = LicenseDef[ "type" ]
 
 
 
-export const standardLicenses: Output.StandardLicense = {
+export const standardLicenses: KawaiiLogosData.StandardLicense = {
   "MIT": {
     label: "MIT License",
     href: "https://opensource.org/license/mit/",
@@ -129,7 +129,7 @@ export const standardLicenses: Output.StandardLicense = {
 
 
 
-export function resolveLicenseDefinitions(license: LicenseDef | undefined): Output.License {
+export function resolveLicenseDefinitions(license: LicenseDef | undefined): KawaiiLogosData.License {
   if (!license) return { type: "unknown", label: "Unknown License", labelShort: "Unknown License", }
 
   const reference = resolveReferencesDefinition(license.reference)[ 0 ]
@@ -154,7 +154,7 @@ export function resolveLicenseDefinitions(license: LicenseDef | undefined): Outp
 
 export function resolveToLicenseTypeByContent(licenseContent: string): LicenseType {
 
-  const LicenseContentIDs: Record<Output.StandardLicense.Type, string[]> = {
+  const LicenseContentIDs: Record<KawaiiLogosData.StandardLicense.Type, string[]> = {
     "MIT": [
       'MIT License'
     ],
@@ -179,7 +179,7 @@ export function resolveToLicenseTypeByContent(licenseContent: string): LicenseTy
   for (const [ licenseType, identifiers ] of Object.entries(LicenseContentIDs)) {
     if (identifiers.some(id => licenseContent.includes(id))) {
       log(`Resolved license type as ${ licenseType } based on content identifiers.`)
-      return licenseType as Output.StandardLicense.Type
+      return licenseType as KawaiiLogosData.StandardLicense.Type
     }
   }
 

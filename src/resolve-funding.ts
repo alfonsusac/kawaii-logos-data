@@ -1,5 +1,5 @@
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
-import type { Output } from "./output"
+import type { KawaiiLogosData } from "./output"
 
 export type FundingsDef = ArrayOrSingle<
   | { type: "patreon", url: `https://patreon.com/${ string }` }
@@ -15,7 +15,7 @@ export function resolveFundingsDef(def: FundingsDef | undefined) {
   if (!def) return []
   def = resolveArrayOrSingleToArray(def)
 
-  const fundings: Output.Author.Fundings = []
+  const fundings: KawaiiLogosData.Author.Fundings = []
   for (const funding of def) {
 
     fundings.push({

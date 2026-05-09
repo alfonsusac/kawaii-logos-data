@@ -353,7 +353,7 @@ export const sawaratsuki: AuthorDefinition = {
 
       // usages
       { type: "add entry reference", entryKey: "react", reference: "uwu:https://react.dev/?uwu=true" },
-      { type: "add entry reference", entryKey: "bsky", reference: "https://bsky.app/?kawaii=true" },
+      { type: "add entry reference", entryKey: "bsky", reference: "uwu:https://bsky.app/?kawaii=true" },
 
       
       // scratch (missing src)

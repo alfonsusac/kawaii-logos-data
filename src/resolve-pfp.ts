@@ -1,5 +1,5 @@
 import { getBskyProfile } from "./lib/api/bsky"
-import type { Output } from "./output"
+import type { KawaiiLogosData } from "./output"
 import { logerror, warn } from "./pipeline"
 import type { AuthorDefinition } from "./resolve-author"
 
@@ -7,17 +7,17 @@ import type { AuthorDefinition } from "./resolve-author"
 
 export async function resolvePfp(
   authorDef: AuthorDefinition,
-  resolvedSocials: Output.Author.SocialLinks,
+  resolvedSocials: KawaiiLogosData.Author.SocialLinks,
 ) {
   // Get PFP from user-definition
   if (authorDef.pfp) return authorDef.pfp
 
   // Try to get PFP from Github
-  const github = resolvedSocials.find(s => s.type === "github") as Output.Author.SocialLinks[ number ] | undefined
+  const github = resolvedSocials.find(s => s.type === "github") as KawaiiLogosData.Author.SocialLinks[ number ] | undefined
   if (github) return `https://avatars.githubusercontent.com/${ github.username }`
 
   // Try to get PFP from Bluesky
-  const bsky = resolvedSocials.find(s => s.type === "bsky") as Output.Author.SocialLinks[ number ] | undefined
+  const bsky = resolvedSocials.find(s => s.type === "bsky") as KawaiiLogosData.Author.SocialLinks[ number ] | undefined
   if (bsky) {
     try {
       const profile = await getBskyProfile(bsky.username)

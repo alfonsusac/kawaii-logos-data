@@ -1,40 +1,14 @@
-import { alfonsusac } from "./content/alfonsusac"
-import { arnav } from "./content/arnav"
-import { cr1sta_dev } from "./content/cr1sta_dev"
-import { dsphng } from "./content/dsphng"
-import { fenjalien } from "./content/fenjalien"
-import { fumanama } from "./content/fumanama"
-import { hcho3 } from "./content/hcho3"
-import { hvpexe } from "./content/hvpexe"
-import { saltyaom } from "./content/saltyaom"
-import { styxpilled } from "./content/styxpilled"
-import { thatonecalculator } from "./content/thatonecalculator"
 import { black, cyan, reset } from "./lib/ansii"
 import { cacheInstance } from "./lib/cache"
 import { resolveDefinitions } from "./resolve"
 import { readdir, rm } from "fs/promises"
 import { Git } from "./lib/git"
-import { aikoyori } from "./content/aikoyori"
-import { maxshawnwx } from "./content/maxshawnws"
-import { sawaratsuki } from "./content/sawaratsuki"
-import { urielchan } from "./content/urielchan"
-import { g2_games } from "./content/g2_games"
-import { mkpoli } from "./content/mkpoli"
-import { ldmdiamondl } from "./content/ldmdiamondl"
-import { andregans } from "./content/andregans"
-import { cocoa_xu } from "./content/cocoa_xu"
-import { syke9p3 } from "./content/syke9p3"
 import { runApp, step, verbose, warn } from "./pipeline"
 import { checkEnvVars } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./revalidate"
-import type { KawaiiLogoData } from "./output"
-import { petricat } from "./content/petricat"
-import { ifalfahri } from "./content/ifalfahri"
-import { anwar_achilles } from "./content/anwar-achilles"
-import { shiroiame_kusu } from "./content/shiroiame-kusu"
-import { c29h25n3o5 } from "./content/c29h25n3o5_"
 import { author_definitions } from "./content/_authors"
+import type { KawaiiLogosData } from "./output"
 
 
 runApp(async () => {
@@ -75,8 +49,9 @@ runApp(async () => {
 // --------------------------------------------------------------------------------
 
 
-async function prepareOutput(outputData: KawaiiLogoData.Data) {
-  const output: KawaiiLogoData = {
+async function prepareOutput(outputData: KawaiiLogosData) {
+
+  const output: KawaiiLogosData.Response = {
     updatedAt: new Date().toISOString(),
     data: outputData
   }

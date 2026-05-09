@@ -10,8 +10,8 @@ import { stepSimple } from "./pipeline"
 import { resolveReferencesDefinition, type ReferencesDef } from "./resolve-references"
 import { dedupeByProp } from "./lib/dedupe-by-prop"
 import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
-import type { Output } from "./output"
 import type { HttpsSite } from "./resolve-url"
+import type { KawaiiLogosData } from "./output"
 
 export type AuthorDefinition = {
   displayName?: string,
@@ -29,58 +29,80 @@ export type AuthorDefinition = {
 
 // ------------------------------------------------------------
 
-export async function resolveAuthorDefinition(author: AuthorDefinition, id: string) {
-  const displayName = author.displayName ?? id
+export async function resolveAuthorDefinition(
+  id: string,
+  authorDefinition: AuthorDefinition,
+): Promise<{
+  definition: AuthorDefinition,
+  resolved: {
+    author: KawaiiLogosData.Author,
+    entries: KawaiiLogosData.Entry[],
+  }
+}> {
+  const displayName = authorDefinition.displayName ?? id
 
-  const { scrapedEntries, scrapedSocials, scrapedReference } = await stepSimple(
+  const {
+    scrapedEntries,
+    scrapedSocials,
+    scrapedReference
+  } = await stepSimple(
     "Converting source to definitions",
-    () => resolveSourceDefinition(author.source)
+    () => resolveSourceDefinition(authorDefinition.source)
   )
 
-  const entries = await stepSimple(
+  const {
+    entries,
+    entryIds,
+  } = await stepSimple(
     "Resolving entries and enrich data",
-    () => resolveEntriesMulti(author.entries, scrapedEntries)
+    () => resolveEntriesMulti(id, authorDefinition.entries, scrapedEntries)
   )
 
-  const { socials, personalSites } = await stepSimple(
+  const {
+    socials,
+    personalSites
+  } = await stepSimple(
     "Resolving socials",
-    () => resolveSocials(author.socials, scrapedSocials)
+    () => resolveSocials(authorDefinition.socials, scrapedSocials)
   )
 
   const pfp = await stepSimple(
     "Resolving pfp from def or scraped socials",
-    () => resolvePfp(author, socials)
+    () => resolvePfp(authorDefinition, socials)
   )
 
   const fundings = await stepSimple(
     "Resolving fundings",
-    () => resolveFundingsDef(author.fundings)
+    () => resolveFundingsDef(authorDefinition.fundings)
   )
 
   // Collect licenses from entries and root license if exists and dedupe by label
   const licenses = dedupeByProp(entries.flatMap(e => e.license ? [ e.license ] : []))('label')
 
   // Add references from source if exists
-  const references = resolveReferencesDefinition(scrapedReference, author.references)
+  const references = resolveReferencesDefinition(scrapedReference, authorDefinition.references)
 
   // Compile resolved data into final Author object
-  const resolved: Output.Author = {
+  const author: KawaiiLogosData.Author = {
     id: slugify(id),
     displayName,
     pfp,
     socials,
     personalSites,
-    entries,
+    entryIds,
     licenses,
     references,
     fundings,
   }
 
   // Validating Resolved
-  await validateResolvedAuthor(resolved)
+  await validateResolvedAuthor(author, entries)
 
   return {
-    definition: author,
-    resolved
+    definition: authorDefinition,
+    resolved: {
+      author,
+      entries,
+    }
   }
 }

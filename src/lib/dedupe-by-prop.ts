@@ -8,3 +8,20 @@ export function dedupeByProp<O extends object>(arr: O[]) {
     })
   }
 }
+
+export function checkDuplicates<O extends object>(arr: O[], by: keyof O) {
+  const seen = new Set()
+  const duplicates = new Set()
+  arr.forEach(item => {
+    if (seen.has(item[ by ])) {
+      duplicates.add(item[ by ])
+    } else {
+      seen.add(item[ by ])
+    }
+  })
+  return {
+    hasDuplicates: duplicates.size > 0,
+    duplicates: Array.from(duplicates),
+    deduped: dedupeByProp(arr)(by)
+  }
+}

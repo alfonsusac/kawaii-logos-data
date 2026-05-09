@@ -1,5 +1,4 @@
 import { resolveDate, type DateDef } from "./lib/date"
-import type { Output } from "./output"
 import { resolveReferencesDefinition, type ReferenceDef, type ReferencesDef } from "./resolve-references"
 import { logerror, warn } from "./pipeline"
 import { resolveLicenseDefinitions, type LicenseDef } from "./resolve-license"
@@ -7,6 +6,8 @@ import { resolveHttpsSite, site, type HttpsSite } from "./resolve-url"
 import { getFilenameFromUrl } from "./lib/get-filename-from-url"
 import { matchUrl } from "./lib/url-pattern"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
+import type { KawaiiLogosData } from "./output"
+import { checkDuplicates } from "./lib/dedupe-by-prop"
 
 // ## Definitions
 
@@ -50,36 +51,46 @@ export type ImageSourceDef =
 // ----------------------------------------------------------------------------------------
 
 export async function resolveEntriesMulti(
+  authorId: string,
   ...args: (EntriesDefinition | undefined)[]
 ) {
-  const allEntries: Output.Author.Entries = []
+  const allEntries: KawaiiLogosData.Entry[] = []
 
   for (const defs of args) {
     if (!defs) continue
-    (await resolveEntries(defs))
-      .forEach(entry => {
-        // Check for duplicate entry IDs
-        if (allEntries.some(e => e.id === entry.id)) {
-          logerror(`Duplicate entry ID found: ${ entry.id } from defs count ${ Object.keys(defs).length }. Please change the entry ID to be unique across all entries.`)
-        } else {
-          allEntries.push(entry)
-        }
-      })
+
+    const resolvedEntries = await resolveEntries(authorId, defs)
+
+    const {
+      deduped,
+      duplicates,
+      hasDuplicates,
+    } = checkDuplicates(resolvedEntries, 'id')
+
+    if (hasDuplicates)
+      warn(`Duplicate entry IDs found for author ${ authorId }: ${ duplicates.join(', ') }. Please change the entry IDs to be unique across all entries.`)
+
+    deduped.forEach(entry => allEntries.push(entry))
   }
-  return allEntries
+
+  return {
+    entries: allEntries,
+    entryIds: allEntries.map(e => e.id),
+  }
 }
 
 
 export async function resolveEntries(
+  authorId: string,
   defs: EntriesDefinition | undefined,
-): Promise<Output.Author.Entries> {
+): Promise<KawaiiLogosData.Entry[]> {
   if (!defs) return []
 
-  const entries: Output.Author.Entries = []
+  const entries: KawaiiLogosData.Entry[] = []
 
   for (const [ id, entryDef ] of Object.entries(defs)) {
 
-    const images: Output.Author.EntryItem[ 'images' ] = []
+    const images: KawaiiLogosData.EntryImage[] = []
 
     const license = resolveLicenseDefinitions(entryDef.license)
 
@@ -141,6 +152,7 @@ export async function resolveEntries(
 
     entries.push({
       id,
+      authorId,
       title: entryDef.label,
       references: entryReferences,
       imageCount: images.length,
@@ -149,7 +161,7 @@ export async function resolveEntries(
       createdAt: resolveDate(entryDef.createdAt)?.iso,
     })
 
-    entries.sort((a, b) => a.id.localeCompare(b.id)) // Sort entries by ID for consistent output
+    entries.sort((a, b) => a.id.localeCompare(b.id)) // Sort entries by ID for consistent KawaiiLogosData
   }
 
   return entries
