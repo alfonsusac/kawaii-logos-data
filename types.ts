@@ -1,59 +1,59 @@
-export type KawaiiLogoData = {
-  updatedAt: string,
-  data: {
-    authorCount: number,
-    imageCount: number,
-    authors: Output.Author[],
-    standardLicenses: Output.StandardLicense,
-    officialLinks: Output.OfficialLinks, 
+export type KawaiiLogosData = {
+  authorCount: number,
+  imageCount: number,
+  authors: KawaiiLogosData.Author[],
+  entries: KawaiiLogosData.Entry[],
+  standardLicenses: KawaiiLogosData.StandardLicense,
+  officialLinks: KawaiiLogosData.OfficialLinks,
+}
+
+
+export namespace KawaiiLogosData {
+  export type Response = {
+    updatedAt: string,
+    data: KawaiiLogosData
   }
-}
+  export type Entry = {
+    id: string,
+    authorId: string,
+    title: string,
+    imageCount: number,
+    images: {
+      src: Link,
+      references: Reference[],        // where the image was found, for linking back to the source
+      label: string,
+      style?: {
+        objectFit?: "cover" | "contain"
+      }
+    }[],
+    references: Reference[],
+    license: License,
+    createdAt: `${ number }-${ number }-${ number }` | undefined, // ISO Date string (YYYY-MM-DD) or undefined if unknown
+  }
+  export type Entries = Entry[]
+  export type EntryImage = Entry[ 'images' ][ number ]
 
-export namespace KawaiiLogoData {
-  export type Data = KawaiiLogoData[ 'data' ]
-}
-
-
-export namespace Output {
   export type Author = {
     id: string,
     displayName: string,
     pfp?: string,
     socials: {
-      type: Output.SocialTypes,
+      type: SocialTypes,
       username: string,
       url: string,
     }[],
     personalSites: string[],
     fundings: {
-      type: Output.FundingTypes,
+      type: FundingTypes,
       url: string,
     }[]
-    entries: {
-      id: string,
-      title: string,
-      imageCount: number,
-      images: {
-        src: Output.Link,
-        references: Output.Reference[],        // where the image was found, for linking back to the source
-        label: string,
-        style?: {
-          objectFit?: "cover" | "contain"
-        }
-      }[],
-      references: Output.Reference[],
-      license: Output.License,
-      createdAt: `${ number }-${ number }-${ number }` | undefined, // ISO Date string (YYYY-MM-DD) or undefined if unknown
-    }[],
-    licenses: Output.License[],
-    references: Output.Reference[],
+    entryIds: string[],
+    licenses: License[],
+    references: Reference[],
   }
   export namespace Author {
     export type SocialLinks = Author[ 'socials' ]
     export type PersonalSites = Author[ 'personalSites' ]
-    export type Entries = Author[ 'entries' ]
-    export type EntryItem = Author[ 'entries' ][ number ]
-    export type EntryItemImages = Author.EntryItem[ 'images' ]
     export type Fundings = Author[ 'fundings' ]
     export type FundingType = Author.Fundings[ number ][ 'type' ]
   }
@@ -90,7 +90,7 @@ export namespace Output {
   }
 
   export type Reference = {
-    link: Output.Link,
+    link: Link,
     dateAccessed?: string,
   }
 
@@ -151,7 +151,6 @@ export namespace Output {
     authorid: string
   }[]
 }
-
 
 
 
