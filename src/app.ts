@@ -34,6 +34,7 @@ import { ifalfahri } from "./content/ifalfahri"
 import { anwar_achilles } from "./content/anwar-achilles"
 import { shiroiame_kusu } from "./content/shiroiame-kusu"
 import { c29h25n3o5 } from "./content/c29h25n3o5_"
+import { author_definitions } from "./content/_authors"
 
 
 runApp(async () => {
@@ -47,34 +48,7 @@ runApp(async () => {
 
   const outputData = await step(
     "Resolving definitions", async () => {
-      const resolved = await resolveDefinitions({
-        aikoyori,
-        andregans,
-        anwar_achilles,
-        alfonsusac,
-        arnav,
-        cocoa_xu,
-        cr1sta_dev,
-        c29h25n3o5,
-        dsphng,
-        fenjalien,
-        fumanama,
-        g2_games,
-        hcho3,
-        hvpexe,
-        ifalfahri,
-        ldmdiamondl,
-        maxshawnwx,
-        mkpoli,
-        petricat,
-        saltyaom,
-        sawaratsuki,
-        shiroiame_kusu,
-        syke9p3,
-        styxpilled,
-        thatonecalculator,
-        urielchan,
-      })
+      const resolved = await resolveDefinitions(author_definitions)
       return resolved
     }
   )
