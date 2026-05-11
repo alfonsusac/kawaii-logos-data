@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-11T17:04:09.280Z",
+  "updatedAt": "2026-05-11T17:09:33.286Z",
   "data": {
     "authorCount": 29,
-    "imageCount": 287,
+    "imageCount": 285,
     "authors": [
       {
         "id": "aikoyori",
@@ -790,7 +790,6 @@
           }
         ],
         "personalSites": [
-          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -904,18 +903,12 @@
         "pfp": "https://avatars.githubusercontent.com/mkpoli",
         "socials": [
           {
-            "type": "x",
-            "username": "mkpoli",
-            "url": "https://x.com/mkpoli"
-          },
-          {
             "type": "github",
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           }
         ],
         "personalSites": [
-          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entryIds": [
@@ -1134,8 +1127,6 @@
           "hono",
           "html",
           "htmx",
-          "iamaprogrammer!",
-          "iamaprogrammerenglish",
           "iamdesigner!",
           "iamdesigner!english",
           "iamprogrammer!",
@@ -8476,48 +8467,6 @@
         "createdAt": "2024-04-21"
       },
       {
-        "id": "iamaprogrammer!",
-        "authorId": "sawaratsuki",
-        "title": "iamaprogrammer!",
-        "references": [
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1"
-            }
-          }
-        ],
-        "imageCount": 0,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [],
-        "createdAt": "2024-04-24"
-      },
-      {
-        "id": "iamaprogrammerenglish",
-        "authorId": "sawaratsuki",
-        "title": "iamaprogrammerenglish",
-        "references": [
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1"
-            }
-          }
-        ],
-        "imageCount": 0,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [],
-        "createdAt": "2024-04-24"
-      },
-      {
         "id": "iamdesigner!",
         "authorId": "sawaratsuki",
         "title": "IamDesigner!",
@@ -8675,6 +8624,12 @@
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1782729209066230115/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1"
+            }
           }
         ],
         "imageCount": 3,
@@ -8748,6 +8703,12 @@
             "link": {
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1782735265381159148/photo/1"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1"
             }
           }
         ],
