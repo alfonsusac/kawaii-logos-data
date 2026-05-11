@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-11T11:49:12.605Z",
+  "updatedAt": "2026-05-11T16:48:39.969Z",
   "data": {
     "authorCount": 29,
-    "imageCount": 287,
+    "imageCount": 289,
     "authors": [
       {
         "id": "aikoyori",
@@ -333,16 +333,6 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
-            "type": "x",
-            "username": "_uwu_cocoa",
-            "url": "https://x.com/_uwu_cocoa"
-          },
-          {
-            "type": "bsky",
-            "username": "uwucocoa.moe",
-            "url": "https://bsky.app/profile/uwucocoa.moe"
-          },
-          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -448,11 +438,6 @@
         "displayName": "c29h25n3o5",
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
-          {
-            "type": "x",
-            "username": "C29H25N3O5",
-            "url": "https://x.com/C29H25N3O5"
-          },
           {
             "type": "github",
             "username": "C29H25N3O5",
@@ -790,7 +775,6 @@
           }
         ],
         "personalSites": [
-          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -1315,11 +1299,13 @@
           "archlinux",
           "c",
           "c,c#,c++",
+          "c,csharp,c++",
           "c#",
           "c++",
           "clion",
           "cobol",
           "crowdstrike",
+          "csharp",
           "css完全に理解した",
           "discord",
           "flipperzero",
@@ -1371,6 +1357,11 @@
             "label": "All Rights Reserved",
             "labelShort": "All Rights Reserved",
             "href": ""
+          },
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
           }
         ],
         "references": [
@@ -11173,7 +11164,7 @@
       {
         "id": "c,c#,c++",
         "authorId": "sawaratsuki_archived",
-        "title": "C,C#,C++",
+        "title": "c,c#,c++",
         "references": [
           {
             "link": {
@@ -11182,6 +11173,20 @@
             }
           }
         ],
+        "imageCount": 0,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [],
+        "createdAt": "2024-04-21"
+      },
+      {
+        "id": "c,csharp,c++",
+        "authorId": "sawaratsuki_archived",
+        "title": "C,C#,C++",
+        "references": [],
         "imageCount": 1,
         "license": {
           "type": "standard",
@@ -11206,13 +11211,12 @@
               }
             ]
           }
-        ],
-        "createdAt": "2024-04-21"
+        ]
       },
       {
         "id": "c#",
         "authorId": "sawaratsuki_archived",
-        "title": "C#",
+        "title": "c#",
         "references": [
           {
             "link": {
@@ -11227,46 +11231,13 @@
             }
           }
         ],
-        "imageCount": 2,
+        "imageCount": 0,
         "license": {
-          "type": "standard",
-          "id": "All Rights Reserved",
-          "label": "All Rights Reserved",
-          "labelShort": "All Rights Reserved",
-          "href": ""
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
         },
-        "images": [
-          {
-            "label": "C# Purple.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/theinsidersandrush/ServiceLogos/main/C#/C# Purple.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/theinsidersandrush/ServiceLogos/blob/main/C#/C# Purple.png"
-                }
-              }
-            ]
-          },
-          {
-            "label": "C#.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/theinsidersandrush/ServiceLogos/main/C#/C#.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/theinsidersandrush/ServiceLogos/blob/main/C#/C#.png"
-                }
-              }
-            ]
-          }
-        ],
+        "images": [],
         "createdAt": "2024-04-23"
       },
       {
@@ -11403,6 +11374,52 @@
           }
         ],
         "createdAt": "2024-04-21"
+      },
+      {
+        "id": "csharp",
+        "authorId": "sawaratsuki_archived",
+        "title": "C#",
+        "references": [],
+        "imageCount": 2,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "C# Purple.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/theinsidersandrush/ServiceLogos/main/C#/C# Purple.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/theinsidersandrush/ServiceLogos/blob/main/C#/C# Purple.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "C#.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/theinsidersandrush/ServiceLogos/main/C#/C#.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/theinsidersandrush/ServiceLogos/blob/main/C#/C#.png"
+                }
+              }
+            ]
+          }
+        ]
       },
       {
         "id": "css完全に理解した",
