@@ -13,7 +13,8 @@ export function validateSlug(str: string) {
 export function slugify(str: string) {
   const newstr = str
     .toLowerCase()
-    .replace(/\s+/g, '-')
-    .replace("'", '-')
+    .replaceAll(/\s+/g, '-')
+    .replaceAll('#', 'sharp')
+    .replaceAll("'", '-')
   return newstr
 }
