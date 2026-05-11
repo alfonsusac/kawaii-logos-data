@@ -8,6 +8,7 @@ import { matchUrl } from "./lib/url-pattern"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
 import type { KawaiiLogosData } from "./output"
 import { checkDuplicates } from "./lib/dedupe-by-prop"
+import { slugify } from "./lib/slug"
 
 // ## Definitions
 
@@ -144,14 +145,13 @@ export async function resolveEntries(
       images.push({
         label: temp.label ?? getFilenameFromUrl(temp.src),
         src: resolveHttpsSite(temp.src),
-        // references: [ ...resolveReferencesDefinition(referencesDef), ...entryReferences ], // Combine in front-end instead.
         references: resolveReferencesDefinition(referencesDef),
         style: imgDef.style,
       })
     }
 
     entries.push({
-      id,
+      id: slugify(id),
       authorId,
       title: entryDef.label,
       references: entryReferences,

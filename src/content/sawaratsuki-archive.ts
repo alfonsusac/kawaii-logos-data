@@ -44,13 +44,13 @@ export const sawaratsuki_archived: AuthorDefinition = {
       { type: "add entry reference", entryKey: "c", reference: "https://x.com/sawaratsuki1004/status/1782806908417757221/photo/1" },
 
       // c,c#,c++
-      { type: "add entry createdAt", entryKey: "c,c#,c++", createdAt: "Apr 21, 2024" },
-      { type: "add entry reference", entryKey: "c,c#,c++", reference: "https://x.com/sawaratsuki1004/status/1782055072282906626/photo/1" },
+      { type: "add entry createdAt", entryKey: "c,csharp,c++", createdAt: "Apr 21, 2024" },
+      { type: "add entry reference", entryKey: "c,csharp,c++", reference: "https://x.com/sawaratsuki1004/status/1782055072282906626/photo/1" },
 
       // c#
-      { type: "add entry createdAt", entryKey: "c#", createdAt: "Apr 23, 2024" },
-      { type: "add entry reference", entryKey: "c#", reference: "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1" },
-      { type: "add entry reference", entryKey: "c#", reference: "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1" },
+      { type: "add entry createdAt", entryKey: "csharp", createdAt: "Apr 23, 2024" },
+      { type: "add entry reference", entryKey: "csharp", reference: "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1" },
+      { type: "add entry reference", entryKey: "csharp", reference: "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1" },
 
       // c++
       { type: "add entry createdAt", entryKey: "c++", createdAt: "Apr 23, 2024" },

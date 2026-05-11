@@ -54,7 +54,7 @@ export async function resolveAuthorDefinition(
     entries,
     entryIds,
   } = await stepSimple(
-    "Resolving entries and enrich data",
+    "Resolving entries",
     () => resolveEntriesMulti(id, authorDefinition.entries, scrapedEntries)
   )
 
