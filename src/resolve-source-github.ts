@@ -49,8 +49,8 @@ async function resolveGithubRepository(def: GithubSourceDef) {
     size: item.size,
     path: item.path,
     type: item.type,
-    githubPageUrl: `https://github.com/${ repo }/blob/main/${ item.path }` as const,
-    rawPageUrl: `https://raw.githubusercontent.com/${ repo }/main/${ item.path }` as const,
+    githubPageUrl: `https://github.com/${ repo }/blob/main/${ item.path.split('/').map(encodeURIComponent).join('/') }` as const,
+    rawPageUrl: `https://raw.githubusercontent.com/${ repo }/main/${ item.path.split('/').map(encodeURIComponent).join('/') }` as const,
   }))
 
   // For now, we only resolve the root license file if it exists. 
