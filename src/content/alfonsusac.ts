@@ -19,7 +19,7 @@ export const alfonsusac: AuthorDefinition = {
   entries: {
     skillissue: {
       label: "Skill Issue",
-      images: [ { src: './assets/alfon/skillissue.png' } ],
+      images: [ { src: './assets/alfon/skillissue.svg' } ],
       references: "https://x.com/alfonsusac/status/1784866280329101567",
       createdAt: "Apr 24, 2024",
       license: { type: "CC BY-NC-SA 4.0" }
