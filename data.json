@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-09T18:47:45.494Z",
+  "updatedAt": "2026-05-11T11:49:12.605Z",
   "data": {
     "authorCount": 29,
     "imageCount": 287,
@@ -839,7 +839,10 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+          "https://dendya123.tistory.com/"
+        ],
         "entryIds": [
           "docker",
           "neovim",
@@ -4426,16 +4429,16 @@
         },
         "images": [
           {
-            "label": "skillissue.png",
+            "label": "skillissue.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg"
                 }
               }
             ]
