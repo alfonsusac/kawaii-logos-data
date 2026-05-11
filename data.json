@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-11T16:48:39.969Z",
+  "updatedAt": "2026-05-11T17:04:09.280Z",
   "data": {
     "authorCount": 29,
-    "imageCount": 289,
+    "imageCount": 287,
     "authors": [
       {
         "id": "aikoyori",
@@ -333,6 +333,16 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
+            "type": "x",
+            "username": "_uwu_cocoa",
+            "url": "https://x.com/_uwu_cocoa"
+          },
+          {
+            "type": "bsky",
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          },
+          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -438,6 +448,11 @@
         "displayName": "c29h25n3o5",
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
           {
             "type": "github",
             "username": "C29H25N3O5",
@@ -775,6 +790,7 @@
           }
         ],
         "personalSites": [
+          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -1091,8 +1107,7 @@
           "bluesky",
           "bsky",
           "c",
-          "c,c#,c++",
-          "c#",
+          "c,csharp,c++",
           "c++",
           "can-you-make-a-cute-soue-kaku-pop-up-logo",
           "charcoal",
@@ -1102,6 +1117,7 @@
           "cobol",
           "computer-architecture-design",
           "crowdstrike",
+          "csharp",
           "css完全に理解した",
           "discord",
           "express",
@@ -1298,9 +1314,7 @@
         "entryIds": [
           "archlinux",
           "c",
-          "c,c#,c++",
           "c,csharp,c++",
-          "c#",
           "c++",
           "clion",
           "cobol",
@@ -1357,11 +1371,6 @@
             "label": "All Rights Reserved",
             "labelShort": "All Rights Reserved",
             "href": ""
-          },
-          {
-            "type": "unknown",
-            "label": "Unknown License",
-            "labelShort": "Unknown License"
           }
         ],
         "references": [
@@ -7488,7 +7497,7 @@
         "createdAt": "2024-04-23"
       },
       {
-        "id": "c,c#,c++",
+        "id": "c,csharp,c++",
         "authorId": "sawaratsuki",
         "title": "c,c#,c++",
         "references": [
@@ -7507,33 +7516,6 @@
         },
         "images": [],
         "createdAt": "2024-04-21"
-      },
-      {
-        "id": "c#",
-        "authorId": "sawaratsuki",
-        "title": "c#",
-        "references": [
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1"
-            }
-          },
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1"
-            }
-          }
-        ],
-        "imageCount": 0,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [],
-        "createdAt": "2024-04-23"
       },
       {
         "id": "c++",
@@ -7795,6 +7777,33 @@
         },
         "images": [],
         "createdAt": "2024-04-21"
+      },
+      {
+        "id": "csharp",
+        "authorId": "sawaratsuki",
+        "title": "c#",
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1"
+            }
+          }
+        ],
+        "imageCount": 0,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [],
+        "createdAt": "2024-04-23"
       },
       {
         "id": "css完全に理解した",
@@ -11162,9 +11171,9 @@
         "createdAt": "2024-04-23"
       },
       {
-        "id": "c,c#,c++",
+        "id": "c,csharp,c++",
         "authorId": "sawaratsuki_archived",
-        "title": "c,c#,c++",
+        "title": "C,C#,C++",
         "references": [
           {
             "link": {
@@ -11173,20 +11182,6 @@
             }
           }
         ],
-        "imageCount": 0,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [],
-        "createdAt": "2024-04-21"
-      },
-      {
-        "id": "c,csharp,c++",
-        "authorId": "sawaratsuki_archived",
-        "title": "C,C#,C++",
-        "references": [],
         "imageCount": 1,
         "license": {
           "type": "standard",
@@ -11211,34 +11206,8 @@
               }
             ]
           }
-        ]
-      },
-      {
-        "id": "c#",
-        "authorId": "sawaratsuki_archived",
-        "title": "c#",
-        "references": [
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1"
-            }
-          },
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1"
-            }
-          }
         ],
-        "imageCount": 0,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "c++",
@@ -11379,7 +11348,20 @@
         "id": "csharp",
         "authorId": "sawaratsuki_archived",
         "title": "C#",
-        "references": [],
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/sawaratsuki1004/status/1782802041435509088/photo/1"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/sawaratsuki1004/status/1782834027030036948/photo/1"
+            }
+          }
+        ],
         "imageCount": 2,
         "license": {
           "type": "standard",
@@ -11419,7 +11401,8 @@
               }
             ]
           }
-        ]
+        ],
+        "createdAt": "2024-04-23"
       },
       {
         "id": "css完全に理解した",
