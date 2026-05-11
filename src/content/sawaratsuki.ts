@@ -32,8 +32,8 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "haskell", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "hono", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "html", createdAt: "Apr 24, 2024" },
-      { type: "add entry createdAt", entryKey: "iamaprogrammer!", createdAt: "Apr 24, 2024" },
-      { type: "add entry createdAt", entryKey: "iamaprogrammerenglish", createdAt: "Apr 24, 2024" },
+      { type: "add entry createdAt", entryKey: "iamprogrammer!", createdAt: "Apr 24, 2024" },
+      { type: "add entry createdAt", entryKey: "iamprogrammerenglish", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "photoshop", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "python", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "qwik.js", createdAt: "Apr 24, 2024" },
@@ -421,10 +421,10 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry reference", entryKey: "can-you-make-a-cute-soue-kaku-pop-up-logo", reference: "https://x.com/sawaratsuki1004/status/1789301035636506849/photo/1" },
 
       // iamprogrammer!
-      { type: "add entry reference", entryKey: "iamaprogrammer!", reference: "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1" },
+      { type: "add entry reference", entryKey: "iamprogrammer!", reference: "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1" },
 
       // iamprogrammerenglish
-      { type: "add entry reference", entryKey: "iamaprogrammerenglish", reference: "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1" },
+      { type: "add entry reference", entryKey: "iamprogrammerenglish", reference: "https://x.com/sawaratsuki1004/status/1790009120554135859/photo/1" },
 
       // atprotocol
       { type: "add entry createdAt", entryKey: "atprotocol", createdAt: "May 14, 2024" },
