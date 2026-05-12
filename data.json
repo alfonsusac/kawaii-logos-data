@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T03:56:27.518Z",
+  "updatedAt": "2026-05-12T04:32:33.252Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -178,9 +178,7 @@
             "url": "https://github.com/AnwarAchilles"
           }
         ],
-        "personalSites": [
-          "https://anwarachilles.pro"
-        ],
+        "personalSites": [],
         "entryIds": [
           "codeigniter",
           "nestjs",
