@@ -7,6 +7,9 @@ export const anwar_achilles: AuthorDefinition = {
     transform: [
       // { type: "replace", from: "-new/", to: "/new-"}
     ],
+    applyCssStyle: {
+      objectFit: "cover",
+    },
     postProcess: [
       // From commit history
       { type: "add entry createdAt", createdAt: "Oct 6, 2024", entryKey: "php", },

@@ -17,7 +17,10 @@ export const cr1sta_dev: AuthorDefinition = {
       { type: "add entry createdAt", createdAt: "Apr 22, 2024", entryKey: "react", },
       { type: "add entry createdAt", createdAt: "Apr 22, 2024", entryKey: "nuxtjs", },
       { type: "add entry createdAt", createdAt: "Apr 23, 2024", entryKey: "rubyonrails", },
-    ]
+    ],
+    applyCssStyle: {
+      objectFit: "cover",
+    },
   },
   fundings: [
     { type: "ko-fi", url: "https://ko-fi.com/J3J0152VNW" },
