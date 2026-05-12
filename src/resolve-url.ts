@@ -62,7 +62,7 @@ export function resolveHttpsSite(site: HttpsSite): KawaiiLogosData.Link {
   }
   return {
     type,
-    url: site,
+    url,
   }
 }
 

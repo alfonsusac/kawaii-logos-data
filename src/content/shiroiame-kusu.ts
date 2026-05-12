@@ -9,6 +9,7 @@ export const shiroiame_kusu: AuthorDefinition = {
     ],
     postProcess: [
       { type: "add entry createdAt", entryKey: "windows", createdAt: "Aug 28, 2024" },
+      { type: "override image style", entryKey: "windows", imageIndex: 0, style: { objectFit: "cover" } },
     ],
   },
   // logVerbose: true

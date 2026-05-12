@@ -15,6 +15,7 @@ export type ReferencesDef = ArrayOrSingle<ReferenceDef>
 
 export function resolveReferencesDefinition(...references: ((ReferenceDef | undefined)[] | ReferenceDef | undefined)[]): KawaiiLogosData.Reference[] {
   const referencesList: ReferenceDef[] = []
+  
   for (const refs of references) {
     if (!refs) continue
     if (Array.isArray(refs)) {
@@ -27,6 +28,7 @@ export function resolveReferencesDefinition(...references: ((ReferenceDef | unde
   const referencesSet = new Map<string, KawaiiLogosData.Reference>()
   for (const ref of referencesList) {
     const link = typeof ref === "string" ? resolveHttpsSite(site(ref)) : resolveHttpsSite(ref.site)
+    console.log(link)
     if (referencesSet.has(link.url)) {
       warn(`Duplicate reference link found: ${ link.url }. Consider deduping references.`)
     }
