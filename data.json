@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T05:55:07.626Z",
+  "updatedAt": "2026-05-12T05:56:54.672Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -3736,7 +3736,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/codeigniter/default.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "shadowed.png",
@@ -3751,7 +3754,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/codeigniter/shadowed.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-10-06"
@@ -3789,7 +3795,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/nestjs/default.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "shadowed.png",
@@ -3804,7 +3813,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/nestjs/shadowed.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-10-07"
@@ -3842,7 +3854,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php/bordered-dark.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "bordered-light.png",
@@ -3857,7 +3872,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php/bordered-light.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "default.png",
@@ -3872,7 +3890,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php/default.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-10-06"
@@ -3910,7 +3931,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php-new/default.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "shadowed.png",
@@ -3925,7 +3949,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/php-new/shadowed.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-10-08"
@@ -3963,7 +3990,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/rune/bordered.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "default.png",
@@ -3978,7 +4008,10 @@
                   "url": "https://github.com/AnwarAchilles/VTuber-Style-Logos/blob/main/rune/default.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-09-18"
@@ -4637,7 +4670,10 @@
                   "url": "https://github.com/Crysta1221/tech_logos/blob/main/jyo-gi.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ]
       },
@@ -4674,7 +4710,10 @@
                   "url": "https://github.com/Crysta1221/tech_logos/blob/main/nuxtjs/nuxtjs.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-04-22"
@@ -4712,7 +4751,10 @@
                   "url": "https://github.com/Crysta1221/tech_logos/blob/main/react/react.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-04-22"
@@ -4750,7 +4792,10 @@
                   "url": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           },
           {
             "label": "rubyonrails_fix.png",
@@ -4765,7 +4810,10 @@
                   "url": "https://github.com/Crysta1221/tech_logos/blob/main/rubyonrails/rubyonrails_fix.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-04-23"
@@ -4803,7 +4851,10 @@
                   "url": "https://github.com/Crysta1221/tech_logos/blob/main/svelte/svelte.png"
                 }
               }
-            ]
+            ],
+            "style": {
+              "objectFit": "cover"
+            }
           }
         ],
         "createdAt": "2024-04-22"
