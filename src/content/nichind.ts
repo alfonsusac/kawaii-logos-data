@@ -10,11 +10,13 @@ export const nichind: AuthorDefinition = {
     'awake.moe': {
       label: "Awake.moe",
       images: [
-        { src: "resolved:uwu:https://awake.moe/awake.png" },
-        { src: "resolved:uwu:https://awake.moe/awake.png" },
+        { src: "./assets/awake.png" },
+        // Using direct link has CORS issues, so we have to self-host it.
+        // { src: "resolved:uwu:https://awake.moe/awake.png" },
       ],
       createdAt: "May 4, 2024",
       references: [
+        "uwu:https://awake.moe",
         "https://x.com/n1chind/status/2051017143362203786/photo/1",
       ]
     }
