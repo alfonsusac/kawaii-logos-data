@@ -131,6 +131,12 @@ export async function resolveEntries(
       }
 
       if (imgDef.src.startsWith("./assets/")) {
+        // check if file exists first.
+        const file = Bun.file(imgDef.src)
+        if (!await file.exists()) {
+          logerror(`${ id }: Local asset file does not exist. Label: ${ imgDef.label }. Url: ${ imgDef.src }`)
+          continue
+        }
         const rawUrl = `https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/${ imgDef.src.replace('./assets/', '') }` as const
         const pageUrl = site(rawUrl.replace("raw.githubusercontent.com", "github.com").replace("/main-2/", "/blob/main-2/"))
         referencesDef.push(pageUrl)
