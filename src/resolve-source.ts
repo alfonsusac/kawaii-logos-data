@@ -28,6 +28,7 @@ export type SourceDef = {
   licenseFallback?: LicenseDef,
   applyCssStyle?: ImageDefinition[ 'style' ]
   logTransformPaths?: boolean,
+  omitSocials?: boolean,
 } & (
     | { from: "github", repo: `https://github.com/${ string }/${ string }` }
   )
@@ -113,8 +114,10 @@ export async function resolveSourceDefinition(
     () => resolveSourcePostProcess(scrapedEntries, def.postProcess)
   )
 
-  // Merge scraped socials with socials from the author definition.
-  scrapedSocials.push(...(sourceResult.socials ?? []))
+  if (!def.omitSocials) {
+    // Merge scraped socials with socials from the author definition.
+    scrapedSocials.push(...(sourceResult.socials ?? []))
+  }
 
   return {
     scrapedEntries: postProcessedEntries,

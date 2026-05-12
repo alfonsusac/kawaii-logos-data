@@ -2,6 +2,7 @@ import type { AuthorDefinition } from "../resolve-author"
 
 export const sawaratsuki_archived: AuthorDefinition = {
   source: {
+    omitSocials: true,
     from: "github",
     repo: "https://github.com/theinsidersandrush/ServiceLogos",
     transform: [
