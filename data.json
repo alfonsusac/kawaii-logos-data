@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-12T17:19:04.121Z",
+  "updatedAt": "2026-05-12T17:24:23.223Z",
   "data": {
     "authorCount": 29,
-    "imageCount": 285,
+    "imageCount": 284,
     "authors": [
       {
         "id": "aikoyori",
@@ -10,14 +10,14 @@
         "pfp": "https://avatars.githubusercontent.com/Aikoyori",
         "socials": [
           {
-            "type": "x",
-            "username": "Aikoyori",
-            "url": "https://x.com/Aikoyori"
-          },
-          {
             "type": "github",
             "username": "Aikoyori",
             "url": "https://github.com/Aikoyori"
+          },
+          {
+            "type": "x",
+            "username": "Aikoyori",
+            "url": "https://x.com/Aikoyori"
           },
           {
             "type": "bsky",
@@ -178,9 +178,7 @@
             "url": "https://github.com/AnwarAchilles"
           }
         ],
-        "personalSites": [
-          "https://anwarachilles.pro"
-        ],
+        "personalSites": [],
         "entryIds": [
           "codeigniter",
           "nestjs",
@@ -333,16 +331,6 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
-            "type": "x",
-            "username": "_uwu_cocoa",
-            "url": "https://x.com/_uwu_cocoa"
-          },
-          {
-            "type": "bsky",
-            "username": "uwucocoa.moe",
-            "url": "https://bsky.app/profile/uwucocoa.moe"
-          },
-          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -389,14 +377,14 @@
         "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
-            "type": "x",
-            "username": "cr1sta_dev",
-            "url": "https://x.com/cr1sta_dev"
-          },
-          {
             "type": "github",
             "username": "Crysta1221",
             "url": "https://github.com/Crysta1221"
+          },
+          {
+            "type": "x",
+            "username": "cr1sta_dev",
+            "url": "https://x.com/cr1sta_dev"
           }
         ],
         "personalSites": [
@@ -448,11 +436,6 @@
         "displayName": "c29h25n3o5",
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
-          {
-            "type": "x",
-            "username": "C29H25N3O5",
-            "url": "https://x.com/C29H25N3O5"
-          },
           {
             "type": "github",
             "username": "C29H25N3O5",
@@ -603,10 +586,6 @@
           }
         ],
         "personalSites": [
-          "https://ko-fi.com/g2_games",
-          "https://g2games.dev/git/",
-          "https://patchii.net/G2_Games/",
-          "https://codeberg.org/g2_games",
           "https://g2games.dev",
           "https://g2games.dev"
         ],
@@ -713,11 +692,6 @@
         "pfp": "https://avatars.githubusercontent.com/icarusgk",
         "socials": [
           {
-            "type": "x",
-            "username": "icarusgkx",
-            "url": "https://x.com/icarusgkx"
-          },
-          {
             "type": "github",
             "username": "icarusgk",
             "url": "https://github.com/icarusgk"
@@ -790,7 +764,6 @@
           }
         ],
         "personalSites": [
-          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -839,10 +812,7 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [
-          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
-          "https://dendya123.tistory.com/"
-        ],
+        "personalSites": [],
         "entryIds": [
           "docker",
           "neovim",
@@ -904,18 +874,12 @@
         "pfp": "https://avatars.githubusercontent.com/mkpoli",
         "socials": [
           {
-            "type": "x",
-            "username": "mkpoli",
-            "url": "https://x.com/mkpoli"
-          },
-          {
             "type": "github",
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           }
         ],
         "personalSites": [
-          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entryIds": [
@@ -1105,7 +1069,6 @@
           "async-await-very-difficult",
           "atprotocol",
           "bluesky",
-          "bsky",
           "c",
           "c,csharp,c++",
           "c++",
@@ -1370,11 +1333,6 @@
         "displayName": "shiroiame_kusu",
         "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
         "socials": [
-          {
-            "type": "x",
-            "username": "Shiroiame_Kusu",
-            "url": "https://x.com/Shiroiame_Kusu"
-          },
           {
             "type": "github",
             "username": "Shiroiame-Kusu",
@@ -5686,6 +5644,12 @@
               "type": "twitter-post",
               "url": "https://x.com/icarusgkx/status/1781058139552420114/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://vuejs.org/?uwu"
+            }
           }
         ],
         "imageCount": 6,
@@ -7167,6 +7131,12 @@
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1862024819245735937/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://angular.io/?uwu=true"
+            }
           }
         ],
         "imageCount": 3,
@@ -7416,6 +7386,12 @@
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1847056527481516540/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://bsky.app/?kawaii=true"
+            }
           }
         ],
         "imageCount": 3,
@@ -7473,26 +7449,6 @@
           }
         ],
         "createdAt": "2024-04-30"
-      },
-      {
-        "id": "bsky",
-        "authorId": "sawaratsuki",
-        "title": "bsky",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://bsky.app/?kawaii=true"
-            }
-          }
-        ],
-        "imageCount": 0,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": []
       },
       {
         "id": "c",
@@ -8296,6 +8252,12 @@
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1798356090238972415/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://www.haskell.org/?uwu=true"
+            }
           }
         ],
         "imageCount": 3,
@@ -8381,6 +8343,12 @@
             "link": {
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1790008948893892712/photo/1"
+            }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://hono.dev/?kawaii=true"
             }
           }
         ],
@@ -9380,6 +9348,12 @@
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1794512798333948334/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://misskey.io/"
+            }
           }
         ],
         "imageCount": 3,
@@ -9822,12 +9796,6 @@
         "references": [
           {
             "link": {
-              "type": "official-website-usage",
-              "url": "https://react.dev/?uwu=true"
-            }
-          },
-          {
-            "link": {
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1785303283709751766/photo/1"
             }
@@ -9842,6 +9810,12 @@
             "link": {
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1788871451489206318/photo/1"
+            }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://react.dev/?uwu=true"
             }
           }
         ],
