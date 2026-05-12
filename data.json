@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T04:44:48.149Z",
+  "updatedAt": "2026-05-12T05:13:10.443Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -333,6 +333,16 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
+            "type": "x",
+            "username": "_uwu_cocoa",
+            "url": "https://x.com/_uwu_cocoa"
+          },
+          {
+            "type": "bsky",
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          },
+          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -438,6 +448,11 @@
         "displayName": "c29h25n3o5",
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
           {
             "type": "github",
             "username": "C29H25N3O5",
