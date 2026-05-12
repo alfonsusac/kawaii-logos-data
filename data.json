@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T03:17:32.133Z",
+  "updatedAt": "2026-05-12T03:51:41.559Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -10,14 +10,14 @@
         "pfp": "https://avatars.githubusercontent.com/Aikoyori",
         "socials": [
           {
-            "type": "github",
-            "username": "Aikoyori",
-            "url": "https://github.com/Aikoyori"
-          },
-          {
             "type": "x",
             "username": "Aikoyori",
             "url": "https://x.com/Aikoyori"
+          },
+          {
+            "type": "github",
+            "username": "Aikoyori",
+            "url": "https://github.com/Aikoyori"
           },
           {
             "type": "bsky",
@@ -178,7 +178,9 @@
             "url": "https://github.com/AnwarAchilles"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://anwarachilles.pro"
+        ],
         "entryIds": [
           "codeigniter",
           "nestjs",
@@ -331,6 +333,16 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
+            "type": "x",
+            "username": "_uwu_cocoa",
+            "url": "https://x.com/_uwu_cocoa"
+          },
+          {
+            "type": "bsky",
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          },
+          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -374,14 +386,22 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
+        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
+          },
+          {
+            "type": "github",
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://crystaworld.dev"
+        ],
         "entryIds": [
           "jyo-gi",
           "nuxtjs",
@@ -426,7 +446,19 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
+        "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
+          {
+            "type": "github",
+            "username": "C29H25N3O5",
+            "url": "https://github.com/C29H25N3O5"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "clion",
@@ -571,6 +603,10 @@
           }
         ],
         "personalSites": [
+          "https://ko-fi.com/g2_games",
+          "https://g2games.dev/git/",
+          "https://patchii.net/G2_Games/",
+          "https://codeberg.org/g2_games",
           "https://g2games.dev",
           "https://g2games.dev"
         ],
@@ -735,7 +771,13 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
+        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "socials": [
+          {
+            "type": "github",
+            "username": "ifalfahri",
+            "url": "https://github.com/ifalfahri"
+          },
           {
             "type": "behance",
             "username": "ifalfahri",
@@ -748,6 +790,8 @@
           }
         ],
         "personalSites": [
+          "https://dribbble.com/ifalfahri",
+          "https://ifalf.com",
           "https://ifalf.com/"
         ],
         "entryIds": [
@@ -795,7 +839,10 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+          "https://dendya123.tistory.com/"
+        ],
         "entryIds": [
           "docker",
           "neovim",
@@ -857,12 +904,18 @@
         "pfp": "https://avatars.githubusercontent.com/mkpoli",
         "socials": [
           {
+            "type": "x",
+            "username": "mkpoli",
+            "url": "https://x.com/mkpoli"
+          },
+          {
             "type": "github",
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           }
         ],
         "personalSites": [
+          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entryIds": [
@@ -933,7 +986,14 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/PetricaT",
+        "socials": [
+          {
+            "type": "github",
+            "username": "PetricaT",
+            "url": "https://github.com/PetricaT"
+          }
+        ],
         "personalSites": [
           "https://petricat.github.io/PetricaT/"
         ],
@@ -1324,8 +1384,22 @@
       {
         "id": "shiroiame_kusu",
         "displayName": "shiroiame_kusu",
-        "socials": [],
-        "personalSites": [],
+        "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
+        "socials": [
+          {
+            "type": "x",
+            "username": "Shiroiame_Kusu",
+            "url": "https://x.com/Shiroiame_Kusu"
+          },
+          {
+            "type": "github",
+            "username": "Shiroiame-Kusu",
+            "url": "https://github.com/Shiroiame-Kusu"
+          }
+        ],
+        "personalSites": [
+          "https://blog.nyat.icu"
+        ],
         "entryIds": [
           "windows"
         ],
@@ -1357,7 +1431,14 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/syke9p3",
+        "socials": [
+          {
+            "type": "github",
+            "username": "syke9p3",
+            "url": "https://github.com/syke9p3"
+          }
+        ],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
