@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T05:13:10.443Z",
+  "updatedAt": "2026-05-12T05:21:02.061Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -449,11 +449,6 @@
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
           {
-            "type": "x",
-            "username": "C29H25N3O5",
-            "url": "https://x.com/C29H25N3O5"
-          },
-          {
             "type": "github",
             "username": "C29H25N3O5",
             "url": "https://github.com/C29H25N3O5"
@@ -790,7 +785,6 @@
           }
         ],
         "personalSites": [
-          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -839,10 +833,7 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [
-          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
-          "https://dendya123.tistory.com/"
-        ],
+        "personalSites": [],
         "entryIds": [
           "docker",
           "neovim",
