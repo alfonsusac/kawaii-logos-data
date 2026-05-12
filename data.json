@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T07:00:34.783Z",
+  "updatedAt": "2026-05-12T11:32:09.661Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -1291,24 +1291,8 @@
       {
         "id": "sawaratsuki_archived",
         "displayName": "sawaratsuki_archived",
-        "pfp": "https://avatars.githubusercontent.com/theinsidersandrush",
-        "socials": [
-          {
-            "type": "bsky",
-            "username": "did:plc:zdtbxbe2lvxc3aiyplqivtyd",
-            "url": "https://bsky.app/profile/did:plc:zdtbxbe2lvxc3aiyplqivtyd"
-          },
-          {
-            "type": "github",
-            "username": "theinsidersandrush",
-            "url": "https://github.com/theinsidersandrush"
-          }
-        ],
-        "personalSites": [
-          "https://youtube.com/theinsidersandrush",
-          "https://www.bbc.co.uk/sounds/play/live:bbc_radio_one",
-          "https://theinsidersandrush.github.io"
-        ],
+        "socials": [],
+        "personalSites": [],
         "entryIds": [
           "archlinux",
           "c",
