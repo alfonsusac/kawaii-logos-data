@@ -351,11 +351,6 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "vrchat", createdAt: "Apr 21, 2024" },
       { type: "add entry createdAt", entryKey: "vue", createdAt: "Apr 21, 2024" },
 
-      // usages
-      { type: "add entry reference", entryKey: "react", reference: "uwu:https://react.dev/?uwu=true" },
-      { type: "add entry reference", entryKey: "bsky", reference: "uwu:https://bsky.app/?kawaii=true" },
-
-      
       // scratch (missing src)
       { type: "add entry createdAt", entryKey: "scratch", createdAt: "May 1, 2024" },
       { type: "add entry reference", entryKey: "scratch", reference: "https://x.com/sawaratsuki1004/status/1785367442904240627/photo/1" },
@@ -511,6 +506,14 @@ export const sawaratsuki: AuthorDefinition = {
       { type: "add entry createdAt", entryKey: "技術者倫理", createdAt: "May 6, 2026" },
       { type: "add entry reference", entryKey: "技術者倫理", reference: "https://x.com/sawaratsuki1004/status/2052031919177769212/photo/1" },
 
+
+      // UWU official logo usages. Cross-reference from src/content/_official-links.ts
+      { type: "add entry reference", entryKey: "haskell", reference: "uwu:https://www.haskell.org/?uwu=true" },
+      { type: "add entry reference", entryKey: "bluesky", reference: "uwu:https://bsky.app/?kawaii=true" },
+      { type: "add entry reference", entryKey: "angular", reference: "uwu:https://angular.io/?uwu=true" },
+      { type: "add entry reference", entryKey: "hono", reference: "uwu:https://hono.dev/?kawaii=true" },
+      { type: "add entry reference", entryKey: "misskey.io", reference: "uwu:https://misskey.io/" },
+      { type: "add entry reference", entryKey: "react", reference: "uwu:https://react.dev/?uwu=true" },
     ]
   },
   references: [

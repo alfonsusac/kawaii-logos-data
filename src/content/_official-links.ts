@@ -48,3 +48,5 @@ export const official_links = [
   url: HttpsSite
   authorid: keyof typeof author_definitions
 }[]
+
+// https://github.com/alfonsusac/kawaii-logos-data/issues/7

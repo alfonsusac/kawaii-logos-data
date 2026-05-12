@@ -21,6 +21,7 @@ export const icarusgk: AuthorDefinition = {
 
       { type: "add entry createdAt", entryKey: "vue", createdAt: "Apr 19, 2024" },
       { type: "add entry reference", entryKey: "vue", reference: "https://x.com/icarusgkx/status/1781058139552420114/photo/1" },
+      { type: "add entry reference", entryKey: "vue", reference: "uwu:https://vuejs.org/?uwu" },
 
       // Pinia (missing src)
       { type: "add entry createdAt", entryKey: "pinia", createdAt: "Apr 20, 2024" },
