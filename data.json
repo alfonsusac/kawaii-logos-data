@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T05:56:54.672Z",
+  "updatedAt": "2026-05-12T07:00:34.783Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -5085,32 +5085,13 @@
             }
           }
         ],
-        "imageCount": 1,
+        "imageCount": 0,
         "license": {
           "type": "unknown",
           "label": "Unknown License",
           "labelShort": "Unknown License"
         },
-        "images": [
-          {
-            "label": "logicsticker.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/logicsticker.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/logicsticker.png"
-                }
-              }
-            ],
-            "style": {
-              "objectFit": "cover"
-            }
-          }
-        ],
+        "images": [],
         "createdAt": "2024-04-20"
       },
       {
