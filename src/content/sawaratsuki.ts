@@ -575,7 +575,7 @@ export const sawaratsuki: AuthorDefinition = {
     }
 
   },
-  logVerbose: true
+  // logVerbose: true
 }
 
 // No source file: (from skeb) 

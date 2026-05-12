@@ -19,6 +19,8 @@ jobs:
     name: Check the repos
     runs-on: ubuntu-latest
     environment: production
+    env:
+      REVALIDATE_TOKEN: ${{ secrets.REVALIDATE_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v6
