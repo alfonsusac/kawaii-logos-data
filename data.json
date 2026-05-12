@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-12T11:32:09.661Z",
+  "updatedAt": "2026-05-12T17:19:04.121Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -6142,12 +6142,18 @@
         "references": [
           {
             "link": {
+              "type": "official-website-usage",
+              "url": "https://awake.moe"
+            }
+          },
+          {
+            "link": {
               "type": "twitter-post",
               "url": "https://x.com/n1chind/status/2051017143362203786/photo/1"
             }
           }
         ],
-        "imageCount": 2,
+        "imageCount": 1,
         "license": {
           "type": "unknown",
           "label": "Unknown License",
@@ -6157,18 +6163,17 @@
           {
             "label": "awake.png",
             "src": {
-              "type": "official-website-usage",
-              "url": "https://awake.moe/awake.png"
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/awake.png"
             },
-            "references": []
-          },
-          {
-            "label": "awake.png",
-            "src": {
-              "type": "official-website-usage",
-              "url": "https://awake.moe/awake.png"
-            },
-            "references": []
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/awake.png"
+                }
+              }
+            ]
           }
         ],
         "createdAt": "2024-05-04"
