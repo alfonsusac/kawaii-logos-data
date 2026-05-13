@@ -46,3 +46,9 @@ Also check out these other cool projects
 
 - [irfanhakim-as/vtuber-icons](https://github.com/irfanhakim-as/vtuber-icons)
 - [Ender-Wiggin2019/VTuber-Logos-Collection](https://github.com/Ender-Wiggin2019/VTuber-Logos-Collection)
+
+
+## Todo
+
+- [ ] Add more pictures from twitter, soruced from irfanhakim's repo.
+- [ ] Add more pictures from other artists, soruced from ender-wiggin's repos.
