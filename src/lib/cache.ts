@@ -1,6 +1,6 @@
 // WIP
 
-import { logWithType } from "../pipeline"
+import { logWithType, warn } from "../pipeline"
 import { black } from "./ansii"
 import { durationToMs, milisecondToHumanReadableComplete, type Duration } from "./duration"
 import { logger } from "./log"
@@ -115,8 +115,9 @@ export function createFileCache(opts: {
           const content = await opts.readJson(file)
           validateCacheData(content)
           cacheData = content
+          log(`Cache data initialized successfully. Count: ${ Object.keys(cacheData).length } entries. Size: ${ Math.round(file.size / 1024) } kb.`)
         } catch (error) {
-          console.warn("  - Failed to read or parse cache file, resetting cache data. Error:", error)
+          warn("  - Failed to read or parse cache file, resetting cache data. Error:", error)
           mutateAndEnqueueResetCacheData()
         }
       }
@@ -137,7 +138,7 @@ export function createFileCache(opts: {
     cacheData[ key ] = { value, expiresAt }
     enqueueSaveCacheData()
       .catch((error) => {
-        console.warn("Failed to set cache entry, ignoring cache", error)
+        warn("Failed to set cache entry, ignoring cache", error)
       })
     return value
   }
