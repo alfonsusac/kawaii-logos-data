@@ -11,7 +11,9 @@ export async function revalidateMainWebsite() {
         "Content-Type": "application/json"
       },
       method: "POST"
-    }).then((res) => res.json())
+    }).then((res) => res.json()).catch((err) => {
+      console.error("Failed to revalidate main website:", err)
+    })
   }
   fetch(`http://localhost:3000/revalidate`, {
     body: JSON.stringify({
@@ -21,5 +23,7 @@ export async function revalidateMainWebsite() {
       "Content-Type": "application/json"
     },
     method: "POST"
-  }).then((res) => res.json())
+  }).then((res) => res.json()).catch((err) => {
+    console.error("Failed to revalidate local development server:", err)
+  })
 }
