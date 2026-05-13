@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-13T07:45:23.322Z",
+  "updatedAt": "2026-05-13T10:41:29.691Z",
   "data": {
     "authorCount": 29,
     "imageCount": 285,
@@ -1278,6 +1278,12 @@
               "type": "twitter-post",
               "url": "https://x.com/sawaratsuki1004/status/1837721059266908392/photo/1"
             }
+          },
+          {
+            "link": {
+              "type": "skeb-creator-page",
+              "url": "https://skeb.jp/@sawaratsuki"
+            }
           }
         ],
         "fundings": [
@@ -1904,7 +1910,14 @@
         "id": "imhex",
         "authorId": "aikoyori",
         "title": "ImHex",
-        "references": [],
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/WerWolv/status/1806807278416281861?s=20"
+            }
+          }
+        ],
         "imageCount": 6,
         "license": {
           "reference": {
