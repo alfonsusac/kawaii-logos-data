@@ -34,7 +34,7 @@ runApp(async () => {
       await step("Saving to disk",
         () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
       await step("Saving to data branch",
-        () => saveToDataBranch(output, "main-2-data"))
+        () => saveToDataBranch(output, "data"))
     }
   )
 
