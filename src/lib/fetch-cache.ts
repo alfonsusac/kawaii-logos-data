@@ -102,39 +102,52 @@ export async function appFetch2<M extends "json" | "text" = "json">(
     }
   }
 
-  const response = await fetch(url, opts)
-  const ratelimit = resultOpts?.ratelimit ? resultOpts.ratelimit(response) : undefined
-  const payloadMode = resultOpts?.payloadMode || "json"
-  const payload = payloadMode === "text"
-    ? await textOrUndefined(response)
-    : await jsonOrUndefined(response)
+  try {
+    const response = await fetch(url, opts)
 
-  if (cache) {
-    const cacheDurationFn
-      = typeof cache.opts.duration === "function" ? cache.opts.duration
-        : () => cache.opts.duration as Duration
+    const ratelimit = resultOpts?.ratelimit ? resultOpts.ratelimit(response) : undefined
+    const payloadMode = resultOpts?.payloadMode || "json"
+    const payload = payloadMode === "text"
+      ? await textOrUndefined(response)
+      : await jsonOrUndefined(response)
 
-    const cacheDuration = cacheDurationFn(response)
-    if (durationToMs(cacheDuration) !== 0) {
-      const cachedResult: CachedResult = {
-        payload: payload,
-        status: response.status,
-        statusText: response.statusText,
-        ratelimit,
+    if (cache) {
+      const cacheDurationFn
+        = typeof cache.opts.duration === "function" ? cache.opts.duration
+          : () => cache.opts.duration as Duration
+
+      const cacheDuration = cacheDurationFn(response)
+      if (durationToMs(cacheDuration) !== 0) {
+        const cachedResult: CachedResult = {
+          payload: payload,
+          status: response.status,
+          statusText: response.statusText,
+          ratelimit,
+        }
+        cache.entry.set(cachedResult, cacheDuration)
       }
-      cache.entry.set(cachedResult, cacheDuration)
+    }
+
+    printDetail(ratelimit)
+    return {
+      response,
+      payload: payload,
+      status: response.status,
+      statusText: response.statusText,
+      cache: cacheStatus,
+      ratelimit,
+    } satisfies AppFetchReturn
+
+  } catch (error) {
+    console.log("Failed fetching url:", url)
+    return {
+      response: undefined,
+      payload: undefined,
+      status: 0,
+      statusText: (error as Error).message,
+      cache: cacheStatus,
     }
   }
-
-  printDetail(ratelimit)
-  return {
-    response,
-    payload: payload,
-    status: response.status,
-    statusText: response.statusText,
-    cache: cacheStatus,
-    ratelimit,
-  } satisfies AppFetchReturn
 }
 
 
