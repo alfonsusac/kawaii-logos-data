@@ -105,10 +105,12 @@ export function createFileCache(opts: {
   async function initializeCacheData() {
     await enqueueInitialization(async () => {
       if (cacheData !== null) {
+        log("Cache data already initialized, skipping initialization.")
         return
       }
       const exists = await file.exists()
       if (!exists) {
+        log("Cache file does not exist, initializing new cache data.")
         await mutateAndEnqueueResetCacheData()
       } else {
         try {
