@@ -23,7 +23,7 @@ export async function revalidateMainWebsite() {
       },
       method: "POST"
     }).then((res) => res.json()).catch((err) => {
-      console.error("Failed to revalidate main website:", err)
+      console.error("Failed to revalidate preview website:", err)
     })
   }
   fetch(`http://localhost:3000/revalidate`, {

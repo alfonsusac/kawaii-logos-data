@@ -524,6 +524,8 @@ export const sawaratsuki: AuthorDefinition = {
     "https://x.com/sawaratsuki1004/status/1782831616794227005/photo/1", // Apr 24, 2024
     "https://x.com/sawaratsuki1004/status/1788545426452623822/photo/1", // May 9, 2024
     "https://x.com/sawaratsuki1004/status/1837721059266908392/photo/1", // Sep 22, 2024
+
+    "https://skeb.jp/@sawaratsuki"
   ],
   fundings: [
     { type: "skeb", url: "https://skeb.jp/@sawaratsuki" }

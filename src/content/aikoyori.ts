@@ -50,6 +50,8 @@ export const aikoyori: AuthorDefinition = {
       { type: "add entry reference", entryKey: "osu", reference: "https://x.com/Aikoyori/status/1785661915156603054/photo/1" },
       { type: "add entry createdAt", entryKey: "osu", createdAt: "May 1, 2024" },
 
+      { type: "add entry reference", entryKey: "imhex", reference: "https://x.com/WerWolv/status/1806807278416281861?s=20" },
+
       // From Commit History
       { type: "add entry createdAt", entryKey: "imhex", createdAt: "Apr 22, 2024" },
       { type: "add entry createdAt", entryKey: "mirin-template-for-notitg", createdAt: "Apr 24, 2024" },
@@ -58,6 +60,37 @@ export const aikoyori: AuthorDefinition = {
   fundings: [
     { type: "ko-fi", url: "https://ko-fi.com/aikoyori" }
   ],
-  
+
   // logVerbose: true
 }
+
+// From aikoyori's x timeline
+// Hoishiane Aikoyori 
+// https://x.com/Aikoyori/status/1690655914737704960 (aug 13 2023)
+
+// 
+
+
+// From aikoyori's thread:
+
+// Salesforce by Nous4g1
+// https://x.com/Nous4g1/status/1782863935307473127
+
+// IWI by Feudal_ism
+// https://x.com/Feudal_ism/status/1780897967303770407
+
+// Republic Pictures by EpicbP
+// https://x.com/EpicbP/status/1781493240241566000
+
+// JigsawCh by EarthSeraphEdna
+// https://x.com/EarthSeraphEdna/status/1783982286775484695
+
+// Ikea by necronival
+// https://x.com/necronival/status/1780867702334402672
+
+// Chess.com by chess.com
+// https://x.com/chesscom/status/1781372066555367628
+
+// Sneed feed n seed by jojohand_dev
+// https://x.com/Jojohand_dev/status/1781348526481453420
+
