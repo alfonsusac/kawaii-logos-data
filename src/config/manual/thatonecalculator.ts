@@ -37,6 +37,12 @@ export const thatonecalculator: Entries[number] = {
             imgSrc: GitHub.selfHostedStaticAssetUrl("capacitor.png"),
             source: blueskyPost("t1c.dev", "3lcjhomzcsk2f"),
             objectFit: "contain",
-        }
+        },
+        {
+            title: "monad",
+            imgSrc: GitHub.selfHostedStaticAssetUrl("monad.png"),
+            source: blueskyPost("t1c.dev", "3mlppxkeles25"),
+            objectFit: "contain",
+        },
     ],
 }
