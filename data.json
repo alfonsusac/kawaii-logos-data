@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-07T11:03:19.043Z",
+  "updatedAt": "2026-05-13T11:47:30.605Z",
   "data": {
-    "authorCount": 33,
-    "imageCount": 291,
+    "authorCount": 29,
+    "imageCount": 285,
     "authors": [
       {
         "id": "aikoyori",
@@ -333,6 +333,16 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
+            "type": "x",
+            "username": "_uwu_cocoa",
+            "url": "https://x.com/_uwu_cocoa"
+          },
+          {
+            "type": "bsky",
+            "username": "uwucocoa.moe",
+            "url": "https://bsky.app/profile/uwucocoa.moe"
+          },
+          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -640,7 +650,13 @@
       {
         "id": "hcho3",
         "displayName": "hcho3",
+        "pfp": "https://avatars.githubusercontent.com/hcho3",
         "socials": [
+          {
+            "type": "github",
+            "username": "hcho3",
+            "url": "https://github.com/hcho3"
+          },
           {
             "type": "x",
             "username": "hcho3_ml",
@@ -824,7 +840,7 @@
           }
         ],
         "personalSites": [
-          "https://lDMDiamondl.github.io/",
+          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
           "https://dendya123.tistory.com/"
         ],
         "entryIds": [
@@ -955,8 +971,7 @@
           "https://nichind.dev"
         ],
         "entryIds": [
-          "awake.moe",
-          "pawstash"
+          "awake.moe"
         ],
         "licenses": [
           {
@@ -1452,7 +1467,7 @@
       {
         "id": "styxpilled",
         "displayName": "styxpilled",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreib3nq5w4cevrzkj52qz7i7asiuehhgpz3imkxz73odifqaafd6cea",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreiei5oewihj6h25o3mgvvd3meshy4nefwynssifnrdk4ig4kgc3e2i",
         "socials": [
           {
             "type": "x",
@@ -1530,122 +1545,6 @@
         "personalSites": [],
         "entryIds": [
           "imphnen"
-        ],
-        "licenses": [
-          {
-            "type": "unknown",
-            "label": "Unknown License",
-            "labelShort": "Unknown License"
-          }
-        ],
-        "references": [],
-        "fundings": []
-      },
-      {
-        "id": "claration",
-        "displayName": "claration",
-        "socials": [
-          {
-            "type": "x",
-            "username": "khcrysalis",
-            "url": "https://x.com/khcrysalis"
-          }
-        ],
-        "personalSites": [],
-        "entryIds": [
-          "vencord"
-        ],
-        "licenses": [
-          {
-            "type": "unknown",
-            "label": "Unknown License",
-            "labelShort": "Unknown License"
-          }
-        ],
-        "references": [],
-        "fundings": []
-      },
-      {
-        "id": "paige",
-        "displayName": "paige",
-        "pfp": "https://avatars.githubusercontent.com/ssalggnikool",
-        "socials": [
-          {
-            "type": "github",
-            "username": "ssalggnikool",
-            "url": "https://github.com/ssalggnikool"
-          }
-        ],
-        "personalSites": [
-          "https://paige.moe/"
-        ],
-        "entryIds": [
-          "vencordmini"
-        ],
-        "licenses": [
-          {
-            "type": "unknown",
-            "label": "Unknown License",
-            "labelShort": "Unknown License"
-          }
-        ],
-        "references": [],
-        "fundings": []
-      },
-      {
-        "id": "kane50613",
-        "displayName": "kane50613",
-        "pfp": "https://avatars.githubusercontent.com/kane50613",
-        "socials": [
-          {
-            "type": "github",
-            "username": "kane50613",
-            "url": "https://github.com/kane50613"
-          },
-          {
-            "type": "x",
-            "username": "kanewang_",
-            "url": "https://x.com/kanewang_"
-          }
-        ],
-        "personalSites": [
-          "https://kane.tw"
-        ],
-        "entryIds": [
-          "takumi"
-        ],
-        "licenses": [
-          {
-            "type": "unknown",
-            "label": "Unknown License",
-            "labelShort": "Unknown License"
-          }
-        ],
-        "references": [],
-        "fundings": []
-      },
-      {
-        "id": "nuarthy",
-        "displayName": "nuarthy",
-        "pfp": "https://avatars.githubusercontent.com/akayanuarcandra",
-        "socials": [
-          {
-            "type": "github",
-            "username": "akayanuarcandra",
-            "url": "https://github.com/akayanuarcandra"
-          },
-          {
-            "type": "x",
-            "username": "nuarthy",
-            "url": "https://x.com/nuarthy"
-          }
-        ],
-        "personalSites": [
-          "https://nuarthy.my.id/"
-        ],
-        "entryIds": [
-          "effectordie",
-          "fedora"
         ],
         "licenses": [
           {
@@ -1747,7 +1646,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "docker",
@@ -1819,7 +1718,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "elysiajs",
@@ -1885,7 +1784,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "gamechanger",
@@ -1945,7 +1844,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "godotengine",
@@ -2005,7 +1904,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "imhex",
@@ -2125,7 +2024,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "intellijidea",
@@ -2185,7 +2084,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-18"
+        "createdAt": "2024-04-17"
       },
       {
         "id": "kubernetes",
@@ -2245,7 +2144,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-18"
+        "createdAt": "2024-04-17"
       },
       {
         "id": "mirin-template-for-notitg",
@@ -2358,7 +2257,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "neovim",
@@ -2418,7 +2317,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "osu",
@@ -2526,7 +2425,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-01"
+        "createdAt": "2024-04-30"
       },
       {
         "id": "papermc",
@@ -2586,7 +2485,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "vscode",
@@ -2652,7 +2551,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-18"
+        "createdAt": "2024-04-17"
       },
       {
         "id": "android-studio",
@@ -2683,7 +2582,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "angular-logotype",
@@ -2714,7 +2613,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "bootstrap-logotype",
@@ -2745,7 +2644,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "c++-logotype",
@@ -2776,7 +2675,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-26"
+        "createdAt": "2024-06-25"
       },
       {
         "id": "cloudflare-logotype",
@@ -2807,7 +2706,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "css-logotype",
@@ -2838,7 +2737,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-26"
+        "createdAt": "2024-06-25"
       },
       {
         "id": "django-logotype",
@@ -2869,7 +2768,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "flutter-logotype",
@@ -2900,7 +2799,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "github-logotype",
@@ -2931,7 +2830,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "gitlab-logotype",
@@ -2962,7 +2861,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "golang",
@@ -2993,7 +2892,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "hono-logotype",
@@ -3024,7 +2923,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "html-logotype",
@@ -3055,7 +2954,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-26"
+        "createdAt": "2024-06-25"
       },
       {
         "id": "hugo",
@@ -3086,7 +2985,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "java",
@@ -3117,7 +3016,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "javascript-logotype",
@@ -3148,7 +3047,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-26"
+        "createdAt": "2024-06-25"
       },
       {
         "id": "laravel-logotype",
@@ -3179,7 +3078,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-09"
+        "createdAt": "2024-06-08"
       },
       {
         "id": "materializecss-logotype",
@@ -3210,7 +3109,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "neovim-logotype",
@@ -3241,7 +3140,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "netlify-logotype",
@@ -3272,7 +3171,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "next-js-logotype",
@@ -3303,7 +3202,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "node-js-logotype",
@@ -3334,7 +3233,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "notepad++-logotype",
@@ -3365,7 +3264,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "npm-logotype",
@@ -3396,7 +3295,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "nuxt-js-logotype",
@@ -3427,7 +3326,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "php-logotype",
@@ -3458,7 +3357,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "prisma-logotype",
@@ -3489,7 +3388,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "python-logotype",
@@ -3520,7 +3419,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-09"
+        "createdAt": "2024-06-08"
       },
       {
         "id": "react-js-logotype",
@@ -3551,7 +3450,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "remix-logotype",
@@ -3582,7 +3481,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "ruby-logotype",
@@ -3613,7 +3512,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-26"
+        "createdAt": "2024-06-25"
       },
       {
         "id": "sublime-text-logotype",
@@ -3644,7 +3543,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "tailwindcss-logotype",
@@ -3675,7 +3574,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "vercel-logotype",
@@ -3706,7 +3605,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "vim",
@@ -3737,7 +3636,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "vite",
@@ -3768,7 +3667,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-16"
+        "createdAt": "2024-12-15"
       },
       {
         "id": "vscode-logotype",
@@ -3799,7 +3698,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "codeigniter",
@@ -3858,7 +3757,7 @@
             }
           }
         ],
-        "createdAt": "2024-10-06"
+        "createdAt": "2024-10-05"
       },
       {
         "id": "nestjs",
@@ -3917,7 +3816,7 @@
             }
           }
         ],
-        "createdAt": "2024-10-07"
+        "createdAt": "2024-10-06"
       },
       {
         "id": "php",
@@ -3994,7 +3893,7 @@
             }
           }
         ],
-        "createdAt": "2024-10-06"
+        "createdAt": "2024-10-05"
       },
       {
         "id": "php-new",
@@ -4053,7 +3952,7 @@
             }
           }
         ],
-        "createdAt": "2024-10-08"
+        "createdAt": "2024-10-07"
       },
       {
         "id": "rune",
@@ -4112,7 +4011,7 @@
             }
           }
         ],
-        "createdAt": "2024-09-18"
+        "createdAt": "2024-09-17"
       },
       {
         "id": "devscale",
@@ -4139,13 +4038,13 @@
             "label": "devscale-cute.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute.png"
                 }
               }
             ]
@@ -4154,13 +4053,13 @@
             "label": "devscale-cute.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute.svg"
                 }
               }
             ]
@@ -4169,13 +4068,13 @@
             "label": "devscale-cute-print.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute-print.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute-print.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute-print.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute-print.png"
                 }
               }
             ]
@@ -4184,19 +4083,19 @@
             "label": "devscale-cute-print.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute-print.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute-print.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute-print.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute-print.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "emailthing",
@@ -4223,19 +4122,19 @@
             "label": "emailthing.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/emailthing.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/emailthing.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/emailthing.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/emailthing.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-05-31"
+        "createdAt": "2024-05-30"
       },
       {
         "id": "lgtm",
@@ -4262,19 +4161,19 @@
             "label": "lgtm.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/lgtm.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/lgtm.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/lgtm.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/lgtm.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-05-18"
+        "createdAt": "2024-05-17"
       },
       {
         "id": "npmx",
@@ -4331,13 +4230,13 @@
             "label": "npmx-cute-trans.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute-trans.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute-trans.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute-trans.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute-trans.svg"
                 }
               }
             ]
@@ -4346,13 +4245,13 @@
             "label": "npmx-cute-trans.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute-trans.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute-trans.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute-trans.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute-trans.png"
                 }
               }
             ]
@@ -4361,13 +4260,13 @@
             "label": "npmx-cute.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute.svg"
                 }
               }
             ]
@@ -4376,13 +4275,13 @@
             "label": "npmx-cute.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute.png"
                 }
               }
             ]
@@ -4391,13 +4290,13 @@
             "label": "npmx-succubus.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-succubus.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-succubus.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-succubus.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-succubus.svg"
                 }
               }
             ]
@@ -4406,19 +4305,19 @@
             "label": "npmx-succubus.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-succubus.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-succubus.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-succubus.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-succubus.png"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2026-03-27"
+        "createdAt": "2026-03-26"
       },
       {
         "id": "qris",
@@ -4438,13 +4337,13 @@
             "label": "qris-id.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-id.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-id.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-id.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-id.png"
                 }
               }
             ]
@@ -4453,13 +4352,13 @@
             "label": "qris-id.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-id.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-id.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-id.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-id.svg"
                 }
               }
             ]
@@ -4468,13 +4367,13 @@
             "label": "qris-jp.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-jp.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-jp.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-jp.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-jp.png"
                 }
               }
             ]
@@ -4483,19 +4382,19 @@
             "label": "qris-jp.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-jp.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-jp.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-jp.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-jp.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2026-05-09"
+        "createdAt": "2026-05-08"
       },
       {
         "id": "sharkchat",
@@ -4522,19 +4421,19 @@
             "label": "sharkchat.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/sharkchat.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/sharkchat.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/sharkchat.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/sharkchat.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-06-03"
+        "createdAt": "2024-06-02"
       },
       {
         "id": "skillissue",
@@ -4561,19 +4460,19 @@
             "label": "skillissue.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/skillissue.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/skillissue.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "supabase",
@@ -4600,19 +4499,19 @@
             "label": "supabase.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/supabase.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/supabase.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/supabase.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/supabase.svg"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-05-31"
+        "createdAt": "2024-05-30"
       },
       {
         "id": "json-formatter",
@@ -4657,7 +4556,7 @@
             ]
           }
         ],
-        "createdAt": "2024-12-09"
+        "createdAt": "2024-12-08"
       },
       {
         "id": "elixir",
@@ -4695,7 +4594,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "gleam",
@@ -4733,7 +4632,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "jyo-gi",
@@ -4814,7 +4713,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "react",
@@ -4855,7 +4754,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "rubyonrails",
@@ -4914,7 +4813,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "svelte",
@@ -4955,7 +4854,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "clion",
@@ -4993,7 +4892,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-22"
+        "createdAt": "2024-06-21"
       },
       {
         "id": "jetbrains-clion",
@@ -5031,7 +4930,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-22"
+        "createdAt": "2024-06-21"
       },
       {
         "id": "abletonlive",
@@ -5056,7 +4955,7 @@
             "label": "abletonsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/abletonsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/abletonsticker.png"
             },
             "references": [
               {
@@ -5068,7 +4967,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/abletonsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/abletonsticker.png"
                 }
               }
             ],
@@ -5077,7 +4976,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "bitwigstudio",
@@ -5102,7 +5001,7 @@
             "label": "bitwigsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/bitwigsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/bitwigsticker.png"
             },
             "references": [
               {
@@ -5114,7 +5013,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/bitwigsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/bitwigsticker.png"
                 }
               }
             ],
@@ -5123,7 +5022,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "flstudio",
@@ -5148,7 +5047,7 @@
             "label": "flsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/flsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/flsticker.png"
             },
             "references": [
               {
@@ -5160,7 +5059,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/flsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/flsticker.png"
                 }
               }
             ],
@@ -5169,7 +5068,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "logicpro",
@@ -5190,7 +5089,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-20"
+        "createdAt": "2024-04-19"
       },
       {
         "id": "porterrobinson",
@@ -5215,7 +5114,7 @@
             "label": "porterrobinsonsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/porterrobinsonsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/porterrobinsonsticker.png"
             },
             "references": [
               {
@@ -5227,7 +5126,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/porterrobinsonsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/porterrobinsonsticker.png"
                 }
               }
             ],
@@ -5236,7 +5135,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "skrillex",
@@ -5261,7 +5160,7 @@
             "label": "skrillexsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/skrillexsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/skrillexsticker.png"
             },
             "references": [
               {
@@ -5273,7 +5172,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/skrillexsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/skrillexsticker.png"
                 }
               }
             ],
@@ -5282,7 +5181,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "typst",
@@ -5327,7 +5226,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "fumadocs",
@@ -5357,7 +5256,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-26"
+        "createdAt": "2024-04-25"
       },
       {
         "id": "kate",
@@ -5410,7 +5309,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "xgboost",
@@ -5485,7 +5384,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-20"
+        "createdAt": "2024-04-19"
       },
       {
         "id": "visual-studio",
@@ -5515,7 +5414,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "laravel",
@@ -5536,7 +5435,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-18"
+        "createdAt": "2024-05-17"
       },
       {
         "id": "nuxt",
@@ -5608,7 +5507,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-11"
+        "createdAt": "2024-05-10"
       },
       {
         "id": "oxc",
@@ -5661,7 +5560,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-16"
+        "createdAt": "2024-05-15"
       },
       {
         "id": "pinia",
@@ -5682,7 +5581,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-20"
+        "createdAt": "2024-04-19"
       },
       {
         "id": "rolldown",
@@ -5735,7 +5634,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-16"
+        "createdAt": "2024-05-15"
       },
       {
         "id": "vite",
@@ -5788,7 +5687,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-16"
+        "createdAt": "2024-05-15"
       },
       {
         "id": "vue",
@@ -5914,7 +5813,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "gsap",
@@ -5952,7 +5851,7 @@
             ]
           }
         ],
-        "createdAt": "2026-02-14"
+        "createdAt": "2026-02-13"
       },
       {
         "id": "webflow",
@@ -5990,7 +5889,7 @@
             ]
           }
         ],
-        "createdAt": "2026-02-14"
+        "createdAt": "2026-02-13"
       },
       {
         "id": "docker",
@@ -6043,7 +5942,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-13"
+        "createdAt": "2024-05-12"
       },
       {
         "id": "neovim",
@@ -6096,7 +5995,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "vscode",
@@ -6164,7 +6063,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-20"
+        "createdAt": "2024-04-19"
       },
       {
         "id": "skyviewer",
@@ -6182,7 +6081,7 @@
             "label": "417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
             },
             "references": [
               {
@@ -6194,13 +6093,13 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2025-02-26"
+        "createdAt": "2025-02-25"
       },
       {
         "id": "svelte",
@@ -6253,7 +6152,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "awake.moe",
@@ -6284,56 +6183,19 @@
             "label": "awake.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/awake.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/awake.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/awake.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/awake.png"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2024-05-04"
-      },
-      {
-        "id": "pawstash",
-        "authorId": "nichind",
-        "title": "Pawstash",
-        "references": [
-          {
-            "link": {
-              "type": "github-repo",
-              "url": "https://github.com/pawstash/pawstash"
-            }
-          }
-        ],
-        "imageCount": 1,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [
-          {
-            "label": "pawstash.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/pawstash/pawstash/main/assets/pawstash.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/pawstash/pawstash/blob/main/assets/pawstash.png"
-                }
-              }
-            ]
-          }
-        ],
-        "createdAt": "2026-09-07"
+        "createdAt": "2024-05-03"
       },
       {
         "id": "determinant",
@@ -6393,7 +6255,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-10"
+        "createdAt": "2024-05-09"
       },
       {
         "id": "hitszopenauto",
@@ -6453,7 +6315,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "neovim",
@@ -6536,14 +6398,14 @@
             ]
           }
         ],
-        "createdAt": "2024-04-19"
+        "createdAt": "2024-04-18"
       },
       {
         "id": "nordvangfilms",
         "authorId": "petricat",
         "title": "NordvangFilms",
         "references": [],
-        "imageCount": 6,
+        "imageCount": 2,
         "license": {
           "reference": {
             "link": {
@@ -6558,66 +6420,6 @@
           "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
         },
         "images": [
-          {
-            "label": "NodrvangProductions_v1.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v1.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v1.png"
-                }
-              }
-            ]
-          },
-          {
-            "label": "NodrvangProductions_v2.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v2.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v2.png"
-                }
-              }
-            ]
-          },
-          {
-            "label": "NodrvangProductions_v3.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v3.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v3.png"
-                }
-              }
-            ]
-          },
-          {
-            "label": "NodrvangProductions_v4.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v4.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v4.png"
-                }
-              }
-            ]
-          },
           {
             "label": "Nordvang-Shadow.png",
             "src": {
@@ -6649,7 +6451,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-18"
+        "createdAt": "2024-05-17"
       },
       {
         "id": "papermc",
@@ -6687,7 +6489,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-18"
+        "createdAt": "2024-05-17"
       },
       {
         "id": "tidersky",
@@ -6777,7 +6579,7 @@
             ]
           }
         ],
-        "createdAt": "2025-11-21"
+        "createdAt": "2025-11-20"
       },
       {
         "id": "elysia",
@@ -6822,7 +6624,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-20"
+        "createdAt": "2024-04-19"
       },
       {
         "id": "akari-bot",
@@ -7046,7 +6848,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "404-notfound",
@@ -7132,7 +6934,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-26"
+        "createdAt": "2024-04-25"
       },
       {
         "id": "418-i-m-a-teapot",
@@ -7206,7 +7008,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "500-internalservererror",
@@ -7274,7 +7076,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-10"
+        "createdAt": "2024-05-09"
       },
       {
         "id": "503-serviceunavailable",
@@ -7348,7 +7150,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "angular",
@@ -7446,7 +7248,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "archlinux",
@@ -7467,7 +7269,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "asahi-linux",
@@ -7494,7 +7296,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-02"
+        "createdAt": "2024-05-01"
       },
       {
         "id": "astro",
@@ -7508,7 +7310,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "async-await-very-difficult",
@@ -7535,7 +7337,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-05"
+        "createdAt": "2024-05-04"
       },
       {
         "id": "atprotocol",
@@ -7603,7 +7405,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-14"
+        "createdAt": "2024-05-13"
       },
       {
         "id": "bluesky",
@@ -7701,7 +7503,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "c",
@@ -7722,7 +7524,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "c,csharp,c++",
@@ -7743,7 +7545,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "c++",
@@ -7764,7 +7566,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "can-you-make-a-cute-soue-kaku-pop-up-logo",
@@ -7785,7 +7587,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-11"
+        "createdAt": "2024-05-10"
       },
       {
         "id": "charcoal",
@@ -7853,7 +7655,7 @@
             ]
           }
         ],
-        "createdAt": "2024-11-08"
+        "createdAt": "2024-11-07"
       },
       {
         "id": "clang",
@@ -7867,7 +7669,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "clion",
@@ -7881,7 +7683,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "cloudflare",
@@ -7955,7 +7757,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "cobol",
@@ -7969,7 +7771,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "computer-architecture-design",
@@ -7990,7 +7792,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "crowdstrike",
@@ -8004,7 +7806,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "csharp",
@@ -8031,7 +7833,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "css完全に理解した",
@@ -8052,7 +7854,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "discord",
@@ -8073,7 +7875,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "express",
@@ -8141,7 +7943,7 @@
             ]
           }
         ],
-        "createdAt": "2025-04-16"
+        "createdAt": "2025-04-15"
       },
       {
         "id": "figma",
@@ -8215,7 +8017,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "flipperzero",
@@ -8236,7 +8038,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "flutter",
@@ -8250,7 +8052,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "fortran",
@@ -8271,7 +8073,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "github",
@@ -8345,7 +8147,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "gitlab",
@@ -8366,7 +8168,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "gnuemacs",
@@ -8380,7 +8182,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "go-lang",
@@ -8460,7 +8262,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "hackclub",
@@ -8481,7 +8283,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "haskell",
@@ -8567,7 +8369,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "hono",
@@ -8659,7 +8461,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "html",
@@ -8680,7 +8482,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "htmx",
@@ -8713,7 +8515,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "iamdesigner!",
@@ -8787,7 +8589,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "iamdesigner!english",
@@ -8861,7 +8663,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "iamprogrammer!",
@@ -8935,7 +8737,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "iamprogrammerenglish",
@@ -9015,7 +8817,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "intellij-idea",
@@ -9083,7 +8885,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-18"
+        "createdAt": "2024-05-17"
       },
       {
         "id": "ippon-sakura",
@@ -9110,7 +8912,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-06-21"
+        "createdAt": "2024-06-20"
       },
       {
         "id": "issues-has-exceeded-300",
@@ -9131,7 +8933,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "java",
@@ -9152,7 +8954,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "julia",
@@ -9173,7 +8975,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "juniper",
@@ -9187,7 +8989,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "kawaii-logos",
@@ -9208,7 +9010,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2026-05-03"
+        "createdAt": "2026-05-02"
       },
       {
         "id": "kawaii-true",
@@ -9229,7 +9031,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-03"
+        "createdAt": "2024-05-02"
       },
       {
         "id": "kernel-panic",
@@ -9256,7 +9058,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "kotlin",
@@ -9342,7 +9144,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "laravel",
@@ -9428,7 +9230,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "laravel-herd",
@@ -9449,7 +9251,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-09"
+        "createdAt": "2024-05-08"
       },
       {
         "id": "lisp",
@@ -9470,7 +9272,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "meilisearch",
@@ -9491,7 +9293,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-07-08"
+        "createdAt": "2024-07-07"
       },
       {
         "id": "misskey",
@@ -9583,7 +9385,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-04"
+        "createdAt": "2024-05-03"
       },
       {
         "id": "misskey.io",
@@ -9663,7 +9465,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-26"
+        "createdAt": "2024-05-25"
       },
       {
         "id": "ms-dos",
@@ -9690,7 +9492,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-26"
+        "createdAt": "2024-04-25"
       },
       {
         "id": "mui",
@@ -9704,7 +9506,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "mutsura-horun",
@@ -9725,7 +9527,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2025-09-17"
+        "createdAt": "2025-09-16"
       },
       {
         "id": "next.js",
@@ -9799,7 +9601,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-20"
+        "createdAt": "2024-04-19"
       },
       {
         "id": "node.js",
@@ -9867,7 +9669,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-14"
+        "createdAt": "2024-05-13"
       },
       {
         "id": "nodejs",
@@ -9881,7 +9683,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "novel-ai",
@@ -9902,7 +9704,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-10"
+        "createdAt": "2024-05-09"
       },
       {
         "id": "nullpointerexception",
@@ -9929,7 +9731,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "photoshop",
@@ -9950,7 +9752,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "php",
@@ -9971,7 +9773,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-01"
+        "createdAt": "2024-04-30"
       },
       {
         "id": "python",
@@ -9992,7 +9794,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "qwik.js",
@@ -10019,7 +9821,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "raspberrypi",
@@ -10040,7 +9842,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "react",
@@ -10126,7 +9928,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "react-compiler",
@@ -10147,7 +9949,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-16"
+        "createdAt": "2024-05-15"
       },
       {
         "id": "replit",
@@ -10215,7 +10017,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-24"
+        "createdAt": "2024-05-23"
       },
       {
         "id": "rhinelab",
@@ -10236,7 +10038,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "rider",
@@ -10250,7 +10052,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "rstudio",
@@ -10264,7 +10066,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "ruby",
@@ -10285,7 +10087,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "rust",
@@ -10398,7 +10200,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "scratch",
@@ -10419,7 +10221,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-01"
+        "createdAt": "2024-04-30"
       },
       {
         "id": "sifonchan",
@@ -10440,7 +10242,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "starship",
@@ -10461,7 +10263,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-06"
+        "createdAt": "2024-05-05"
       },
       {
         "id": "streamloots",
@@ -10482,7 +10284,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "swift",
@@ -10503,7 +10305,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "tailwind-css",
@@ -10571,7 +10373,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "tax-return-have-been-filed",
@@ -10592,7 +10394,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2025-03-15"
+        "createdAt": "2025-03-14"
       },
       {
         "id": "teamspeak",
@@ -10613,7 +10415,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "twitter",
@@ -10634,7 +10436,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "typescript",
@@ -10714,7 +10516,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "ubuntu",
@@ -10735,7 +10537,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "unchi",
@@ -10756,7 +10558,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-31"
+        "createdAt": "2024-05-30"
       },
       {
         "id": "unityblender",
@@ -10770,7 +10572,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "uwu-true",
@@ -10791,7 +10593,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-03"
+        "createdAt": "2024-05-02"
       },
       {
         "id": "vercelaisdk",
@@ -10812,7 +10614,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "vim",
@@ -10826,7 +10628,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "visualstudio",
@@ -10847,7 +10649,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "visualstudiocode",
@@ -10874,7 +10676,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "vite",
@@ -10888,7 +10690,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "voicemod",
@@ -10921,7 +10723,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "vrchat",
@@ -10935,7 +10737,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "vue",
@@ -10949,7 +10751,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "wallhack",
@@ -10970,7 +10772,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "webstorm",
@@ -10991,7 +10793,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-05-08"
+        "createdAt": "2024-05-07"
       },
       {
         "id": "winrar",
@@ -11012,7 +10814,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-06-02"
+        "createdAt": "2024-06-01"
       },
       {
         "id": "x",
@@ -11033,7 +10835,7 @@
           "labelShort": "Unknown License"
         },
         "images": [],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "ゆっくりmoviemaker4",
@@ -11125,7 +10927,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-16"
+        "createdAt": "2024-05-15"
       },
       {
         "id": "技術者倫理",
@@ -11238,7 +11040,7 @@
             ]
           }
         ],
-        "createdAt": "2026-05-06"
+        "createdAt": "2026-05-05"
       },
       {
         "id": "確定申告",
@@ -11306,7 +11108,7 @@
             ]
           }
         ],
-        "createdAt": "2026-03-11"
+        "createdAt": "2026-03-10"
       },
       {
         "id": "archlinux",
@@ -11345,7 +11147,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "c",
@@ -11384,7 +11186,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "c,csharp,c++",
@@ -11423,7 +11225,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "c++",
@@ -11462,7 +11264,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "clion",
@@ -11494,7 +11296,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "cobol",
@@ -11526,7 +11328,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "crowdstrike",
@@ -11558,7 +11360,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "csharp",
@@ -11618,7 +11420,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "css完全に理解した",
@@ -11657,7 +11459,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "discord",
@@ -11696,7 +11498,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "flipperzero",
@@ -11735,7 +11537,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "flutter",
@@ -11767,7 +11569,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "fortran",
@@ -11806,7 +11608,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "github",
@@ -11851,7 +11653,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "gitlab",
@@ -11890,7 +11692,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "gnuemacs",
@@ -11922,7 +11724,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "hackclub",
@@ -11961,7 +11763,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "html",
@@ -12000,7 +11802,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "htmx",
@@ -12051,7 +11853,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "java",
@@ -12090,7 +11892,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "julia",
@@ -12129,7 +11931,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "juniper",
@@ -12161,7 +11963,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "kernel-panic",
@@ -12206,7 +12008,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-28"
+        "createdAt": "2024-04-27"
       },
       {
         "id": "lisp",
@@ -12245,7 +12047,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "ms-dos",
@@ -12290,7 +12092,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-26"
+        "createdAt": "2024-04-25"
       },
       {
         "id": "mui",
@@ -12322,7 +12124,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "nullpointerexception",
@@ -12367,7 +12169,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "photoshop",
@@ -12406,7 +12208,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "python",
@@ -12445,7 +12247,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "qwik.js",
@@ -12490,7 +12292,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "raspberrypi",
@@ -12529,7 +12331,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "rhinelab",
@@ -12568,7 +12370,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "rider",
@@ -12600,7 +12402,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "rstudio",
@@ -12632,7 +12434,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "ruby",
@@ -12664,7 +12466,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "streamloots",
@@ -12703,7 +12505,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-23"
+        "createdAt": "2024-04-22"
       },
       {
         "id": "swift",
@@ -12742,7 +12544,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "teamspeak",
@@ -12781,7 +12583,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "twitter",
@@ -12820,7 +12622,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-25"
+        "createdAt": "2024-04-24"
       },
       {
         "id": "ubuntu",
@@ -12859,7 +12661,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-24"
+        "createdAt": "2024-04-23"
       },
       {
         "id": "unityblender",
@@ -12891,7 +12693,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "vercelaisdk",
@@ -12930,7 +12732,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-30"
+        "createdAt": "2024-04-29"
       },
       {
         "id": "vim",
@@ -12962,7 +12764,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "visualstudio",
@@ -13016,7 +12818,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-29"
+        "createdAt": "2024-04-28"
       },
       {
         "id": "visualstudiocode",
@@ -13076,7 +12878,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-27"
+        "createdAt": "2024-04-26"
       },
       {
         "id": "vite",
@@ -13108,7 +12910,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "voicemod",
@@ -13159,7 +12961,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "vrchat",
@@ -13191,7 +12993,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "vue",
@@ -13223,7 +13025,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-21"
+        "createdAt": "2024-04-20"
       },
       {
         "id": "wallhack",
@@ -13262,7 +13064,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "x",
@@ -13301,7 +13103,7 @@
             ]
           }
         ],
-        "createdAt": "2024-04-22"
+        "createdAt": "2024-04-21"
       },
       {
         "id": "windows",
@@ -13342,7 +13144,7 @@
             }
           }
         ],
-        "createdAt": "2024-08-28"
+        "createdAt": "2024-08-27"
       },
       {
         "id": "google-chrome",
@@ -13380,7 +13182,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-15"
+        "createdAt": "2024-06-14"
       },
       {
         "id": "keep-notes",
@@ -13418,7 +13220,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-29"
+        "createdAt": "2024-05-28"
       },
       {
         "id": "linux-mint",
@@ -13486,7 +13288,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-24"
+        "createdAt": "2024-05-23"
       },
       {
         "id": "obsidian",
@@ -13524,7 +13326,7 @@
             ]
           }
         ],
-        "createdAt": "2024-06-03"
+        "createdAt": "2024-06-02"
       },
       {
         "id": "pytorch",
@@ -13562,7 +13364,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-26"
+        "createdAt": "2024-05-25"
       },
       {
         "id": "springboot",
@@ -13615,7 +13417,7 @@
             ]
           }
         ],
-        "createdAt": "2024-05-26"
+        "createdAt": "2024-05-25"
       },
       {
         "id": "svelte",
@@ -13633,7 +13435,7 @@
             "label": "GLlkf9EWwAAq3N9.jpeg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLlkf9EWwAAq3N9.jpeg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/GLlkf9EWwAAq3N9.jpeg"
             },
             "references": [
               {
@@ -13645,7 +13447,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLlkf9EWwAAq3N9.jpeg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/GLlkf9EWwAAq3N9.jpeg"
                 }
               }
             ],
@@ -13671,7 +13473,7 @@
             "label": "GLmrDPdXgAAlKvW.jpeg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLmrDPdXgAAlKvW.jpeg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/GLmrDPdXgAAlKvW.jpeg"
             },
             "references": [
               {
@@ -13683,7 +13485,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLmrDPdXgAAlKvW.jpeg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/GLmrDPdXgAAlKvW.jpeg"
                 }
               }
             ],
@@ -13716,19 +13518,19 @@
             "label": "avalanche.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/avalanche.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/avalanche.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/avalanche.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/avalanche.png"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2025-12-05"
+        "createdAt": "2025-12-04"
       },
       {
         "id": "capacitor",
@@ -13746,7 +13548,7 @@
             "label": "capacitor.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/capacitor.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/capacitor.png"
             },
             "references": [
               {
@@ -13758,7 +13560,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/capacitor.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/capacitor.png"
                 }
               }
             ],
@@ -13767,7 +13569,7 @@
             }
           }
         ],
-        "createdAt": "2025-03-10"
+        "createdAt": "2025-03-09"
       },
       {
         "id": "monad",
@@ -13785,7 +13587,7 @@
             "label": "monad.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/monad.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/monad.png"
             },
             "references": [
               {
@@ -13797,7 +13599,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/monad.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/monad.png"
                 }
               }
             ],
@@ -13806,7 +13608,7 @@
             }
           }
         ],
-        "createdAt": "2025-03-10"
+        "createdAt": "2025-03-09"
       },
       {
         "id": "surrealdb",
@@ -13831,19 +13633,19 @@
             "label": "surrealdb.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/surrealdb.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/surrealdb.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/surrealdb.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/surrealdb.png"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2025-12-01"
+        "createdAt": "2025-11-30"
       },
       {
         "id": "vyper",
@@ -13874,19 +13676,19 @@
             "label": "vyper.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/vyper.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/vyper.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/vyper.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/vyper.png"
                 }
               }
             ]
           }
         ],
-        "createdAt": "2025-12-01"
+        "createdAt": "2025-11-30"
       },
       {
         "id": "imphnen",
@@ -13919,233 +13721,7 @@
             }
           }
         ],
-        "createdAt": "2024-04-27"
-      },
-      {
-        "id": "vencord",
-        "authorId": "claration",
-        "title": "Vencord",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://vencord.dev/"
-            }
-          }
-        ],
-        "imageCount": 2,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [
-          {
-            "label": "cute-logo.avif",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/cute-logo.avif"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.avif"
-                }
-              }
-            ]
-          },
-          {
-            "label": "cute-logo.webp",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/cute-logo.webp"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.webp"
-                }
-              }
-            ]
-          }
-        ],
-        "createdAt": "2025-07-08"
-      },
-      {
-        "id": "vencordmini",
-        "authorId": "paige",
-        "title": "Vencord Mini",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://vencord.dev/"
-            }
-          }
-        ],
-        "imageCount": 2,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [
-          {
-            "label": "logo-nav.webp",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.webp"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.webp"
-                }
-              }
-            ]
-          },
-          {
-            "label": "logo-nav.avif",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.avif"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.avif"
-                }
-              }
-            ]
-          }
-        ],
-        "createdAt": "2025-07-08"
-      },
-      {
-        "id": "takumi",
-        "authorId": "kane50613",
-        "title": "Takumi",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://takumi.kane.tw/"
-            }
-          },
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/kanewang_/status/2078838378301403254"
-            }
-          }
-        ],
-        "imageCount": 1,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [
-          {
-            "label": "sticker.svg",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/kane50613/takumi/master/assets/images/sticker.svg"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/kane50613/takumi/blob/master/assets/images/sticker.svg"
-                }
-              }
-            ]
-          }
-        ],
-        "createdAt": "2026-07-19"
-      },
-      {
-        "id": "effectordie",
-        "authorId": "nuarthy",
-        "title": "Effect Or Die",
-        "references": [
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/elianiva_/status/2095838679491317935"
-            }
-          },
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/elianiva_/status/2095864196802199961"
-            }
-          },
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/nuarthy/status/2095847695554687486"
-            }
-          }
-        ],
-        "imageCount": 1,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [
-          {
-            "label": "effect.svg",
-            "src": {
-              "type": "unknown",
-              "url": "https://nuarthy.my.id/works/effect.svg"
-            },
-            "references": []
-          }
-        ],
-        "createdAt": "2026-07-19"
-      },
-      {
-        "id": "fedora",
-        "authorId": "nuarthy",
-        "title": "Fedora",
-        "references": [
-          {
-            "link": {
-              "type": "twitter-post",
-              "url": "https://x.com/nuarthy/status/2095864811985011047"
-            }
-          }
-        ],
-        "imageCount": 1,
-        "license": {
-          "type": "unknown",
-          "label": "Unknown License",
-          "labelShort": "Unknown License"
-        },
-        "images": [
-          {
-            "label": "fedora.png",
-            "src": {
-              "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/fedora.png"
-            },
-            "references": [
-              {
-                "link": {
-                  "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/fedora.png"
-                }
-              }
-            ]
-          }
-        ],
-        "createdAt": "2024-01-01"
+        "createdAt": "2024-04-26"
       }
     ],
     "standardLicenses": {
@@ -14300,16 +13876,6 @@
         "label": "React",
         "url": "https://react.dev/?uwu=true",
         "authorid": "sawaratsuki"
-      },
-      {
-        "label": "Takumi.js",
-        "url": "https://takumi.kane.tw/",
-        "authorid": "kane50613"
-      },
-      {
-        "label": "Vencord",
-        "url": "https://vencord.dev/",
-        "authorid": "claration"
       }
     ]
   }

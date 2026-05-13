@@ -1,4 +1,5 @@
 *
 !.gitignore
-!images.json
+!data.json
 !README.md
+!types.ts

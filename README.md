@@ -1,30 +1,45 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
-    
-Last Updated: `2025-09-28T12:02:10.771Z`
+
+Last Updated: `2026-05-13T11:47:30.605Z`
 
 ### Authors
-- [alfonsusac](https://github.com/alfonsusac/kawaii-logos-data)
-- [disphing](https://drive.google.com/drive/folders/1Hy1_pAWx95QTv1nZFKUl96GImq4iKdf8)
-- [fenjalien](undefined)
-- [fuma-nama](undefined)
-- [hcho3](https://github.com/hcho3/XGBoostVTuberLogo)
-- [hvpexe](https://github.com/hvpexe/ProgrammingVTuberLogos-VisualStudio/)
-- [saltyaom](undefined)
-- [styxpilled](undefined)
-- [thatonecalculator](undefined)
-- [urielchan](https://github.com/Urielchan/logosVtuberVER)
-- [arnav-kr](undefined)
-- [maxshawnwx](undefined)
-- [cr1sta_dev](https://github.com/Crysta1221/tech_logos)
-- [Aikoyori](https://github.com/Aikoyori/ProgrammingVTuberLogos)
-- [SAWARATSUKI](https://github.com/SAWARATSUKI/KawaiiLogos)
-- [G2-Games](https://github.com/G2-Games/fun-logos)
-- [mkpoli](https://github.com/mkpoli/VTuber-Styled-Logos)
-- [cocoa-xu](https://github.com/cocoa-xu/ProgrammingVTuberLogos-BEAM)
-- [andregans](https://github.com/andregans/code_logotype)
-- [syke9p3](https://github.com/syke9p3/Syke-VTuber-Icons)
-- [lDMDiamondl](https://github.com/lDMDiamondl/ProgrammingVTuberLogosKR)
+- aikoyori
+- andregans
+- anwar_achilles
+- alfonsusac
+- arnav-kr
+- cocoa_xu
+- cr1sta_dev
+- c29h25n3o5
+- dsphng
+- fenjalien
+- fuma-nama
+- g2_games
+- hcho3
+- Manhkbrady
+- icarusgk
+- ifalfahri
+- ldmdiamondl
+- maxshawnwx
+- mkpoli
+- nichind
+- petricat
+- saltyaom
+- sawaratsuki
+- sawaratsuki_archived
+- shiroiame_kusu
+- syke9p3
+- styxpilled
+- thatonecalculator
+- urielchan
+
+### Standard Licenses
+- MIT: MIT License
+- CC BY-NC-SA 4.0: Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+- CC BY-SA 4.0: Creative Commons Attribution-ShareAlike 4.0
+- CC0-1.0: Creative Commons CC0 1.0 Universal
+- All Rights Reserved: All Rights Reserved
 
 ### Contributing
 
