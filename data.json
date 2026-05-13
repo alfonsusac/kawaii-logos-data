@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-13T07:32:15.871Z",
+  "updatedAt": "2026-05-13T07:39:00.276Z",
   "data": {
     "authorCount": 29,
-    "imageCount": 284,
+    "imageCount": 285,
     "authors": [
       {
         "id": "aikoyori",
@@ -1511,6 +1511,7 @@
         "entryIds": [
           "avalanche",
           "capacitor",
+          "monad",
           "surrealdb",
           "vyper"
         ],
@@ -13493,13 +13494,29 @@
             }
           }
         ],
-        "imageCount": 0,
+        "imageCount": 1,
         "license": {
           "type": "unknown",
           "label": "Unknown License",
           "labelShort": "Unknown License"
         },
-        "images": [],
+        "images": [
+          {
+            "label": "avalanche.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/avalanche.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/avalanche.png"
+                }
+              }
+            ]
+          }
+        ],
         "createdAt": "2025-12-05"
       },
       {
@@ -13518,19 +13535,58 @@
             "label": "capacitor.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/capacitor.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/capacitor.png"
             },
             "references": [
               {
                 "link": {
                   "type": "bsky-post",
-                  "url": "https://bsky.app/profile/t1c.dev/post/3lcjhomzcsk2f"
+                  "url": "https://bsky.app/profile/t1c.dev/post/3ljyhognmcc2s"
                 }
               },
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/capacitor.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/capacitor.png"
+                }
+              }
+            ],
+            "style": {
+              "objectFit": "contain"
+            }
+          }
+        ],
+        "createdAt": "2025-03-10"
+      },
+      {
+        "id": "monad",
+        "authorId": "thatonecalculator",
+        "title": "monad",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "monad.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/monad.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "bsky-post",
+                  "url": "https://bsky.app/profile/t1c.dev/post/3mlppxkeles25"
+                }
+              },
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/monad.png"
                 }
               }
             ],
@@ -13553,13 +13609,29 @@
             }
           }
         ],
-        "imageCount": 0,
+        "imageCount": 1,
         "license": {
           "type": "unknown",
           "label": "Unknown License",
           "labelShort": "Unknown License"
         },
-        "images": [],
+        "images": [
+          {
+            "label": "surrealdb.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/surrealdb.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/surrealdb.png"
+                }
+              }
+            ]
+          }
+        ],
         "createdAt": "2025-12-01"
       },
       {
@@ -13572,15 +13644,37 @@
               "type": "bsky-post",
               "url": "https://bsky.app/profile/t1c.dev/post/3lc6ug7omck2t"
             }
+          },
+          {
+            "link": {
+              "type": "bsky-post",
+              "url": "https://bsky.app/profile/t1c.dev/post/3lc6soxakhs2h"
+            }
           }
         ],
-        "imageCount": 0,
+        "imageCount": 1,
         "license": {
           "type": "unknown",
           "label": "Unknown License",
           "labelShort": "Unknown License"
         },
-        "images": [],
+        "images": [
+          {
+            "label": "vyper.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/vyper.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/vyper.png"
+                }
+              }
+            ]
+          }
+        ],
         "createdAt": "2025-12-01"
       },
       {
