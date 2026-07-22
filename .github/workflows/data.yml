@@ -3,8 +3,7 @@ name: Update Data
 on:
   workflow_dispatch:
   schedule:
-    # Every 4 hour
-    - cron: "0 0 * * *"
+    - cron: "0 0 * * 1"
   push:
     branches: 
       - main                          # only allow push on main branch
