@@ -55,7 +55,15 @@ export const thatonecalculator: AuthorDefinition = {
         references: "https://bsky.app/profile/t1c.dev/post/3mlppxkeles25",
         style: { objectFit: "contain", }
       },
-      createdAt: "Mar 10, 2025"
+      createdAt: "May 12, 2026"
+    },
+    overtake: {
+      label: "overtake",
+      images: {
+        src: "./assets/t1c/overtake.png",
+        style: { objectFit: "contain", }
+      },
+      createdAt: "May 17, 2026"
     }
 
   },

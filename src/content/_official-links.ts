@@ -43,6 +43,11 @@ export const official_links = [
     url: "https://react.dev/?uwu=true",
     authorid: "sawaratsuki"
   },
+  {
+    label: "Overtake",
+    url: "https://overtakegames.com/?uwu=true",
+    authorid: "thatonecalculator"
+  },
 ] satisfies {
   label: string
   url: HttpsSite
