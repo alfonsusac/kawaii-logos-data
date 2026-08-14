@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T15:22:56.661Z",
+  "updatedAt": "2026-08-14T15:54:25.934Z",
   "data": {
     "authorCount": 31,
     "imageCount": 287,
@@ -13842,8 +13842,8 @@
           },
           {
             "link": {
-              "type": "official-website-usage",
-              "url": "https://contributor:https://paige.moe/"
+              "type": "contributor",
+              "url": "https://paige.moe/"
             }
           }
         ],
