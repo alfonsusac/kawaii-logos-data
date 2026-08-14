@@ -42,7 +42,11 @@ export async function appFetch2<M extends "json" | "text" = "json">(
   const method = opts?.method || "GET"
 
   // Caching
-  const cache = (resultOpts?.cache && method === "GET" && !isInGitHubAction) ? {
+  const cache = (
+    resultOpts?.cache
+    && method === "GET"
+    // && !isInGitHubAction
+  ) ? {
     opts: resultOpts?.cache,
     entry: cacheEntry<CachedResult>(resultOpts?.cache.key),
   } : undefined
