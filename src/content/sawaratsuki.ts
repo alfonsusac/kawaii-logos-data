@@ -18,7 +18,6 @@ export const sawaratsuki: AuthorDefinition = {
       href: "https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md#license",
     },
     postProcess: [
-      
       // https://x.com/sawaratsuki1004/status/1782831616794227005/photo/1 (posted much later after more items are added. so this list will be overridden with correct date from individual posts.)
       { type: "add entry createdAt", entryKey: "archlinux", createdAt: "Apr 24, 2024" },
       { type: "add entry createdAt", entryKey: "clang", createdAt: "Apr 24, 2024" },
