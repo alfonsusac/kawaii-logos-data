@@ -5,15 +5,16 @@ import { logerror, warn } from "./pipeline"
 export type HttpsSite =
   | `https://${ string }`
   | `shop:https://${ string }`
-  | `uwu:https://${ string }`
+  | `official:https://${ string }`
+  | `contributor:https://${ string }`
 
 // --------------------------------------------------------------------------------
 // Constructor
 
 export function site(domainPath: string) {
 
-  if ([ 'shop:', 'uwu:' ].some(prefix => domainPath.startsWith(prefix))) {
-    const prefix = domainPath.startsWith('shop:') ? 'shop:' : 'uwu:'
+  if ([ 'shop:', 'official:', 'contributor:' ].some(prefix => domainPath.startsWith(prefix))) {
+    const prefix = domainPath.startsWith('shop:') ? 'shop:' : 'official:'
     const urlPart = domainPath.replace(prefix, "")
     const resolvedUrl = resolveSiteURL(urlPart) as HttpsSite
     return `${ prefix }${ resolvedUrl }` as HttpsSite
@@ -57,8 +58,11 @@ export function resolveHttpsSite(site: HttpsSite): KawaiiLogosData.Link {
   if (url.startsWith("shop:")) {
     url = url.replace("shop:", "") as HttpsSite
   }
-  if (url.startsWith("uwu:")) {
-    url = url.replace("uwu:", "") as HttpsSite
+  if (url.startsWith("official:")) {
+    url = url.replace("official:", "") as HttpsSite
+  }
+  if (url.startsWith("contributor:")) {
+    url = url.replace("contributor:", "") as HttpsSite
   }
   return {
     type,
@@ -72,8 +76,11 @@ function getUrlTypeFromURL(
   if (url.startsWith('shop')) {
     return "shop-page"
   }
-  if (url.startsWith('uwu')) {
+  if (url.startsWith('official')) {
     return "official-website-usage"
+  }
+  if (url.startsWith('contributor')) {
+    return "contributor"
   }
   if (url.startsWith("https://github.com")) {
     if (url.includes("/blob/")) return "github-blob"

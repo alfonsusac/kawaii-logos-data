@@ -508,12 +508,12 @@ export const sawaratsuki: AuthorDefinition = {
 
 
       // UWU official logo usages. Cross-reference from src/content/_official-links.ts
-      { type: "add entry reference", entryKey: "haskell", reference: "uwu:https://www.haskell.org/?uwu=true" },
-      { type: "add entry reference", entryKey: "bluesky", reference: "uwu:https://bsky.app/?kawaii=true" },
-      { type: "add entry reference", entryKey: "angular", reference: "uwu:https://angular.io/?uwu=true" },
-      { type: "add entry reference", entryKey: "hono", reference: "uwu:https://hono.dev/?kawaii=true" },
-      { type: "add entry reference", entryKey: "misskey.io", reference: "uwu:https://misskey.io/" },
-      { type: "add entry reference", entryKey: "react", reference: "uwu:https://react.dev/?uwu=true" },
+      { type: "add entry reference", entryKey: "haskell", reference: "official:https://www.haskell.org/?uwu=true" },
+      { type: "add entry reference", entryKey: "bluesky", reference: "official:https://bsky.app/?kawaii=true" },
+      { type: "add entry reference", entryKey: "angular", reference: "official:https://angular.io/?uwu=true" },
+      { type: "add entry reference", entryKey: "hono", reference: "official:https://hono.dev/?kawaii=true" },
+      { type: "add entry reference", entryKey: "misskey.io", reference: "official:https://misskey.io/" },
+      { type: "add entry reference", entryKey: "react", reference: "official:https://react.dev/?uwu=true" },
     ]
   },
   references: [

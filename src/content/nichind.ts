@@ -16,7 +16,7 @@ export const nichind: AuthorDefinition = {
       ],
       createdAt: "May 4, 2024",
       references: [
-        "uwu:https://awake.moe",
+        "official:https://awake.moe",
         "https://x.com/n1chind/status/2051017143362203786/photo/1",
       ]
     }

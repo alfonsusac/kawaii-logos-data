@@ -3,7 +3,7 @@ import type { AuthorDefinition } from "../resolve-author"
 export const claration: AuthorDefinition = {
   displayName: "claration",
   socials: {
-    github: "https://github.com/claration_",
+    github: "https://github.com/claration",
     x: "https://x.com/khcrysalis",
   },
   entries: {
@@ -17,8 +17,8 @@ export const claration: AuthorDefinition = {
       ],
       createdAt: "Jul 8, 2025",
       references: [
-        "uwu:https://vencord.dev/",
-        "uwu:https://paige.moe/"
+        "official:https://vencord.dev/",
+        "contributor:https://paige.moe/"
       ]
     },
   },
