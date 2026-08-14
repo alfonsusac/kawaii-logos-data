@@ -27,12 +27,20 @@ runApp(async () => {
     }
   )
 
+  console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
+
   await step(
     "Persisting data", async () => {
       const output = await step("Preparing output",
         () => prepareOutput(outputData))
+      
+      console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
+      
       await step("Saving to disk",
         () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
+      
+      console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
+
       await step("Saving to data branch",
         () => saveToDataBranch(output, "main-2-data"))
     }
