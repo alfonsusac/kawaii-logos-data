@@ -13,16 +13,12 @@ import type { KawaiiLogosData } from "./output"
 
 runApp(async () => {
 
-  console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
-
   await step(
     "Setup and Initialization", async () => {
       await step("Validating env var", checkEnvVars)
       await step("Initializing cache", cacheInstance.initializeCacheData)
     },
   )
-
-  console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
 
   const outputData = await step(
     "Resolving definitions", async () => {
@@ -31,19 +27,16 @@ runApp(async () => {
     }
   )
 
-  console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
-
   await step(
     "Persisting data", async () => {
       const output = await step("Preparing output",
         () => prepareOutput(outputData))
-      
-      console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
-      
+
+      await step("Saving cache first",
+        () => commitAndPushCache('main-2'))
+
       await step("Saving to disk",
         () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
-      
-      console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
 
       await step("Saving to data branch",
         () => saveToDataBranch(output, "main-2-data"))
@@ -59,6 +52,12 @@ runApp(async () => {
 
 
 // --------------------------------------------------------------------------------
+
+async function commitAndPushCache(branchName: string) {
+  await Git.trackAll()
+  await Git.commitAllTracked("Updated cache.")
+  await Git.pushAndSetUpstream(branchName)
+}
 
 
 async function prepareOutput(outputData: KawaiiLogosData) {
@@ -138,6 +137,7 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   await usingGitBranch(
     dataBranchName,
     async () => {
+
       console.log("before")
       console.log((await readdir('.')).join('\n'))
       await cleanAndSaveToDisk(data, "./", { clean: false })
