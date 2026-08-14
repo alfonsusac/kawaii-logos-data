@@ -126,6 +126,7 @@ const socialsInstructionMap: Record<KawaiiLogosData.SocialTypes, {
     verifier: async username => {
       const res = await fetchGithubProfile(username)
       if (res.status === "ok") return true
+      // console.log(username, res)
       return false
     },
   },
