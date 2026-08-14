@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-05-14T00:54:00.836Z",
+  "updatedAt": "2026-08-14T08:30:44.775Z",
   "data": {
-    "authorCount": 29,
-    "imageCount": 285,
+    "authorCount": 30,
+    "imageCount": 286,
     "authors": [
       {
         "id": "aikoyori",
@@ -333,16 +333,6 @@
         "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
         "socials": [
           {
-            "type": "x",
-            "username": "_uwu_cocoa",
-            "url": "https://x.com/_uwu_cocoa"
-          },
-          {
-            "type": "bsky",
-            "username": "uwucocoa.moe",
-            "url": "https://bsky.app/profile/uwucocoa.moe"
-          },
-          {
             "type": "github",
             "username": "cocoa-xu",
             "url": "https://github.com/cocoa-xu"
@@ -650,13 +640,7 @@
       {
         "id": "hcho3",
         "displayName": "hcho3",
-        "pfp": "https://avatars.githubusercontent.com/hcho3",
         "socials": [
-          {
-            "type": "github",
-            "username": "hcho3",
-            "url": "https://github.com/hcho3"
-          },
           {
             "type": "x",
             "username": "hcho3_ml",
@@ -840,7 +824,7 @@
           }
         ],
         "personalSites": [
-          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+          "https://lDMDiamondl.github.io/",
           "https://dendya123.tistory.com/"
         ],
         "entryIds": [
@@ -1467,7 +1451,7 @@
       {
         "id": "styxpilled",
         "displayName": "styxpilled",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreiei5oewihj6h25o3mgvvd3meshy4nefwynssifnrdk4ig4kgc3e2i",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreib3nq5w4cevrzkj52qz7i7asiuehhgpz3imkxz73odifqaafd6cea",
         "socials": [
           {
             "type": "x",
@@ -1545,6 +1529,36 @@
         "personalSites": [],
         "entryIds": [
           "imphnen"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "claration",
+        "displayName": "claration",
+        "pfp": "https://avatars.githubusercontent.com/claration",
+        "socials": [
+          {
+            "type": "github",
+            "username": "claration",
+            "url": "https://github.com/claration"
+          },
+          {
+            "type": "x",
+            "username": "khcrysalis",
+            "url": "https://x.com/khcrysalis"
+          }
+        ],
+        "personalSites": [],
+        "entryIds": [
+          "vencord"
         ],
         "licenses": [
           {
@@ -6405,7 +6419,7 @@
         "authorId": "petricat",
         "title": "NordvangFilms",
         "references": [],
-        "imageCount": 2,
+        "imageCount": 6,
         "license": {
           "reference": {
             "link": {
@@ -6420,6 +6434,66 @@
           "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
         },
         "images": [
+          {
+            "label": "NodrvangProductions_v1.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v1.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v1.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "NodrvangProductions_v2.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v2.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v2.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "NodrvangProductions_v3.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v3.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v3.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "NodrvangProductions_v4.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v4.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v4.png"
+                }
+              }
+            ]
+          },
           {
             "label": "Nordvang-Shadow.png",
             "src": {
@@ -13722,6 +13796,94 @@
           }
         ],
         "createdAt": "2024-04-27"
+      },
+      {
+        "id": "vencord",
+        "authorId": "claration",
+        "title": "Vencord",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://vencord.dev/"
+            }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://paige.moe/"
+            }
+          }
+        ],
+        "imageCount": 4,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "cute-logo.avif",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/cute-logo.avif"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.avif"
+                }
+              }
+            ]
+          },
+          {
+            "label": "cute-logo.webp",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/cute-logo.webp"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.webp"
+                }
+              }
+            ]
+          },
+          {
+            "label": "logo-nav.webp",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.webp"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.webp"
+                }
+              }
+            ]
+          },
+          {
+            "label": "logo-nav.avif",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.avif"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.avif"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2025-07-08"
       }
     ],
     "standardLicenses": {
@@ -13876,6 +14038,11 @@
         "label": "React",
         "url": "https://react.dev/?uwu=true",
         "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Vencord",
+        "url": "https://vencord.dev/",
+        "authorid": "claration"
       }
     ]
   }
