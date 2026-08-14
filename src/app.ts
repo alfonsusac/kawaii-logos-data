@@ -13,12 +13,16 @@ import type { KawaiiLogosData } from "./output"
 
 runApp(async () => {
 
+  console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
+
   await step(
     "Setup and Initialization", async () => {
       await step("Validating env var", checkEnvVars)
       await step("Initializing cache", cacheInstance.initializeCacheData)
     },
   )
+
+  console.log("Has Uncommited Changes: ", await Git.checkHasUncommitedChanges())
 
   const outputData = await step(
     "Resolving definitions", async () => {
