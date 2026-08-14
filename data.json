@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T08:54:53.651Z",
+  "updatedAt": "2026-08-14T14:01:21.359Z",
   "data": {
     "authorCount": 30,
     "imageCount": 286,
@@ -166,9 +166,7 @@
         "id": "anwar_achilles",
         "displayName": "anwar_achilles",
         "socials": [],
-        "personalSites": [
-          "https://anwarachilles.pro"
-        ],
+        "personalSites": [],
         "entryIds": [
           "codeigniter",
           "nestjs",
@@ -357,11 +355,17 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
+        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
+          },
+          {
+            "type": "github",
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
           }
         ],
         "personalSites": [
@@ -768,10 +772,7 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [
-          "https://lDMDiamondl.github.io/",
-          "https://dendya123.tistory.com/"
-        ],
+        "personalSites": [],
         "entryIds": [
           "docker",
           "neovim",
@@ -830,8 +831,15 @@
       {
         "id": "mkpoli",
         "displayName": "mkpoli",
-        "socials": [],
+        "socials": [
+          {
+            "type": "x",
+            "username": "mkpoli",
+            "url": "https://x.com/mkpoli"
+          }
+        ],
         "personalSites": [
+          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entryIds": [
@@ -902,7 +910,14 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/PetricaT",
+        "socials": [
+          {
+            "type": "github",
+            "username": "PetricaT",
+            "url": "https://github.com/PetricaT"
+          }
+        ],
         "personalSites": [
           "https://petricat.github.io/PetricaT/"
         ],
@@ -1282,7 +1297,13 @@
       {
         "id": "shiroiame_kusu",
         "displayName": "shiroiame_kusu",
-        "socials": [],
+        "socials": [
+          {
+            "type": "x",
+            "username": "Shiroiame_Kusu",
+            "url": "https://x.com/Shiroiame_Kusu"
+          }
+        ],
         "personalSites": [
           "https://blog.nyat.icu"
         ],
