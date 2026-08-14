@@ -44,19 +44,12 @@ export const official_links = [
     authorid: "sawaratsuki"
   },
   {
-    label: "Takumi.js",
-    url: "https://takumi.kane.tw/",
-    authorid: "kane50613",
-  },
-  {
     label: "Vencord",
     url: "https://vencord.dev/",
-    authorid: "claration",
-  },
+    authorid: "claration"
+  }
 ] satisfies {
   label: string
   url: HttpsSite
   authorid: keyof typeof author_definitions
 }[]
-
-// https://github.com/alfonsusac/kawaii-logos-data/issues/7
