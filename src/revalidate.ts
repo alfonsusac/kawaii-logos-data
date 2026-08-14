@@ -43,7 +43,7 @@ export async function revalidateMainWebsite() {
     )
     res.forEach((r) => {
       if (r.status === "fulfilled") {
-        console.log(`ok: ${ r.value }`)
+        console.log(`ok: ${ JSON.stringify(r.value, null, 2) }`)
       } else {
         console.log(`rejected: ${ r.reason }`)
       }
