@@ -156,7 +156,7 @@ async function usingGitBranch(
   // verbose(`Current branch is ${ previousBranch }. Target data branch is ${ dataBranchName }. Branch exists: ${ hasBranch }`)
 
   if (await Git.checkHasUncommitedChanges()) {
-    logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch ${ dataBranchName }.`)
+    logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch "${ dataBranchName }".`)
     return
   }
 
