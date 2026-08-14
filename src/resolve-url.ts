@@ -14,7 +14,8 @@ export type HttpsSite =
 export function site(domainPath: string) {
 
   if ([ 'shop:', 'official:', 'contributor:' ].some(prefix => domainPath.startsWith(prefix))) {
-    const prefix = domainPath.startsWith('shop:') ? 'shop:' : 'official:'
+    const prefix = [ 'shop:', 'official:', 'contributor:' ].find(prefix => domainPath.startsWith(prefix))!
+    // const prefix = domainPath.startsWith('shop:') ? 'shop:' : 'official:'
     const urlPart = domainPath.replace(prefix, "")
     const resolvedUrl = resolveSiteURL(urlPart) as HttpsSite
     return `${ prefix }${ resolvedUrl }` as HttpsSite
