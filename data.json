@@ -1,23 +1,18 @@
 {
-  "updatedAt": "2026-05-13T10:41:29.691Z",
+  "updatedAt": "2026-08-14T08:54:53.651Z",
   "data": {
-    "authorCount": 29,
-    "imageCount": 285,
+    "authorCount": 30,
+    "imageCount": 286,
     "authors": [
       {
         "id": "aikoyori",
         "displayName": "aikoyori",
-        "pfp": "https://avatars.githubusercontent.com/Aikoyori",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aakz2mue7yaw4olibq3loql/bafkreiew6o2sfv6gpodtyd5erpxgeiqa4ywjdh6kdl2slxd44ypyygfxlu",
         "socials": [
           {
             "type": "x",
             "username": "Aikoyori",
             "url": "https://x.com/Aikoyori"
-          },
-          {
-            "type": "github",
-            "username": "Aikoyori",
-            "url": "https://github.com/Aikoyori"
           },
           {
             "type": "bsky",
@@ -170,14 +165,7 @@
       {
         "id": "anwar_achilles",
         "displayName": "anwar_achilles",
-        "pfp": "https://avatars.githubusercontent.com/AnwarAchilles",
-        "socials": [
-          {
-            "type": "github",
-            "username": "AnwarAchilles",
-            "url": "https://github.com/AnwarAchilles"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://anwarachilles.pro"
         ],
@@ -330,24 +318,7 @@
       {
         "id": "cocoa_xu",
         "displayName": "cocoa_xu",
-        "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
-        "socials": [
-          {
-            "type": "x",
-            "username": "_uwu_cocoa",
-            "url": "https://x.com/_uwu_cocoa"
-          },
-          {
-            "type": "bsky",
-            "username": "uwucocoa.moe",
-            "url": "https://bsky.app/profile/uwucocoa.moe"
-          },
-          {
-            "type": "github",
-            "username": "cocoa-xu",
-            "url": "https://github.com/cocoa-xu"
-          }
-        ],
+        "socials": [],
         "personalSites": [],
         "entryIds": [
           "elixir",
@@ -386,17 +357,11 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
-        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
-          },
-          {
-            "type": "github",
-            "username": "Crysta1221",
-            "url": "https://github.com/Crysta1221"
           }
         ],
         "personalSites": [
@@ -446,17 +411,11 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
           {
             "type": "x",
             "username": "C29H25N3O5",
             "url": "https://x.com/C29H25N3O5"
-          },
-          {
-            "type": "github",
-            "username": "C29H25N3O5",
-            "url": "https://github.com/C29H25N3O5"
           }
         ],
         "personalSites": [],
@@ -594,14 +553,7 @@
       {
         "id": "g2_games",
         "displayName": "g2_games",
-        "pfp": "https://avatars.githubusercontent.com/G2-Games",
-        "socials": [
-          {
-            "type": "github",
-            "username": "G2-Games",
-            "url": "https://github.com/G2-Games"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://ko-fi.com/g2_games",
           "https://g2games.dev/git/",
@@ -650,13 +602,7 @@
       {
         "id": "hcho3",
         "displayName": "hcho3",
-        "pfp": "https://avatars.githubusercontent.com/hcho3",
         "socials": [
-          {
-            "type": "github",
-            "username": "hcho3",
-            "url": "https://github.com/hcho3"
-          },
           {
             "type": "x",
             "username": "hcho3_ml",
@@ -710,17 +656,12 @@
       {
         "id": "icarusgk",
         "displayName": "icarusgk",
-        "pfp": "https://avatars.githubusercontent.com/icarusgk",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:mtylyfv6nbawz4dgnguhk75f/bafkreido2viclg2ceby3mepp3fgleilolkplmqauqp2xr2spyel6qox7ei",
         "socials": [
           {
             "type": "x",
             "username": "icarusgkx",
             "url": "https://x.com/icarusgkx"
-          },
-          {
-            "type": "github",
-            "username": "icarusgk",
-            "url": "https://github.com/icarusgk"
           },
           {
             "type": "bsky",
@@ -771,13 +712,7 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
-        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "socials": [
-          {
-            "type": "github",
-            "username": "ifalfahri",
-            "url": "https://github.com/ifalfahri"
-          },
           {
             "type": "behance",
             "username": "ifalfahri",
@@ -826,13 +761,7 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
-        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "socials": [
-          {
-            "type": "github",
-            "username": "lDMDiamondl",
-            "url": "https://github.com/lDMDiamondl"
-          },
           {
             "type": "x",
             "username": "dmdiamond1234",
@@ -840,7 +769,7 @@
           }
         ],
         "personalSites": [
-          "https://lDMDiamondl.github.io/Curriculum-Vitae/",
+          "https://lDMDiamondl.github.io/",
           "https://dendya123.tistory.com/"
         ],
         "entryIds": [
@@ -901,21 +830,8 @@
       {
         "id": "mkpoli",
         "displayName": "mkpoli",
-        "pfp": "https://avatars.githubusercontent.com/mkpoli",
-        "socials": [
-          {
-            "type": "x",
-            "username": "mkpoli",
-            "url": "https://x.com/mkpoli"
-          },
-          {
-            "type": "github",
-            "username": "mkpoli",
-            "url": "https://github.com/mkpoli"
-          }
-        ],
+        "socials": [],
         "personalSites": [
-          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entryIds": [
@@ -986,14 +902,7 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "pfp": "https://avatars.githubusercontent.com/PetricaT",
-        "socials": [
-          {
-            "type": "github",
-            "username": "PetricaT",
-            "url": "https://github.com/PetricaT"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://petricat.github.io/PetricaT/"
         ],
@@ -1373,19 +1282,7 @@
       {
         "id": "shiroiame_kusu",
         "displayName": "shiroiame_kusu",
-        "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
-        "socials": [
-          {
-            "type": "x",
-            "username": "Shiroiame_Kusu",
-            "url": "https://x.com/Shiroiame_Kusu"
-          },
-          {
-            "type": "github",
-            "username": "Shiroiame-Kusu",
-            "url": "https://github.com/Shiroiame-Kusu"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://blog.nyat.icu"
         ],
@@ -1420,14 +1317,7 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "pfp": "https://avatars.githubusercontent.com/syke9p3",
-        "socials": [
-          {
-            "type": "github",
-            "username": "syke9p3",
-            "url": "https://github.com/syke9p3"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
@@ -1467,7 +1357,7 @@
       {
         "id": "styxpilled",
         "displayName": "styxpilled",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreiei5oewihj6h25o3mgvvd3meshy4nefwynssifnrdk4ig4kgc3e2i",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:wxpubtllhvmvlpsokbaoxvbu/bafkreib3nq5w4cevrzkj52qz7i7asiuehhgpz3imkxz73odifqaafd6cea",
         "socials": [
           {
             "type": "x",
@@ -1545,6 +1435,30 @@
         "personalSites": [],
         "entryIds": [
           "imphnen"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "claration",
+        "displayName": "claration",
+        "socials": [
+          {
+            "type": "x",
+            "username": "khcrysalis",
+            "url": "https://x.com/khcrysalis"
+          }
+        ],
+        "personalSites": [],
+        "entryIds": [
+          "vencord"
         ],
         "licenses": [
           {
@@ -6405,7 +6319,7 @@
         "authorId": "petricat",
         "title": "NordvangFilms",
         "references": [],
-        "imageCount": 2,
+        "imageCount": 6,
         "license": {
           "reference": {
             "link": {
@@ -6420,6 +6334,66 @@
           "href": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
         },
         "images": [
+          {
+            "label": "NodrvangProductions_v1.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v1.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v1.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "NodrvangProductions_v2.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v2.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v2.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "NodrvangProductions_v3.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v3.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v3.png"
+                }
+              }
+            ]
+          },
+          {
+            "label": "NodrvangProductions_v4.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/PetricaT/ProgrammingVTuberLogos-Addon/main/NordvangFilms/V1/NodrvangProductions_v4.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/PetricaT/ProgrammingVTuberLogos-Addon/blob/main/NordvangFilms/V1/NodrvangProductions_v4.png"
+                }
+              }
+            ]
+          },
           {
             "label": "Nordvang-Shadow.png",
             "src": {
@@ -13722,6 +13696,94 @@
           }
         ],
         "createdAt": "2024-04-27"
+      },
+      {
+        "id": "vencord",
+        "authorId": "claration",
+        "title": "Vencord",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://vencord.dev/"
+            }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://paige.moe/"
+            }
+          }
+        ],
+        "imageCount": 4,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "cute-logo.avif",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/cute-logo.avif"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.avif"
+                }
+              }
+            ]
+          },
+          {
+            "label": "cute-logo.webp",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/cute-logo.webp"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.webp"
+                }
+              }
+            ]
+          },
+          {
+            "label": "logo-nav.webp",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.webp"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.webp"
+                }
+              }
+            ]
+          },
+          {
+            "label": "logo-nav.avif",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.avif"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.avif"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2025-07-08"
       }
     ],
     "standardLicenses": {
