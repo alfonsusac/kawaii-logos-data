@@ -17,8 +17,8 @@ export const claration: AuthorDefinition = {
       ],
       createdAt: "Jul 8, 2025",
       references: [
-        "https://vencord.dev/",
-        { site: "https://paige.moe/" }
+        "uwu:https://vencord.dev/",
+        "uwu:https://paige.moe/"
       ]
     },
   },
