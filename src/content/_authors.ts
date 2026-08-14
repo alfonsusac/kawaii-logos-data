@@ -15,6 +15,7 @@ import { hcho3 } from "./hcho3"
 import { hvpexe } from "./hvpexe"
 import { icarusgk } from "./icarusgk"
 import { ifalfahri } from "./ifalfahri"
+import { kane50613 } from "./kane50613"
 import { ldmdiamondl } from "./ldmdiamondl"
 import { maxshawnwx } from "./maxshawnws"
 import { mkpoli } from "./mkpoli"
@@ -60,4 +61,5 @@ export const author_definitions = {
   thatonecalculator,
   urielchan,
   claration,
+  kane50613,
 }
