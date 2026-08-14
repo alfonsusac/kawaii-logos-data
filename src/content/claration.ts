@@ -3,7 +3,7 @@ import type { AuthorDefinition } from "../resolve-author"
 export const claration: AuthorDefinition = {
   displayName: "claration",
   socials: {
-    github: "https://github.com/claration",
+    github: "https://github.com/claration_",
     x: "https://x.com/khcrysalis",
   },
   entries: {

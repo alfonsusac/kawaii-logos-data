@@ -54,9 +54,9 @@ runApp(async () => {
 // --------------------------------------------------------------------------------
 
 async function commitAndPushCache(branchName: string) {
-  await Git.trackAll()
-  await Git.commitAllTracked("Updated cache.")
-  await Git.pushAndSetUpstream(branchName)
+  // await Git.trackAll()
+  // await Git.commitAllTracked("Updated cache.")
+  // await Git.pushAndSetUpstream(branchName)
 }
 
 

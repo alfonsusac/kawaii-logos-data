@@ -193,7 +193,7 @@ export function cacheEntry<T>(key: string) {
 
 // -------------------------------------------------------
 
-export async function cacheAsync<T>(
+async function cacheAsync<T>(
   key: string,
   fn: () => Promise<T>,
   duration: Duration,
