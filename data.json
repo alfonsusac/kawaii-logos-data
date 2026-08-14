@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-14T14:01:21.359Z",
+  "updatedAt": "2026-08-14T14:19:51.428Z",
   "data": {
     "authorCount": 30,
     "imageCount": 286,
@@ -355,17 +355,11 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
-        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
-          },
-          {
-            "type": "github",
-            "username": "Crysta1221",
-            "url": "https://github.com/Crysta1221"
           }
         ],
         "personalSites": [
@@ -415,13 +409,7 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "socials": [
-          {
-            "type": "x",
-            "username": "C29H25N3O5",
-            "url": "https://x.com/C29H25N3O5"
-          }
-        ],
+        "socials": [],
         "personalSites": [],
         "entryIds": [
           "clion",
@@ -660,12 +648,17 @@
       {
         "id": "icarusgk",
         "displayName": "icarusgk",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:mtylyfv6nbawz4dgnguhk75f/bafkreido2viclg2ceby3mepp3fgleilolkplmqauqp2xr2spyel6qox7ei",
+        "pfp": "https://avatars.githubusercontent.com/icarusgk",
         "socials": [
           {
             "type": "x",
             "username": "icarusgkx",
             "url": "https://x.com/icarusgkx"
+          },
+          {
+            "type": "github",
+            "username": "icarusgk",
+            "url": "https://github.com/icarusgk"
           },
           {
             "type": "bsky",
@@ -772,7 +765,10 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/",
+          "https://dendya123.tistory.com/"
+        ],
         "entryIds": [
           "docker",
           "neovim",
@@ -910,14 +906,7 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "pfp": "https://avatars.githubusercontent.com/PetricaT",
-        "socials": [
-          {
-            "type": "github",
-            "username": "PetricaT",
-            "url": "https://github.com/PetricaT"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://petricat.github.io/PetricaT/"
         ],
@@ -1470,7 +1459,13 @@
       {
         "id": "claration",
         "displayName": "claration",
+        "pfp": "https://avatars.githubusercontent.com/claration",
         "socials": [
+          {
+            "type": "github",
+            "username": "claration",
+            "url": "https://github.com/claration"
+          },
           {
             "type": "x",
             "username": "khcrysalis",
@@ -13732,7 +13727,7 @@
           {
             "link": {
               "type": "official-website-usage",
-              "url": "https://paige.moe/"
+              "url": "https://contributor:https://paige.moe/"
             }
           }
         ],
