@@ -4,6 +4,7 @@ import { andregans } from "./andregans"
 import { anwar_achilles } from "./anwar-achilles"
 import { arnav } from "./arnav"
 import { c29h25n3o5 } from "./c29h25n3o5_"
+import { claration } from "./claration"
 import { cocoa_xu } from "./cocoa_xu"
 import { cr1sta_dev } from "./cr1sta_dev"
 import { dsphng } from "./dsphng"
@@ -58,4 +59,5 @@ export const author_definitions = {
   styxpilled,
   thatonecalculator,
   urielchan,
+  claration,
 }

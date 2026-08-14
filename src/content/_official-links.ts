@@ -43,10 +43,13 @@ export const official_links = [
     url: "https://react.dev/?uwu=true",
     authorid: "sawaratsuki"
   },
+  {
+    label: "Vencord",
+    url: "https://vencord.dev/",
+    authorid: "claration"
+  }
 ] satisfies {
   label: string
   url: HttpsSite
   authorid: keyof typeof author_definitions
 }[]
-
-// https://github.com/alfonsusac/kawaii-logos-data/issues/7
