@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-08-26T05:52:30.367Z",
+  "updatedAt": "2026-08-26T05:54:25.365Z",
   "data": {
-    "authorCount": 31,
-    "imageCount": 287,
+    "authorCount": 32,
+    "imageCount": 288,
     "authors": [
       {
         "id": "aikoyori",
@@ -1399,6 +1399,26 @@
         "personalSites": [],
         "entryIds": [
           "vencord"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "paige",
+        "displayName": "paige",
+        "socials": [],
+        "personalSites": [
+          "https://paige.moe/"
+        ],
+        "entryIds": [
+          "vencordmini"
         ],
         "licenses": [
           {
@@ -13714,6 +13734,64 @@
                 "link": {
                   "type": "github-blob",
                   "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/cute-logo.webp"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2025-07-08"
+      },
+      {
+        "id": "vencordmini",
+        "authorId": "paige",
+        "title": "Vencord Mini",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://vencord.dev/"
+            }
+          },
+          {
+            "link": {
+              "type": "contributor",
+              "url": "https://paige.moe/"
+            }
+          }
+        ],
+        "imageCount": 2,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "logo-nav.webp",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.webp"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.webp"
+                }
+              }
+            ]
+          },
+          {
+            "label": "logo-nav.avif",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/Vencord/vencord.dev/main/public/assets/logo-nav.avif"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/Vencord/vencord.dev/blob/main/public/assets/logo-nav.avif"
                 }
               }
             ]
