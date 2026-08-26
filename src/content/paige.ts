@@ -16,7 +16,6 @@ export const paige: AuthorDefinition = {
       createdAt: "Jul 8, 2025",
       references: [
         "official:https://vencord.dev/",
-        "contributor:https://paige.moe/"
       ]
     }
   }
