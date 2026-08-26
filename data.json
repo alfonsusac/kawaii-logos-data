@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-26T05:56:22.007Z",
+  "updatedAt": "2026-08-26T05:59:03.181Z",
   "data": {
     "authorCount": 32,
     "imageCount": 288,
@@ -13750,12 +13750,6 @@
             "link": {
               "type": "official-website-usage",
               "url": "https://vencord.dev/"
-            }
-          },
-          {
-            "link": {
-              "type": "contributor",
-              "url": "https://paige.moe/"
             }
           }
         ],
