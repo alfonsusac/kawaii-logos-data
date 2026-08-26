@@ -20,6 +20,7 @@ import { ldmdiamondl } from "./ldmdiamondl"
 import { maxshawnwx } from "./maxshawnws"
 import { mkpoli } from "./mkpoli"
 import { nichind } from "./nichind"
+import { paige } from "./paige"
 import { petricat } from "./petricat"
 import { saltyaom } from "./saltyaom"
 import { sawaratsuki } from "./sawaratsuki"
@@ -61,5 +62,6 @@ export const author_definitions = {
   thatonecalculator,
   urielchan,
   claration,
+  paige,
   kane50613,
 }
