@@ -43,6 +43,16 @@ export const official_links = [
     url: "https://react.dev/?uwu=true",
     authorid: "sawaratsuki"
   },
+  {
+    label: "Takumi.js",
+    url: "https://takumi.kane.tw/",
+    authorid: "kane50613",
+  },
+  {
+    label: "Vencord",
+    url: "https://vencord.dev/",
+    authorid: "claration",
+  },
 ] satisfies {
   label: string
   url: HttpsSite
