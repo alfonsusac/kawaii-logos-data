@@ -20,7 +20,7 @@ export const nuarthy: AuthorDefinition = {
       ]
     },
     'fedora': {
-      label: "",
+      label: "Fedora",
       images: [
         { src: "./assets/fedora.png" },
       ],
