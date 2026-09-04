@@ -10,7 +10,7 @@ export const nuarthy: AuthorDefinition = {
     'effectOrDie': {
       label: "Effect Or Die",
       images: [
-        { src: "resolved:https://nuarthy  .my.id/works/effect.svg" },
+        { src: "resolved:https://nuarthy.my.id/works/effect.svg" },
       ],
       createdAt: "Jul 19, 2026",
       references: [
