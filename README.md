@@ -1,7 +1,7 @@
 # The Data Branch
 This branch is used to store the data of the images. It is updated automatically by the GitHub Actions.
 
-Last Updated: `2026-08-26T05:59:03.181Z`
+Last Updated: `2026-09-04T16:23:08.941Z`
 
 ### Authors
 - aikoyori
@@ -36,6 +36,7 @@ Last Updated: `2026-08-26T05:59:03.181Z`
 - claration
 - paige
 - kane50613
+- nuarthy
 
 ### Standard Licenses
 - MIT: MIT License

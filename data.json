@@ -1,13 +1,13 @@
 {
-  "updatedAt": "2026-08-26T05:59:03.181Z",
+  "updatedAt": "2026-09-04T16:23:08.941Z",
   "data": {
-    "authorCount": 32,
-    "imageCount": 288,
+    "authorCount": 33,
+    "imageCount": 290,
     "authors": [
       {
         "id": "aikoyori",
         "displayName": "aikoyori",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aakz2mue7yaw4olibq3loql/bafkreiew6o2sfv6gpodtyd5erpxgeiqa4ywjdh6kdl2slxd44ypyygfxlu",
+        "pfp": "https://avatars.githubusercontent.com/Aikoyori",
         "socials": [
           {
             "type": "x",
@@ -15,12 +15,19 @@
             "url": "https://x.com/Aikoyori"
           },
           {
+            "type": "github",
+            "username": "Aikoyori",
+            "url": "https://github.com/Aikoyori"
+          },
+          {
             "type": "bsky",
             "username": "aikoyori.xyz",
             "url": "https://bsky.app/profile/aikoyori.xyz"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://aikoyori.xyz"
+        ],
         "entryIds": [
           "bun",
           "docker",
@@ -69,7 +76,13 @@
       {
         "id": "andregans",
         "displayName": "andregans",
+        "pfp": "https://avatars.githubusercontent.com/andregans",
         "socials": [
+          {
+            "type": "github",
+            "username": "andregans",
+            "url": "https://github.com/andregans"
+          },
           {
             "type": "behance",
             "username": "andrerio",
@@ -157,8 +170,17 @@
       {
         "id": "anwar_achilles",
         "displayName": "anwar_achilles",
-        "socials": [],
-        "personalSites": [],
+        "pfp": "https://avatars.githubusercontent.com/AnwarAchilles",
+        "socials": [
+          {
+            "type": "github",
+            "username": "AnwarAchilles",
+            "url": "https://github.com/AnwarAchilles"
+          }
+        ],
+        "personalSites": [
+          "https://anwarachilles.pro"
+        ],
         "entryIds": [
           "codeigniter",
           "nestjs",
@@ -249,7 +271,13 @@
       {
         "id": "arnav",
         "displayName": "arnav-kr",
+        "pfp": "https://avatars.githubusercontent.com/arnav-kr",
         "socials": [
+          {
+            "type": "github",
+            "username": "arnav-kr",
+            "url": "https://github.com/arnav-kr"
+          },
           {
             "type": "x",
             "username": "arnavkr_",
@@ -302,7 +330,14 @@
       {
         "id": "cocoa_xu",
         "displayName": "cocoa_xu",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
+        "socials": [
+          {
+            "type": "github",
+            "username": "cocoa-xu",
+            "url": "https://github.com/cocoa-xu"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "elixir",
@@ -341,14 +376,22 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
+        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
+          },
+          {
+            "type": "github",
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://crystaworld.dev"
+        ],
         "entryIds": [
           "jyo-gi",
           "nuxtjs",
@@ -492,7 +535,13 @@
       {
         "id": "fumanama",
         "displayName": "fuma-nama",
+        "pfp": "https://avatars.githubusercontent.com/fuma-nama",
         "socials": [
+          {
+            "type": "github",
+            "username": "fuma-nama",
+            "url": "https://github.com/fuma-nama"
+          },
           {
             "type": "x",
             "username": "fuma_nama",
@@ -523,8 +572,20 @@
       {
         "id": "g2_games",
         "displayName": "g2_games",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/G2-Games",
+        "socials": [
+          {
+            "type": "github",
+            "username": "G2-Games",
+            "url": "https://github.com/G2-Games"
+          }
+        ],
         "personalSites": [
+          "https://ko-fi.com/g2_games",
+          "https://g2games.dev/git/",
+          "https://patchii.net/G2_Games/",
+          "https://codeberg.org/g2_games",
+          "https://g2games.dev",
           "https://g2games.dev"
         ],
         "entryIds": [
@@ -621,8 +682,18 @@
       {
         "id": "icarusgk",
         "displayName": "icarusgk",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:mtylyfv6nbawz4dgnguhk75f/bafkreicbkpcczjn5brrtgijzagreik4v7dtouo2jtuukdjxdxtvuczhrla",
+        "pfp": "https://avatars.githubusercontent.com/icarusgk",
         "socials": [
+          {
+            "type": "x",
+            "username": "icarusgkx",
+            "url": "https://x.com/icarusgkx"
+          },
+          {
+            "type": "github",
+            "username": "icarusgk",
+            "url": "https://github.com/icarusgk"
+          },
           {
             "type": "bsky",
             "username": "icarusgk.com",
@@ -672,7 +743,13 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
+        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "socials": [
+          {
+            "type": "github",
+            "username": "ifalfahri",
+            "url": "https://github.com/ifalfahri"
+          },
           {
             "type": "behance",
             "username": "ifalfahri",
@@ -685,6 +762,8 @@
           }
         ],
         "personalSites": [
+          "https://dribbble.com/ifalfahri",
+          "https://ifalf.com",
           "https://ifalf.com/"
         ],
         "entryIds": [
@@ -785,8 +864,17 @@
       {
         "id": "mkpoli",
         "displayName": "mkpoli",
-        "socials": [],
-        "personalSites": [],
+        "pfp": "https://avatars.githubusercontent.com/mkpoli",
+        "socials": [
+          {
+            "type": "github",
+            "username": "mkpoli",
+            "url": "https://github.com/mkpoli"
+          }
+        ],
+        "personalSites": [
+          "https://mkpo.li/"
+        ],
         "entryIds": [
           "svelte"
         ],
@@ -855,7 +943,14 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/PetricaT",
+        "socials": [
+          {
+            "type": "github",
+            "username": "PetricaT",
+            "url": "https://github.com/PetricaT"
+          }
+        ],
         "personalSites": [
           "https://petricat.github.io/PetricaT/"
         ],
@@ -895,8 +990,13 @@
       {
         "id": "saltyaom",
         "displayName": "saltyaom",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:3ev4z55fibd22hfkllzpmgbz/bafkreiew3glctgcjbwjlkklvv65w5vrxkpzhbgsyb5vezaywf64onaiv74",
+        "pfp": "https://avatars.githubusercontent.com/SaltyAom",
         "socials": [
+          {
+            "type": "github",
+            "username": "SaltyAom",
+            "url": "https://github.com/SaltyAom"
+          },
           {
             "type": "x",
             "username": "saltyaom",
@@ -932,7 +1032,19 @@
       {
         "id": "sawaratsuki",
         "displayName": "sawaratsuki",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/SAWARATSUKI",
+        "socials": [
+          {
+            "type": "x",
+            "username": "sawaratsuki1004",
+            "url": "https://x.com/sawaratsuki1004"
+          },
+          {
+            "type": "github",
+            "username": "SAWARATSUKI",
+            "url": "https://github.com/SAWARATSUKI"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "akari-bot",
@@ -1218,8 +1330,22 @@
       {
         "id": "shiroiame_kusu",
         "displayName": "shiroiame_kusu",
-        "socials": [],
-        "personalSites": [],
+        "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
+        "socials": [
+          {
+            "type": "x",
+            "username": "Shiroiame_Kusu",
+            "url": "https://x.com/Shiroiame_Kusu"
+          },
+          {
+            "type": "github",
+            "username": "Shiroiame-Kusu",
+            "url": "https://github.com/Shiroiame-Kusu"
+          }
+        ],
+        "personalSites": [
+          "https://blog.nyat.icu"
+        ],
         "entryIds": [
           "windows"
         ],
@@ -1413,7 +1539,14 @@
       {
         "id": "paige",
         "displayName": "paige",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/ssalggnikool",
+        "socials": [
+          {
+            "type": "github",
+            "username": "ssalggnikool",
+            "url": "https://github.com/ssalggnikool"
+          }
+        ],
         "personalSites": [
           "https://paige.moe/"
         ],
@@ -1451,6 +1584,39 @@
         ],
         "entryIds": [
           "takumi"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "nuarthy",
+        "displayName": "nuarthy",
+        "pfp": "https://avatars.githubusercontent.com/akayanuarcandra",
+        "socials": [
+          {
+            "type": "github",
+            "username": "akayanuarcandra",
+            "url": "https://github.com/akayanuarcandra"
+          },
+          {
+            "type": "x",
+            "username": "nuarthy",
+            "url": "https://x.com/nuarthy"
+          }
+        ],
+        "personalSites": [
+          "https://nuarthy.my.id/"
+        ],
+        "entryIds": [
+          "effectordie",
+          "fedora"
         ],
         "licenses": [
           {
@@ -13835,6 +14001,85 @@
           }
         ],
         "createdAt": "2026-07-19"
+      },
+      {
+        "id": "effectordie",
+        "authorId": "nuarthy",
+        "title": "Effect Or Die",
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/elianiva_/status/2095838679491317935"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/elianiva_/status/2095864196802199961"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/nuarthy/status/2095847695554687486"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "effect.svg",
+            "src": {
+              "type": "unknown",
+              "url": "https://nuarthy.my.id/works/effect.svg"
+            },
+            "references": []
+          }
+        ],
+        "createdAt": "2026-07-19"
+      },
+      {
+        "id": "fedora",
+        "authorId": "nuarthy",
+        "title": "",
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/nuarthy/status/2095864811985011047"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "fedora.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/fedora.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/fedora.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2024-01-01"
       }
     ],
     "standardLicenses": {
@@ -13989,6 +14234,16 @@
         "label": "React",
         "url": "https://react.dev/?uwu=true",
         "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Takumi.js",
+        "url": "https://takumi.kane.tw/",
+        "authorid": "kane50613"
+      },
+      {
+        "label": "Vencord",
+        "url": "https://vencord.dev/",
+        "authorid": "claration"
       }
     ]
   }
