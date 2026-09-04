@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-04T16:23:08.941Z",
+  "updatedAt": "2026-09-04T16:38:43.443Z",
   "data": {
     "authorCount": 33,
     "imageCount": 290,
@@ -14047,7 +14047,7 @@
       {
         "id": "fedora",
         "authorId": "nuarthy",
-        "title": "",
+        "title": "Fedora",
         "references": [
           {
             "link": {
