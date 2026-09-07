@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-04T16:38:43.443Z",
+  "updatedAt": "2026-09-07T11:03:19.043Z",
   "data": {
     "authorCount": 33,
-    "imageCount": 290,
+    "imageCount": 291,
     "authors": [
       {
         "id": "aikoyori",
@@ -436,7 +436,19 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
+        "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
+          {
+            "type": "github",
+            "username": "C29H25N3O5",
+            "url": "https://github.com/C29H25N3O5"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "clion",
@@ -798,14 +810,23 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
+        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "socials": [
+          {
+            "type": "github",
+            "username": "lDMDiamondl",
+            "url": "https://github.com/lDMDiamondl"
+          },
           {
             "type": "x",
             "username": "dmdiamond1234",
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/",
+          "https://dendya123.tistory.com/"
+        ],
         "entryIds": [
           "docker",
           "neovim",
@@ -867,12 +888,18 @@
         "pfp": "https://avatars.githubusercontent.com/mkpoli",
         "socials": [
           {
+            "type": "x",
+            "username": "mkpoli",
+            "url": "https://x.com/mkpoli"
+          },
+          {
             "type": "github",
             "username": "mkpoli",
             "url": "https://github.com/mkpoli"
           }
         ],
         "personalSites": [
+          "https://ko-fi.com/mkpoli/",
           "https://mkpo.li/"
         ],
         "entryIds": [
@@ -928,7 +955,8 @@
           "https://nichind.dev"
         ],
         "entryIds": [
-          "awake.moe"
+          "awake.moe",
+          "pawstash"
         ],
         "licenses": [
           {
@@ -1377,7 +1405,14 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/syke9p3",
+        "socials": [
+          {
+            "type": "github",
+            "username": "syke9p3",
+            "url": "https://github.com/syke9p3"
+          }
+        ],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
@@ -1509,13 +1544,7 @@
       {
         "id": "claration",
         "displayName": "claration",
-        "pfp": "https://avatars.githubusercontent.com/claration",
         "socials": [
-          {
-            "type": "github",
-            "username": "claration",
-            "url": "https://github.com/claration"
-          },
           {
             "type": "x",
             "username": "khcrysalis",
@@ -6268,6 +6297,43 @@
           }
         ],
         "createdAt": "2024-05-04"
+      },
+      {
+        "id": "pawstash",
+        "authorId": "nichind",
+        "title": "Pawstash",
+        "references": [
+          {
+            "link": {
+              "type": "github-repo",
+              "url": "https://github.com/pawstash/pawstash"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "pawstash.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/pawstash/pawstash/main/assets/pawstash.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/pawstash/pawstash/blob/main/assets/pawstash.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-07"
       },
       {
         "id": "determinant",
