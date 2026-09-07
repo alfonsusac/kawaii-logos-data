@@ -19,6 +19,17 @@ export const nichind: AuthorDefinition = {
         "official:https://awake.moe",
         "https://x.com/n1chind/status/2051017143362203786/photo/1",
       ]
+    },
+    'pawstash': {
+      label: "Pawstash",
+      images: [
+        { src: "https://github.com/pawstash/pawstash/blob/main/assets/pawstash.png" },
+      ],
+      createdAt: "Sep 7, 2026",
+      references: [
+        "https://github.com/pawstash/pawstash"
+      ],
+      license: undefined,
     }
   }
 }
