@@ -10,6 +10,7 @@ on:
       - ".github/workflows/data.yml"  # on data.yml (this file) change
       - "src/**"                      # on src change (change on author/images/series or any logic in scraping)
       - "assets/**"                   # on assets change (change on manually added assets)
+      - ".temp/cache.json"            # on cache change
 
 permissions:
   contents: write
