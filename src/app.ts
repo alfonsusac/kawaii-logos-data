@@ -20,8 +20,6 @@ runApp(async () => {
     },
   )
 
-  console.log("Has Uncommited Changes:", await Git.checkHasUncommitedChanges())
-
   const outputData = await step(
     "Resolving definitions", async () => {
       const resolved = await resolveDefinitions(author_definitions)
@@ -29,24 +27,19 @@ runApp(async () => {
     }
   )
 
-  console.log("Has Uncommited Changes:", await Git.checkHasUncommitedChanges())
-
   await step(
     "Persisting data", async () => {
       const output = await step("Preparing output",
         () => prepareOutput(outputData))
-        
-      console.log("Has Uncommited Changes:", await Git.checkHasUncommitedChanges())
-      
+
+      await step("Saving cache first",
+        () => commitAndPushCache('main-2'))
+
       await step("Saving to disk",
         () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
-      
-      console.log("Has Uncommited Changes:", await Git.checkHasUncommitedChanges())
-      
+
       await step("Saving to data branch",
-        () => saveToDataBranch(output, "data"))
-      
-      console.log("Has Uncommited Changes:", await Git.checkHasUncommitedChanges())
+        () => saveToDataBranch(output, "main-2-data"))
     }
   )
 
@@ -59,6 +52,12 @@ runApp(async () => {
 
 
 // --------------------------------------------------------------------------------
+
+async function commitAndPushCache(branchName: string) {
+  // await Git.trackAll()
+  // await Git.commitAllTracked("Updated cache.")
+  // await Git.pushAndSetUpstream(branchName)
+}
 
 
 async function prepareOutput(outputData: KawaiiLogosData) {
@@ -138,6 +137,7 @@ async function saveToDataBranch(data: DataResponse, dataBranchName: string) {
   await usingGitBranch(
     dataBranchName,
     async () => {
+
       console.log("before")
       console.log((await readdir('.')).join('\n'))
       await cleanAndSaveToDisk(data, "./", { clean: false })
@@ -168,7 +168,7 @@ async function usingGitBranch(
   // verbose(`Current branch is ${ previousBranch }. Target data branch is ${ dataBranchName }. Branch exists: ${ hasBranch }`)
 
   if (await Git.checkHasUncommitedChanges()) {
-    logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch "${ dataBranchName }".`)
+    logerror(`Uncommited changes detected. Please commit or stash your changes before switching to branch ${ dataBranchName }.`)
     return
   }
 

@@ -3,50 +3,46 @@ import { isInGitHubAction, revalidateToken } from "./env"
 
 export async function revalidateMainWebsite() {
   if (isInGitHubAction && revalidateToken) {
-    const res = await Promise.allSettled(
-      [
-        fetch(`${ frontendDomain }/revalidate`, {
-          body: JSON.stringify({
-            token: revalidateToken,
-          }),
-          headers: {
-            "Content-Type": "application/json"
-          },
-          method: "POST"
-        }).then((res) => ({ res: res.json(), url: `${ frontendDomain }/revalidate` })).catch((err) => {
-          console.error("Failed to revalidate main website:", err)
-          return
-        }),
-        fetch(`${ frontendPreviewDomain }/revalidate`, {
-          body: JSON.stringify({
-            token: revalidateToken,
-          }),
-          headers: {
-            "Content-Type": "application/json"
-          },
-          method: "POST"
-        }).then((res) => ({ res: res.json(), url: `${ frontendPreviewDomain }/revalidate` })).catch((err) => {
-          console.error("Failed to revalidate preview website:", err)
-        }),
-        fetch(`http://localhost:3000/revalidate`, {
-          body: JSON.stringify({
-            token: revalidateToken,
-          }),
-          headers: {
-            "Content-Type": "application/json"
-          },
-          method: "POST"
-        }).then((res) => ({ res: res.json(), url: `http://localhost:3000/revalidate` })).catch((err) => {
-          console.error("Failed to revalidate local development server:", err)
-        })
-      ]
-    )
-    res.forEach((r) => {
-      if (r.status === "fulfilled") {
-        console.log(`ok: ${ JSON.stringify(r.value, null, 2) }`)
-      } else {
-        console.log(`rejected: ${ r.reason }`)
-      }
+    fetch(`${ frontendDomain }/revalidate`, {
+      body: JSON.stringify({
+        token: revalidateToken,
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    }).then(async (res) => {
+      const json = await res.json()
+      console.log(`Revalidating to ${ frontendDomain }/revalidate OK: ${ res.status } ${ JSON.stringify(json, null, 2) }`)
+    }).catch((err) => {
+      console.error(`Failed to revalidate main website (${ frontendDomain }/revalidate):`, err)
+    })
+    fetch(`${ frontendPreviewDomain }/revalidate`, {
+      body: JSON.stringify({
+        token: revalidateToken,
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    }).then(async (res) => {
+      const json = await res.json()
+      console.log(`Revalidating to ${ frontendPreviewDomain }/revalidate OK: ${ res.status } ${ JSON.stringify(json, null, 2) }`)
+    }).catch((err) => {
+      console.error(`Failed to revalidate preview website (${ frontendPreviewDomain }/revalidate):`, err)
     })
   }
+
+  if (!isInGitHubAction)
+    fetch(`http://localhost:3000/revalidate`, {
+      body: JSON.stringify({
+        token: revalidateToken,
+      }),
+      headers: {
+        "Content-Type": "application/json"
+      },
+      method: "POST"
+    }).then((res) => res.json()).catch((err) => {
+      console.error("Failed to revalidate local development server (http://localhost:3000/revalidate):", err)
+    })
 }

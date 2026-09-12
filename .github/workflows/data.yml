@@ -3,10 +3,9 @@ name: Update Data
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 0 * * 1"
+    # Every 4 hour
+    - cron: "0 0 * * *"
   push:
-    branches: 
-      - main                          # only allow push on main branch
     paths:
       - ".github/workflows/data.yml"  # on data.yml (this file) change
       - "src/**"                      # on src change (change on author/images/series or any logic in scraping)
