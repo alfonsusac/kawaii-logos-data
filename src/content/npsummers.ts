@@ -14,7 +14,7 @@ export const aureal: AuthorDefinition = {
       ],
       createdAt: "Sep 12, 2026",
       references: [
-        "https://aureal.dev",
+        "official:https://aureal.dev",
       ],
     },
     'mxrzaxyz': {
@@ -24,8 +24,7 @@ export const aureal: AuthorDefinition = {
       ],
       createdAt: "Sep 12, 2026",
       references: [
-        "https://mxrza.xyz/",
-        "https://en.wikipedia.org/wiki/Serial_Experiments_Lain",
+        "official:https://mxrza.xyz/",
       ],
       license: {
         type: "All Rights Reserved"
@@ -38,7 +37,7 @@ export const aureal: AuthorDefinition = {
       ],
       createdAt: "Sep 12, 2026",
       references: [
-        "https://anthonny.fyi/",
+        "official:https://anthonny.fyi/",
       ],
       license: {
         type: "All Rights Reserved"
@@ -51,8 +50,8 @@ export const aureal: AuthorDefinition = {
       ],
       createdAt: "Sep 12, 2026",
       references: [
-        "https://lanyard.rest/",
-        "https://lanyard.cafe/",
+        "official:https://lanyard.rest/",
+        "official:https://lanyard.cafe/",
       ],
       license: {
         type: "MIT"
@@ -65,7 +64,7 @@ export const aureal: AuthorDefinition = {
       ],
       createdAt: "Sep 12, 2026",
       references: [
-        "https://www.abuseipdb.com/",
+        "official:https://www.abuseipdb.com/",
       ],
       license: {
         type: "MIT"
