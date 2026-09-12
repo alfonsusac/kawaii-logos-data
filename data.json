@@ -1,19 +1,14 @@
 {
-  "updatedAt": "2026-09-12T04:30:16.314Z",
+  "updatedAt": "2026-09-12T06:56:34.128Z",
   "data": {
-    "authorCount": 30,
-    "imageCount": 287,
+    "authorCount": 34,
+    "imageCount": 297,
     "authors": [
       {
         "id": "aikoyori",
         "displayName": "aikoyori",
-        "pfp": "https://avatars.githubusercontent.com/Aikoyori",
+        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aakz2mue7yaw4olibq3loql/bafkreiew6o2sfv6gpodtyd5erpxgeiqa4ywjdh6kdl2slxd44ypyygfxlu",
         "socials": [
-          {
-            "type": "github",
-            "username": "Aikoyori",
-            "url": "https://github.com/Aikoyori"
-          },
           {
             "type": "x",
             "username": "Aikoyori",
@@ -25,9 +20,7 @@
             "url": "https://bsky.app/profile/aikoyori.xyz"
           }
         ],
-        "personalSites": [
-          "https://aikoyori.xyz"
-        ],
+        "personalSites": [],
         "entryIds": [
           "bun",
           "docker",
@@ -170,14 +163,7 @@
       {
         "id": "anwar_achilles",
         "displayName": "anwar_achilles",
-        "pfp": "https://avatars.githubusercontent.com/AnwarAchilles",
-        "socials": [
-          {
-            "type": "github",
-            "username": "AnwarAchilles",
-            "url": "https://github.com/AnwarAchilles"
-          }
-        ],
+        "socials": [],
         "personalSites": [],
         "entryIds": [
           "codeigniter",
@@ -367,22 +353,14 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
-        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
-          {
-            "type": "github",
-            "username": "Crysta1221",
-            "url": "https://github.com/Crysta1221"
-          },
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
           }
         ],
-        "personalSites": [
-          "https://crystaworld.dev"
-        ],
+        "personalSites": [],
         "entryIds": [
           "jyo-gi",
           "nuxtjs",
@@ -427,14 +405,7 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
-        "socials": [
-          {
-            "type": "github",
-            "username": "C29H25N3O5",
-            "url": "https://github.com/C29H25N3O5"
-          }
-        ],
+        "socials": [],
         "personalSites": [],
         "entryIds": [
           "clion",
@@ -570,16 +541,8 @@
       {
         "id": "g2_games",
         "displayName": "g2_games",
-        "pfp": "https://avatars.githubusercontent.com/G2-Games",
-        "socials": [
-          {
-            "type": "github",
-            "username": "G2-Games",
-            "url": "https://github.com/G2-Games"
-          }
-        ],
+        "socials": [],
         "personalSites": [
-          "https://g2games.dev",
           "https://g2games.dev"
         ],
         "entryIds": [
@@ -737,13 +700,7 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
-        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "socials": [
-          {
-            "type": "github",
-            "username": "ifalfahri",
-            "url": "https://github.com/ifalfahri"
-          },
           {
             "type": "behance",
             "username": "ifalfahri",
@@ -756,7 +713,6 @@
           }
         ],
         "personalSites": [
-          "https://ifalf.com",
           "https://ifalf.com/"
         ],
         "entryIds": [
@@ -791,13 +747,7 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
-        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "socials": [
-          {
-            "type": "github",
-            "username": "lDMDiamondl",
-            "url": "https://github.com/lDMDiamondl"
-          },
           {
             "type": "x",
             "username": "dmdiamond1234",
@@ -863,17 +813,8 @@
       {
         "id": "mkpoli",
         "displayName": "mkpoli",
-        "pfp": "https://avatars.githubusercontent.com/mkpoli",
-        "socials": [
-          {
-            "type": "github",
-            "username": "mkpoli",
-            "url": "https://github.com/mkpoli"
-          }
-        ],
-        "personalSites": [
-          "https://mkpo.li/"
-        ],
+        "socials": [],
+        "personalSites": [],
         "entryIds": [
           "svelte"
         ],
@@ -1323,17 +1264,8 @@
       {
         "id": "shiroiame_kusu",
         "displayName": "shiroiame_kusu",
-        "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
-        "socials": [
-          {
-            "type": "github",
-            "username": "Shiroiame-Kusu",
-            "url": "https://github.com/Shiroiame-Kusu"
-          }
-        ],
-        "personalSites": [
-          "https://blog.nyat.icu"
-        ],
+        "socials": [],
+        "personalSites": [],
         "entryIds": [
           "windows"
         ],
@@ -1365,14 +1297,7 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "pfp": "https://avatars.githubusercontent.com/syke9p3",
-        "socials": [
-          {
-            "type": "github",
-            "username": "syke9p3",
-            "url": "https://github.com/syke9p3"
-          }
-        ],
+        "socials": [],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
@@ -1463,6 +1388,7 @@
           "avalanche",
           "capacitor",
           "monad",
+          "overtake",
           "surrealdb",
           "vyper"
         ],
@@ -1522,6 +1448,142 @@
           "vencord"
         ],
         "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "paige",
+        "displayName": "paige",
+        "pfp": "https://avatars.githubusercontent.com/ssalggnikool",
+        "socials": [
+          {
+            "type": "github",
+            "username": "ssalggnikool",
+            "url": "https://github.com/ssalggnikool"
+          }
+        ],
+        "personalSites": [
+          "https://paige.moe/"
+        ],
+        "entryIds": [
+          "vencordmini"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "kane50613",
+        "displayName": "kane50613",
+        "pfp": "https://avatars.githubusercontent.com/kane50613",
+        "socials": [
+          {
+            "type": "github",
+            "username": "kane50613",
+            "url": "https://github.com/kane50613"
+          },
+          {
+            "type": "x",
+            "username": "kanewang_",
+            "url": "https://x.com/kanewang_"
+          }
+        ],
+        "personalSites": [
+          "https://kane.tw"
+        ],
+        "entryIds": [
+          "takumi"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "nuarthy",
+        "displayName": "nuarthy",
+        "socials": [
+          {
+            "type": "x",
+            "username": "nuarthy",
+            "url": "https://x.com/nuarthy"
+          }
+        ],
+        "personalSites": [
+          "https://nuarthy.my.id/"
+        ],
+        "entryIds": [
+          "effectordie",
+          "fedora"
+        ],
+        "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "aureal",
+        "displayName": "aureal",
+        "pfp": "https://avatars.githubusercontent.com/NPSummers",
+        "socials": [
+          {
+            "type": "github",
+            "username": "NPSummers",
+            "url": "https://github.com/NPSummers"
+          },
+          {
+            "type": "x",
+            "username": "nonnewport",
+            "url": "https://x.com/nonnewport"
+          }
+        ],
+        "personalSites": [
+          "https://aureal.dev"
+        ],
+        "entryIds": [
+          "abuseipdb",
+          "anthonnyfyi",
+          "aurealdev",
+          "lanyard",
+          "mxrzaxyz"
+        ],
+        "licenses": [
+          {
+            "type": "standard",
+            "id": "MIT",
+            "label": "MIT License",
+            "labelShort": "MIT",
+            "href": "https://opensource.org/license/mit/"
+          },
+          {
+            "type": "standard",
+            "id": "All Rights Reserved",
+            "label": "All Rights Reserved",
+            "labelShort": "All Rights Reserved",
+            "href": ""
+          },
           {
             "type": "unknown",
             "label": "Unknown License",
@@ -4013,13 +4075,13 @@
             "label": "devscale-cute.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute.png"
                 }
               }
             ]
@@ -4028,13 +4090,13 @@
             "label": "devscale-cute.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute.svg"
                 }
               }
             ]
@@ -4043,13 +4105,13 @@
             "label": "devscale-cute-print.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute-print.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute-print.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute-print.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute-print.png"
                 }
               }
             ]
@@ -4058,13 +4120,13 @@
             "label": "devscale-cute-print.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/devscale-cute-print.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/devscale-cute-print.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/devscale-cute-print.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/devscale-cute-print.svg"
                 }
               }
             ]
@@ -4097,13 +4159,13 @@
             "label": "emailthing.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/emailthing.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/emailthing.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/emailthing.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/emailthing.svg"
                 }
               }
             ]
@@ -4136,13 +4198,13 @@
             "label": "lgtm.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/lgtm.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/lgtm.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/lgtm.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/lgtm.svg"
                 }
               }
             ]
@@ -4205,13 +4267,13 @@
             "label": "npmx-cute-trans.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute-trans.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute-trans.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute-trans.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute-trans.svg"
                 }
               }
             ]
@@ -4220,13 +4282,13 @@
             "label": "npmx-cute-trans.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute-trans.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute-trans.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute-trans.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute-trans.png"
                 }
               }
             ]
@@ -4235,13 +4297,13 @@
             "label": "npmx-cute.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute.svg"
                 }
               }
             ]
@@ -4250,13 +4312,13 @@
             "label": "npmx-cute.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-cute.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-cute.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-cute.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-cute.png"
                 }
               }
             ]
@@ -4265,13 +4327,13 @@
             "label": "npmx-succubus.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-succubus.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-succubus.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-succubus.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-succubus.svg"
                 }
               }
             ]
@@ -4280,13 +4342,13 @@
             "label": "npmx-succubus.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/npmx-succubus.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/npmx-succubus.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/npmx-succubus.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/npmx-succubus.png"
                 }
               }
             ]
@@ -4312,13 +4374,13 @@
             "label": "qris-id.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-id.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-id.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-id.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-id.png"
                 }
               }
             ]
@@ -4327,13 +4389,13 @@
             "label": "qris-id.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-id.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-id.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-id.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-id.svg"
                 }
               }
             ]
@@ -4342,13 +4404,13 @@
             "label": "qris-jp.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-jp.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-jp.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-jp.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-jp.png"
                 }
               }
             ]
@@ -4357,13 +4419,13 @@
             "label": "qris-jp.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/qris-jp.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/qris-jp.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/qris-jp.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/qris-jp.svg"
                 }
               }
             ]
@@ -4396,13 +4458,13 @@
             "label": "sharkchat.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/sharkchat.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/sharkchat.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/sharkchat.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/sharkchat.svg"
                 }
               }
             ]
@@ -4435,13 +4497,13 @@
             "label": "skillissue.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/skillissue.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/skillissue.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/skillissue.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/skillissue.svg"
                 }
               }
             ]
@@ -4474,13 +4536,13 @@
             "label": "supabase.svg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/alfon/supabase.svg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/alfon/supabase.svg"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/alfon/supabase.svg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/alfon/supabase.svg"
                 }
               }
             ]
@@ -4930,7 +4992,7 @@
             "label": "abletonsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/abletonsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/abletonsticker.png"
             },
             "references": [
               {
@@ -4942,7 +5004,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/abletonsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/abletonsticker.png"
                 }
               }
             ],
@@ -4976,7 +5038,7 @@
             "label": "bitwigsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/bitwigsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/bitwigsticker.png"
             },
             "references": [
               {
@@ -4988,7 +5050,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/bitwigsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/bitwigsticker.png"
                 }
               }
             ],
@@ -5022,7 +5084,7 @@
             "label": "flsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/flsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/flsticker.png"
             },
             "references": [
               {
@@ -5034,7 +5096,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/flsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/flsticker.png"
                 }
               }
             ],
@@ -5089,7 +5151,7 @@
             "label": "porterrobinsonsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/porterrobinsonsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/porterrobinsonsticker.png"
             },
             "references": [
               {
@@ -5101,7 +5163,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/porterrobinsonsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/porterrobinsonsticker.png"
                 }
               }
             ],
@@ -5135,7 +5197,7 @@
             "label": "skrillexsticker.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/skrillexsticker.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/skrillexsticker.png"
             },
             "references": [
               {
@@ -5147,7 +5209,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/skrillexsticker.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/skrillexsticker.png"
                 }
               }
             ],
@@ -6056,7 +6118,7 @@
             "label": "417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
             },
             "references": [
               {
@@ -6068,7 +6130,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/417108050-37bf72ec-404f-494c-862c-dae36d6bf022.png"
                 }
               }
             ]
@@ -6158,13 +6220,13 @@
             "label": "awake.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/awake.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/awake.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/awake.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/awake.png"
                 }
               }
             ]
@@ -13507,7 +13569,7 @@
             "label": "GLlkf9EWwAAq3N9.jpeg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/GLlkf9EWwAAq3N9.jpeg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLlkf9EWwAAq3N9.jpeg"
             },
             "references": [
               {
@@ -13519,7 +13581,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/GLlkf9EWwAAq3N9.jpeg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLlkf9EWwAAq3N9.jpeg"
                 }
               }
             ],
@@ -13545,7 +13607,7 @@
             "label": "GLmrDPdXgAAlKvW.jpeg",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/GLmrDPdXgAAlKvW.jpeg"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/GLmrDPdXgAAlKvW.jpeg"
             },
             "references": [
               {
@@ -13557,7 +13619,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/GLmrDPdXgAAlKvW.jpeg"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/GLmrDPdXgAAlKvW.jpeg"
                 }
               }
             ],
@@ -13590,13 +13652,13 @@
             "label": "avalanche.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/avalanche.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/avalanche.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/avalanche.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/avalanche.png"
                 }
               }
             ]
@@ -13620,7 +13682,7 @@
             "label": "capacitor.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/capacitor.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/capacitor.png"
             },
             "references": [
               {
@@ -13632,7 +13694,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/capacitor.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/capacitor.png"
                 }
               }
             ],
@@ -13659,7 +13721,7 @@
             "label": "monad.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/monad.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/monad.png"
             },
             "references": [
               {
@@ -13671,7 +13733,7 @@
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/monad.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/monad.png"
                 }
               }
             ],
@@ -13680,7 +13742,40 @@
             }
           }
         ],
-        "createdAt": "2025-03-10"
+        "createdAt": "2026-05-12"
+      },
+      {
+        "id": "overtake",
+        "authorId": "thatonecalculator",
+        "title": "Overtake",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "overtake.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/overtake.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/overtake.png"
+                }
+              }
+            ],
+            "style": {
+              "objectFit": "contain"
+            }
+          }
+        ],
+        "createdAt": "2026-05-17"
       },
       {
         "id": "surrealdb",
@@ -13705,13 +13800,13 @@
             "label": "surrealdb.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/surrealdb.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/surrealdb.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/surrealdb.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/surrealdb.png"
                 }
               }
             ]
@@ -13748,13 +13843,13 @@
             "label": "vyper.png",
             "src": {
               "type": "github-raw",
-              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/t1c/vyper.png"
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/t1c/vyper.png"
             },
             "references": [
               {
                 "link": {
                   "type": "github-blob",
-                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/t1c/vyper.png"
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/t1c/vyper.png"
                 }
               }
             ]
@@ -13802,18 +13897,12 @@
         "references": [
           {
             "link": {
-              "type": "unknown",
-              "url": "https://uwu:https://vencord.dev/"
-            }
-          },
-          {
-            "link": {
-              "type": "unknown",
-              "url": "https://uwu:https://paige.moe/"
+              "type": "official-website-usage",
+              "url": "https://vencord.dev/"
             }
           }
         ],
-        "imageCount": 4,
+        "imageCount": 2,
         "license": {
           "type": "unknown",
           "label": "Unknown License",
@@ -13849,7 +13938,29 @@
                 }
               }
             ]
-          },
+          }
+        ],
+        "createdAt": "2025-07-08"
+      },
+      {
+        "id": "vencordmini",
+        "authorId": "paige",
+        "title": "Vencord Mini",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://vencord.dev/"
+            }
+          }
+        ],
+        "imageCount": 2,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
           {
             "label": "logo-nav.webp",
             "src": {
@@ -13882,6 +13993,327 @@
           }
         ],
         "createdAt": "2025-07-08"
+      },
+      {
+        "id": "takumi",
+        "authorId": "kane50613",
+        "title": "Takumi",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://takumi.kane.tw/"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/kanewang_/status/2078838378301403254"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "sticker.svg",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/kane50613/takumi/master/assets/images/sticker.svg"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/kane50613/takumi/blob/master/assets/images/sticker.svg"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-07-19"
+      },
+      {
+        "id": "effectordie",
+        "authorId": "nuarthy",
+        "title": "Effect Or Die",
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/elianiva_/status/2095838679491317935"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/elianiva_/status/2095864196802199961"
+            }
+          },
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/nuarthy/status/2095847695554687486"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "effect.svg",
+            "src": {
+              "type": "unknown",
+              "url": "https://nuarthy.my.id/works/effect.svg"
+            },
+            "references": []
+          }
+        ],
+        "createdAt": "2026-07-19"
+      },
+      {
+        "id": "fedora",
+        "authorId": "nuarthy",
+        "title": "Fedora",
+        "references": [
+          {
+            "link": {
+              "type": "twitter-post",
+              "url": "https://x.com/nuarthy/status/2095864811985011047"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "fedora.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main-2/assets/fedora.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main-2/assets/fedora.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2024-01-01"
+      },
+      {
+        "id": "abuseipdb",
+        "authorId": "aureal",
+        "title": "abuseipdb.com",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://www.abuseipdb.com/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "AbuseIPDB.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/AbuseIPDB.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/AbuseIPDB.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "anthonnyfyi",
+        "authorId": "aureal",
+        "title": "anthonny.fyi",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://anthonny.fyi/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "Anthonny.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Anthonny.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Anthonny.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "aurealdev",
+        "authorId": "aureal",
+        "title": "aureal.dev",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://aureal.dev"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "aureal.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/aureal.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/aureal.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "lanyard",
+        "authorId": "aureal",
+        "title": "lanyard.rest",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://lanyard.rest/"
+            }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://lanyard.cafe/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "lanyard.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/lanyard.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/lanyard.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "mxrzaxyz",
+        "authorId": "aureal",
+        "title": "mxrza.xyz",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://mxrza.xyz/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "mizi.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/mizi.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/mizi.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
       }
     ],
     "standardLicenses": {
@@ -14036,6 +14468,11 @@
         "label": "React",
         "url": "https://react.dev/?uwu=true",
         "authorid": "sawaratsuki"
+      },
+      {
+        "label": "Takumi.js",
+        "url": "https://takumi.kane.tw/",
+        "authorid": "kane50613"
       },
       {
         "label": "Vencord",
