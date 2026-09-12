@@ -9,7 +9,6 @@ export const thatonecalculator: AuthorDefinition = {
   },
   license: {
     type: "CC BY-SA 4.0",
-    // has_trademark: true,
   },
   entries: {
     surrealdb: {
@@ -55,9 +54,15 @@ export const thatonecalculator: AuthorDefinition = {
         references: "https://bsky.app/profile/t1c.dev/post/3mlppxkeles25",
         style: { objectFit: "contain", }
       },
-      createdAt: "Mar 10, 2025"
+      createdAt: "May 12, 2026"
+    },
+    overtake: {
+      label: "Overtake",
+      images: {
+        src: "./assets/t1c/overtake.png",
+        style: { objectFit: "contain" }
+      },
+      createdAt: "May 17, 2026"
     }
-
   },
-  // logVerbose: true,
 }
