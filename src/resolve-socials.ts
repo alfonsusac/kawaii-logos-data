@@ -1,6 +1,6 @@
 import { getBskyProfile } from "./lib/api/bsky"
 import { fetchGithubProfile } from "./lib/api/github"
-import { KawaiiLogosData } from "./output"
+import { KawaiiLogosData } from "./output-types"
 import { logerror } from "./pipeline"
 import { site } from "./resolve-url"
 

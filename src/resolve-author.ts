@@ -11,7 +11,7 @@ import { resolveReferencesDefinition, type ReferencesDef } from "./resolve-refer
 import { dedupeByProp } from "./lib/dedupe-by-prop"
 import { resolveFundingsDef, type FundingsDef } from "./resolve-funding"
 import type { HttpsSite } from "./resolve-url"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 
 export type AuthorDefinition = {
   displayName?: string,

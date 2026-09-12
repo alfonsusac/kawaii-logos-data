@@ -8,7 +8,7 @@ import { checkEnvVars } from "./env"
 import { logger } from "./lib/log"
 import { revalidateMainWebsite } from "./revalidate"
 import { author_definitions } from "./content/_authors"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 
 
 runApp(async () => {

@@ -1,5 +1,5 @@
 import { black, blue, green, red, reset, yellow } from "./lib/ansii"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 import { log, usingLogBuffer, type LogBuffer } from "./pipeline"
 import { resolveAuthorDefinition, type AuthorDefinition } from "./resolve-author"
 import { standardLicenses } from "./resolve-license"

@@ -1,5 +1,5 @@
 import { getBskyProfile } from "./lib/api/bsky"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 import { logerror, warn } from "./pipeline"
 import type { AuthorDefinition } from "./resolve-author"
 

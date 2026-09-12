@@ -1,5 +1,5 @@
 import { matchUrl } from "./lib/url-pattern"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 import { logerror, warn } from "./pipeline"
 
 export type HttpsSite =

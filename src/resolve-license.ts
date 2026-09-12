@@ -1,4 +1,4 @@
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 import { log, logerror, warn } from "./pipeline"
 import { resolveReferencesDefinition, type ReferenceDef } from "./resolve-references"
 

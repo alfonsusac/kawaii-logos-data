@@ -1,5 +1,5 @@
 import { validateSlug } from "./lib/slug"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 
 export async function validateResolvedAuthor(
   author: KawaiiLogosData.Author,

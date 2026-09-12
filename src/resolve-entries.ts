@@ -6,7 +6,7 @@ import { resolveHttpsSite, site, type HttpsSite } from "./resolve-url"
 import { getFilenameFromUrl } from "./lib/get-filename-from-url"
 import { matchUrl } from "./lib/url-pattern"
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 import { checkDuplicates } from "./lib/dedupe-by-prop"
 import { slugify } from "./lib/slug"
 

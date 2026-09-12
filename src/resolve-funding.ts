@@ -1,5 +1,5 @@
 import { resolveArrayOrSingleToArray, type ArrayOrSingle } from "./lib/array-type-utils"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 
 export type FundingsDef = ArrayOrSingle<
   | { type: "patreon", url: `https://patreon.com/${ string }` }

@@ -22,6 +22,12 @@ const result = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-
 const authors = result.data
 ```
 
+### Types
+
+
+
+
+
 ### Typescript
 Install types through your favorite package manager
 ```shell

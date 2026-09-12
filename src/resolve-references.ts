@@ -2,7 +2,7 @@ import type { DateDef } from "./lib/date"
 import { resolveHttpsSite, site, type HttpsSite } from "./resolve-url"
 import { warn } from "./pipeline"
 import type { ArrayOrSingle } from "./lib/array-type-utils"
-import type { KawaiiLogosData } from "./output"
+import type { KawaiiLogosData } from "./output-types"
 
 export type ReferenceDef = HttpsSite | {
   site: HttpsSite,
