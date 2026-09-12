@@ -1,0 +1,5 @@
+*
+!.gitignore
+!data.json
+!README.md
+!types.ts
