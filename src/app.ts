@@ -33,7 +33,7 @@ runApp(async () => {
         () => prepareOutput(outputData))
 
       await step("Saving cache first",
-        () => commitAndPushCache('main-2'))
+        () => commitAndPushCache('main'))
 
       await step("Saving to disk",
         () => cleanAndSaveToDisk(output, "./dist", { clean: true }))
