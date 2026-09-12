@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-12T05:13:13.742Z",
+  "updatedAt": "2026-09-12T06:49:22.333Z",
   "data": {
-    "authorCount": 33,
-    "imageCount": 292,
+    "authorCount": 34,
+    "imageCount": 297,
     "authors": [
       {
         "id": "aikoyori",
@@ -379,14 +379,14 @@
         "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
-            "type": "github",
-            "username": "Crysta1221",
-            "url": "https://github.com/Crysta1221"
-          },
-          {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
+          },
+          {
+            "type": "github",
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
           }
         ],
         "personalSites": [
@@ -438,6 +438,11 @@
         "displayName": "c29h25n3o5",
         "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
         "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
           {
             "type": "github",
             "username": "C29H25N3O5",
@@ -769,6 +774,7 @@
           }
         ],
         "personalSites": [
+          "https://dribbble.com/ifalfahri",
           "https://ifalf.com",
           "https://ifalf.com/"
         ],
@@ -817,7 +823,10 @@
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/",
+          "https://dendya123.tistory.com/"
+        ],
         "entryIds": [
           "docker",
           "neovim",
@@ -1352,6 +1361,11 @@
         "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
         "socials": [
           {
+            "type": "x",
+            "username": "Shiroiame_Kusu",
+            "url": "https://x.com/Shiroiame_Kusu"
+          },
+          {
             "type": "github",
             "username": "Shiroiame-Kusu",
             "url": "https://github.com/Shiroiame-Kusu"
@@ -1635,6 +1649,56 @@
           "fedora"
         ],
         "licenses": [
+          {
+            "type": "unknown",
+            "label": "Unknown License",
+            "labelShort": "Unknown License"
+          }
+        ],
+        "references": [],
+        "fundings": []
+      },
+      {
+        "id": "aureal",
+        "displayName": "aureal",
+        "pfp": "https://avatars.githubusercontent.com/NPSummers",
+        "socials": [
+          {
+            "type": "github",
+            "username": "NPSummers",
+            "url": "https://github.com/NPSummers"
+          },
+          {
+            "type": "x",
+            "username": "nonnewport",
+            "url": "https://x.com/nonnewport"
+          }
+        ],
+        "personalSites": [
+          "https://aureal.dev"
+        ],
+        "entryIds": [
+          "abuseipdb",
+          "anthonnyfyi",
+          "aurealdev",
+          "lanyard",
+          "mxrzaxyz"
+        ],
+        "licenses": [
+          {
+            "type": "standard",
+            "id": "MIT",
+            "label": "MIT License",
+            "labelShort": "MIT",
+            "href": "https://opensource.org/license/mit/"
+          },
+          {
+            "type": "standard",
+            "id": "All Rights Reserved",
+            "label": "All Rights Reserved",
+            "labelShort": "All Rights Reserved",
+            "href": ""
+          },
           {
             "type": "unknown",
             "label": "Unknown License",
@@ -14166,6 +14230,205 @@
           }
         ],
         "createdAt": "2024-01-01"
+      },
+      {
+        "id": "abuseipdb",
+        "authorId": "aureal",
+        "title": "abuseipdb.com",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://www.abuseipdb.com/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "AbuseIPDB.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/AbuseIPDB.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/AbuseIPDB.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "anthonnyfyi",
+        "authorId": "aureal",
+        "title": "anthonny.fyi",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://anthonny.fyi/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "Anthonny.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Anthonny.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Anthonny.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "aurealdev",
+        "authorId": "aureal",
+        "title": "aureal.dev",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://aureal.dev"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "unknown",
+          "label": "Unknown License",
+          "labelShort": "Unknown License"
+        },
+        "images": [
+          {
+            "label": "aureal.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/aureal.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/aureal.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "lanyard",
+        "authorId": "aureal",
+        "title": "lanyard.rest",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://lanyard.rest/"
+            }
+          },
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://lanyard.cafe/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "lanyard.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/lanyard.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/lanyard.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "mxrzaxyz",
+        "authorId": "aureal",
+        "title": "mxrza.xyz",
+        "references": [
+          {
+            "link": {
+              "type": "official-website-usage",
+              "url": "https://mxrza.xyz/"
+            }
+          }
+        ],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "mizi.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/mizi.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/mizi.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
       }
     ],
     "standardLicenses": {
