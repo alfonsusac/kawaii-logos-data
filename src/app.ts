@@ -70,7 +70,7 @@ async function prepareOutput(outputData: KawaiiLogosData) {
   const generateGitIgnore = (...lines: string[]) => lines.join('\n') + '\n'
 
   const stringified = JSON.stringify(output, null, 2)
-  const outputTypeFileContent = await Bun.file('./src/output.ts').text()
+  const outputTypeFileContent = await Bun.file('./src/output-types.ts').text()
   const folderStructure = {
     // Switching branch from main to data branch will cause gitignored files to carry over. 
     // So we need to re-ignore those files in the data branch.
