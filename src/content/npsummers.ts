@@ -10,67 +10,66 @@ export const aureal: AuthorDefinition = {
     'aurealdev': {
       label: "aureal.dev",
       images: [
-        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/aureal.png?raw=true" },
+        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/aureal.png" },
       ],
-      createdAt: "Sept 12, 2026",
+      createdAt: "Sep 12, 2026",
       references: [
         "https://aureal.dev",
       ],
-      license: "All Rights Reserved",
-    }
-  },
-  {
+    },
     'mxrzaxyz': {
       label: "mxrza.xyz",
       images: [
-        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/mizi.png?raw=true" },
+        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/mizi.png" },
       ],
-      createdAt: "Sept 12, 2026",
+      createdAt: "Sep 12, 2026",
       references: [
         "https://mxrza.xyz/",
         "https://en.wikipedia.org/wiki/Serial_Experiments_Lain",
       ],
-      license: "All Rights Reserved",
-    }
-  },
-  {
+      license: {
+        type: "All Rights Reserved"
+      },
+    },
     'anthonnyfyi': {
       label: "anthonny.fyi",
       images: [
-        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/Anthonny.png?raw=true" },
+        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/Anthonny.png" },
       ],
-      createdAt: "Sept 12, 2026",
+      createdAt: "Sep 12, 2026",
       references: [
         "https://anthonny.fyi/",
       ],
-      license: "All Rights Reserved",
-    }
-  },
-  {
+      license: {
+        type: "All Rights Reserved"
+      },
+    },
     'lanyard': {
       label: "lanyard.rest",
       images: [
-        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/lanyard.png?raw=true" },
+        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/lanyard.png" },
       ],
-      createdAt: "Sept 12, 2026",
+      createdAt: "Sep 12, 2026",
       references: [
         "https://lanyard.rest/",
         "https://lanyard.cafe/",
       ],
-      license: "MIT",
-    }
-  },
-  {
+      license: {
+        type: "MIT"
+      },
+    },
     'abuseipdb': {
       label: "abuseipdb.com",
       images: [
-        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/AbuseIPDB.png?raw=true" },
+        { src: "https://github.com/NPSummers/NPSummers/blob/main/logos/AbuseIPDB.png" },
       ],
-      createdAt: "Sept 12, 2026",
+      createdAt: "Sep 12, 2026",
       references: [
         "https://www.abuseipdb.com/",
       ],
-      license: "MIT",
+      license: {
+        type: "MIT"
+      },
     }
-  }  
+  },
 }
