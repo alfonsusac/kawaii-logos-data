@@ -17,42 +17,15 @@ https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json
 Modern fetch api can be used to fetch the data and parse it as JSON
 
 ```tsx
-const result = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
-  .then(res => res.json())
-const authors = result.data
+const res = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
+const data = await res.json() as KawaiiLogosData // Copy paste from output-types.ts
+const authors = data.authors
 ```
 
 ### Types
 
+Types can be retrieved from [/src/output-types.ts](https://github.com/alfonsusac/kawaii-logos-data/blob/main/src/output-types.ts)
 
-
-
-
-### Typescript
-Install types through your favorite package manager
-```shell
-pnpm i kawaii-logos-data@git://github.com:alfonsusac/kawaii-logos-data.git#types
-```
-
-```tsx
-import { Data } from "kawaii-logos-data"
-
-const result = await fetch(`https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/data/images.json`)
-  .then(res => res.json()) as Data
-const authors = result.data
-                     // ^? Entries
-```
-#### Update
-Installation through github are not tracked with semantic versioning so whenever there is update you need to call the update command
-```shell
-pnpm update kawaii-logos-data
-```
-
-#### Uninstalling the package
-Installation through github doesn't have a "fixed" name, it depends on whatever name you give it when installing it (i.e `logo-types@git...` -> `pnpm uninstall logo-types`)
-```shell
-pnpm uninstall kawaii-logos-data
-```
 
 ### Examples
 
@@ -60,8 +33,30 @@ If you want to see how the data is consumed, check out [alfonsusac/service-title
 
 ### Contributions
 
-Contributions are welcome
+Contributions are welcome!
 
+Fields You might need to submit your own logos:
+- Author:
+  - (Required) Your url-safe name - should be similar to your displayname.
+  - Your display name
+  - Your profile picture  - Will fallback to github, then bsky if not provided.
+  - Your socials - Will retrieve extra socials linked in github if provided.
+  - Your funding links - Might retrieve from github if provided.
+- Do you have a github repo that we can scrape the entries off of?
+  - If yes, what is the link? Any modifications? Any social post made about it?
+    - Example: [src/content/aikoyori.ts](https://github.com/alfonsusac/kawaii-logos-data/blob/main/src/content/aikoyori.ts), [src/content/andregans.ts](https://github.com/alfonsusac/kawaii-logos-data/blob/main/src/content/andregans.ts)
+  - If no, then provide
+    - (Required) Your url-safe image name
+    - (Required) The name of the entry
+    - The license of your entry - if no license = All Rights Reserved.
+    - The the entry is created
+    - The image links, valid links: Github Blob URL, Gist Image URL, or local images (uploaded to this repo)
+    - Any social post you made about this entry?
+    - Is your logo used in any official website?
+    - Example: [src/content/alfonsusac.ts](https://github.com/alfonsusac/kawaii-logos-data/blob/main/src/content/alfonsusac.ts)
+
+- Your url-safe names can't contain spaces or special characters since it will be used in the link i.e kawaiilogos.alfon.dev/alfonsusac
+- Valid Image links are either only in github or self-hosted in this repo to prevent having broken links. If you need any logos removed feel free to make a PR. 
 
 ## Related Projects
 
