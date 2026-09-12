@@ -20,6 +20,7 @@ import { ldmdiamondl } from "./ldmdiamondl"
 import { maxshawnwx } from "./maxshawnws"
 import { mkpoli } from "./mkpoli"
 import { nichind } from "./nichind"
+import { aureal } from "./npsummers"
 import { nuarthy } from "./nuarthy"
 import { paige } from "./paige"
 import { petricat } from "./petricat"
@@ -66,4 +67,5 @@ export const author_definitions = {
   paige,
   kane50613,
   nuarthy,
+  aureal,
 }
