@@ -1,8 +1,8 @@
 {
-  "updatedAt": "2026-09-12T07:13:30.954Z",
+  "updatedAt": "2026-09-13T04:53:38.023Z",
   "data": {
     "authorCount": 34,
-    "imageCount": 297,
+    "imageCount": 304,
     "authors": [
       {
         "id": "aikoyori",
@@ -163,7 +163,14 @@
       {
         "id": "anwar_achilles",
         "displayName": "anwar_achilles",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/AnwarAchilles",
+        "socials": [
+          {
+            "type": "github",
+            "username": "AnwarAchilles",
+            "url": "https://github.com/AnwarAchilles"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "codeigniter",
@@ -353,14 +360,22 @@
       {
         "id": "cr1sta_dev",
         "displayName": "cr1sta_dev",
+        "pfp": "https://avatars.githubusercontent.com/Crysta1221",
         "socials": [
           {
             "type": "x",
             "username": "cr1sta_dev",
             "url": "https://x.com/cr1sta_dev"
+          },
+          {
+            "type": "github",
+            "username": "Crysta1221",
+            "url": "https://github.com/Crysta1221"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://crystaworld.dev"
+        ],
         "entryIds": [
           "jyo-gi",
           "nuxtjs",
@@ -405,7 +420,19 @@
       {
         "id": "c29h25n3o5",
         "displayName": "c29h25n3o5",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/C29H25N3O5",
+        "socials": [
+          {
+            "type": "x",
+            "username": "C29H25N3O5",
+            "url": "https://x.com/C29H25N3O5"
+          },
+          {
+            "type": "github",
+            "username": "C29H25N3O5",
+            "url": "https://github.com/C29H25N3O5"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "clion",
@@ -541,8 +568,20 @@
       {
         "id": "g2_games",
         "displayName": "g2_games",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/G2-Games",
+        "socials": [
+          {
+            "type": "github",
+            "username": "G2-Games",
+            "url": "https://github.com/G2-Games"
+          }
+        ],
         "personalSites": [
+          "https://ko-fi.com/g2_games",
+          "https://g2games.dev/git/",
+          "https://patchii.net/G2_Games/",
+          "https://codeberg.org/g2_games",
+          "https://g2games.dev",
           "https://g2games.dev"
         ],
         "entryIds": [
@@ -700,7 +739,13 @@
       {
         "id": "ifalfahri",
         "displayName": "ifalfahri",
+        "pfp": "https://avatars.githubusercontent.com/ifalfahri",
         "socials": [
+          {
+            "type": "github",
+            "username": "ifalfahri",
+            "url": "https://github.com/ifalfahri"
+          },
           {
             "type": "behance",
             "username": "ifalfahri",
@@ -713,6 +758,8 @@
           }
         ],
         "personalSites": [
+          "https://dribbble.com/ifalfahri",
+          "https://ifalf.com",
           "https://ifalf.com/"
         ],
         "entryIds": [
@@ -747,14 +794,23 @@
       {
         "id": "ldmdiamondl",
         "displayName": "ldmdiamondl",
+        "pfp": "https://avatars.githubusercontent.com/lDMDiamondl",
         "socials": [
+          {
+            "type": "github",
+            "username": "lDMDiamondl",
+            "url": "https://github.com/lDMDiamondl"
+          },
           {
             "type": "x",
             "username": "dmdiamond1234",
             "url": "https://x.com/dmdiamond1234"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://lDMDiamondl.github.io/",
+          "https://dendya123.tistory.com/"
+        ],
         "entryIds": [
           "docker",
           "neovim",
@@ -813,8 +869,23 @@
       {
         "id": "mkpoli",
         "displayName": "mkpoli",
-        "socials": [],
-        "personalSites": [],
+        "pfp": "https://avatars.githubusercontent.com/mkpoli",
+        "socials": [
+          {
+            "type": "x",
+            "username": "mkpoli",
+            "url": "https://x.com/mkpoli"
+          },
+          {
+            "type": "github",
+            "username": "mkpoli",
+            "url": "https://github.com/mkpoli"
+          }
+        ],
+        "personalSites": [
+          "https://ko-fi.com/mkpoli/",
+          "https://mkpo.li/"
+        ],
         "entryIds": [
           "svelte"
         ],
@@ -884,7 +955,14 @@
       {
         "id": "petricat",
         "displayName": "petricat",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/PetricaT",
+        "socials": [
+          {
+            "type": "github",
+            "username": "PetricaT",
+            "url": "https://github.com/PetricaT"
+          }
+        ],
         "personalSites": [
           "https://petricat.github.io/PetricaT/"
         ],
@@ -1264,8 +1342,22 @@
       {
         "id": "shiroiame_kusu",
         "displayName": "shiroiame_kusu",
-        "socials": [],
-        "personalSites": [],
+        "pfp": "https://avatars.githubusercontent.com/Shiroiame-Kusu",
+        "socials": [
+          {
+            "type": "x",
+            "username": "Shiroiame_Kusu",
+            "url": "https://x.com/Shiroiame_Kusu"
+          },
+          {
+            "type": "github",
+            "username": "Shiroiame-Kusu",
+            "url": "https://github.com/Shiroiame-Kusu"
+          }
+        ],
+        "personalSites": [
+          "https://blog.nyat.icu"
+        ],
         "entryIds": [
           "windows"
         ],
@@ -1297,7 +1389,14 @@
       {
         "id": "syke9p3",
         "displayName": "syke9p3",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/syke9p3",
+        "socials": [
+          {
+            "type": "github",
+            "username": "syke9p3",
+            "url": "https://github.com/syke9p3"
+          }
+        ],
         "personalSites": [
           "https://syke9p3.netlify.app"
         ],
@@ -1564,10 +1663,17 @@
         ],
         "entryIds": [
           "abuseipdb",
+          "akrystmoe",
+          "alfon",
           "anthonnyfyi",
+          "anthropic",
           "aurealdev",
+          "enkanetwork",
+          "kawaiiservicelogos",
           "lanyard",
-          "mxrzaxyz"
+          "mxrzaxyz",
+          "postgresql",
+          "signal"
         ],
         "licenses": [
           {
@@ -1591,7 +1697,12 @@
           }
         ],
         "references": [],
-        "fundings": []
+        "fundings": [
+          {
+            "type": "github",
+            "url": "https://github.com/sponsors/NPSummers"
+          }
+        ]
       }
     ],
     "entries": [
@@ -14120,14 +14231,7 @@
         "id": "abuseipdb",
         "authorId": "aureal",
         "title": "abuseipdb.com",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://www.abuseipdb.com/"
-            }
-          }
-        ],
+        "references": [],
         "imageCount": 1,
         "license": {
           "type": "standard",
@@ -14156,17 +14260,74 @@
         "createdAt": "2026-09-12"
       },
       {
+        "id": "akrystmoe",
+        "authorId": "aureal",
+        "title": "akryst.moe",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "Akryst.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Akryst.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Akryst.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "alfon",
+        "authorId": "aureal",
+        "title": "Alfon.dev",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "All Rights Reserved",
+          "label": "All Rights Reserved",
+          "labelShort": "All Rights Reserved",
+          "href": ""
+        },
+        "images": [
+          {
+            "label": "Alfon.dev.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Alfon.dev.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Alfon.dev.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
         "id": "anthonnyfyi",
         "authorId": "aureal",
         "title": "anthonny.fyi",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://anthonny.fyi/"
-            }
-          }
-        ],
+        "references": [],
         "imageCount": 1,
         "license": {
           "type": "standard",
@@ -14195,17 +14356,42 @@
         "createdAt": "2026-09-12"
       },
       {
+        "id": "anthropic",
+        "authorId": "aureal",
+        "title": "Anthropic",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "Claude.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Claude.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Claude.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
         "id": "aurealdev",
         "authorId": "aureal",
         "title": "aureal.dev",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://aureal.dev"
-            }
-          }
-        ],
+        "references": [],
         "imageCount": 1,
         "license": {
           "type": "unknown",
@@ -14232,23 +14418,74 @@
         "createdAt": "2026-09-12"
       },
       {
+        "id": "enkanetwork",
+        "authorId": "aureal",
+        "title": "Enka.Network",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "enka.network.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/enka.network.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/enka.network.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "kawaiiservicelogos",
+        "authorId": "aureal",
+        "title": "Kawaii Service Logos",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "Kawaii.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Kawaii.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Kawaii.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
         "id": "lanyard",
         "authorId": "aureal",
         "title": "lanyard.rest",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://lanyard.rest/"
-            }
-          },
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://lanyard.cafe/"
-            }
-          }
-        ],
+        "references": [],
         "imageCount": 1,
         "license": {
           "type": "standard",
@@ -14280,14 +14517,7 @@
         "id": "mxrzaxyz",
         "authorId": "aureal",
         "title": "mxrza.xyz",
-        "references": [
-          {
-            "link": {
-              "type": "official-website-usage",
-              "url": "https://mxrza.xyz/"
-            }
-          }
-        ],
+        "references": [],
         "imageCount": 1,
         "license": {
           "type": "standard",
@@ -14308,6 +14538,70 @@
                 "link": {
                   "type": "github-blob",
                   "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/mizi.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "postgresql",
+        "authorId": "aureal",
+        "title": "PostgreSQL",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "postgresql.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/postgresql.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/postgresql.png"
+                }
+              }
+            ]
+          }
+        ],
+        "createdAt": "2026-09-12"
+      },
+      {
+        "id": "signal",
+        "authorId": "aureal",
+        "title": "Signal",
+        "references": [],
+        "imageCount": 1,
+        "license": {
+          "type": "standard",
+          "id": "MIT",
+          "label": "MIT License",
+          "labelShort": "MIT",
+          "href": "https://opensource.org/license/mit/"
+        },
+        "images": [
+          {
+            "label": "Signal.png",
+            "src": {
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/NPSummers/NPSummers/main/logos/Signal.png"
+            },
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/NPSummers/NPSummers/blob/main/logos/Signal.png"
                 }
               }
             ]
