@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T04:53:38.023Z",
+  "updatedAt": "2026-09-13T04:59:58.508Z",
   "data": {
     "authorCount": 34,
     "imageCount": 304,
@@ -14182,10 +14182,17 @@
           {
             "label": "effect.svg",
             "src": {
-              "type": "unknown",
-              "url": "https://nuarthy.my.id/works/effect.svg"
+              "type": "github-raw",
+              "url": "https://raw.githubusercontent.com/alfonsusac/kawaii-logos-data/refs/heads/main/assets/effect.svg"
             },
-            "references": []
+            "references": [
+              {
+                "link": {
+                  "type": "github-blob",
+                  "url": "https://github.com/alfonsusac/kawaii-logos-data/refs/heads/blob/main/assets/effect.svg"
+                }
+              }
+            ]
           }
         ],
         "createdAt": "2026-07-19"
