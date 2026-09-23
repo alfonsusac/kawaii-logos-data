@@ -61,7 +61,7 @@ export namespace KawaiiLogosData {
   export const socialTypes = [ "github", "x", "bsky", "behance", "figma", "dribbble" ] as const
   export type SocialTypes = typeof socialTypes[ number ]
 
-  export const fundingTypes = [ "patreon", "ko-fi", "buymeacoffee", "saweria", "github", "paypal", "skeb" ] as const
+  export const fundingTypes = [ "patreon", "ko-fi", "buymeacoffee", "saweria", "github", "paypal", "skeb", "vgen" ] as const
   export type FundingTypes = typeof fundingTypes[ number ]
 
   export type Link = {
