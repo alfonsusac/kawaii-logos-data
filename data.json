@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T04:59:58.508Z",
+  "updatedAt": "2026-09-23T03:08:11.543Z",
   "data": {
     "authorCount": 34,
     "imageCount": 304,
@@ -7,7 +7,7 @@
       {
         "id": "aikoyori",
         "displayName": "aikoyori",
-        "pfp": "https://cdn.bsky.app/img/avatar/plain/did:plc:6aakz2mue7yaw4olibq3loql/bafkreiew6o2sfv6gpodtyd5erpxgeiqa4ywjdh6kdl2slxd44ypyygfxlu",
+        "pfp": "https://avatars.githubusercontent.com/Aikoyori",
         "socials": [
           {
             "type": "x",
@@ -15,12 +15,19 @@
             "url": "https://x.com/Aikoyori"
           },
           {
+            "type": "github",
+            "username": "Aikoyori",
+            "url": "https://github.com/Aikoyori"
+          },
+          {
             "type": "bsky",
             "username": "aikoyori.xyz",
             "url": "https://bsky.app/profile/aikoyori.xyz"
           }
         ],
-        "personalSites": [],
+        "personalSites": [
+          "https://aikoyori.xyz"
+        ],
         "entryIds": [
           "bun",
           "docker",
@@ -321,7 +328,14 @@
       {
         "id": "cocoa_xu",
         "displayName": "cocoa_xu",
-        "socials": [],
+        "pfp": "https://avatars.githubusercontent.com/cocoa-xu",
+        "socials": [
+          {
+            "type": "github",
+            "username": "cocoa-xu",
+            "url": "https://github.com/cocoa-xu"
+          }
+        ],
         "personalSites": [],
         "entryIds": [
           "elixir",
@@ -869,23 +883,8 @@
       {
         "id": "mkpoli",
         "displayName": "mkpoli",
-        "pfp": "https://avatars.githubusercontent.com/mkpoli",
-        "socials": [
-          {
-            "type": "x",
-            "username": "mkpoli",
-            "url": "https://x.com/mkpoli"
-          },
-          {
-            "type": "github",
-            "username": "mkpoli",
-            "url": "https://github.com/mkpoli"
-          }
-        ],
-        "personalSites": [
-          "https://ko-fi.com/mkpoli/",
-          "https://mkpo.li/"
-        ],
+        "socials": [],
+        "personalSites": [],
         "entryIds": [
           "svelte"
         ],
