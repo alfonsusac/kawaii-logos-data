@@ -9,6 +9,7 @@ export type FundingsDef = ArrayOrSingle<
   | { type: "github", url: `https://github.com/sponsors/${ string }` }
   | { type: "paypal", url: `https://paypal.me/${ string }` }
   | { type: "skeb", url: `https://skeb.jp/@${ string }` }
+  | { type: "vgen", url: `https://vgen.co/${ string }` }
 >
 
 export function resolveFundingsDef(def: FundingsDef | undefined) {
